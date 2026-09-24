@@ -8,6 +8,9 @@ The architectural baseline is the [complete research handbook](documents/AIM_Com
 - [Phase 1 implementation evidence](model-1/reports/phase-1-implementation.md)
 - [Implementation directive and next-agent handoff](documents/AIM_Model_1_Implementation_Directive.md)
 - [Current engineering decisions](model-1/docs/DECISIONS.md)
+- [Phase 2A learned Researcher results](model-1/reports/phase-2a-implementation.md)
+
+Latest completed experiment: three native Researcher models learned structured output, but achieved only 2–7 independently verified predictions out of 64 familiar test worlds per seed. The predeclared capability gate failed. The deterministic Researcher remains the default; numerical/process supervision is the next experiment.
 
 Model-1 implements the modular Researcher → Judge → deterministic Controller → independent Verifiers → provenance Memory architecture. It contains a working numerical research-loop reference, a small transformer trained from random weights, separate preference/RLVR/Judge training mechanisms, evaluation fixtures, and local/distributed benchmark tools.
 

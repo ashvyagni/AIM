@@ -1,8 +1,10 @@
 # AIM Model-1
 
-**Phase 1: reproducible architecture and training mechanisms.**
+**Phase 1 foundation plus Phase 2A structured Researcher experiment.**
 
-The working research loop uses a clearly identified deterministic polynomial Researcher and a separate rule-based or trained Judge. A native, randomly initialized transformer and an interchangeable neural Researcher adapter are implemented. The current arithmetic-trained transformer cannot yet produce valid research hypotheses; its failed structured-generation diagnostic is retained.
+The default research loop uses a clearly identified deterministic polynomial Researcher and a separate rule-based or trained Judge. A native, randomly initialized transformer and an interchangeable neural Researcher adapter are implemented. The phase-1 arithmetic checkpoint failed structured generation. Phase 2A trained three research-specific checkpoints that emit mostly valid hypotheses but achieve only 3.13–10.94% verified success on the familiar holdout; their capability gate failed and they remain opt-in experimental backends.
+
+See the [Phase 2A report](reports/phase-2a-implementation.md) and [reproduction guide](docs/STRUCTURED_RESEARCHER.md). The complete suite now has 63 passing tests; the historical phase-1 report retains its original 43-test evidence.
 
 ## What runs
 
@@ -66,7 +68,7 @@ The local distributed launcher needs loopback socket permission. It runs only on
 
 ## Scope and limits
 
-- Transformer: **90,624** parameters; independent feature-based Judge: **225**. These are mechanism tests, not final size decisions. The 2M allocation guard belongs to this smoke harness; it is not an AIM scale limit.
+- Phase-1 transformer: **90,624** parameters; Phase-2A experimental transformer: **228,096**; independent feature-based Judge: **225**. These are mechanism tests, not final size decisions. The 2M allocation guard belongs to this smoke harness; it is not an AIM scale limit.
 - Preference labels shipped here are procedural, not human feedback. The DPO pipeline accepts explicitly attributed external SFT/preference records; actual human collection and annotation review remain pending.
 - RLVR is sampled REINFORCE over three exact-arithmetic candidates with a frozen reference. It is not open-ended reasoning RL.
 - Judge learning uses proper scoring and validation-only temperature fitting. It is RLCD-style calibration, not a claimed reproduction of an undocumented proprietary algorithm.
@@ -100,3 +102,5 @@ Runs are excluded from a future Git index to avoid accidentally committing large
 - [Decision record](docs/DECISIONS.md)
 - [Implementation phases and unresolved questions](docs/IMPLEMENTATION_PLAN.md)
 - [Phase 1 evidence report](reports/phase-1-implementation.md)
+- [Structured Researcher guide](docs/STRUCTURED_RESEARCHER.md)
+- [Phase 2A evidence report](reports/phase-2a-implementation.md)

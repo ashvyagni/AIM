@@ -25,11 +25,17 @@ See the [phase report](../reports/phase-1-implementation.md) for actual observat
 
 ## Phase 2A — Learned structured Researcher
 
-**Recommended next model experiment.** Generate training examples from disjoint procedural worlds with observation/evidence IDs and target hypothesis JSON. Preserve metadata and generator version. Train the native decoder from random initialization, starting with an explicitly bounded model/config within the harness guard. Keep claims scoped to predictions, not discovery of a unique law from finite observations.
+**Completed first experiment; capability gate failed.** See the [Phase 2A report](../reports/phase-2a-implementation.md) and [registered protocol](experiments/phase-2a-protocol.md). Three models learned output structure, but only 2–7 of 64 familiar test-world predictions per seed passed verification. Keep the default deterministic Researcher. The following requirements continue to apply to successor experiments.
+
+Generate training examples from disjoint procedural worlds with observation/evidence IDs and target hypothesis JSON. Preserve metadata and generator version. Train the native decoder from random initialization, starting with an explicitly bounded model/config within the harness guard. Keep claims scoped to predictions, not discovery of a unique law from finite observations.
 
 Predeclare train/validation/test/OOD world-family partitions. Evaluate syntax validity, fabricated reference rate, numerical candidate quality, and end-to-end independently verified success. Compare the deterministic Researcher, untrained native decoder and trained native decoder under equal action budgets. Keep malformed output as a recorded failure; no automatic reference-backend substitution.
 
 Exit gate: produce valid supported candidates on a predeclared held-out set and complete the loop through independent verification. Select numerical acceptance thresholds before evaluating the new holdout; current inspected fixtures cannot supply that evidence. Successful JSON generation alone does not establish scientific reasoning.
+
+### Phase 2A.1 — Numerical and process supervision (next)
+
+First add and test continuation for the research-specific trainer; do not assume the arithmetic trainer's resume test covers it. Then register a matched-budget comparison of plain response SFT and independently checkable finite-difference/worked arithmetic traces. Measure each coefficient and intermediate result as well as the final verified prediction. Reserve fresh coefficient worlds excluding all worlds exposed in Phase 2A; preserve the now-inspected test as a regression diagnostic. Do not silently compute the final answer in a tool and attribute it to the neural Researcher. Keep parameter scale and the component architecture fixed while identifying the learning bottleneck.
 
 ## Phase 2B — Judge shift and decision experiments
 

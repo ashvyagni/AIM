@@ -71,3 +71,11 @@ On the owner's explicit request, code and documentation are committed and pushed
 ## How to propose a change
 
 Create a new numbered record with: affected invariant; proposed alternative; primary evidence; competing choices; expected benefit/cost; predeclared experiment; metrics and stopping rules; actual results including failures; and owner review status. Keep current architecture until sufficient evidence and appropriate approval support a change. Hypotheses and unresolved questions must retain those labels.
+
+## D013 — Phase 2A stays experimental after failing its gate
+
+**Status: evidence-backed engineering decision, 2026-09-24.** A checkpoint-versioned structured contract, programmatic world-disjoint SFT and three random seeds were implemented without changing the dense architecture or component responsibilities. The new contract binds model-generated evidence aliases to real spans and rejects malformed outputs. The default reference backend and phase-1 canonical suite remain unchanged.
+
+The [registered experiment](experiments/phase-2a-protocol.md) required at least 90% valid output, 25% independently verified success and a 10-percentage-point gain over initialization for each seed. Held-out success was 7/64, 2/64 and 2/64, despite 95–100% contract validity. None reached the success threshold. Zero unbacked VERIFIED claims were observed in 896 loop executions. See the [complete result](../reports/phase-2a-implementation.md).
+
+Decision: retain the deterministic default and keep learned checkpoints opt-in. Do not promote low token loss or valid syntax to a reasoning-success claim. Next compare explicit numerical/process supervision under a new predeclared protocol with fresh world holdouts. The existing separate Judge and training-stage thesis are unchanged; no larger scale or combined reward is approved by this result.

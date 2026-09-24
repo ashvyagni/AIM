@@ -2,6 +2,8 @@
 
 **For the next implementation agent or ML engineer.** Updated 2026-09-24. Work in the existing `AIM/` workspace; the canonical code directory is `model-1/`. Continue the approved architecture and current implementation. This directive supplies a concrete starting point, not a request to redesign AIM.
 
+**Latest state:** Phase 2A is implemented and evaluated. Read its [report](../model-1/reports/phase-2a-implementation.md) before continuing. The three trained Researcher checkpoints learned structured output but failed the predeclared numerical-success gate. The default reference remains in place. The next model task is Phase 2A.1 numerical/process supervision, preceded by tested research-trainer continuation support.
+
 ## Read before changing code
 
 1. The complete [research handbook](AIM_Complete_Research_Architecture_and_Project_Handbook.pdf) and relevant [final-design specifications](final-design/).
@@ -37,7 +39,7 @@ cd model-1
 
 Use the documented environment setup if the local `.venv` is missing. Read the new bundle's `tests.log`, `index.json`, metrics, manifest and failures. It uses no pretrained assets or online service. A missing torch environment is not a successful neural test result.
 
-Next implement the [Phase 2A structured Researcher experiment](../model-1/docs/IMPLEMENTATION_PLAN.md): independently partition procedural worlds, generate provenance-bound hypothesis training records, train the owned decoder and evaluate valid supported outputs plus verified task success. Keep the deterministic Researcher as an explicit reference, not a hidden fallback. Do not tune against the final holdout.
+Phase 2A has now supplied independently partitioned worlds, provenance-bound supervision, native training and a frozen holdout comparison. Continue with [Phase 2A.1](../model-1/docs/IMPLEMENTATION_PLAN.md): add tested research-trainer continuation, then compare numerical/worked-process supervision with plain SFT at matched budgets. Reserve fresh coefficient worlds; the Phase 2A test is now exposed. Keep the deterministic Researcher as an explicit reference, not a hidden fallback.
 
 In parallel with model planning, prepare the VIT hardware audit for an authorized lab operator. No lab access, IP inventory or measured throughput is available in this workspace. The current local multi-process result cannot establish 70–84-node feasibility. Use the template and protocol; keep missing fields null until measured.
 
