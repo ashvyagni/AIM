@@ -82,14 +82,31 @@ def restore_history(source, resume_path):
     if "evaluation_history" not in source:
         # Legacy checkpoints predate embedded history. Reconstruct only from
         # their original sibling artifacts; missing evidence is an error.
+        directory=Path(resume_path).parent
+        original_records={}
+        if (directory/"metrics.json").is_file():
+            original_records={r["step"]:r for r in json.loads((directory/"metrics.json").read_text())["evaluations"]}
+        elif (directory/"events.jsonl").is_file():
+            for line in (directory/"events.jsonl").read_text().splitlines():
+                event=json.loads(line);payload=event.get("payload",{})
+                if event.get("kind")=="METRIC" and "validation" in payload:
+                    original_records[payload["step"]]=payload["validation"]
         for step in expected:
             checkpoint=Path(resume_path).parent/f"checkpoint-step{step:04d}.pt"
             validation=checkpoint.parent/f"validation-step{step:04d}.json"
             metrics=json.loads(validation.read_text())
-            read_checkpoint(checkpoint)  # also checks the original sidecar
+            prior=read_checkpoint(checkpoint)  # also checks the original sidecar
+            if prior["step"]!=step or any(prior.get(k)!=source.get(k) for k in ("seed","dataset_hash","model_config","research_contract")):
+                raise ContractError("Legacy historical checkpoint identity mismatch")
+            summary={k:v for k,v in metrics.items() if k!="outputs"}
+            original=original_records.get(step)
+            if original is None or any(original.get(k)!=v for k,v in summary.items()):
+                raise ContractError("Legacy validation does not match retained run metrics")
+            if "sha256" in original and original["sha256"]!=file_hash(checkpoint):
+                raise ContractError("Legacy checkpoint does not match retained selection")
             history.append({"step":step,"checkpoint":str(checkpoint.resolve()),"sha256":file_hash(checkpoint),
                 "validation_path":str(validation.resolve()),"validation_sha256":file_hash(validation),
-                **{k:v for k,v in metrics.items() if k!="outputs"}})
+                **summary})
     if history and history[-1]["step"]==source["step"]:
         expected.append(source["step"])
     if [r["step"] for r in history]!=expected:

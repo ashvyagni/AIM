@@ -137,6 +137,11 @@ class ResearchTrainingTests(unittest.TestCase):
                                                self.path/"resumed",resume=legacy))
         self.assertEqual(resumed["initial"]["sha256"],base["initial"]["sha256"])
         self.assertEqual([r["step"] for r in resumed["evaluations"]],[0,1,2])
+        validation=Path(base["initial"]["validation_path"])
+        tampered=json.loads(validation.read_text());tampered["valid_rate"]=0.9
+        validation.write_text(json.dumps(tampered))
+        with self.assertRaises(ContractError):
+            train_experiment({**self.config,"steps":2,"evaluation_steps":[1,2]},path,self.path/"bad-legacy",resume=legacy)
 
     def test_deadline_checkpoint_preserves_completed_boundary(self):
         path,_,_=self.data()
