@@ -108,7 +108,13 @@ class Controller:
             elif len(state.observations) < 2:
                 state.unknowns.append("Insufficient relevant observations to propose supported candidates")
             else:
-                state.hypotheses = self.researcher.hypothesize(copy.deepcopy(state))
+                try:
+                    state.hypotheses = self.researcher.hypothesize(copy.deepcopy(state))
+                finally:
+                    trace = getattr(self.researcher, "last_trace", None)
+                    if trace is not None:
+                        memory.append("RESEARCHER_OUTPUT", trace)
+                        run.event("RESEARCHER_OUTPUT", trace)
                 ids = [h.id for h in state.hypotheses]
                 if len(ids) != len(set(ids)) or len(ids) > 3:
                     raise ContractError("Duplicate or excessive candidate hypotheses")

@@ -56,16 +56,36 @@ class TransformerResearcher:
     def __init__(self, checkpoint, max_new_tokens=160):
         from .neural import load_lm
         from .tracking import file_hash
-        self.model, self.tokenizer, _ = load_lm(checkpoint)
+        self.model, self.tokenizer, self.record = load_lm(checkpoint)
         self.model.eval()
         self.model_id = "aim-random-origin-checkpoint-" + file_hash(checkpoint)
         self.max_new_tokens = max_new_tokens
+        self.last_trace = None
+        from .research_format import VERSION
+        if self.record.get("research_contract") not in (None, VERSION):
+            raise ContractError("Unsupported Researcher checkpoint contract")
 
     def plan(self, state):
         return ["Generate candidate hypotheses from retrieved observations", "Verify generated candidates",
                 "Publish only scoped checked results"]
 
     def hypothesize(self, state):
+        if self.record.get("research_contract"):
+            from .research_format import prompt_for, parse_hypothesis, ResearchOutputError
+            prompt, aliases = prompt_for(state)
+            self.last_trace = {"contract":self.record["research_contract"],"prompt":prompt,
+                               "aliases":aliases,"raw_output":None,"valid":False,"error_category":None,
+                               "max_new_tokens":self.max_new_tokens}
+            try:
+                text = self.model.generate_text(self.tokenizer, prompt, self.max_new_tokens)
+                self.last_trace["raw_output"] = text
+                hypotheses = parse_hypothesis(text, aliases)
+                self.last_trace["valid"] = True
+                return hypotheses
+            except ContractError as exc:
+                self.last_trace["error_category"] = exc.category if isinstance(exc, ResearchOutputError) else "context_or_contract"
+                self.last_trace["error"] = str(exc)
+                raise
         prompt = json.dumps({"task": "Return JSON {coefficients:[[c0,c1],[c0,c1,c2]]}",
                              "observations": state.observations, "target_x": state.target_x})
         text = self.model.generate_text(self.tokenizer, prompt, self.max_new_tokens)
