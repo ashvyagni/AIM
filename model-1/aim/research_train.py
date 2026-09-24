@@ -9,7 +9,7 @@ from pathlib import Path
 import torch
 
 from .contracts import ContractError
-from .neural import ByteTokenizer, CausalLM, ModelConfig
+from .neural import ByteTokenizer, CausalLM, ModelConfig, read_checkpoint
 from .research_data import load_training_data
 from .research_format import VERSION, ResearchOutputError, parse_hypothesis
 from .training import save_checkpoint, seed_all, sequence_scores
@@ -70,8 +70,38 @@ def validate_config(config):
         raise ContractError("Invalid optimizer configuration")
 
 
-def train_seed(config,data,data_path,runs,seed,protocol_path):
-    with Run(Path(runs),f"research-sft-seed{seed}",{**config,"seed":seed},[data_path,protocol_path]) as run:
+def restore_history(source, resume_path):
+    """Validate prior selection evidence, including original v1 checkpoint layouts."""
+    history=list(source.get("evaluation_history",[]))
+    expected=([0]+[s for s in source["configuration"]["evaluation_steps"] if s<source["step"]]) if source["step"] else []
+    if "evaluation_history" not in source:
+        # Legacy checkpoints predate embedded history. Reconstruct only from
+        # their original sibling artifacts; missing evidence is an error.
+        for step in expected:
+            checkpoint=Path(resume_path).parent/f"checkpoint-step{step:04d}.pt"
+            validation=checkpoint.parent/f"validation-step{step:04d}.json"
+            metrics=json.loads(validation.read_text())
+            read_checkpoint(checkpoint)  # also checks the original sidecar
+            history.append({"step":step,"checkpoint":str(checkpoint.resolve()),"sha256":file_hash(checkpoint),
+                "validation_path":str(validation.resolve()),"validation_sha256":file_hash(validation),
+                **{k:v for k,v in metrics.items() if k!="outputs"}})
+    if history and history[-1]["step"]==source["step"]:
+        expected.append(source["step"])
+    if [r["step"] for r in history]!=expected:
+        raise ContractError("Incomplete or reordered checkpoint-selection history")
+    for row in history:
+        if file_hash(row["checkpoint"])!=row["sha256"] or file_hash(row["validation_path"])!=row["validation_sha256"]:
+            raise ContractError("Historical selection artifact changed")
+        metrics=json.loads(Path(row["validation_path"]).read_text())
+        if any(row[k]!=v for k,v in metrics.items() if k!="outputs"):
+            raise ContractError("Historical validation summary changed")
+    return history
+
+
+def train_seed(config,data,data_path,runs,seed,protocol_path,*,resume=None):
+    inputs=[data_path,protocol_path]+([Path(resume)] if resume else [])
+    with Run(Path(runs),f"research-sft-seed{seed}",{**config,"seed":seed,"resume":str(resume) if resume else None},inputs) as run:
+        validate_config(config)
         seed_all(seed)
         cfg=ModelConfig(**config["model"])
         tokenizer=ByteTokenizer()
@@ -87,6 +117,31 @@ def train_seed(config,data,data_path,runs,seed,protocol_path):
         dataset_hash=digest(data)
         write_json(run.path/"tokenizer.json",tokenizer.specification())
         evaluations=[];best=None;parent_hash=None;step=0
+        if resume:
+            source=read_checkpoint(resume)
+            if (source.get("stage")!="research-sft" or source.get("research_contract")!=VERSION or
+                    source.get("seed")!=seed or source.get("dataset_hash")!=dataset_hash or
+                    source.get("model_config")!=asdict(cfg) or source.get("tokenizer")!=tokenizer.specification()):
+                raise ContractError("Resume stage, seed, data, model or tokenizer mismatch")
+            previous=source["configuration"]
+            mutable={"steps","evaluation_steps","deadline_seconds","seeds"}
+            if {k:v for k,v in previous.items() if k not in mutable}!={k:v for k,v in config.items() if k not in mutable}:
+                raise ContractError("Resume cannot change optimization or generation configuration")
+            step=source["step"]
+            if type(step) is not int or not 0<=step<config["steps"]:
+                raise ContractError("Resume must advance beyond the saved update")
+            if ([s for s in previous["evaluation_steps"] if s<=step]!=
+                    [s for s in config["evaluation_steps"] if s<=step]):
+                raise ContractError("Resume cannot rewrite past evaluation points")
+            evaluations=restore_history(source,resume)
+            best=max(evaluations,key=lambda r:selection_key(r,r["step"]),default=None)
+            model.load_state_dict(source["model"])
+            optimizer.load_state_dict(source["optimizer"])
+            sampler.set_state(source["sampler_rng"])
+            torch.set_rng_state(source["torch_rng"])
+            parent_hash=file_hash(resume)
+            run.event("CHECKPOINT_RESUMED",{"checkpoint":str(Path(resume).resolve()),"sha256":parent_hash,
+                "step":step,"historical_evaluations":len(evaluations)})
 
         def checkpoint(filename):
             nonlocal parent_hash
@@ -94,7 +149,7 @@ def train_seed(config,data,data_path,runs,seed,protocol_path):
                 "model_config":asdict(cfg),"model":model.state_dict(),"optimizer":optimizer.state_dict(),
                 "torch_rng":torch.get_rng_state(),"sampler_rng":sampler.get_state(),"step":step,"stage":"research-sft",
                 "configuration":config,"seed":seed,"dataset_hash":dataset_hash,"tokenizer":tokenizer.specification(),
-                "parent_sha256":parent_hash},filename)
+                "parent_sha256":parent_hash,"evaluation_history":list(evaluations)},filename)
             path=run.path/filename
             parent_hash=file_hash(path)
             return path
@@ -103,9 +158,11 @@ def train_seed(config,data,data_path,runs,seed,protocol_path):
             nonlocal best
             path=checkpoint(f"checkpoint-step{step:04d}.pt")
             metrics=validation_metrics(model,tokenizer,validation,config["max_new_tokens"])
-            write_json(run.path/f"validation-step{step:04d}.json",metrics)
+            validation_path=run.path/f"validation-step{step:04d}.json"
+            write_json(validation_path,metrics)
             summary={k:v for k,v in metrics.items() if k!="outputs"}
-            record={"step":step,"checkpoint":str(path.resolve()),"sha256":file_hash(path),**summary}
+            record={"step":step,"checkpoint":str(path.resolve()),"sha256":file_hash(path),
+                    "validation_path":str(validation_path.resolve()),"validation_sha256":file_hash(validation_path),**summary}
             evaluations.append(record)
             run.metric(step,validation=summary)
             if best is None or selection_key(metrics,step)>selection_key(best,best["step"]):
@@ -113,8 +170,11 @@ def train_seed(config,data,data_path,runs,seed,protocol_path):
             print(json.dumps({"seed":seed,"step":step,"validation":summary,"run":str(run.path)}),flush=True)
 
         started=time.monotonic()
-        evaluate()
-        for step in range(1,config["steps"]+1):
+        # Saved checkpoints precede their validation. Recompute that boundary
+        # deterministically; never replace the original random baseline.
+        if (not resume or step==0 or step in config["evaluation_steps"]) and (not evaluations or evaluations[-1]["step"]!=step): evaluate()
+        start_step=step
+        for step in range(start_step+1,config["steps"]+1):
             if time.monotonic()-started>config["deadline_seconds"]:
                 step-=1  # The next update has not happened yet.
                 checkpoint("emergency-deadline.pt")
@@ -137,17 +197,20 @@ def train_seed(config,data,data_path,runs,seed,protocol_path):
     return result
 
 
-def train_experiment(config,data_path,runs):
+def train_experiment(config,data_path,runs,*,resume=None):
     data_path=Path(data_path)
     protocol_path=ROOT/"docs/experiments/phase-2a-protocol.md"
-    with Run(Path(runs),"research-training",config,[data_path,protocol_path]) as run:
+    with Run(Path(runs),"research-training",{**config,"resume":str(resume) if resume else None},
+             [data_path,protocol_path]+([Path(resume)] if resume else [])) as run:
         validate_config(config)
+        if resume and len(config["seeds"])!=1:
+            raise ContractError("Resume takes one checkpoint and exactly one matching seed")
         data=load_training_data(data_path)
         dataset_manifest=data_path.parent/"split-manifest.json"
         dataset_metadata=json.loads(dataset_manifest.read_text())
         if file_hash(data_path)!=dataset_metadata["train_validation_sha256"]:
             raise ContractError("Training data no longer matches split manifest")
-        results=[train_seed(config,data,data_path,run.path/"seeds",s,protocol_path) for s in config["seeds"]]
+        results=[train_seed(config,data,data_path,run.path/"seeds",s,protocol_path,resume=resume) for s in config["seeds"]]
         # Frozen before the separate evaluator is invoked; no test-driven reselection.
         if file_hash(data_path)!=dataset_metadata["train_validation_sha256"]:
             raise ContractError("Training data no longer matches split manifest")
@@ -163,8 +226,9 @@ def main():
     parser.add_argument("--data",type=Path,required=True)
     parser.add_argument("--config",type=Path,default=Path("configs/structured-researcher.json"))
     parser.add_argument("--runs",type=Path,default=Path("runs"))
+    parser.add_argument("--resume",type=Path,help="Continue one seed, retaining original selection history")
     args=parser.parse_args()
-    print(train_experiment(json.loads(args.config.read_text()),args.data,args.runs))
+    print(train_experiment(json.loads(args.config.read_text()),args.data,args.runs,resume=args.resume))
 
 
 if __name__=="__main__": main()
