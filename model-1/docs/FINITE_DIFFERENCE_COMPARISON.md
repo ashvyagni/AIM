@@ -38,13 +38,15 @@ Use actual printed run paths. Do not retrain against an inspected holdout and de
 | `comparison_eval.py` | Actual Controller runs, paired metrics, process failures, descriptive uncertainty and registered gates |
 | `comparison_reproduce.py` | Retained preflight log and stage-by-stage reproduction record |
 
-The original Phase 2A generator remains available and deterministic. Its complete coefficient vectors form the exclusion registry for this experiment. The new manifest includes that registry and its hash, all new world vectors, counts, and data hashes. This prevents a version-prefix change from hiding old-world reuse.
+The original Phase 2A generator remains available and deterministic. Its complete coefficient vectors form the exclusion registry for this experiment. The trainer-readable manifest includes that old-world registry and its hash, new group hashes, counts, and file hashes. New world vectors live in the separate `split-audit.json`, which the trainer never opens. Metadata fields are allowlisted, and a regression test rejects label-bearing metadata. This prevents both a version-prefix change from hiding old-world reuse and an audit file from leaking labels through training metadata.
 
 ## Understand the compute comparison
 
 Both arms draw the same worlds in the same order for each seed, start with equal tensors, and execute the same batch size, number of updates and dense tensor shapes. `sequence_scores(..., pad_to=256)` places padding after the supervised sequence. Padding has zero loss weight; earlier causal positions cannot attend to it. Tests compare response-token counts and scores with and without padding.
 
 Each arm/seed processes exactly `1800 × 16 × 256 = 7,372,800` training input positions. This matches a dense-compute proxy, not measured hardware FLOPs. Worked responses contain more supervised tokens; their quantity is reported, not claimed equal. Generation stops at EOS or 128 new tokens for both arms. Output UTF-8 byte counts are logged; for malformed decoded text these are not an exact count of generated token IDs. Inference latency includes parsing, tools, verification and trace persistence.
+
+Validation selection can choose different update boundaries across arms. The total search/training budget is matched; the ultimately selected weights may have received different numbers of updates. Report selected steps explicitly. These are fresh worlds, so differences from the older Phase 2A scores are not a paired estimate of the effect of this change.
 
 Training metrics record cumulative processed positions and supervised tokens. On resume from a legacy checkpoint lacking those counters, `accounting_start_step` states where accounting begins; missing historical cost is never reported as a complete total. Optimizer state, sampling and selection history are still restored. The comparison reproduction command starts fresh paired runs; it does not automatically assemble an interrupted six-run comparison from separate continuations.
 
@@ -61,7 +63,7 @@ This is programmatic SFT with step diagnostics. Human preference learning, rewar
 ## Artifact navigation
 
 - Reproduction root: `manifest.json`, `tests.log`, `test-result.json`, stage pointers, `summary.json`, completion/failure.
-- Dataset child: source memory, training/validation file, separate holdout, exclusion/split manifest.
+- Dataset child: source memory, training/validation file, separate holdout and label-bearing split audit, trainer-readable exclusion/split manifest.
 - Training child: transformed data for each arm, six seed runs, frozen `selected-models.json`.
 - Seed run: configuration/environment, evaluated checkpoint files plus integrity sidecars, validation generations, metrics, parent lineage, event log and optional emergency checkpoint.
 - Evaluation child: accepted frozen selection, all case traces and state, per-case comparison/step diagnostics, aggregate metrics and gate outcomes.
