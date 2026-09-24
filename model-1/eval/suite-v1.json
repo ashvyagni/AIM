@@ -1,0 +1,14 @@
+{
+  "version":"aim-engineering-regression-v1",
+  "scope":"public synthetic fixtures, never a sealed research benchmark",
+  "cases":[
+    {"id":"linear","coefficients":[2,3],"expected_verified":2,"expected_rejected":0},
+    {"id":"quadratic","coefficients":[1,2,1],"expected_verified":1,"expected_rejected":1},
+    {"id":"cubic-unsupported","coefficients":[1,0,0,1],"expected_verified":0,"expected_rejected":2},
+    {"id":"unavailable","coefficients":[1,2,1],"available":false,"expected_verified":0,"expected_rejected":0,"expect_unknown":true},
+    {"id":"conflict","coefficients":[1,2,1],"conflicting":true,"expected_verified":0,"expected_rejected":0,"expect_unknown":true},
+    {"id":"empty-retrieval","coefficients":[1,2,1],"no_sources":true,"expected_verified":0,"expected_rejected":0,"expect_unknown":true},
+    {"id":"injected-source","coefficients":[1,2,1],"injection":true,"expected_verified":1,"expected_rejected":1},
+    {"id":"budget-exhausted","coefficients":[1,2,1],"budget":1,"expected_verified":0,"expected_rejected":0,"expect_unknown":true}
+  ]
+}

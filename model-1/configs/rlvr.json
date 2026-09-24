@@ -1,0 +1,5 @@
+{
+  "stage": "rlvr", "seed": 17, "steps": 30, "batch_size": 4,
+  "learning_rate": 0.0003, "weight_decay": 0.01, "kl_coefficient": 0.02,
+  "model": {"vocab_size": 259, "width": 64, "layers": 2, "heads": 4, "kv_heads": 2, "ffn_width": 128, "context": 256}
+}

@@ -1,0 +1,1 @@
+{"seed":17,"repeats":5,"model":{"vocab_size":259,"width":64,"layers":2,"heads":4,"kv_heads":2,"ffn_width":128,"context":256}}

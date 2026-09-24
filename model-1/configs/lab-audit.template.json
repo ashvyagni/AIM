@@ -1,0 +1,16 @@
+{
+  "schema": "aim-hardware-audit-v1",
+  "status": "template_not_measured",
+  "reported": {
+    "node_count_min": 70,
+    "node_count_max": 84,
+    "cpu_family": "Intel Core i9, 13th generation; exact SKU unknown",
+    "ram_per_node_gb": 32,
+    "graphics": "Intel UHD Graphics 770"
+  },
+  "measured_nodes": [],
+  "required_per_node": ["anonymous_node_id", "cpu_sku", "physical_cores", "logical_threads", "os", "ram_bytes", "available_ram_bytes", "disk_type", "free_disk_bytes", "nic_model", "link_speed_bps", "torch_version", "thread_settings", "benchmark_run_path", "available_hours", "power_and_thermal_policy"],
+  "network": {"topology": null, "switch_uplinks": null, "latency_samples": null, "throughput_samples": null, "authorized_rendezvous_endpoint": null},
+  "permissions": {"lab_access_confirmed": false, "background_jobs_approved": false, "network_ports_approved": false},
+  "scale_decision": "pending measurements and owner review"
+}

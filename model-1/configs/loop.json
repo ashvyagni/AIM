@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "researcher": "algorithmic-polynomial-reference-v1",
+  "judge": "verification-first-rule-v1",
+  "max_actions": 8,
+  "timeout_seconds": 5.0,
+  "scope": "numerical fixture only; use explicit --judge or --researcher-checkpoint to load AIM weights"
+}

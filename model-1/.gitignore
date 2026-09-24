@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+# Run records remain on disk. Export selected records into reports for review.
+runs/

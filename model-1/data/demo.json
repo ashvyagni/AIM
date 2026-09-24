@@ -1,0 +1,11 @@
+{
+  "id":"quadratic-demo-v1",
+  "question":"For instrument alpha, compare linear and quadratic hypotheses and predict the reading at x=4.",
+  "topic":"instrument-alpha",
+  "target_x":4,
+  "sources":[
+    {"title":"instrument-alpha observations","uri":"aim://fixtures/alpha/observations","version":"1","rights":"project-generated-fixture",
+     "text":"{\"topic\":\"instrument-alpha\",\"observations\":[[0,1],[1,4],[2,9]]}"}
+  ],
+  "experiment":{"available":true,"observations":[[4,25]]}
+}
