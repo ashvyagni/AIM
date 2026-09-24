@@ -62,7 +62,8 @@ class TransformerResearcher:
         self.max_new_tokens = max_new_tokens
         self.last_trace = None
         from .research_format import VERSION
-        if self.record.get("research_contract") not in (None, VERSION):
+        from .finite_difference import CONTRACT
+        if self.record.get("research_contract") not in (None, VERSION, CONTRACT):
             raise ContractError("Unsupported Researcher checkpoint contract")
 
     def plan(self, state):
@@ -70,16 +71,19 @@ class TransformerResearcher:
                 "Publish only scoped checked results"]
 
     def hypothesize(self, state):
+        self.last_trace = None
         if self.record.get("research_contract"):
-            from .research_format import prompt_for, parse_hypothesis, ResearchOutputError
-            prompt, aliases = prompt_for(state)
-            self.last_trace = {"contract":self.record["research_contract"],"prompt":prompt,
-                               "aliases":aliases,"raw_output":None,"valid":False,"error_category":None,
+            from .research_format import prompt_for, ResearchOutputError
+            from .finite_difference import parse_output
+            self.last_trace = {"contract":self.record["research_contract"],"prompt":None,
+                               "aliases":{},"raw_output":None,"valid":False,"error_category":None,
                                "max_new_tokens":self.max_new_tokens}
             try:
+                prompt, aliases = prompt_for(state)
+                self.last_trace.update(prompt=prompt,aliases=aliases)
                 text = self.model.generate_text(self.tokenizer, prompt, self.max_new_tokens)
                 self.last_trace["raw_output"] = text
-                hypotheses = parse_hypothesis(text, aliases)
+                hypotheses = parse_output(text, aliases,self.record["research_contract"])
                 self.last_trace["valid"] = True
                 return hypotheses
             except ContractError as exc:

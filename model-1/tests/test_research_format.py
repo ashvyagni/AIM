@@ -85,5 +85,14 @@ class FormatTests(unittest.TestCase):
         self.assertEqual(researcher.last_trace['error_category'],'syntax')
         self.assertTrue(state.unknowns)
 
+    def test_reused_adapter_does_not_retain_trace_after_prompt_failure(self):
+        researcher=self.stub_researcher(target_response([1,2,1]))
+        researcher.hypothesize(self.state)
+        self.state.evidence=[]
+        with self.assertRaises(ContractError): researcher.hypothesize(self.state)
+        self.assertIsNone(researcher.last_trace['raw_output'])
+        self.assertFalse(researcher.last_trace['valid'])
+        self.assertEqual(researcher.last_trace['error_category'],'context_or_contract')
+
 
 if __name__=='__main__': unittest.main()
