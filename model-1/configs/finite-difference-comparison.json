@@ -1,0 +1,13 @@
+{
+  "protocol": "aim-finite-difference-comparison-v1",
+  "seeds": [17, 23, 41],
+  "steps": 1800,
+  "evaluation_steps": [300, 600, 1200, 1800],
+  "batch_size": 16,
+  "learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "max_new_tokens": 128,
+  "deadline_seconds": 1200,
+  "pad_to": 256,
+  "model": {"vocab_size":259,"width":96,"layers":2,"heads":4,"kv_heads":2,"ffn_width":256,"context":256}
+}
