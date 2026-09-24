@@ -40,19 +40,19 @@ def world_partitions():
     return selected
 
 
-def make_record(group,coefficients,family,split,memory):
+def make_record(group,coefficients,family,split,memory,*,version=VERSION):
     target=3+int(group[8:16],16)%3
     case=polynomial_case("p2a-"+group[:20],coefficients,target=target)
     state=ResearchState("1",case["question"],case["topic"],target)
     for source in case["sources"]:
-        source["version"]=VERSION
+        source["version"]=version
         sid=memory.ingest(**source)
         ev=memory.span(sid,0,len(source["text"]))
         state.evidence.append(ev)
         state.observations.extend(json.loads(source["text"])["observations"])
     prompt,aliases=prompt_for(state)
     return {"id":"world-"+group[:24],"group":group,"split":split,"family":family,
-            "generator":VERSION,"label_origin":"programmatic-known-world; not human feedback",
+            "generator":version,"label_origin":"programmatic-known-world; not human feedback",
             "rights":"project-generated-fixture","world_coefficients":list(coefficients),
             "prompt":prompt,"response":target_response(coefficients) if split!="ood" else None,
             "aliases":aliases,"source_hashes":[e.source_hash for e in state.evidence],"case":case}
