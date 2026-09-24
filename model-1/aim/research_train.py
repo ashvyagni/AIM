@@ -11,14 +11,15 @@ import torch
 from .contracts import ContractError
 from .neural import ByteTokenizer, CausalLM, ModelConfig, read_checkpoint
 from .research_data import load_training_data
-from .research_format import VERSION, ResearchOutputError, parse_hypothesis
+from .research_format import VERSION, ResearchOutputError
+from .finite_difference import EXPERIMENT, CONTRACT, parse_output, diagnostics
 from .training import save_checkpoint, seed_all, sequence_scores
 from .tracking import ROOT, Run, digest, file_hash, write_json
 
 
 def score_generation(text, row):
     try:
-        hypothesis=parse_hypothesis(text,row["aliases"])[0]
+        hypothesis=parse_output(text,row["aliases"],row.get("research_contract",VERSION))[0]
     except ResearchOutputError as exc:
         return {"valid":False,"agrees":False,"error_category":exc.category,"absolute_error":None}
     x=Fraction(row["case"]["target_x"])
@@ -39,7 +40,8 @@ def validation_metrics(model,tokenizer,rows,max_new_tokens):
     outputs=[]
     for row in rows:
         text=model.generate_text(tokenizer,row["prompt"],max_new_tokens)
-        outputs.append({"id":row["id"],"raw_output":text,**score_generation(text,row)})
+        outputs.append({"id":row["id"],"raw_output":text,**score_generation(text,row),
+                        "process":diagnostics(text,row["prompt"],row["aliases"],row.get("research_contract",VERSION))})
     model.train()
     return {"n":len(rows),"response_token_nll":-total_score/total_tokens,
             "valid_rate":sum(r["valid"] for r in outputs)/len(rows),
@@ -51,7 +53,7 @@ def selection_key(metrics,step):
 
 
 def validate_config(config):
-    if config.get("protocol")!=VERSION:
+    if config.get("protocol") not in (VERSION,EXPERIMENT):
         raise ContractError("Unknown structured research protocol")
     steps=config.get("steps")
     if type(steps) is not int or not 1<=steps<=1800:
@@ -68,6 +70,9 @@ def validate_config(config):
     from .contracts import finite_number
     if not 0<finite_number(config["learning_rate"])<=0.1 or not 0<=finite_number(config["weight_decay"])<=1:
         raise ContractError("Invalid optimizer configuration")
+    if config.get("protocol")==EXPERIMENT:
+        if config.get("research_contract") not in (VERSION,CONTRACT) or config.get("pad_to")!=config["model"]["context"]:
+            raise ContractError("Comparison requires explicit output contract and full-context padding")
 
 
 def restore_history(source, resume_path):
@@ -115,14 +120,18 @@ def train_seed(config,data,data_path,runs,seed,protocol_path,*,resume=None):
         optimizer=torch.optim.AdamW(model.parameters(),lr=config["learning_rate"],weight_decay=config["weight_decay"])
         sampler=torch.Generator().manual_seed(seed)
         dataset_hash=digest(data)
+        contract=config.get("research_contract",VERSION)
         write_json(run.path/"tokenizer.json",tokenizer.specification())
         evaluations=[];best=None;parent_hash=None;step=0
+        supervised_tokens=0;processed_positions=0;accounting_start_step=0
         if resume:
             source=read_checkpoint(resume)
-            if (source.get("stage")!="research-sft" or source.get("research_contract")!=VERSION or
+            if (source.get("stage")!="research-sft" or source.get("research_contract")!=contract or
                     source.get("seed")!=seed or source.get("dataset_hash")!=dataset_hash or
                     source.get("model_config")!=asdict(cfg) or source.get("tokenizer")!=tokenizer.specification()):
                 raise ContractError("Resume stage, seed, data, model or tokenizer mismatch")
+            if source.get("protocol_sha256",file_hash(protocol_path))!=file_hash(protocol_path):
+                raise ContractError("Resume protocol changed")
             previous=source["configuration"]
             mutable={"steps","evaluation_steps","deadline_seconds","seeds"}
             if {k:v for k,v in previous.items() if k not in mutable}!={k:v for k,v in config.items() if k not in mutable}:
@@ -140,16 +149,21 @@ def train_seed(config,data,data_path,runs,seed,protocol_path,*,resume=None):
             sampler.set_state(source["sampler_rng"])
             torch.set_rng_state(source["torch_rng"])
             parent_hash=file_hash(resume)
+            supervised_tokens=source.get("supervised_tokens",0)
+            processed_positions=source.get("processed_positions",0)
+            accounting_start_step=source.get("accounting_start_step",step if "processed_positions" not in source else 0)
             run.event("CHECKPOINT_RESUMED",{"checkpoint":str(Path(resume).resolve()),"sha256":parent_hash,
                 "step":step,"historical_evaluations":len(evaluations)})
 
         def checkpoint(filename):
             nonlocal parent_hash
-            save_checkpoint(run,{"kind":"causal_lm","origin":"aim-random-init-v1","research_contract":VERSION,
+            save_checkpoint(run,{"kind":"causal_lm","origin":"aim-random-init-v1","research_contract":contract,
                 "model_config":asdict(cfg),"model":model.state_dict(),"optimizer":optimizer.state_dict(),
                 "torch_rng":torch.get_rng_state(),"sampler_rng":sampler.get_state(),"step":step,"stage":"research-sft",
                 "configuration":config,"seed":seed,"dataset_hash":dataset_hash,"tokenizer":tokenizer.specification(),
-                "parent_sha256":parent_hash,"evaluation_history":list(evaluations)},filename)
+                "parent_sha256":parent_hash,"evaluation_history":list(evaluations),
+                "protocol_sha256":file_hash(protocol_path),"accounting_start_step":accounting_start_step,
+                "supervised_tokens":supervised_tokens,"processed_positions":processed_positions},filename)
             path=run.path/filename
             parent_hash=file_hash(path)
             return path
@@ -182,16 +196,22 @@ def train_seed(config,data,data_path,runs,seed,protocol_path,*,resume=None):
             indices=torch.randint(len(train_rows),(config["batch_size"],),generator=sampler).tolist()
             batch=[train_rows[i] for i in indices]
             optimizer.zero_grad()
-            scores,counts=sequence_scores(model,tokenizer,[(r["prompt"],r["response"]) for r in batch])
+            pairs=[(r["prompt"],r["response"]) for r in batch]
+            scores,counts=sequence_scores(model,tokenizer,pairs,pad_to=config.get("pad_to"))
             loss=-scores.sum()/counts.sum()
             if not torch.isfinite(loss): raise FloatingPointError("Nonfinite research SFT loss")
             loss.backward()
             norm=torch.nn.utils.clip_grad_norm_(model.parameters(),1.0,error_if_nonfinite=True)
             optimizer.step()
-            run.metric(step,loss=loss.item(),grad_norm=float(norm),supervised_tokens=int(counts.sum()))
+            positions=config.get("pad_to") or max(1+len(tokenizer.encode(p))+len(tokenizer.encode(r)) for p,r in pairs)
+            supervised_tokens+=int(counts.sum());processed_positions+=len(batch)*positions
+            run.metric(step,loss=loss.item(),grad_norm=float(norm),supervised_tokens=int(counts.sum()),
+                       processed_positions=len(batch)*positions)
             if step in config["evaluation_steps"]: evaluate()
         result={"seed":seed,"initial":evaluations[0],"selected":best,"evaluations":evaluations,
                 "parameters":sum(p.numel() for p in model.parameters()),"dataset_hash":dataset_hash,
+                "supervised_tokens":supervised_tokens,"processed_positions":processed_positions,
+                "accounting_start_step":accounting_start_step,
                 "scope":"validation-only checkpoint selection; no test/OOD labels read"}
         write_json(run.path/"metrics.json",result)
     return result

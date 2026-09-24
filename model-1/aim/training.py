@@ -31,7 +31,7 @@ def seed_all(seed):
     torch.use_deterministic_algorithms(True)
 
 
-def sequence_scores(model, tokenizer, pairs):
+def sequence_scores(model, tokenizer, pairs, *, pad_to=None):
     sequences, starts = [], []
     for prompt, response in pairs:
         prefix = [tokenizer.bos_id] + tokenizer.encode(prompt)
@@ -41,6 +41,10 @@ def sequence_scores(model, tokenizer, pairs):
         sequences.append(seq)
         starts.append(len(prefix)-1)
     width = max(map(len, sequences))
+    if pad_to is not None:
+        if type(pad_to) is not int or not width-1<=pad_to<=model.cfg.context:
+            raise ContractError("Invalid fixed training input length")
+        width=pad_to+1
     batch = torch.full((len(sequences),width), tokenizer.pad_id, dtype=torch.long)
     mask = torch.zeros((len(sequences),width-1), dtype=torch.bool)
     for i, seq in enumerate(sequences):
