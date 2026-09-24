@@ -45,9 +45,12 @@ def build_dataset(runs):
                             "test":splits["test"],"ood":splits["ood"]})
         prompts={s:{r["prompt"] for r in rows} for s,rows in splits.items()}
         if prompts["train"]&(prompts["validation"]|prompts["test"]): raise ValueError("In-family prompt overlap")
+        # Label-bearing membership is an audit artifact, never trainer metadata.
+        write_json(run.path/"split-audit.json",{"version":EXPERIMENT,
+            "world_coefficients":{s:[r["world_coefficients"] for r in rows] for s,rows in splits.items()}})
         write_json(run.path/"split-manifest.json",{"version":EXPERIMENT,"excluded_coefficients":excluded,
             "excluded_sha256":digest(excluded),"counts":{s:len(rows) for s,rows in splits.items()},
-            "world_coefficients":{s:[r["world_coefficients"] for r in rows] for s,rows in splits.items()},
+            "group_hashes":{s:digest(sorted(r["group"] for r in rows)) for s,rows in splits.items()},
             "train_validation_sha256":file_hash(train),"holdout_sha256":file_hash(holdout),
             "ood_prompt_overlap_with_train":len(prompts["ood"]&prompts["train"]),
             "cross_version_world_overlap":0})

@@ -3,6 +3,7 @@ import importlib.util
 import json
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 from aim.contracts import ContractError
@@ -54,6 +55,17 @@ class FiniteDifferenceTests(unittest.TestCase):
 
 @unittest.skipUnless(HAS_TORCH,'Optional torch environment missing')
 class ComparisonIntegrationTests(unittest.TestCase):
+    def test_dataset_metadata_contains_no_holdout_coefficients(self):
+        from aim.comparison_data import build_dataset
+        with tempfile.TemporaryDirectory() as temp:
+            path=build_dataset(Path(temp))
+            metadata=json.loads((path/'split-manifest.json').read_text())
+            self.assertNotIn('world_coefficients',metadata)
+            self.assertNotIn('test',metadata)
+            audit=json.loads((path/'split-audit.json').read_text())
+            self.assertEqual(len(audit['world_coefficients']['test']),64)
+            self.assertEqual(len(audit['world_coefficients']['ood']),64)
+
     def test_padding_preserves_supervised_tokens_and_scores(self):
         import torch
         from aim.neural import CausalLM, ModelConfig, ByteTokenizer
@@ -92,7 +104,12 @@ class ComparisonIntegrationTests(unittest.TestCase):
             config={"protocol":EXPERIMENT,"seeds":[17],"steps":1,"evaluation_steps":[1],"batch_size":1,
                     "learning_rate":.001,"weight_decay":.01,"max_new_tokens":8,"deadline_seconds":60,"pad_to":256,
                     "model":{"width":16,"layers":1,"heads":2,"kv_heads":1,"ffn_width":32,"context":256}}
-            trained=train(config,path/'train-validation.json',path/'runs')
+            original_read=Path.read_text
+            def isolated_read(file,*args,**kwargs):
+                if file.name in ('holdout.json','split-audit.json'): raise AssertionError('Trainer opened label-bearing holdout/audit file')
+                return original_read(file,*args,**kwargs)
+            with patch.object(Path,'read_text',isolated_read):
+                trained=train(config,path/'train-validation.json',path/'runs')
             selected=json.loads((trained/'selected-models.json').read_text())
             self.assertTrue(selected['paired_initial_weights_equal'])
             for arm in selected['arms'].values(): self.assertEqual(arm['selections'][0]['processed_positions'],256)
@@ -100,6 +117,9 @@ class ComparisonIntegrationTests(unittest.TestCase):
             self.assertEqual(report['backends']['reference-test']['verified_worlds'],1)
             self.assertEqual(report['unbacked_verified_claims'],0)
             self.assertFalse(report['worked_promotion_gate'])
+            metadata=json.loads((path/'split-manifest.json').read_text());metadata['world_coefficients']={'test':[[3,1,1]]}
+            (path/'split-manifest.json').write_text(json.dumps(metadata))
+            with self.assertRaises(ContractError): train(config,path/'train-validation.json',path/'runs')
             (path/'holdout.json').write_text('{}')
             with self.assertRaises(ContractError): evaluate(trained/'selected-models.json',path/'holdout.json',path/'runs')
 

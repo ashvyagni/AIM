@@ -27,6 +27,10 @@ def train(config,data_path,runs):
     with Run(Path(runs),"comparison-training",config,[data_path,protocol]) as run:
         if config.get("protocol")!=EXPERIMENT: raise ContractError("Wrong comparison protocol")
         data=json.loads(data_path.read_text());manifest=json.loads((data_path.parent/"split-manifest.json").read_text())
+        allowed_metadata={"version","excluded_coefficients","excluded_sha256","counts","group_hashes",
+                          "train_validation_sha256","holdout_sha256","ood_prompt_overlap_with_train","cross_version_world_overlap"}
+        if not set(manifest)<=allowed_metadata:
+            raise ContractError("Unexpected split metadata; labels must remain in the separate audit/holdout files")
         if (set(data)!={"schema","version","train","validation"} or data["version"]!=EXPERIMENT or
             data["schema"]!="aim-research-comparison-sft-v1" or file_hash(data_path)!=manifest["train_validation_sha256"]):
             raise ContractError("Comparison dataset schema/hash mismatch")
