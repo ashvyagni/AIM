@@ -1,0 +1,48 @@
+test_abstention_is_unknown (test_core.CoreTests.test_abstention_is_unknown) ... ok
+test_actual_worker_timeout (test_core.CoreTests.test_actual_worker_timeout) ... ok
+test_budget_exhaustion (test_core.CoreTests.test_budget_exhaustion) ... ok
+test_calculation_at_zero (test_core.CoreTests.test_calculation_at_zero) ... ok
+test_canonical_suite (test_core.CoreTests.test_canonical_suite) ... ok
+test_changed_source_detected (test_core.CoreTests.test_changed_source_detected) ... ok
+test_conflicting_evidence (test_core.CoreTests.test_conflicting_evidence) ... ok
+test_eval_change_rejected (test_core.CoreTests.test_eval_change_rejected) ... ok
+test_fabricated_citation_rejected (test_core.CoreTests.test_fabricated_citation_rejected) ... ok
+test_failure_is_retained_with_source_snapshot (test_core.CoreTests.test_failure_is_retained_with_source_snapshot) ... ok
+test_forecast_cannot_verify (test_core.CoreTests.test_forecast_cannot_verify) ... ok
+test_forged_quote_rejected (test_core.CoreTests.test_forged_quote_rejected) ... ok
+test_full_loop_and_replay (test_core.CoreTests.test_full_loop_and_replay) ... ok
+test_ledger_append_only (test_core.CoreTests.test_ledger_append_only) ... ok
+test_ledger_hash_detects_tampering (test_core.CoreTests.test_ledger_hash_detects_tampering) ... ok
+test_missing_input_failure_is_retained (test_core.CoreTests.test_missing_input_failure_is_retained) ... ok
+test_model_cannot_mutate_owned_state (test_core.CoreTests.test_model_cannot_mutate_owned_state) ... ok
+test_nested_records_serialize (test_core.CoreTests.test_nested_records_serialize) ... ok
+test_nonfinite_and_boolean_rejected (test_core.CoreTests.test_nonfinite_and_boolean_rejected) ... ok
+test_source_versions_are_distinct (test_core.CoreTests.test_source_versions_are_distinct) ... ok
+test_tool_allowlist (test_core.CoreTests.test_tool_allowlist) ... ok
+test_unavailable_never_verified (test_core.CoreTests.test_unavailable_never_verified) ... ok
+test_unknown_not_scored_false (test_core.CoreTests.test_unknown_not_scored_false) ... ok
+test_verified_claim_mutation_detected (test_core.CoreTests.test_verified_claim_mutation_detected) ... ok
+test_wrong_judge_claim_rejected (test_core.CoreTests.test_wrong_judge_claim_rejected) ... ok
+test_arithmetic_split_is_disjoint (test_training.DatasetTests.test_arithmetic_split_is_disjoint) ... ok
+test_judge_group_splits_are_disjoint (test_training.DatasetTests.test_judge_group_splits_are_disjoint) ... ok
+test_supervised_intake_and_label_provenance (test_training.DatasetTests.test_supervised_intake_and_label_provenance) ... ok
+test_verifier_does_not_use_preference_label (test_training.DatasetTests.test_verifier_does_not_use_preference_label) ... ok
+test_causal_prefix_invariance (test_training.NeuralTests.test_causal_prefix_invariance) ... ok
+test_checkpoint_tampering_rejected (test_training.NeuralTests.test_checkpoint_tampering_rejected) ... ok
+test_context_overflow_fails (test_training.NeuralTests.test_context_overflow_fails) ... ok
+test_dpo_value_and_gradient (test_training.NeuralTests.test_dpo_value_and_gradient) ... ok
+test_exact_cpu_checkpoint_resume (test_training.NeuralTests.test_exact_cpu_checkpoint_resume) ... ok
+test_large_allocation_blocked_before_model_creation (test_training.NeuralTests.test_large_allocation_blocked_before_model_creation) ... ok
+test_parameter_accounting (test_training.NeuralTests.test_parameter_accounting) ... ok
+test_posttraining_stages_are_separate_and_update (test_training.NeuralTests.test_posttraining_stages_are_separate_and_update) ... ok
+test_preference_without_initial_checkpoint_fails (test_training.NeuralTests.test_preference_without_initial_checkpoint_fails) ... ok
+test_proper_scoring_losses (test_training.NeuralTests.test_proper_scoring_losses) ... ok
+test_response_mask_and_padding (test_training.NeuralTests.test_response_mask_and_padding) ... ok
+test_rlvr_reward_gradient_and_reference_frozen (test_training.NeuralTests.test_rlvr_reward_gradient_and_reference_frozen) ... ok
+test_stage_mismatch_cannot_resume (test_training.NeuralTests.test_stage_mismatch_cannot_resume) ... ok
+test_unicode_tokenizer_roundtrip (test_training.NeuralTests.test_unicode_tokenizer_roundtrip) ... ok
+
+----------------------------------------------------------------------
+Ran 43 tests in 6.091s
+
+OK

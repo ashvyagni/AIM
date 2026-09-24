@@ -1,0 +1,217 @@
+{
+  "assumptions": [
+    "Synthetic numerical domain; demonstration of architecture only",
+    "Verification is local agreement at one measurement, not scientific law discovery",
+    "Researcher backend: algorithmic-polynomial-reference-v1"
+  ],
+  "claims": [
+    {
+      "evidence_ids": [
+        "ev-2871ee7c7ff5da50e0d74d49"
+      ],
+      "forecast": {
+        "action": "VERIFY",
+        "calibration_status": "temperature fit on synthetic validation; scope-limited, see checkpoint metrics",
+        "claim_id": "c-h-degree-1",
+        "model_id": "aim-judge-10323bd5d0aa5895c823b9a5fa2246d6f3f53bd394d8e183c265f9e30efcc6fc",
+        "probability": 0.2774265706539154,
+        "target": "candidate prediction matches next synthetic measurement within absolute tolerance 1e-8"
+      },
+      "hypothesis_id": "h-degree-1",
+      "id": "c-h-degree-1",
+      "predicted": 13.0,
+      "status": "CONTRADICTED",
+      "target_x": 4,
+      "text": "y(4) = 13.0",
+      "verification_ids": [
+        "vp-dd94e9ecda836b9f167521b5",
+        "v-457ae70da4d5add22d9179c7"
+      ]
+    },
+    {
+      "evidence_ids": [
+        "ev-2871ee7c7ff5da50e0d74d49"
+      ],
+      "forecast": {
+        "action": "VERIFY",
+        "calibration_status": "temperature fit on synthetic validation; scope-limited, see checkpoint metrics",
+        "claim_id": "c-h-degree-2",
+        "model_id": "aim-judge-10323bd5d0aa5895c823b9a5fa2246d6f3f53bd394d8e183c265f9e30efcc6fc",
+        "probability": 0.9999836683273315,
+        "target": "candidate prediction matches next synthetic measurement within absolute tolerance 1e-8"
+      },
+      "hypothesis_id": "h-degree-2",
+      "id": "c-h-degree-2",
+      "predicted": 25.0,
+      "status": "VERIFIED",
+      "target_x": 4,
+      "text": "y(4) = 25.0",
+      "verification_ids": [
+        "vp-cae41746bbcdae789ce7fc86",
+        "v-437250508817a1999fdbd7f8"
+      ]
+    }
+  ],
+  "contradictions": [
+    {
+      "claim_id": "c-h-degree-1",
+      "status": "prediction rejected; history retained",
+      "verification_id": "v-457ae70da4d5add22d9179c7"
+    }
+  ],
+  "evidence": [
+    {
+      "end": 63,
+      "id": "ev-2871ee7c7ff5da50e0d74d49",
+      "locator": "chars:0:63",
+      "quote": "{\"topic\":\"instrument-alpha\",\"observations\":[[0,1],[1,4],[2,9]]}",
+      "quote_hash": "8bead4bc1f3d01b5e06cce70daec5df6cd403b310a4ad73e613501c3b1e8194b",
+      "source_hash": "8bead4bc1f3d01b5e06cce70daec5df6cd403b310a4ad73e613501c3b1e8194b",
+      "source_id": "src-e36dc9f51fa4e2d3eeee8ca8",
+      "start": 0
+    },
+    {
+      "end": 194,
+      "id": "ev-6dd112610e109a1947d9e12d",
+      "locator": "chars:0:194",
+      "quote": "{\"result\":{\"action_id\":\"action-3\",\"detail\":\"synthetic-measurement-v1\",\"elapsed_seconds\":0.050286875004530884,\"outcome\":\"PASS\",\"tool_version\":\"bounded-worker-v1\",\"value\":25.0},\"value\":25.0,\"x\":4}",
+      "quote_hash": "12bcedc5482a6ac5089fd2a3966c99498405b65198c706427acb29b308ac33a0",
+      "source_hash": "12bcedc5482a6ac5089fd2a3966c99498405b65198c706427acb29b308ac33a0",
+      "source_id": "src-c420998738b325244cbb770e",
+      "start": 0
+    }
+  ],
+  "final_response": "# AIM Model-1 investigation\n\nFor instrument alpha, compare linear and quadratic hypotheses and predict the reading at x=4.\n\n## Findings\n\n- c-h-degree-1: y(4) = 13.0 \u2014 CONTRADICTED. Evidence: ev-2871ee7c7ff5da50e0d74d49.\n  Pre-measurement forecast: 0.2774; target: candidate prediction matches next synthetic measurement within absolute tolerance 1e-8.\n  Check vp-dd94e9ecda836b9f167521b5: source-span-integrity@1 = PASS. Scope: Exact source/version/span identity only; no general natural-language entailment. Evidence: ev-2871ee7c7ff5da50e0d74d49.\n  Check v-457ae70da4d5add22d9179c7: numeric-observation-agreement@1 = FAIL. Scope: Prediction agreement with synthetic measurement at x=4; not a proof of the global law. Evidence: ev-6dd112610e109a1947d9e12d.\n- c-h-degree-2: y(4) = 25.0 \u2014 VERIFIED. Evidence: ev-2871ee7c7ff5da50e0d74d49.\n  Pre-measurement forecast: 1.0000; target: candidate prediction matches next synthetic measurement within absolute tolerance 1e-8.\n  Check vp-cae41746bbcdae789ce7fc86: source-span-integrity@1 = PASS. Scope: Exact source/version/span identity only; no general natural-language entailment. Evidence: ev-2871ee7c7ff5da50e0d74d49.\n  Check v-437250508817a1999fdbd7f8: numeric-observation-agreement@1 = PASS. Scope: Prediction agreement with synthetic measurement at x=4; not a proof of the global law. Evidence: ev-6dd112610e109a1947d9e12d.\n\n## Unresolved and limitations\n\n- Synthetic numerical domain; demonstration of architecture only\n- Verification is local agreement at one measurement, not scientific law discovery\n- Researcher backend: algorithmic-polynomial-reference-v1\n\n## Evidence\n\n- ev-2871ee7c7ff5da50e0d74d49: [src-e36dc9f51fa4e2d3eeee8ca8](memory/objects/8bead4bc1f3d01b5e06cce70daec5df6cd403b310a4ad73e613501c3b1e8194b), chars:0:63, SHA-256 8bead4bc1f3d01b5e06cce70daec5df6cd403b310a4ad73e613501c3b1e8194b.\n- ev-6dd112610e109a1947d9e12d: [src-c420998738b325244cbb770e](memory/objects/12bcedc5482a6ac5089fd2a3966c99498405b65198c706427acb29b308ac33a0), chars:0:194, SHA-256 12bcedc5482a6ac5089fd2a3966c99498405b65198c706427acb29b308ac33a0.\n",
+  "hypotheses": [
+    {
+      "coefficients": [
+        1.0,
+        3.0
+      ],
+      "evidence_ids": [
+        "ev-2871ee7c7ff5da50e0d74d49"
+      ],
+      "id": "h-degree-1",
+      "rationale": "Degree 1 interpolant; fit is a candidate, not a law proof"
+    },
+    {
+      "coefficients": [
+        1.0,
+        2.0,
+        1.0
+      ],
+      "evidence_ids": [
+        "ev-2871ee7c7ff5da50e0d74d49"
+      ],
+      "id": "h-degree-2",
+      "rationale": "Degree 2 interpolant; fit is a candidate, not a law proof"
+    }
+  ],
+  "observations": [
+    [
+      0.0,
+      1.0
+    ],
+    [
+      1.0,
+      4.0
+    ],
+    [
+      2.0,
+      9.0
+    ]
+  ],
+  "phase": "FINAL",
+  "plan": [
+    "Retrieve versioned observations for the topic",
+    "Compare linear and quadratic hypotheses",
+    "Predict a new measurement",
+    "Request independent measurement and verify each prediction",
+    "Revise claims and report check scope with exact evidence"
+  ],
+  "question": "For instrument alpha, compare linear and quadratic hypotheses and predict the reading at x=4.",
+  "results": [
+    {
+      "action_id": "action-1",
+      "detail": "decimal-polynomial-v1",
+      "elapsed_seconds": 0.05143491699709557,
+      "outcome": "PASS",
+      "tool_version": "bounded-worker-v1",
+      "value": 13.0
+    },
+    {
+      "action_id": "action-2",
+      "detail": "decimal-polynomial-v1",
+      "elapsed_seconds": 0.04871341699617915,
+      "outcome": "PASS",
+      "tool_version": "bounded-worker-v1",
+      "value": 25.0
+    },
+    {
+      "action_id": "action-3",
+      "detail": "synthetic-measurement-v1",
+      "elapsed_seconds": 0.050286875004530884,
+      "outcome": "PASS",
+      "tool_version": "bounded-worker-v1",
+      "value": 25.0
+    }
+  ],
+  "schema_version": "1",
+  "target_x": 4,
+  "topic": "instrument-alpha",
+  "unknowns": [],
+  "verifications": [
+    {
+      "claim_hash": "dd94e9ecda836b9f167521b5e933340e1dd32a76d1f8990b2224e47d6702b81b",
+      "claim_id": "c-h-degree-1",
+      "detail": "All cited spans resolve and match originals",
+      "evidence_ids": [
+        "ev-2871ee7c7ff5da50e0d74d49"
+      ],
+      "id": "vp-dd94e9ecda836b9f167521b5",
+      "outcome": "PASS",
+      "scope": "Exact source/version/span identity only; no general natural-language entailment",
+      "verifier": "source-span-integrity",
+      "version": "1"
+    },
+    {
+      "claim_hash": "dd94e9ecda836b9f167521b5e933340e1dd32a76d1f8990b2224e47d6702b81b",
+      "claim_id": "c-h-degree-1",
+      "detail": "absolute_difference=12.0; absolute_tolerance=1e-8",
+      "evidence_ids": [
+        "ev-6dd112610e109a1947d9e12d"
+      ],
+      "id": "v-457ae70da4d5add22d9179c7",
+      "outcome": "FAIL",
+      "scope": "Prediction agreement with synthetic measurement at x=4; not a proof of the global law",
+      "verifier": "numeric-observation-agreement",
+      "version": "1"
+    },
+    {
+      "claim_hash": "cae41746bbcdae789ce7fc86712a6b3c6d7f1277b1779517ad59f2df325ccbae",
+      "claim_id": "c-h-degree-2",
+      "detail": "All cited spans resolve and match originals",
+      "evidence_ids": [
+        "ev-2871ee7c7ff5da50e0d74d49"
+      ],
+      "id": "vp-cae41746bbcdae789ce7fc86",
+      "outcome": "PASS",
+      "scope": "Exact source/version/span identity only; no general natural-language entailment",
+      "verifier": "source-span-integrity",
+      "version": "1"
+    },
+    {
+      "claim_hash": "cae41746bbcdae789ce7fc86712a6b3c6d7f1277b1779517ad59f2df325ccbae",
+      "claim_id": "c-h-degree-2",
+      "detail": "absolute_difference=0.0; absolute_tolerance=1e-8",
+      "evidence_ids": [
+        "ev-6dd112610e109a1947d9e12d"
+      ],
+      "id": "v-437250508817a1999fdbd7f8",
+      "outcome": "PASS",
+      "scope": "Prediction agreement with synthetic measurement at x=4; not a proof of the global law",
+      "verifier": "numeric-observation-agreement",
+      "version": "1"
+    }
+  ]
+}
