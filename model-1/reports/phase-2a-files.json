@@ -1,0 +1,126 @@
+{
+  "baseline_commit": "72af36c9e3c72dba3e33d2e9bf45448e8ba60210",
+  "scope": "Phase 2A exact changed files; retained local runs and checkpoints are intentionally untracked",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1869,
+      "sha256": "a264330a2048c618172f69bcfedf1eb5364281c6ec881b7352691e30e51daa3f"
+    },
+    {
+      "path": "documents/AIM_Model_1_Implementation_Directive.md",
+      "bytes": 6358,
+      "sha256": "6a405f46a49b6c12562606f59ad5edac5166adf2ef5a2f51df80f34b7309e1ea"
+    },
+    {
+      "path": "model-1/README.md",
+      "bytes": 8022,
+      "sha256": "57cee46e77551211d724614fd09c9edbb7b974a931e778cae08a4ddaf1b5bd41"
+    },
+    {
+      "path": "model-1/aim/controller.py",
+      "bytes": 13242,
+      "sha256": "2be8e22e73697842cf7c2d6a631ff9331fc50ff00bc7f7dc44fe0dad8317104b"
+    },
+    {
+      "path": "model-1/aim/research_data.py",
+      "bytes": 5608,
+      "sha256": "c7fe57b6ea315a4aae822eb878774687e165437b0700fbd8a0b1a886144d7560"
+    },
+    {
+      "path": "model-1/aim/research_eval.py",
+      "bytes": 9050,
+      "sha256": "ccd25ce23dd7bd9c34e42722972f7ae12cea530ed6514e9690a0523717259784"
+    },
+    {
+      "path": "model-1/aim/research_format.py",
+      "bytes": 3912,
+      "sha256": "9c50a8ee611ae1a93abf40664874d4a87c7903310ae9eba2f40a534759fd0077"
+    },
+    {
+      "path": "model-1/aim/research_train.py",
+      "bytes": 9227,
+      "sha256": "c3fdbc6e10256d8b84486ee02a660f65d5a53ead3f16a0b220bed536e198e5fa"
+    },
+    {
+      "path": "model-1/aim/researcher.py",
+      "bytes": 4825,
+      "sha256": "c5f9a708f580dfbd77f55f704b97b2d3c39c96979b0dc78f7b0ebf2c333745b6"
+    },
+    {
+      "path": "model-1/configs/structured-researcher.json",
+      "bytes": 363,
+      "sha256": "d19bad7e8b24cdf2714a41b50681b91a72dba731b213616ebeb50714c162b779"
+    },
+    {
+      "path": "model-1/docs/DECISIONS.md",
+      "bytes": 9396,
+      "sha256": "4f0f7217a6934fa8efa66f742df7c1507a9aaca03e503b7cb9b89dfe68eda469"
+    },
+    {
+      "path": "model-1/docs/IMPLEMENTATION_PLAN.md",
+      "bytes": 10046,
+      "sha256": "1c8267fdf529046671584351f2eedf32b0a65756e2edc69381da8382eac5c792"
+    },
+    {
+      "path": "model-1/docs/STRUCTURED_RESEARCHER.md",
+      "bytes": 7270,
+      "sha256": "9b7bc5768704c71878f97322056508c5e20d17adcc83a183b3c2a2cfef9c3ea6"
+    },
+    {
+      "path": "model-1/docs/experiments/phase-2a-protocol.md",
+      "bytes": 6102,
+      "sha256": "e3fb7e428148f21a50c72d66b0d4cf7d0f2e20a832427e1fa8b0f49395aa601a"
+    },
+    {
+      "path": "model-1/reports/phase-2a-evidence/case-results.json",
+      "bytes": 698513,
+      "sha256": "c93c6fe3ade9356224082fe8846f3c0d533bb42ebee8c371bd6131cfd6b7f628"
+    },
+    {
+      "path": "model-1/reports/phase-2a-evidence/illustrative-cases.json",
+      "bytes": 14147,
+      "sha256": "a0e224b35b56354b2388c2f403e7e26ed5a3a72516c177fc55f6253194d92757"
+    },
+    {
+      "path": "model-1/reports/phase-2a-evidence/results.json",
+      "bytes": 29456,
+      "sha256": "4826825a21bb9f2ae904c029e213294d92fe843052703924400de02e9dee7144"
+    },
+    {
+      "path": "model-1/reports/phase-2a-evidence/tests.log",
+      "bytes": 7446,
+      "sha256": "edb227588d84de938fa110ed3402fd241d139bfac6f2e2dddf057c23e8ec6062"
+    },
+    {
+      "path": "model-1/reports/phase-2a-files.json",
+      "sha256": null,
+      "note": "Self hash excluded to avoid recursion"
+    },
+    {
+      "path": "model-1/reports/phase-2a-implementation.md",
+      "bytes": 11639,
+      "sha256": "cff86c620be6874d8dd96b1e5bb6ce8ebfe312ca121e3d00c9918fc94319c18f"
+    },
+    {
+      "path": "model-1/tests/test_research_data.py",
+      "bytes": 2208,
+      "sha256": "ea836283acf1d16bd6a75997655d9a19001e4efb53860eb0abad7f2cb16e7d5f"
+    },
+    {
+      "path": "model-1/tests/test_research_eval.py",
+      "bytes": 1939,
+      "sha256": "dd4db3abec151a733498848b2a2b6a228ecc66b73c753ffc12ac7527c536bf7b"
+    },
+    {
+      "path": "model-1/tests/test_research_format.py",
+      "bytes": 4309,
+      "sha256": "542171918365423402b13a058c1436eb9bde434d9e21df1ed3a43281079a295e"
+    },
+    {
+      "path": "model-1/tests/test_research_training.py",
+      "bytes": 3557,
+      "sha256": "4d49598491b5c8090569f719c8ac042414e4874ba06f3dcbac30c8fd24e3ca60"
+    }
+  ]
+}

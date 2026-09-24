@@ -1,0 +1,70 @@
+{"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.508413696289063, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/runs/20260924T143954-research-training-4d4a7c8e/seeds/20260924T143954-research-sft-seed17-7331f9af"}
+{"seed": 17, "step": 1, "validation": {"n": 1, "response_token_nll": 5.489293077256945, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/runs/20260924T143954-research-training-4d4a7c8e/seeds/20260924T143954-research-sft-seed17-7331f9af"}
+test_abstention_is_unknown (test_core.CoreTests.test_abstention_is_unknown) ... ok
+test_actual_worker_timeout (test_core.CoreTests.test_actual_worker_timeout) ... ok
+test_budget_exhaustion (test_core.CoreTests.test_budget_exhaustion) ... ok
+test_calculation_at_zero (test_core.CoreTests.test_calculation_at_zero) ... ok
+test_canonical_suite (test_core.CoreTests.test_canonical_suite) ... ok
+test_changed_source_detected (test_core.CoreTests.test_changed_source_detected) ... ok
+test_conflicting_evidence (test_core.CoreTests.test_conflicting_evidence) ... ok
+test_eval_change_rejected (test_core.CoreTests.test_eval_change_rejected) ... ok
+test_fabricated_citation_rejected (test_core.CoreTests.test_fabricated_citation_rejected) ... ok
+test_failure_is_retained_with_source_snapshot (test_core.CoreTests.test_failure_is_retained_with_source_snapshot) ... ok
+test_forecast_cannot_verify (test_core.CoreTests.test_forecast_cannot_verify) ... ok
+test_forged_quote_rejected (test_core.CoreTests.test_forged_quote_rejected) ... ok
+test_full_loop_and_replay (test_core.CoreTests.test_full_loop_and_replay) ... ok
+test_ledger_append_only (test_core.CoreTests.test_ledger_append_only) ... ok
+test_ledger_hash_detects_tampering (test_core.CoreTests.test_ledger_hash_detects_tampering) ... ok
+test_missing_input_failure_is_retained (test_core.CoreTests.test_missing_input_failure_is_retained) ... ok
+test_model_cannot_mutate_owned_state (test_core.CoreTests.test_model_cannot_mutate_owned_state) ... ok
+test_nested_records_serialize (test_core.CoreTests.test_nested_records_serialize) ... ok
+test_nonfinite_and_boolean_rejected (test_core.CoreTests.test_nonfinite_and_boolean_rejected) ... ok
+test_source_versions_are_distinct (test_core.CoreTests.test_source_versions_are_distinct) ... ok
+test_tool_allowlist (test_core.CoreTests.test_tool_allowlist) ... ok
+test_unavailable_never_verified (test_core.CoreTests.test_unavailable_never_verified) ... ok
+test_unknown_not_scored_false (test_core.CoreTests.test_unknown_not_scored_false) ... ok
+test_verified_claim_mutation_detected (test_core.CoreTests.test_verified_claim_mutation_detected) ... ok
+test_wrong_judge_claim_rejected (test_core.CoreTests.test_wrong_judge_claim_rejected) ... ok
+test_holdout_file_is_not_training_input (test_research_data.ResearchDataTests.test_holdout_file_is_not_training_input) ... ok
+test_labels_match_exact_world_and_citations (test_research_data.ResearchDataTests.test_labels_match_exact_world_and_citations) ... ok
+test_partition_counts_disjointness_and_determinism (test_research_data.ResearchDataTests.test_partition_counts_disjointness_and_determinism) ... ok
+test_invalid_worlds_stay_in_denominator (test_research_eval.ResearchEvaluationTests.test_invalid_worlds_stay_in_denominator) ... ok
+test_paired_gain_and_loss (test_research_eval.ResearchEvaluationTests.test_paired_gain_and_loss) ... ok
+test_reference_has_same_one_candidate_budget (test_research_eval.ResearchEvaluationTests.test_reference_has_same_one_candidate_budget) ... ok
+test_wilson_boundaries (test_research_eval.ResearchEvaluationTests.test_wilson_boundaries) ... ok
+test_adapter_loop_binds_and_verifies_claim (test_research_format.FormatTests.test_adapter_loop_binds_and_verifies_claim) ... ok
+test_fabricated_and_missing_aliases_fail (test_research_format.FormatTests.test_fabricated_and_missing_aliases_fail) ... ok
+test_invalid_generation_has_no_reference_fallback (test_research_format.FormatTests.test_invalid_generation_has_no_reference_fallback) ... ok
+test_invalid_json_and_duplicate_fields_fail (test_research_format.FormatTests.test_invalid_json_and_duplicate_fields_fail) ... ok
+test_nonfinite_boolean_and_extra_candidates_fail (test_research_format.FormatTests.test_nonfinite_boolean_and_extra_candidates_fail) ... ok
+test_post_action_state_is_rejected (test_research_format.FormatTests.test_post_action_state_is_rejected) ... ok
+test_prompt_contains_observations_not_measurement (test_research_format.FormatTests.test_prompt_contains_observations_not_measurement) ... ok
+test_valid_output_maps_to_real_evidence (test_research_format.FormatTests.test_valid_output_maps_to_real_evidence) ... ok
+test_score_uses_actual_next_measurement (test_research_training.ResearchTrainingTests.test_score_uses_actual_next_measurement) ... ok
+test_selection_priorities_and_earliest_tie (test_research_training.ResearchTrainingTests.test_selection_priorities_and_earliest_tie) ... ok
+test_tampered_training_file_rejected (test_research_training.ResearchTrainingTests.test_tampered_training_file_rejected) ... ok
+test_training_freezes_checkpoints_without_opening_holdout (test_research_training.ResearchTrainingTests.test_training_freezes_checkpoints_without_opening_holdout) ... ok
+test_update_budget_rejected (test_research_training.ResearchTrainingTests.test_update_budget_rejected) ... ok
+test_arithmetic_split_is_disjoint (test_training.DatasetTests.test_arithmetic_split_is_disjoint) ... ok
+test_judge_group_splits_are_disjoint (test_training.DatasetTests.test_judge_group_splits_are_disjoint) ... ok
+test_supervised_intake_and_label_provenance (test_training.DatasetTests.test_supervised_intake_and_label_provenance) ... ok
+test_verifier_does_not_use_preference_label (test_training.DatasetTests.test_verifier_does_not_use_preference_label) ... ok
+test_causal_prefix_invariance (test_training.NeuralTests.test_causal_prefix_invariance) ... ok
+test_checkpoint_tampering_rejected (test_training.NeuralTests.test_checkpoint_tampering_rejected) ... ok
+test_context_overflow_fails (test_training.NeuralTests.test_context_overflow_fails) ... ok
+test_dpo_value_and_gradient (test_training.NeuralTests.test_dpo_value_and_gradient) ... ok
+test_exact_cpu_checkpoint_resume (test_training.NeuralTests.test_exact_cpu_checkpoint_resume) ... ok
+test_large_allocation_blocked_before_model_creation (test_training.NeuralTests.test_large_allocation_blocked_before_model_creation) ... ok
+test_parameter_accounting (test_training.NeuralTests.test_parameter_accounting) ... ok
+test_posttraining_stages_are_separate_and_update (test_training.NeuralTests.test_posttraining_stages_are_separate_and_update) ... ok
+test_preference_without_initial_checkpoint_fails (test_training.NeuralTests.test_preference_without_initial_checkpoint_fails) ... ok
+test_proper_scoring_losses (test_training.NeuralTests.test_proper_scoring_losses) ... ok
+test_response_mask_and_padding (test_training.NeuralTests.test_response_mask_and_padding) ... ok
+test_rlvr_reward_gradient_and_reference_frozen (test_training.NeuralTests.test_rlvr_reward_gradient_and_reference_frozen) ... ok
+test_stage_mismatch_cannot_resume (test_training.NeuralTests.test_stage_mismatch_cannot_resume) ... ok
+test_unicode_tokenizer_roundtrip (test_training.NeuralTests.test_unicode_tokenizer_roundtrip) ... ok
+
+----------------------------------------------------------------------
+Ran 63 tests in 4.108s
+
+OK

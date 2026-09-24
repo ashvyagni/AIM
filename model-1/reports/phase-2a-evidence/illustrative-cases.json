@@ -1,0 +1,318 @@
+{
+  "contradicted": {
+    "generation": {
+      "aliases": {
+        "E0": "ev-b7c01c37a24406905c4dba83"
+      },
+      "contract": "aim-structured-research-v1",
+      "error_category": null,
+      "max_new_tokens": 80,
+      "prompt": "{\"task\":\"fit-degree<=2\",\"evidence\":{\"E0\":[[0,0],[1,-9],[2,-20]]},\"x\":4}\n",
+      "raw_output": "{\"coefficients\":[[0,-6,-3]],\"evidence\":[\"E0\"]}",
+      "valid": true
+    },
+    "selection_note": "First such case in fixed evaluation order; illustrative, not representative",
+    "state": {
+      "assumptions": [
+        "Synthetic numerical domain; demonstration of architecture only",
+        "Verification is local agreement at one measurement, not scientific law discovery",
+        "Researcher backend: aim-random-origin-checkpoint-f82a72e8e0069f9dd399e199bd64c8eb9c412bb3aae90579c0446dab11f82962"
+      ],
+      "claims": [
+        {
+          "evidence_ids": [
+            "ev-b7c01c37a24406905c4dba83"
+          ],
+          "forecast": {
+            "action": "VERIFY",
+            "calibration_status": "untrained; no probability claimed",
+            "claim_id": "c-h-neural-0",
+            "model_id": "verification-first-rule-v1",
+            "probability": null,
+            "target": "candidate prediction matches next synthetic measurement within absolute tolerance 1e-8"
+          },
+          "hypothesis_id": "h-neural-0",
+          "id": "c-h-neural-0",
+          "predicted": -72.0,
+          "status": "CONTRADICTED",
+          "target_x": 4,
+          "text": "y(4) = -72.0",
+          "verification_ids": [
+            "vp-50eee451ead425e1ad3b4607",
+            "v-4bdbbc37bef3034d1b63240a"
+          ]
+        }
+      ],
+      "contradictions": [
+        {
+          "claim_id": "c-h-neural-0",
+          "status": "prediction rejected; history retained",
+          "verification_id": "v-4bdbbc37bef3034d1b63240a"
+        }
+      ],
+      "evidence": [
+        {
+          "end": 99,
+          "id": "ev-b7c01c37a24406905c4dba83",
+          "locator": "chars:0:99",
+          "quote": "{\"topic\": \"instrument-p2a-000408c4a9736e7854e8\", \"observations\": [[0, 0.0], [1, -9.0], [2, -20.0]]}",
+          "quote_hash": "83862b61b6d26f7026c1a2b675025611a92ba3bdcbfe726937220a7980306d72",
+          "source_hash": "83862b61b6d26f7026c1a2b675025611a92ba3bdcbfe726937220a7980306d72",
+          "source_id": "src-7394db973b994f8d84dfb946",
+          "start": 0
+        },
+        {
+          "end": 196,
+          "id": "ev-9867ed5ac7b957849a57cb9d",
+          "locator": "chars:0:196",
+          "quote": "{\"result\":{\"action_id\":\"action-2\",\"detail\":\"synthetic-measurement-v1\",\"elapsed_seconds\":0.027650165997329168,\"outcome\":\"PASS\",\"tool_version\":\"bounded-worker-v1\",\"value\":-48.0},\"value\":-48.0,\"x\":4}",
+          "quote_hash": "985d43e52e11bf6324bb44ea4c613a24c6f588544d82c597aa00861e53cbff6e",
+          "source_hash": "985d43e52e11bf6324bb44ea4c613a24c6f588544d82c597aa00861e53cbff6e",
+          "source_id": "src-f57387f099e5f39584cd41c9",
+          "start": 0
+        }
+      ],
+      "final_response": "# AIM Model-1 investigation\n\nWhich candidate predicts instrument-p2a-000408c4a9736e7854e8 at x=4?\n\n## Findings\n\n- c-h-neural-0: y(4) = -72.0 \u2014 CONTRADICTED. Evidence: ev-b7c01c37a24406905c4dba83.\n  Check vp-50eee451ead425e1ad3b4607: source-span-integrity@1 = PASS. Scope: Exact source/version/span identity only; no general natural-language entailment. Evidence: ev-b7c01c37a24406905c4dba83.\n  Check v-4bdbbc37bef3034d1b63240a: numeric-observation-agreement@1 = FAIL. Scope: Prediction agreement with synthetic measurement at x=4; not a proof of the global law. Evidence: ev-9867ed5ac7b957849a57cb9d.\n\n## Unresolved and limitations\n\n- Synthetic numerical domain; demonstration of architecture only\n- Verification is local agreement at one measurement, not scientific law discovery\n- Researcher backend: aim-random-origin-checkpoint-f82a72e8e0069f9dd399e199bd64c8eb9c412bb3aae90579c0446dab11f82962\n\n## Evidence\n\n- ev-b7c01c37a24406905c4dba83: [src-7394db973b994f8d84dfb946](memory/objects/83862b61b6d26f7026c1a2b675025611a92ba3bdcbfe726937220a7980306d72), chars:0:99, SHA-256 83862b61b6d26f7026c1a2b675025611a92ba3bdcbfe726937220a7980306d72.\n- ev-9867ed5ac7b957849a57cb9d: [src-f57387f099e5f39584cd41c9](memory/objects/985d43e52e11bf6324bb44ea4c613a24c6f588544d82c597aa00861e53cbff6e), chars:0:196, SHA-256 985d43e52e11bf6324bb44ea4c613a24c6f588544d82c597aa00861e53cbff6e.\n",
+      "hypotheses": [
+        {
+          "coefficients": [
+            0.0,
+            -6.0,
+            -3.0
+          ],
+          "evidence_ids": [
+            "ev-b7c01c37a24406905c4dba83"
+          ],
+          "id": "h-neural-0",
+          "rationale": "Native structured Researcher candidate; independent verification required"
+        }
+      ],
+      "observations": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          -9.0
+        ],
+        [
+          2.0,
+          -20.0
+        ]
+      ],
+      "phase": "FINAL",
+      "plan": [
+        "Generate candidate hypotheses from retrieved observations",
+        "Verify generated candidates",
+        "Publish only scoped checked results"
+      ],
+      "question": "Which candidate predicts instrument-p2a-000408c4a9736e7854e8 at x=4?",
+      "results": [
+        {
+          "action_id": "action-1",
+          "detail": "decimal-polynomial-v1",
+          "elapsed_seconds": 0.03093408299901057,
+          "outcome": "PASS",
+          "tool_version": "bounded-worker-v1",
+          "value": -72.0
+        },
+        {
+          "action_id": "action-2",
+          "detail": "synthetic-measurement-v1",
+          "elapsed_seconds": 0.027650165997329168,
+          "outcome": "PASS",
+          "tool_version": "bounded-worker-v1",
+          "value": -48.0
+        }
+      ],
+      "schema_version": "1",
+      "target_x": 4,
+      "topic": "instrument-p2a-000408c4a9736e7854e8",
+      "unknowns": [],
+      "verifications": [
+        {
+          "claim_hash": "50eee451ead425e1ad3b4607d2162bd576f37d3de2a99558a47ab3e8c335f990",
+          "claim_id": "c-h-neural-0",
+          "detail": "All cited spans resolve and match originals",
+          "evidence_ids": [
+            "ev-b7c01c37a24406905c4dba83"
+          ],
+          "id": "vp-50eee451ead425e1ad3b4607",
+          "outcome": "PASS",
+          "scope": "Exact source/version/span identity only; no general natural-language entailment",
+          "verifier": "source-span-integrity",
+          "version": "1"
+        },
+        {
+          "claim_hash": "50eee451ead425e1ad3b4607d2162bd576f37d3de2a99558a47ab3e8c335f990",
+          "claim_id": "c-h-neural-0",
+          "detail": "absolute_difference=24.0; absolute_tolerance=1e-8",
+          "evidence_ids": [
+            "ev-9867ed5ac7b957849a57cb9d"
+          ],
+          "id": "v-4bdbbc37bef3034d1b63240a",
+          "outcome": "FAIL",
+          "scope": "Prediction agreement with synthetic measurement at x=4; not a proof of the global law",
+          "verifier": "numeric-observation-agreement",
+          "version": "1"
+        }
+      ]
+    }
+  },
+  "verified": {
+    "generation": {
+      "aliases": {
+        "E0": "ev-c4b9a2d1c64d26d0534e0c93"
+      },
+      "contract": "aim-structured-research-v1",
+      "error_category": null,
+      "max_new_tokens": 80,
+      "prompt": "{\"task\":\"fit-degree<=2\",\"evidence\":{\"E0\":[[0,-6],[1,-17],[2,-32]]},\"x\":4}\n",
+      "raw_output": "{\"coefficients\":[[-6,-9,-2]],\"evidence\":[\"E0\"]}",
+      "valid": true
+    },
+    "selection_note": "First such case in fixed evaluation order; illustrative, not representative",
+    "state": {
+      "assumptions": [
+        "Synthetic numerical domain; demonstration of architecture only",
+        "Verification is local agreement at one measurement, not scientific law discovery",
+        "Researcher backend: aim-random-origin-checkpoint-f82a72e8e0069f9dd399e199bd64c8eb9c412bb3aae90579c0446dab11f82962"
+      ],
+      "claims": [
+        {
+          "evidence_ids": [
+            "ev-c4b9a2d1c64d26d0534e0c93"
+          ],
+          "forecast": {
+            "action": "VERIFY",
+            "calibration_status": "untrained; no probability claimed",
+            "claim_id": "c-h-neural-0",
+            "model_id": "verification-first-rule-v1",
+            "probability": null,
+            "target": "candidate prediction matches next synthetic measurement within absolute tolerance 1e-8"
+          },
+          "hypothesis_id": "h-neural-0",
+          "id": "c-h-neural-0",
+          "predicted": -74.0,
+          "status": "VERIFIED",
+          "target_x": 4,
+          "text": "y(4) = -74.0",
+          "verification_ids": [
+            "vp-999e53d6e3be23508c802f29",
+            "v-bdd078df9badefa6d71e46b3"
+          ]
+        }
+      ],
+      "contradictions": [],
+      "evidence": [
+        {
+          "end": 101,
+          "id": "ev-c4b9a2d1c64d26d0534e0c93",
+          "locator": "chars:0:101",
+          "quote": "{\"topic\": \"instrument-p2a-008e44b2ad1b572f9106\", \"observations\": [[0, -6.0], [1, -17.0], [2, -32.0]]}",
+          "quote_hash": "4817085324bef3c28a60992d3f4eabdf864f31503f20ac97f1a18e019b27d920",
+          "source_hash": "4817085324bef3c28a60992d3f4eabdf864f31503f20ac97f1a18e019b27d920",
+          "source_id": "src-6dcc730a5199b64b5e24c088",
+          "start": 0
+        },
+        {
+          "end": 196,
+          "id": "ev-64c2f23501a97e52cd90888f",
+          "locator": "chars:0:196",
+          "quote": "{\"result\":{\"action_id\":\"action-2\",\"detail\":\"synthetic-measurement-v1\",\"elapsed_seconds\":0.026763333997223526,\"outcome\":\"PASS\",\"tool_version\":\"bounded-worker-v1\",\"value\":-74.0},\"value\":-74.0,\"x\":4}",
+          "quote_hash": "2f228f8b566ab9b122f46309e3c49b27783a6fb2ea54d84c85bccd4ec9c8cf20",
+          "source_hash": "2f228f8b566ab9b122f46309e3c49b27783a6fb2ea54d84c85bccd4ec9c8cf20",
+          "source_id": "src-9f1153383072ca4bdd3ff222",
+          "start": 0
+        }
+      ],
+      "final_response": "# AIM Model-1 investigation\n\nWhich candidate predicts instrument-p2a-008e44b2ad1b572f9106 at x=4?\n\n## Findings\n\n- c-h-neural-0: y(4) = -74.0 \u2014 VERIFIED. Evidence: ev-c4b9a2d1c64d26d0534e0c93.\n  Check vp-999e53d6e3be23508c802f29: source-span-integrity@1 = PASS. Scope: Exact source/version/span identity only; no general natural-language entailment. Evidence: ev-c4b9a2d1c64d26d0534e0c93.\n  Check v-bdd078df9badefa6d71e46b3: numeric-observation-agreement@1 = PASS. Scope: Prediction agreement with synthetic measurement at x=4; not a proof of the global law. Evidence: ev-64c2f23501a97e52cd90888f.\n\n## Unresolved and limitations\n\n- Synthetic numerical domain; demonstration of architecture only\n- Verification is local agreement at one measurement, not scientific law discovery\n- Researcher backend: aim-random-origin-checkpoint-f82a72e8e0069f9dd399e199bd64c8eb9c412bb3aae90579c0446dab11f82962\n\n## Evidence\n\n- ev-c4b9a2d1c64d26d0534e0c93: [src-6dcc730a5199b64b5e24c088](memory/objects/4817085324bef3c28a60992d3f4eabdf864f31503f20ac97f1a18e019b27d920), chars:0:101, SHA-256 4817085324bef3c28a60992d3f4eabdf864f31503f20ac97f1a18e019b27d920.\n- ev-64c2f23501a97e52cd90888f: [src-9f1153383072ca4bdd3ff222](memory/objects/2f228f8b566ab9b122f46309e3c49b27783a6fb2ea54d84c85bccd4ec9c8cf20), chars:0:196, SHA-256 2f228f8b566ab9b122f46309e3c49b27783a6fb2ea54d84c85bccd4ec9c8cf20.\n",
+      "hypotheses": [
+        {
+          "coefficients": [
+            -6.0,
+            -9.0,
+            -2.0
+          ],
+          "evidence_ids": [
+            "ev-c4b9a2d1c64d26d0534e0c93"
+          ],
+          "id": "h-neural-0",
+          "rationale": "Native structured Researcher candidate; independent verification required"
+        }
+      ],
+      "observations": [
+        [
+          0.0,
+          -6.0
+        ],
+        [
+          1.0,
+          -17.0
+        ],
+        [
+          2.0,
+          -32.0
+        ]
+      ],
+      "phase": "FINAL",
+      "plan": [
+        "Generate candidate hypotheses from retrieved observations",
+        "Verify generated candidates",
+        "Publish only scoped checked results"
+      ],
+      "question": "Which candidate predicts instrument-p2a-008e44b2ad1b572f9106 at x=4?",
+      "results": [
+        {
+          "action_id": "action-1",
+          "detail": "decimal-polynomial-v1",
+          "elapsed_seconds": 0.02715554200403858,
+          "outcome": "PASS",
+          "tool_version": "bounded-worker-v1",
+          "value": -74.0
+        },
+        {
+          "action_id": "action-2",
+          "detail": "synthetic-measurement-v1",
+          "elapsed_seconds": 0.026763333997223526,
+          "outcome": "PASS",
+          "tool_version": "bounded-worker-v1",
+          "value": -74.0
+        }
+      ],
+      "schema_version": "1",
+      "target_x": 4,
+      "topic": "instrument-p2a-008e44b2ad1b572f9106",
+      "unknowns": [],
+      "verifications": [
+        {
+          "claim_hash": "999e53d6e3be23508c802f29cb6f999f855d0e5f1b03e0c2a3a8c4f73cb744e5",
+          "claim_id": "c-h-neural-0",
+          "detail": "All cited spans resolve and match originals",
+          "evidence_ids": [
+            "ev-c4b9a2d1c64d26d0534e0c93"
+          ],
+          "id": "vp-999e53d6e3be23508c802f29",
+          "outcome": "PASS",
+          "scope": "Exact source/version/span identity only; no general natural-language entailment",
+          "verifier": "source-span-integrity",
+          "version": "1"
+        },
+        {
+          "claim_hash": "999e53d6e3be23508c802f29cb6f999f855d0e5f1b03e0c2a3a8c4f73cb744e5",
+          "claim_id": "c-h-neural-0",
+          "detail": "absolute_difference=0.0; absolute_tolerance=1e-8",
+          "evidence_ids": [
+            "ev-64c2f23501a97e52cd90888f"
+          ],
+          "id": "v-bdd078df9badefa6d71e46b3",
+          "outcome": "PASS",
+          "scope": "Prediction agreement with synthetic measurement at x=4; not a proof of the global law",
+          "verifier": "numeric-observation-agreement",
+          "version": "1"
+        }
+      ]
+    }
+  }
+}
