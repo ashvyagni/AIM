@@ -191,6 +191,15 @@ class CoreTests(unittest.TestCase):
         with zipfile.ZipFile(run.path / "source-snapshot.zip") as archive:
             self.assertIn("aim/controller.py", archive.namelist())
 
+    def test_missing_input_failure_is_retained(self):
+        missing = self.directory / "absent.json"
+        with self.assertRaises(FileNotFoundError):
+            with Run(self.directory, "missing-input", {}, [missing]) as run:
+                missing.read_text()
+        manifest = json.loads((run.path / "manifest.json").read_text())
+        self.assertIsNone(manifest["inputs"][str(missing)])
+        self.assertEqual(json.loads((run.path / "status.json").read_text())["status"], "FAILED")
+
 
 if __name__ == "__main__":
     unittest.main()

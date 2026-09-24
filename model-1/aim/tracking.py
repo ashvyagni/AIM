@@ -83,7 +83,9 @@ class Run:
         write_json(self.path / "manifest.json", {"schema_version": 1, "run_id": self.id,
                    "kind": kind, "configuration": config, "configuration_hash": digest(config),
                    "environment": environment(), "code_hashes": sources, "code_hash": digest(sources),
-                   "inputs": {str(p): file_hash(p) for p in inputs}, "created_at_unix": time.time()})
+                   "inputs": {str(p): file_hash(p) if Path(p).is_file() else None for p in inputs},
+                   "input_note": "null input hash means file was absent at run creation; the operation must fail explicitly when reading it",
+                   "created_at_unix": time.time()})
         self.event("RUN_STARTED", {"kind": kind})
 
     def event(self, kind, payload):
