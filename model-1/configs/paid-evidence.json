@@ -1,0 +1,13 @@
+{
+  "version": "aim-paid-evidence-v1",
+  "judge_evidence": "reports/phase-2b-evidence/results.json",
+  "seeds": [17, 23, 41],
+  "target_cost": 0.5,
+  "acquisition_cost": 0.1,
+  "acquisition_band": [0.2, 0.8],
+  "priors": [0.5, 0.25],
+  "sensitivity_acquisition_costs": [0.0, 0.02, 0.1, 0.3, 0.6],
+  "bootstrap_draws": 500,
+  "bootstrap_seed": 101,
+  "max_actions": 8
+}
