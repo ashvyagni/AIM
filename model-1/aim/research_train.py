@@ -13,6 +13,7 @@ from .neural import ByteTokenizer, CausalLM, ModelConfig, read_checkpoint
 from .research_data import load_training_data
 from .research_format import VERSION, ResearchOutputError
 from .finite_difference import EXPERIMENT, CONTRACT, parse_output, diagnostics
+from .curriculum_tasks import EXPERIMENT as CURRICULUM, batch_for
 from .training import save_checkpoint, seed_all, sequence_scores
 from .tracking import ROOT, Run, digest, file_hash, write_json
 
@@ -53,7 +54,7 @@ def selection_key(metrics,step):
 
 
 def validate_config(config):
-    if config.get("protocol") not in (VERSION,EXPERIMENT):
+    if config.get("protocol") not in (VERSION,EXPERIMENT,CURRICULUM):
         raise ContractError("Unknown structured research protocol")
     steps=config.get("steps")
     if type(steps) is not int or not 1<=steps<=1800:
@@ -70,9 +71,12 @@ def validate_config(config):
     from .contracts import finite_number
     if not 0<finite_number(config["learning_rate"])<=0.1 or not 0<=finite_number(config["weight_decay"])<=1:
         raise ContractError("Invalid optimizer configuration")
-    if config.get("protocol")==EXPERIMENT:
+    if config.get("protocol") in (EXPERIMENT,CURRICULUM):
         if config.get("research_contract") not in (VERSION,CONTRACT) or config.get("pad_to")!=config["model"]["context"]:
             raise ContractError("Comparison requires explicit output contract and full-context padding")
+    if config.get("protocol")==CURRICULUM:
+        if config.get("arm") not in ("worked","curriculum") or config["batch_size"]%4 or config["research_contract"]!=CONTRACT:
+            raise ContractError("Curriculum requires a declared arm, worked contract and batch multiple of four")
 
 
 def restore_history(source, resume_path):
@@ -141,6 +145,7 @@ def train_seed(config,data,data_path,runs,seed,protocol_path,*,resume=None):
         write_json(run.path/"tokenizer.json",tokenizer.specification())
         evaluations=[];best=None;parent_hash=None;step=0
         supervised_tokens=0;processed_positions=0;accounting_start_step=0
+        task_counts={};sampling_digest="0"*64;task_accounting_start_step=0
         if resume:
             source=read_checkpoint(resume)
             if (source.get("stage")!="research-sft" or source.get("research_contract")!=contract or
@@ -169,6 +174,11 @@ def train_seed(config,data,data_path,runs,seed,protocol_path,*,resume=None):
             supervised_tokens=source.get("supervised_tokens",0)
             processed_positions=source.get("processed_positions",0)
             accounting_start_step=source.get("accounting_start_step",step if "processed_positions" not in source else 0)
+            task_counts=source.get("task_counts",{})
+            sampling_digest=source.get("sampling_digest","0"*64)
+            task_accounting_start_step=source.get("task_accounting_start_step",step if "task_counts" not in source else 0)
+            if config["protocol"]==CURRICULUM and ("task_counts" not in source or "sampling_digest" not in source):
+                raise ContractError("Curriculum resume requires task and sample accounting")
             run.event("CHECKPOINT_RESUMED",{"checkpoint":str(Path(resume).resolve()),"sha256":parent_hash,
                 "step":step,"historical_evaluations":len(evaluations)})
 
@@ -180,6 +190,8 @@ def train_seed(config,data,data_path,runs,seed,protocol_path,*,resume=None):
                 "configuration":config,"seed":seed,"dataset_hash":dataset_hash,"tokenizer":tokenizer.specification(),
                 "parent_sha256":parent_hash,"evaluation_history":list(evaluations),
                 "protocol_sha256":file_hash(protocol_path),"accounting_start_step":accounting_start_step,
+                "task_counts":dict(task_counts),"sampling_digest":sampling_digest,
+                "task_accounting_start_step":task_accounting_start_step,
                 "supervised_tokens":supervised_tokens,"processed_positions":processed_positions},filename)
             path=run.path/filename
             parent_hash=file_hash(path)
@@ -191,6 +203,10 @@ def train_seed(config,data,data_path,runs,seed,protocol_path,*,resume=None):
             metrics=validation_metrics(model,tokenizer,validation,config["max_new_tokens"])
             validation_path=run.path/f"validation-step{step:04d}.json"
             write_json(validation_path,metrics)
+            if config["protocol"]==CURRICULUM:
+                from .curriculum_diagnostics import measure
+                fit=measure(model,tokenizer,data,config["max_new_tokens"])
+                write_json(run.path/f"fit-step{step:04d}.json",fit)
             summary={k:v for k,v in metrics.items() if k!="outputs"}
             record={"step":step,"checkpoint":str(path.resolve()),"sha256":file_hash(path),
                     "validation_path":str(validation_path.resolve()),"validation_sha256":file_hash(validation_path),**summary}
@@ -212,6 +228,8 @@ def train_seed(config,data,data_path,runs,seed,protocol_path,*,resume=None):
                 raise TimeoutError("Research training deadline exceeded; emergency checkpoint retained")
             indices=torch.randint(len(train_rows),(config["batch_size"],),generator=sampler).tolist()
             batch=[train_rows[i] for i in indices]
+            world_groups=[r["group"] for r in batch]
+            batch,roles=batch_for(config,batch,step) if config["protocol"]==CURRICULUM else (batch,["research"]*len(batch))
             optimizer.zero_grad()
             pairs=[(r["prompt"],r["response"]) for r in batch]
             scores,counts=sequence_scores(model,tokenizer,pairs,pad_to=config.get("pad_to"))
@@ -222,13 +240,18 @@ def train_seed(config,data,data_path,runs,seed,protocol_path,*,resume=None):
             optimizer.step()
             positions=config.get("pad_to") or max(1+len(tokenizer.encode(p))+len(tokenizer.encode(r)) for p,r in pairs)
             supervised_tokens+=int(counts.sum());processed_positions+=len(batch)*positions
+            for role in roles: task_counts[role]=task_counts.get(role,0)+1
+            sampling_digest=digest([sampling_digest,world_groups])
             run.metric(step,loss=loss.item(),grad_norm=float(norm),supervised_tokens=int(counts.sum()),
-                       processed_positions=len(batch)*positions)
+                       processed_positions=len(batch)*positions,task_counts={role:roles.count(role) for role in sorted(set(roles))},
+                       sampled_worlds_sha256=digest(world_groups))
             if step in config["evaluation_steps"]: evaluate()
         result={"seed":seed,"initial":evaluations[0],"selected":best,"evaluations":evaluations,
                 "parameters":sum(p.numel() for p in model.parameters()),"dataset_hash":dataset_hash,
                 "supervised_tokens":supervised_tokens,"processed_positions":processed_positions,
                 "accounting_start_step":accounting_start_step,
+                "task_counts":task_counts,"sampling_digest":sampling_digest,
+                "task_accounting_start_step":task_accounting_start_step,
                 "scope":"validation-only checkpoint selection; no test/OOD labels read"}
         write_json(run.path/"metrics.json",result)
     return result
