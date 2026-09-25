@@ -49,13 +49,17 @@ A separately scoped observation-consistency verifier and read-only memory audit 
 
 The experiment defines a future measurement-pass event, excludes outcomes from features, uses fresh grouped worlds, and separately compares log/Brier training, temperature scaling, constant/base-rate forecasts, observed-residual features and abstention. Cubic worlds are now explicitly training data; quartic perturbations were held out along with a changed mixture. Both shifts act together. All resulting holdouts are now exposed historical diagnostics.
 
-### Phase 2B.1 — Shared costs and evidence acquisition (next)
+### Phase 2B.1 — Shared costs and evidence acquisition (completed; gate failed)
 
-Specify a question-level utility with shared measurement cost and explicit cost for an additional observation. Avoid double-crediting equal candidate predictions. Compare verify-all, abstain, observed-fit and calibrated policies with the Researcher fixed, before attempting learned sequential decisions. Freeze the cost model and grouped family/prior partitions before new evaluation; vary family and mixture separately where feasible. A new observation's benefit must include its acquisition cost. Existing Phase 2B per-candidate utility is an offline diagnostic, not measured shared-tool savings.
+The [registered study](experiments/phase-2b1-protocol.md) implemented question reward capped at one, one shared target-measurement cost, and paid x=3 acquisition through the existing bounded tools. It completed 118 tests and 1,248 actual Controller episodes with independent decision replay and provenance/accounting audit. Paid policies improved known-family utility but failed the deliberately indistinguishable quintic stress scenarios. Selective acquisition purchased everywhere, matching the always-acquire behavior. See the [report](../reports/phase-2b1-implementation.md) and [guide](PAID_EVIDENCE.md). Keep the defaults and all experimental variants separately identified.
 
 Retain proper scores, risk/coverage, cost, lost opportunities and whole-group intervals. No confidence forecast may bypass a verifier or imply global-law proof. Calibration transfer to learned Researcher candidates remains a separate required experiment. The [observation-scope note](OBSERVATION_SCOPE.md) remains a mathematical constraint on what the Judge can infer.
 
+Shared forecast coherence, expected information value, variable probe choices and retry/censoring policies remain open. Any future decision-learning study needs fresh groups and explicit family assumptions. Do not tune the exposed fixture's acquisition band to manufacture a pass; its new family deliberately hides the relevant difference from the purchased observation.
+
 ## Phase 2C — Trusted evidence/tool expansion
+
+**Next implementation slice:** exact polynomial/algebraic identity verification in a bounded symbolic domain. Start with a separately versioned claim contract, declared assumptions, independent exact checker, strict expression/resource limits, provenance links and adversarial cases. Build a deterministic end-to-end reference before training a proposer for that domain. Preserve the existing prediction loop, claim scopes and canonical suites. This adds a different evidence type without claiming general theorem proving or replacing the approved architecture.
 
 Add one new domain at a time: exact symbolic arithmetic, code tests in a real resource-limited sandbox, or a licensed local scientific-paper corpus with source-span retrieval. Each adapter needs a schema, version, timeout/failure semantics, independent checker and adversarial cases. Merely having multiple learned Judges agree is not independent verification.
 

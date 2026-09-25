@@ -1,6 +1,6 @@
 # AIM Model-1
 
-**Modular foundation, structured Researcher experiments, and separate Judge calibration/decision studies.**
+**Modular foundation, structured Researcher experiments, separate Judges, and paid evidence acquisition.**
 
 The default research loop uses a clearly identified deterministic polynomial Researcher and a separate rule-based or trained Judge. A native, randomly initialized transformer and an interchangeable neural Researcher adapter are implemented. The phase-1 arithmetic checkpoint failed structured generation. Phase 2A trained three research-specific checkpoints that emit mostly valid hypotheses but achieve only 3.13–10.94% verified success on the familiar holdout; their capability gate failed and they remain opt-in experimental backends.
 
@@ -10,7 +10,9 @@ Phase 2A.2 adds staged arithmetic tasks, fitting diagnostics, a separately scope
 
 Phase 2B compares twelve separate five/seven-feature Judges, log/Brier objectives and calibration-only temperature scaling. Richer inputs improved mean familiar Brier from .14612 to .11588, but mean OOD utility was −.00130 at the registered illustrative cost .5. One seed failed the OOD utility gate, so the default verification-first Judge is retained.
 
-See the [latest report](reports/phase-2b-implementation.md), [Judge reproduction guide](docs/JUDGE_SHIFT.md), [curriculum guide](docs/ARITHMETIC_CURRICULUM.md), and [real-checkpoint resume audit](reports/research-resume-audit.md). The latest full preflight has **102 passing tests, zero skips**. Historical reports preserve their original results and test counts. Next: shared measurement costs and explicit evidence-acquisition decisions.
+Phase 2B.1 adds an opt-in Controller extension for paid observations, shared target decisions and reward capped at one per question. It executed and audited 1,248 episodes. Paid evidence improved known-family utility, but the new family remained indistinguishable after acquisition and the gate failed. Selective and always-acquire policies made the same purchase choices on this fixture. No defaults were promoted.
+
+See the [latest report](reports/phase-2b1-implementation.md), [paid-evidence guide](docs/PAID_EVIDENCE.md), [Judge guide](docs/JUDGE_SHIFT.md), and [real-checkpoint resume audit](reports/research-resume-audit.md). The latest full preflight has **118 passing tests, zero skips**. Historical reports preserve their original results and test counts. Next: one bounded symbolic verification domain.
 
 ## What runs
 
@@ -52,11 +54,14 @@ The lock records the tested macOS arm64 environment. Linux CPU lab installation 
 .venv/bin/python -m aim.comparison_reproduce
 .venv/bin/python -m aim.curriculum_reproduce
 .venv/bin/python -m aim.judge_shift_reproduce
+.venv/bin/python -m aim.paid_evidence_reproduce
 ```
 
 The second command reproduces phase 1: test log, SFT, preference/DPO, RLVR, a separate trained Judge, an RLVR-from-SFT comparison, reference/trained-Judge evaluations, integrated loop, neural Researcher diagnostic and local benchmark. The third separately reproduces the registered plain/worked comparison; the fourth reproduces the worked/curriculum comparison plus observation audit. Each comparison runs six models and 1,664 Controller cases. Run only the study you intend to reproduce. Read its metrics and failure records. These commands do not launch distributed processes automatically.
 
 The fifth command reproduces the separate Judge study: twelve feature networks, frozen temperatures, 768 held-out candidate records, complete forecasts and grouped decision metrics. These are offline forecast cases; real Controller adapter cases are covered by the integration tests. The [guide](docs/JUDGE_SHIFT.md#integration) shows how to use its new checkpoint format without changing the legacy loader.
+
+The sixth command runs the paid-evidence study using the exact retained Phase 2B checkpoints named in its evidence bundle. These local binaries must be restored on a fresh clone; the runner never silently substitutes newly trained checkpoints. It executes 1,248 actual Controller episodes with immutable sources, decision timing and costs. See the [guide](docs/PAID_EVIDENCE.md) for checkpoint dependencies and scope.
 
 Core tests can run without torch; neural tests explicitly skip. A full reproduction requires torch and numpy and must not be reported successful when those tests are skipped.
 
@@ -123,3 +128,5 @@ Runs are excluded from a future Git index to avoid accidentally committing large
 - [What finite observation checks establish](docs/OBSERVATION_SCOPE.md)
 - [Separate Judge reproduction and input contract](docs/JUDGE_SHIFT.md)
 - [Phase 2B evidence and failed shift-utility gate](reports/phase-2b-implementation.md)
+- [Paid evidence acquisition and shared costs](docs/PAID_EVIDENCE.md)
+- [Phase 2B.1 episode audit and outcomes](reports/phase-2b1-implementation.md)

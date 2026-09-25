@@ -13,8 +13,11 @@ The architectural baseline is the [complete research handbook](documents/AIM_Com
 - [Exact Researcher checkpoint continuation audit](model-1/reports/research-resume-audit.md)
 - [Phase 2A.2 curriculum implementation and execution record](model-1/reports/phase-2a2-implementation.md)
 - [Phase 2B Judge calibration and decision results](model-1/reports/phase-2b-implementation.md)
+- [Phase 2B.1 shared measurement and paid evidence](model-1/reports/phase-2b1-implementation.md)
 
-Latest completed experiment: Phase 2B trained twelve separate feature Judges and evaluated raw/scaled forecasts on 768 held-out candidate records. All 102 tests passed. Richer inputs improved mean familiar Brier score from .14612 to .11588, but one seed had negative decision utility under shift; the all-seed evidence gate failed. The default Judge remains verification-first. Next: shared measurement costs and explicit evidence-acquisition decisions.
+Latest completed experiment: Phase 2B.1 executed and audited 1,248 actual research-loop episodes with shared measurement costs and paid evidence acquisition. All 118 tests passed; zero VERIFIED claims lacked passing checks. Buying a fourth observation improved utility in the known family but lost utility in the deliberately indistinguishable new family, so the evidence gate failed. The selective policy bought in every case and supplied no cost advantage. Defaults remain unchanged. Next: one bounded symbolic verification domain.
+
+Phase 2B's twelve separate feature Judges and complete calibration/decision results remain available. Their frozen checkpoints were reused without retraining or post-hoc selection in Phase 2B.1.
 
 Phase 2A.2 compared worked supervision with a staged arithmetic curriculum across six native Researcher models: mean verified test success 6.77% versus 6.25%, with both capability gates failed. Its 1,664 research-loop cases and observation audit remain available. The deterministic Researcher remains the default.
 
