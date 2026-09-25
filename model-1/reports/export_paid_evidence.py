@@ -9,7 +9,10 @@ from aim.contracts import Claim, Evidence, Verification
 from aim.controller import Controller
 from aim.judge_shift_features import extract
 from aim.memory import Memory
+from aim.paid_evidence import SharedPolicy
+from aim.paid_evidence_reproduce import load_forecasters
 from aim.paid_evidence_eval import summarize
+from aim.researcher import PolynomialResearcher
 from aim.tracking import ROOT, canonical, file_hash, write_json
 
 
@@ -34,7 +37,7 @@ def completed(path):
     return status
 
 
-def audit_case(row):
+def audit_case(row,policy=None):
     path=Path(row['run']);completed(path);s=row['summary']
     if read(path/'policy-summary.json')!=s: raise ValueError('Summary mismatch')
     if file_hash(path/'state.json')!=s['state_sha256']: raise ValueError('State changed')
@@ -56,6 +59,19 @@ def audit_case(row):
         raise ValueError('Dispatch ledger mismatch')
     decisions=[e['payload'] for e in events if e['kind'] in ('ACQUISITION_DECISION','TARGET_DECISION')]
     if decisions!=s['decisions']: raise ValueError('Decision ledger mismatch')
+    if policy is not None:
+        observed=None
+        for event in events:
+            if event['kind']=='STATE': observed=event['payload']
+            if event['kind'] not in ('ACQUISITION_DECISION','TARGET_DECISION'): continue
+            if observed is None: raise ValueError('Decision precedes observed state')
+            pre_state=SimpleNamespace(observations=observed['observations'],target_x=observed['target_x'],
+                evidence=[Evidence(**e) for e in observed['evidence']])
+            expected=policy.assess(pre_state,PolynomialResearcher().hypothesize(pre_state))
+            if event['kind']=='ACQUISITION_DECISION':
+                expected.update(purchase=policy.acquire(expected),coordinate=3)
+            if event['payload']!={'kind':event['kind'],**expected}:
+                raise ValueError('Decision not reproducible from prior state and frozen policy')
     attempts={'acquisition':0,'target':0,'calculation':0}
     for i,event in enumerate(events):
         if event['kind']!='ACTION': continue
@@ -96,20 +112,25 @@ def export(run,output,development_failure=None):
     evidence=ROOT/config['judge_evidence']
     if file_hash(evidence)!=frozen['judge_evidence_sha256']: raise ValueError('Parent evidence changed')
     index=read(evaluation/'episode-index.json');episodes={name:read(path) for name,path in index.items()}
-    specifications={name:kind for name,kind,_ in frozen['policies']}
+    specifications={name:(kind,seed) for name,kind,seed in frozen['policies']}
     if set(episodes)!=set(specifications): raise ValueError('Frozen policy list changed')
+    import torch
+    torch.set_num_threads(1)
+    forecasters,_=load_forecasters(evidence,config['seeds'])
     worlds=read(dataset/'worlds.json')['rows'];world_index={r['id']:r for r in worlds}
     if len(world_index)!=len(worlds): raise ValueError('Duplicate world')
     hashes=set();count=0
     for name,rows in episodes.items():
+        kind,seed=specifications[name]
+        policy=SharedPolicy(kind,config,forecasters.get(seed))
         if len(rows)!=len(worlds) or {r['id'] for r in rows}!=set(world_index): raise ValueError('Missing policy worlds')
         for row in rows:
             original=world_index[row['id']]
             if any(row[k]!=original[k] for k in ('group','family')): raise ValueError('World attribution mismatch')
-            if (row['summary']['policy']!=specifications[name] or
+            if (row['summary']['policy']!=kind or
                 any(row['summary'][key]!=config[key] for key in ('target_cost','acquisition_cost'))):
                 raise ValueError('Frozen policy or utility configuration changed')
-            hashes.add(audit_case(row));count+=1
+            hashes.add(audit_case(row,policy));count+=1
     if len(hashes)!=1: raise ValueError('Episode implementations differ')
     if hashes!={read(run/'manifest.json')['code_hash']} or hashes!={read(evaluation/'manifest.json')['code_hash']}:
         raise ValueError('Root and episode source snapshots differ')
