@@ -12,7 +12,17 @@ from .tracking import canonical, digest
 
 
 class Memory:
-    def __init__(self, directory: Path):
+    def __init__(self, directory: Path, *, read_only=False):
+        directory=Path(directory)
+        self.read_only=read_only
+        if read_only:
+            self.objects=directory/"objects"
+            database=directory/"memory.sqlite"
+            if not database.is_file() or not self.objects.is_dir():
+                raise ContractError("Read-only memory requires an existing store")
+            self.db=sqlite3.connect(database.resolve().as_uri()+"?mode=ro",uri=True)
+            self.db.execute("PRAGMA query_only=ON")
+            return
         directory.mkdir(parents=True, exist_ok=True)
         self.objects = directory / "objects"
         self.objects.mkdir(exist_ok=True)
@@ -41,7 +51,11 @@ class Memory:
     def close(self):
         self.db.close()
 
+    def _writable(self):
+        if self.read_only: raise ContractError("Memory is read-only")
+
     def ingest(self, text: str, *, uri: str, version: str, rights: str, title: str, retrievable=True) -> str:
+        self._writable()
         raw = text.encode("utf-8")
         sha = digest(raw)
         identity = {"sha256": sha, "uri": uri, "version": version, "rights": rights,
@@ -68,6 +82,7 @@ class Memory:
         return raw.decode("utf-8"), json.loads(row[1])
 
     def span(self, source_id: str, start: int, end: int) -> Evidence:
+        self._writable()
         text, meta = self.source(source_id)
         if type(start) is not int or type(end) is not int or not 0 <= start < end <= len(text):
             raise ContractError("Invalid source character offsets")
@@ -103,10 +118,12 @@ class Memory:
         return [self.span(sid, 0, len(text)) for _, sid, text in sorted(scored)[:limit]]
 
     def edge(self, origin, relation, target):
+        self._writable()
         with self.db:
             self.db.execute("INSERT OR IGNORE INTO edges VALUES(?,?,?)", (origin, relation, target))
 
     def append(self, kind: str, payload: dict):
+        self._writable()
         with self.db:
             last = self.db.execute("SELECT seq,sha256 FROM events ORDER BY seq DESC LIMIT 1").fetchone()
             seq, previous = (last[0] + 1, last[1]) if last else (1, "0" * 64)
