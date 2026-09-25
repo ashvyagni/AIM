@@ -37,11 +37,11 @@ Exit gate: produce valid supported candidates on a predeclared held-out set and 
 
 Research-trainer continuation now matches uninterrupted training, including an audit of the actual Phase 2A checkpoint. The preregistered plain/worked comparison completed 77 tests and 1,664 Controller cases. Mean verified test success rose from 5.21% to 12.50%, but one seed regressed and neither arm passed its numerical gate. Keep the deterministic default. Eight worked-arm familiar-case successes contained wrong process steps. Read the [report](../reports/phase-2a1-implementation.md), including the invalidated first attempt and corrected data boundary.
 
-### Phase 2A.2 — Arithmetic curriculum (recommended next experiment)
+### Phase 2A.2 — Arithmetic curriculum (implemented; experiment running)
 
-Preregister a same-scale comparison of worked SFT with and without explicit prerequisite signed arithmetic and finite-difference examples. Match dense-compute budgets, record supervised information differences, and measure both training mastery and validation generalization. Exclude worlds from both previous experiments; their tests are now exposed. Select the mixture and stopping rule before new holdout evaluation. This proposal has not been implemented or measured.
+A [registered same-scale comparison](experiments/phase-2a2-protocol.md) now implements worked SFT with and without staged signed arithmetic, second differences and coefficient reconstruction. Both recipes match dense training shapes and candidate-world draws; task exposure differs explicitly. New worlds exclude both previous experiments. Fixed train/validation fitting diagnostics do not select models. See the [execution report](../reports/phase-2a2-implementation.md) and [reproduction guide](ARITHMETIC_CURRICULUM.md). The six-model run is in progress; no capability decision follows from partial validation.
 
-Separately design an observation-consistency verifier and counterexample cases with a new evaluation version. Preserve the existing distinction between target-prediction verification and hypothesis/process correctness. Do not reward unchecked model-generated steps, compute answers behind the neural interface, or interpret these tiny synthetic results as sufficient evidence for a larger parameter scale.
+A separately scoped observation-consistency verifier and read-only memory audit are implemented and tested against counterexamples. They preserve existing target-prediction statuses and report an additional observation diagnostic. Do not reward unchecked model-generated steps, compute answers behind the neural interface, or interpret these tiny synthetic results as sufficient evidence for a larger parameter scale.
 
 ## Phase 2B — Judge shift and decision experiments
 

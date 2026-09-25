@@ -4,6 +4,8 @@
 
 **Latest state:** Phase 2A.1 is implemented and evaluated. Read its [report](../model-1/reports/phase-2a1-implementation.md), [reproduction guide](../model-1/docs/FINITE_DIFFERENCE_COMPARISON.md) and [exact continuation audit](../model-1/reports/research-resume-audit.md). All 77 tests passed and 1,664 Controller cases ran. Worked supervision improved mean verified success from 5.21% to 12.50%, but one seed regressed and both arms missed the capability gate. Keep the deterministic default. The next proposed model experiment is a preregistered arithmetic curriculum, not a larger model or joint reward.
 
+**Active work:** Phase 2A.2 is implemented with 92 passing preflight tests. Its registered six-model curriculum study is running under `model-1/runs/20260925T073010-curriculum-reproduction-60d13ca4`. Read the [Phase 2A.2 execution record](../model-1/reports/phase-2a2-implementation.md). Inspect that run's status, stage pointers and summary before starting anything; do not duplicate it while it is active. The driver automatically freezes selections, evaluates holdout and performs a read-only observation audit after training. Final capability outcomes are still pending.
+
 ## Read before changing code
 
 1. The complete [research handbook](AIM_Complete_Research_Architecture_and_Project_Handbook.pdf) and relevant [final-design specifications](final-design/).

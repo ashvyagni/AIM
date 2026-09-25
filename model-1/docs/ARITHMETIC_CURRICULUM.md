@@ -27,6 +27,24 @@ Use actual paths printed by each command. Keep checkpoints, sidecars, ancestor r
 
 ## Data and recipe
 
+```mermaid
+flowchart LR
+  T[Training worlds] --> R[Full worked research examples]
+  T --> A[Attributed arithmetic examples]
+  R --> M[Fixed recipe and native SFT]
+  A --> M
+  V[Validation research worlds] --> S[Checkpoint selection]
+  M --> S
+  M --> D[Training and arithmetic diagnostics]
+  S --> F[Frozen checkpoint hashes]
+  F --> C[Controller evaluation]
+  H[Separate holdout file] --> C
+  C --> P[Existing scoped target verification]
+  C --> O[Read-only observation audit]
+```
+
+Diagnostic scores do not feed checkpoint selection. Holdout and label-bearing audit files do not feed training. The second audit preserves the original target claim and stores its own hypothesis-level result.
+
 The new generator excludes all 1,408 coefficient vectors from both preceding experiments and expands c0/c1 to -19..19 because the old linear pool is nearly exhausted. Each arm sees the same new 512 training worlds, 64 validation worlds, and frozen 64 test plus 64 cubic OOD worlds. Results are not directly comparable to historical scores because the world distribution changed.
 
 The training file has only training and validation rows. Each contains its full research prompt/response and four attributable auxiliary examples: two signed subtractions, one second difference, and one coefficient reconstruction. The auxiliary examples derive from that row's observed values, with the same world group and split. The loader recomputes their teacher labels and rejects altered fields. Hidden test/OOD coefficients and historical exclusions live in `split-audit.json`; the trainer never opens it or the holdout file. Trainer metadata uses an explicit allowlist and hashes rather than new label-bearing membership.

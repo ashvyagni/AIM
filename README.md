@@ -11,6 +11,9 @@ The architectural baseline is the [complete research handbook](documents/AIM_Com
 - [Phase 2A learned Researcher results](model-1/reports/phase-2a-implementation.md)
 - [Phase 2A.1 arithmetic-supervision comparison](model-1/reports/phase-2a1-implementation.md)
 - [Exact Researcher checkpoint continuation audit](model-1/reports/research-resume-audit.md)
+- [Phase 2A.2 curriculum implementation and execution record](model-1/reports/phase-2a2-implementation.md)
+
+Current execution: Phase 2A.2 curriculum training and an independent observation-consistency audit are implemented, with 92 passing preflight tests. The registered six-model experiment is running; its report explicitly separates implementation from pending capability results.
 
 Latest completed experiment: six native Researcher models compared plain and worked arithmetic supervision at matched dense training shapes. Mean verified test success was 5.21% versus 12.50%, but one worked seed regressed and both arms failed the predeclared capability gate. All 77 tests passed; 1,664 actual research-loop cases were evaluated. The deterministic Researcher remains the default. A controlled arithmetic-curriculum ablation is the recommended next experiment.
 
