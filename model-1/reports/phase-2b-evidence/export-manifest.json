@@ -1,0 +1,11 @@
+{
+  "exporter_sha256": "0ae8364593a810bbc8705c72bdb66fe59b5a3a20cd25f0f764dfa04c3b5b8322",
+  "files": {
+    "development-failure.log": "ca6d2dc7ba6303bcb0fd61216b9ae6233fc89b92d8d34f5241e1d277596af243",
+    "predictions.json": "94e97ccea9c04e1b4ee2bf62585ed55587f2b304adc577ec51dc369c45f948c6",
+    "results.json": "e7fd9f3676ac9885165af807d41fee3761cec01fcb1c7bb50166a92b12aefffe",
+    "tests.log": "1022cc4a1cf6ef7924d4c9d29f121f7e5fc23de3fbda3e681b854b02e786201f"
+  },
+  "note": "Path normalization and untracked-filename omission affect exported copies only; original runs unchanged.",
+  "source_run": "model-1/runs/20260925T141603-judge-shift-reproduction-a1a228f5"
+}

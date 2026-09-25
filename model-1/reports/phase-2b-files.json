@@ -1,0 +1,116 @@
+{
+  "baseline_commit": "2c44a95",
+  "scope": "Phase 2B implementation, tests, registration, reports and evidence. Excludes this inventory to avoid self-reference, local runs/checkpoints and unrelated owner files.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2900,
+      "sha256": "833c9bf9eca915685c2d4c3b0853ab5353f37f4022d807544d1032762c2ba759"
+    },
+    {
+      "path": "documents/AIM_Model_1_Implementation_Directive.md",
+      "bytes": 9709,
+      "sha256": "9ed3705fb877b37e5fde94bf1d775bb459a942970d1b0a831fcc474a66454451"
+    },
+    {
+      "path": "model-1/README.md",
+      "bytes": 10777,
+      "sha256": "518aa86efcdea1997e525b3bc925e192db6a1c52919e3cb6f6a6e8298ac254f8"
+    },
+    {
+      "path": "model-1/aim/judge_shift_data.py",
+      "bytes": 5296,
+      "sha256": "4058251f90255b57663ddc7346f7ed8a9803f11bf203fc62023bd299d3b27926"
+    },
+    {
+      "path": "model-1/aim/judge_shift_eval.py",
+      "bytes": 6352,
+      "sha256": "30e0acae520f65f99deb34b23d55a0456b202909bc9d9962bab841ae89518a30"
+    },
+    {
+      "path": "model-1/aim/judge_shift_features.py",
+      "bytes": 2147,
+      "sha256": "f63d054e9162210caac6f71b36c4c1c09c16b94ec3cc0c19b3cad39fb32f38f7"
+    },
+    {
+      "path": "model-1/aim/judge_shift_reproduce.py",
+      "bytes": 2083,
+      "sha256": "962a5190b4a9dd7623f23a7810ecab19561fa3a9a2cc7f6012c7f0fd3e9b7536"
+    },
+    {
+      "path": "model-1/aim/judge_shift_train.py",
+      "bytes": 8504,
+      "sha256": "5b95414b6e1c97afe076e070b5a73e6fdf7bfa2c8fa821bc8244c88e1ec10769"
+    },
+    {
+      "path": "model-1/configs/judge-shift.json",
+      "bytes": 367,
+      "sha256": "2f3925025fbe02c1b4e4cfb327db6052850e2f7594104a8ed7f687c01190ebd2"
+    },
+    {
+      "path": "model-1/docs/DECISIONS.md",
+      "bytes": 15124,
+      "sha256": "8d272c5b1ac3bbcfea1bcba80f381268e7ad280caf2c75d9e39f0c87c456022f"
+    },
+    {
+      "path": "model-1/docs/IMPLEMENTATION_PLAN.md",
+      "bytes": 12583,
+      "sha256": "ee96ba57682e0f83f9379e080f740d0d3d93666d2b64f355d0848dd3e093c50b"
+    },
+    {
+      "path": "model-1/docs/JUDGE_SHIFT.md",
+      "bytes": 7483,
+      "sha256": "ff0670e4897d16fc22a7c724a4098b2fa977961854943e1730bb2192e4fd3124"
+    },
+    {
+      "path": "model-1/docs/experiments/phase-2b-protocol.md",
+      "bytes": 7047,
+      "sha256": "3eb27bfae978fe7a706ff757fded46ac73d569b4afa9800659b3b49835c2534a"
+    },
+    {
+      "path": "model-1/reports/export_judge_shift_evidence.py",
+      "bytes": 8142,
+      "sha256": "0ae8364593a810bbc8705c72bdb66fe59b5a3a20cd25f0f764dfa04c3b5b8322"
+    },
+    {
+      "path": "model-1/reports/phase-2b-evidence/development-failure.log",
+      "bytes": 1940,
+      "sha256": "ca6d2dc7ba6303bcb0fd61216b9ae6233fc89b92d8d34f5241e1d277596af243"
+    },
+    {
+      "path": "model-1/reports/phase-2b-evidence/export-manifest.json",
+      "bytes": 673,
+      "sha256": "bca8aec20f0e57b1ff75aed850d1eda321cd69cd6fd9f502d6df9787daa8b9c6"
+    },
+    {
+      "path": "model-1/reports/phase-2b-evidence/predictions.json",
+      "bytes": 828973,
+      "sha256": "94e97ccea9c04e1b4ee2bf62585ed55587f2b304adc577ec51dc369c45f948c6"
+    },
+    {
+      "path": "model-1/reports/phase-2b-evidence/results.json",
+      "bytes": 665218,
+      "sha256": "e7fd9f3676ac9885165af807d41fee3761cec01fcb1c7bb50166a92b12aefffe"
+    },
+    {
+      "path": "model-1/reports/phase-2b-evidence/tests.log",
+      "bytes": 23257,
+      "sha256": "1022cc4a1cf6ef7924d4c9d29f121f7e5fc23de3fbda3e681b854b02e786201f"
+    },
+    {
+      "path": "model-1/reports/phase-2b-implementation.md",
+      "bytes": 12474,
+      "sha256": "f83ba9d99edf8a3901ce21657deeadbe05921e9a24bfb65016eebffc3e73e4a0"
+    },
+    {
+      "path": "model-1/reports/phase-2b-metrics.md",
+      "bytes": 4597,
+      "sha256": "59f4849c25f2d6999a4d2efb92a3c05f7260e83b2d1fbb8357c2eebc83b9949b"
+    },
+    {
+      "path": "model-1/tests/test_judge_shift.py",
+      "bytes": 7572,
+      "sha256": "ead3de21164b97f2c97e4413d62ec70b4c07eebded8c34fab225a28e92f133ce"
+    }
+  ]
+}

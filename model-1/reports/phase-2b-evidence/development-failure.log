@@ -1,0 +1,27 @@
+test_exact_fit_and_dimensions (test_judge_shift.FeatureTests.test_exact_fit_and_dimensions) ... ok
+test_forbidden_inputs (test_judge_shift.FeatureTests.test_forbidden_inputs) ... ok
+test_group_design_and_invisible_perturbations (test_judge_shift.FeatureTests.test_group_design_and_invisible_perturbations) ... ok
+test_payload_ignores_outcomes (test_judge_shift.FeatureTests.test_payload_ignores_outcomes) ... ok
+test_adapter_controller_verification_and_abstention (test_judge_shift.StudyTests.test_adapter_controller_verification_and_abstention) ... ERROR
+test_frozen_evaluation_and_group_intervals (test_judge_shift.StudyTests.test_frozen_evaluation_and_group_intervals) ... ok
+test_independent_labels_and_provenance (test_judge_shift.StudyTests.test_independent_labels_and_provenance) ... ok
+test_initialization_pairing_and_parameters (test_judge_shift.StudyTests.test_initialization_pairing_and_parameters) ... ok
+test_policy_math (test_judge_shift.StudyTests.test_policy_math) ... ok
+test_tampered_features_and_metadata (test_judge_shift.StudyTests.test_tampered_features_and_metadata) ... ok
+
+======================================================================
+ERROR: test_adapter_controller_verification_and_abstention (test_judge_shift.StudyTests.test_adapter_controller_verification_and_abstention)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "model-1/tests/test_judge_shift.py", line 133, in test_adapter_controller_verification_and_abstention
+    run=Controller(judge=judge).run(case,self.root/'loops')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "model-1/aim/controller.py", line 53, in run
+    memory = Memory(run.path / "memory")
+                    ^^^^^^^^
+AttributeError: 'PosixPath' object has no attribute 'path'
+
+----------------------------------------------------------------------
+Ran 10 tests in 2.131s
+
+FAILED (errors=1)
