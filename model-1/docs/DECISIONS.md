@@ -79,3 +79,15 @@ Create a new numbered record with: affected invariant; proposed alternative; pri
 The [registered experiment](experiments/phase-2a-protocol.md) required at least 90% valid output, 25% independently verified success and a 10-percentage-point gain over initialization for each seed. Held-out success was 7/64, 2/64 and 2/64, despite 95–100% contract validity. None reached the success threshold. Zero unbacked VERIFIED claims were observed in 896 loop executions. See the [complete result](../reports/phase-2a-implementation.md).
 
 Decision: retain the deterministic default and keep learned checkpoints opt-in. Do not promote low token loss or valid syntax to a reasoning-success claim. Next compare explicit numerical/process supervision under a new predeclared protocol with fresh world holdouts. The existing separate Judge and training-stage thesis are unchanged; no larger scale or combined reward is approved by this result.
+
+## D014 — Worked supervision remains experimental
+
+**Status: evidence-backed engineering decision, 2026-09-25.** The [registered Phase 2A.1 comparison](experiments/phase-2a1-protocol.md) held model scale, dense training shapes, sampled worlds and seeds fixed. Plain versus worked mean test success was 5.21% versus 12.50%. Worked supervision improved two seeds but regressed on seed 41; neither arm met the 25% verified-success requirement on any seed. The worked promotion gate failed. [Full evidence](../reports/phase-2a1-implementation.md).
+
+Keep the deterministic default and preserve both learned formats as opt-in experiments. Eight familiar-case worked successes had incorrect process traces, as did the two OOD target matches. Process correctness remains a separate diagnostic; target agreement is not hypothesis verification. Recommend a preregistered arithmetic-curriculum ablation and separately scoped observation-consistency verifier. No scale increase, joint reward or architectural replacement follows from this result.
+
+## D015 — Trainer metadata must exclude holdout labels
+
+**Status: implemented after a retained protocol violation, 2026-09-25.** The first Phase 2A.1 split manifest accidentally contained holdout coefficient vectors. Although they were not used as training rows, the trainer read the metadata, violating the intended boundary. The run was stopped before holdout scoring, annotated as invalid, and retained. The full corrected rerun kept the original protocol, worlds, seeds and thresholds.
+
+New label-bearing split membership lives in `split-audit.json`; trainer metadata has an explicit field allowlist and contains group hashes instead. Tests reject unexpected label-bearing fields and training access to holdout/audit files. File-access separation is an enforceable code boundary here, not a claim of an operating-system sandbox or a sealed benchmark service.

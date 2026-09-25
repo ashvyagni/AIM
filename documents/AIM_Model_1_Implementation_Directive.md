@@ -1,8 +1,8 @@
 # AIM Model-1 — implementation directive and handoff
 
-**For the next implementation agent or ML engineer.** Updated 2026-09-24. Work in the existing `AIM/` workspace; the canonical code directory is `model-1/`. Continue the approved architecture and current implementation. This directive supplies a concrete starting point, not a request to redesign AIM.
+**For the next implementation agent or ML engineer.** Updated 2026-09-25. Work in the existing `AIM/` workspace; the canonical code directory is `model-1/`. Continue the approved architecture and current implementation. This directive supplies a concrete starting point, not a request to redesign AIM.
 
-**Latest state:** Phase 2A is implemented and evaluated. Read its [report](../model-1/reports/phase-2a-implementation.md) before continuing. The three trained Researcher checkpoints learned structured output but failed the predeclared numerical-success gate. The default reference remains in place. The next model task is Phase 2A.1 numerical/process supervision, preceded by tested research-trainer continuation support.
+**Latest state:** Phase 2A.1 is implemented and evaluated. Read its [report](../model-1/reports/phase-2a1-implementation.md), [reproduction guide](../model-1/docs/FINITE_DIFFERENCE_COMPARISON.md) and [exact continuation audit](../model-1/reports/research-resume-audit.md). All 77 tests passed and 1,664 Controller cases ran. Worked supervision improved mean verified success from 5.21% to 12.50%, but one seed regressed and both arms missed the capability gate. Keep the deterministic default. The next proposed model experiment is a preregistered arithmetic curriculum, not a larger model or joint reward.
 
 ## Read before changing code
 
@@ -24,10 +24,11 @@ Keep SFT, preference learning, RLVR and Judge calibration independently trainabl
 - A native dense decoder trained from random weights, UTF-8 byte tokenizer and checkpoint lineage/resume.
 - Actual SFT, DPO, finite-candidate REINFORCE and separate proper-score Judge updates.
 - A strict neural Researcher adapter; current arithmetic-trained weights fail hypothesis generation and that result is recorded.
+- Checkpoint-versioned plain/worked hypothesis formats, fresh world partitions, frozen multi-seed comparisons, independent process diagnostics and tested Researcher continuation.
 - Versioned state/claims/evidence, deterministic action budgets, bounded subprocess tools, exact numerical/provenance verifiers and append-only event replay.
 - Regression tests, public evaluation fixtures, complete reproduction command, local CPU and Gloo/DDP benchmark infrastructure.
 
-The 90,624-parameter decoder and 225-parameter Judge are micro-scale mechanism checks. They are not final model/Judge size choices and do not replace the 100M–300M proxy → ~1B systems → conditional 7B+ roadmap. Do not represent the current system as a general research AI.
+The 90,624-parameter initial decoder, 228,096-parameter structured Researcher and 225-parameter Judge are micro-scale mechanism checks. They are not final model/Judge size choices and do not replace the 100M–300M proxy → ~1B systems → conditional 7B+ roadmap. Do not represent the current system as a general research AI.
 
 ## First actions
 
@@ -39,7 +40,9 @@ cd model-1
 
 Use the documented environment setup if the local `.venv` is missing. Read the new bundle's `tests.log`, `index.json`, metrics, manifest and failures. It uses no pretrained assets or online service. A missing torch environment is not a successful neural test result.
 
-Phase 2A has now supplied independently partitioned worlds, provenance-bound supervision, native training and a frozen holdout comparison. Continue with [Phase 2A.1](../model-1/docs/IMPLEMENTATION_PLAN.md): add tested research-trainer continuation, then compare numerical/worked-process supervision with plain SFT at matched budgets. Reserve fresh coefficient worlds; the Phase 2A test is now exposed. Keep the deterministic Researcher as an explicit reference, not a hidden fallback.
+Phase 2A.1 has completed the numerical/worked-process comparison and continuation work. Continue with the proposed [Phase 2A.2](../model-1/docs/IMPLEMENTATION_PLAN.md): register an arithmetic-curriculum ablation, compare training mastery with generalization, and use fresh coefficient worlds excluding both previous experiments. Both historical tests are now exposed. A separately versioned observation-consistency verifier is also recommended. Keep the deterministic Researcher as an explicit reference, not a hidden fallback.
+
+The first Phase 2A.1 attempt was invalidated because trainer metadata contained holdout coefficient vectors. It was stopped before holdout scoring, retained, corrected and fully rerun without changing the protocol. Maintain the manifest allowlist and tests that prohibit training access to holdout/audit files. Eight familiar-case worked-model successes and two OOD successes still had incorrect process traces; final target agreement does not prove reasoning correctness.
 
 In parallel with model planning, prepare the VIT hardware audit for an authorized lab operator. No lab access, IP inventory or measured throughput is available in this workspace. The current local multi-process result cannot establish 70–84-node feasibility. Use the template and protocol; keep missing fields null until measured.
 

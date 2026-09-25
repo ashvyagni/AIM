@@ -1,10 +1,12 @@
 # AIM Model-1
 
-**Phase 1 foundation plus Phase 2A structured Researcher experiment.**
+**Phase 1 foundation, structured Researcher training, and Phase 2A.1 arithmetic-supervision comparison.**
 
 The default research loop uses a clearly identified deterministic polynomial Researcher and a separate rule-based or trained Judge. A native, randomly initialized transformer and an interchangeable neural Researcher adapter are implemented. The phase-1 arithmetic checkpoint failed structured generation. Phase 2A trained three research-specific checkpoints that emit mostly valid hypotheses but achieve only 3.13–10.94% verified success on the familiar holdout; their capability gate failed and they remain opt-in experimental backends.
 
-See the [Phase 2A report](reports/phase-2a-implementation.md) and [reproduction guide](docs/STRUCTURED_RESEARCHER.md). The complete suite now has 63 passing tests; the historical phase-1 report retains its original 43-test evidence.
+Phase 2A.1 adds tested research-trainer continuation and a six-model comparison of plain versus worked arithmetic supervision. Mean test success was 5.21% versus 12.50%, but one seed regressed and both arms failed their numerical gate. Eight worked-arm familiar-case successes contained incorrect process steps, reinforcing the distinction between a checked target prediction and a checked reasoning trace.
+
+See the [latest report](reports/phase-2a1-implementation.md), [comparison reproduction guide](docs/FINITE_DIFFERENCE_COMPARISON.md), and [real-checkpoint resume audit](reports/research-resume-audit.md). The complete suite has **77 passing tests, zero skips**. Historical reports preserve their original results and test counts.
 
 ## What runs
 
@@ -43,9 +45,10 @@ The lock records the tested macOS arm64 environment. Linux CPU lab installation 
 ```sh
 .venv/bin/python -m unittest discover -s tests -v
 .venv/bin/python -m aim.reproduce
+.venv/bin/python -m aim.comparison_reproduce
 ```
 
-The second command creates a unique run bundle containing the complete test log, SFT, preference/DPO, RLVR, a separate trained Judge, an RLVR-from-SFT comparison, reference/trained-Judge evaluations, the integrated loop, the neural Researcher diagnostic and a local benchmark. Read its `index.json`, `summary.json` and child artifacts. It does not launch distributed processes automatically.
+The second command reproduces phase 1: test log, SFT, preference/DPO, RLVR, a separate trained Judge, an RLVR-from-SFT comparison, reference/trained-Judge evaluations, integrated loop, neural Researcher diagnostic and local benchmark. The third separately reproduces the registered six-model arithmetic-supervision comparison and 1,664 Controller evaluations. Read each run's metrics and failure records. Neither launches distributed processes automatically.
 
 Core tests can run without torch; neural tests explicitly skip. A full reproduction requires torch and numpy and must not be reported successful when those tests are skipped.
 
@@ -104,3 +107,6 @@ Runs are excluded from a future Git index to avoid accidentally committing large
 - [Phase 1 evidence report](reports/phase-1-implementation.md)
 - [Structured Researcher guide](docs/STRUCTURED_RESEARCHER.md)
 - [Phase 2A evidence report](reports/phase-2a-implementation.md)
+- [Plain/worked comparison guide](docs/FINITE_DIFFERENCE_COMPARISON.md)
+- [Phase 2A.1 evidence and retained invalid attempt](reports/phase-2a1-implementation.md)
+- [Exact legacy checkpoint continuation](reports/research-resume-audit.md)

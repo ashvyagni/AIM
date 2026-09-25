@@ -33,9 +33,15 @@ Predeclare train/validation/test/OOD world-family partitions. Evaluate syntax va
 
 Exit gate: produce valid supported candidates on a predeclared held-out set and complete the loop through independent verification. Select numerical acceptance thresholds before evaluating the new holdout; current inspected fixtures cannot supply that evidence. Successful JSON generation alone does not establish scientific reasoning.
 
-### Phase 2A.1 — Numerical and process supervision (next)
+### Phase 2A.1 — Numerical and process supervision (completed)
 
-First add and test continuation for the research-specific trainer; do not assume the arithmetic trainer's resume test covers it. Then register a matched-budget comparison of plain response SFT and independently checkable finite-difference/worked arithmetic traces. Measure each coefficient and intermediate result as well as the final verified prediction. Reserve fresh coefficient worlds excluding all worlds exposed in Phase 2A; preserve the now-inspected test as a regression diagnostic. Do not silently compute the final answer in a tool and attribute it to the neural Researcher. Keep parameter scale and the component architecture fixed while identifying the learning bottleneck.
+Research-trainer continuation now matches uninterrupted training, including an audit of the actual Phase 2A checkpoint. The preregistered plain/worked comparison completed 77 tests and 1,664 Controller cases. Mean verified test success rose from 5.21% to 12.50%, but one seed regressed and neither arm passed its numerical gate. Keep the deterministic default. Eight worked-arm familiar-case successes contained wrong process steps. Read the [report](../reports/phase-2a1-implementation.md), including the invalidated first attempt and corrected data boundary.
+
+### Phase 2A.2 — Arithmetic curriculum (recommended next experiment)
+
+Preregister a same-scale comparison of worked SFT with and without explicit prerequisite signed arithmetic and finite-difference examples. Match dense-compute budgets, record supervised information differences, and measure both training mastery and validation generalization. Exclude worlds from both previous experiments; their tests are now exposed. Select the mixture and stopping rule before new holdout evaluation. This proposal has not been implemented or measured.
+
+Separately design an observation-consistency verifier and counterexample cases with a new evaluation version. Preserve the existing distinction between target-prediction verification and hypothesis/process correctness. Do not reward unchecked model-generated steps, compute answers behind the neural interface, or interpret these tiny synthetic results as sufficient evidence for a larger parameter scale.
 
 ## Phase 2B — Judge shift and decision experiments
 
