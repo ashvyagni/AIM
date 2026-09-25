@@ -13,9 +13,9 @@ The architectural baseline is the [complete research handbook](documents/AIM_Com
 - [Exact Researcher checkpoint continuation audit](model-1/reports/research-resume-audit.md)
 - [Phase 2A.2 curriculum implementation and execution record](model-1/reports/phase-2a2-implementation.md)
 
-Current execution: Phase 2A.2 curriculum training and an independent observation-consistency audit are implemented, with 92 passing preflight tests. The registered six-model experiment is running; its report explicitly separates implementation from pending capability results.
+Latest completed experiment: Phase 2A.2 compared worked supervision with a staged arithmetic curriculum across six native Researcher models. Mean verified test success was 6.77% versus 6.25%; both arms failed the capability gate. All 92 preflight tests passed and 1,664 actual research-loop cases were evaluated and audited. Seventeen of 25 learned familiar target passes contradicted earlier observations. The deterministic Researcher remains the default; separate Judge calibration and decision experiments are next.
 
-Latest completed experiment: six native Researcher models compared plain and worked arithmetic supervision at matched dense training shapes. Mean verified test success was 5.21% versus 12.50%, but one worked seed regressed and both arms failed the predeclared capability gate. All 77 tests passed; 1,664 actual research-loop cases were evaluated. The deterministic Researcher remains the default. A controlled arithmetic-curriculum ablation is the recommended next experiment.
+The earlier Phase 2A.1 plain/worked comparison remains available with its original results. Different world sets and coefficient ranges make its rates unsuitable as a direct comparison with Phase 2A.2.
 
 Model-1 implements the modular Researcher → Judge → deterministic Controller → independent Verifiers → provenance Memory architecture. It contains a working numerical research-loop reference, a small transformer trained from random weights, separate preference/RLVR/Judge training mechanisms, evaluation fixtures, and local/distributed benchmark tools.
 

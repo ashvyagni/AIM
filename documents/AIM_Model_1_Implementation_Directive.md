@@ -2,9 +2,9 @@
 
 **For the next implementation agent or ML engineer.** Updated 2026-09-25. Work in the existing `AIM/` workspace; the canonical code directory is `model-1/`. Continue the approved architecture and current implementation. This directive supplies a concrete starting point, not a request to redesign AIM.
 
-**Latest state:** Phase 2A.1 is implemented and evaluated. Read its [report](../model-1/reports/phase-2a1-implementation.md), [reproduction guide](../model-1/docs/FINITE_DIFFERENCE_COMPARISON.md) and [exact continuation audit](../model-1/reports/research-resume-audit.md). All 77 tests passed and 1,664 Controller cases ran. Worked supervision improved mean verified success from 5.21% to 12.50%, but one seed regressed and both arms missed the capability gate. Keep the deterministic default. The next proposed model experiment is a preregistered arithmetic curriculum, not a larger model or joint reward.
+**Latest state:** Phase 2A.2 is implemented, evaluated and audited. Read its [report](../model-1/reports/phase-2a2-implementation.md), [reproduction guide](../model-1/docs/ARITHMETIC_CURRICULUM.md) and [observation-scope note](../model-1/docs/OBSERVATION_SCOPE.md). All 92 preflight tests passed and 1,664 Controller cases ran. Worked/curriculum mean verified success was 6.77%/6.25%; both missed the capability gate and curriculum failed its advantage gate. Keep the deterministic default. Next implement separate Judge calibration and decision experiments under shift.
 
-**Active work:** Phase 2A.2 is implemented with 92 passing preflight tests. Its registered six-model curriculum study is running under `model-1/runs/20260925T073010-curriculum-reproduction-60d13ca4`. Read the [Phase 2A.2 execution record](../model-1/reports/phase-2a2-implementation.md). Inspect that run's status, stage pointers and summary before starting anything; do not duplicate it while it is active. The driver automatically freezes selections, evaluates holdout and performs a read-only observation audit after training. Final capability outcomes are still pending.
+**Completed run:** `model-1/runs/20260925T073010-curriculum-reproduction-60d13ca4` has status COMPLETED and a final summary. Its selected checkpoints, 1,664 cases and observation audit were checked before export to `model-1/reports/phase-2a2-evidence/`. Do not restart it as unfinished work. All runs/checkpoints remain local; portable evidence is versioned in Git. The earlier [Phase 2A.1 report](../model-1/reports/phase-2a1-implementation.md) and [exact continuation audit](../model-1/reports/research-resume-audit.md) retain their historical results.
 
 ## Read before changing code
 
@@ -25,8 +25,9 @@ Keep SFT, preference learning, RLVR and Judge calibration independently trainabl
 - A working numerical reference investigation from question to provenance-linked final response.
 - A native dense decoder trained from random weights, UTF-8 byte tokenizer and checkpoint lineage/resume.
 - Actual SFT, DPO, finite-candidate REINFORCE and separate proper-score Judge updates.
-- A strict neural Researcher adapter; current arithmetic-trained weights fail hypothesis generation and that result is recorded.
+- A strict neural Researcher adapter; phase-1 arithmetic weights failed hypothesis generation, while later research-specific weights learn valid structure but still fail capability gates.
 - Checkpoint-versioned plain/worked hypothesis formats, fresh world partitions, frozen multi-seed comparisons, independent process diagnostics and tested Researcher continuation.
+- Staged arithmetic tasks, fitting/transfer diagnostics, exact task accounting, a scoped observation verifier and read-only memory audit.
 - Versioned state/claims/evidence, deterministic action budgets, bounded subprocess tools, exact numerical/provenance verifiers and append-only event replay.
 - Regression tests, public evaluation fixtures, complete reproduction command, local CPU and Gloo/DDP benchmark infrastructure.
 
@@ -37,12 +38,13 @@ The 90,624-parameter initial decoder, 228,096-parameter structured Researcher an
 ```sh
 cd model-1
 .venv/bin/python -m unittest discover -s tests -v
-.venv/bin/python -m aim.reproduce
 ```
 
-Use the documented environment setup if the local `.venv` is missing. Read the new bundle's `tests.log`, `index.json`, metrics, manifest and failures. It uses no pretrained assets or online service. A missing torch environment is not a successful neural test result.
+Use the documented environment setup if the local `.venv` is missing. Read the latest report and existing bundle's `tests.log`, `results.json`, case records and export manifest before launching experiments. A missing torch environment is not a successful neural test result. The documented reproduction command can repeat a study if needed; do not rerun a completed study merely to begin the next phase.
 
-Phase 2A.1 has completed the numerical/worked-process comparison and continuation work. Continue with the proposed [Phase 2A.2](../model-1/docs/IMPLEMENTATION_PLAN.md): register an arithmetic-curriculum ablation, compare training mastery with generalization, and use fresh coefficient worlds excluding both previous experiments. Both historical tests are now exposed. A separately versioned observation-consistency verifier is also recommended. Keep the deterministic Researcher as an explicit reference, not a hidden fallback.
+Continue with [Phase 2B](../model-1/docs/IMPLEMENTATION_PLAN.md): register a separate Judge study before generating its holdout or tuning decisions. Define the forecast event, admissible pre-measurement features, proper-score and constant baselines, abstention/measurement utilities, calibration split, family shift and acceptance rules. Keep Researcher checkpoints and task contracts fixed. Reject features containing future measurements, hidden coefficients, outcome labels or post-verification state. All three Phase 2A world sets are exposed; use fresh partitions. Keep the deterministic Researcher as an explicit reference, not a hidden fallback.
+
+Phase 2A.2 found that 17 of 25 learned familiar target passes and all seven OOD passes contradicted observed points. The reference fit all cubic observations but missed all their targets. Preserve target, observation and process checks as distinct fields; a Judge cannot remove this information limit by expressing confidence. Sequential decision learning remains a separately specified research question, not a synonym for confidence fitting.
 
 The first Phase 2A.1 attempt was invalidated because trainer metadata contained holdout coefficient vectors. It was stopped before holdout scoring, retained, corrected and fully rerun without changing the protocol. Maintain the manifest allowlist and tests that prohibit training access to holdout/audit files. Eight familiar-case worked-model successes and two OOD successes still had incorrect process traces; final target agreement does not prove reasoning correctness.
 
@@ -50,7 +52,7 @@ In parallel with model planning, prepare the VIT hardware audit for an authorize
 
 ## Findings to preserve
 
-The first-stage experiment has mixed metrics; adding every stage did not dominate all simpler alternatives. The Judge is useful in its simple familiar family but overconfident under cubic shift. The neural Researcher diagnostic fails structured output. These are research signals, not results to suppress. Exact values and paths are in the implementation report.
+The first-stage experiment has mixed metrics; adding every stage did not dominate all simpler alternatives. The Judge is useful in its simple familiar family but overconfident under cubic shift. Later learned Researchers generate valid JSON while retaining poor numerical success. The staged curriculum did not improve its registered main metric, and earlier auxiliary formats deteriorated after task replacement. These are research signals, not results to suppress. Exact values, distinctions and paths are in the phase reports.
 
 ## Reproducibility and change control
 

@@ -1,12 +1,14 @@
 # AIM Model-1
 
-**Phase 1 foundation, structured Researcher training, and Phase 2A.1 arithmetic-supervision comparison.**
+**Phase 1 foundation, structured Researcher training, and completed arithmetic-supervision/curriculum comparisons.**
 
 The default research loop uses a clearly identified deterministic polynomial Researcher and a separate rule-based or trained Judge. A native, randomly initialized transformer and an interchangeable neural Researcher adapter are implemented. The phase-1 arithmetic checkpoint failed structured generation. Phase 2A trained three research-specific checkpoints that emit mostly valid hypotheses but achieve only 3.13–10.94% verified success on the familiar holdout; their capability gate failed and they remain opt-in experimental backends.
 
 Phase 2A.1 adds tested research-trainer continuation and a six-model comparison of plain versus worked arithmetic supervision. Mean test success was 5.21% versus 12.50%, but one seed regressed and both arms failed their numerical gate. Eight worked-arm familiar-case successes contained incorrect process steps, reinforcing the distinction between a checked target prediction and a checked reasoning trace.
 
-See the [latest report](reports/phase-2a1-implementation.md), [comparison reproduction guide](docs/FINITE_DIFFERENCE_COMPARISON.md), and [real-checkpoint resume audit](reports/research-resume-audit.md). The complete suite has **77 passing tests, zero skips**. Historical reports preserve their original results and test counts.
+Phase 2A.2 adds staged arithmetic tasks, fitting diagnostics, a separately scoped observation verifier and read-only memory auditing. Worked versus curriculum mean test success was 6.77% versus 6.25% on fresh worlds; neither passed its capability gate. Seventeen of 25 learned familiar target passes failed observation consistency. Full results and failures are retained.
+
+See the [latest report](reports/phase-2a2-implementation.md), [curriculum reproduction guide](docs/ARITHMETIC_CURRICULUM.md), and [real-checkpoint resume audit](reports/research-resume-audit.md). The latest full preflight has **92 passing tests, zero skips**. Historical reports preserve their original results and test counts. The next recommended phase is separate Judge calibration and decision evaluation under shift.
 
 ## What runs
 
@@ -46,9 +48,10 @@ The lock records the tested macOS arm64 environment. Linux CPU lab installation 
 .venv/bin/python -m unittest discover -s tests -v
 .venv/bin/python -m aim.reproduce
 .venv/bin/python -m aim.comparison_reproduce
+.venv/bin/python -m aim.curriculum_reproduce
 ```
 
-The second command reproduces phase 1: test log, SFT, preference/DPO, RLVR, a separate trained Judge, an RLVR-from-SFT comparison, reference/trained-Judge evaluations, integrated loop, neural Researcher diagnostic and local benchmark. The third separately reproduces the registered six-model arithmetic-supervision comparison and 1,664 Controller evaluations. Read each run's metrics and failure records. Neither launches distributed processes automatically.
+The second command reproduces phase 1: test log, SFT, preference/DPO, RLVR, a separate trained Judge, an RLVR-from-SFT comparison, reference/trained-Judge evaluations, integrated loop, neural Researcher diagnostic and local benchmark. The third separately reproduces the registered plain/worked comparison; the fourth reproduces the worked/curriculum comparison plus observation audit. Each comparison runs six models and 1,664 Controller cases. Run only the study you intend to reproduce. Read its metrics and failure records. These commands do not launch distributed processes automatically.
 
 Core tests can run without torch; neural tests explicitly skip. A full reproduction requires torch and numpy and must not be reported successful when those tests are skipped.
 
@@ -110,3 +113,6 @@ Runs are excluded from a future Git index to avoid accidentally committing large
 - [Plain/worked comparison guide](docs/FINITE_DIFFERENCE_COMPARISON.md)
 - [Phase 2A.1 evidence and retained invalid attempt](reports/phase-2a1-implementation.md)
 - [Exact legacy checkpoint continuation](reports/research-resume-audit.md)
+- [Arithmetic curriculum reproduction](docs/ARITHMETIC_CURRICULUM.md)
+- [Phase 2A.2 results and observation audit](reports/phase-2a2-implementation.md)
+- [What finite observation checks establish](docs/OBSERVATION_SCOPE.md)

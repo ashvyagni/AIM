@@ -78,6 +78,8 @@ These scores never select models. A diagnostic sample is not exhaustive training
 
 The result means agreement with finite cited observations only. It is separate from target-prediction verification, process-step correctness, and proof of a global law. Tests include both a target match with failed observation fit and observation fit with a failed future measurement. The evaluation reports the conjunction of target and observation passes as an additional diagnostic, preserving the original canonical success gate.
 
+See [the finite-observation argument](OBSERVATION_SCOPE.md) for an explicit family of different laws that agree at all three observed points and disagree at the requested target. This is also a constraint on what the separate Judge can infer from those inputs.
+
 The audit opens each original memory with `read_only=True`: SQLite uses read-only/query-only mode; mutating Memory methods are rejected before object writes. State and database hashes are checked before/after the audit. Existing source validation checks content hashes. This protects the audit's API path; it is not an operating-system sandbox against unrelated processes.
 
 ## Implementation map

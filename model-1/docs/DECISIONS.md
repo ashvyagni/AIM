@@ -91,3 +91,15 @@ Keep the deterministic default and preserve both learned formats as opt-in exper
 **Status: implemented after a retained protocol violation, 2026-09-25.** The first Phase 2A.1 split manifest accidentally contained holdout coefficient vectors. Although they were not used as training rows, the trainer read the metadata, violating the intended boundary. The run was stopped before holdout scoring, annotated as invalid, and retained. The full corrected rerun kept the original protocol, worlds, seeds and thresholds.
 
 New label-bearing split membership lives in `split-audit.json`; trainer metadata has an explicit field allowlist and contains group hashes instead. Tests reject unexpected label-bearing fields and training access to holdout/audit files. File-access separation is an enforceable code boundary here, not a claim of an operating-system sandbox or a sealed benchmark service.
+
+## D016 — Staged arithmetic curriculum fails its promotion gate
+
+**Status: evidence-backed engineering decision, 2026-09-25.** The registered Phase 2A.2 experiment completed six random-init models, 92 passing preflight tests and 1,664 Controller cases. Worked and curriculum mean familiar verified success was 6.77% and 6.25%; both arms failed the capability gate, and curriculum failed the advantage gate. Selection and thresholds were frozen before holdout evaluation. [Evidence and limitations](../reports/phase-2a2-implementation.md).
+
+Keep the deterministic default and learned checkpoints opt-in. The recipes controlled padded positions and sampled worlds, but differed in research exposure and response-token count. Auxiliary reconstruction improved on some seeds while earlier task formats deteriorated; this motivates a possible replay/order experiment, not a conclusion that curriculum learning generally fails. No model-size increase or joint reward follows from these results. Next implement the already planned separate Judge calibration/decision phase with fresh partitions and explicit pre-outcome features. The owner has not approved a major architecture replacement, and none is made.
+
+## D017 — Observation consistency has an explicit finite scope
+
+**Status: implemented diagnostic with measured counterexamples, 2026-09-25.** The independently versioned checker validates cited spans and compares the candidate with each cited numerical observation. Checks bind to hypothesis/evidence hashes. The audit uses read-only memory and confirms unchanged state/database hashes; it never changes canonical target verification.
+
+Seventeen of 25 selected learned familiar target passes and all seven OOD target passes failed observation consistency. Conversely, the deterministic reference fit all cubic observations but failed every cubic target. Store both outcomes separately. See the [finite-observation argument](OBSERVATION_SCOPE.md). A combined target/observation reward or a new Controller gate requires a separately documented experiment; this diagnostic does not silently adopt either. Judge confidence must forecast a defined event under stated distribution assumptions and cannot override a failed check.
