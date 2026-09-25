@@ -1,0 +1,116 @@
+{
+  "baseline_commit": "935af7a",
+  "scope": "Phase 2B.1 implementation, tests, registered config/protocol, guides, reports and audited evidence. Excludes this inventory to avoid self-reference, local runs/checkpoints and unrelated owner files.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3273,
+      "sha256": "0d0dfef7887b6621719313aec389393736526eabc65d48d2f26f30273f59c595"
+    },
+    {
+      "path": "documents/AIM_Model_1_Implementation_Directive.md",
+      "bytes": 10801,
+      "sha256": "7d63b99479b3f70bd4fb702cad9375b3675025e03555fb5091e7e035af20aa4b"
+    },
+    {
+      "path": "model-1/README.md",
+      "bytes": 11764,
+      "sha256": "67c28e0eea6685d5c2da3e92fb5a1b6542ded91ce12a0b0fe1f339e78f005226"
+    },
+    {
+      "path": "model-1/aim/controller.py",
+      "bytes": 13489,
+      "sha256": "c81f938e6929b515c61d5c290b4ff5764b0b7be17d00acb1086ff765b6d6c507"
+    },
+    {
+      "path": "model-1/aim/paid_evidence.py",
+      "bytes": 9145,
+      "sha256": "5d2cd0e10bf7a88493955664635789d743acfde84b0c5aa35fbc64701f094355"
+    },
+    {
+      "path": "model-1/aim/paid_evidence_data.py",
+      "bytes": 1358,
+      "sha256": "71ba78f1a0bb646e3b3c50bb1349c3372e8f9d7f970561491af3a69ecd0bf772"
+    },
+    {
+      "path": "model-1/aim/paid_evidence_eval.py",
+      "bytes": 3430,
+      "sha256": "7571382e2c1b8db758fc3834102ab802bb6c89bdb5e771aed0f6b45d316c5d28"
+    },
+    {
+      "path": "model-1/aim/paid_evidence_reproduce.py",
+      "bytes": 5304,
+      "sha256": "a11096aba61db0f3c11674a23e2205a031eee5755486d0e469d0704d2f8574e4"
+    },
+    {
+      "path": "model-1/configs/paid-evidence.json",
+      "bytes": 369,
+      "sha256": "71c52096e4bafbe4b535a55c32eca820b615854c18c4aafaa4e7eaf849ee4b08"
+    },
+    {
+      "path": "model-1/docs/DECISIONS.md",
+      "bytes": 16844,
+      "sha256": "c2c461c4678f1a8d96f9376d851313995cdaf5d501eb9e0deb307358a625f7a9"
+    },
+    {
+      "path": "model-1/docs/IMPLEMENTATION_PLAN.md",
+      "bytes": 13618,
+      "sha256": "fdcddfc50d08f419c130c3365cc5728c423d5720c24e9c1738ae084e8587ec32"
+    },
+    {
+      "path": "model-1/docs/PAID_EVIDENCE.md",
+      "bytes": 7902,
+      "sha256": "c7dd02b79689f956afbc17ad9604300f336356cab3ea3a0e4cf5702aaca5df2f"
+    },
+    {
+      "path": "model-1/docs/experiments/phase-2b1-protocol.md",
+      "bytes": 6665,
+      "sha256": "4de402dd1fe11c48ffbb4de04f6210ccf78bab43624ca960c34093699abd5d33"
+    },
+    {
+      "path": "model-1/reports/export_paid_evidence.py",
+      "bytes": 10255,
+      "sha256": "243ddaef349ebfb5748a6560297f0855d9a4314691057140bf3a715bd5ffb813"
+    },
+    {
+      "path": "model-1/reports/phase-2b1-evidence/development-failure.log",
+      "bytes": 2727,
+      "sha256": "80e0831be782f84588274fa0446e189f04a6aa015b451bad67a2c381d4df48c3"
+    },
+    {
+      "path": "model-1/reports/phase-2b1-evidence/episodes.json",
+      "bytes": 8816439,
+      "sha256": "9124cec7e147342f1fe25c079ffe4b2c176d8839c4900f09bad46933373c4673"
+    },
+    {
+      "path": "model-1/reports/phase-2b1-evidence/export-manifest.json",
+      "bytes": 655,
+      "sha256": "6e9fd157cbd6b8d9d4a939840e9213f4a62e70ae3d0ebbf537fa6f5a589bc1eb"
+    },
+    {
+      "path": "model-1/reports/phase-2b1-evidence/results.json",
+      "bytes": 59987,
+      "sha256": "5dfeb0af2ac314a40ecfe6b02b263b283a7b41d202df8c997fa4649bfcdcbf8c"
+    },
+    {
+      "path": "model-1/reports/phase-2b1-evidence/tests.log",
+      "bytes": 25878,
+      "sha256": "0f0577461c52c14dba0fdd5d16e71143f02c7674f24b7ce41b5380176f9c1577"
+    },
+    {
+      "path": "model-1/reports/phase-2b1-implementation.md",
+      "bytes": 14028,
+      "sha256": "3a78a7e76777150f735402b49295e6df0440dce9b853cbd021305db945a31a72"
+    },
+    {
+      "path": "model-1/reports/phase-2b1-metrics.md",
+      "bytes": 7572,
+      "sha256": "4de37af9ff777b9d673ef765f550538fad75b0cdd743f913aace3b98480d0a7c"
+    },
+    {
+      "path": "model-1/tests/test_paid_evidence.py",
+      "bytes": 10791,
+      "sha256": "35f77afc03f2f0ac145e5fab9d495b22de35bff125ffcf654afd4eddb97bdcb6"
+    }
+  ]
+}

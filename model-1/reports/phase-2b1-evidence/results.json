@@ -1,0 +1,1551 @@
+{
+  "audit": {
+    "code_hashes": [
+      "5edce7b02944dcdc054fcf0e24e1a902cd93a22e6a70506fb9fbb44b25f8d31a"
+    ],
+    "episodes": 1248,
+    "groups": 32,
+    "passed": true,
+    "tests": 118,
+    "worlds": 96
+  },
+  "evaluation_manifest": {
+    "code_hash": "5edce7b02944dcdc054fcf0e24e1a902cd93a22e6a70506fb9fbb44b25f8d31a",
+    "code_hashes": {
+      "aim/__init__.py": "577bdd6a3a837ac5048774c9ef242cc6e1bce74dfe89b557ca5e862dcea595b6",
+      "aim/__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+      "aim/benchmark.py": "b1eea64da4449ebba061308e6a5ba8b75f55a676be041be1016dfac6859196a5",
+      "aim/cli.py": "cf7c8df32a95ec56955e83b6656a0c08bd07e5cb840f3c354fce342364f44ba4",
+      "aim/comparison_data.py": "d1ef243931665486303beaa0fd9e7b043bcdf0e9e896070b21c084133c524954",
+      "aim/comparison_eval.py": "0ccf82bf55e4e526e77dcf751ef6b552e8157140f50fa2d476a9911f901350d8",
+      "aim/comparison_reproduce.py": "ab9c9df9ee711b7b225b871fdaf9ddb5c6a3f85c4c8ab884e05dbef72b7b74fe",
+      "aim/comparison_train.py": "2ef27455e4eda6d30770e586ff09ae8a32e9a02bb9a78cac430543defdf697e9",
+      "aim/contracts.py": "bec25dc10b89b48476b9bdbda8ea890587c4b5b3f6b4eb1af772f47835a99aa1",
+      "aim/controller.py": "c81f938e6929b515c61d5c290b4ff5764b0b7be17d00acb1086ff765b6d6c507",
+      "aim/curriculum_data.py": "3cfbca840c659c79268761c069260a8fec89f7fe9b7a09ab355729a1be63365c",
+      "aim/curriculum_diagnostics.py": "31e608fb2a2412b28de4e0e2026323082ad09f26ef1385ca3f035a0257c65ae9",
+      "aim/curriculum_eval.py": "9a2377b3d4da7e4ca7b85445f1b294b34eb74d830c53275babdf8a26d49759b7",
+      "aim/curriculum_reproduce.py": "a04e064eb602a7077a6c3076df9f05d2354b82f66aecb4ff9ad9a4fb9fa7b42e",
+      "aim/curriculum_tasks.py": "f874a75f6cd19dfcb941703471975f4db1953a365d5dbf288474165427f88233",
+      "aim/curriculum_train.py": "d16e8d91f135df5e7ce3c0e7d8c62ad5dc64963d9d1b7d3e4e80d632aff833b2",
+      "aim/datasets.py": "40fc2765dc5673d3459909030f5c01f51a4309c45599361a6a281e5649c28db3",
+      "aim/distributed.py": "0293abd4027d2d50da649ddd5a6e4a1f18ea18dd3bcd2597142465b8363ff06b",
+      "aim/distributed_launch.py": "5e5e8b4426d23a86b49ed6ada9e32a90faa2f83bf0dd794c09ea4e1af079cfee",
+      "aim/evaluation.py": "f72e10966f141aefc5b34b78d22697efb706b281d1e2db75ed3be8ae6deaff0d",
+      "aim/finite_difference.py": "6f4d97f04bf8a0b1a81e349b8b25b627dee0156305d0a5eab4f3b43be0aab88d",
+      "aim/judge.py": "b63f597847b567067c66635aa14a87a80954a368bbdac8df10d3f2eee8387d41",
+      "aim/judge_shift_data.py": "4058251f90255b57663ddc7346f7ed8a9803f11bf203fc62023bd299d3b27926",
+      "aim/judge_shift_eval.py": "30e0acae520f65f99deb34b23d55a0456b202909bc9d9962bab841ae89518a30",
+      "aim/judge_shift_features.py": "f63d054e9162210caac6f71b36c4c1c09c16b94ec3cc0c19b3cad39fb32f38f7",
+      "aim/judge_shift_reproduce.py": "962a5190b4a9dd7623f23a7810ecab19561fa3a9a2cc7f6012c7f0fd3e9b7536",
+      "aim/judge_shift_train.py": "5b95414b6e1c97afe076e070b5a73e6fdf7bfa2c8fa821bc8244c88e1ec10769",
+      "aim/memory.py": "9de7c45bc5ae5eac3ade09f05643deb402b89d5a0e53c7140405453732a20cec",
+      "aim/metrics.py": "68ae9eb6a91aff248b996c4abc4dbce6227a7f9e3417b8ae54c2aa92ab69370d",
+      "aim/neural.py": "4677b49c4740d1c924a73aa5adb9e146fa1c1a46594c9fe0743c3dd60465ebfb",
+      "aim/objectives.py": "18a9ea640e2e754d9358df9c0330f3c938bf32580e3e3f1107ba162a6cc57286",
+      "aim/observation_verifier.py": "34ede4436fbe93b2c0e0373cf185e6053226b12b39b87c61e2250a621ce0133b",
+      "aim/paid_evidence.py": "5d2cd0e10bf7a88493955664635789d743acfde84b0c5aa35fbc64701f094355",
+      "aim/paid_evidence_data.py": "71ba78f1a0bb646e3b3c50bb1349c3372e8f9d7f970561491af3a69ecd0bf772",
+      "aim/paid_evidence_eval.py": "7571382e2c1b8db758fc3834102ab802bb6c89bdb5e771aed0f6b45d316c5d28",
+      "aim/paid_evidence_reproduce.py": "a11096aba61db0f3c11674a23e2205a031eee5755486d0e469d0704d2f8574e4",
+      "aim/reproduce.py": "e7bdb84ead93141c3a8f74b3cf743dece706255223f71996283a8bc97cc37c47",
+      "aim/research_data.py": "0d78768e9c0227b13ab3658b7968f06255eca643391a9894cac1f77842181833",
+      "aim/research_eval.py": "ccd25ce23dd7bd9c34e42722972f7ae12cea530ed6514e9690a0523717259784",
+      "aim/research_format.py": "9c50a8ee611ae1a93abf40664874d4a87c7903310ae9eba2f40a534759fd0077",
+      "aim/research_train.py": "2d1aa9ecef52c361430fe383c237233b96acb42d0d0c557f056ace54acf93092",
+      "aim/researcher.py": "35710bb62f9ccc2ccb3da04ff857043c0b1bcd351c89ee2ace9bad694c0c17b7",
+      "aim/tool_worker.py": "770e1849f722013187c80b72410660e128133dafdb198f6243382cf5c9a6efcf",
+      "aim/tools.py": "9447d1cd7d32c616db882e0b7b005f671a742e79d648ce319204d34464b03153",
+      "aim/tracking.py": "825cf2c6d73d07afd776dd1d883566e93b36ccc558321ab2db031047cda16feb",
+      "aim/training.py": "8b08845d28c1fc2955267d5a503eaf4805a4a7156b088c2da96a7294a4f18f55",
+      "aim/verifiers.py": "55c3655ce163be4cae0c0fafdda812558867a0ee6d663b3fc511d2cca021b140",
+      "configs/arithmetic-curriculum.json": "84d07a2cfce8568ebba9bd6313d6cd42bc1484f7383f8d6a597f7358a58c689c",
+      "configs/benchmark.json": "7fe41f846424ed18df8d456137ab6ff71e2310875adff19db60a43f037cc14e7",
+      "configs/finite-difference-comparison.json": "10ba838c054c536b38ca882898c79d3690e96f9ea7abd134bbe1f68fac32f3fa",
+      "configs/judge-shift.json": "2f3925025fbe02c1b4e4cfb327db6052850e2f7594104a8ed7f687c01190ebd2",
+      "configs/judge.json": "371684befc2b336649fb4a033f3f31ab986923014ea9da0e1bbb537f9c6d461a",
+      "configs/lab-audit.template.json": "8e540d4c80af72136d9ce294f59f6e4d8c617773814820e84e3bb676d95ff18b",
+      "configs/loop.json": "ec6573150d27d18f568d202768653536052d32db2e8c0d385bd4cce6ffde747e",
+      "configs/paid-evidence.json": "71c52096e4bafbe4b535a55c32eca820b615854c18c4aafaa4e7eaf849ee4b08",
+      "configs/preference.json": "6d1c3e417536b63f49d46ebbc9f1336f051d8756548cf540f9ef295031f3c862",
+      "configs/rlvr.json": "ab321cce85c2c9dad76f7a67118fdb282264113a63a96cced6f4fb189fde63e6",
+      "configs/scale-candidates.json": "996970dbcb67258c6d70411a76006f53cb61f0a1116d2ba6b6891a71201bc16e",
+      "configs/sft.json": "d4f44f6b970f542ec4aeed6dd51ddb2450ea63993ce2174cef20af0ab006ee2b",
+      "configs/structured-researcher.json": "d19bad7e8b24cdf2714a41b50681b91a72dba731b213616ebeb50714c162b779",
+      "data/demo.json": "ffeeeb826a5a3f32327f1e51296825250daf3311a14cfd8af9ad692f306931c9",
+      "eval/suite-v1.json": "5a0d80fd18c74efc1e91655af3be617cda947bfa81c43ac9b03260b598272b02",
+      "eval/suite-v1.sha256": "896cbcbcfbdf594a0e0cf25379d9cf77d8d20d9dc51168e1cb806d4242449504",
+      "pyproject.toml": "4dd3b3d0075186c6d330daebd0075551dd8d06a38eefedd6cf6e6f6387476c3d",
+      "requirements-lock.txt": "25bd62fa6cdcfb288d7dedf19300afd79354f2b5e9d766562f334ef5131454e1",
+      "tests/test_core.py": "475aade7b2f51c7c64e83dc2a70b545b8e37d26033e5677e67ff2d555becc3a4",
+      "tests/test_curriculum.py": "8d87141a1e1a9e0f18b81b006f7fc6ec0409c4b8df101898f4c32bb2995862b6",
+      "tests/test_finite_difference.py": "b9d1fa8091e18cb1c373d25ef9e8bbf6acaeed8f39706990f538019963e22bc4",
+      "tests/test_judge_shift.py": "ead3de21164b97f2c97e4413d62ec70b4c07eebded8c34fab225a28e92f133ce",
+      "tests/test_observation_verifier.py": "cae40861290f5e3990cb880a3d0c192a5a1543eb2ec53254f31930fa6f20ab15",
+      "tests/test_paid_evidence.py": "35f77afc03f2f0ac145e5fab9d495b22de35bff125ffcf654afd4eddb97bdcb6",
+      "tests/test_research_data.py": "ea836283acf1d16bd6a75997655d9a19001e4efb53860eb0abad7f2cb16e7d5f",
+      "tests/test_research_eval.py": "dd4db3abec151a733498848b2a2b6a228ecc66b73c753ffc12ac7527c536bf7b",
+      "tests/test_research_format.py": "42882f54748384863c67255aa0e72dc284150730147810e5c4f5b8b58905d9e3",
+      "tests/test_research_training.py": "6e065c70f12f4f6a31e2870854ed7370ef656aefe2d10555570a02ef4ac8c833",
+      "tests/test_training.py": "c068e9270f18719c64e0aa5a56aa4246767fcb3158362452e09a0ddbb1373842"
+    },
+    "configuration": {
+      "acquisition_band": [
+        0.2,
+        0.8
+      ],
+      "acquisition_cost": 0.1,
+      "bootstrap_draws": 500,
+      "bootstrap_seed": 101,
+      "judge_evidence": "reports/phase-2b-evidence/results.json",
+      "max_actions": 8,
+      "priors": [
+        0.5,
+        0.25
+      ],
+      "seeds": [
+        17,
+        23,
+        41
+      ],
+      "sensitivity_acquisition_costs": [
+        0.0,
+        0.02,
+        0.1,
+        0.3,
+        0.6
+      ],
+      "target_cost": 0.5,
+      "version": "aim-paid-evidence-v1"
+    },
+    "configuration_hash": "ba48ecf7cf0c07514d597879b05afdb84174af869064851f886e0a21baab8b76",
+    "created_at_unix": 1790364667.100233,
+    "environment": {
+      "executable": "model-1/.venv/bin/python",
+      "git_commit": "44e9ddef11a06d12fd26172f917ff5c92f12922a",
+      "git_note": "null commit means this workspace has no readable commit; code hashes are authoritative",
+      "git_status": "",
+      "git_status_note": "Untracked path names omitted from export; original retained.",
+      "logical_cpus": 8,
+      "machine": "arm64",
+      "packages": {
+        "Jinja2": "3.1.6",
+        "MarkupSafe": "3.0.3",
+        "filelock": "4.0.3",
+        "fsspec": "2026.9.0",
+        "mpmath": "1.3.0",
+        "networkx": "3.7",
+        "numpy": "2.2.6",
+        "setuptools": "84.0.0",
+        "sympy": "1.14.0",
+        "torch": "2.8.0",
+        "typing_extensions": "4.16.0"
+      },
+      "platform": "macOS-26.3.1-arm64-arm-64bit",
+      "processor": "arm",
+      "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]"
+    },
+    "input_note": "null input hash means file was absent at run creation; the operation must fail explicitly when reading it",
+    "inputs": {
+      "model-1/docs/experiments/phase-2b1-protocol.md": "4de402dd1fe11c48ffbb4de04f6210ccf78bab43624ca960c34093699abd5d33",
+      "model-1/reports/phase-2b-evidence/results.json": "e7fd9f3676ac9885165af807d41fee3761cec01fcb1c7bb50166a92b12aefffe",
+      "runs/20260925T193029-paid-evidence-reproduction-751ae7ad/data/20260925T193106-paid-evidence-data-5dc1915a/worlds.json": "c69c4ea0d34407c3120f8a3559592609fb0e578378b931209f8c7950a7672dfd"
+    },
+    "kind": "paid-evidence-evaluation",
+    "run_id": "20260925T193107-paid-evidence-evaluation-5da6fafc",
+    "schema_version": 1
+  },
+  "frozen": {
+    "configuration": {
+      "acquisition_band": [
+        0.2,
+        0.8
+      ],
+      "acquisition_cost": 0.1,
+      "bootstrap_draws": 500,
+      "bootstrap_seed": 101,
+      "judge_evidence": "reports/phase-2b-evidence/results.json",
+      "max_actions": 8,
+      "priors": [
+        0.5,
+        0.25
+      ],
+      "seeds": [
+        17,
+        23,
+        41
+      ],
+      "sensitivity_acquisition_costs": [
+        0.0,
+        0.02,
+        0.1,
+        0.3,
+        0.6
+      ],
+      "target_cost": 0.5,
+      "version": "aim-paid-evidence-v1"
+    },
+    "dataset_sha256": "c69c4ea0d34407c3120f8a3559592609fb0e578378b931209f8c7950a7672dfd",
+    "judge_evidence_sha256": "e7fd9f3676ac9885165af807d41fee3761cec01fcb1c7bb50166a92b12aefffe",
+    "judges": {
+      "17": {
+        "calibration_scores": [
+          {
+            "log_loss": 0.4435296356678009,
+            "temperature": 0.5
+          },
+          {
+            "log_loss": 0.39352351427078247,
+            "temperature": 0.75
+          },
+          {
+            "log_loss": 0.3850629925727844,
+            "temperature": 1.0
+          },
+          {
+            "log_loss": 0.3921714127063751,
+            "temperature": 1.25
+          },
+          {
+            "log_loss": 0.40530845522880554,
+            "temperature": 1.5
+          },
+          {
+            "log_loss": 0.435661256313324,
+            "temperature": 2.0
+          },
+          {
+            "log_loss": 0.48802459239959717,
+            "temperature": 3.0
+          },
+          {
+            "log_loss": 0.5515775084495544,
+            "temperature": 5.0
+          }
+        ],
+        "checkpoint": "model-1/runs/20260925T141603-judge-shift-reproduction-a1a228f5/training/20260925T141619-judge-shift-training-6f9e4f81/rich-log-seed17/20260925T141620-judge-fit-4e14bb25/checkpoint.pt",
+        "initial_hash": "2428fc4b84130c9a62cc9dc0eea50b5abfbe9a2e6b0cca921994e211b9456659",
+        "loss": "log",
+        "mode": "rich",
+        "parameters": 289,
+        "seed": 17,
+        "sha256": "ca425e2fdfb574e7dda8ac2ae9b458c981d7f16980462c36f8f0da4d1099cff0",
+        "temperature": 1.0
+      },
+      "23": {
+        "calibration_scores": [
+          {
+            "log_loss": 0.4530157744884491,
+            "temperature": 0.5
+          },
+          {
+            "log_loss": 0.3974999189376831,
+            "temperature": 0.75
+          },
+          {
+            "log_loss": 0.3877013027667999,
+            "temperature": 1.0
+          },
+          {
+            "log_loss": 0.39460042119026184,
+            "temperature": 1.25
+          },
+          {
+            "log_loss": 0.4078524112701416,
+            "temperature": 1.5
+          },
+          {
+            "log_loss": 0.43854743242263794,
+            "temperature": 2.0
+          },
+          {
+            "log_loss": 0.49115145206451416,
+            "temperature": 3.0
+          },
+          {
+            "log_loss": 0.5543323159217834,
+            "temperature": 5.0
+          }
+        ],
+        "checkpoint": "model-1/runs/20260925T141603-judge-shift-reproduction-a1a228f5/training/20260925T141619-judge-shift-training-6f9e4f81/rich-log-seed23/20260925T141620-judge-fit-7c1baa79/checkpoint.pt",
+        "initial_hash": "98590fb3461f80e943cac720f2edd2a16614c6bee8b61eee2eeb7b0ec6a4b62d",
+        "loss": "log",
+        "mode": "rich",
+        "parameters": 289,
+        "seed": 23,
+        "sha256": "2e4c985022f44b03dd245b4c90715988c43f8582b92229b9780ba176693fa18b",
+        "temperature": 1.0
+      },
+      "41": {
+        "calibration_scores": [
+          {
+            "log_loss": 0.4629862904548645,
+            "temperature": 0.5
+          },
+          {
+            "log_loss": 0.4022044241428375,
+            "temperature": 0.75
+          },
+          {
+            "log_loss": 0.3906930387020111,
+            "temperature": 1.0
+          },
+          {
+            "log_loss": 0.3969756066799164,
+            "temperature": 1.25
+          },
+          {
+            "log_loss": 0.40998977422714233,
+            "temperature": 1.5
+          },
+          {
+            "log_loss": 0.44052237272262573,
+            "temperature": 2.0
+          },
+          {
+            "log_loss": 0.49294328689575195,
+            "temperature": 3.0
+          },
+          {
+            "log_loss": 0.5557482838630676,
+            "temperature": 5.0
+          }
+        ],
+        "checkpoint": "model-1/runs/20260925T141603-judge-shift-reproduction-a1a228f5/training/20260925T141619-judge-shift-training-6f9e4f81/rich-log-seed41/20260925T141621-judge-fit-27126dad/checkpoint.pt",
+        "initial_hash": "ae986c2535a6a9103d81573cbfd0b7c8cdb507144a37b603a14698d0e27455ad",
+        "loss": "log",
+        "mode": "rich",
+        "parameters": 289,
+        "seed": 41,
+        "sha256": "0b09add9c7f6ee7448881b8d022a9829092e9ff0422c034a7b8d1e4f57363a43",
+        "temperature": 1.0
+      }
+    },
+    "policies": [
+      [
+        "verify_all",
+        "verify_all",
+        null
+      ],
+      [
+        "abstain_all",
+        "abstain_all",
+        null
+      ],
+      [
+        "fit_direct",
+        "fit_direct",
+        null
+      ],
+      [
+        "acquire_fit",
+        "acquire_fit",
+        null
+      ],
+      [
+        "judge_direct-seed17",
+        "judge_direct",
+        17
+      ],
+      [
+        "judge_direct-seed23",
+        "judge_direct",
+        23
+      ],
+      [
+        "judge_direct-seed41",
+        "judge_direct",
+        41
+      ],
+      [
+        "acquire_judge-seed17",
+        "acquire_judge",
+        17
+      ],
+      [
+        "acquire_judge-seed23",
+        "acquire_judge",
+        23
+      ],
+      [
+        "acquire_judge-seed41",
+        "acquire_judge",
+        41
+      ],
+      [
+        "selective_judge-seed17",
+        "selective_judge",
+        17
+      ],
+      [
+        "selective_judge-seed23",
+        "selective_judge",
+        23
+      ],
+      [
+        "selective_judge-seed41",
+        "selective_judge",
+        41
+      ]
+    ],
+    "version": "aim-paid-evidence-v1"
+  },
+  "reproduction_manifest": {
+    "code_hash": "5edce7b02944dcdc054fcf0e24e1a902cd93a22e6a70506fb9fbb44b25f8d31a",
+    "code_hashes": {
+      "aim/__init__.py": "577bdd6a3a837ac5048774c9ef242cc6e1bce74dfe89b557ca5e862dcea595b6",
+      "aim/__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+      "aim/benchmark.py": "b1eea64da4449ebba061308e6a5ba8b75f55a676be041be1016dfac6859196a5",
+      "aim/cli.py": "cf7c8df32a95ec56955e83b6656a0c08bd07e5cb840f3c354fce342364f44ba4",
+      "aim/comparison_data.py": "d1ef243931665486303beaa0fd9e7b043bcdf0e9e896070b21c084133c524954",
+      "aim/comparison_eval.py": "0ccf82bf55e4e526e77dcf751ef6b552e8157140f50fa2d476a9911f901350d8",
+      "aim/comparison_reproduce.py": "ab9c9df9ee711b7b225b871fdaf9ddb5c6a3f85c4c8ab884e05dbef72b7b74fe",
+      "aim/comparison_train.py": "2ef27455e4eda6d30770e586ff09ae8a32e9a02bb9a78cac430543defdf697e9",
+      "aim/contracts.py": "bec25dc10b89b48476b9bdbda8ea890587c4b5b3f6b4eb1af772f47835a99aa1",
+      "aim/controller.py": "c81f938e6929b515c61d5c290b4ff5764b0b7be17d00acb1086ff765b6d6c507",
+      "aim/curriculum_data.py": "3cfbca840c659c79268761c069260a8fec89f7fe9b7a09ab355729a1be63365c",
+      "aim/curriculum_diagnostics.py": "31e608fb2a2412b28de4e0e2026323082ad09f26ef1385ca3f035a0257c65ae9",
+      "aim/curriculum_eval.py": "9a2377b3d4da7e4ca7b85445f1b294b34eb74d830c53275babdf8a26d49759b7",
+      "aim/curriculum_reproduce.py": "a04e064eb602a7077a6c3076df9f05d2354b82f66aecb4ff9ad9a4fb9fa7b42e",
+      "aim/curriculum_tasks.py": "f874a75f6cd19dfcb941703471975f4db1953a365d5dbf288474165427f88233",
+      "aim/curriculum_train.py": "d16e8d91f135df5e7ce3c0e7d8c62ad5dc64963d9d1b7d3e4e80d632aff833b2",
+      "aim/datasets.py": "40fc2765dc5673d3459909030f5c01f51a4309c45599361a6a281e5649c28db3",
+      "aim/distributed.py": "0293abd4027d2d50da649ddd5a6e4a1f18ea18dd3bcd2597142465b8363ff06b",
+      "aim/distributed_launch.py": "5e5e8b4426d23a86b49ed6ada9e32a90faa2f83bf0dd794c09ea4e1af079cfee",
+      "aim/evaluation.py": "f72e10966f141aefc5b34b78d22697efb706b281d1e2db75ed3be8ae6deaff0d",
+      "aim/finite_difference.py": "6f4d97f04bf8a0b1a81e349b8b25b627dee0156305d0a5eab4f3b43be0aab88d",
+      "aim/judge.py": "b63f597847b567067c66635aa14a87a80954a368bbdac8df10d3f2eee8387d41",
+      "aim/judge_shift_data.py": "4058251f90255b57663ddc7346f7ed8a9803f11bf203fc62023bd299d3b27926",
+      "aim/judge_shift_eval.py": "30e0acae520f65f99deb34b23d55a0456b202909bc9d9962bab841ae89518a30",
+      "aim/judge_shift_features.py": "f63d054e9162210caac6f71b36c4c1c09c16b94ec3cc0c19b3cad39fb32f38f7",
+      "aim/judge_shift_reproduce.py": "962a5190b4a9dd7623f23a7810ecab19561fa3a9a2cc7f6012c7f0fd3e9b7536",
+      "aim/judge_shift_train.py": "5b95414b6e1c97afe076e070b5a73e6fdf7bfa2c8fa821bc8244c88e1ec10769",
+      "aim/memory.py": "9de7c45bc5ae5eac3ade09f05643deb402b89d5a0e53c7140405453732a20cec",
+      "aim/metrics.py": "68ae9eb6a91aff248b996c4abc4dbce6227a7f9e3417b8ae54c2aa92ab69370d",
+      "aim/neural.py": "4677b49c4740d1c924a73aa5adb9e146fa1c1a46594c9fe0743c3dd60465ebfb",
+      "aim/objectives.py": "18a9ea640e2e754d9358df9c0330f3c938bf32580e3e3f1107ba162a6cc57286",
+      "aim/observation_verifier.py": "34ede4436fbe93b2c0e0373cf185e6053226b12b39b87c61e2250a621ce0133b",
+      "aim/paid_evidence.py": "5d2cd0e10bf7a88493955664635789d743acfde84b0c5aa35fbc64701f094355",
+      "aim/paid_evidence_data.py": "71ba78f1a0bb646e3b3c50bb1349c3372e8f9d7f970561491af3a69ecd0bf772",
+      "aim/paid_evidence_eval.py": "7571382e2c1b8db758fc3834102ab802bb6c89bdb5e771aed0f6b45d316c5d28",
+      "aim/paid_evidence_reproduce.py": "a11096aba61db0f3c11674a23e2205a031eee5755486d0e469d0704d2f8574e4",
+      "aim/reproduce.py": "e7bdb84ead93141c3a8f74b3cf743dece706255223f71996283a8bc97cc37c47",
+      "aim/research_data.py": "0d78768e9c0227b13ab3658b7968f06255eca643391a9894cac1f77842181833",
+      "aim/research_eval.py": "ccd25ce23dd7bd9c34e42722972f7ae12cea530ed6514e9690a0523717259784",
+      "aim/research_format.py": "9c50a8ee611ae1a93abf40664874d4a87c7903310ae9eba2f40a534759fd0077",
+      "aim/research_train.py": "2d1aa9ecef52c361430fe383c237233b96acb42d0d0c557f056ace54acf93092",
+      "aim/researcher.py": "35710bb62f9ccc2ccb3da04ff857043c0b1bcd351c89ee2ace9bad694c0c17b7",
+      "aim/tool_worker.py": "770e1849f722013187c80b72410660e128133dafdb198f6243382cf5c9a6efcf",
+      "aim/tools.py": "9447d1cd7d32c616db882e0b7b005f671a742e79d648ce319204d34464b03153",
+      "aim/tracking.py": "825cf2c6d73d07afd776dd1d883566e93b36ccc558321ab2db031047cda16feb",
+      "aim/training.py": "8b08845d28c1fc2955267d5a503eaf4805a4a7156b088c2da96a7294a4f18f55",
+      "aim/verifiers.py": "55c3655ce163be4cae0c0fafdda812558867a0ee6d663b3fc511d2cca021b140",
+      "configs/arithmetic-curriculum.json": "84d07a2cfce8568ebba9bd6313d6cd42bc1484f7383f8d6a597f7358a58c689c",
+      "configs/benchmark.json": "7fe41f846424ed18df8d456137ab6ff71e2310875adff19db60a43f037cc14e7",
+      "configs/finite-difference-comparison.json": "10ba838c054c536b38ca882898c79d3690e96f9ea7abd134bbe1f68fac32f3fa",
+      "configs/judge-shift.json": "2f3925025fbe02c1b4e4cfb327db6052850e2f7594104a8ed7f687c01190ebd2",
+      "configs/judge.json": "371684befc2b336649fb4a033f3f31ab986923014ea9da0e1bbb537f9c6d461a",
+      "configs/lab-audit.template.json": "8e540d4c80af72136d9ce294f59f6e4d8c617773814820e84e3bb676d95ff18b",
+      "configs/loop.json": "ec6573150d27d18f568d202768653536052d32db2e8c0d385bd4cce6ffde747e",
+      "configs/paid-evidence.json": "71c52096e4bafbe4b535a55c32eca820b615854c18c4aafaa4e7eaf849ee4b08",
+      "configs/preference.json": "6d1c3e417536b63f49d46ebbc9f1336f051d8756548cf540f9ef295031f3c862",
+      "configs/rlvr.json": "ab321cce85c2c9dad76f7a67118fdb282264113a63a96cced6f4fb189fde63e6",
+      "configs/scale-candidates.json": "996970dbcb67258c6d70411a76006f53cb61f0a1116d2ba6b6891a71201bc16e",
+      "configs/sft.json": "d4f44f6b970f542ec4aeed6dd51ddb2450ea63993ce2174cef20af0ab006ee2b",
+      "configs/structured-researcher.json": "d19bad7e8b24cdf2714a41b50681b91a72dba731b213616ebeb50714c162b779",
+      "data/demo.json": "ffeeeb826a5a3f32327f1e51296825250daf3311a14cfd8af9ad692f306931c9",
+      "eval/suite-v1.json": "5a0d80fd18c74efc1e91655af3be617cda947bfa81c43ac9b03260b598272b02",
+      "eval/suite-v1.sha256": "896cbcbcfbdf594a0e0cf25379d9cf77d8d20d9dc51168e1cb806d4242449504",
+      "pyproject.toml": "4dd3b3d0075186c6d330daebd0075551dd8d06a38eefedd6cf6e6f6387476c3d",
+      "requirements-lock.txt": "25bd62fa6cdcfb288d7dedf19300afd79354f2b5e9d766562f334ef5131454e1",
+      "tests/test_core.py": "475aade7b2f51c7c64e83dc2a70b545b8e37d26033e5677e67ff2d555becc3a4",
+      "tests/test_curriculum.py": "8d87141a1e1a9e0f18b81b006f7fc6ec0409c4b8df101898f4c32bb2995862b6",
+      "tests/test_finite_difference.py": "b9d1fa8091e18cb1c373d25ef9e8bbf6acaeed8f39706990f538019963e22bc4",
+      "tests/test_judge_shift.py": "ead3de21164b97f2c97e4413d62ec70b4c07eebded8c34fab225a28e92f133ce",
+      "tests/test_observation_verifier.py": "cae40861290f5e3990cb880a3d0c192a5a1543eb2ec53254f31930fa6f20ab15",
+      "tests/test_paid_evidence.py": "35f77afc03f2f0ac145e5fab9d495b22de35bff125ffcf654afd4eddb97bdcb6",
+      "tests/test_research_data.py": "ea836283acf1d16bd6a75997655d9a19001e4efb53860eb0abad7f2cb16e7d5f",
+      "tests/test_research_eval.py": "dd4db3abec151a733498848b2a2b6a228ecc66b73c753ffc12ac7527c536bf7b",
+      "tests/test_research_format.py": "42882f54748384863c67255aa0e72dc284150730147810e5c4f5b8b58905d9e3",
+      "tests/test_research_training.py": "6e065c70f12f4f6a31e2870854ed7370ef656aefe2d10555570a02ef4ac8c833",
+      "tests/test_training.py": "c068e9270f18719c64e0aa5a56aa4246767fcb3158362452e09a0ddbb1373842"
+    },
+    "configuration": {
+      "acquisition_band": [
+        0.2,
+        0.8
+      ],
+      "acquisition_cost": 0.1,
+      "bootstrap_draws": 500,
+      "bootstrap_seed": 101,
+      "judge_evidence": "reports/phase-2b-evidence/results.json",
+      "max_actions": 8,
+      "priors": [
+        0.5,
+        0.25
+      ],
+      "seeds": [
+        17,
+        23,
+        41
+      ],
+      "sensitivity_acquisition_costs": [
+        0.0,
+        0.02,
+        0.1,
+        0.3,
+        0.6
+      ],
+      "target_cost": 0.5,
+      "version": "aim-paid-evidence-v1"
+    },
+    "configuration_hash": "ba48ecf7cf0c07514d597879b05afdb84174af869064851f886e0a21baab8b76",
+    "created_at_unix": 1790364629.547264,
+    "environment": {
+      "executable": "model-1/.venv/bin/python",
+      "git_commit": "44e9ddef11a06d12fd26172f917ff5c92f12922a",
+      "git_note": "null commit means this workspace has no readable commit; code hashes are authoritative",
+      "git_status": "",
+      "git_status_note": "Untracked path names omitted from export; original retained.",
+      "logical_cpus": 8,
+      "machine": "arm64",
+      "packages": {
+        "Jinja2": "3.1.6",
+        "MarkupSafe": "3.0.3",
+        "filelock": "4.0.3",
+        "fsspec": "2026.9.0",
+        "mpmath": "1.3.0",
+        "networkx": "3.7",
+        "numpy": "2.2.6",
+        "setuptools": "84.0.0",
+        "sympy": "1.14.0",
+        "torch": "2.8.0",
+        "typing_extensions": "4.16.0"
+      },
+      "platform": "macOS-26.3.1-arm64-arm-64bit",
+      "processor": "arm",
+      "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]"
+    },
+    "input_note": "null input hash means file was absent at run creation; the operation must fail explicitly when reading it",
+    "inputs": {
+      "model-1/configs/paid-evidence.json": "71c52096e4bafbe4b535a55c32eca820b615854c18c4aafaa4e7eaf849ee4b08",
+      "model-1/docs/experiments/phase-2b1-protocol.md": "4de402dd1fe11c48ffbb4de04f6210ccf78bab43624ca960c34093699abd5d33",
+      "model-1/reports/phase-2b-evidence/results.json": "e7fd9f3676ac9885165af807d41fee3761cec01fcb1c7bb50166a92b12aefffe"
+    },
+    "kind": "paid-evidence-reproduction",
+    "run_id": "20260925T193029-paid-evidence-reproduction-751ae7ad",
+    "schema_version": 1
+  },
+  "source_hashes": {
+    "dataset": "c69c4ea0d34407c3120f8a3559592609fb0e578378b931209f8c7950a7672dfd",
+    "episode_files": {
+      "abstain_all": "a1f0c3e52ebd8dd5f55a9c5a005fd0095c49b1bb44c051756e861d0c476424e8",
+      "acquire_fit": "25c015f7989fa57c3faf60b68ac2d202dff386c8c25d2b65c163e5b52db301f6",
+      "acquire_judge-seed17": "8b086740071d22c1da1ba61184706c28fe23f9b2b61c307d067974e012c76784",
+      "acquire_judge-seed23": "a9d3f3400f44d69b2e8d10fdf96d3fce750f46c118bc343d155da9e5225c9d24",
+      "acquire_judge-seed41": "d047b02f483cf329c97d92d5428e4b49559ea902af4418bfbb31a1b1b7cd48d1",
+      "fit_direct": "7af861d2a357b24971496c3c23b6c6ad89ddb0bf4794ce496aee4e484e66917e",
+      "judge_direct-seed17": "96ea156c567742264ebebcca9c663e0cd40069f65eb476b2c0f9a5b68bbda62b",
+      "judge_direct-seed23": "ad014127df81633b3409dd1365ffc4cf4f03eb4ebd88a34bce6ecbec538f34f7",
+      "judge_direct-seed41": "5a99993133d493486a7334476aa801c467930d43426524af97164c6c48731170",
+      "selective_judge-seed17": "89c1a000d30e5d3865c290d0615a63892909834ffd676c59693a2cd54b75ca4f",
+      "selective_judge-seed23": "d446b5396335442cb7dc2349ee37255e993fe1ce05108fc038544ba8b1491d71",
+      "selective_judge-seed41": "b7b27e40d9355050ad2fda380e0e6ea1d8d89e0492db9d7d6323bf039d4292e9",
+      "verify_all": "d630c887c710c7460231cc41df861b8c08f84809e3afed9845772cbb41d10c53"
+    },
+    "frozen": "89504ed186ae5669af55563c7bb76ca0e8ec471d0909f730ff4aeaeacfb20790",
+    "summary": "556ed6bb15acdc512b4ecbfbae032498a7ddcd4534e3d02c54739f989b9206a7"
+  },
+  "stage_statuses": {
+    "dataset": {
+      "elapsed_seconds": 0.1411107500025537,
+      "error": null,
+      "status": "COMPLETED"
+    },
+    "evaluation": {
+      "elapsed_seconds": 416.9092292090063,
+      "error": null,
+      "status": "COMPLETED"
+    }
+  },
+  "status": {
+    "elapsed_seconds": 454.5328694169875,
+    "error": null,
+    "status": "COMPLETED"
+  },
+  "summary": {
+    "dataset": "model-1/runs/20260925T193029-paid-evidence-reproduction-751ae7ad/data/20260925T193106-paid-evidence-data-5dc1915a",
+    "evaluation": "model-1/runs/20260925T193029-paid-evidence-reproduction-751ae7ad/evaluation/20260925T193107-paid-evidence-evaluation-5da6fafc",
+    "results": {
+      "contrasts": {
+        "cubic-prior0.25": {
+          "17": {
+            "groups": 32,
+            "percentile95": [
+              0.040625,
+              0.15000000000000002
+            ],
+            "utility_difference": 0.09531250000000002
+          },
+          "23": {
+            "groups": 32,
+            "percentile95": [
+              0.01718750000000002,
+              0.17343750000000002
+            ],
+            "utility_difference": 0.10312500000000002
+          },
+          "41": {
+            "groups": 32,
+            "percentile95": [
+              0.09121093750000003,
+              0.2515625
+            ],
+            "utility_difference": 0.18125000000000002
+          }
+        },
+        "cubic-prior0.5": {
+          "17": {
+            "groups": 32,
+            "percentile95": [
+              0.10312500000000002,
+              0.15000000000000002
+            ],
+            "utility_difference": 0.13437500000000002
+          },
+          "23": {
+            "groups": 32,
+            "percentile95": [
+              0.04062500000000002,
+              0.15000000000000002
+            ],
+            "utility_difference": 0.10312500000000002
+          },
+          "41": {
+            "groups": 32,
+            "percentile95": [
+              0.04062500000000002,
+              0.15000000000000002
+            ],
+            "utility_difference": 0.10312500000000002
+          }
+        },
+        "quintic-prior0.25": {
+          "17": {
+            "groups": 32,
+            "percentile95": [
+              -0.2953125,
+              -0.21718749999999998
+            ],
+            "utility_difference": -0.25625
+          },
+          "23": {
+            "groups": 32,
+            "percentile95": [
+              -0.24062499999999998,
+              -0.16249999999999998
+            ],
+            "utility_difference": -0.20156249999999998
+          },
+          "41": {
+            "groups": 32,
+            "percentile95": [
+              -0.15468749999999998,
+              -0.09999999999999998
+            ],
+            "utility_difference": -0.12343749999999998
+          }
+        },
+        "quintic-prior0.5": {
+          "17": {
+            "groups": 32,
+            "percentile95": [
+              -0.09999999999999998,
+              -0.09999999999999998
+            ],
+            "utility_difference": -0.09999999999999998
+          },
+          "23": {
+            "groups": 32,
+            "percentile95": [
+              -0.09999999999999998,
+              -0.09999999999999998
+            ],
+            "utility_difference": -0.09999999999999998
+          },
+          "41": {
+            "groups": 32,
+            "percentile95": [
+              -0.09999999999999998,
+              -0.09999999999999998
+            ],
+            "utility_difference": -0.09999999999999998
+          }
+        }
+      },
+      "evidence_gate_passed": false,
+      "gates": {
+        "17": {
+          "known_balanced_improvement": true,
+          "quintic_balanced_utility": false,
+          "quintic_low_prior_utility": false
+        },
+        "23": {
+          "known_balanced_improvement": true,
+          "quintic_balanced_utility": false,
+          "quintic_low_prior_utility": false
+        },
+        "41": {
+          "known_balanced_improvement": true,
+          "quintic_balanced_utility": false,
+          "quintic_low_prior_utility": false
+        }
+      },
+      "metrics": {
+        "cubic-prior0.25": {
+          "abstain_all": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.0,
+              "0.02": 0.0,
+              "0.1": 0.0,
+              "0.3": 0.0,
+              "0.6": 0.0
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.0,
+            "target_rate": 0.0,
+            "tool_dispatches": 2.0,
+            "tool_seconds": 0.15009232751845047,
+            "unknown_question_rate": 1.0,
+            "utility": 0.0
+          },
+          "acquire_fit": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.125,
+              "0.02": 0.105,
+              "0.1": 0.024999999999999994,
+              "0.3": -0.175,
+              "0.6": -0.475
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.25,
+            "target_rate": 0.25,
+            "tool_dispatches": 3.25,
+            "tool_seconds": 0.17425134427594458,
+            "unknown_question_rate": 0.75,
+            "utility": 0.024999999999999994
+          },
+          "acquire_judge-seed17": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.125,
+              "0.02": 0.105,
+              "0.1": 0.024999999999999994,
+              "0.3": -0.175,
+              "0.6": -0.475
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.25,
+            "target_rate": 0.25,
+            "tool_dispatches": 3.25,
+            "tool_seconds": 0.21355702561481849,
+            "unknown_question_rate": 0.75,
+            "utility": 0.024999999999999994
+          },
+          "acquire_judge-seed23": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.125,
+              "0.02": 0.105,
+              "0.1": 0.024999999999999994,
+              "0.3": -0.175,
+              "0.6": -0.475
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.25,
+            "target_rate": 0.25,
+            "tool_dispatches": 3.25,
+            "tool_seconds": 0.2121294771027351,
+            "unknown_question_rate": 0.75,
+            "utility": 0.024999999999999994
+          },
+          "acquire_judge-seed41": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.125,
+              "0.02": 0.105,
+              "0.1": 0.024999999999999994,
+              "0.3": -0.175,
+              "0.6": -0.475
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.25,
+            "target_rate": 0.25,
+            "tool_dispatches": 3.25,
+            "tool_seconds": 0.18037343750870605,
+            "unknown_question_rate": 0.75,
+            "utility": 0.024999999999999994
+          },
+          "fit_direct": {
+            "acquisition_cost_sensitivity": {
+              "0.0": -0.1796875,
+              "0.02": -0.1796875,
+              "0.1": -0.1796875,
+              "0.3": -0.1796875,
+              "0.6": -0.1796875
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.3203125,
+            "target_rate": 1.0,
+            "tool_dispatches": 3.0,
+            "tool_seconds": 0.17868162629520157,
+            "unknown_question_rate": 0.0,
+            "utility": -0.1796875
+          },
+          "judge_direct-seed17": {
+            "acquisition_cost_sensitivity": {
+              "0.0": -0.0703125,
+              "0.02": -0.0703125,
+              "0.1": -0.0703125,
+              "0.3": -0.0703125,
+              "0.6": -0.0703125
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.1171875,
+            "target_rate": 0.375,
+            "tool_dispatches": 2.375,
+            "tool_seconds": 0.13673727824334492,
+            "unknown_question_rate": 0.625,
+            "utility": -0.0703125
+          },
+          "judge_direct-seed23": {
+            "acquisition_cost_sensitivity": {
+              "0.0": -0.078125,
+              "0.02": -0.078125,
+              "0.1": -0.078125,
+              "0.3": -0.078125,
+              "0.6": -0.078125
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.21875,
+            "target_rate": 0.59375,
+            "tool_dispatches": 2.59375,
+            "tool_seconds": 0.16078102021378982,
+            "unknown_question_rate": 0.40625,
+            "utility": -0.078125
+          },
+          "judge_direct-seed41": {
+            "acquisition_cost_sensitivity": {
+              "0.0": -0.15625,
+              "0.02": -0.15625,
+              "0.1": -0.15625,
+              "0.3": -0.15625,
+              "0.6": -0.15625
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.296875,
+            "target_rate": 0.90625,
+            "tool_dispatches": 2.90625,
+            "tool_seconds": 0.16100006837109504,
+            "unknown_question_rate": 0.09375,
+            "utility": -0.15625
+          },
+          "selective_judge-seed17": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.125,
+              "0.02": 0.105,
+              "0.1": 0.024999999999999994,
+              "0.3": -0.175,
+              "0.6": -0.475
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.25,
+            "target_rate": 0.25,
+            "tool_dispatches": 3.25,
+            "tool_seconds": 0.1833005514965862,
+            "unknown_question_rate": 0.75,
+            "utility": 0.024999999999999994
+          },
+          "selective_judge-seed23": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.125,
+              "0.02": 0.105,
+              "0.1": 0.024999999999999994,
+              "0.3": -0.175,
+              "0.6": -0.475
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.25,
+            "target_rate": 0.25,
+            "tool_dispatches": 3.25,
+            "tool_seconds": 0.15402529547759514,
+            "unknown_question_rate": 0.75,
+            "utility": 0.024999999999999994
+          },
+          "selective_judge-seed41": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.125,
+              "0.02": 0.105,
+              "0.1": 0.024999999999999994,
+              "0.3": -0.175,
+              "0.6": -0.475
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.25,
+            "target_rate": 0.25,
+            "tool_dispatches": 3.25,
+            "tool_seconds": 0.15601379471445398,
+            "unknown_question_rate": 0.75,
+            "utility": 0.024999999999999994
+          },
+          "verify_all": {
+            "acquisition_cost_sensitivity": {
+              "0.0": -0.1796875,
+              "0.02": -0.1796875,
+              "0.1": -0.1796875,
+              "0.3": -0.1796875,
+              "0.6": -0.1796875
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.3203125,
+            "target_rate": 1.0,
+            "tool_dispatches": 3.0,
+            "tool_seconds": 0.1731049307079502,
+            "unknown_question_rate": 0.0,
+            "utility": -0.1796875
+          }
+        },
+        "cubic-prior0.5": {
+          "abstain_all": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.0,
+              "0.02": 0.0,
+              "0.1": 0.0,
+              "0.3": 0.0,
+              "0.6": 0.0
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.0,
+            "target_rate": 0.0,
+            "tool_dispatches": 2.0,
+            "tool_seconds": 0.14771432687848574,
+            "unknown_question_rate": 1.0,
+            "utility": 0.0
+          },
+          "acquire_fit": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.25,
+              "0.02": 0.22999999999999998,
+              "0.1": 0.15000000000000002,
+              "0.3": -0.04999999999999999,
+              "0.6": -0.35
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.5,
+            "target_rate": 0.5,
+            "tool_dispatches": 3.5,
+            "tool_seconds": 0.1883492211736666,
+            "unknown_question_rate": 0.5,
+            "utility": 0.15000000000000002
+          },
+          "acquire_judge-seed17": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.25,
+              "0.02": 0.22999999999999998,
+              "0.1": 0.15000000000000002,
+              "0.3": -0.04999999999999999,
+              "0.6": -0.35
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.5,
+            "target_rate": 0.5,
+            "tool_dispatches": 3.5,
+            "tool_seconds": 0.22468094810619732,
+            "unknown_question_rate": 0.5,
+            "utility": 0.15000000000000002
+          },
+          "acquire_judge-seed23": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.25,
+              "0.02": 0.22999999999999998,
+              "0.1": 0.15000000000000002,
+              "0.3": -0.04999999999999999,
+              "0.6": -0.35
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.5,
+            "target_rate": 0.5,
+            "tool_dispatches": 3.5,
+            "tool_seconds": 0.23247716098558158,
+            "unknown_question_rate": 0.5,
+            "utility": 0.15000000000000002
+          },
+          "acquire_judge-seed41": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.25,
+              "0.02": 0.22999999999999998,
+              "0.1": 0.15000000000000002,
+              "0.3": -0.04999999999999999,
+              "0.6": -0.35
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.5,
+            "target_rate": 0.5,
+            "tool_dispatches": 3.5,
+            "tool_seconds": 0.19743544923630907,
+            "unknown_question_rate": 0.5,
+            "utility": 0.15000000000000002
+          },
+          "fit_direct": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.046875,
+              "0.02": 0.046875,
+              "0.1": 0.046875,
+              "0.3": 0.046875,
+              "0.6": 0.046875
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.546875,
+            "target_rate": 1.0,
+            "tool_dispatches": 3.0,
+            "tool_seconds": 0.17990195962283906,
+            "unknown_question_rate": 0.0,
+            "utility": 0.046875
+          },
+          "judge_direct-seed17": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.015625,
+              "0.02": 0.015625,
+              "0.1": 0.015625,
+              "0.3": 0.015625,
+              "0.6": 0.015625
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.203125,
+            "target_rate": 0.375,
+            "tool_dispatches": 2.375,
+            "tool_seconds": 0.13381344717163302,
+            "unknown_question_rate": 0.625,
+            "utility": 0.015625
+          },
+          "judge_direct-seed23": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.046875,
+              "0.02": 0.046875,
+              "0.1": 0.046875,
+              "0.3": 0.046875,
+              "0.6": 0.046875
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.34375,
+            "target_rate": 0.59375,
+            "tool_dispatches": 2.59375,
+            "tool_seconds": 0.16265113020426725,
+            "unknown_question_rate": 0.40625,
+            "utility": 0.046875
+          },
+          "judge_direct-seed41": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.046875,
+              "0.02": 0.046875,
+              "0.1": 0.046875,
+              "0.3": 0.046875,
+              "0.6": 0.046875
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.5,
+            "target_rate": 0.90625,
+            "tool_dispatches": 2.90625,
+            "tool_seconds": 0.16380236720624453,
+            "unknown_question_rate": 0.09375,
+            "utility": 0.046875
+          },
+          "selective_judge-seed17": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.25,
+              "0.02": 0.22999999999999998,
+              "0.1": 0.15000000000000002,
+              "0.3": -0.04999999999999999,
+              "0.6": -0.35
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.5,
+            "target_rate": 0.5,
+            "tool_dispatches": 3.5,
+            "tool_seconds": 0.19244097012187922,
+            "unknown_question_rate": 0.5,
+            "utility": 0.15000000000000002
+          },
+          "selective_judge-seed23": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.25,
+              "0.02": 0.22999999999999998,
+              "0.1": 0.15000000000000002,
+              "0.3": -0.04999999999999999,
+              "0.6": -0.35
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.5,
+            "target_rate": 0.5,
+            "tool_dispatches": 3.5,
+            "tool_seconds": 0.16733135279582712,
+            "unknown_question_rate": 0.5,
+            "utility": 0.15000000000000002
+          },
+          "selective_judge-seed41": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.25,
+              "0.02": 0.22999999999999998,
+              "0.1": 0.15000000000000002,
+              "0.3": -0.04999999999999999,
+              "0.6": -0.35
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.5,
+            "target_rate": 0.5,
+            "tool_dispatches": 3.5,
+            "tool_seconds": 0.16861844215327437,
+            "unknown_question_rate": 0.5,
+            "utility": 0.15000000000000002
+          },
+          "verify_all": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.046875,
+              "0.02": 0.046875,
+              "0.1": 0.046875,
+              "0.3": 0.046875,
+              "0.6": 0.046875
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.546875,
+            "target_rate": 1.0,
+            "tool_dispatches": 3.0,
+            "tool_seconds": 0.1761343626380949,
+            "unknown_question_rate": 0.0,
+            "utility": 0.046875
+          }
+        },
+        "quintic-prior0.25": {
+          "abstain_all": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.0,
+              "0.02": 0.0,
+              "0.1": 0.0,
+              "0.3": 0.0,
+              "0.6": 0.0
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.0,
+            "target_rate": 0.0,
+            "tool_dispatches": 2.0,
+            "tool_seconds": 0.15363248963194565,
+            "unknown_question_rate": 1.0,
+            "utility": 0.0
+          },
+          "acquire_fit": {
+            "acquisition_cost_sensitivity": {
+              "0.0": -0.25,
+              "0.02": -0.27,
+              "0.1": -0.35,
+              "0.3": -0.55,
+              "0.6": -0.8500000000000001
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.25,
+            "target_rate": 1.0,
+            "tool_dispatches": 4.0,
+            "tool_seconds": 0.2114963266981249,
+            "unknown_question_rate": 0.0,
+            "utility": -0.35
+          },
+          "acquire_judge-seed17": {
+            "acquisition_cost_sensitivity": {
+              "0.0": -0.25,
+              "0.02": -0.27,
+              "0.1": -0.35,
+              "0.3": -0.55,
+              "0.6": -0.8500000000000001
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.25,
+            "target_rate": 1.0,
+            "tool_dispatches": 4.0,
+            "tool_seconds": 0.2730912267468284,
+            "unknown_question_rate": 0.0,
+            "utility": -0.35
+          },
+          "acquire_judge-seed23": {
+            "acquisition_cost_sensitivity": {
+              "0.0": -0.25,
+              "0.02": -0.27,
+              "0.1": -0.35,
+              "0.3": -0.55,
+              "0.6": -0.8500000000000001
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.25,
+            "target_rate": 1.0,
+            "tool_dispatches": 4.0,
+            "tool_seconds": 0.2607052404921433,
+            "unknown_question_rate": 0.0,
+            "utility": -0.35
+          },
+          "acquire_judge-seed41": {
+            "acquisition_cost_sensitivity": {
+              "0.0": -0.25,
+              "0.02": -0.27,
+              "0.1": -0.35,
+              "0.3": -0.55,
+              "0.6": -0.8500000000000001
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.25,
+            "target_rate": 1.0,
+            "tool_dispatches": 4.0,
+            "tool_seconds": 0.22497028499492444,
+            "unknown_question_rate": 0.0,
+            "utility": -0.35
+          },
+          "fit_direct": {
+            "acquisition_cost_sensitivity": {
+              "0.0": -0.25,
+              "0.02": -0.25,
+              "0.1": -0.25,
+              "0.3": -0.25,
+              "0.6": -0.25
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.25,
+            "target_rate": 1.0,
+            "tool_dispatches": 3.0,
+            "tool_seconds": 0.18240395242150953,
+            "unknown_question_rate": 0.0,
+            "utility": -0.25
+          },
+          "judge_direct-seed17": {
+            "acquisition_cost_sensitivity": {
+              "0.0": -0.09375,
+              "0.02": -0.09375,
+              "0.1": -0.09375,
+              "0.3": -0.09375,
+              "0.6": -0.09375
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.09375,
+            "target_rate": 0.375,
+            "tool_dispatches": 2.375,
+            "tool_seconds": 0.13419547351372785,
+            "unknown_question_rate": 0.625,
+            "utility": -0.09375
+          },
+          "judge_direct-seed23": {
+            "acquisition_cost_sensitivity": {
+              "0.0": -0.1484375,
+              "0.02": -0.1484375,
+              "0.1": -0.1484375,
+              "0.3": -0.1484375,
+              "0.6": -0.1484375
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.1484375,
+            "target_rate": 0.59375,
+            "tool_dispatches": 2.59375,
+            "tool_seconds": 0.15895584062309354,
+            "unknown_question_rate": 0.40625,
+            "utility": -0.1484375
+          },
+          "judge_direct-seed41": {
+            "acquisition_cost_sensitivity": {
+              "0.0": -0.2265625,
+              "0.02": -0.2265625,
+              "0.1": -0.2265625,
+              "0.3": -0.2265625,
+              "0.6": -0.2265625
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.2265625,
+            "target_rate": 0.90625,
+            "tool_dispatches": 2.90625,
+            "tool_seconds": 0.1585535890187657,
+            "unknown_question_rate": 0.09375,
+            "utility": -0.2265625
+          },
+          "selective_judge-seed17": {
+            "acquisition_cost_sensitivity": {
+              "0.0": -0.25,
+              "0.02": -0.27,
+              "0.1": -0.35,
+              "0.3": -0.55,
+              "0.6": -0.8500000000000001
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.25,
+            "target_rate": 1.0,
+            "tool_dispatches": 4.0,
+            "tool_seconds": 0.22085840003296653,
+            "unknown_question_rate": 0.0,
+            "utility": -0.35
+          },
+          "selective_judge-seed23": {
+            "acquisition_cost_sensitivity": {
+              "0.0": -0.25,
+              "0.02": -0.27,
+              "0.1": -0.35,
+              "0.3": -0.55,
+              "0.6": -0.8500000000000001
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.25,
+            "target_rate": 1.0,
+            "tool_dispatches": 4.0,
+            "tool_seconds": 0.18884489430661233,
+            "unknown_question_rate": 0.0,
+            "utility": -0.35
+          },
+          "selective_judge-seed41": {
+            "acquisition_cost_sensitivity": {
+              "0.0": -0.25,
+              "0.02": -0.27,
+              "0.1": -0.35,
+              "0.3": -0.55,
+              "0.6": -0.8500000000000001
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.25,
+            "target_rate": 1.0,
+            "tool_dispatches": 4.0,
+            "tool_seconds": 0.19372412954544416,
+            "unknown_question_rate": 0.0,
+            "utility": -0.35
+          },
+          "verify_all": {
+            "acquisition_cost_sensitivity": {
+              "0.0": -0.25,
+              "0.02": -0.25,
+              "0.1": -0.25,
+              "0.3": -0.25,
+              "0.6": -0.25
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.25,
+            "target_rate": 1.0,
+            "tool_dispatches": 3.0,
+            "tool_seconds": 0.1716899657783415,
+            "unknown_question_rate": 0.0,
+            "utility": -0.25
+          }
+        },
+        "quintic-prior0.5": {
+          "abstain_all": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.0,
+              "0.02": 0.0,
+              "0.1": 0.0,
+              "0.3": 0.0,
+              "0.6": 0.0
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.0,
+            "target_rate": 0.0,
+            "tool_dispatches": 2.0,
+            "tool_seconds": 0.15007443495414918,
+            "unknown_question_rate": 1.0,
+            "utility": 0.0
+          },
+          "acquire_fit": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.0,
+              "0.02": -0.020000000000000018,
+              "0.1": -0.09999999999999998,
+              "0.3": -0.30000000000000004,
+              "0.6": -0.6000000000000001
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.5,
+            "target_rate": 1.0,
+            "tool_dispatches": 4.0,
+            "tool_seconds": 0.21317920945512014,
+            "unknown_question_rate": 0.0,
+            "utility": -0.09999999999999998
+          },
+          "acquire_judge-seed17": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.0,
+              "0.02": -0.020000000000000018,
+              "0.1": -0.09999999999999998,
+              "0.3": -0.30000000000000004,
+              "0.6": -0.6000000000000001
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.5,
+            "target_rate": 1.0,
+            "tool_dispatches": 4.0,
+            "tool_seconds": 0.26437041552753726,
+            "unknown_question_rate": 0.0,
+            "utility": -0.09999999999999998
+          },
+          "acquire_judge-seed23": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.0,
+              "0.02": -0.020000000000000018,
+              "0.1": -0.09999999999999998,
+              "0.3": -0.30000000000000004,
+              "0.6": -0.6000000000000001
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.5,
+            "target_rate": 1.0,
+            "tool_dispatches": 4.0,
+            "tool_seconds": 0.264861003245187,
+            "unknown_question_rate": 0.0,
+            "utility": -0.09999999999999998
+          },
+          "acquire_judge-seed41": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.0,
+              "0.02": -0.020000000000000018,
+              "0.1": -0.09999999999999998,
+              "0.3": -0.30000000000000004,
+              "0.6": -0.6000000000000001
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.5,
+            "target_rate": 1.0,
+            "tool_dispatches": 4.0,
+            "tool_seconds": 0.227166680893788,
+            "unknown_question_rate": 0.0,
+            "utility": -0.09999999999999998
+          },
+          "fit_direct": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.0,
+              "0.02": 0.0,
+              "0.1": 0.0,
+              "0.3": 0.0,
+              "0.6": 0.0
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.5,
+            "target_rate": 1.0,
+            "tool_dispatches": 3.0,
+            "tool_seconds": 0.18238351037371103,
+            "unknown_question_rate": 0.0,
+            "utility": 0.0
+          },
+          "judge_direct-seed17": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.0,
+              "0.02": 0.0,
+              "0.1": 0.0,
+              "0.3": 0.0,
+              "0.6": 0.0
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.1875,
+            "target_rate": 0.375,
+            "tool_dispatches": 2.375,
+            "tool_seconds": 0.13211891068522164,
+            "unknown_question_rate": 0.625,
+            "utility": 0.0
+          },
+          "judge_direct-seed23": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.0,
+              "0.02": 0.0,
+              "0.1": 0.0,
+              "0.3": 0.0,
+              "0.6": 0.0
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.296875,
+            "target_rate": 0.59375,
+            "tool_dispatches": 2.59375,
+            "tool_seconds": 0.16143434381046973,
+            "unknown_question_rate": 0.40625,
+            "utility": 0.0
+          },
+          "judge_direct-seed41": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.0,
+              "0.02": 0.0,
+              "0.1": 0.0,
+              "0.3": 0.0,
+              "0.6": 0.0
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.453125,
+            "target_rate": 0.90625,
+            "tool_dispatches": 2.90625,
+            "tool_seconds": 0.1621713809713583,
+            "unknown_question_rate": 0.09375,
+            "utility": 0.0
+          },
+          "selective_judge-seed17": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.0,
+              "0.02": -0.020000000000000018,
+              "0.1": -0.09999999999999998,
+              "0.3": -0.30000000000000004,
+              "0.6": -0.6000000000000001
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.5,
+            "target_rate": 1.0,
+            "tool_dispatches": 4.0,
+            "tool_seconds": 0.21747953581279944,
+            "unknown_question_rate": 0.0,
+            "utility": -0.09999999999999998
+          },
+          "selective_judge-seed23": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.0,
+              "0.02": -0.020000000000000018,
+              "0.1": -0.09999999999999998,
+              "0.3": -0.30000000000000004,
+              "0.6": -0.6000000000000001
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.5,
+            "target_rate": 1.0,
+            "tool_dispatches": 4.0,
+            "tool_seconds": 0.19054441868183858,
+            "unknown_question_rate": 0.0,
+            "utility": -0.09999999999999998
+          },
+          "selective_judge-seed41": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.0,
+              "0.02": -0.020000000000000018,
+              "0.1": -0.09999999999999998,
+              "0.3": -0.30000000000000004,
+              "0.6": -0.6000000000000001
+            },
+            "acquisition_rate": 1.0,
+            "success": 0.5,
+            "target_rate": 1.0,
+            "tool_dispatches": 4.0,
+            "tool_seconds": 0.1937586653739345,
+            "unknown_question_rate": 0.0,
+            "utility": -0.09999999999999998
+          },
+          "verify_all": {
+            "acquisition_cost_sensitivity": {
+              "0.0": 0.0,
+              "0.02": 0.0,
+              "0.1": 0.0,
+              "0.3": 0.0,
+              "0.6": 0.0
+            },
+            "acquisition_rate": 0.0,
+            "success": 0.5,
+            "target_rate": 1.0,
+            "tool_dispatches": 3.0,
+            "tool_seconds": 0.17519105268502244,
+            "unknown_question_rate": 0.0,
+            "utility": 0.0
+          }
+        }
+      },
+      "scope": "Shared actual episodes, weighted family/prior scenarios; unchanged actions in cost sensitivity",
+      "unbacked_verified_claims": 0,
+      "utility_gate_passed": false
+    }
+  }
+}

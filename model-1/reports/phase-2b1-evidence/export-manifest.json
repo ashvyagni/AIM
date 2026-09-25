@@ -1,0 +1,11 @@
+{
+  "exporter_sha256": "243ddaef349ebfb5748a6560297f0855d9a4314691057140bf3a715bd5ffb813",
+  "files": {
+    "development-failure.log": "80e0831be782f84588274fa0446e189f04a6aa015b451bad67a2c381d4df48c3",
+    "episodes.json": "9124cec7e147342f1fe25c079ffe4b2c176d8839c4900f09bad46933373c4673",
+    "results.json": "5dfeb0af2ac314a40ecfe6b02b263b283a7b41d202df8c997fa4649bfcdcbf8c",
+    "tests.log": "0f0577461c52c14dba0fdd5d16e71143f02c7674f24b7ce41b5380176f9c1577"
+  },
+  "note": "Original episodes untouched; exported paths normalized and untracked filenames omitted.",
+  "source_run": "model-1/runs/20260925T193029-paid-evidence-reproduction-751ae7ad"
+}

@@ -1,0 +1,181 @@
+test_abstention_is_unknown (test_core.CoreTests.test_abstention_is_unknown) ... ok
+test_actual_worker_timeout (test_core.CoreTests.test_actual_worker_timeout) ... ok
+test_budget_exhaustion (test_core.CoreTests.test_budget_exhaustion) ... ok
+test_calculation_at_zero (test_core.CoreTests.test_calculation_at_zero) ... ok
+test_canonical_suite (test_core.CoreTests.test_canonical_suite) ... ok
+test_changed_source_detected (test_core.CoreTests.test_changed_source_detected) ... ok
+test_conflicting_evidence (test_core.CoreTests.test_conflicting_evidence) ... ok
+test_eval_change_rejected (test_core.CoreTests.test_eval_change_rejected) ... ok
+test_fabricated_citation_rejected (test_core.CoreTests.test_fabricated_citation_rejected) ... ok
+test_failure_is_retained_with_source_snapshot (test_core.CoreTests.test_failure_is_retained_with_source_snapshot) ... ok
+test_forecast_cannot_verify (test_core.CoreTests.test_forecast_cannot_verify) ... ok
+test_forged_quote_rejected (test_core.CoreTests.test_forged_quote_rejected) ... ok
+test_full_loop_and_replay (test_core.CoreTests.test_full_loop_and_replay) ... ok
+test_ledger_append_only (test_core.CoreTests.test_ledger_append_only) ... ok
+test_ledger_hash_detects_tampering (test_core.CoreTests.test_ledger_hash_detects_tampering) ... ok
+test_missing_input_failure_is_retained (test_core.CoreTests.test_missing_input_failure_is_retained) ... ok
+test_model_cannot_mutate_owned_state (test_core.CoreTests.test_model_cannot_mutate_owned_state) ... ok
+test_nested_records_serialize (test_core.CoreTests.test_nested_records_serialize) ... ok
+test_nonfinite_and_boolean_rejected (test_core.CoreTests.test_nonfinite_and_boolean_rejected) ... ok
+test_source_versions_are_distinct (test_core.CoreTests.test_source_versions_are_distinct) ... ok
+test_tool_allowlist (test_core.CoreTests.test_tool_allowlist) ... ok
+test_unavailable_never_verified (test_core.CoreTests.test_unavailable_never_verified) ... ok
+test_unknown_not_scored_false (test_core.CoreTests.test_unknown_not_scored_false) ... ok
+test_verified_claim_mutation_detected (test_core.CoreTests.test_verified_claim_mutation_detected) ... ok
+test_wrong_judge_claim_rejected (test_core.CoreTests.test_wrong_judge_claim_rejected) ... ok
+test_all_prior_world_vectors_excluded (test_curriculum.CurriculumTaskTests.test_all_prior_world_vectors_excluded) ... ok
+test_diagnostic_pool_removes_training_prompt_overlap (test_curriculum.CurriculumTaskTests.test_diagnostic_pool_removes_training_prompt_overlap) ... ok
+test_exact_signed_teachers_and_strict_scoring (test_curriculum.CurriculumTaskTests.test_exact_signed_teachers_and_strict_scoring) ... ok
+test_fixed_schedule_and_paired_world_provenance (test_curriculum.CurriculumTaskTests.test_fixed_schedule_and_paired_world_provenance) ... ok
+test_new_metadata_and_auxiliary_split_boundary (test_curriculum.CurriculumTaskTests.test_new_metadata_and_auxiliary_split_boundary) ... ok
+test_changed_auxiliary_label_or_metadata_rejected (test_curriculum.CurriculumTrainingTests.test_changed_auxiliary_label_or_metadata_rejected) ... ok
+test_curriculum_resume_preserves_weights_and_task_accounting (test_curriculum.CurriculumTrainingTests.test_curriculum_resume_preserves_weights_and_task_accounting) ... {"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.5285484184653075, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/full/20260925T193037-research-sft-seed17-ead53cca"}
+{"seed": 17, "step": 2, "validation": {"n": 1, "response_token_nll": 5.488268318822828, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/full/20260925T193037-research-sft-seed17-ead53cca"}
+{"seed": 17, "step": 4, "validation": {"n": 1, "response_token_nll": 5.440853830111229, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/full/20260925T193037-research-sft-seed17-ead53cca"}
+{"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.5285484184653075, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/partial/20260925T193038-research-sft-seed17-12b49fe1"}
+{"seed": 17, "step": 2, "validation": {"n": 1, "response_token_nll": 5.488268318822828, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/partial/20260925T193038-research-sft-seed17-12b49fe1"}
+{"seed": 17, "step": 2, "validation": {"n": 1, "response_token_nll": 5.488268318822828, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/resume/20260925T193038-research-sft-seed17-2f1bc412"}
+{"seed": 17, "step": 4, "validation": {"n": 1, "response_token_nll": 5.440853830111229, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/resume/20260925T193038-research-sft-seed17-2f1bc412"}
+ok
+test_two_arm_training_isolation_and_real_observation_audit (test_curriculum.CurriculumTrainingTests.test_two_arm_training_isolation_and_real_observation_audit) ... {"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.5285484184653075, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/runs/20260925T193038-curriculum-training-b1874050/worked/20260925T193038-research-sft-seed17-7ecadde4"}
+{"seed": 17, "step": 1, "validation": {"n": 1, "response_token_nll": 5.508810269630562, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/runs/20260925T193038-curriculum-training-b1874050/worked/20260925T193038-research-sft-seed17-7ecadde4"}
+{"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.5285484184653075, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/runs/20260925T193038-curriculum-training-b1874050/curriculum/20260925T193039-research-sft-seed17-5d6e0f7c"}
+{"seed": 17, "step": 1, "validation": {"n": 1, "response_token_nll": 5.509246826171875, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/runs/20260925T193038-curriculum-training-b1874050/curriculum/20260925T193039-research-sft-seed17-5d6e0f7c"}
+{"backend": "curriculum-seed17-initial-test", "verified": 0, "valid_rate": 0.0}
+{"backend": "curriculum-seed17-initial-ood", "verified": 0, "valid_rate": 0.0}
+{"backend": "curriculum-seed17-selected-test", "verified": 0, "valid_rate": 0.0}
+{"backend": "curriculum-seed17-selected-ood", "verified": 0, "valid_rate": 0.0}
+{"backend": "worked-seed17-initial-test", "verified": 0, "valid_rate": 0.0}
+{"backend": "worked-seed17-initial-ood", "verified": 0, "valid_rate": 0.0}
+{"backend": "worked-seed17-selected-test", "verified": 0, "valid_rate": 0.0}
+{"backend": "worked-seed17-selected-ood", "verified": 0, "valid_rate": 0.0}
+ok
+test_dataset_metadata_contains_no_holdout_coefficients (test_finite_difference.ComparisonIntegrationTests.test_dataset_metadata_contains_no_holdout_coefficients) ... ok
+test_padding_preserves_supervised_tokens_and_scores (test_finite_difference.ComparisonIntegrationTests.test_padding_preserves_supervised_tokens_and_scores) ... ok
+test_two_arm_freeze_and_actual_controller_evaluation (test_finite_difference.ComparisonIntegrationTests.test_two_arm_freeze_and_actual_controller_evaluation) ... {"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.511790296766493, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/runs/20260925T193042-comparison-training-33e2609e/plain/20260925T193042-research-sft-seed17-96943caa"}
+{"seed": 17, "step": 1, "validation": {"n": 1, "response_token_nll": 5.492227511935764, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/runs/20260925T193042-comparison-training-33e2609e/plain/20260925T193042-research-sft-seed17-96943caa"}
+{"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.5285484184653075, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/runs/20260925T193042-comparison-training-33e2609e/worked/20260925T193042-research-sft-seed17-aba4c50c"}
+{"seed": 17, "step": 1, "validation": {"n": 1, "response_token_nll": 5.508810269630562, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/runs/20260925T193042-comparison-training-33e2609e/worked/20260925T193042-research-sft-seed17-aba4c50c"}
+{"backend": "plain-seed17-initial-test", "verified": 0, "valid_rate": 0.0}
+{"backend": "plain-seed17-initial-ood", "verified": 0, "valid_rate": 0.0}
+{"backend": "plain-seed17-selected-test", "verified": 0, "valid_rate": 0.0}
+{"backend": "plain-seed17-selected-ood", "verified": 0, "valid_rate": 0.0}
+{"backend": "worked-seed17-initial-test", "verified": 0, "valid_rate": 0.0}
+{"backend": "worked-seed17-initial-ood", "verified": 0, "valid_rate": 0.0}
+{"backend": "worked-seed17-selected-test", "verified": 0, "valid_rate": 0.0}
+{"backend": "worked-seed17-selected-ood", "verified": 0, "valid_rate": 0.0}
+ok
+test_plain_contract_unchanged_and_invalid_counts_as_failure (test_finite_difference.FiniteDifferenceTests.test_plain_contract_unchanged_and_invalid_counts_as_failure) ... ok
+test_worked_numbers_and_citations (test_finite_difference.FiniteDifferenceTests.test_worked_numbers_and_citations) ... ok
+test_worked_rejects_duplicate_nonfinite_and_invented_alias (test_finite_difference.FiniteDifferenceTests.test_worked_rejects_duplicate_nonfinite_and_invented_alias) ... ok
+test_worlds_exclude_all_old_splits_by_coefficient_vector (test_finite_difference.FiniteDifferenceTests.test_worlds_exclude_all_old_splits_by_coefficient_vector) ... ok
+test_wrong_step_is_diagnostic_failure_not_silent_repair (test_finite_difference.FiniteDifferenceTests.test_wrong_step_is_diagnostic_failure_not_silent_repair) ... ok
+test_exact_fit_and_dimensions (test_judge_shift.FeatureTests.test_exact_fit_and_dimensions) ... ok
+test_forbidden_inputs (test_judge_shift.FeatureTests.test_forbidden_inputs) ... ok
+test_group_design_and_invisible_perturbations (test_judge_shift.FeatureTests.test_group_design_and_invisible_perturbations) ... ok
+test_payload_ignores_outcomes (test_judge_shift.FeatureTests.test_payload_ignores_outcomes) ... ok
+test_adapter_controller_verification_and_abstention (test_judge_shift.StudyTests.test_adapter_controller_verification_and_abstention) ... ok
+test_frozen_evaluation_and_group_intervals (test_judge_shift.StudyTests.test_frozen_evaluation_and_group_intervals) ... ok
+test_independent_labels_and_provenance (test_judge_shift.StudyTests.test_independent_labels_and_provenance) ... ok
+test_initialization_pairing_and_parameters (test_judge_shift.StudyTests.test_initialization_pairing_and_parameters) ... ok
+test_policy_math (test_judge_shift.StudyTests.test_policy_math) ... ok
+test_tampered_features_and_metadata (test_judge_shift.StudyTests.test_tampered_features_and_metadata) ... ok
+test_conflicting_observations_fail (test_observation_verifier.ObservationVerifierTests.test_conflicting_observations_fail) ... ok
+test_exact_observation_fit_is_scoped_and_bound_to_hypothesis (test_observation_verifier.ObservationVerifierTests.test_exact_observation_fit_is_scoped_and_bound_to_hypothesis) ... ok
+test_forged_or_missing_span_fails (test_observation_verifier.ObservationVerifierTests.test_forged_or_missing_span_fails) ... ok
+test_missing_unsupported_or_wrong_topic_is_unknown (test_observation_verifier.ObservationVerifierTests.test_missing_unsupported_or_wrong_topic_is_unknown) ... ok
+test_observation_fit_does_not_imply_future_match (test_observation_verifier.ObservationVerifierTests.test_observation_fit_does_not_imply_future_match) ... ok
+test_read_only_memory_cannot_write_or_create_store (test_observation_verifier.ObservationVerifierTests.test_read_only_memory_cannot_write_or_create_store) ... ok
+test_target_match_does_not_imply_observation_fit (test_observation_verifier.ObservationVerifierTests.test_target_match_does_not_imply_observation_fit) ... ok
+test_abstention_dispatches_no_measurement (test_paid_evidence.PaidEvidenceTests.test_abstention_dispatches_no_measurement) ... ok
+test_acquisition_is_persisted_and_charged (test_paid_evidence.PaidEvidenceTests.test_acquisition_is_persisted_and_charged) ... ok
+test_aggregate_deduplicates_and_caps (test_paid_evidence.PaidEvidenceTests.test_aggregate_deduplicates_and_caps) ... ok
+test_budget_only_charges_dispatched_work (test_paid_evidence.PaidEvidenceTests.test_budget_only_charges_dispatched_work) ... ok
+test_candidate_duplicates_never_multiply_question_reward (test_paid_evidence.PaidEvidenceTests.test_candidate_duplicates_never_multiply_question_reward) ... ok
+test_complete_small_factorial_evaluation (test_paid_evidence.PaidEvidenceTests.test_complete_small_factorial_evaluation) ... {"policy": "verify_all", "episodes": 6, "successes": 2}
+{"policy": "abstain_all", "episodes": 6, "successes": 0}
+{"policy": "fit_direct", "episodes": 6, "successes": 2}
+{"policy": "acquire_fit", "episodes": 6, "successes": 2}
+{"policy": "judge_direct-seed17", "episodes": 6, "successes": 1}
+{"policy": "acquire_judge-seed17", "episodes": 6, "successes": 1}
+{"policy": "selective_judge-seed17", "episodes": 6, "successes": 1}
+ok
+test_conflicting_source_prevents_acquisition (test_paid_evidence.PaidEvidenceTests.test_conflicting_source_prevents_acquisition) ... ok
+test_error_and_timeout_are_paid_and_unresolved (test_paid_evidence.PaidEvidenceTests.test_error_and_timeout_are_paid_and_unresolved) ... ok
+test_extra_point_separates_cubic_but_not_quintic (test_paid_evidence.PaidEvidenceTests.test_extra_point_separates_cubic_but_not_quintic) ... ok
+test_factorial_weighting_and_cost_sensitivity (test_paid_evidence.PaidEvidenceTests.test_factorial_weighting_and_cost_sensitivity) ... ok
+test_forecaster_sees_only_pre_measurement_inputs (test_paid_evidence.PaidEvidenceTests.test_forecaster_sees_only_pre_measurement_inputs) ... ok
+test_fresh_groups_and_invisible_family (test_paid_evidence.PaidEvidenceTests.test_fresh_groups_and_invisible_family) ... ok
+test_frozen_judge_loader_checks_identity (test_paid_evidence.PaidEvidenceTests.test_frozen_judge_loader_checks_identity) ... ok
+test_missing_acquisition_fails_closed (test_paid_evidence.PaidEvidenceTests.test_missing_acquisition_fails_closed) ... ok
+test_selective_band_boundaries_and_input_validation (test_paid_evidence.PaidEvidenceTests.test_selective_band_boundaries_and_input_validation) ... ok
+test_unavailable_acquisition_stops_without_free_target_fallback (test_paid_evidence.PaidEvidenceTests.test_unavailable_acquisition_stops_without_free_target_fallback) ... ok
+test_holdout_file_is_not_training_input (test_research_data.ResearchDataTests.test_holdout_file_is_not_training_input) ... ok
+test_labels_match_exact_world_and_citations (test_research_data.ResearchDataTests.test_labels_match_exact_world_and_citations) ... ok
+test_partition_counts_disjointness_and_determinism (test_research_data.ResearchDataTests.test_partition_counts_disjointness_and_determinism) ... ok
+test_invalid_worlds_stay_in_denominator (test_research_eval.ResearchEvaluationTests.test_invalid_worlds_stay_in_denominator) ... ok
+test_paired_gain_and_loss (test_research_eval.ResearchEvaluationTests.test_paired_gain_and_loss) ... ok
+test_reference_has_same_one_candidate_budget (test_research_eval.ResearchEvaluationTests.test_reference_has_same_one_candidate_budget) ... ok
+test_wilson_boundaries (test_research_eval.ResearchEvaluationTests.test_wilson_boundaries) ... ok
+test_adapter_loop_binds_and_verifies_claim (test_research_format.FormatTests.test_adapter_loop_binds_and_verifies_claim) ... ok
+test_fabricated_and_missing_aliases_fail (test_research_format.FormatTests.test_fabricated_and_missing_aliases_fail) ... ok
+test_invalid_generation_has_no_reference_fallback (test_research_format.FormatTests.test_invalid_generation_has_no_reference_fallback) ... ok
+test_invalid_json_and_duplicate_fields_fail (test_research_format.FormatTests.test_invalid_json_and_duplicate_fields_fail) ... ok
+test_nonfinite_boolean_and_extra_candidates_fail (test_research_format.FormatTests.test_nonfinite_boolean_and_extra_candidates_fail) ... ok
+test_post_action_state_is_rejected (test_research_format.FormatTests.test_post_action_state_is_rejected) ... ok
+test_prompt_contains_observations_not_measurement (test_research_format.FormatTests.test_prompt_contains_observations_not_measurement) ... ok
+test_reused_adapter_does_not_retain_trace_after_prompt_failure (test_research_format.FormatTests.test_reused_adapter_does_not_retain_trace_after_prompt_failure) ... ok
+test_valid_output_maps_to_real_evidence (test_research_format.FormatTests.test_valid_output_maps_to_real_evidence) ... ok
+test_deadline_checkpoint_preserves_completed_boundary (test_research_training.ResearchTrainingTests.test_deadline_checkpoint_preserves_completed_boundary) ... {"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.508413696289063, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/interrupted/20260925T193101-research-training-deb5fb42/seeds/20260925T193101-research-sft-seed17-9b86e6b3"}
+{"seed": 17, "step": 2, "validation": {"n": 1, "response_token_nll": 5.4688439263237845, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/interrupted/20260925T193101-research-training-deb5fb42/seeds/20260925T193101-research-sft-seed17-9b86e6b3"}
+{"seed": 17, "step": 4, "validation": {"n": 1, "response_token_nll": 5.4232903374565975, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/resume/20260925T193101-research-training-fe77270b/seeds/20260925T193101-research-sft-seed17-85436f97"}
+ok
+test_legacy_checkpoint_reconstructs_original_history (test_research_training.ResearchTrainingTests.test_legacy_checkpoint_reconstructs_original_history) ... {"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.508413696289063, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/partial/20260925T193101-research-training-85e2bac0/seeds/20260925T193102-research-sft-seed17-9f4da47b"}
+{"seed": 17, "step": 1, "validation": {"n": 1, "response_token_nll": 5.489293077256945, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/partial/20260925T193101-research-training-85e2bac0/seeds/20260925T193102-research-sft-seed17-9f4da47b"}
+{"seed": 17, "step": 1, "validation": {"n": 1, "response_token_nll": 5.489293077256945, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/resumed/20260925T193102-research-training-edb8a24d/seeds/20260925T193102-research-sft-seed17-1af14f7a"}
+{"seed": 17, "step": 2, "validation": {"n": 1, "response_token_nll": 5.4688439263237845, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/resumed/20260925T193102-research-training-edb8a24d/seeds/20260925T193102-research-sft-seed17-1af14f7a"}
+ok
+test_resume_matches_uninterrupted_optimizer_rng_and_selection (test_research_training.ResearchTrainingTests.test_resume_matches_uninterrupted_optimizer_rng_and_selection) ... {"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.508413696289063, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/full/20260925T193102-research-training-573fc757/seeds/20260925T193102-research-sft-seed17-7d6633f4"}
+{"seed": 17, "step": 2, "validation": {"n": 1, "response_token_nll": 5.4688439263237845, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/full/20260925T193102-research-training-573fc757/seeds/20260925T193102-research-sft-seed17-7d6633f4"}
+{"seed": 17, "step": 4, "validation": {"n": 1, "response_token_nll": 5.4232903374565975, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/full/20260925T193102-research-training-573fc757/seeds/20260925T193102-research-sft-seed17-7d6633f4"}
+{"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.508413696289063, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/partial/20260925T193102-research-training-eb9c93dc/seeds/20260925T193102-research-sft-seed17-dd6f0cbb"}
+{"seed": 17, "step": 2, "validation": {"n": 1, "response_token_nll": 5.4688439263237845, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/partial/20260925T193102-research-training-eb9c93dc/seeds/20260925T193102-research-sft-seed17-dd6f0cbb"}
+{"seed": 17, "step": 2, "validation": {"n": 1, "response_token_nll": 5.4688439263237845, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/resumed/20260925T193102-research-training-e32c2fbf/seeds/20260925T193103-research-sft-seed17-88f9eaac"}
+{"seed": 17, "step": 4, "validation": {"n": 1, "response_token_nll": 5.4232903374565975, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/resumed/20260925T193102-research-training-e32c2fbf/seeds/20260925T193103-research-sft-seed17-88f9eaac"}
+ok
+test_resume_rejects_changed_optimizer_seed_schedule_or_dataset (test_research_training.ResearchTrainingTests.test_resume_rejects_changed_optimizer_seed_schedule_or_dataset) ... {"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.508413696289063, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/partial/20260925T193103-research-training-508c77e2/seeds/20260925T193103-research-sft-seed17-e647d0f3"}
+{"seed": 17, "step": 1, "validation": {"n": 1, "response_token_nll": 5.489293077256945, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/partial/20260925T193103-research-training-508c77e2/seeds/20260925T193103-research-sft-seed17-e647d0f3"}
+ok
+test_resume_rejects_tampered_selection_history (test_research_training.ResearchTrainingTests.test_resume_rejects_tampered_selection_history) ... {"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.508413696289063, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/partial/20260925T193104-research-training-8b6ea2e2/seeds/20260925T193104-research-sft-seed17-fcbbbccf"}
+{"seed": 17, "step": 1, "validation": {"n": 1, "response_token_nll": 5.489293077256945, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/partial/20260925T193104-research-training-8b6ea2e2/seeds/20260925T193104-research-sft-seed17-fcbbbccf"}
+ok
+test_score_uses_actual_next_measurement (test_research_training.ResearchTrainingTests.test_score_uses_actual_next_measurement) ... ok
+test_selection_priorities_and_earliest_tie (test_research_training.ResearchTrainingTests.test_selection_priorities_and_earliest_tie) ... ok
+test_tampered_training_file_rejected (test_research_training.ResearchTrainingTests.test_tampered_training_file_rejected) ... ok
+test_training_freezes_checkpoints_without_opening_holdout (test_research_training.ResearchTrainingTests.test_training_freezes_checkpoints_without_opening_holdout) ... {"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.508413696289063, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/runs/20260925T193104-research-training-eff670a0/seeds/20260925T193104-research-sft-seed17-0c5d3ddd"}
+{"seed": 17, "step": 1, "validation": {"n": 1, "response_token_nll": 5.489293077256945, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "<temporary-test-directory>/runs/20260925T193104-research-training-eff670a0/seeds/20260925T193104-research-sft-seed17-0c5d3ddd"}
+ok
+test_update_budget_rejected (test_research_training.ResearchTrainingTests.test_update_budget_rejected) ... ok
+test_arithmetic_split_is_disjoint (test_training.DatasetTests.test_arithmetic_split_is_disjoint) ... ok
+test_judge_group_splits_are_disjoint (test_training.DatasetTests.test_judge_group_splits_are_disjoint) ... ok
+test_supervised_intake_and_label_provenance (test_training.DatasetTests.test_supervised_intake_and_label_provenance) ... ok
+test_verifier_does_not_use_preference_label (test_training.DatasetTests.test_verifier_does_not_use_preference_label) ... ok
+test_causal_prefix_invariance (test_training.NeuralTests.test_causal_prefix_invariance) ... ok
+test_checkpoint_tampering_rejected (test_training.NeuralTests.test_checkpoint_tampering_rejected) ... ok
+test_context_overflow_fails (test_training.NeuralTests.test_context_overflow_fails) ... ok
+test_dpo_value_and_gradient (test_training.NeuralTests.test_dpo_value_and_gradient) ... ok
+test_exact_cpu_checkpoint_resume (test_training.NeuralTests.test_exact_cpu_checkpoint_resume) ... ok
+test_large_allocation_blocked_before_model_creation (test_training.NeuralTests.test_large_allocation_blocked_before_model_creation) ... ok
+test_parameter_accounting (test_training.NeuralTests.test_parameter_accounting) ... ok
+test_posttraining_stages_are_separate_and_update (test_training.NeuralTests.test_posttraining_stages_are_separate_and_update) ... ok
+test_preference_without_initial_checkpoint_fails (test_training.NeuralTests.test_preference_without_initial_checkpoint_fails) ... ok
+test_proper_scoring_losses (test_training.NeuralTests.test_proper_scoring_losses) ... ok
+test_response_mask_and_padding (test_training.NeuralTests.test_response_mask_and_padding) ... ok
+test_rlvr_reward_gradient_and_reference_frozen (test_training.NeuralTests.test_rlvr_reward_gradient_and_reference_frozen) ... ok
+test_stage_mismatch_cannot_resume (test_training.NeuralTests.test_stage_mismatch_cannot_resume) ... ok
+test_unicode_tokenizer_roundtrip (test_training.NeuralTests.test_unicode_tokenizer_roundtrip) ... ok
+
+----------------------------------------------------------------------
+Ran 118 tests in 35.698s
+
+OK

@@ -1,0 +1,28 @@
+test_abstention_dispatches_no_measurement (test_paid_evidence.PaidEvidenceTests.test_abstention_dispatches_no_measurement) ... ok
+test_acquisition_is_persisted_and_charged (test_paid_evidence.PaidEvidenceTests.test_acquisition_is_persisted_and_charged) ... FAIL
+test_aggregate_deduplicates_and_caps (test_paid_evidence.PaidEvidenceTests.test_aggregate_deduplicates_and_caps) ... ok
+test_budget_only_charges_dispatched_work (test_paid_evidence.PaidEvidenceTests.test_budget_only_charges_dispatched_work) ... ok
+test_candidate_duplicates_never_multiply_question_reward (test_paid_evidence.PaidEvidenceTests.test_candidate_duplicates_never_multiply_question_reward) ... ok
+test_conflicting_source_prevents_acquisition (test_paid_evidence.PaidEvidenceTests.test_conflicting_source_prevents_acquisition) ... ok
+test_error_and_timeout_are_paid_and_unresolved (test_paid_evidence.PaidEvidenceTests.test_error_and_timeout_are_paid_and_unresolved) ... ok
+test_extra_point_separates_cubic_but_not_quintic (test_paid_evidence.PaidEvidenceTests.test_extra_point_separates_cubic_but_not_quintic) ... ok
+test_factorial_weighting_and_cost_sensitivity (test_paid_evidence.PaidEvidenceTests.test_factorial_weighting_and_cost_sensitivity) ... ok
+test_forecaster_sees_only_pre_measurement_inputs (test_paid_evidence.PaidEvidenceTests.test_forecaster_sees_only_pre_measurement_inputs) ... ok
+test_fresh_groups_and_invisible_family (test_paid_evidence.PaidEvidenceTests.test_fresh_groups_and_invisible_family) ... ok
+test_missing_acquisition_fails_closed (test_paid_evidence.PaidEvidenceTests.test_missing_acquisition_fails_closed) ... ok
+test_selective_band_boundaries_and_input_validation (test_paid_evidence.PaidEvidenceTests.test_selective_band_boundaries_and_input_validation) ... ok
+test_unavailable_acquisition_stops_without_free_target_fallback (test_paid_evidence.PaidEvidenceTests.test_unavailable_acquisition_stops_without_free_target_fallback) ... ok
+
+======================================================================
+FAIL: test_acquisition_is_persisted_and_charged (test_paid_evidence.PaidEvidenceTests.test_acquisition_is_persisted_and_charged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "model-1/tests/test_paid_evidence.py", line 80, in test_acquisition_is_persisted_and_charged
+    self.assertEqual(memory.replay(),state.to_dict())
+AssertionError: {'assumptions': ['Synthetic numerical domai[8735 chars]1'}]} != {'schema_version': '1', 'question': 'Which [8907 chars].\n'}
+Diff is 16719 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 14 tests in 2.891s
+
+FAILED (failures=1)
