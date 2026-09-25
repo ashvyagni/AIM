@@ -108,6 +108,7 @@ class Controller:
             elif len(state.observations) < 2:
                 state.unknowns.append("Insufficient relevant observations to propose supported candidates")
             else:
+                self.prepare_evidence(state, memory, case, run, invoke)
                 try:
                     state.hypotheses = self.researcher.hypothesize(copy.deepcopy(state))
                 finally:
@@ -197,6 +198,10 @@ class Controller:
             return state
         finally:
             memory.close()
+
+    def prepare_evidence(self, state, memory, case, run, invoke):
+        """Optional deterministic evidence extension; the default loop is unchanged."""
+        return None
 
     @staticmethod
     def _validate_final(state, memory):
