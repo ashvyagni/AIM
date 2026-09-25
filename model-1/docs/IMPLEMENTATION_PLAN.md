@@ -45,11 +45,15 @@ A separately scoped observation-consistency verifier and read-only memory audit 
 
 ## Phase 2B — Judge shift and decision experiments
 
-**Next implementation phase; not yet measured.** First register the event, feature timing, fresh partitions, baselines, proper scores, cost model and stopping rules. Freeze the Researcher/backends and pre-measurement Judge inputs. Exclude target measurements, labels, post-verification states and hidden generator coefficients from those inputs. Keep all Phase 2A/2A.1/2A.2 worlds as exposed historical diagnostics. The [observation-scope note](OBSERVATION_SCOPE.md) explains why fitting three points cannot establish an unrestricted future law.
+**Completed first comparison; all-seed evidence gate failed.** Twelve random-init Judges, 102 passing tests, 768 held-out candidate records, independent audit of 1,536 labels and grouped intervals are recorded in the [Phase 2B report](../reports/phase-2b-implementation.md). Richer observed features improved familiar Brier but did not consistently improve shifted decision utility. Keep the verification-first default. The [guide](JUDGE_SHIFT.md) documents reproduction and the opt-in Controller adapter.
 
-The current Judge overconfidence under cubic shift is a measured problem. Freeze the current result as a baseline. Compare log/Brier training, temperature scaling, simple base-rate/constant predictors, richer observed-residual features and abstention policies. Split by world and family; hold out final OOD families from both training and threshold fitting.
+The experiment defines a future measurement-pass event, excludes outcomes from features, uses fresh grouped worlds, and separately compares log/Brier training, temperature scaling, constant/base-rate forecasts, observed-residual features and abstention. Cubic worlds are now explicitly training data; quartic perturbations were held out along with a changed mixture. Both shifts act together. All resulting holdouts are now exposed historical diagnostics.
 
-Measure proper scores, risk/coverage, verification cost and incorrect high-confidence decisions. Report whole-world uncertainty intervals across multiple seeds. Define whether the Judge forecasts answer correctness, verifier pass probability or expected utility; never merge these targets implicitly. Do not optimize on the existing cubic diagnostic and then relabel it unseen.
+### Phase 2B.1 — Shared costs and evidence acquisition (next)
+
+Specify a question-level utility with shared measurement cost and explicit cost for an additional observation. Avoid double-crediting equal candidate predictions. Compare verify-all, abstain, observed-fit and calibrated policies with the Researcher fixed, before attempting learned sequential decisions. Freeze the cost model and grouped family/prior partitions before new evaluation; vary family and mixture separately where feasible. A new observation's benefit must include its acquisition cost. Existing Phase 2B per-candidate utility is an offline diagnostic, not measured shared-tool savings.
+
+Retain proper scores, risk/coverage, cost, lost opportunities and whole-group intervals. No confidence forecast may bypass a verifier or imply global-law proof. Calibration transfer to learned Researcher candidates remains a separate required experiment. The [observation-scope note](OBSERVATION_SCOPE.md) remains a mathematical constraint on what the Judge can infer.
 
 ## Phase 2C — Trusted evidence/tool expansion
 

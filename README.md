@@ -12,8 +12,11 @@ The architectural baseline is the [complete research handbook](documents/AIM_Com
 - [Phase 2A.1 arithmetic-supervision comparison](model-1/reports/phase-2a1-implementation.md)
 - [Exact Researcher checkpoint continuation audit](model-1/reports/research-resume-audit.md)
 - [Phase 2A.2 curriculum implementation and execution record](model-1/reports/phase-2a2-implementation.md)
+- [Phase 2B Judge calibration and decision results](model-1/reports/phase-2b-implementation.md)
 
-Latest completed experiment: Phase 2A.2 compared worked supervision with a staged arithmetic curriculum across six native Researcher models. Mean verified test success was 6.77% versus 6.25%; both arms failed the capability gate. All 92 preflight tests passed and 1,664 actual research-loop cases were evaluated and audited. Seventeen of 25 learned familiar target passes contradicted earlier observations. The deterministic Researcher remains the default; separate Judge calibration and decision experiments are next.
+Latest completed experiment: Phase 2B trained twelve separate feature Judges and evaluated raw/scaled forecasts on 768 held-out candidate records. All 102 tests passed. Richer inputs improved mean familiar Brier score from .14612 to .11588, but one seed had negative decision utility under shift; the all-seed evidence gate failed. The default Judge remains verification-first. Next: shared measurement costs and explicit evidence-acquisition decisions.
+
+Phase 2A.2 compared worked supervision with a staged arithmetic curriculum across six native Researcher models: mean verified test success 6.77% versus 6.25%, with both capability gates failed. Its 1,664 research-loop cases and observation audit remain available. The deterministic Researcher remains the default.
 
 The earlier Phase 2A.1 plain/worked comparison remains available with its original results. Different world sets and coefficient ranges make its rates unsuitable as a direct comparison with Phase 2A.2.
 

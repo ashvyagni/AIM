@@ -1,6 +1,6 @@
 # AIM Model-1
 
-**Phase 1 foundation, structured Researcher training, and completed arithmetic-supervision/curriculum comparisons.**
+**Modular foundation, structured Researcher experiments, and separate Judge calibration/decision studies.**
 
 The default research loop uses a clearly identified deterministic polynomial Researcher and a separate rule-based or trained Judge. A native, randomly initialized transformer and an interchangeable neural Researcher adapter are implemented. The phase-1 arithmetic checkpoint failed structured generation. Phase 2A trained three research-specific checkpoints that emit mostly valid hypotheses but achieve only 3.13–10.94% verified success on the familiar holdout; their capability gate failed and they remain opt-in experimental backends.
 
@@ -8,7 +8,9 @@ Phase 2A.1 adds tested research-trainer continuation and a six-model comparison 
 
 Phase 2A.2 adds staged arithmetic tasks, fitting diagnostics, a separately scoped observation verifier and read-only memory auditing. Worked versus curriculum mean test success was 6.77% versus 6.25% on fresh worlds; neither passed its capability gate. Seventeen of 25 learned familiar target passes failed observation consistency. Full results and failures are retained.
 
-See the [latest report](reports/phase-2a2-implementation.md), [curriculum reproduction guide](docs/ARITHMETIC_CURRICULUM.md), and [real-checkpoint resume audit](reports/research-resume-audit.md). The latest full preflight has **92 passing tests, zero skips**. Historical reports preserve their original results and test counts. The next recommended phase is separate Judge calibration and decision evaluation under shift.
+Phase 2B compares twelve separate five/seven-feature Judges, log/Brier objectives and calibration-only temperature scaling. Richer inputs improved mean familiar Brier from .14612 to .11588, but mean OOD utility was −.00130 at the registered illustrative cost .5. One seed failed the OOD utility gate, so the default verification-first Judge is retained.
+
+See the [latest report](reports/phase-2b-implementation.md), [Judge reproduction guide](docs/JUDGE_SHIFT.md), [curriculum guide](docs/ARITHMETIC_CURRICULUM.md), and [real-checkpoint resume audit](reports/research-resume-audit.md). The latest full preflight has **102 passing tests, zero skips**. Historical reports preserve their original results and test counts. Next: shared measurement costs and explicit evidence-acquisition decisions.
 
 ## What runs
 
@@ -49,9 +51,12 @@ The lock records the tested macOS arm64 environment. Linux CPU lab installation 
 .venv/bin/python -m aim.reproduce
 .venv/bin/python -m aim.comparison_reproduce
 .venv/bin/python -m aim.curriculum_reproduce
+.venv/bin/python -m aim.judge_shift_reproduce
 ```
 
 The second command reproduces phase 1: test log, SFT, preference/DPO, RLVR, a separate trained Judge, an RLVR-from-SFT comparison, reference/trained-Judge evaluations, integrated loop, neural Researcher diagnostic and local benchmark. The third separately reproduces the registered plain/worked comparison; the fourth reproduces the worked/curriculum comparison plus observation audit. Each comparison runs six models and 1,664 Controller cases. Run only the study you intend to reproduce. Read its metrics and failure records. These commands do not launch distributed processes automatically.
+
+The fifth command reproduces the separate Judge study: twelve feature networks, frozen temperatures, 768 held-out candidate records, complete forecasts and grouped decision metrics. These are offline forecast cases; real Controller adapter cases are covered by the integration tests. The [guide](docs/JUDGE_SHIFT.md#integration) shows how to use its new checkpoint format without changing the legacy loader.
 
 Core tests can run without torch; neural tests explicitly skip. A full reproduction requires torch and numpy and must not be reported successful when those tests are skipped.
 
@@ -74,7 +79,7 @@ The local distributed launcher needs loopback socket permission. It runs only on
 
 ## Scope and limits
 
-- Phase-1 transformer: **90,624** parameters; Phase-2A experimental transformer: **228,096**; independent feature-based Judge: **225**. These are mechanism tests, not final size decisions. The 2M allocation guard belongs to this smoke harness; it is not an AIM scale limit.
+- Phase-1 transformer: **90,624** parameters; Phase-2A experimental transformer: **228,096**; independent feature-based Judges: **225/289**. These are mechanism tests, not final size decisions. The 2M allocation guard belongs to this smoke harness; it is not an AIM scale limit.
 - Preference labels shipped here are procedural, not human feedback. The DPO pipeline accepts explicitly attributed external SFT/preference records; actual human collection and annotation review remain pending.
 - RLVR is sampled REINFORCE over three exact-arithmetic candidates with a frozen reference. It is not open-ended reasoning RL.
 - Judge learning uses proper scoring and validation-only temperature fitting. It is RLCD-style calibration, not a claimed reproduction of an undocumented proprietary algorithm.
@@ -116,3 +121,5 @@ Runs are excluded from a future Git index to avoid accidentally committing large
 - [Arithmetic curriculum reproduction](docs/ARITHMETIC_CURRICULUM.md)
 - [Phase 2A.2 results and observation audit](reports/phase-2a2-implementation.md)
 - [What finite observation checks establish](docs/OBSERVATION_SCOPE.md)
+- [Separate Judge reproduction and input contract](docs/JUDGE_SHIFT.md)
+- [Phase 2B evidence and failed shift-utility gate](reports/phase-2b-implementation.md)

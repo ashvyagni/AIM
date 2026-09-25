@@ -2,9 +2,9 @@
 
 **For the next implementation agent or ML engineer.** Updated 2026-09-25. Work in the existing `AIM/` workspace; the canonical code directory is `model-1/`. Continue the approved architecture and current implementation. This directive supplies a concrete starting point, not a request to redesign AIM.
 
-**Latest state:** Phase 2A.2 is implemented, evaluated and audited. Read its [report](../model-1/reports/phase-2a2-implementation.md), [reproduction guide](../model-1/docs/ARITHMETIC_CURRICULUM.md) and [observation-scope note](../model-1/docs/OBSERVATION_SCOPE.md). All 92 preflight tests passed and 1,664 Controller cases ran. Worked/curriculum mean verified success was 6.77%/6.25%; both missed the capability gate and curriculum failed its advantage gate. Keep the deterministic default. Next implement separate Judge calibration and decision experiments under shift.
+**Latest state:** Phase 2B is implemented, evaluated and audited. Read its [report](../model-1/reports/phase-2b-implementation.md), [reproduction guide](../model-1/docs/JUDGE_SHIFT.md) and [all-model tables](../model-1/reports/phase-2b-metrics.md). All 102 preflight tests passed. Twelve Judges were evaluated on 768 held-out candidate records; richer features improved familiar Brier, but one seed had negative shifted utility, so the all-seed gate failed. Keep the default verification-first Judge and deterministic Researcher. Next specify shared measurement costs and evidence-acquisition decisions.
 
-**Completed run:** `model-1/runs/20260925T073010-curriculum-reproduction-60d13ca4` has status COMPLETED and a final summary. Its selected checkpoints, 1,664 cases and observation audit were checked before export to `model-1/reports/phase-2a2-evidence/`. Do not restart it as unfinished work. All runs/checkpoints remain local; portable evidence is versioned in Git. The earlier [Phase 2A.1 report](../model-1/reports/phase-2a1-implementation.md) and [exact continuation audit](../model-1/reports/research-resume-audit.md) retain their historical results.
+**Completed run:** `model-1/runs/20260925T141603-judge-shift-reproduction-a1a228f5` has status COMPLETED and a final summary. The audit rechecked 1,536 source-backed labels, model/data hashes, forecast metrics and grouped intervals before export to `model-1/reports/phase-2b-evidence/`. Do not restart it as unfinished work. The prior curriculum run `model-1/runs/20260925T073010-curriculum-reproduction-60d13ca4` is also complete. All runs/checkpoints remain local; portable evidence is versioned in Git. Earlier reports and the exact continuation audit retain their historical results.
 
 ## Read before changing code
 
@@ -28,10 +28,11 @@ Keep SFT, preference learning, RLVR and Judge calibration independently trainabl
 - A strict neural Researcher adapter; phase-1 arithmetic weights failed hypothesis generation, while later research-specific weights learn valid structure but still fail capability gates.
 - Checkpoint-versioned plain/worked hypothesis formats, fresh world partitions, frozen multi-seed comparisons, independent process diagnostics and tested Researcher continuation.
 - Staged arithmetic tasks, fitting/transfer diagnostics, exact task accounting, a scoped observation verifier and read-only memory audit.
+- Separate five/seven-feature Judges, grouped shift fixtures, calibration freeze, complete forecast/policy metrics and a strict opt-in Controller adapter.
 - Versioned state/claims/evidence, deterministic action budgets, bounded subprocess tools, exact numerical/provenance verifiers and append-only event replay.
 - Regression tests, public evaluation fixtures, complete reproduction command, local CPU and Gloo/DDP benchmark infrastructure.
 
-The 90,624-parameter initial decoder, 228,096-parameter structured Researcher and 225-parameter Judge are micro-scale mechanism checks. They are not final model/Judge size choices and do not replace the 100M–300M proxy → ~1B systems → conditional 7B+ roadmap. Do not represent the current system as a general research AI.
+The 90,624-parameter initial decoder, 228,096-parameter structured Researcher and 225/289-parameter feature Judges are micro-scale mechanism checks. They are not final model/Judge size choices and do not replace the 100M–300M proxy → ~1B systems → conditional 7B+ roadmap. Do not represent the current system as a general research AI.
 
 ## First actions
 
@@ -42,7 +43,7 @@ cd model-1
 
 Use the documented environment setup if the local `.venv` is missing. Read the latest report and existing bundle's `tests.log`, `results.json`, case records and export manifest before launching experiments. A missing torch environment is not a successful neural test result. The documented reproduction command can repeat a study if needed; do not rerun a completed study merely to begin the next phase.
 
-Continue with [Phase 2B](../model-1/docs/IMPLEMENTATION_PLAN.md): register a separate Judge study before generating its holdout or tuning decisions. Define the forecast event, admissible pre-measurement features, proper-score and constant baselines, abstention/measurement utilities, calibration split, family shift and acceptance rules. Keep Researcher checkpoints and task contracts fixed. Reject features containing future measurements, hidden coefficients, outcome labels or post-verification state. All three Phase 2A world sets are exposed; use fresh partitions. Keep the deterministic Researcher as an explicit reference, not a hidden fallback.
+Continue with [Phase 2B.1](../model-1/docs/IMPLEMENTATION_PLAN.md): register a question-level decision study with shared measurement and additional-observation costs. The current per-candidate utility does not match the Controller's shared measurement, and four-observation fixtures supply extra evidence for free. Define duplicate-prediction credit, acquisition/abstention actions, outcome timing and failure costs before changing behavior. Compare deterministic policies and the frozen Judge, with the Researcher fixed, then consider sequential learning separately. All prior study holdouts are exposed; use fresh grouped partitions and separate family versus mixture shifts where feasible. Preserve the strict pre-measurement input boundary.
 
 Phase 2A.2 found that 17 of 25 learned familiar target passes and all seven OOD passes contradicted observed points. The reference fit all cubic observations but missed all their targets. Preserve target, observation and process checks as distinct fields; a Judge cannot remove this information limit by expressing confidence. Sequential decision learning remains a separately specified research question, not a synonym for confidence fitting.
 
@@ -53,6 +54,8 @@ In parallel with model planning, prepare the VIT hardware audit for an authorize
 ## Findings to preserve
 
 The first-stage experiment has mixed metrics; adding every stage did not dominate all simpler alternatives. The Judge is useful in its simple familiar family but overconfident under cubic shift. Later learned Researchers generate valid JSON while retaining poor numerical success. The staged curriculum did not improve its registered main metric, and earlier auxiliary formats deteriorated after task replacement. These are research signals, not results to suppress. Exact values, distinctions and paths are in the phase reports.
+
+Phase 2B improved familiar proper scores with richer observed features, but one seed failed shifted utility despite zero incorrect forecasts at probability >=.95. Calibration-set temperature scaling did not consistently improve holdout scores. The study now includes cubic training worlds; quartic and mixture shifts were tested together. Do not describe its cubic cases as unseen or its offline policy utility as measured Controller savings. The failed development test and the failed evidence gate are both retained and distinguished.
 
 ## Reproducibility and change control
 
