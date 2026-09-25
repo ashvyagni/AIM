@@ -1,0 +1,12 @@
+{
+  "exporter_sha256": "d73894062818da025a522ffa2ce8163715c91004db536fefa8df5563ce08fc6a",
+  "files": {
+    "case-results.json": "6ae3881d1d6f4d8778bea2ac4751c388f8cdc2e7fb5d193f12f83a275a4d6d69",
+    "observation-checks.json": "9504d6c69261b802efee26702c310efd42c680fc4564e738403bbe9c0eeca5c6",
+    "results.json": "e766203dac45a1c9f11b078fc1440d38e0261c373f2782d0e99e4ce5765dc667",
+    "selected-fit-diagnostics.json": "37608165d3c648a3a47a749c58f71d67d108edfe9001add09207a88aa2a399bd",
+    "tests.log": "122c0c0dc43c971eaee966b266116de240c762f39330055046dd9b73c405db4d"
+  },
+  "note": "Workspace paths made repository-relative; test temporary paths and untracked filenames redacted. Original experiments unchanged.",
+  "source_run": "model-1/runs/20260925T073010-curriculum-reproduction-60d13ca4"
+}

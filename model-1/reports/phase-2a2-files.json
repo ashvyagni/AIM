@@ -1,0 +1,151 @@
+{
+  "baseline_commit": "6324b01",
+  "scope": "Phase 2A.2 implementation and evidence; excludes this inventory to avoid self-reference, local runs/checkpoints, and unrelated owner files.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2554,
+      "sha256": "d649a5a9a6fec52757df2af25c722d29beaa634b07a2612bbbac5152f7e1b866"
+    },
+    {
+      "path": "documents/AIM_Model_1_Implementation_Directive.md",
+      "bytes": 8844,
+      "sha256": "39518acef8ced6c9aa4f3fca67290c1eabaecd46a1c9004112ba4d93e2656c6d"
+    },
+    {
+      "path": "model-1/README.md",
+      "bytes": 9791,
+      "sha256": "3b0721c1d95962525288bf61ce1ee9fbf280edcf3c003f84f498c6307b465b51"
+    },
+    {
+      "path": "model-1/aim/comparison_eval.py",
+      "bytes": 7914,
+      "sha256": "0ccf82bf55e4e526e77dcf751ef6b552e8157140f50fa2d476a9911f901350d8"
+    },
+    {
+      "path": "model-1/aim/curriculum_data.py",
+      "bytes": 4083,
+      "sha256": "3cfbca840c659c79268761c069260a8fec89f7fe9b7a09ab355729a1be63365c"
+    },
+    {
+      "path": "model-1/aim/curriculum_diagnostics.py",
+      "bytes": 1239,
+      "sha256": "31e608fb2a2412b28de4e0e2026323082ad09f26ef1385ca3f035a0257c65ae9"
+    },
+    {
+      "path": "model-1/aim/curriculum_eval.py",
+      "bytes": 3728,
+      "sha256": "9a2377b3d4da7e4ca7b85445f1b294b34eb74d830c53275babdf8a26d49759b7"
+    },
+    {
+      "path": "model-1/aim/curriculum_reproduce.py",
+      "bytes": 2130,
+      "sha256": "a04e064eb602a7077a6c3076df9f05d2354b82f66aecb4ff9ad9a4fb9fa7b42e"
+    },
+    {
+      "path": "model-1/aim/curriculum_tasks.py",
+      "bytes": 3956,
+      "sha256": "f874a75f6cd19dfcb941703471975f4db1953a365d5dbf288474165427f88233"
+    },
+    {
+      "path": "model-1/aim/curriculum_train.py",
+      "bytes": 4370,
+      "sha256": "d16e8d91f135df5e7ce3c0e7d8c62ad5dc64963d9d1b7d3e4e80d632aff833b2"
+    },
+    {
+      "path": "model-1/aim/memory.py",
+      "bytes": 7039,
+      "sha256": "9de7c45bc5ae5eac3ade09f05643deb402b89d5a0e53c7140405453732a20cec"
+    },
+    {
+      "path": "model-1/aim/observation_verifier.py",
+      "bytes": 3625,
+      "sha256": "34ede4436fbe93b2c0e0373cf185e6053226b12b39b87c61e2250a621ce0133b"
+    },
+    {
+      "path": "model-1/aim/research_train.py",
+      "bytes": 18755,
+      "sha256": "2d1aa9ecef52c361430fe383c237233b96acb42d0d0c557f056ace54acf93092"
+    },
+    {
+      "path": "model-1/configs/arithmetic-curriculum.json",
+      "bytes": 383,
+      "sha256": "84d07a2cfce8568ebba9bd6313d6cd42bc1484f7383f8d6a597f7358a58c689c"
+    },
+    {
+      "path": "model-1/docs/ARITHMETIC_CURRICULUM.md",
+      "bytes": 9100,
+      "sha256": "031c82cbcff4f5bdbae57be1590bb38e07ec9672841836045b0b888a7899f3c8"
+    },
+    {
+      "path": "model-1/docs/DECISIONS.md",
+      "bytes": 13531,
+      "sha256": "dc50f582146ee2679db28e22ebb5f2331455e4b8e1cdfa3f2bed0b5aa9d7762f"
+    },
+    {
+      "path": "model-1/docs/IMPLEMENTATION_PLAN.md",
+      "bytes": 11869,
+      "sha256": "3827fb69f86bbd8777577750181eab7bc2eb2179e579236e41e5be95d5e835ae"
+    },
+    {
+      "path": "model-1/docs/OBSERVATION_SCOPE.md",
+      "bytes": 4339,
+      "sha256": "40d8d8f6a3c4c32db513e228a88faead30e2e03134f202f20b1498410667a121"
+    },
+    {
+      "path": "model-1/docs/experiments/phase-2a2-protocol.md",
+      "bytes": 8504,
+      "sha256": "5be8bc321542bfe6738cc2397716360d7d9038449cc92bf9f73d986a88f8c6a9"
+    },
+    {
+      "path": "model-1/reports/export_curriculum_evidence.py",
+      "bytes": 7610,
+      "sha256": "d73894062818da025a522ffa2ce8163715c91004db536fefa8df5563ce08fc6a"
+    },
+    {
+      "path": "model-1/reports/phase-2a2-evidence/case-results.json",
+      "bytes": 1947660,
+      "sha256": "6ae3881d1d6f4d8778bea2ac4751c388f8cdc2e7fb5d193f12f83a275a4d6d69"
+    },
+    {
+      "path": "model-1/reports/phase-2a2-evidence/export-manifest.json",
+      "bytes": 802,
+      "sha256": "1f6bac0114b1f0cd807311f057922ed657e3846642c907d7c315c27a8c923f0a"
+    },
+    {
+      "path": "model-1/reports/phase-2a2-evidence/observation-checks.json",
+      "bytes": 1672295,
+      "sha256": "9504d6c69261b802efee26702c310efd42c680fc4564e738403bbe9c0eeca5c6"
+    },
+    {
+      "path": "model-1/reports/phase-2a2-evidence/results.json",
+      "bytes": 236260,
+      "sha256": "e766203dac45a1c9f11b078fc1440d38e0261c373f2782d0e99e4ce5765dc667"
+    },
+    {
+      "path": "model-1/reports/phase-2a2-evidence/selected-fit-diagnostics.json",
+      "bytes": 685987,
+      "sha256": "37608165d3c648a3a47a749c58f71d67d108edfe9001add09207a88aa2a399bd"
+    },
+    {
+      "path": "model-1/reports/phase-2a2-evidence/tests.log",
+      "bytes": 22162,
+      "sha256": "122c0c0dc43c971eaee966b266116de240c762f39330055046dd9b73c405db4d"
+    },
+    {
+      "path": "model-1/reports/phase-2a2-implementation.md",
+      "bytes": 16654,
+      "sha256": "fbc862406ed6fd729d5b7d3a80a792ff1ae6d0299ef7d594b59072aee9d1ede3"
+    },
+    {
+      "path": "model-1/tests/test_curriculum.py",
+      "bytes": 8732,
+      "sha256": "8d87141a1e1a9e0f18b81b006f7fc6ec0409c4b8df101898f4c32bb2995862b6"
+    },
+    {
+      "path": "model-1/tests/test_observation_verifier.py",
+      "bytes": 4854,
+      "sha256": "cae40861290f5e3990cb880a3d0c192a5a1543eb2ec53254f31930fa6f20ab15"
+    }
+  ]
+}
