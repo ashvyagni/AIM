@@ -22,7 +22,7 @@ def portable(value):
     if isinstance(value,list):
         return [portable(v) for v in value]
     if isinstance(value,dict):
-        result={k:portable(v) for k,v in value.items()}
+        result={portable(k):portable(v) for k,v in value.items()}
         if isinstance(result.get('git_status'),str):
             lines=result['git_status'].splitlines()
             result['git_status']='\n'.join(line for line in lines if not line.startswith('?? '))
