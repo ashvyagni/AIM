@@ -1,0 +1,17 @@
+{
+  "failure_text": "Traceback (most recent call last):\n  File \"model-1/aim/comparison_reproduce.py\", line 26, in reproduce\n    trained=train(config,dataset/\"train-validation.json\",run.path/\"training\")\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"model-1/aim/comparison_train.py\", line 42, in train\n    selections=[train_seed(arm_config,rows,transformed,run.path/arm,s,protocol) for s in config[\"seeds\"]]\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"model-1/aim/research_train.py\", line 200, in train_seed\n    scores,counts=sequence_scores(model,tokenizer,pairs,pad_to=config.get(\"pad_to\"))\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"model-1/aim/training.py\", line 53, in sequence_scores\n    logits = model(batch[:,:-1])\n             ^^^^^^^^^^^^^^^^^^^\n  File \"model-1/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1773, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"model-1/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1784, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"model-1/aim/neural.py\", line 125, in forward\n    x = block(x)\n        ^^^^^^^^\n  File \"model-1/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1773, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"model-1/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1784, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"model-1/aim/neural.py\", line 97, in forward\n    q, k = rope(q, cfg.rope_base), rope(k, cfg.rope_base)\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"model-1/aim/neural.py\", line 75, in rope\n    return torch.stack((even * cos - odd * sin, even * sin + odd * cos), dim=-1).flatten(-2)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nKeyboardInterrupt\n",
+  "note": "No holdout evaluation was started in this attempt; all original artifacts remain on disk.",
+  "path": "model-1/runs/20260924T191101-comparison-reproduction-85b869f1",
+  "protocol_invalidation": {
+    "action": "Stopped with SIGINT; retained original runs and failures; corrected metadata separation and added regression tests before full rerun.",
+    "holdout_outcomes_inspected": false,
+    "reason": "Split manifest contained holdout coefficient vectors and comparison trainer loaded this metadata. No holdout scoring occurred. Coefficients were not used as model prompts or training responses, but the read violated the declared data boundary.",
+    "training_artifacts_valid_for_capability_claims": false,
+    "unchanged_preregistered_protocol_sha256": "b6d540040f4c5f67d17a5e3fe1e7de0ca20124e9e05eaa52affb454cd31b8b39"
+  },
+  "status": {
+    "elapsed_seconds": 530.8519574160018,
+    "error": "",
+    "status": "FAILED"
+  }
+}

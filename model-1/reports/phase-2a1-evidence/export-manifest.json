@@ -1,0 +1,12 @@
+{
+  "files": {
+    "case-results.json": "fb16a2d059c838ad4ae91f59a7b0768e57b135a2f359c9229ae925fd7597924a",
+    "invalidated-run.json": "7b411e48bf79e410a7f90b40d4bab5007e9835a613c32ff07270ff87bccf65c7",
+    "legacy-resume-audit.py": "70a54e37236c7e621af98c11f7741bb176e08a28029b8caf998abc4b20110e35",
+    "legacy-resume.json": "dd300c8e5790f46543397317ac9400a489f5befdcf1241b2565d8baff6e2922b",
+    "results.json": "d31072c689351e059f6f78d9e8ead97d8a94b90939486b41ea48326540f2637c",
+    "tests.log": "dd56007d9ef431b0597683225d2ccac40d9eb2d616f9276862190761a2748b34"
+  },
+  "note": "Absolute workspace paths made repository-relative; test temporary paths anonymized; unrelated untracked filename redacted from status text. Raw artifacts remain unchanged.",
+  "source_run": "runs/20260924T192137-comparison-reproduction-35716f6b"
+}

@@ -1,0 +1,156 @@
+{
+  "baseline_commit": "caae60a",
+  "files": [
+    {
+      "bytes": 2202,
+      "path": "README.md",
+      "sha256": "44d60b57dacd540ec04c6f8a977936ce2158f1d44871c288e3d8873329a3b1c4"
+    },
+    {
+      "bytes": 7288,
+      "path": "documents/AIM_Model_1_Implementation_Directive.md",
+      "sha256": "26237b269cf0fa78d8853e1c547e7959ad31fb4de2c04b2315adc970f3484737"
+    },
+    {
+      "bytes": 8909,
+      "path": "model-1/README.md",
+      "sha256": "0ebfa202d4b47151dff20d8ca65132693f307b29902c66cd5469f1bcfa62c062"
+    },
+    {
+      "bytes": 3509,
+      "path": "model-1/aim/comparison_data.py",
+      "sha256": "d1ef243931665486303beaa0fd9e7b043bcdf0e9e896070b21c084133c524954"
+    },
+    {
+      "bytes": 7722,
+      "path": "model-1/aim/comparison_eval.py",
+      "sha256": "306ac9d166ef9c59b83dac01cdac60ba79176db466cd4c3a6b6ee953b9cdb902"
+    },
+    {
+      "bytes": 2084,
+      "path": "model-1/aim/comparison_reproduce.py",
+      "sha256": "ab9c9df9ee711b7b225b871fdaf9ddb5c6a3f85c4c8ab884e05dbef72b7b74fe"
+    },
+    {
+      "bytes": 4301,
+      "path": "model-1/aim/comparison_train.py",
+      "sha256": "2ef27455e4eda6d30770e586ff09ae8a32e9a02bb9a78cac430543defdf697e9"
+    },
+    {
+      "bytes": 2752,
+      "path": "model-1/aim/finite_difference.py",
+      "sha256": "6f4d97f04bf8a0b1a81e349b8b25b627dee0156305d0a5eab4f3b43be0aab88d"
+    },
+    {
+      "bytes": 5626,
+      "path": "model-1/aim/research_data.py",
+      "sha256": "0d78768e9c0227b13ab3658b7968f06255eca643391a9894cac1f77842181833"
+    },
+    {
+      "bytes": 16843,
+      "path": "model-1/aim/research_train.py",
+      "sha256": "2c8659d2fd4fb85f74b16a31012ccdb208b1c68c4dd5e2b71887ec7e1e99c1cc"
+    },
+    {
+      "bytes": 5048,
+      "path": "model-1/aim/researcher.py",
+      "sha256": "35710bb62f9ccc2ccb3da04ff857043c0b1bcd351c89ee2ace9bad694c0c17b7"
+    },
+    {
+      "bytes": 14814,
+      "path": "model-1/aim/training.py",
+      "sha256": "8b08845d28c1fc2955267d5a503eaf4805a4a7156b088c2da96a7294a4f18f55"
+    },
+    {
+      "bytes": 390,
+      "path": "model-1/configs/finite-difference-comparison.json",
+      "sha256": "10ba838c054c536b38ca882898c79d3690e96f9ea7abd134bbe1f68fac32f3fa"
+    },
+    {
+      "bytes": 11300,
+      "path": "model-1/docs/DECISIONS.md",
+      "sha256": "1e8298ceecc1a1cf8f88901bd96e3fd8c55a0c2bdd66ba4661ac8712511a8e54"
+    },
+    {
+      "bytes": 7422,
+      "path": "model-1/docs/FINITE_DIFFERENCE_COMPARISON.md",
+      "sha256": "90744c85619058a6dba5dc9fe32ee35c46442a722f176e5b8cdf29002310336d"
+    },
+    {
+      "bytes": 10878,
+      "path": "model-1/docs/IMPLEMENTATION_PLAN.md",
+      "sha256": "d6a5641457d607112a9e6d2921a541cecc0f92a4d18200ae86fe3206e3aa7ffd"
+    },
+    {
+      "bytes": 8343,
+      "path": "model-1/docs/STRUCTURED_RESEARCHER.md",
+      "sha256": "b8185529a6808025b5ee7b10ec045ac092270cb3fe584ccfea7fc9dd0a143805"
+    },
+    {
+      "bytes": 6931,
+      "path": "model-1/docs/experiments/phase-2a1-protocol.md",
+      "sha256": "b6d540040f4c5f67d17a5e3fe1e7de0ca20124e9e05eaa52affb454cd31b8b39"
+    },
+    {
+      "bytes": 1935781,
+      "path": "model-1/reports/phase-2a1-evidence/case-results.json",
+      "sha256": "fb16a2d059c838ad4ae91f59a7b0768e57b135a2f359c9229ae925fd7597924a"
+    },
+    {
+      "bytes": 832,
+      "path": "model-1/reports/phase-2a1-evidence/export-manifest.json",
+      "sha256": "60459224688d562c5c6d735965447f3d0adfb136817a7b86200957d889e48529"
+    },
+    {
+      "bytes": 3146,
+      "path": "model-1/reports/phase-2a1-evidence/invalidated-run.json",
+      "sha256": "7b411e48bf79e410a7f90b40d4bab5007e9835a613c32ff07270ff87bccf65c7"
+    },
+    {
+      "bytes": 2209,
+      "path": "model-1/reports/phase-2a1-evidence/legacy-resume-audit.py",
+      "sha256": "70a54e37236c7e621af98c11f7741bb176e08a28029b8caf998abc4b20110e35"
+    },
+    {
+      "bytes": 13964,
+      "path": "model-1/reports/phase-2a1-evidence/legacy-resume.json",
+      "sha256": "dd300c8e5790f46543397317ac9400a489f5befdcf1241b2565d8baff6e2922b"
+    },
+    {
+      "bytes": 131486,
+      "path": "model-1/reports/phase-2a1-evidence/results.json",
+      "sha256": "d31072c689351e059f6f78d9e8ead97d8a94b90939486b41ea48326540f2637c"
+    },
+    {
+      "bytes": 16532,
+      "path": "model-1/reports/phase-2a1-evidence/tests.log",
+      "sha256": "dd56007d9ef431b0597683225d2ccac40d9eb2d616f9276862190761a2748b34"
+    },
+    {
+      "bytes": 14966,
+      "path": "model-1/reports/phase-2a1-implementation.md",
+      "sha256": "4897ae24ac104b74a48d1ec1e8be39427492078ddadff4dcc531fcd4645358bc"
+    },
+    {
+      "bytes": 2234,
+      "path": "model-1/reports/research-resume-audit.md",
+      "sha256": "3c6483b8971ce55737a7102b051ddc15b8db0938c13d155408982a657e454758"
+    },
+    {
+      "bytes": 7676,
+      "path": "model-1/tests/test_finite_difference.py",
+      "sha256": "b9d1fa8091e18cb1c373d25ef9e8bbf6acaeed8f39706990f538019963e22bc4"
+    },
+    {
+      "bytes": 4818,
+      "path": "model-1/tests/test_research_format.py",
+      "sha256": "42882f54748384863c67255aa0e72dc284150730147810e5c4f5b8b58905d9e3"
+    },
+    {
+      "bytes": 8916,
+      "path": "model-1/tests/test_research_training.py",
+      "sha256": "6e065c70f12f4f6a31e2870854ed7370ef656aefe2d10555570a02ef4ac8c833"
+    }
+  ],
+  "scope": "Checkpoint continuation and Phase 2A.1 implementation, evidence and handoff; local runs and unrelated user files excluded. This inventory excludes itself to avoid a circular hash."
+}
