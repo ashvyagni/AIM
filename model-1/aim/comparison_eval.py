@@ -27,13 +27,15 @@ def process_summary(records,rows,contract):
         "scope":"agreement with quadratic interpolation of observations; not hidden cubic coefficient recovery"}
 
 
-def evaluate(selection_path,holdout_path,runs):
+def evaluate(selection_path,holdout_path,runs,*,experiment=EXPERIMENT,arms=("plain","worked"),
+             holdout_schema="aim-research-comparison-holdout-v1"):
     selection_path=Path(selection_path);holdout_path=Path(holdout_path)
     with Run(Path(runs),"comparison-holdout",{"selection_sha256":file_hash(selection_path)},[selection_path,holdout_path]) as run:
         frozen=json.loads(selection_path.read_text())
-        if frozen.get("version")!=EXPERIMENT or file_hash(holdout_path)!=frozen["holdout_sha256"]:
+        if frozen.get("version")!=experiment or file_hash(holdout_path)!=frozen["holdout_sha256"]:
             raise ContractError("Comparison selection/holdout mismatch")
-        if set(frozen["arms"])!={"plain","worked"}: raise ContractError("Both arms required")
+        if len(arms)!=2 or len(set(arms))!=2 or set(frozen["arms"])!=set(arms): raise ContractError("Both arms required")
+        baseline,candidate=arms
         expected_seeds=frozen["configuration"]["seeds"]
         if not expected_seeds or len(set(expected_seeds))!=len(expected_seeds): raise ContractError("Invalid paired seeds")
         from .neural import read_checkpoint
@@ -48,7 +50,7 @@ def evaluate(selection_path,holdout_path,runs):
         write_json(run.path/"selection-used.json",frozen)
         run.event("FROZEN_SELECTION_ACCEPTED",{"sha256":file_hash(selection_path)})
         holdout=json.loads(holdout_path.read_text())
-        if holdout.get("version")!=EXPERIMENT or holdout.get("schema")!="aim-research-comparison-holdout-v1":
+        if holdout.get("version")!=experiment or holdout.get("schema")!=holdout_schema:
             raise ContractError("Invalid comparison holdout schema")
         seen=set()
         for split in ("test","ood"):
@@ -85,16 +87,16 @@ def evaluate(selection_path,holdout_path,runs):
                     "verified_success":score["verified_rate"]>=0.25,"initial_improvement":pair["verified_rate_change"]>=0.1}
         seeds=frozen["configuration"]["seeds"]
         for seed in seeds:
-            arm_pairs[str(seed)]=paired_comparison(raw[f"plain-seed{seed}-selected-test"],raw[f"worked-seed{seed}-selected-test"])
+            arm_pairs[str(seed)]=paired_comparison(raw[f"{baseline}-seed{seed}-selected-test"],raw[f"{candidate}-seed{seed}-selected-test"])
         changes=[p["verified_rate_change"] for p in arm_pairs.values()]
         unbacked=sum(s["unbacked_verified_claims"] for s in summary.values())
         rates={arm:[summary[f"{arm}-seed{s}-selected-test"]["verified_rate"] for s in seeds] for arm in frozen["arms"]}
         arm_gates={arm:unbacked==0 and all(all(g.values()) for g in rows.values()) for arm,rows in gates.items()}
-        report={"version":EXPERIMENT,"selection_sha256":file_hash(selection_path),"holdout_sha256":file_hash(holdout_path),
+        report={"version":experiment,"selection_sha256":file_hash(selection_path),"holdout_sha256":file_hash(holdout_path),
             "backends":summary,"process":process,"gates":gates,"arm_gate_passed":arm_gates,
-            "initial_pairs":initial_pairs,"worked_vs_plain_pairs":arm_pairs,"unbacked_verified_claims":unbacked,
-            "mean_worked_gain":statistics.mean(changes),"worked_advantage_gate":statistics.mean(changes)>=0.05 and min(changes)>=0,
-            "worked_promotion_gate":arm_gates["worked"] and statistics.mean(changes)>=0.05 and min(changes)>=0,
+            "initial_pairs":initial_pairs,f"{candidate}_vs_{baseline}_pairs":arm_pairs,"unbacked_verified_claims":unbacked,
+            f"mean_{candidate}_gain":statistics.mean(changes),f"{candidate}_advantage_gate":statistics.mean(changes)>=0.05 and min(changes)>=0,
+            f"{candidate}_promotion_gate":arm_gates[candidate] and statistics.mean(changes)>=0.05 and min(changes)>=0,
             "seed_dispersion":{a:{"mean":statistics.mean(v),"min":min(v),"max":max(v),
                                     "sample_std":statistics.stdev(v) if len(v)>1 else None} for a,v in rates.items()},
             "scope":"shared finite synthetic worlds; diagnostic process checks never override final Controller status"}
