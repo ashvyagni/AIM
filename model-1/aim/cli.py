@@ -8,6 +8,21 @@ from .tracking import Run
 def main():
     parser=argparse.ArgumentParser(description="AIM Model-1 engineering prototype")
     sub=parser.add_subparsers(dest="command",required=True)
+    corpus=sub.add_parser("corpus-intake")
+    corpus.add_argument("--manifest", type=Path, required=True)
+    corpus.add_argument("--runs", type=Path, default=Path("runs"))
+    fixture=sub.add_parser("corpus-fixture")
+    fixture.add_argument("--output", type=Path, required=True)
+    tokenizers=sub.add_parser("tokenizer-compare")
+    tokenizers.add_argument("--corpus", type=Path, required=True)
+    tokenizers.add_argument("--merges", type=int, default=32)
+    tokenizers.add_argument("--runs", type=Path, default=Path("runs"))
+    pretrain=sub.add_parser("pretrain")
+    pretrain.add_argument("--corpus", type=Path, required=True)
+    pretrain.add_argument("--config", type=Path, default=Path("configs/pretrain-smoke.json"))
+    pretrain.add_argument("--tokenizer", type=Path)
+    pretrain.add_argument("--resume", type=Path)
+    pretrain.add_argument("--runs", type=Path, default=Path("runs"))
     symbolic=sub.add_parser("symbolic-loop")
     symbolic.add_argument("--case", type=Path)
     symbolic.add_argument("--researcher-checkpoint", type=Path)
@@ -44,7 +59,30 @@ def main():
     bench.add_argument("--config",type=Path,default=Path("configs/benchmark.json"))
     bench.add_argument("--runs",type=Path,default=Path("runs"))
     args=parser.parse_args()
-    if args.command=="symbolic-loop":
+    if args.command=="corpus-fixture":
+        from .corpus_fixture import create_fixture
+        print(create_fixture(args.output))
+    elif args.command=="corpus-intake":
+        from .corpus import intake
+        print(intake(args.manifest,args.runs))
+    elif args.command=="tokenizer-compare":
+        from .corpus import Corpus
+        from .tokenization import ByteTokenizer,fit_bpe,compare_tokenizers
+        from .tracking import write_json
+        with Run(args.runs,"tokenizer-compare",{"merges":args.merges},[args.corpus]) as run:
+            corpus=Corpus(args.corpus)
+            tokenizers={"byte":ByteTokenizer(),"bpe":fit_bpe(corpus,args.merges)}
+            for name,tokenizer in tokenizers.items():
+                write_json(run.path/(name+"-tokenizer.json"),tokenizer.specification())
+            write_json(run.path/"comparison.json",compare_tokenizers(corpus,tokenizers))
+        print(run.path)
+    elif args.command=="pretrain":
+        from .corpus import read_json
+        from .tokenization import tokenizer_from_spec
+        from .pretrain import pretrain as train_pretraining
+        tokenizer=tokenizer_from_spec(read_json(args.tokenizer)) if args.tokenizer else None
+        print(train_pretraining(read_json(args.config),args.corpus,args.runs,tokenizer,args.resume))
+    elif args.command=="symbolic-loop":
         from .symbolic_data import symbolic_case
         from .symbolic_loop import SymbolicController, SymbolicTransformerResearcher
         case=json.loads(args.case.read_text()) if args.case else symbolic_case()
