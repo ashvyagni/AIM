@@ -13,22 +13,7 @@ from torch import nn
 from torch.nn import functional as F
 
 from .contracts import ContractError
-
-
-class ByteTokenizer:
-    version = "aim-utf8-byte-v1"
-    vocab_size, bos_id, eos_id, pad_id = 259, 256, 257, 258
-
-    def encode(self, text):
-        return list(text.encode("utf-8"))
-
-    def decode(self, tokens, strict=True):
-        return bytes(t for t in tokens if 0 <= t < 256).decode("utf-8", errors="strict" if strict else "replace")
-
-    def specification(self):
-        return {"version": self.version, "vocab_size": self.vocab_size, "encoding": "utf-8",
-                "bos": self.bos_id, "eos": self.eos_id, "pad": self.pad_id,
-                "learned": False, "scope": "temporary engineering tokenizer; no pretrained assets"}
+from .tokenization import ByteTokenizer
 
 
 @dataclass(frozen=True)
