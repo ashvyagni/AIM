@@ -10,6 +10,9 @@ def execute(request):
     if not isinstance(request, dict) or set(request) != {"operation", "arguments"}:
         raise ContractError("Malformed tool request")
     op, args = request["operation"], request["arguments"]
+    if op == "CHECK_POLYNOMIAL_IDENTITY":
+        from .symbolic import check_identity, VERSION
+        return {"value": check_identity(args), "method": VERSION}
     if op == "CALCULATE":
         if set(args) != {"coefficients", "x"} or not 1 <= len(args["coefficients"]) <= 3:
             raise ContractError("Bad polynomial contract")

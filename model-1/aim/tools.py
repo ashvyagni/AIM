@@ -10,7 +10,7 @@ from .tracking import ROOT, canonical
 
 class ToolRunner:
     version = "bounded-worker-v1"
-    allowed = {"CALCULATE", "MEASURE"}
+    allowed = {"CALCULATE", "MEASURE", "CHECK_POLYNOMIAL_IDENTITY"}
 
     def execute(self, action: Action) -> ToolResult:
         if action.name not in self.allowed:
