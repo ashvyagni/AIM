@@ -2,9 +2,11 @@
 
 **For the next implementation agent or ML engineer.** Updated 2026-09-26. Work in the existing `AIM/` workspace; the canonical code directory is `model-1/`. Continue the approved architecture and current implementation. This directive supplies a concrete starting point, not a request to redesign AIM.
 
-**Latest state:** Phase 2B.1 is implemented, evaluated and audited. Read its [report](../model-1/reports/phase-2b1-implementation.md), [guide](../model-1/docs/PAID_EVIDENCE.md) and [full tables](../model-1/reports/phase-2b1-metrics.md). All 118 preflight tests passed; 1,248 actual episodes were checked for provenance, decision timing, capped reward and dispatch-based costs. Paid evidence improved known-family utility but failed the deliberately indistinguishable new-family gate. Selective acquisition bought everywhere. Keep the default verification-first Judge and deterministic Researcher. Next implement one bounded symbolic verification domain.
+**Latest state:** Phase 2C is implemented and build-validated. Read its [report](../model-1/reports/phase-2c-implementation.md) and [symbolic specification](../model-1/docs/SYMBOLIC.md). All 140 tests passed; the checker passed 18 cases and 48 real episodes were audited. The formula reference verified all eight supported expansions; the learned Researcher variants verified none. Keep learned models opt-in. The owner prioritizes the build phase: next implement corpus intake, resumable streaming batches and tokenizer comparison interfaces using small local allocations.
 
-**Completed run:** `model-1/runs/20260925T193029-paid-evidence-reproduction-751ae7ad` has status COMPLETED and a final summary. The read-only audit reproduced decisions from preceding observations and frozen Judges, validated all 1,248 states and source ledgers, and recomputed costs/contrasts before export to `model-1/reports/phase-2b1-evidence/`. Do not restart it as unfinished work. Phase 2B and the prior curriculum run are also complete. All runs/checkpoints remain local; portable evidence is versioned in Git. Earlier reports retain their historical results.
+**Completed run:** `model-1/runs/20260926T181327-phase-2c-build-5e038999` completed in 63.918 seconds and exported to `model-1/reports/phase-2c-evidence/`. It contains separate SFT, preference, RLVR and symbolic Judge checkpoints, full tests and six evaluation variants. The RLVR+Judge variant failed generation before a Judge decision; successful learned-Judge integration was exercised with the formula proposer. Do not restart this run as unfinished work.
+
+Phase 2B.1's `model-1/runs/20260925T193029-paid-evidence-reproduction-751ae7ad` and its audited 1,248 episodes are complete too. Its paid-evidence gate failed, and selective acquisition bought everywhere. All historical runs/checkpoints remain local; portable evidence is versioned in Git. Earlier reports retain their historical results.
 
 ## Read before changing code
 
@@ -30,6 +32,7 @@ Keep SFT, preference learning, RLVR and Judge calibration independently trainabl
 - Staged arithmetic tasks, fitting/transfer diagnostics, exact task accounting, a scoped observation verifier and read-only memory audit.
 - Separate five/seven-feature Judges, grouped shift fixtures, calibration freeze, complete forecast/policy metrics and a strict opt-in Controller adapter.
 - Optional paid acquisition, immutable purchased observations, shared target decisions, question reward capped at one, and an independent temporal/accounting audit.
+- A separate symbolic research loop, bounded exact rational verifier, strict native Researcher adapter, symbolic Judge and independently runnable SFT/preference/RLVR/calibration stages.
 - Versioned state/claims/evidence, deterministic action budgets, bounded subprocess tools, exact numerical/provenance verifiers and append-only event replay.
 - Regression tests, public evaluation fixtures, complete reproduction command, local CPU and Gloo/DDP benchmark infrastructure.
 
@@ -44,7 +47,9 @@ cd model-1
 
 Use the documented environment setup if the local `.venv` is missing. Read the latest report and existing bundle's `tests.log`, `results.json`, case records and export manifest before launching experiments. A missing torch environment is not a successful neural test result. The documented reproduction command can repeat a study if needed; do not rerun a completed study merely to begin the next phase.
 
-Continue with [Phase 2C](../model-1/docs/IMPLEMENTATION_PLAN.md): implement a bounded exact polynomial/algebraic identity domain with a versioned claim contract, declared assumptions, independent checker, expression/resource limits, source provenance and adversarial cases. Build the deterministic end-to-end reference first, preserving the existing numerical prediction loop and canonical suites. Distinguish formal identity checking under assumptions from empirical future-measurement agreement and from general theorem proving. Train a proposer for the new domain only after its contract and verifier are established.
+Continue the [implementation plan](../model-1/docs/IMPLEMENTATION_PLAN.md) with the corpus/pretraining infrastructure at the start of Phase 3. Build license/provenance intake manifests, resumable streaming next-token batches, tokenizer comparison interfaces and small local continuation checks. Keep actual 100M–300M proxy training gated on data readiness and physical hardware evidence. No pretrained base imports or arbitrary scale selection.
+
+Phase 2C's first symbolic slice is complete. Preserve its numerical/symbolic claim distinction and canonical suites. A stronger task distribution, independent second checker and language-capable Judge remain research work. The symbolic smoke run's preference labels were programmatic; it did not collect human feedback. Do not interpret higher finite-candidate RLVR reward as successful free generation or treat the weak syntactic Judge as a final mathematical reasoning model.
 
 Phase 2B.1's acquisition/target costs are explicit illustrative units; failures are paid and stop unresolved. The shared forecast remains a heuristic and the selective band learned no information-value policy. Future acquisition learning needs fresh data, expected-value targets, coherent question probabilities, variable probe choices and explicit recovery semantics. All previous holdouts are exposed. Do not tune them or enlarge the model merely to make a gate pass.
 

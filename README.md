@@ -14,8 +14,12 @@ The architectural baseline is the [complete research handbook](documents/AIM_Com
 - [Phase 2A.2 curriculum implementation and execution record](model-1/reports/phase-2a2-implementation.md)
 - [Phase 2B Judge calibration and decision results](model-1/reports/phase-2b-implementation.md)
 - [Phase 2B.1 shared measurement and paid evidence](model-1/reports/phase-2b1-implementation.md)
+- [Phase 2C symbolic components and training build](model-1/reports/phase-2c-implementation.md)
+- [Symbolic contracts and runnable commands](model-1/docs/SYMBOLIC.md)
 
-Latest completed experiment: Phase 2B.1 executed and audited 1,248 actual research-loop episodes with shared measurement costs and paid evidence acquisition. All 118 tests passed; zero VERIFIED claims lacked passing checks. Buying a fourth observation improved utility in the known family but lost utility in the deliberately indistinguishable new family, so the evidence gate failed. The selective policy bought in every case and supplied no cost advantage. Defaults remain unchanged. Next: one bounded symbolic verification domain.
+Latest completed build: Phase 2C adds exact polynomial verification, a separate symbolic research loop, native Researcher stages and a separately calibrated symbolic Judge. All **140 tests passed**. The checker passed 18 regression cases; 48 actual episodes were retained and audited. The formula reference verified all eight supported expansions. The tiny learned Researchers verified none, so they remain experimental. Next build: corpus intake, resumable streaming pretraining batches and tokenizer comparison interfaces, before any larger training commitment.
+
+Phase 2B.1 executed and audited 1,248 episodes with shared measurement costs and paid evidence acquisition. Buying another observation improved known-family utility but lost utility in the deliberately indistinguishable new family. Its failed evidence gate and unchanged defaults remain recorded.
 
 Phase 2B's twelve separate feature Judges and complete calibration/decision results remain available. Their frozen checkpoints were reused without retraining or post-hoc selection in Phase 2B.1.
 

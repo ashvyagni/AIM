@@ -1,6 +1,6 @@
 # AIM Model-1
 
-**Modular foundation, structured Researcher experiments, separate Judges, and paid evidence acquisition.**
+**Modular research loops, exact symbolic verification, native Researcher training and separate Judges.**
 
 The default research loop uses a clearly identified deterministic polynomial Researcher and a separate rule-based or trained Judge. A native, randomly initialized transformer and an interchangeable neural Researcher adapter are implemented. The phase-1 arithmetic checkpoint failed structured generation. Phase 2A trained three research-specific checkpoints that emit mostly valid hypotheses but achieve only 3.13–10.94% verified success on the familiar holdout; their capability gate failed and they remain opt-in experimental backends.
 
@@ -12,7 +12,9 @@ Phase 2B compares twelve separate five/seven-feature Judges, log/Brier objective
 
 Phase 2B.1 adds an opt-in Controller extension for paid observations, shared target decisions and reward capped at one per question. It executed and audited 1,248 episodes. Paid evidence improved known-family utility, but the new family remained indistinguishable after acquisition and the gate failed. Selective and always-acquire policies made the same purchase choices on this fixture. No defaults were promoted.
 
-See the [latest report](reports/phase-2b1-implementation.md), [paid-evidence guide](docs/PAID_EVIDENCE.md), [Judge guide](docs/JUDGE_SHIFT.md), and [real-checkpoint resume audit](reports/research-resume-audit.md). The latest full preflight has **118 passing tests, zero skips**. Historical reports preserve their original results and test counts. Next: one bounded symbolic verification domain.
+Phase 2C adds a separately versioned symbolic loop, bounded exact polynomial checker, strict neural adapter and separate symbolic SFT/preference/RLVR/Judge stages. All 18 checker cases passed; 48 research episodes were audited. The formula reference solved all eight supported expansions; learned Researchers solved none. They remain opt-in.
+
+See the [latest build report](reports/phase-2c-implementation.md), [symbolic guide](docs/SYMBOLIC.md), [paid-evidence guide](docs/PAID_EVIDENCE.md), [Judge guide](docs/JUDGE_SHIFT.md), and [real-checkpoint resume audit](reports/research-resume-audit.md). The latest full preflight has **140 passing tests, zero skips**. Historical reports preserve their original results and test counts. Next build: corpus intake, resumable streaming pretraining and tokenizer comparison interfaces.
 
 ## What runs
 
@@ -33,6 +35,8 @@ Run commands from `AIM/model-1/`. Python 3.12 is the recorded environment; the p
 ```sh
 python3 -m aim loop
 python3 -m aim evaluate
+python3 -m aim symbolic-loop
+python3 -m aim symbolic-evaluate
 ```
 
 For all training and neural tests, create a local environment and install the recorded dependencies:

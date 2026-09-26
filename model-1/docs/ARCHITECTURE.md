@@ -72,3 +72,9 @@ The byte tokenizer gives transparent Unicode round trips without external assets
 Each new run archives implementation/config/fixture sources, hashes the configuration and inputs, records software/platform/Git availability, and writes immutable artifact names. Dataset exports and model checkpoints include version, split, seed/configuration, optimizer, fixed reference, torch RNG and parent identity. Current batches and data generation are deterministic, so no separate dataloader cursor is required beyond `step`. Exact continuation is tested on this CPU implementation; cross-version/device bitwise identity is not claimed.
 
 The checkpoint origin field is a project provenance declaration, not a cryptographic proof that weights were never imported. Sidecars detect accidental alteration but are not signed. Only trusted local project checkpoints should be loaded. The source snapshots and parent hashes make lineage auditable.
+
+## Phase 2C: separate symbolic domain
+
+The [symbolic specification](SYMBOLIC.md) adds `aim-polynomial-identity-v1`, its own state/hypothesis contracts, separate Judge event, exact rational normal forms and strict tool limits. It reuses the source store, append-only ledger, bounded worker and native model primitives. It does not reinterpret numerical measurement PASS as algebraic proof. The Controller calls the actual checker and validates source spans before marking an identity VERIFIED. UNKNOWN covers unsupported expressions and failures; valid unequal normal forms are CONTRADICTED.
+
+The formula reference and native transformer adapters implement `SymbolicResearcher`; verification-first and separately trained symbolic MLP adapters implement `SymbolicJudge`. Exact checks never use learned confidence as proof. The [build report](../reports/phase-2c-implementation.md) records successful component integration and unsuccessful learned generation.

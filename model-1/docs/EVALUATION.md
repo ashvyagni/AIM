@@ -58,3 +58,9 @@ The local distributed check is a separate infrastructure result, not a prerequis
 ## Next scientific evaluation gate
 
 Before a large training commitment: repeat across at least three predeclared seeds, report whole-task confidence intervals, compare matched training and verifier budgets, include constant/base-rate Judge baselines, test unseen task families and adversarial verifier failures, and measure actual structured Researcher output validity and verified task success. Specify thresholds before looking at new holdouts. A scientific improvement requires stronger evidence than “loss decreased” or “all engineering tests passed.”
+
+## Symbolic regression and integration evaluation
+
+`eval/symbolic-v1.json` and its checksum are a separate, exposed 18-case suite. It exercises exact identities, false identities and unsupported expressions through actual subprocess dispatches. `symbolic-evaluate` additionally runs eight disjoint-offset binomial episodes and audits every resulting state. It reports proposal validity, verified episodes and dispatch counts separately. The original numerical suite is unchanged.
+
+The [Phase 2C build](../reports/phase-2c-implementation.md) ran 140 tests, six evaluation variants and 48 episodes. A successful worker execution is not automatically a successful mathematical check. Calibration metrics score the symbolic event under its fixture distribution; they must not be interpreted as numerical-domain or general scientific calibration. These fixtures are engineering evidence, not concealed benchmarks or promotion tests.

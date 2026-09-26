@@ -59,7 +59,9 @@ Shared forecast coherence, expected information value, variable probe choices an
 
 ## Phase 2C — Trusted evidence/tool expansion
 
-**Next implementation slice:** exact polynomial/algebraic identity verification in a bounded symbolic domain. Start with a separately versioned claim contract, declared assumptions, independent exact checker, strict expression/resource limits, provenance links and adversarial cases. Build a deterministic end-to-end reference before training a proposer for that domain. Preserve the existing prediction loop, claim scopes and canonical suites. This adds a different evidence type without claiming general theorem proving or replacing the approved architecture.
+**First slice completed:** a separately versioned exact polynomial domain, bounded AST/normal-form checker, deterministic Controller, source provenance, strict neural adapter and separate symbolic training stages. The [build report](../reports/phase-2c-implementation.md) records 140 passing tests, 18 checker cases and 48 audited episodes. The formula reference succeeded on eight supported expansions, while all learned Researcher variants had zero verified test answers. Keep learned checkpoints opt-in. Existing numerical scopes/suites are unchanged; this is not general theorem proving.
+
+The owner's latest direction prioritizes building components. Next implement the corpus intake, resumable streaming batches and tokenizer comparison interfaces at the start of Phase 3, using small local validation allocations. Do not launch 100M–300M pretraining until corpus and physical hardware requirements are met. Broader symbolic tasks and independent checker implementations remain future controlled experiments; do not retune the exposed eight-case smoke fixture into a capability claim.
 
 Add one new domain at a time: exact symbolic arithmetic, code tests in a real resource-limited sandbox, or a licensed local scientific-paper corpus with source-span retrieval. Each adapter needs a schema, version, timeout/failure semantics, independent checker and adversarial cases. Merely having multiple learned Judges agree is not independent verification.
 

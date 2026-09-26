@@ -132,3 +132,9 @@ Nonfinite loss/gradient, incompatible checkpoint, invalid data, excessive alloca
 At runtime the components exchange structured state and evidence; training rewards are not added together. The Controller applies verification constraints after the Judge's forecast. This separation makes SFT, preference learning, verifiable outcomes and calibration independently measurable.
 
 Before proposing joint training, pre-register comparisons: SFT-only; SFT+DPO; SFT+RLVR; SFT+DPO+RLVR; each with rule Judge versus separately calibrated Judge. Evaluate budget, abstention, domain shift, fabricated citations and verifier exploitation. Any future combined scalar objective or constrained optimization must state units, coefficients, constraint thresholds, failure semantics and reference distributions, and compare against those separated baselines.
+
+## Symbolic stages
+
+`task: symbolic` selects separately versioned binomial data for the SFT, preference and RLVR trainer. Symbolic and legacy checkpoints cannot be interchanged silently. The separate `symbolic-judge-train` entry point fits a symbolic checker-PASS forecast, with its own checkpoint kind, features, calibration split and tested exact resume. See [objectives, data and commands](SYMBOLIC.md).
+
+Programmatic preferences do not constitute collected human feedback. Symbolic UNKNOWN is a zero reward for the precisely defined checker-PASS target, not a false theorem label. The [first build](../reports/phase-2c-implementation.md) saved all four models but achieved zero verified free-generation test answers; finite-candidate RLVR scores were not a reliable indicator of generation quality. No joint objective or model promotion follows.
