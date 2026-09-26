@@ -1,0 +1,24 @@
+{
+  "schema": "aim-symbolic-eval-v1",
+  "scope": "engineering regression cases, exposed from publication; not a capability benchmark",
+  "cases": [
+    {"id": "square", "lhs": "(x+3)**2", "rhs": "x**2+6*x+9", "expected": "PASS"},
+    {"id": "rational", "lhs": "x/3+x/6", "rhs": "x/2", "expected": "PASS"},
+    {"id": "factor", "lhs": "(x-2)*(x+2)", "rhs": "x**2-4", "expected": "PASS"},
+    {"id": "zero", "lhs": "x-x", "rhs": "0", "expected": "PASS"},
+    {"id": "negative", "lhs": "-(-x)", "rhs": "x", "expected": "PASS"},
+    {"id": "degree-limit-pass", "lhs": "x**16", "rhs": "(x**8)*(x**8)", "expected": "PASS"},
+    {"id": "false-square", "lhs": "(x+3)**2", "rhs": "x**2+9", "expected": "FAIL"},
+    {"id": "close-not-exact", "lhs": "x/3", "rhs": "3333333333333333*x/10000000000000000", "expected": "FAIL"},
+    {"id": "wrong-sign", "lhs": "(x-1)**2", "rhs": "x*x+2*x+1", "expected": "FAIL"},
+    {"id": "pole", "lhs": "x/x", "rhs": "1", "expected": "UNKNOWN"},
+    {"id": "zero-denominator", "lhs": "x/0", "rhs": "0", "expected": "UNKNOWN"},
+    {"id": "call", "lhs": "__import__('os')", "rhs": "0", "expected": "UNKNOWN"},
+    {"id": "attribute", "lhs": "x.real", "rhs": "x", "expected": "UNKNOWN"},
+    {"id": "float", "lhs": "0.5*x", "rhs": "x/2", "expected": "UNKNOWN"},
+    {"id": "boolean", "lhs": "True", "rhs": "1", "expected": "UNKNOWN"},
+    {"id": "second-variable", "lhs": "x+y", "rhs": "x", "expected": "UNKNOWN"},
+    {"id": "degree-limit-fail", "lhs": "x**17", "rhs": "x**17", "expected": "UNKNOWN"},
+    {"id": "computed-exponent", "lhs": "x**(1+1)", "rhs": "x*x", "expected": "UNKNOWN"}
+  ]
+}
