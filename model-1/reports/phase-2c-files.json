@@ -1,0 +1,131 @@
+{
+  "baseline": "b140bd1",
+  "count": 31,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "58c6d16a04f71a7f86e9b513f8a6633ba3e79640c85f3d6b8abe5604318482ee"
+    },
+    {
+      "path": "documents/AIM_Model_1_Implementation_Directive.md",
+      "sha256": "da5e0605f1dd8d75e160d93f112a7a8716198a4144925049a269d42433094c09"
+    },
+    {
+      "path": "model-1/README.md",
+      "sha256": "271be4e2660ad1a9c49170b10cb9120b099ae6bd00d8f8e57f0b018830d9aba6"
+    },
+    {
+      "path": "model-1/aim/cli.py",
+      "sha256": "31dda18deece60c41298ed25a3a3c71bea6e9b85f01064471007dd705ec00636"
+    },
+    {
+      "path": "model-1/aim/symbolic.py",
+      "sha256": "a2c1d564c1efd35eaa71ace19aeb96fdf5ea5c2bfeab3d640527d2f446a300b0"
+    },
+    {
+      "path": "model-1/aim/symbolic_data.py",
+      "sha256": "93be7c52ea36c01728d58e10059721f40f2a68f453666da210976ebf2951dfa1"
+    },
+    {
+      "path": "model-1/aim/symbolic_eval.py",
+      "sha256": "613f977fbde8fa7946ac9f7278b1b3c4d6ed3a0dcbe68a4601baf8a4909e7e35"
+    },
+    {
+      "path": "model-1/aim/symbolic_judge.py",
+      "sha256": "fac749f95ec09a8d004fcd38a103bdeee638fd978c29721c7860a5231a2e0413"
+    },
+    {
+      "path": "model-1/aim/symbolic_loop.py",
+      "sha256": "e3739e6493d8e7923cc08efe3a60e5a478f711e1c2a6577e607d221d3749d5e9"
+    },
+    {
+      "path": "model-1/aim/symbolic_reproduce.py",
+      "sha256": "23b61dbd44179c3d3b0c9aa3234031e0cfe787f44b87fea1d5d479480e858bf9"
+    },
+    {
+      "path": "model-1/aim/tool_worker.py",
+      "sha256": "e3a162691b7da692412d2d80250c1cae1f7d780583517313ab36cf0b993611dc"
+    },
+    {
+      "path": "model-1/aim/tools.py",
+      "sha256": "7254d6cd024d6232501386712a9f204e56ded8c71bc18b1e18a669f7d7e8251f"
+    },
+    {
+      "path": "model-1/aim/training.py",
+      "sha256": "0cff01bc78ef02c0f3dabc3be453fef5c6c8e299e6fec1244aab09d2a8ce591a"
+    },
+    {
+      "path": "model-1/configs/symbolic-judge.json",
+      "sha256": "cedf2abcc73ec6bb5ce863509186733bb7696b7eaee2bdc0507ec2e4e389647b"
+    },
+    {
+      "path": "model-1/configs/symbolic-preference.json",
+      "sha256": "93a35c5d594a6ec71c702e5eec5e1a94618181f6e39e7d7cea5f1c7c566aed6e"
+    },
+    {
+      "path": "model-1/configs/symbolic-rlvr.json",
+      "sha256": "48f279c57a6ff0acf6a03c3e392b558f5a1ee6ee921c80d59bea3bceb259e622"
+    },
+    {
+      "path": "model-1/configs/symbolic-sft.json",
+      "sha256": "093047f4da601c2dbe2be3918cbab4e91b3da72df7c397c7193b32189ea6d8cb"
+    },
+    {
+      "path": "model-1/docs/ARCHITECTURE.md",
+      "sha256": "9a733d7993bcd38b9a55650a5f077b3018f2bc2f3355e067a591fcd8f3b21ca2"
+    },
+    {
+      "path": "model-1/docs/DECISIONS.md",
+      "sha256": "61ca870f6a2d00dc98b4e591338c606675ee8d37d5247292125c068fe4592a1e"
+    },
+    {
+      "path": "model-1/docs/EVALUATION.md",
+      "sha256": "a96a97acb94415ff59c93c9fd1a32b872d6ce256c88496bf6c7f1ec46ad750f6"
+    },
+    {
+      "path": "model-1/docs/IMPLEMENTATION_PLAN.md",
+      "sha256": "7ec5ba8311c5989eed7670a6df899db769c710dc8704397886c866273cf55640"
+    },
+    {
+      "path": "model-1/docs/SYMBOLIC.md",
+      "sha256": "b3385bacbd7b3341955f27faa00d55d7413c7abb78930cde63d5661675da90f9"
+    },
+    {
+      "path": "model-1/docs/TRAINING.md",
+      "sha256": "a7b55d7ae1de56eeedd1f4b84d2a454906b04b611804a19fa18ebbe1c6d79b55"
+    },
+    {
+      "path": "model-1/eval/symbolic-v1.json",
+      "sha256": "fbe0cd88d1f52c0a91bf8e5639a8238d6397c0ca81ea2b5b3a51f56fc34c502a"
+    },
+    {
+      "path": "model-1/eval/symbolic-v1.sha256",
+      "sha256": "dcc6f6360603ee874eabdc5714863741747ed06dd5ef98409db7e309c44b8069"
+    },
+    {
+      "path": "model-1/reports/phase-2c-evidence/episodes.json",
+      "sha256": "a7aea81e61bf3cba0f2c6d9178fa7b16ebf53c0c9cb7472b08ee32160f91cb69"
+    },
+    {
+      "path": "model-1/reports/phase-2c-evidence/manifest.json",
+      "sha256": "70b253a79116884a605396f8c9543ed56bd4f1e37250437380fcf27e4fe90acf"
+    },
+    {
+      "path": "model-1/reports/phase-2c-evidence/results.json",
+      "sha256": "11fd344ca5e6ad21cab1366a5e5d986501b3d94d6b2fb4b4763189e64c073ae0"
+    },
+    {
+      "path": "model-1/reports/phase-2c-evidence/tests.log",
+      "sha256": "87ee51a0ba0a051d8bc0fc6ac58d8e8811799615c65248f386be28637f8e83d1"
+    },
+    {
+      "path": "model-1/reports/phase-2c-implementation.md",
+      "sha256": "32027630ff47c7c61b8138bb60dc05b3a971bedf3b5fb42b162000e280bd7da2"
+    },
+    {
+      "path": "model-1/tests/test_symbolic.py",
+      "sha256": "5ac13b410c0661ab3d5b442342e8232a2f6c7e1c53be9d3b38fd800e03164601"
+    }
+  ],
+  "scope": "all phase changes; inventory excludes itself"
+}
