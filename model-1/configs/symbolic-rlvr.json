@@ -1,0 +1,5 @@
+{
+  "task": "symbolic", "stage": "rlvr", "seed": 17, "steps": 20, "batch_size": 8,
+  "learning_rate": 0.0002, "weight_decay": 0.01, "kl_coefficient": 0.02,
+  "model": {"width": 64, "layers": 2, "heads": 4, "kv_heads": 2, "ffn_width": 128, "context": 256}
+}

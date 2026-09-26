@@ -56,6 +56,10 @@ def sequence_scores(model, tokenizer, pairs, *, pad_to=None):
 
 
 def validate_config(config):
+    if config.get("task", "arithmetic") not in {"arithmetic", "symbolic"}:
+        raise ContractError("Unsupported training task")
+    if config.get("task") == "symbolic" and (config.get("stage") == "judge" or config.get("dataset_path")):
+        raise ContractError("Symbolic LM stages use versioned procedural data; Judge is a separate trainer")
     if config.get("stage") not in {"sft", "preference", "rlvr", "judge"}:
         raise ContractError("Stage must be sft, preference, rlvr or judge; combined objective unavailable")
     for k in ("steps", "batch_size", "seed"):
@@ -103,7 +107,11 @@ def _train_lm(config, run, initialize, resume):
     tokenizer = ByteTokenizer()
     if cfg.vocab_size != tokenizer.vocab_size:
         raise ContractError("Model vocab must match the engineering tokenizer")
-    if config.get("dataset_path"):
+    symbolic = config.get("task") == "symbolic"
+    if symbolic:
+        from .symbolic_data import symbolic_data, VERSION as SYMBOLIC_VERSION
+        data, validation, data_version = symbolic_data("train"), symbolic_data("validation"), SYMBOLIC_VERSION
+    elif config.get("dataset_path"):
         if stage == "rlvr":
             raise ContractError("External RLVR datasets need a reviewed verifier adapter; arithmetic fixture only")
         data, validation, data_version = load_supervised_dataset(config["dataset_path"])
@@ -118,6 +126,9 @@ def _train_lm(config, run, initialize, resume):
     if source:
         if source["kind"] != "causal_lm" or source["model_config"] != asdict(cfg):
             raise ContractError("Checkpoint/model architecture mismatch")
+        from .symbolic_loop import RESEARCH_CONTRACT
+        if symbolic != (source.get("research_contract") == RESEARCH_CONTRACT):
+            raise ContractError("Symbolic and legacy training checkpoint contracts cannot be mixed")
         model.load_state_dict(source["model"])
     if stage in {"preference","rlvr"} and source is None:
         raise ContractError("Post-training requires an AIM-owned initial checkpoint")
@@ -161,14 +172,20 @@ def _train_lm(config, run, initialize, resume):
         else:
             losses,rewards,kls,entropies = [],[],[],[]
             for row in batch:
-                target = sum(row["operands"])
-                candidates = [str(target-1),str(target),str(target+1)]
+                if symbolic:
+                    from .symbolic_data import symbolic_reward
+                    candidates = row["candidates"]
+                    reward_function = symbolic_reward
+                else:
+                    target = sum(row["operands"])
+                    candidates = [str(target-1),str(target),str(target+1)]
+                    reward_function = arithmetic_reward
                 pairs = [(row["prompt"],x) for x in candidates]
                 logits,_ = sequence_scores(model,tokenizer,pairs)
                 with torch.no_grad():
                     reference_logits,_ = sequence_scores(reference,tokenizer,pairs)
                 # Candidate set is a bounded environment; no free-form RL claim.
-                reward = torch.tensor([arithmetic_reward(row,x) for x in candidates])
+                reward = torch.tensor([reward_function(row,x) for x in candidates])
                 action = torch.multinomial(logits.detach().softmax(-1),1).item()
                 loss_i,kl = reinforce_loss(logits,reference_logits,reward,action,config.get("kl_coefficient",0.02))
                 losses.append(loss_i)
@@ -194,6 +211,9 @@ def _train_lm(config, run, initialize, resume):
               "model":model.state_dict(),"optimizer":optimizer.state_dict(),"reference":reference.state_dict(),
               "torch_rng":torch.get_rng_state(),"step":config["steps"],"stage":stage,"stable_config":stable_config,
               "dataset_hash":data_hash,"tokenizer":tokenizer.specification(),"parent_sha256":file_hash(resume or initialize) if source else None}
+    if symbolic:
+        from .symbolic_loop import RESEARCH_CONTRACT
+        record["research_contract"] = RESEARCH_CONTRACT
     save_checkpoint(run,record)
 
 
@@ -203,6 +223,13 @@ def lm_metrics(model, reference, tokenizer, rows):
     rejected,_ = sequence_scores(model,tokenizer,[(r["prompt"],r["rejected"]) for r in rows])
     expected=[]
     for row in rows:
+        if "candidates" in row and "lhs" in row:
+            from .symbolic_data import symbolic_reward
+            options = row["candidates"]
+            logp, _ = sequence_scores(model, tokenizer, [(row["prompt"], x) for x in options])
+            reward = torch.tensor([symbolic_reward(row, x) for x in options])
+            expected.append(float((logp.softmax(-1)*reward).sum()))
+            continue
         if "operands" not in row:
             continue
         n = sum(row["operands"])
