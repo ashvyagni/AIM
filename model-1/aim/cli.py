@@ -8,6 +8,37 @@ from .tracking import Run
 def main():
     parser=argparse.ArgumentParser(description="AIM Model-1 engineering prototype")
     sub=parser.add_subparsers(dest="command",required=True)
+    node=sub.add_parser("node-audit")
+    node.add_argument("--node-id",required=True)
+    node.add_argument("--workspace",type=Path,default=Path("."))
+    node.add_argument("--runs",type=Path,default=Path("runs"))
+    probe=sub.add_parser("storage-probe")
+    probe.add_argument("--node",type=Path,required=True)
+    probe.add_argument("--mebibytes",type=int,default=4)
+    probe.add_argument("--runs",type=Path,default=Path("runs"))
+    fleet=sub.add_parser("fleet-plan")
+    fleet.add_argument("--nodes",type=Path,nargs="+",required=True)
+    fleet.add_argument("--policy",type=Path)
+    fleet.add_argument("--config",type=Path,default=Path("configs/distributed-pretrain-smoke.json"))
+    fleet.add_argument("--max-age-seconds",type=int,default=86400)
+    fleet.add_argument("--runs",type=Path,default=Path("runs"))
+    ca=sub.add_parser("corpus-audit")
+    ca.add_argument("--corpus",type=Path,required=True)
+    ca.add_argument("--config",type=Path)
+    ca.add_argument("--runs",type=Path,default=Path("runs"))
+    for name in ("corpus-gate","corpus-export-reviewed"):
+        cr=sub.add_parser(name)
+        cr.add_argument("--corpus",type=Path,required=True)
+        cr.add_argument("--audit",type=Path,required=True)
+        cr.add_argument("--review",type=Path,required=True)
+        cr.add_argument("--runs",type=Path,default=Path("runs"))
+    ar=sub.add_parser("corpus-release-audit")
+    ar.add_argument("--release",type=Path,required=True)
+    ar.add_argument("--parent-corpus",type=Path,required=True)
+    ar.add_argument("--audit",type=Path,required=True)
+    bound=sub.add_parser("audit-seal")
+    bound.add_argument("--input",type=Path,required=True)
+    bound.add_argument("--output",type=Path,required=True)
     distributed=sub.add_parser("distributed-pretrain")
     distributed.add_argument("--corpus",type=Path,required=True)
     distributed.add_argument("--config",type=Path,default=Path("configs/distributed-pretrain-smoke.json"))
@@ -79,7 +110,43 @@ def main():
     bench.add_argument("--config",type=Path,default=Path("configs/benchmark.json"))
     bench.add_argument("--runs",type=Path,default=Path("runs"))
     args=parser.parse_args()
-    if args.command in {"distributed-pretrain","distributed-preflight"}:
+    if args.command=="node-audit":
+        from .hardware_audit import collect_run
+        print(collect_run(args.node_id,args.workspace,args.runs))
+    elif args.command=="storage-probe":
+        from .hardware_audit import storage_probe
+        print(storage_probe(args.node,args.runs,args.mebibytes))
+    elif args.command=="fleet-plan":
+        from .fleet_plan import plan_run
+        print(plan_run(args.nodes,args.config,args.runs,args.policy,args.max_age_seconds))
+    elif args.command=="corpus-audit":
+        from .corpus import read_json
+        from .corpus_review import audit_run
+        print(audit_run(args.corpus,args.runs,read_json(args.config) if args.config else None))
+    elif args.command in {"corpus-gate","corpus-export-reviewed"}:
+        from .corpus import Corpus,read_json
+        from .corpus_release import gate,export_subset
+        from .tracking import write_json
+        if args.command=="corpus-export-reviewed":
+            print(export_subset(args.corpus,args.audit,args.review,args.runs))
+        else:
+            with Run(args.runs,"corpus-release-gate",{},[args.corpus,args.audit,args.review]) as run:
+                result=gate(Corpus(args.corpus),read_json(args.audit,16*1024*1024),read_json(args.review))
+                write_json(run.path/"gate.json",result)
+            print(run.path)
+            if result["blockers"]: raise SystemExit(2)
+    elif args.command=="corpus-release-audit":
+        from .corpus_release import audit_release
+        print(json.dumps(audit_release(args.release,args.parent_corpus,args.audit),indent=2))
+    elif args.command=="audit-seal":
+        from .audit_contracts import seal
+        from .corpus import read_json,require
+        from .tracking import write_json
+        record=read_json(args.input)
+        require(isinstance(record,dict) and record.get("schema") in {"aim-lab-policy-v1","aim-corpus-review-decisions-v1"},"only operator policy/review records can be sealed")
+        write_json(args.output,seal(record))
+        print("Content hash recorded; this does not approve or certify the declarations.")
+    elif args.command in {"distributed-pretrain","distributed-preflight"}:
         from .corpus import read_json
         from .tokenization import tokenizer_from_spec
         from .distributed_jobs import launch,preflight
