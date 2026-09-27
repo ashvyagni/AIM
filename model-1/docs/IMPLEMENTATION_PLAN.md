@@ -15,13 +15,13 @@ See the [phase report](../reports/phase-1-implementation.md) for actual observat
 | Evidence/research memory | Local SQLite and immutable objects | Cross-run retrieval, literature parsers and distributed storage |
 | Verifier framework | Numeric and provenance implementations | Symbolic/theorem/code/scientific verifier adapters |
 | Evaluation harness | Tests, immutable public suite, training diagnostics | Sealed research tasks, family holdouts, humans and uncertainty intervals |
-| Training harness | Native random-init decoder; separate stage checkpoints | Large-corpus pretraining, streaming, distributed optimizer state |
+| Training harness | Native random-init decoder; separate stages; corpus streams and DDP checkpoints | Representative large corpus, optimized loading and optimizer sharding |
 | RLHF/preference | DPO plus provenance-aware external data intake | Real human annotation study; optional reward-model/PPO comparison |
 | RLVR | Sampled bounded REINFORCE and exact arithmetic verifier | Open-ended generation, process rewards and credit assignment |
 | RLCD/calibration | Proper scores, separate Judge, validation temperature | Sequential decision-learning formulation; OOD robustness |
-| Experiment tracking | Unique runs, metrics, configs, lineage, failures | Shared artifact service, access controls and multi-worker coordination |
+| Experiment tracking | Unique runs, metrics, configs, lineage, failures; rank identity and checkpoint coordination | Shared artifact service, access controls and physical-node validation |
 | Reproducibility | Pinned local environment, source archives, test/experiment runner | Independent machine reproduction and platform-specific locks |
-| Hardware/cluster | Local CPU and Gloo/DDP infrastructure | Physical VIT-host audit, sustained scaling, failure recovery |
+| Hardware/cluster | Local CPU/Gloo training; coordinated publication and worker-exception recovery | Physical VIT-host audit, sustained scaling, actual node-loss recovery |
 
 ## Phase 2A — Learned structured Researcher
 
@@ -73,9 +73,15 @@ Extend memory with persistent schema migrations, provenance-preserving chunking,
 
 Declared-rights intake, immutable corpus objects, exact/normalized duplicate and declared-group checks, byte/BPE comparison, document-at-a-time packed batches and native next-token training are implemented. The [report](../reports/phase-3a-implementation.md) records 154 passing tests, exact continuation for both tokenizers, recovery from a retained application interruption and compatible byte-checkpoint SFT initialization. This uses 20 constructed documents and miniature models; no production corpus or tokenizer was approved.
 
-### Next build — Distributed data and recovery
+### Phase 3B — Distributed data and recovery
 
-Integrate the corpus stream with existing local distributed infrastructure. Define deterministic shard/rank ownership, equal-step batching, per-rank cursors, world-size-change rejection and coordinated checkpoint publication. Test disjoint coverage and restart correctness at small local allocation before physical-node deployment. Keep application-level, OS-level and multi-node fault claims distinct.
+Implemented fixed document ownership, equal-step CPU/Gloo training, per-rank cursors, global-token gradient accumulation, world-size-change rejection and complete-rank checkpoint publication. A local launcher, preflight, read-only replay audits, initialization exporter and independent serial reference make the path reproducible. See the [specification](DISTRIBUTED_PRETRAINING.md) and [actual build report](../reports/phase-3b-implementation.md). Keep local worker-exception, OS-level and physical-node fault claims distinct.
+
+### Next build — Operator readiness and representative data
+
+Add a portable operator audit collector with anonymized node identity, measured environment/memory/storage fields, explicit missing values and import validation. Distinguish owner-reported inventory from measurements. Prepare fixed-workload 1/2/4-host trial configurations and gates without connecting to unprovided lab hosts. Actual scheduling, shared storage and network access require the lab operator's supplied environment.
+
+Build representative corpus review and near-duplicate controls around the existing immutable intake. Keep rights/privacy declarations separate from review evidence. Version new sampling policies, document-family splits and tokenizer comparisons. Avoid changing static rank ownership silently: shorter partitions currently repeat sooner, and balanced sampling is a separate experiment.
 
 Before proxy pretraining, complete the physical hardware audit, actual corpus licensing/PII/quality review, document/task split policy and near-deduplication. Evaluate tokenizer candidates on representative licensed prose, code, math and Unicode. Extend scalable loading, recovery and memory estimates. Decide precision from actual kernel/hardware measurements.
 

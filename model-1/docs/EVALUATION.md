@@ -70,3 +70,9 @@ The [Phase 2C build](../reports/phase-2c-implementation.md) ran 140 tests, six e
 The [Phase 3A build](../reports/phase-3a-implementation.md) passed 154 tests and compared uninterrupted/resumed training for byte and BPE vocabularies. It checks tensors, optimizer/RNG, stream cursor, batch hashes and validation metrics, including recovery after a deliberately retained failed run. The tokenizer fitter and pretrainer are tested against accessing test text. Rights/privacy fields are declarations, not automated certification.
 
 Compression and token NLL are reported with their scopes. Per-token NLL across different vocabularies is not a model-quality comparison. The constructed template corpus, short CPU timings and application-level fault injection do not establish scientific ability, physical-node performance or distributed fault tolerance. All existing canonical research suites remain unchanged.
+
+## Distributed corpus/recovery validation
+
+Phase 3B's [protocol](DISTRIBUTED_PRETRAINING.md) distinguishes three checks: exact same-topology continuation/recovery; DDP versus serial global-token training within a declared 2e-6 parameter tolerance; and deterministic replay of ownership, consumed batches, masks, cursors and counts. Two-rank byte/BPE runs and a four-local-rank smoke job exercise actual worker processes. Corrupted, missing and unpublished checkpoint members must fail closed.
+
+Worker exceptions are injected both before and after checkpoint publication. Their parent jobs must remain FAILED with retained logs, and recovery must use a valid published bundle. These are local worker-exception drills, not physical host/power-loss tests. The [phase report](../reports/phase-3b-implementation.md) records actual outcomes and timing; no threshold is selected from observed results. Canonical numerical and symbolic fixtures are unchanged.

@@ -18,8 +18,10 @@ The architectural baseline is the [complete research handbook](documents/AIM_Com
 - [Symbolic contracts and runnable commands](model-1/docs/SYMBOLIC.md)
 - [Phase 3A corpus and pretraining build](model-1/reports/phase-3a-implementation.md)
 - [Corpus, tokenizer and pretraining commands](model-1/docs/PRETRAINING.md)
+- [Phase 3B distributed training and recovery build](model-1/reports/phase-3b-implementation.md)
+- [Distributed operator commands and checkpoint protocol](model-1/docs/DISTRIBUTED_PRETRAINING.md)
 
-Latest completed build: Phase 3A adds provenance-bound corpus intake, a from-scratch BPE candidate, resumable token streams and native next-token pretraining. All **154 tests passed**. Both tokenizer variants resumed exactly; recovery from a retained injected failure matched uninterrupted training. A byte-token pretraining checkpoint successfully initialized SFT. These checks use constructed text and tiny models. Next: integrate sharded/rank-aware data loading and recovery with the existing distributed infrastructure.
+Latest completed build: Phase 3B adds real corpus-driven distributed training, per-worker document ownership, gradient accumulation, coordinated checkpoints, operator controls and replay audits. All **165 tests passed**. Two-worker byte/BPE jobs resumed exactly and agreed with independent serial training within the declared tolerance. Both checkpoint-publication failure drills recovered exactly; four local workers passed data/replica audits. Compatible exported weights entered SFT. This is local systems evidence on tiny models, not VIT performance or scientific capability. Next: operator audit collection and representative corpus readiness.
 
 Phase 2C's exact polynomial loop remains available. Its checker passed 18 regression cases and 48 episodes were audited. The formula reference verified all eight supported expansions; tiny learned Researchers verified none and remain experimental.
 

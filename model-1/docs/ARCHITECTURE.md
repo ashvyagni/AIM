@@ -83,4 +83,10 @@ The formula reference and native transformer adapters implement `SymbolicResearc
 
 The [pretraining specification](PRETRAINING.md) defines declared-rights intake, original-byte object storage, split/deduplication checks, train-only byte-pair fitting and document-at-a-time token packing. The next-token trainer uses the existing causal decoder with separate checkpoints and no post-training rewards. Corpus/tokenizer identities and exact stream cursor bind checkpoint continuation. A compatible byte checkpoint can initialize SFT; unsupported vocabulary transfers fail explicitly.
 
-This reference packs across documents with causal attention and masks BOS/PAD prediction targets. It does not implement independent-document attention, mixed-source sampling or distributed corpus loading. The [build evidence](../reports/phase-3a-implementation.md) validates local continuation/recovery while leaving production corpus, tokenizer and scale decisions open.
+This reference packs across documents with causal attention and masks BOS/PAD prediction targets. It does not implement independent-document attention or mixed-source sampling. The [build evidence](../reports/phase-3a-implementation.md) validates local continuation/recovery while leaving production corpus, tokenizer and scale decisions open.
+
+## Phase 3B: distributed corpus training
+
+The [distributed specification](DISTRIBUTED_PRETRAINING.md) adds fixed document ownership per rank, equal optimizer-step counts, rank-bound stream cursors and global-token loss normalization across accumulated microbatches. CPU/Gloo DDP replicates model and optimizer state. Every rank must agree on source, environment, configuration, corpus and tokenizer identities before training.
+
+Checkpoint publication requires every rank's cursor/RNG record and matching model/optimizer digests. A common weights/optimizer file and exact file manifest are published by directory rename; pending directories cannot resume. Recovery requires fixed world size and matching configuration/data/tokenizer. Audits replay consumed batches and compare cursor/token accounting with checkpoints. The independent serial trainer checks the numerical update on the measured configuration. These mechanisms do not implement elastic membership, optimizer sharding or power-loss durability.

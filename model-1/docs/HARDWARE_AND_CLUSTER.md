@@ -39,6 +39,10 @@ Run with a supervising job deadline and identical source/environment on both hos
 
 ## Lab audit sequence
 
+Phase 3B now provides [corpus-driven DDP training and checkpoint recovery](DISTRIBUTED_PRETRAINING.md), in addition to the earlier synthetic benchmark. Its local launcher supports 1/2/4 processes and records rank ownership, consumed-token counts, replica agreement and checkpoint audits. `distributed-preflight` checks corpus integrity and reports the 16N per-rank memory floor. It does not measure available lab memory, network throughput or sustained training capacity. DDP replicates optimizer state; deduplicating the common checkpoint file does not pool machine RAM for training.
+
+The actual byte/BPE and failure-drill results are in the [Phase 3B report](../reports/phase-3b-implementation.md). Four local workers share one host; do not label them four physical nodes. Direct corpus-worker deployment requires identical code/environment/data and a shared job/checkpoint directory, all verified separately on the intended lab filesystem.
+
 1. Record actual node inventory and job/network permissions in a copied audit file. Preserve reported versus measured fields. Use anonymized node identifiers for shared reports.
 2. Validate one CPU host's environment, memory ceiling, disk availability, numerical checks and complete training update. Preserve failed installations and unsupported operations.
 3. Sweep thread affinity/count and realistic sequence/batch sizes in new bounded configs; measure warm and sustained throughput, memory, power/thermal throttling and foreground interference. Current hardcoded microbenchmark settings are not those full sweeps.

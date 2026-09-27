@@ -16,7 +16,9 @@ Phase 2C adds a separately versioned symbolic loop, bounded exact polynomial che
 
 Phase 3A adds declared-rights corpus intake, immutable source objects, a deterministic byte-pair tokenizer experiment, resumable packed-token streams and native next-token pretraining. Byte/BPE continuation and a retained interruption-recovery drill matched uninterrupted training exactly. The byte checkpoint can initialize compatible SFT. This validates the training infrastructure on 20 constructed documents; it does not establish research capability or select a large-model scale.
 
-See the [latest build report](reports/phase-3a-implementation.md), [pretraining guide](docs/PRETRAINING.md), [symbolic guide](docs/SYMBOLIC.md), [paid-evidence guide](docs/PAID_EVIDENCE.md), [Judge guide](docs/JUDGE_SHIFT.md), and [real-checkpoint resume audit](reports/research-resume-audit.md). The latest full preflight has **154 passing tests, zero skips**. Historical reports preserve their original results and test counts. Next build: shard/rank-aware data loading and checkpoint recovery using the existing distributed infrastructure.
+Phase 3B adds corpus-driven CPU/Gloo training, fixed document ownership per worker, gradient accumulation with a global token denominator, coordinated checkpoints and explicit recovery controls. Read-only audits replay actual batches and validate counts/cursors against the saved state. An independent serial trainer checks the distributed update. Models still start from AIM's own random weights.
+
+See the [latest build report](reports/phase-3b-implementation.md), [distributed training guide](docs/DISTRIBUTED_PRETRAINING.md), [pretraining guide](docs/PRETRAINING.md), [symbolic guide](docs/SYMBOLIC.md), [paid-evidence guide](docs/PAID_EVIDENCE.md), [Judge guide](docs/JUDGE_SHIFT.md), and [real-checkpoint resume audit](reports/research-resume-audit.md). The latest full preflight has **165 passing tests, zero skips**. Historical reports preserve their original results and test counts. Next build: operator audit collection and representative corpus readiness before physical-node or model scaling.
 
 ## What runs
 
@@ -68,6 +70,8 @@ The second command reproduces phase 1: test log, SFT, preference/DPO, RLVR, a se
 The fifth command reproduces the separate Judge study: twelve feature networks, frozen temperatures, 768 held-out candidate records, complete forecasts and grouped decision metrics. These are offline forecast cases; real Controller adapter cases are covered by the integration tests. The [guide](docs/JUDGE_SHIFT.md#integration) shows how to use its new checkpoint format without changing the legacy loader.
 
 The sixth command runs the paid-evidence study using the exact retained Phase 2B checkpoints named in its evidence bundle. These local binaries must be restored on a fresh clone; the runner never silently substitutes newly trained checkpoints. It executes 1,248 actual Controller episodes with immutable sources, decision timing and costs. See the [guide](docs/PAID_EVIDENCE.md) for checkpoint dependencies and scope.
+
+For the current distributed corpus build, run `.venv/bin/python -m aim.distributed_reproduce --export reports/<new-directory>`. It runs the full tests, two-rank byte/BPE jobs, serial references, both publication-boundary failure drills, a four-local-rank job and the SFT initialization bridge. It launches actual loopback workers; retain failed child jobs as part of the evidence. Use a new export directory each time. See the [protocol](docs/DISTRIBUTED_PRETRAINING.md) for individual commands and limits.
 
 Core tests can run without torch; neural tests explicitly skip. A full reproduction requires torch and numpy and must not be reported successful when those tests are skipped.
 
