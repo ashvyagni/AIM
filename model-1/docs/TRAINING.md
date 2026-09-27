@@ -2,6 +2,8 @@
 
 Current corpus training extensions: [single-process pretraining](PRETRAINING.md) and [distributed pretraining](DISTRIBUTED_PRETRAINING.md). The stage objectives below remain independent. Distributed pretraining exports compatible byte-token weights to SFT through an explicitly initialization-only artifact; it does not distribute or combine the post-training objectives.
 
+Before new external-data training, use the [corpus review/release protocol](OPERATOR_AND_CORPUS_READINESS.md). The contamination auditor inspects every split separately from train-only fitting. Review/export decisions must not be interpreted as human preference annotations or automatic legal/privacy approval. Existing constructed fixtures remain engineering diagnostics; releasing a subset does not turn them into representative training data.
+
 ## Status and scope
 
 The implemented progression is SFT → preference/DPO → verifier-grounded RLVR, with a separately trained Judge and a runtime integration of that Judge. The reproduction also runs SFT → RLVR as a comparison. Integrated research-loop policy training is deferred. The transformer has 90,624 parameters and the five-feature Judge has 225; both start from local random weights.

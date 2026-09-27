@@ -77,11 +77,17 @@ Declared-rights intake, immutable corpus objects, exact/normalized duplicate and
 
 Implemented fixed document ownership, equal-step CPU/Gloo training, per-rank cursors, global-token gradient accumulation, world-size-change rejection and complete-rank checkpoint publication. A local launcher, preflight, read-only replay audits, initialization exporter and independent serial reference make the path reproducible. See the [specification](DISTRIBUTED_PRETRAINING.md) and [actual build report](../reports/phase-3b-implementation.md). Keep local worker-exception, OS-level and physical-node fault claims distinct.
 
-### Next build — Operator readiness and representative data
+### Phase 3C — Operator and corpus readiness infrastructure
 
-Add a portable operator audit collector with anonymized node identity, measured environment/memory/storage fields, explicit missing values and import validation. Distinguish owner-reported inventory from measurements. Prepare fixed-workload 1/2/4-host trial configurations and gates without connecting to unprovided lab hosts. Actual scheduling, shared storage and network access require the lab operator's supplied environment.
+Implemented portable operator observations with anonymous IDs, explicit unavailable values, import validation, bounded storage probing, policy-bound 1/2/4-host trial preparation and no remote dispatch. The [guide](OPERATOR_AND_CORPUS_READINESS.md) describes measurement limits and commands. Actual scheduling, shared storage and network access still require the lab operator's supplied environment.
 
-Build representative corpus review and near-duplicate controls around the existing immutable intake. Keep rights/privacy declarations separate from review evidence. Version new sampling policies, document-family splits and tokenizer comparisons. Avoid changing static rank ownership silently: shorter partitions currently repeat sooner, and balanced sampling is a separate experiment.
+Implemented exact lexical near-duplicate/containment reports, all-document review decisions, blocked export records, immutable accepted subsets and independent release replay. These controls expose contamination in the existing constructed fixture; they do not acquire or approve a representative external corpus. Rights/privacy remain declared review evidence, and lexical similarity is not semantic assurance.
+
+### Next build — Vocabulary-compatible post-training and physical/data trials
+
+Extend supervised dataset encoding, stage checkpoints and Researcher adapters to explicitly version tokenizer specifications and vocabulary compatibility. Add a from-scratch BPE pretraining→SFT bridge and exact continuation tests before considering BPE preference/RLVR stages. Keep the legacy byte path compatible and reject ambiguous remapping. The tokenizer candidate remains experimental until representative data evaluates its coverage and task quality.
+
+Separately, the operator should collect real lab observations and supply authorized storage/network/runtime details for bounded physical-host trials. Review representative licensed corpus candidates with family-aware splits; assess lexical detector precision/recall against human-reviewed pairs before choosing production thresholds. Version new sampling policies and tokenizer comparisons. Static rank ownership still repeats shorter partitions sooner; balanced sampling requires a separate experiment.
 
 Before proxy pretraining, complete the physical hardware audit, actual corpus licensing/PII/quality review, document/task split policy and near-deduplication. Evaluate tokenizer candidates on representative licensed prose, code, math and Unicode. Extend scalable loading, recovery and memory estimates. Decide precision from actual kernel/hardware measurements.
 

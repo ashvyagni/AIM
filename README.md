@@ -20,8 +20,12 @@ The architectural baseline is the [complete research handbook](documents/AIM_Com
 - [Corpus, tokenizer and pretraining commands](model-1/docs/PRETRAINING.md)
 - [Phase 3B distributed training and recovery build](model-1/reports/phase-3b-implementation.md)
 - [Distributed operator commands and checkpoint protocol](model-1/docs/DISTRIBUTED_PRETRAINING.md)
+- [Phase 3C operator/corpus readiness results](model-1/reports/phase-3c-implementation.md)
+- [Hardware observations, corpus review and release commands](model-1/docs/OPERATOR_AND_CORPUS_READINESS.md)
 
-Latest completed build: Phase 3B adds real corpus-driven distributed training, per-worker document ownership, gradient accumulation, coordinated checkpoints, operator controls and replay audits. All **165 tests passed**. Two-worker byte/BPE jobs resumed exactly and agreed with independent serial training within the declared tolerance. Both checkpoint-publication failure drills recovered exactly; four local workers passed data/replica audits. Compatible exported weights entered SFT. This is local systems evidence on tiny models, not VIT performance or scientific capability. Next: operator audit collection and representative corpus readiness.
+Latest completed build: Phase 3C adds portable hardware observations, policy-bound trial preparation, lexical contamination audits, explicit corpus review and immutable subset release. All **192 tests passed**. The reproduction retained a tampered-import failure and a blocked overlapping-data export, then released five explicitly selected fixture documents and completed actual two-worker training with replayed data/checkpoint audits. The original corpus is unchanged. No lab policy or external-corpus approval was invented. Next: tokenizer-compatible supervised training, alongside operator-led physical/data validation.
+
+Phase 3B's distributed training and recovery remain available: byte/BPE jobs resume exactly, agree with independent serial training within the declared tolerance, and recover from both checkpoint-publication failure scenarios. Four local workers passed audits. These are local systems results, not VIT performance or scientific capability.
 
 Phase 2C's exact polynomial loop remains available. Its checker passed 18 regression cases and 48 episodes were audited. The formula reference verified all eight supported expansions; tiny learned Researchers verified none and remain experimental.
 

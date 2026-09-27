@@ -39,6 +39,8 @@ Run with a supervising job deadline and identical source/environment on both hos
 
 ## Lab audit sequence
 
+The [Phase 3C operator guide](OPERATOR_AND_CORPUS_READINESS.md) now provides `node-audit`, `storage-probe` and `fleet-plan`. Operators collect anonymous-ID observations on each actual host, then review the generated policy template. Missing permissions, stale records, incompatible runtime identities and unsupported budgets produce explicit blockers. A READY_FOR_OPERATOR_TRIAL result is preparation only; it does not dispatch a job or certify physical-host distinctness, cgroup quotas or network/storage readiness. The old inventory template remains owner-reported information, separate from measured observations.
+
 Phase 3B now provides [corpus-driven DDP training and checkpoint recovery](DISTRIBUTED_PRETRAINING.md), in addition to the earlier synthetic benchmark. Its local launcher supports 1/2/4 processes and records rank ownership, consumed-token counts, replica agreement and checkpoint audits. `distributed-preflight` checks corpus integrity and reports the 16N per-rank memory floor. It does not measure available lab memory, network throughput or sustained training capacity. DDP replicates optimizer state; deduplicating the common checkpoint file does not pool machine RAM for training.
 
 The actual byte/BPE and failure-drill results are in the [Phase 3B report](../reports/phase-3b-implementation.md). Four local workers share one host; do not label them four physical nodes. Direct corpus-worker deployment requires identical code/environment/data and a shared job/checkpoint directory, all verified separately on the intended lab filesystem.

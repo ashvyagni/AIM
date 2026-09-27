@@ -19,6 +19,8 @@ These are recorded declarations, **not independent legal or privacy certificatio
 
 Paths must stay within the manifest directory. Absolute paths, parent traversal, symlinks, non-files, missing/oversized content, mismatched hashes, non-UTF-8, blank/NUL-containing documents, duplicate IDs and cross-split declared groups are rejected. Exact content and NFC-plus-collapsed-whitespace duplicates are rejected across the entire intake; nothing is silently dropped or reassigned. This is not semantic/near-duplicate detection. Incorrect group declarations can still hide family leakage.
 
+Phase 3C adds a separate [lexical overlap and reviewed-release pipeline](OPERATOR_AND_CORPUS_READINESS.md) after intake. It recomputes exact shingle overlap, binds explicit document decisions and exports new immutable subsets. Intake itself remains unchanged; the additional lexical gate is not semantic or legal/privacy certification.
+
 The reference intake caps each document at 262,144 bytes, total text at 16 MiB, and count at 10,000. It copies original bytes into immutable named objects and emits a fingerprinted index only after successful validation. Normalization is used for duplicate detection, never to rewrite training text. Source versions, original paths, rights and review declarations remain in the local index. A failed intake keeps its run status, accepted-object history and traceback; no completed index is published.
 
 Loaders verify index identity and recheck each object's hash and metadata when loading it. Hashes are corruption checks, not signatures against a privileged actor who rewrites both content and metadata. Do not publish external/private corpus objects or manifests through the engineering fixture exporter.
@@ -81,4 +83,4 @@ Report actual timing and losses, including failed-run status; do not set a model
 
 ## Next build and remaining gates
 
-Next add deterministic multi-shard partitioning and data-parallel cursor/checkpoint recovery at the same small local allocation, with a declared process/rank/world-size contract. Continue physical-node audit preparation. Before actual 100M–300M proxy pretraining, obtain a reviewed representative corpus, scalable tokenizer/loader tooling, meaningful held-out evaluation and sustained hardware/network measurements. MoE, larger dense models, precision choices and fleet feasibility remain unresolved.
+Phase 3B implemented [rank-owned corpus training and checkpoint recovery](DISTRIBUTED_PRETRAINING.md); Phase 3C added operator observation and corpus review/release preparation. Next extend explicit tokenizer/vocabulary compatibility into supervised training, starting with a BPE→SFT bridge. Before actual 100M–300M proxy pretraining, obtain a reviewed representative corpus, scalable tokenizer/loader tooling, meaningful held-out evaluation and sustained hardware/network measurements. MoE, larger dense models, precision choices and fleet feasibility remain unresolved.

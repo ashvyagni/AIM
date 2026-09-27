@@ -89,4 +89,4 @@ Timings are reported as local integration measurements, including launch/checkpo
 
 ## Next work
 
-Harden operator preflight and physical-node audit collection; add representative corpus sampling and near-duplicate controls before model scaling. Any model/optimizer sharding, larger allocation, accelerator precision, elastic world-size change or new mixture policy requires a separately specified experiment. The current CPU DDP implementation is a reproducible systems foundation, not the final cluster strategy.
+Phase 3C now supplies [portable node observations, policy-bound trial preparation and lexical corpus review/release](OPERATOR_AND_CORPUS_READINESS.md). Actual physical-node measurements and representative data review remain pending. Next implement tokenizer-compatible supervised training without silent vocabulary remapping. Any model/optimizer sharding, larger allocation, accelerator precision, elastic world-size change or new mixture policy requires a separately specified experiment. The current CPU DDP implementation is a reproducible systems foundation, not the final cluster strategy.
