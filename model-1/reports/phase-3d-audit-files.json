@@ -1,0 +1,110 @@
+{
+  "baseline": "592dadc5c17369e8ad0dcbc4b704047529d85f78",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "7e98041c028cc8143547dda54860e1c380028b4abb001eae258236f435c9d857"
+    },
+    {
+      "path": "documents/AIM_Model_1_Implementation_Directive.md",
+      "sha256": "e8c4e828dcc5e4b70deed2523bdc60b835276977107685f40d94a0963b1eebf0"
+    },
+    {
+      "path": "model-1/README.md",
+      "sha256": "6d39ab6adc50d218867f85b5c6d3596447ca5ccbee728bab090214d4f519e1ab"
+    },
+    {
+      "path": "model-1/aim/generation.py",
+      "sha256": "47499ec5de692db11c0066e363d86c5e3a777aa82c4c073ba9001bbb9b914190"
+    },
+    {
+      "path": "model-1/aim/language_contract.py",
+      "sha256": "a2541ad83f2df6552c93f4b406facedbc55d016ae3dae2e8c3056028f749fcb2"
+    },
+    {
+      "path": "model-1/aim/language_data.py",
+      "sha256": "2bca98c791927e9529061a351047af7e06d2f7ef5b0f222c9a7e30a11b2f8ae7"
+    },
+    {
+      "path": "model-1/aim/language_integration.py",
+      "sha256": "8f83ad40dd5fb20d0479e3f8705837dfbdc26ece94f240b615893ffd8969ee54"
+    },
+    {
+      "path": "model-1/aim/language_reproduce.py",
+      "sha256": "621cc96d930b135f1e65fc93e40a8e3ce26fad99266fc4af1c92116352da00eb"
+    },
+    {
+      "path": "model-1/aim/researcher.py",
+      "sha256": "243624b4b8e862e79f3c2ff79d7b301be2a8673743fc58df549afcf21a294838"
+    },
+    {
+      "path": "model-1/aim/symbolic_loop.py",
+      "sha256": "ac1b378fe71a920a50ee61c830a769f43ddd2d49f1b60c6a34593397a3e8a950"
+    },
+    {
+      "path": "model-1/docs/ARCHITECTURE.md",
+      "sha256": "9f7a00b6fd71f0b7fecba5c5f61bc414513b1623006a182d01b8ce780845dfc8"
+    },
+    {
+      "path": "model-1/docs/DECISIONS.md",
+      "sha256": "9fa774d1736c7f18c278b813341b65fd67594af75c655e51fa18ad404f038d06"
+    },
+    {
+      "path": "model-1/docs/EVALUATION.md",
+      "sha256": "63d108aabb67d0bd2292b187e149c79f689b5ea802dfadbda4b7181e6c951628"
+    },
+    {
+      "path": "model-1/docs/IMPLEMENTATION_PLAN.md",
+      "sha256": "a4cbfc11fde8d72161930158b693e33c79d3ff68b20372f69b4555c55cd35ee9"
+    },
+    {
+      "path": "model-1/docs/TOKENIZED_POSTTRAINING.md",
+      "sha256": "fb7dcf4db4324253127201cdb9c9ec2c3fe651bef026bd674c552c38ca4e8ad2"
+    },
+    {
+      "path": "model-1/docs/TRAINING.md",
+      "sha256": "773877ab67c07fb5188e0e3b3c3498a45930e97fb99569873bacc7e71e7ffe3d"
+    },
+    {
+      "path": "model-1/reports/phase-3d-audit-evidence/manifest.json",
+      "sha256": "dfeb6beb73bdb43c42391878355910882e5143e150e11837f3afaf878253db93"
+    },
+    {
+      "path": "model-1/reports/phase-3d-audit-evidence/results.json",
+      "sha256": "8749bdc4fa77b5075aad341f6b3dd8c8213ed2b60570b291da16f139707c996a"
+    },
+    {
+      "path": "model-1/reports/phase-3d-audit-evidence/tests.log",
+      "sha256": "607d5bda1fea081b318741c288e5158fc04a095dacd20c3bc410772ce353ab28"
+    },
+    {
+      "path": "model-1/reports/phase-3d-audit-findings/adversarial-tests.txt",
+      "sha256": "ed715905e0cf126610c9f857fb79a496f991f8f001f42aa77d8a3fa8743d2305"
+    },
+    {
+      "path": "model-1/reports/phase-3d-audit-findings/corrected-tests.txt",
+      "sha256": "7edc5a0c7cf3d2547231b527cdf83856af73b464b41871558cab555ecdf70598"
+    },
+    {
+      "path": "model-1/reports/phase-3d-audit-findings/initial-tests.txt",
+      "sha256": "a79e4da263d8e7882436a4fb352f6a4370dedb0a2e739fe4238b57eef15802de"
+    },
+    {
+      "path": "model-1/reports/phase-3d-audit-findings/manifest.json",
+      "sha256": "25994f7a93854dae92749183e559921a04f172ee742ea9e722a13eb761e7eb04"
+    },
+    {
+      "path": "model-1/reports/phase-3d-audit-status.json",
+      "sha256": "0e79e83f5ad6748abc73d05b07dc932e660ca77155925f64eec1f057f69bcb8b"
+    },
+    {
+      "path": "model-1/reports/phase-3d-audit.md",
+      "sha256": "22e870ab342bd41a964870e679747a85468fdba270fd1236e0b3ec92b8ff932a"
+    },
+    {
+      "path": "model-1/tests/test_language_hardening.py",
+      "sha256": "01ce81ad0f395495b1ddfd257ba93a0ee48ff61c79da5ceff76b71dc7ab18994"
+    }
+  ],
+  "scope": "Audit implementation, tests, exported evidence and updated handoff; excludes this inventory itself. Historical Phase 3D build artifacts unchanged."
+}

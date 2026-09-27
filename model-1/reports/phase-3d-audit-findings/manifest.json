@@ -1,0 +1,44 @@
+{
+  "runs": [
+    {
+      "code_hash": "05c539f17dbd60eb3d57ec1ff61e42f1553521cab0fac35938dc56b115dde62e",
+      "git_commit": "592dadc5c17369e8ad0dcbc4b704047529d85f78",
+      "original_log_sha256": "a79e4da263d8e7882436a4fb352f6a4370dedb0a2e739fe4238b57eef15802de",
+      "portable_log": "initial-tests.txt",
+      "portable_sha256": "a79e4da263d8e7882436a4fb352f6a4370dedb0a2e739fe4238b57eef15802de",
+      "run_id": "20260927T155922-phase-3d-targeted-audit-8e86a684",
+      "status": {
+        "elapsed_seconds": 4.6761782499961555,
+        "error": null,
+        "status": "COMPLETED"
+      }
+    },
+    {
+      "code_hash": "02f40af1ad516938a6912467fa3a11989c04c4f64490e305178d512a700d9a02",
+      "git_commit": "592dadc5c17369e8ad0dcbc4b704047529d85f78",
+      "original_log_sha256": "fcdffd29851d130ac4cf8a8362e19b27e19df59811012df3cd201e44f7c77c98",
+      "portable_log": "adversarial-tests.txt",
+      "portable_sha256": "ed715905e0cf126610c9f857fb79a496f991f8f001f42aa77d8a3fa8743d2305",
+      "run_id": "20260927T160043-phase-3d-adversarial-audit-7275fe91",
+      "status": {
+        "elapsed_seconds": 2.1835620410274714,
+        "error": "Adversarial findings reproduced; retain failed audit",
+        "status": "FAILED"
+      }
+    },
+    {
+      "code_hash": "4f24b08caa90816158769d38d28f74ea374fda23b80fe59ce753366ccdc93563",
+      "git_commit": "592dadc5c17369e8ad0dcbc4b704047529d85f78",
+      "original_log_sha256": "7edc5a0c7cf3d2547231b527cdf83856af73b464b41871558cab555ecdf70598",
+      "portable_log": "corrected-tests.txt",
+      "portable_sha256": "7edc5a0c7cf3d2547231b527cdf83856af73b464b41871558cab555ecdf70598",
+      "run_id": "20260927T160154-phase-3d-corrected-targeted-0bbe43b7",
+      "status": {
+        "elapsed_seconds": 4.498113250010647,
+        "error": null,
+        "status": "COMPLETED"
+      }
+    }
+  ],
+  "scope": "Retained targeted audit progression. Only local/runtime paths in tracebacks redacted; original logs remain in each run. Failed adversarial checks precede correction."
+}

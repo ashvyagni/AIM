@@ -1,0 +1,44 @@
+{
+  "continuation_comparisons": {
+    "fields_each": 14,
+    "passed": 6
+  },
+  "controller_episodes": {
+    "neural_total": 8,
+    "neural_valid_hypotheses": 0,
+    "neural_with_verified_claim": 0,
+    "reference_total": 4,
+    "reference_with_verified_claim": 4,
+    "replayed": 12,
+    "total": 12
+  },
+  "date": "2026-09-27",
+  "distributed_bridge": {
+    "global_scored_targets": 2034,
+    "scope": "one local host; initialization into BPE SFT",
+    "steps": 2,
+    "workers": 2
+  },
+  "interruption_recoveries": {
+    "passed": 2,
+    "scope": "application exception after completed checkpoint; original jobs remain FAILED"
+  },
+  "model_promotion": false,
+  "next": "Versioned generation-failure diagnostics and training/validation fitting probes before fresh capability evaluation.",
+  "phase": "3D-audit",
+  "report": "phase-3d-audit.md",
+  "reproduced_audit_findings_fixed": 4,
+  "run_id": "20260927T160636-phase-3d-audit-3892fe0c",
+  "scale_promotion": false,
+  "schema": "aim-phase-status-v1",
+  "source_commit": "2ef34945f657f35af0d4b770104936ad8581e98d",
+  "source_hash": "b00ec44062651c90cad8fb4e74fb85c7ee5150a63c8b2a2b93e3dcd9b9a66a8f",
+  "status": "LOCALLY_AUDITED_NO_CAPABILITY_PROMOTION",
+  "supersedes_current_status_of": "phase-3d-status.json",
+  "tests": {
+    "passed": 208,
+    "seconds": 48.934,
+    "skipped": 0
+  },
+  "vit_lab_hosts_measured": 0
+}

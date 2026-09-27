@@ -1,0 +1,21 @@
+test_external_rows_reject_undeclared_holdout_metadata (test_language_hardening.LanguageBoundaryTests.test_external_rows_reject_undeclared_holdout_metadata) ... ok
+test_symbolic_decode_failure_replaces_stale_trace (test_language_hardening.LanguageBoundaryTests.test_symbolic_decode_failure_replaces_stale_trace) ... ok
+test_checkpoint_stable_architecture_must_match_saved_model (test_language_hardening.LanguageCheckpointTests.test_checkpoint_stable_architecture_must_match_saved_model) ... ok
+test_nonfinite_frozen_reference_is_rejected (test_language_hardening.LanguageCheckpointTests.test_nonfinite_frozen_reference_is_rejected) ... ok
+test_all_separate_stages_exact_resume (test_language_pipeline.LanguageTrainingTests.test_all_separate_stages_exact_resume) ... ok
+test_bpe_pretraining_bridge_and_loader (test_language_pipeline.LanguageTrainingTests.test_bpe_pretraining_bridge_and_loader) ... ok
+test_legacy_byte_training_checkpoint_import (test_language_pipeline.LanguageTrainingTests.test_legacy_byte_training_checkpoint_import) ... ok
+test_padding_and_response_mask_independence (test_language_pipeline.LanguageTrainingTests.test_padding_and_response_mask_independence) ... ok
+test_resume_rejects_objective_tokenizer_and_config_changes (test_language_pipeline.LanguageTrainingTests.test_resume_rejects_objective_tokenizer_and_config_changes) ... ok
+test_stage_references_are_frozen (test_language_pipeline.LanguageTrainingTests.test_stage_references_are_frozen) ... ok
+test_strict_generation_special_utf8_and_eos (test_language_pipeline.LanguageTrainingTests.test_strict_generation_special_utf8_and_eos) ... ok
+test_symbolic_adapter_and_wrong_numerical_adapter (test_language_pipeline.LanguageTrainingTests.test_symbolic_adapter_and_wrong_numerical_adapter) ... ok
+test_boundary_merge_is_explicitly_separate (test_language_pipeline.ResponseContractTests.test_boundary_merge_is_explicitly_separate) ... ok
+test_empty_prompt_unicode_and_context_rejection (test_language_pipeline.ResponseContractTests.test_empty_prompt_unicode_and_context_rejection) ... ok
+test_external_dataset_rejects_holdouts_and_unattributed_humans (test_language_pipeline.ResponseContractTests.test_external_dataset_rejects_holdouts_and_unattributed_humans) ... ok
+test_tokenizer_identity_requires_full_spec_not_size (test_language_pipeline.ResponseContractTests.test_tokenizer_identity_requires_full_spec_not_size) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 4.126s
+
+OK

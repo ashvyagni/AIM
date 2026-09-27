@@ -1,0 +1,44 @@
+test_external_rows_reject_undeclared_holdout_metadata (test_language_hardening.LanguageBoundaryTests.test_external_rows_reject_undeclared_holdout_metadata) ... FAIL
+test_symbolic_decode_failure_replaces_stale_trace (test_language_hardening.LanguageBoundaryTests.test_symbolic_decode_failure_replaces_stale_trace) ... FAIL
+test_checkpoint_stable_architecture_must_match_saved_model (test_language_hardening.LanguageCheckpointTests.test_checkpoint_stable_architecture_must_match_saved_model) ... FAIL
+test_nonfinite_frozen_reference_is_rejected (test_language_hardening.LanguageCheckpointTests.test_nonfinite_frozen_reference_is_rejected) ... FAIL
+
+======================================================================
+FAIL: test_external_rows_reject_undeclared_holdout_metadata (test_language_hardening.LanguageBoundaryTests.test_external_rows_reject_undeclared_holdout_metadata)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "model-1/tests/test_language_hardening.py", line 25, in test_external_rows_reject_undeclared_holdout_metadata
+    with self.assertRaises(ContractError): prepare("external", "sft", path)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ContractError not raised
+
+======================================================================
+FAIL: test_symbolic_decode_failure_replaces_stale_trace (test_language_hardening.LanguageBoundaryTests.test_symbolic_decode_failure_replaces_stale_trace)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "model-1/tests/test_language_hardening.py", line 39, in test_symbolic_decode_failure_replaces_stale_trace
+    self.assertIn("(x+9)**2", researcher.last_trace["prompt"])
+AssertionError: '(x+9)**2' not found in 'stale earlier prompt'
+
+======================================================================
+FAIL: test_checkpoint_stable_architecture_must_match_saved_model (test_language_hardening.LanguageCheckpointTests.test_checkpoint_stable_architecture_must_match_saved_model)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "model-1/tests/test_language_hardening.py", line 61, in test_checkpoint_stable_architecture_must_match_saved_model
+    with self.assertRaises(ContractError): validate_record(record)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ContractError not raised
+
+======================================================================
+FAIL: test_nonfinite_frozen_reference_is_rejected (test_language_hardening.LanguageCheckpointTests.test_nonfinite_frozen_reference_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "model-1/tests/test_language_hardening.py", line 67, in test_nonfinite_frozen_reference_is_rejected
+    with self.assertRaises(ContractError): validate_record(record)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ContractError not raised
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.771s
+
+FAILED (failures=4)
