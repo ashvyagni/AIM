@@ -129,3 +129,11 @@ Retain the formula proposer and verification-first Judge as the symbolic default
 Exact normal-form comparison establishes only the bounded formal identity scope under declared assumptions. Source integrity is a separate check. Unsupported grammar/resource exhaustion remains UNKNOWN, and worker completion does not imply mathematical PASS. Certificate recomputation shares the trusted checker code; independent implementation/proof-kernel assurance remains open.
 
 Proceed with the from-scratch corpus/pretraining infrastructure build using small local validation. Actual larger models remain conditional on licensed data, reliable streaming/tokenizer machinery and physical hardware measurements. This orders implementation work according to the owner's build emphasis without changing the research thesis or silently approving a scale increase.
+
+## D021 — Establish corpus-bound pretraining before increasing scale
+
+**Status: implemented and locally validated, 2026-09-27.** Phase 3A added declared-rights corpus intake, reversible tokenizers, exact stream cursors, next-token pretraining and compatible SFT initialization. All 154 tests passed. Byte/BPE continuation and recovery from an explicitly retained application interruption matched uninterrupted training on eleven state checks. [Evidence](../reports/phase-3a-implementation.md) and [specification](PRETRAINING.md).
+
+Keep byte tokenization as the compatibility baseline and the 32-merge BPE candidate as an experiment. Its 27.69% token reduction on four constructed validation documents does not select a production tokenizer. Different vocabularies and byte coverage make raw token NLL unsuitable for comparing their model quality. Rights/privacy records remain declarations; no external corpus or hardware scale has been approved.
+
+The reference stream permits cross-document causal attention and excludes BOS/PAD targets; this is explicit implementation behavior, not approval of a final packing policy. Next integrate shard/rank ownership and checkpoint recovery with existing local distributed infrastructure. Preserve 2M allocation guards, separated post-training objectives and the conditional 100M–300M → ~1B → 7B+ roadmap.

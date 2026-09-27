@@ -61,7 +61,7 @@ Shared forecast coherence, expected information value, variable probe choices an
 
 **First slice completed:** a separately versioned exact polynomial domain, bounded AST/normal-form checker, deterministic Controller, source provenance, strict neural adapter and separate symbolic training stages. The [build report](../reports/phase-2c-implementation.md) records 140 passing tests, 18 checker cases and 48 audited episodes. The formula reference succeeded on eight supported expansions, while all learned Researcher variants had zero verified test answers. Keep learned checkpoints opt-in. Existing numerical scopes/suites are unchanged; this is not general theorem proving.
 
-The owner's latest direction prioritizes building components. Next implement the corpus intake, resumable streaming batches and tokenizer comparison interfaces at the start of Phase 3, using small local validation allocations. Do not launch 100M–300M pretraining until corpus and physical hardware requirements are met. Broader symbolic tasks and independent checker implementations remain future controlled experiments; do not retune the exposed eight-case smoke fixture into a capability claim.
+The owner's latest direction prioritizes building components. The first corpus/pretraining infrastructure slice is now completed under Phase 3A below. Do not launch 100M–300M pretraining until corpus and physical hardware requirements are met. Broader symbolic tasks and independent checker implementations remain future controlled experiments; do not retune the exposed eight-case smoke fixture into a capability claim.
 
 Add one new domain at a time: exact symbolic arithmetic, code tests in a real resource-limited sandbox, or a licensed local scientific-paper corpus with source-span retrieval. Each adapter needs a schema, version, timeout/failure semantics, independent checker and adversarial cases. Merely having multiple learned Judges agree is not independent verification.
 
@@ -69,7 +69,15 @@ Extend memory with persistent schema migrations, provenance-preserving chunking,
 
 ## Phase 3 — Corpus/tokenizer and 100M–300M proxy
 
-Complete the physical hardware audit, corpus licensing/PII/quality review, document/task split policy and deduplication. Train/evaluate tokenizer candidates on held-out prose, code, math and Unicode. Add a streaming next-token pretraining objective, resumeable data cursor, checkpoint recovery and memory estimates. Decide precision from actual kernel/hardware measurements.
+### Phase 3A — Initial corpus/tokenizer/pretraining build (completed)
+
+Declared-rights intake, immutable corpus objects, exact/normalized duplicate and declared-group checks, byte/BPE comparison, document-at-a-time packed batches and native next-token training are implemented. The [report](../reports/phase-3a-implementation.md) records 154 passing tests, exact continuation for both tokenizers, recovery from a retained application interruption and compatible byte-checkpoint SFT initialization. This uses 20 constructed documents and miniature models; no production corpus or tokenizer was approved.
+
+### Next build — Distributed data and recovery
+
+Integrate the corpus stream with existing local distributed infrastructure. Define deterministic shard/rank ownership, equal-step batching, per-rank cursors, world-size-change rejection and coordinated checkpoint publication. Test disjoint coverage and restart correctness at small local allocation before physical-node deployment. Keep application-level, OS-level and multi-node fault claims distinct.
+
+Before proxy pretraining, complete the physical hardware audit, actual corpus licensing/PII/quality review, document/task split policy and near-deduplication. Evaluate tokenizer candidates on representative licensed prose, code, math and Unicode. Extend scalable loading, recovery and memory estimates. Decide precision from actual kernel/hardware measurements.
 
 Run short matched dense proxy studies with explicit token budgets, loss curves, downstream verifier tasks, validation contamination checks and sustained training throughput. Compare meaningful data mixtures and scale/compute trade-offs. The current micro-model arithmetic experiment cannot select a large-corpus data mixture or training token count.
 

@@ -138,3 +138,9 @@ Before proposing joint training, pre-register comparisons: SFT-only; SFT+DPO; SF
 `task: symbolic` selects separately versioned binomial data for the SFT, preference and RLVR trainer. Symbolic and legacy checkpoints cannot be interchanged silently. The separate `symbolic-judge-train` entry point fits a symbolic checker-PASS forecast, with its own checkpoint kind, features, calibration split and tested exact resume. See [objectives, data and commands](SYMBOLIC.md).
 
 Programmatic preferences do not constitute collected human feedback. Symbolic UNKNOWN is a zero reward for the precisely defined checker-PASS target, not a false theorem label. The [first build](../reports/phase-2c-implementation.md) saved all four models but achieved zero verified free-generation test answers; finite-candidate RLVR scores were not a reliable indicator of generation quality. No joint objective or model promotion follows.
+
+## Native next-token pretraining
+
+The separate `pretrain` entry point reads an ingested corpus and records tokenizer identity, exact stream cursor, optimizer/RNG state and periodic checkpoints. Loss is masked mean next-token NLL over packed windows; EOS is trained and BOS/PAD targets are excluded. Causal attention may cross document boundaries. See [full contracts and commands](PRETRAINING.md).
+
+The [Phase 3A build](../reports/phase-3a-implementation.md) validates byte/BPE continuation, a retained application-interruption recovery drill and the byte-pretraining→SFT bridge. These results use tiny native models and constructed text. Existing post-training SFT accepts only dimension- and byte-tokenizer-compatible pretraining weights; BPE transfer requires an explicitly extended supervised pipeline. No scalar reward blend or production tokenizer selection is introduced.

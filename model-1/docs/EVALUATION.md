@@ -64,3 +64,9 @@ Before a large training commitment: repeat across at least three predeclared see
 `eval/symbolic-v1.json` and its checksum are a separate, exposed 18-case suite. It exercises exact identities, false identities and unsupported expressions through actual subprocess dispatches. `symbolic-evaluate` additionally runs eight disjoint-offset binomial episodes and audits every resulting state. It reports proposal validity, verified episodes and dispatch counts separately. The original numerical suite is unchanged.
 
 The [Phase 2C build](../reports/phase-2c-implementation.md) ran 140 tests, six evaluation variants and 48 episodes. A successful worker execution is not automatically a successful mathematical check. Calibration metrics score the symbolic event under its fixture distribution; they must not be interpreted as numerical-domain or general scientific calibration. These fixtures are engineering evidence, not concealed benchmarks or promotion tests.
+
+## Corpus/pretraining infrastructure validation
+
+The [Phase 3A build](../reports/phase-3a-implementation.md) passed 154 tests and compared uninterrupted/resumed training for byte and BPE vocabularies. It checks tensors, optimizer/RNG, stream cursor, batch hashes and validation metrics, including recovery after a deliberately retained failed run. The tokenizer fitter and pretrainer are tested against accessing test text. Rights/privacy fields are declarations, not automated certification.
+
+Compression and token NLL are reported with their scopes. Per-token NLL across different vocabularies is not a model-quality comparison. The constructed template corpus, short CPU timings and application-level fault injection do not establish scientific ability, physical-node performance or distributed fault tolerance. All existing canonical research suites remain unchanged.

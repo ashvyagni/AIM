@@ -1,6 +1,6 @@
 # AIM Model-1
 
-**Modular research loops, exact symbolic verification, native Researcher training and separate Judges.**
+**Modular research loops, exact verification, separate Judges and reproducible from-scratch training infrastructure.**
 
 The default research loop uses a clearly identified deterministic polynomial Researcher and a separate rule-based or trained Judge. A native, randomly initialized transformer and an interchangeable neural Researcher adapter are implemented. The phase-1 arithmetic checkpoint failed structured generation. Phase 2A trained three research-specific checkpoints that emit mostly valid hypotheses but achieve only 3.13–10.94% verified success on the familiar holdout; their capability gate failed and they remain opt-in experimental backends.
 
@@ -14,7 +14,9 @@ Phase 2B.1 adds an opt-in Controller extension for paid observations, shared tar
 
 Phase 2C adds a separately versioned symbolic loop, bounded exact polynomial checker, strict neural adapter and separate symbolic SFT/preference/RLVR/Judge stages. All 18 checker cases passed; 48 research episodes were audited. The formula reference solved all eight supported expansions; learned Researchers solved none. They remain opt-in.
 
-See the [latest build report](reports/phase-2c-implementation.md), [symbolic guide](docs/SYMBOLIC.md), [paid-evidence guide](docs/PAID_EVIDENCE.md), [Judge guide](docs/JUDGE_SHIFT.md), and [real-checkpoint resume audit](reports/research-resume-audit.md). The latest full preflight has **140 passing tests, zero skips**. Historical reports preserve their original results and test counts. Next build: corpus intake, resumable streaming pretraining and tokenizer comparison interfaces.
+Phase 3A adds declared-rights corpus intake, immutable source objects, a deterministic byte-pair tokenizer experiment, resumable packed-token streams and native next-token pretraining. Byte/BPE continuation and a retained interruption-recovery drill matched uninterrupted training exactly. The byte checkpoint can initialize compatible SFT. This validates the training infrastructure on 20 constructed documents; it does not establish research capability or select a large-model scale.
+
+See the [latest build report](reports/phase-3a-implementation.md), [pretraining guide](docs/PRETRAINING.md), [symbolic guide](docs/SYMBOLIC.md), [paid-evidence guide](docs/PAID_EVIDENCE.md), [Judge guide](docs/JUDGE_SHIFT.md), and [real-checkpoint resume audit](reports/research-resume-audit.md). The latest full preflight has **154 passing tests, zero skips**. Historical reports preserve their original results and test counts. Next build: shard/rank-aware data loading and checkpoint recovery using the existing distributed infrastructure.
 
 ## What runs
 

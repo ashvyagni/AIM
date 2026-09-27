@@ -16,8 +16,12 @@ The architectural baseline is the [complete research handbook](documents/AIM_Com
 - [Phase 2B.1 shared measurement and paid evidence](model-1/reports/phase-2b1-implementation.md)
 - [Phase 2C symbolic components and training build](model-1/reports/phase-2c-implementation.md)
 - [Symbolic contracts and runnable commands](model-1/docs/SYMBOLIC.md)
+- [Phase 3A corpus and pretraining build](model-1/reports/phase-3a-implementation.md)
+- [Corpus, tokenizer and pretraining commands](model-1/docs/PRETRAINING.md)
 
-Latest completed build: Phase 2C adds exact polynomial verification, a separate symbolic research loop, native Researcher stages and a separately calibrated symbolic Judge. All **140 tests passed**. The checker passed 18 regression cases; 48 actual episodes were retained and audited. The formula reference verified all eight supported expansions. The tiny learned Researchers verified none, so they remain experimental. Next build: corpus intake, resumable streaming pretraining batches and tokenizer comparison interfaces, before any larger training commitment.
+Latest completed build: Phase 3A adds provenance-bound corpus intake, a from-scratch BPE candidate, resumable token streams and native next-token pretraining. All **154 tests passed**. Both tokenizer variants resumed exactly; recovery from a retained injected failure matched uninterrupted training. A byte-token pretraining checkpoint successfully initialized SFT. These checks use constructed text and tiny models. Next: integrate sharded/rank-aware data loading and recovery with the existing distributed infrastructure.
+
+Phase 2C's exact polynomial loop remains available. Its checker passed 18 regression cases and 48 episodes were audited. The formula reference verified all eight supported expansions; tiny learned Researchers verified none and remain experimental.
 
 Phase 2B.1 executed and audited 1,248 episodes with shared measurement costs and paid evidence acquisition. Buying another observation improved known-family utility but lost utility in the deliberately indistinguishable new family. Its failed evidence gate and unchanged defaults remain recorded.
 
