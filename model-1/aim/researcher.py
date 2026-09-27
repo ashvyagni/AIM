@@ -92,6 +92,10 @@ class TransformerResearcher:
                 self.last_trace["error_category"] = exc.category if isinstance(exc, ResearchOutputError) else "context_or_contract"
                 self.last_trace["error"] = str(exc)
                 raise
+            finally:
+                generation = getattr(self.model, "last_generation", None)
+                if generation is not None:
+                    self.last_trace["generation"] = generation
         prompt = json.dumps({"task": "Return JSON {coefficients:[[c0,c1],[c0,c1,c2]]}",
                              "observations": state.observations, "target_x": state.target_x})
         text = self.model.generate_text(self.tokenizer, prompt, self.max_new_tokens)

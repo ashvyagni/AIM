@@ -129,9 +129,18 @@ class SymbolicTransformerResearcher(BinomialResearcher):
 
     def hypothesize(self, state):
         prompt = symbolic_prompt(state.lhs)
-        raw = self.model.generate_text(self.tokenizer, prompt, self.max_new_tokens)
-        self.last_trace = {"prompt": prompt, "raw": raw, "model_id": self.model_id}
-        return [parse_symbolic_response(raw, state.evidence)]
+        self.last_trace = {"prompt": prompt, "raw": None, "model_id": self.model_id}
+        try:
+            raw = self.model.generate_text(self.tokenizer, prompt, self.max_new_tokens)
+            self.last_trace["raw"] = raw
+            return [parse_symbolic_response(raw, state.evidence)]
+        except ContractError as exc:
+            self.last_trace["error"] = str(exc)
+            raise
+        finally:
+            generation = getattr(self.model, "last_generation", None)
+            if generation is not None:
+                self.last_trace["generation"] = generation
 
 
 def claim_identity(claim):

@@ -46,6 +46,7 @@ def generate(model, tokenizer, prompt, max_new_tokens):
 
 class TokenizedCausalLM(CausalLM):
     def generate_text(self, tokenizer, prompt, max_new_tokens):
+        self.last_generation = None
         self.last_generation = generate(self, tokenizer, prompt, max_new_tokens)
         require(self.last_generation["error"] is None, self.last_generation["error"] or "generation failed")
         return self.last_generation["text"]

@@ -79,6 +79,33 @@ def validate_record(record):
     require(record.get("stage") in {"sft", "preference", "rlvr"}, "unsupported checkpoint stage")
     require(type(record.get("step")) is int and 1 <= record["step"] <= 1000, "invalid checkpoint step")
     require(type(record.get("scored_tokens")) is int and record["scored_tokens"] > 0, "invalid checkpoint token accounting")
+    from .language_training import validate_config
+    validate_config({**record["stable_config"], "steps": record["step"]})
+    require(asdict(model_config(record["stable_config"]["model"], tokenizer)) == asdict(cfg), "stable architecture differs from saved model")
+    require(record["task"] != "structured" or record["stage"] == "sft", "structured stage is unsupported")
+    require(record["task"] != "external" or record["stage"] != "rlvr", "external verifier adapter unavailable")
+    import math
+    import torch
+    require(isinstance(record["model"], dict) and record["model"] and isinstance(record["reference"], dict) and
+            record["model"].keys() == record["reference"].keys(), "reference/model state keys differ")
+    for key, value in record["model"].items():
+        reference = record["reference"][key]
+        require(isinstance(value, torch.Tensor) and isinstance(reference, torch.Tensor) and
+                value.shape == reference.shape and value.dtype == reference.dtype, "reference/model tensor contract differs")
+    def finite(value):
+        if isinstance(value, torch.Tensor):
+            require(bool(torch.isfinite(value).all()), "nonfinite checkpoint tensor")
+        elif isinstance(value, dict):
+            for child in value.values(): finite(child)
+        elif isinstance(value, (list, tuple)):
+            for child in value: finite(child)
+        elif isinstance(value, float):
+            require(math.isfinite(value), "nonfinite checkpoint scalar")
+    for key in ("model", "reference", "optimizer"):
+        finite(record[key])
+    rng = record["torch_rng"]
+    require(isinstance(rng, torch.Tensor) and rng.dtype == torch.uint8 and rng.shape == torch.get_rng_state().shape,
+            "invalid CPU RNG state shape/type")
     return cfg, tokenizer
 
 

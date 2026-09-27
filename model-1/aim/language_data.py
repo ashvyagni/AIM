@@ -44,6 +44,8 @@ def prepare(task, stage, path=None):
             require(row.get("split", split) == split, "row belongs to a different split")
             row["split"] = split
             if task == "external":
+                allowed = {"id", "group", "prompt", "response", "rights", "label_origin", "split", "annotation_batch", "chosen", "rejected"}
+                require(set(row) <= allowed, "undeclared external row metadata; holdout labels are not training metadata")
                 require(row["label_origin"] in {"human", "synthetic", "programmatic"}, "external label origin must be explicit")
                 if row["label_origin"] == "human":
                     require(isinstance(row.get("annotation_batch"), str) and bool(row["annotation_batch"].strip()), "human annotations require a batch reference")
