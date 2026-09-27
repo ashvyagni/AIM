@@ -1,6 +1,6 @@
 # Model-1 evaluation specification
 
-**Phase 3D evaluation pending:** the owner deferred audit/test execution for the tokenizer-compatible build. `tests/test_language_pipeline.py` and `aim.language_reproduce` are prepared candidates, not passing evidence. First run targeted tests, then all regressions and exact byte/BPE stage continuation; also inspect actual Controller adapters and interruption/distributed-initialization bridges. The last completed result remains Phase 3C's 192 tests on its recorded source revision.
+**Phase 3D local audit completed:** [208 tests passed, zero skips](../reports/phase-3d-audit.md), after four adversarial findings were reproduced and fixed. Six byte/BPE stage continuations and two interrupted-run recoveries matched exactly; the distributed initialization bridge and 12 actual Controller episodes passed replay checks. Eight neural episodes produced invalid JSON and zero hypotheses; four reference episodes each produced a verified claim. These exposed integration cases establish no learned capability gain. Source identity, raw outcomes and retained failures are linked in the report; canonical suites are unchanged.
 
 ## Evaluation layers
 

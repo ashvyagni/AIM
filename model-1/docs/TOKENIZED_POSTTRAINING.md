@@ -1,6 +1,6 @@
 # Phase 3D — Tokenizer-compatible post-training
 
-**Status: implementation candidate; tests and formal audit deferred at the owner's request.** Do not treat the previous 192-test result as validation of this code. No Phase 3D training, inference or benchmark result is claimed. The separate legacy byte path remains available.
+**Status: locally audited, 2026-09-27.** The [executed audit](../reports/phase-3d-audit.md) passed 208 tests, all six byte/BPE stage-continuation comparisons, two application-interruption recoveries and a two-worker BPE initialization bridge. Twelve actual Controller episodes replayed; the eight neural cases produced no valid hypotheses. Four adversarial findings were fixed with retained failure logs. The initial [build-only record](../reports/phase-3d-build.md) preserves the earlier requested deferral. The separate legacy byte path remains available; no learned default or larger scale is approved.
 
 ## Components
 
@@ -12,7 +12,8 @@
 | `language_training.py` | Independent SFT, preference/DPO and bounded RLVR stages, periodic checkpoints, frozen references and batched validation |
 | `generation.py` | Greedy generation records with token IDs, termination reason and strict special-token/UTF-8 behavior |
 | `language_artifacts.py` | Read-only checkpoint descriptions, generation runs and non-executing stage compatibility plans |
-| `language_reproduce.py` | Deferred full regression, byte/BPE stage-chain and continuation audit runner |
+| `language_reproduce.py` | Full regression, byte/BPE stage-chain and continuation audit runner |
+| `language_integration.py` | Actual Controller episodes, read-only replay, retained interruption drills and distributed BPE initialization bridge |
 
 The only legacy integration hooks are explicit `tokenized_lm` dispatch in `load_lm` and an output-contract check in the numerical Researcher adapter. Versioned symbolic checkpoints use the existing symbolic adapter contract. No Controller/Judge/verifier truth rule changes. The Judge's proper-score/calibration trainers stay separate from language-model objectives.
 
@@ -38,7 +39,7 @@ The encoding manifest records each relevant example/variant's tokenized hash, in
 - **Structured numerical research:** `aim-research-sft-v1`, the existing plain `aim-structured-research-v1` output contract, and SFT only. Worked/curriculum formats are not silently mapped into it.
 - **External text:** explicit `aim-language-data-v1` train/validation files. SFT and preference only; external RLVR requires a separately reviewed verifier adapter.
 
-External file fields are exactly `schema`, `version`, `train`, `validation`. Each row needs `id`, `group`, `prompt`, `response`, `rights` and `label_origin`. Preference stages additionally need distinct `chosen` and `rejected`. Optional row `split` must agree with its enclosing split. IDs and train/validation groups must be disjoint; exact prompt leakage is rejected. Human labels require an `annotation_batch` reference and remain declarations requiring annotation review.
+External file fields are exactly `schema`, `version`, `train`, `validation`. Each row needs `id`, `group`, `prompt`, `response`, `rights` and `label_origin`. Preference stages additionally need distinct `chosen` and `rejected`. Optional row `split` must agree with its enclosing split. Optional `annotation_batch` is required for human labels. All other row fields reject, including undeclared holdout metadata. IDs and train/validation groups must be disjoint; exact prompt leakage is rejected. Human-label provenance remains a declaration requiring annotation review.
 
 This path does not fit a tokenizer on supervised validation text. It consumes the separately fitted specification. Provenance identifies the fitting corpus; this alone does not prove the fitting corpus is uncontaminated or licensed. Use the corpus review/release tooling and separate supervised-data review. Test/OOD fields are rejected from the training input container. Whole-corpus semantic leakage detection is not provided by exact prompt/group checks.
 
@@ -60,6 +61,8 @@ Initialization loads compatible weights, creates a fresh optimizer and freezes a
 
 Resume accepts only a versioned checkpoint with the same task/stage, model, full tokenizer, stable config, dataset and encoding manifest. The target step must increase. It restores optimizer/reference/RNG/accounting. Periodic checkpoint files are uniquely named by completed step and retained; the final checkpoint has a separate filename. Mid-update recovery, optimizer sharding and distributed post-training are not implemented.
 
+Record validation also binds stable configuration to the saved architecture, rejects nonfinite model/reference/optimizer state, checks reference tensor structure and checks CPU RNG shape/type. Adapter traces are initialized before decoding, so an exception cannot reuse a previous episode's trace. These checks arose from reproduced audit failures rather than assumed coverage.
+
 The allocation guard remains two million parameters, context at most 512, batch at most 16 and at most 1,000 optimizer steps. The frozen reference adds memory. Larger candidate scales still require corpus, physical hardware and budget evidence.
 
 ## Runtime and generation behavior
@@ -70,9 +73,9 @@ The numerical Researcher adapter accepts a versioned LM only when it declares th
 
 `language-inspect` validates integrity/schema and describes lineage; it does not run tensor inference or certify training correctness. `language-stage-plan` lists compatible separate stages and required evaluation work; it cannot launch or promote a model.
 
-## Commands prepared for the audit phase
+## Operator commands
 
-These commands are implemented but **have not been exercised in Phase 3D**. Use compatible model dimensions in the selected config; the supplied defaults do not resize an old pretraining model's context or weights.
+The audit exercised the training/runtime APIs and the complete reproduction command below. This list documents CLI entry points; it is not a claim that every CLI invocation was exercised individually. Use compatible model dimensions in the selected config; the supplied defaults do not resize an old pretraining model's context or weights.
 
 ```sh
 .venv/bin/python -m aim language-train --config configs/language-sft.json --initialize <compatible-pretraining-checkpoint>
@@ -86,17 +89,17 @@ These commands are implemented but **have not been exercised in Phase 3D**. Use 
 
 An explicit `--tokenizer <spec.json>` is optional when initializing/resuming: the exact source specification is otherwise inherited. Starting random-init BPE SFT requires that explicit tokenizer. No pretrained tokenizer or weights are downloaded.
 
-## Deferred audit and acceptance gates
+## Repeatable audit and acceptance scope
 
-Run the targeted new suite first, then the full reproduction:
+To reproduce in a new directory, run the targeted suites and full reproduction:
 
 ```sh
-.venv/bin/python -m unittest discover -s tests -p test_language_pipeline.py -v
+.venv/bin/python -m unittest discover -s tests -p 'test_language*.py' -v
 .venv/bin/python -m aim.language_reproduce --export reports/<new-directory>
 ```
 
 The second command will run all regressions, construct the existing engineering corpus, pretrain byte/BPE models locally, and run uninterrupted/partial/resumed SFT, DPO and RLVR chains. It must compare model, optimizer, frozen reference, RNG, steps/counters, data/encoding/tokenizer/config/task/stage state exactly before exporting a successful report. Any failure must remain retained and be reported before promotion.
 
-Additional review gates: inspect source/checkpoint schema strictness, bounded inputs, task transitions, reference freezing, response masks, context failure, generation token handling, external-data access boundaries and legacy adapters. Exercise the structured Researcher with its own training data, symbolic generation through the actual Controller, distributed-pretraining initialization export, and interruption recovery from periodic files. The supplied test/reproduction code is itself unaudited and may need correction; do not infer these cases passed from its existence.
+The full runner also trains structured and symbolic Researcher adapters and executes their actual Controllers alongside deterministic positive controls. It retains two deliberately interrupted jobs, resumes their completed checkpoints, and audits a two-worker distributed-pretraining initialization export into BPE SFT. Export rechecks states, generation traces, checkpoint hashes and replay results. Preserve every failed run. These checks do not establish mid-update durability, generalization, independent proof of optimizer math or physical-cluster readiness.
 
-No Phase 3D test count, benchmark, exact-resume result or capability result exists yet. The last completed evidence is Phase 3C's 192 tests, which predates these changes. Record the pending phase's failures and measured outcomes in a new audit report before treating its implementation as validated.
+The [current evidence](../reports/phase-3d-audit-evidence/manifest.json) identifies the exact audited revision. Eight neural cases exhausted the generation budget with invalid JSON. Next implement fitting/free-generation diagnostics on explicitly exposed training/validation probes, then register a fresh capability study. No sustained performance benchmark or model promotion follows from the present audit.

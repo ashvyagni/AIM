@@ -4,7 +4,7 @@ The architectural baseline is the [complete research handbook](documents/AIM_Com
 
 ## Start here
 
-**Current build: Phase 3D is written but untested.** The owner requested implementation now and auditing/tests in the next phase. [Build report and pending audit](model-1/reports/phase-3d-build.md) · [Tokenizer-compatible post-training specification](model-1/docs/TOKENIZED_POSTTRAINING.md). The last completed validation below belongs to Phase 3C; it does not validate the new revision.
+**Current audited build: Phase 3D.** All **208 tests passed**, with exact byte/BPE stage continuation, two interruption recoveries, a distributed BPE-to-SFT bridge and 12 replayed Controller episodes. Four audit findings were fixed and retained. The eight tiny neural episodes produced no valid hypotheses; learned backends remain experimental. [Executed audit and next experiment](model-1/reports/phase-3d-audit.md) · [Tokenizer-compatible post-training specification](model-1/docs/TOKENIZED_POSTTRAINING.md).
 
 - [Model-1 setup and runnable commands](model-1/README.md)
 - [Phase 1 implementation evidence](model-1/reports/phase-1-implementation.md)
@@ -25,7 +25,7 @@ The architectural baseline is the [complete research handbook](documents/AIM_Com
 - [Phase 3C operator/corpus readiness results](model-1/reports/phase-3c-implementation.md)
 - [Hardware observations, corpus review and release commands](model-1/docs/OPERATOR_AND_CORPUS_READINESS.md)
 
-Latest completed build: Phase 3C adds portable hardware observations, policy-bound trial preparation, lexical contamination audits, explicit corpus review and immutable subset release. All **192 tests passed**. The reproduction retained a tampered-import failure and a blocked overlapping-data export, then released five explicitly selected fixture documents and completed actual two-worker training with replayed data/checkpoint audits. The original corpus is unchanged. No lab policy or external-corpus approval was invented. Next: tokenizer-compatible supervised training, alongside operator-led physical/data validation.
+Earlier Phase 3C adds portable hardware observations, policy-bound trial preparation, lexical contamination audits, explicit corpus review and immutable subset release. Its historical **192-test** reproduction retained a tampered-import failure and a blocked overlapping-data export, then released five explicitly selected fixture documents and completed actual two-worker training with replayed data/checkpoint audits. The original corpus is unchanged. No lab policy or external-corpus approval was invented. Actual VIT measurements and representative data remain pending.
 
 Phase 3B's distributed training and recovery remain available: byte/BPE jobs resume exactly, agree with independent serial training within the declared tolerance, and recover from both checkpoint-publication failure scenarios. Four local workers passed audits. These are local systems results, not VIT performance or scientific capability.
 
