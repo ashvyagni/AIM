@@ -1,0 +1,123 @@
+{
+  "baseline": "5527828",
+  "count": 29,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "2796a1b39e496f570578344c1e231ffa8f8d3b79db0deb234a13978b0def5719"
+    },
+    {
+      "path": "documents/AIM_Model_1_Implementation_Directive.md",
+      "sha256": "30605646da33e968a4707636f52020de8263761398595fcfc45729a670b16a14"
+    },
+    {
+      "path": "model-1/README.md",
+      "sha256": "9d5a95de9a9ff0c3e85da79b265c0d639968326e055f859212f2052f9afcddad"
+    },
+    {
+      "path": "model-1/aim/cli.py",
+      "sha256": "9729dd77ca9f32ddfef9b3c07ce8dbafad992c5ebb89a50f5112c086bc37540b"
+    },
+    {
+      "path": "model-1/aim/corpus.py",
+      "sha256": "d42d3c802348e430bfee4121de3caa90fba1d5403e1fca18a0d127b99ce3be7b"
+    },
+    {
+      "path": "model-1/aim/corpus_fixture.py",
+      "sha256": "62225897e76635b82f3dc323d5705235938e021f59cf04a3dade4409571a5400"
+    },
+    {
+      "path": "model-1/aim/neural.py",
+      "sha256": "b7ae77c6c85e1277b027a6630e02e9340679b756f441dc2996eb50ce12918b0b"
+    },
+    {
+      "path": "model-1/aim/pretrain.py",
+      "sha256": "2c73c84d3d3d4ab19410187bac61d817aeb43bf272242dcedc1235717e02c4dd"
+    },
+    {
+      "path": "model-1/aim/pretrain_reproduce.py",
+      "sha256": "136c5d931e56741d242d9b6465497b86ddd5bc3691eaad7b607eeec3499ab20e"
+    },
+    {
+      "path": "model-1/aim/token_stream.py",
+      "sha256": "cd991b05a94845d265db118b7d322ea7de8479b2c3f114a19b46aef1bacde987"
+    },
+    {
+      "path": "model-1/aim/tokenization.py",
+      "sha256": "698e1fb1dc8a1b9a0cae899dcbe11fa24a8b054928c96144063e1d21e9b64f18"
+    },
+    {
+      "path": "model-1/aim/training.py",
+      "sha256": "46286f6fe7538f29569235407725f4788bb2fb7f47623288d4232694b31d3c6c"
+    },
+    {
+      "path": "model-1/configs/pretrain-smoke.json",
+      "sha256": "e9dbae246dad7dc3f3a880798de54aa0eb2ad300dc58d0349be966ea8e83d1d5"
+    },
+    {
+      "path": "model-1/docs/ARCHITECTURE.md",
+      "sha256": "a1e6c82a35d997e644bb49283652c58d04062c6ac39632ea08b1661667dc72de"
+    },
+    {
+      "path": "model-1/docs/DECISIONS.md",
+      "sha256": "dbae98376287d48f685f3860721bea12370e4f4c598bf65433b8f8420647beac"
+    },
+    {
+      "path": "model-1/docs/EVALUATION.md",
+      "sha256": "65860ff8ff4eb32cbe636de734e78f9bf3dfec775224f9de51c2f240220e3574"
+    },
+    {
+      "path": "model-1/docs/IMPLEMENTATION_PLAN.md",
+      "sha256": "0e13aee87d555bf6afade1e8893e14d349457c73bd6f68ed1bb24e3024e71474"
+    },
+    {
+      "path": "model-1/docs/PRETRAINING.md",
+      "sha256": "db7923201f05f3b4efeb47183435505ea4e50b26b21805e8f1c187d8bf873924"
+    },
+    {
+      "path": "model-1/docs/TRAINING.md",
+      "sha256": "8bbffe7e455bb3ceb3cecc0ce607f25e0f14d863c4ddb8d26a363502118adb1a"
+    },
+    {
+      "path": "model-1/reports/phase-3a-evidence/bpe-tokenizer.json",
+      "sha256": "7b230c94b59948a4574dbe0f0a1e46efc3dec6ca2bb04c84d86276affeb1f9fa"
+    },
+    {
+      "path": "model-1/reports/phase-3a-evidence/byte-tokenizer.json",
+      "sha256": "bdf8e8f8e865f313ffdbdb28a5b3cc58f7fba5612166b6dba719e0258383b122"
+    },
+    {
+      "path": "model-1/reports/phase-3a-evidence/fixture.json",
+      "sha256": "fe15b4f116ffdd56b29d4f8350c5b4be0f024191937ee028981e8dec953547be"
+    },
+    {
+      "path": "model-1/reports/phase-3a-evidence/injected-failure.txt",
+      "sha256": "58af4cbf2845aefa8a90190c8b9d8bf01b8fd073b762487307f2119fb97fed24"
+    },
+    {
+      "path": "model-1/reports/phase-3a-evidence/manifest.json",
+      "sha256": "ff6bad97baa01682e053737c6e34d8c5d83891062e63480b46789503ff0cd430"
+    },
+    {
+      "path": "model-1/reports/phase-3a-evidence/results.json",
+      "sha256": "2b54eba2d66ee74f114ef516fffbf4ad06fbbd02605fe068f27be841213bc678"
+    },
+    {
+      "path": "model-1/reports/phase-3a-evidence/tests.log",
+      "sha256": "d4a351874d9b2b8bc4ed43b005ac6185b93cc37064ea4a2a4065d4102522de8d"
+    },
+    {
+      "path": "model-1/reports/phase-3a-evidence/tokenizer-comparison.json",
+      "sha256": "680f035b12b2bdff2ba741b33509bfb965137649d0bb23159770f056492f1796"
+    },
+    {
+      "path": "model-1/reports/phase-3a-implementation.md",
+      "sha256": "bb0eb82bdd90a0e98b2da0d5545eb3d8a951803bd67546553551181e41db53a4"
+    },
+    {
+      "path": "model-1/tests/test_pretrain.py",
+      "sha256": "a4ae9558d44d979f67c99720db655ecf3c6ef2442e5d018cb600cc444af3a6eb"
+    }
+  ],
+  "scope": "all phase changes; inventory excludes itself"
+}

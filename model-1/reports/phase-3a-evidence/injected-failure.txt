@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "model-1/aim/pretrain.py", line 118, in pretrain
+    checkpoint(f"checkpoint-step-{step+1:06d}.pt", step+1)
+  File "model-1/aim/pretrain.py", line 90, in checkpoint
+    save_checkpoint(run, {"kind": "pretraining_lm", "schema": "aim-pretraining-v1", "origin": "aim-random-init-v1",
+  File "<runtime>/mock.py", line 1139, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<runtime>/mock.py", line 1143, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<runtime>/mock.py", line 1204, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "model-1/aim/pretrain_reproduce.py", line 87, in interrupt_after_publication
+    raise InjectedInterruption("Deliberate recovery drill: interrupt immediately after durable checkpoint publication")
+reproduce.<locals>.InjectedInterruption: Deliberate recovery drill: interrupt immediately after durable checkpoint publication

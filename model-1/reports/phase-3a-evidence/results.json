@@ -1,0 +1,1676 @@
+{
+  "corpus": {
+    "bytes": 3707,
+    "documents": 20,
+    "hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+    "path": "intake/20260927T051628-corpus-intake-b66198e2/corpus.json",
+    "splits": {
+      "test": 4,
+      "train": 12,
+      "validation": 4
+    }
+  },
+  "pretraining": {
+    "bpe": {
+      "exact_resume": {
+        "continued_batch_hashes": true,
+        "corpus_hash": true,
+        "cursor": true,
+        "model": true,
+        "optimizer": true,
+        "scored_tokens": true,
+        "stable_config": true,
+        "step": true,
+        "tokenizer": true,
+        "torch_rng": true,
+        "validation_metrics": true
+      },
+      "full": {
+        "checkpoint_sha256": "f76dbc061838f415254ef65b24c941d80b4aad0e880b8e4c92e6cd505c938c2b",
+        "metrics": {
+          "final": {
+            "batches": 4,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 509,
+            "token_nll": 5.3225514949656185
+          },
+          "initial": {
+            "batches": 4,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 509,
+            "token_nll": 5.684565156288372
+          },
+          "parameters": 27904,
+          "scope": "local CPU integration timing including data/batching; excludes checkpoint/evaluation; not VIT throughput",
+          "scored_tokens_per_update_second": 50243.80759672633,
+          "scored_tokens_this_run": 1525,
+          "scored_tokens_total": 1525,
+          "update_seconds": 0.030351999041158706,
+          "updates": [
+            {
+              "batch_hash": "824966303ea80c56d6d0f5c15fcb195671335be2aad7fe0101d72dfd695e0af1",
+              "cursor": {
+                "carry": [
+                  116,
+                  "document-000",
+                  128,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 0,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 129,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 0.8867290019989014,
+              "loss": 5.681110858917236,
+              "scored_tokens": 128,
+              "step": 1,
+              "update_seconds": 0.00295670802006498
+            },
+            {
+              "batch_hash": "a9cda9d157b55974365cefcdb09d0f0b2f6812867302b2dbfa0b0480a25cfed9",
+              "cursor": {
+                "carry": [
+                  108,
+                  "document-001",
+                  125,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 1,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 126,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 0.9198099374771118,
+              "loss": 5.6696248054504395,
+              "scored_tokens": 127,
+              "step": 2,
+              "update_seconds": 0.002498624991858378
+            },
+            {
+              "batch_hash": "09b5398e5f2587f693ae11b59758a64941269a3170231820b3bf73245f712671",
+              "cursor": {
+                "carry": [
+                  105,
+                  "document-002",
+                  123,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 2,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 124,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 0.944946825504303,
+              "loss": 5.662557125091553,
+              "scored_tokens": 127,
+              "step": 3,
+              "update_seconds": 0.002435750007862225
+            },
+            {
+              "batch_hash": "7ee2ac25dcd386dd8f3f3321733a39335349299c522c06cfee41987225a00d9f",
+              "cursor": {
+                "carry": [
+                  274,
+                  "document-003",
+                  120,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 3,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 121,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 0.8712020516395569,
+              "loss": 5.65826940536499,
+              "scored_tokens": 127,
+              "step": 4,
+              "update_seconds": 0.0027916660183109343
+            },
+            {
+              "batch_hash": "0012bc381e62f61813a8e4a4e7f6e0496b7e91a781717b9b368a6dbef575ebfa",
+              "cursor": {
+                "carry": [
+                  97,
+                  "document-004",
+                  99,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 4,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 100,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 1.1880428791046143,
+              "loss": 5.549871921539307,
+              "scored_tokens": 127,
+              "step": 5,
+              "update_seconds": 0.002593208017060533
+            },
+            {
+              "batch_hash": "288acc6f6903c73b5fcf3c79e5c1ae4e14a49a03cceed34dd297894a19bcab20",
+              "cursor": {
+                "carry": [
+                  32,
+                  "document-005",
+                  96,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 5,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 97,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 1.1902536153793335,
+              "loss": 5.5174407958984375,
+              "scored_tokens": 127,
+              "step": 6,
+              "update_seconds": 0.002441874996293336
+            },
+            {
+              "batch_hash": "7ae6fba556339069a10c91dd90e9bfa9b13e965a5697d78bc2b0426587d93f72",
+              "cursor": {
+                "carry": [
+                  78,
+                  "document-006",
+                  94,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 6,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 95,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 1.2870649099349976,
+              "loss": 5.53468132019043,
+              "scored_tokens": 127,
+              "step": 7,
+              "update_seconds": 0.0024179999891202897
+            },
+            {
+              "batch_hash": "0acabd4b1a2267687f4ab84c7cf51e5a4de3f3a2f8a11e26a2ad0557a29450d2",
+              "cursor": {
+                "carry": [
+                  111,
+                  "document-007",
+                  91,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 7,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 92,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 1.1743534803390503,
+              "loss": 5.561805248260498,
+              "scored_tokens": 127,
+              "step": 8,
+              "update_seconds": 0.0024397499801125377
+            },
+            {
+              "batch_hash": "136f31bba781b28f46ca342993b2551ab374f3cf02a403969d1202691cc2694c",
+              "cursor": {
+                "carry": [
+                  271,
+                  "document-008",
+                  70,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 8,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 71,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 0.9887560606002808,
+              "loss": 5.3975324630737305,
+              "scored_tokens": 127,
+              "step": 9,
+              "update_seconds": 0.002562042005592957
+            },
+            {
+              "batch_hash": "a3d8fc025c5e2e26e19b9db7ed6d13f9114a715e7a4ba22f414526625a0e9041",
+              "cursor": {
+                "carry": [
+                  41,
+                  "document-009",
+                  67,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 9,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 68,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 0.9129331111907959,
+              "loss": 5.373879909515381,
+              "scored_tokens": 127,
+              "step": 10,
+              "update_seconds": 0.0024082919990178198
+            },
+            {
+              "batch_hash": "f9d6155d36d2e2b1d2c0785be18bf373dd924246c419697a56be150ebcea2b72",
+              "cursor": {
+                "carry": [
+                  263,
+                  "document-010",
+                  65,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 10,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 66,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 0.98847496509552,
+              "loss": 5.376962184906006,
+              "scored_tokens": 127,
+              "step": 11,
+              "update_seconds": 0.002383083017775789
+            },
+            {
+              "batch_hash": "620d36a86ef2b6776ae520a3ff9758ed30c759cd5d091db82505066dcd68b514",
+              "cursor": {
+                "carry": [
+                  240,
+                  "document-011",
+                  61,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 11,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 62,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 0.8328619599342346,
+              "loss": 5.397716045379639,
+              "scored_tokens": 127,
+              "step": 12,
+              "update_seconds": 0.002422999998088926
+            }
+          ]
+        },
+        "path": "training/20260927T051629-pretrain-d51cb4e3",
+        "status": {
+          "elapsed_seconds": 0.08778366699698381,
+          "error": null,
+          "status": "COMPLETED"
+        }
+      },
+      "partial": {
+        "checkpoint_sha256": "b99b7c4894c71e17bf0bfeab829b3caf036ab10c47e95a7fa2897e9a36c3369d",
+        "metrics": {
+          "final": {
+            "batches": 4,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 509,
+            "token_nll": 5.519104363641945
+          },
+          "initial": {
+            "batches": 4,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 509,
+            "token_nll": 5.684565156288372
+          },
+          "parameters": 27904,
+          "scope": "local CPU integration timing including data/batching; excludes checkpoint/evaluation; not VIT throughput",
+          "scored_tokens_per_update_second": 48562.6351790008,
+          "scored_tokens_this_run": 763,
+          "scored_tokens_total": 763,
+          "update_seconds": 0.015711667976574972,
+          "updates": [
+            {
+              "batch_hash": "824966303ea80c56d6d0f5c15fcb195671335be2aad7fe0101d72dfd695e0af1",
+              "cursor": {
+                "carry": [
+                  116,
+                  "document-000",
+                  128,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 0,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 129,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 0.8867290019989014,
+              "loss": 5.681110858917236,
+              "scored_tokens": 128,
+              "step": 1,
+              "update_seconds": 0.0031382919987663627
+            },
+            {
+              "batch_hash": "a9cda9d157b55974365cefcdb09d0f0b2f6812867302b2dbfa0b0480a25cfed9",
+              "cursor": {
+                "carry": [
+                  108,
+                  "document-001",
+                  125,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 1,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 126,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 0.9198099374771118,
+              "loss": 5.6696248054504395,
+              "scored_tokens": 127,
+              "step": 2,
+              "update_seconds": 0.002562917012255639
+            },
+            {
+              "batch_hash": "09b5398e5f2587f693ae11b59758a64941269a3170231820b3bf73245f712671",
+              "cursor": {
+                "carry": [
+                  105,
+                  "document-002",
+                  123,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 2,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 124,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 0.944946825504303,
+              "loss": 5.662557125091553,
+              "scored_tokens": 127,
+              "step": 3,
+              "update_seconds": 0.0024872919893823564
+            },
+            {
+              "batch_hash": "7ee2ac25dcd386dd8f3f3321733a39335349299c522c06cfee41987225a00d9f",
+              "cursor": {
+                "carry": [
+                  274,
+                  "document-003",
+                  120,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 3,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 121,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 0.8712020516395569,
+              "loss": 5.65826940536499,
+              "scored_tokens": 127,
+              "step": 4,
+              "update_seconds": 0.0024802499974612147
+            },
+            {
+              "batch_hash": "0012bc381e62f61813a8e4a4e7f6e0496b7e91a781717b9b368a6dbef575ebfa",
+              "cursor": {
+                "carry": [
+                  97,
+                  "document-004",
+                  99,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 4,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 100,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 1.1880428791046143,
+              "loss": 5.549871921539307,
+              "scored_tokens": 127,
+              "step": 5,
+              "update_seconds": 0.002469874976668507
+            },
+            {
+              "batch_hash": "288acc6f6903c73b5fcf3c79e5c1ae4e14a49a03cceed34dd297894a19bcab20",
+              "cursor": {
+                "carry": [
+                  32,
+                  "document-005",
+                  96,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 5,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 97,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 1.1902536153793335,
+              "loss": 5.5174407958984375,
+              "scored_tokens": 127,
+              "step": 6,
+              "update_seconds": 0.002573042002040893
+            }
+          ]
+        },
+        "path": "training/20260927T051629-pretrain-a2b8d8b9",
+        "status": {
+          "elapsed_seconds": 0.06960020799306221,
+          "error": null,
+          "status": "COMPLETED"
+        }
+      },
+      "resumed": {
+        "checkpoint_sha256": "86de415538bd5a6d5cab142c1bd3c903076ff951fa14fc6aa47cd3186a1a74e8",
+        "metrics": {
+          "final": {
+            "batches": 4,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 509,
+            "token_nll": 5.3225514949656185
+          },
+          "initial": {
+            "batches": 4,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 509,
+            "token_nll": 5.519104363641945
+          },
+          "parameters": 27904,
+          "scope": "local CPU integration timing including data/batching; excludes checkpoint/evaluation; not VIT throughput",
+          "scored_tokens_per_update_second": 49072.38068845294,
+          "scored_tokens_this_run": 762,
+          "scored_tokens_total": 1525,
+          "update_seconds": 0.015528082993114367,
+          "updates": [
+            {
+              "batch_hash": "7ae6fba556339069a10c91dd90e9bfa9b13e965a5697d78bc2b0426587d93f72",
+              "cursor": {
+                "carry": [
+                  78,
+                  "document-006",
+                  94,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 6,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 95,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 1.2870649099349976,
+              "loss": 5.53468132019043,
+              "scored_tokens": 127,
+              "step": 7,
+              "update_seconds": 0.002929417008999735
+            },
+            {
+              "batch_hash": "0acabd4b1a2267687f4ab84c7cf51e5a4de3f3a2f8a11e26a2ad0557a29450d2",
+              "cursor": {
+                "carry": [
+                  111,
+                  "document-007",
+                  91,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 7,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 92,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 1.1743534803390503,
+              "loss": 5.561805248260498,
+              "scored_tokens": 127,
+              "step": 8,
+              "update_seconds": 0.002559707994805649
+            },
+            {
+              "batch_hash": "136f31bba781b28f46ca342993b2551ab374f3cf02a403969d1202691cc2694c",
+              "cursor": {
+                "carry": [
+                  271,
+                  "document-008",
+                  70,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 8,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 71,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 0.9887560606002808,
+              "loss": 5.3975324630737305,
+              "scored_tokens": 127,
+              "step": 9,
+              "update_seconds": 0.0024831249902490526
+            },
+            {
+              "batch_hash": "a3d8fc025c5e2e26e19b9db7ed6d13f9114a715e7a4ba22f414526625a0e9041",
+              "cursor": {
+                "carry": [
+                  41,
+                  "document-009",
+                  67,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 9,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 68,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 0.9129331111907959,
+              "loss": 5.373879909515381,
+              "scored_tokens": 127,
+              "step": 10,
+              "update_seconds": 0.0024126250064000487
+            },
+            {
+              "batch_hash": "f9d6155d36d2e2b1d2c0785be18bf373dd924246c419697a56be150ebcea2b72",
+              "cursor": {
+                "carry": [
+                  263,
+                  "document-010",
+                  65,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 10,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 66,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 0.98847496509552,
+              "loss": 5.376962184906006,
+              "scored_tokens": 127,
+              "step": 11,
+              "update_seconds": 0.0024150829995051026
+            },
+            {
+              "batch_hash": "620d36a86ef2b6776ae520a3ff9758ed30c759cd5d091db82505066dcd68b514",
+              "cursor": {
+                "carry": [
+                  240,
+                  "document-011",
+                  61,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 11,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 62,
+                "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+              },
+              "gradient_norm": 0.8328619599342346,
+              "loss": 5.397716045379639,
+              "scored_tokens": 127,
+              "step": 12,
+              "update_seconds": 0.002728124993154779
+            }
+          ]
+        },
+        "path": "training/20260927T051629-pretrain-3e1d44ce",
+        "status": {
+          "elapsed_seconds": 0.07571295797242783,
+          "error": null,
+          "status": "COMPLETED"
+        }
+      }
+    },
+    "byte": {
+      "exact_resume": {
+        "continued_batch_hashes": true,
+        "corpus_hash": true,
+        "cursor": true,
+        "model": true,
+        "optimizer": true,
+        "scored_tokens": true,
+        "stable_config": true,
+        "step": true,
+        "tokenizer": true,
+        "torch_rng": true,
+        "validation_metrics": true
+      },
+      "full": {
+        "checkpoint_sha256": "b3750ce396d6c0e8ad56d199867ff1c0d097ec7b985a1f0ff522a3155bd721d3",
+        "metrics": {
+          "final": {
+            "batches": 4,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 510,
+            "token_nll": 5.045080925436581
+          },
+          "initial": {
+            "batches": 4,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 510,
+            "token_nll": 5.585033700980392
+          },
+          "parameters": 26880,
+          "scope": "local CPU integration timing including data/batching; excludes checkpoint/evaluation; not VIT throughput",
+          "scored_tokens_per_update_second": 42372.45122744467,
+          "scored_tokens_this_run": 1528,
+          "scored_tokens_total": 1528,
+          "update_seconds": 0.036061166058061644,
+          "updates": [
+            {
+              "batch_hash": "8e46e14774d399c8a474d5467017faf3b815e98c67400509fb13621290e5ce8b",
+              "cursor": {
+                "carry": [
+                  110,
+                  "document-000",
+                  128,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 0,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 129,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.123511552810669,
+              "loss": 5.594471454620361,
+              "scored_tokens": 128,
+              "step": 1,
+              "update_seconds": 0.011888375011039898
+            },
+            {
+              "batch_hash": "e8a1ab8a4d02eaf9c01aa922ed38524f58eb8b0d6f800a00b161eec85d0517f1",
+              "cursor": {
+                "carry": [
+                  116,
+                  "document-001",
+                  71,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 1,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 72,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.528438687324524,
+              "loss": 5.555296897888184,
+              "scored_tokens": 127,
+              "step": 2,
+              "update_seconds": 0.002463374985381961
+            },
+            {
+              "batch_hash": "39675e51c63cee5c24028659fd6297d9616dfa7cad654eb5c38a4a771c09db5b",
+              "cursor": {
+                "carry": [
+                  46,
+                  "document-002",
+                  18,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 2,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 19,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.5760387182235718,
+              "loss": 5.499443531036377,
+              "scored_tokens": 127,
+              "step": 3,
+              "update_seconds": 0.002153499983251095
+            },
+            {
+              "batch_hash": "cab9e8a15b29cd33a077da8bc42619bacf0897846d58675600847be1dede5fd0",
+              "cursor": {
+                "carry": [
+                  101,
+                  "document-002",
+                  146,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 2,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 147,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.6241101026535034,
+              "loss": 5.487436771392822,
+              "scored_tokens": 128,
+              "step": 4,
+              "update_seconds": 0.0019487500248942524
+            },
+            {
+              "batch_hash": "6fcb7a4ebc3550bc6926b6c4c3ddfe5ef5cf7ab3f7c99a3777c2ec884450a77c",
+              "cursor": {
+                "carry": [
+                  85,
+                  "document-003",
+                  90,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 3,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 91,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.3900840282440186,
+              "loss": 5.469630241394043,
+              "scored_tokens": 127,
+              "step": 5,
+              "update_seconds": 0.0022989170101936907
+            },
+            {
+              "batch_hash": "f142dc3b452cf5c000494a09a2f422908a672daa1ab0e40ec4b62da7e09d1e61",
+              "cursor": {
+                "carry": [
+                  52,
+                  "document-004",
+                  21,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 4,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 22,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.7771248817443848,
+              "loss": 5.36248779296875,
+              "scored_tokens": 127,
+              "step": 6,
+              "update_seconds": 0.0024878749973140657
+            },
+            {
+              "batch_hash": "31d295ca0f48a8b1a73f2c138ded8b37aa1d212da3d81531b751d8d85c581fc4",
+              "cursor": {
+                "carry": [
+                  116,
+                  "document-004",
+                  149,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 4,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 150,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.5734130144119263,
+              "loss": 5.302581787109375,
+              "scored_tokens": 128,
+              "step": 7,
+              "update_seconds": 0.0020610420033335686
+            },
+            {
+              "batch_hash": "d2bb39b2f53d8d7de9c8f8d29cb4235b23c32229a6da152b9a2b0b38ebb12f3d",
+              "cursor": {
+                "carry": [
+                  97,
+                  "document-005",
+                  92,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 5,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 93,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.4546657800674438,
+              "loss": 5.225513458251953,
+              "scored_tokens": 127,
+              "step": 8,
+              "update_seconds": 0.0021807500161230564
+            },
+            {
+              "batch_hash": "72b8b86aa263c271bf49113e546b1e1fff2d24f8658ece5e9557c52d90180e7d",
+              "cursor": {
+                "carry": [
+                  111,
+                  "document-006",
+                  39,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 6,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 40,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.401207447052002,
+              "loss": 5.20151948928833,
+              "scored_tokens": 127,
+              "step": 9,
+              "update_seconds": 0.0021963750186841935
+            },
+            {
+              "batch_hash": "d2f9e17a47742e4a258904bb8bf3292d46b8c923d6a4cbf58e0a3f0dfbfa0850",
+              "cursor": {
+                "carry": [
+                  32,
+                  "document-006",
+                  167,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 6,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 168,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.5421892404556274,
+              "loss": 5.1981658935546875,
+              "scored_tokens": 128,
+              "step": 10,
+              "update_seconds": 0.001993625017348677
+            },
+            {
+              "batch_hash": "bf8159047f54a3644826aa6e39e0f1b7ee33919cbc71f0a2d0a636fb6ebaf7a3",
+              "cursor": {
+                "carry": [
+                  101,
+                  "document-007",
+                  111,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 7,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 112,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 2.1163928508758545,
+              "loss": 5.346017360687256,
+              "scored_tokens": 127,
+              "step": 11,
+              "update_seconds": 0.0021637910103891045
+            },
+            {
+              "batch_hash": "f6988de1d9cfe36ef1bd9e215b2c302ebca8b157701f9b0836cdd37e5e702d97",
+              "cursor": {
+                "carry": [
+                  101,
+                  "document-008",
+                  42,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 8,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 43,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.4286340475082397,
+              "loss": 5.0476226806640625,
+              "scored_tokens": 127,
+              "step": 12,
+              "update_seconds": 0.0022247909801080823
+            }
+          ]
+        },
+        "path": "training/20260927T051628-pretrain-8f42e897",
+        "status": {
+          "elapsed_seconds": 0.5193887499917764,
+          "error": null,
+          "status": "COMPLETED"
+        }
+      },
+      "partial": {
+        "checkpoint_sha256": "8fcf5887af193b0160185d1923dfc1fdf0a8b7dd949ef1a5050c83a2961d8b94",
+        "metrics": {
+          "final": {
+            "batches": 4,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 510,
+            "token_nll": 5.3027587890625
+          },
+          "initial": {
+            "batches": 4,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 510,
+            "token_nll": 5.585033700980392
+          },
+          "parameters": 26880,
+          "scope": "local CPU integration timing including data/batching; excludes checkpoint/evaluation; not VIT throughput",
+          "scored_tokens_per_update_second": 53516.70229868368,
+          "scored_tokens_this_run": 764,
+          "scored_tokens_total": 764,
+          "update_seconds": 0.014275916997576132,
+          "updates": [
+            {
+              "batch_hash": "8e46e14774d399c8a474d5467017faf3b815e98c67400509fb13621290e5ce8b",
+              "cursor": {
+                "carry": [
+                  110,
+                  "document-000",
+                  128,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 0,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 129,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.123511552810669,
+              "loss": 5.594471454620361,
+              "scored_tokens": 128,
+              "step": 1,
+              "update_seconds": 0.0026643750024959445
+            },
+            {
+              "batch_hash": "e8a1ab8a4d02eaf9c01aa922ed38524f58eb8b0d6f800a00b161eec85d0517f1",
+              "cursor": {
+                "carry": [
+                  116,
+                  "document-001",
+                  71,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 1,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 72,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.528438687324524,
+              "loss": 5.555296897888184,
+              "scored_tokens": 127,
+              "step": 2,
+              "update_seconds": 0.0023604999878443778
+            },
+            {
+              "batch_hash": "39675e51c63cee5c24028659fd6297d9616dfa7cad654eb5c38a4a771c09db5b",
+              "cursor": {
+                "carry": [
+                  46,
+                  "document-002",
+                  18,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 2,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 19,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.5760387182235718,
+              "loss": 5.499443531036377,
+              "scored_tokens": 127,
+              "step": 3,
+              "update_seconds": 0.0022829170047771186
+            },
+            {
+              "batch_hash": "cab9e8a15b29cd33a077da8bc42619bacf0897846d58675600847be1dede5fd0",
+              "cursor": {
+                "carry": [
+                  101,
+                  "document-002",
+                  146,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 2,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 147,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.6241101026535034,
+              "loss": 5.487436771392822,
+              "scored_tokens": 128,
+              "step": 4,
+              "update_seconds": 0.0019735829846467823
+            },
+            {
+              "batch_hash": "6fcb7a4ebc3550bc6926b6c4c3ddfe5ef5cf7ab3f7c99a3777c2ec884450a77c",
+              "cursor": {
+                "carry": [
+                  85,
+                  "document-003",
+                  90,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 3,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 91,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.3900840282440186,
+              "loss": 5.469630241394043,
+              "scored_tokens": 127,
+              "step": 5,
+              "update_seconds": 0.002755082998191938
+            },
+            {
+              "batch_hash": "f142dc3b452cf5c000494a09a2f422908a672daa1ab0e40ec4b62da7e09d1e61",
+              "cursor": {
+                "carry": [
+                  52,
+                  "document-004",
+                  21,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 4,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 22,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.7771248817443848,
+              "loss": 5.36248779296875,
+              "scored_tokens": 127,
+              "step": 6,
+              "update_seconds": 0.0022394590196199715
+            }
+          ]
+        },
+        "path": "training/20260927T051629-pretrain-96532bd6",
+        "status": {
+          "elapsed_seconds": 0.07761083298828453,
+          "error": null,
+          "status": "COMPLETED"
+        }
+      },
+      "resumed": {
+        "checkpoint_sha256": "d95714c7ac2fc0cedb473b9ddf98b07fa3a669eb296f9064fa1751e530a451ea",
+        "metrics": {
+          "final": {
+            "batches": 4,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 510,
+            "token_nll": 5.045080925436581
+          },
+          "initial": {
+            "batches": 4,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 510,
+            "token_nll": 5.3027587890625
+          },
+          "parameters": 26880,
+          "scope": "local CPU integration timing including data/batching; excludes checkpoint/evaluation; not VIT throughput",
+          "scored_tokens_per_update_second": 56711.08929844814,
+          "scored_tokens_this_run": 764,
+          "scored_tokens_total": 1528,
+          "update_seconds": 0.013471792015479878,
+          "updates": [
+            {
+              "batch_hash": "31d295ca0f48a8b1a73f2c138ded8b37aa1d212da3d81531b751d8d85c581fc4",
+              "cursor": {
+                "carry": [
+                  116,
+                  "document-004",
+                  149,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 4,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 150,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.5734130144119263,
+              "loss": 5.302581787109375,
+              "scored_tokens": 128,
+              "step": 7,
+              "update_seconds": 0.0024082500021904707
+            },
+            {
+              "batch_hash": "d2bb39b2f53d8d7de9c8f8d29cb4235b23c32229a6da152b9a2b0b38ebb12f3d",
+              "cursor": {
+                "carry": [
+                  97,
+                  "document-005",
+                  92,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 5,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 93,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.4546657800674438,
+              "loss": 5.225513458251953,
+              "scored_tokens": 127,
+              "step": 8,
+              "update_seconds": 0.002244959003292024
+            },
+            {
+              "batch_hash": "72b8b86aa263c271bf49113e546b1e1fff2d24f8658ece5e9557c52d90180e7d",
+              "cursor": {
+                "carry": [
+                  111,
+                  "document-006",
+                  39,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 6,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 40,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.401207447052002,
+              "loss": 5.20151948928833,
+              "scored_tokens": 127,
+              "step": 9,
+              "update_seconds": 0.002282250003190711
+            },
+            {
+              "batch_hash": "d2f9e17a47742e4a258904bb8bf3292d46b8c923d6a4cbf58e0a3f0dfbfa0850",
+              "cursor": {
+                "carry": [
+                  32,
+                  "document-006",
+                  167,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 6,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 168,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.5421892404556274,
+              "loss": 5.1981658935546875,
+              "scored_tokens": 128,
+              "step": 10,
+              "update_seconds": 0.0021835000079590827
+            },
+            {
+              "batch_hash": "bf8159047f54a3644826aa6e39e0f1b7ee33919cbc71f0a2d0a636fb6ebaf7a3",
+              "cursor": {
+                "carry": [
+                  101,
+                  "document-007",
+                  111,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 7,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 112,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 2.1163928508758545,
+              "loss": 5.346017360687256,
+              "scored_tokens": 127,
+              "step": 11,
+              "update_seconds": 0.002221458009444177
+            },
+            {
+              "batch_hash": "f6988de1d9cfe36ef1bd9e215b2c302ebca8b157701f9b0836cdd37e5e702d97",
+              "cursor": {
+                "carry": [
+                  101,
+                  "document-008",
+                  42,
+                  0
+                ],
+                "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+                "document_index": 8,
+                "epoch": 0,
+                "repeat": true,
+                "schema": "aim-packed-token-cursor-v1",
+                "split": "train",
+                "token_offset": 43,
+                "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+              },
+              "gradient_norm": 1.4286340475082397,
+              "loss": 5.0476226806640625,
+              "scored_tokens": 127,
+              "step": 12,
+              "update_seconds": 0.0021313749894034117
+            }
+          ]
+        },
+        "path": "training/20260927T051629-pretrain-6f938caf",
+        "status": {
+          "elapsed_seconds": 0.0718634579970967,
+          "error": null,
+          "status": "COMPLETED"
+        }
+      }
+    }
+  },
+  "recovery": {
+    "checkpoint_sha256": "21deb726bafa59e7c2c8872887e042a73e8be0d862dab991a82478662850357f",
+    "exact_recovery": {
+      "continued_batch_hashes": true,
+      "corpus_hash": true,
+      "cursor": true,
+      "model": true,
+      "optimizer": true,
+      "scored_tokens": true,
+      "stable_config": true,
+      "step": true,
+      "tokenizer": true,
+      "torch_rng": true,
+      "validation_metrics": true
+    },
+    "failed_path": "interruption-drill/20260927T051629-pretrain-664ec44c",
+    "failed_status": {
+      "elapsed_seconds": 0.0570291250187438,
+      "error": "Deliberate recovery drill: interrupt immediately after durable checkpoint publication",
+      "status": "FAILED"
+    },
+    "recovered": {
+      "checkpoint_sha256": "07c1918a089bff1473b086864f301fb1e583bdc70724bdaa4a2fb35d155ef26d",
+      "metrics": {
+        "final": {
+          "batches": 4,
+          "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+          "scored_tokens": 510,
+          "token_nll": 5.045080925436581
+        },
+        "initial": {
+          "batches": 4,
+          "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+          "scored_tokens": 510,
+          "token_nll": 5.404007257199755
+        },
+        "parameters": 26880,
+        "scope": "local CPU integration timing including data/batching; excludes checkpoint/evaluation; not VIT throughput",
+        "scored_tokens_per_update_second": 56021.2746331766,
+        "scored_tokens_this_run": 1018,
+        "scored_tokens_total": 1528,
+        "update_seconds": 0.018171667936258018,
+        "updates": [
+          {
+            "batch_hash": "6fcb7a4ebc3550bc6926b6c4c3ddfe5ef5cf7ab3f7c99a3777c2ec884450a77c",
+            "cursor": {
+              "carry": [
+                85,
+                "document-003",
+                90,
+                0
+              ],
+              "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+              "document_index": 3,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 91,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "gradient_norm": 1.3900840282440186,
+            "loss": 5.469630241394043,
+            "scored_tokens": 127,
+            "step": 5,
+            "update_seconds": 0.002656166994711384
+          },
+          {
+            "batch_hash": "f142dc3b452cf5c000494a09a2f422908a672daa1ab0e40ec4b62da7e09d1e61",
+            "cursor": {
+              "carry": [
+                52,
+                "document-004",
+                21,
+                0
+              ],
+              "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+              "document_index": 4,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 22,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "gradient_norm": 1.7771248817443848,
+            "loss": 5.36248779296875,
+            "scored_tokens": 127,
+            "step": 6,
+            "update_seconds": 0.0022173750039655715
+          },
+          {
+            "batch_hash": "31d295ca0f48a8b1a73f2c138ded8b37aa1d212da3d81531b751d8d85c581fc4",
+            "cursor": {
+              "carry": [
+                116,
+                "document-004",
+                149,
+                0
+              ],
+              "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+              "document_index": 4,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 150,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "gradient_norm": 1.5734130144119263,
+            "loss": 5.302581787109375,
+            "scored_tokens": 128,
+            "step": 7,
+            "update_seconds": 0.0019871249969583005
+          },
+          {
+            "batch_hash": "d2bb39b2f53d8d7de9c8f8d29cb4235b23c32229a6da152b9a2b0b38ebb12f3d",
+            "cursor": {
+              "carry": [
+                97,
+                "document-005",
+                92,
+                0
+              ],
+              "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+              "document_index": 5,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 93,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "gradient_norm": 1.4546657800674438,
+            "loss": 5.225513458251953,
+            "scored_tokens": 127,
+            "step": 8,
+            "update_seconds": 0.0021199589828029275
+          },
+          {
+            "batch_hash": "72b8b86aa263c271bf49113e546b1e1fff2d24f8658ece5e9557c52d90180e7d",
+            "cursor": {
+              "carry": [
+                111,
+                "document-006",
+                39,
+                0
+              ],
+              "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+              "document_index": 6,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 40,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "gradient_norm": 1.401207447052002,
+            "loss": 5.20151948928833,
+            "scored_tokens": 127,
+            "step": 9,
+            "update_seconds": 0.0026575000083539635
+          },
+          {
+            "batch_hash": "d2f9e17a47742e4a258904bb8bf3292d46b8c923d6a4cbf58e0a3f0dfbfa0850",
+            "cursor": {
+              "carry": [
+                32,
+                "document-006",
+                167,
+                0
+              ],
+              "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+              "document_index": 6,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 168,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "gradient_norm": 1.5421892404556274,
+            "loss": 5.1981658935546875,
+            "scored_tokens": 128,
+            "step": 10,
+            "update_seconds": 0.0020513329945970327
+          },
+          {
+            "batch_hash": "bf8159047f54a3644826aa6e39e0f1b7ee33919cbc71f0a2d0a636fb6ebaf7a3",
+            "cursor": {
+              "carry": [
+                101,
+                "document-007",
+                111,
+                0
+              ],
+              "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+              "document_index": 7,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 112,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "gradient_norm": 2.1163928508758545,
+            "loss": 5.346017360687256,
+            "scored_tokens": 127,
+            "step": 11,
+            "update_seconds": 0.0023140419798437506
+          },
+          {
+            "batch_hash": "f6988de1d9cfe36ef1bd9e215b2c302ebca8b157701f9b0836cdd37e5e702d97",
+            "cursor": {
+              "carry": [
+                101,
+                "document-008",
+                42,
+                0
+              ],
+              "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+              "document_index": 8,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 43,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "gradient_norm": 1.4286340475082397,
+            "loss": 5.0476226806640625,
+            "scored_tokens": 127,
+            "step": 12,
+            "update_seconds": 0.0021681669750250876
+          }
+        ]
+      },
+      "path": "training/20260927T051630-pretrain-9ccfd490",
+      "status": {
+        "elapsed_seconds": 0.07706874998984858,
+        "error": null,
+        "status": "COMPLETED"
+      }
+    },
+    "scope": "application-level injected exception; not an OS kill, power loss or distributed fault"
+  },
+  "scope": "native next-token infrastructure on constructed text; no research-capability result",
+  "sft_bridge": {
+    "checkpoint_sha256": "03efb825250f6730a6f29fe566dab57cc9e451b038a78b46722087349f305387",
+    "metrics": {
+      "dataset_version": "aim-procedural-v1",
+      "final": {
+        "bounded_candidate_expected_reward": 0.344134618746466,
+        "label_origins": [
+          "procedural-exact-arithmetic; not human feedback"
+        ],
+        "n": 32,
+        "preference_accuracy": 0.78125,
+        "response_token_nll": 5.36021614074707
+      },
+      "initial": {
+        "bounded_candidate_expected_reward": 0.3608294226723956,
+        "label_origins": [
+          "procedural-exact-arithmetic; not human feedback"
+        ],
+        "n": 32,
+        "preference_accuracy": 0.6875,
+        "response_token_nll": 5.4796977043151855
+      },
+      "parameters": 26880,
+      "scope": "miniature training mechanism; no capability claim",
+      "updates": [
+        {
+          "grad_norm": 7.874968528747559,
+          "loss": 5.5159454345703125,
+          "step": 1,
+          "supervised_tokens": 4
+        },
+        {
+          "grad_norm": 4.696880340576172,
+          "loss": 5.377723693847656,
+          "step": 2,
+          "supervised_tokens": 4
+        }
+      ]
+    },
+    "path": "sft/20260927T051630-train-sft-ebfcefeb",
+    "status": {
+      "elapsed_seconds": 0.1245585409924388,
+      "error": null,
+      "status": "COMPLETED"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "bpe": {
+    "bytes_per_token": 1.3828996282527881,
+    "documents": [
+      {
+        "bytes": 184,
+        "characters": 184,
+        "id": "document-012",
+        "round_trip": true,
+        "tokens": 130,
+        "type": "prose"
+      },
+      {
+        "bytes": 181,
+        "characters": 181,
+        "id": "document-013",
+        "round_trip": true,
+        "tokens": 130,
+        "type": "code"
+      },
+      {
+        "bytes": 183,
+        "characters": 183,
+        "id": "document-014",
+        "round_trip": true,
+        "tokens": 130,
+        "type": "math"
+      },
+      {
+        "bytes": 196,
+        "characters": 174,
+        "id": "document-015",
+        "round_trip": true,
+        "tokens": 148,
+        "type": "unicode"
+      }
+    ],
+    "scope": "compression and reversibility only; no model-quality comparison",
+    "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6",
+    "vocab_size": 291
+  },
+  "byte": {
+    "bytes_per_token": 1.0,
+    "documents": [
+      {
+        "bytes": 184,
+        "characters": 184,
+        "id": "document-012",
+        "round_trip": true,
+        "tokens": 184,
+        "type": "prose"
+      },
+      {
+        "bytes": 181,
+        "characters": 181,
+        "id": "document-013",
+        "round_trip": true,
+        "tokens": 181,
+        "type": "code"
+      },
+      {
+        "bytes": 183,
+        "characters": 183,
+        "id": "document-014",
+        "round_trip": true,
+        "tokens": 183,
+        "type": "math"
+      },
+      {
+        "bytes": 196,
+        "characters": 174,
+        "id": "document-015",
+        "round_trip": true,
+        "tokens": 196,
+        "type": "unicode"
+      }
+    ],
+    "scope": "compression and reversibility only; no model-quality comparison",
+    "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6",
+    "vocab_size": 259
+  }
+}

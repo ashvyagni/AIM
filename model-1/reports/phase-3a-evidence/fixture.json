@@ -1,0 +1,142 @@
+[
+  {
+    "id": "document-000",
+    "sha256": "66f9330f225dfbd716ef25c8c9cba5cd6cb77445df93b397a0277a35d1234212",
+    "split": "train",
+    "text": "Engineering example 0. A research claim records its assumptions and sources. A checker may pass, fail, or remain unresolved. Confidence is a forecast; retain the actual check result.\n",
+    "type": "prose"
+  },
+  {
+    "id": "document-001",
+    "sha256": "90b6967fc78aedd140ccec82b24ed20309930a09326265a20ca35f8a41e57f59",
+    "split": "train",
+    "text": "# Project-generated Python text example 1; stored as data, never executed.\ndef identity_1(value):\n    return value\n# The document boundary and the source version remain explicit.\n",
+    "type": "code"
+  },
+  {
+    "id": "document-002",
+    "sha256": "6d5f880a9b40ce36606f77f081b91174e1b69b29c7e2282152eef91e68472a6e",
+    "split": "train",
+    "text": "Algebra example 2. Over rational polynomials, x + 0 = x and (x + 1)**2 = x**2 + 2*x + 1. An equality check must state its domain. Numerical samples alone do not prove this identity.\n",
+    "type": "math"
+  },
+  {
+    "id": "document-003",
+    "sha256": "0a12fb416f04698aa2fa8c905c4a4ff979ec3461aa7b4aadc55da0fc52f6b728",
+    "split": "train",
+    "text": "Unicode round-trip example 3: α + β; हिन्दी; 数学; café; 🧪. Preserve UTF-8 bytes and source provenance. This is constructed tokenizer test text, not a scientific observation.\n",
+    "type": "unicode"
+  },
+  {
+    "id": "document-004",
+    "sha256": "cda4ae360e889f0dacfdea2cac934b0312745c1f56c9fe7eb429beb79b6e990b",
+    "split": "train",
+    "text": "Engineering example 4. A research claim records its assumptions and sources. A checker may pass, fail, or remain unresolved. Confidence is a forecast; retain the actual check result.\n",
+    "type": "prose"
+  },
+  {
+    "id": "document-005",
+    "sha256": "de965fcb641d1af0a55a30a2947a7bdab78dd07191d86ca4b95bdcc7c6ea4f9b",
+    "split": "train",
+    "text": "# Project-generated Python text example 5; stored as data, never executed.\ndef identity_5(value):\n    return value\n# The document boundary and the source version remain explicit.\n",
+    "type": "code"
+  },
+  {
+    "id": "document-006",
+    "sha256": "bbfc80f4f90cb9511d91723a8cc3b6eacc59e3d7b53fe893181185cd9783d5f8",
+    "split": "train",
+    "text": "Algebra example 6. Over rational polynomials, x + 0 = x and (x + 1)**2 = x**2 + 2*x + 1. An equality check must state its domain. Numerical samples alone do not prove this identity.\n",
+    "type": "math"
+  },
+  {
+    "id": "document-007",
+    "sha256": "86791274c9979a95698641a98281c57fdb534d5d1b1c2491aaa4b0c9580636d1",
+    "split": "train",
+    "text": "Unicode round-trip example 7: α + β; हिन्दी; 数学; café; 🧪. Preserve UTF-8 bytes and source provenance. This is constructed tokenizer test text, not a scientific observation.\n",
+    "type": "unicode"
+  },
+  {
+    "id": "document-008",
+    "sha256": "d11f1f7c1f24508280d990ab1e1a299f0d84cf78284865f4d9d84b64d02bb67a",
+    "split": "train",
+    "text": "Engineering example 8. A research claim records its assumptions and sources. A checker may pass, fail, or remain unresolved. Confidence is a forecast; retain the actual check result.\n",
+    "type": "prose"
+  },
+  {
+    "id": "document-009",
+    "sha256": "0556212f4ee671a4d1bd615e99c074fb74101e4b430897739e58da50b03dd5fc",
+    "split": "train",
+    "text": "# Project-generated Python text example 9; stored as data, never executed.\ndef identity_9(value):\n    return value\n# The document boundary and the source version remain explicit.\n",
+    "type": "code"
+  },
+  {
+    "id": "document-010",
+    "sha256": "f1f184fe4c64dc3cb34a51e3d7dd20c4d70b6e7b3ae7ca336c351ef36da854a1",
+    "split": "train",
+    "text": "Algebra example 10. Over rational polynomials, x + 0 = x and (x + 1)**2 = x**2 + 2*x + 1. An equality check must state its domain. Numerical samples alone do not prove this identity.\n",
+    "type": "math"
+  },
+  {
+    "id": "document-011",
+    "sha256": "fbd7ed4a3ee0382f8911e162eab0f5218834b6ad6cae6cdb81e1544659785730",
+    "split": "train",
+    "text": "Unicode round-trip example 11: α + β; हिन्दी; 数学; café; 🧪. Preserve UTF-8 bytes and source provenance. This is constructed tokenizer test text, not a scientific observation.\n",
+    "type": "unicode"
+  },
+  {
+    "id": "document-012",
+    "sha256": "d8256b1e50a310d5dfe81094d070530c32eab6cbf53a19e4912637f839f4e087",
+    "split": "validation",
+    "text": "Engineering example 12. A research claim records its assumptions and sources. A checker may pass, fail, or remain unresolved. Confidence is a forecast; retain the actual check result.\n",
+    "type": "prose"
+  },
+  {
+    "id": "document-013",
+    "sha256": "a924ad8842944fd275847cf47b9e19b681fa4a2cf80cd5d492cb4a068f732a87",
+    "split": "validation",
+    "text": "# Project-generated Python text example 13; stored as data, never executed.\ndef identity_13(value):\n    return value\n# The document boundary and the source version remain explicit.\n",
+    "type": "code"
+  },
+  {
+    "id": "document-014",
+    "sha256": "4b698d5ecc00b2fbb47bdb4aa2759927626354043072693d03dc5902ed19730f",
+    "split": "validation",
+    "text": "Algebra example 14. Over rational polynomials, x + 0 = x and (x + 1)**2 = x**2 + 2*x + 1. An equality check must state its domain. Numerical samples alone do not prove this identity.\n",
+    "type": "math"
+  },
+  {
+    "id": "document-015",
+    "sha256": "904d93abbf158f25b98f7599fe7ee314fec523b2a438f96c3b8033412fabcaf0",
+    "split": "validation",
+    "text": "Unicode round-trip example 15: α + β; हिन्दी; 数学; café; 🧪. Preserve UTF-8 bytes and source provenance. This is constructed tokenizer test text, not a scientific observation.\n",
+    "type": "unicode"
+  },
+  {
+    "id": "document-016",
+    "sha256": "14405a972f0fbe3872e0fc008b0e052de70a0a286de522ebfc1288b6e71330ff",
+    "split": "test",
+    "text": "Engineering example 16. A research claim records its assumptions and sources. A checker may pass, fail, or remain unresolved. Confidence is a forecast; retain the actual check result.\n",
+    "type": "prose"
+  },
+  {
+    "id": "document-017",
+    "sha256": "36804eb20c08d5321bee71ec70684105d6d00777f9e0fce6ca507e5ccd9adfc9",
+    "split": "test",
+    "text": "# Project-generated Python text example 17; stored as data, never executed.\ndef identity_17(value):\n    return value\n# The document boundary and the source version remain explicit.\n",
+    "type": "code"
+  },
+  {
+    "id": "document-018",
+    "sha256": "bd356fe8afd01e498a0911c2469be2056a35357961cd32f8f7c27dbbf07f7dc7",
+    "split": "test",
+    "text": "Algebra example 18. Over rational polynomials, x + 0 = x and (x + 1)**2 = x**2 + 2*x + 1. An equality check must state its domain. Numerical samples alone do not prove this identity.\n",
+    "type": "math"
+  },
+  {
+    "id": "document-019",
+    "sha256": "b9b790d244a425b0f69caab596feb054ceb56aed9a88a8fb574d0f4c67781df4",
+    "split": "test",
+    "text": "Unicode round-trip example 19: α + β; हिन्दी; 数学; café; 🧪. Preserve UTF-8 bytes and source provenance. This is constructed tokenizer test text, not a scientific observation.\n",
+    "type": "unicode"
+  }
+]
