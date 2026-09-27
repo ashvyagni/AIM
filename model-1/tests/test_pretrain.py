@@ -33,6 +33,15 @@ class CorpusFixture(unittest.TestCase):
 
 
 class CorpusTests(CorpusFixture):
+    def test_portable_failure_trace_redacts_host_paths(self):
+        from aim.pretrain_reproduce import portable_traceback
+        from aim.tracking import ROOT
+        source = f'File "{ROOT}/aim/pretrain.py", line 4\nFile "/Users/private/runtime/mock.py", line 7\nFile "C:\\private\\mock.py", line 8'
+        result = portable_traceback(source)
+        self.assertNotIn("private", result)
+        self.assertIn('File "model-1/aim/pretrain.py"', result)
+        self.assertEqual(result.count('File "<runtime>/mock.py"'), 2)
+
     def test_intake_is_immutable_and_metadata_bound(self):
         corpus = self.corpus()
         self.assertEqual(len(corpus.index["documents"]), 20)

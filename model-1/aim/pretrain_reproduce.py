@@ -1,6 +1,7 @@
 """Build validation for corpus/tokenizer/pretraining, including a retained failed run."""
 import argparse
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -12,6 +13,16 @@ from .corpus_fixture import create_fixture
 from .pretrain import pretrain
 from .tokenization import ByteTokenizer, fit_bpe, compare_tokenizers
 from .tracking import ROOT, Run, file_hash, write_json
+
+
+def portable_traceback(text):
+    text = text.replace(str(ROOT), "model-1")
+    def frame(match):
+        path = match[1]
+        if path.startswith("/") or re.match(r"[A-Za-z]:[\\/]", path):
+            path = "<runtime>/"+path.replace("\\", "/").rsplit("/", 1)[-1]
+        return 'File "'+path+'"'
+    return re.sub(r'File "([^"]+)"', frame, text)
 
 
 def compare_checkpoints(full, resumed):
@@ -111,7 +122,7 @@ def export(path, destination):
     for name in ("results.json", "tests.log", "tokenizer-comparison.json", "byte-tokenizer.json", "bpe-tokenizer.json"):
         shutil.copyfile(path/name, destination/name)
     failure = (path/results["recovery"]["failed_path"]/"failure.txt").read_text()
-    (destination/"injected-failure.txt").write_text(failure.replace(str(ROOT), "model-1"))
+    (destination/"injected-failure.txt").write_text(portable_traceback(failure))
     corpus = Corpus(path/results["corpus"]["path"])
     # Review artifacts contain only this project-generated fixture. They are not
     # a generic exporter for external/private corpus text or source paths.
