@@ -8,6 +8,26 @@ from .tracking import Run
 def main():
     parser=argparse.ArgumentParser(description="AIM Model-1 engineering prototype")
     sub=parser.add_subparsers(dest="command",required=True)
+    distributed=sub.add_parser("distributed-pretrain")
+    distributed.add_argument("--corpus",type=Path,required=True)
+    distributed.add_argument("--config",type=Path,default=Path("configs/distributed-pretrain-smoke.json"))
+    distributed.add_argument("--tokenizer",type=Path)
+    distributed.add_argument("--ranks",type=int,choices=(1,2,4),default=2)
+    distributed.add_argument("--resume",type=Path)
+    distributed.add_argument("--runs",type=Path,default=Path("runs"))
+    distributed.add_argument("--deadline",type=int,default=180)
+    preflight=sub.add_parser("distributed-preflight")
+    preflight.add_argument("--corpus",type=Path,required=True)
+    preflight.add_argument("--config",type=Path,default=Path("configs/distributed-pretrain-smoke.json"))
+    preflight.add_argument("--tokenizer",type=Path)
+    preflight.add_argument("--ranks",type=int,default=2)
+    preflight.add_argument("--runs",type=Path,default=Path("runs"))
+    checkpoint=sub.add_parser("checkpoint-inspect")
+    checkpoint.add_argument("path",type=Path)
+    checkpoint.add_argument("--corpus",type=Path)
+    export=sub.add_parser("distributed-export")
+    export.add_argument("--checkpoint",type=Path,required=True)
+    export.add_argument("--runs",type=Path,default=Path("runs"))
     corpus=sub.add_parser("corpus-intake")
     corpus.add_argument("--manifest", type=Path, required=True)
     corpus.add_argument("--runs", type=Path, default=Path("runs"))
@@ -59,7 +79,31 @@ def main():
     bench.add_argument("--config",type=Path,default=Path("configs/benchmark.json"))
     bench.add_argument("--runs",type=Path,default=Path("runs"))
     args=parser.parse_args()
-    if args.command=="corpus-fixture":
+    if args.command in {"distributed-pretrain","distributed-preflight"}:
+        from .corpus import read_json
+        from .tokenization import tokenizer_from_spec
+        from .distributed_jobs import launch,preflight
+        from .tracking import write_json
+        config=read_json(args.config)
+        tokenizer=tokenizer_from_spec(read_json(args.tokenizer)) if args.tokenizer else None
+        if args.command=="distributed-pretrain":
+            print(launch(config,args.corpus,args.runs,args.ranks,tokenizer,args.resume,deadline=args.deadline))
+        else:
+            with Run(args.runs,"distributed-preflight",{"config":config,"world_size":args.ranks},[args.corpus,args.config]) as run:
+                write_json(run.path/"preflight.json",preflight(config,args.corpus,tokenizer,args.ranks))
+            print(run.path)
+    elif args.command=="checkpoint-inspect":
+        from .checkpoint_bundle import load_bundle,scan
+        from .distributed_jobs import audit_checkpoint
+        if (args.path/"bundle.json").is_file():
+            result=audit_checkpoint(args.path,args.corpus) if args.corpus else load_bundle(args.path)[2]
+        else:
+            result=scan(args.path)
+        print(json.dumps(result,indent=2))
+    elif args.command=="distributed-export":
+        from .distributed_jobs import export_initialization
+        print(export_initialization(args.checkpoint,args.runs))
+    elif args.command=="corpus-fixture":
         from .corpus_fixture import create_fixture
         print(create_fixture(args.output))
     elif args.command=="corpus-intake":

@@ -124,12 +124,13 @@ def _train_lm(config, run, initialize, resume):
     model = CausalLM(cfg)
     source = read_checkpoint(resume or initialize) if (resume or initialize) else None
     if source:
-        pretraining_initialization = bool(initialize and stage == "sft" and source.get("kind") == "pretraining_lm")
+        pretraining_initialization = bool(initialize and stage == "sft" and source.get("kind") in {"pretraining_lm", "pretraining_initialization"})
         if (source["kind"] != "causal_lm" and not pretraining_initialization) or source["model_config"] != asdict(cfg):
             raise ContractError("Checkpoint/model architecture mismatch")
         if source.get("tokenizer") != tokenizer.specification():
             raise ContractError("SFT/post-training requires the exact byte-tokenizer contract; no implicit vocabulary conversion")
-        if pretraining_initialization and source.get("schema") != "aim-pretraining-v1":
+        expected_pretraining_schema = "aim-pretraining-initialization-v1" if source.get("kind") == "pretraining_initialization" else "aim-pretraining-v1"
+        if pretraining_initialization and source.get("schema") != expected_pretraining_schema:
             raise ContractError("Unsupported pretraining checkpoint schema")
         from .symbolic_loop import RESEARCH_CONTRACT
         if not pretraining_initialization and symbolic != (source.get("research_contract") == RESEARCH_CONTRACT):

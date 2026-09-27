@@ -1,0 +1,7 @@
+{
+  "seed": 17, "steps": 6, "batch_size": 2,
+  "learning_rate": 0.001, "weight_decay": 0.01,
+  "checkpoint_every": 2, "eval_batches": 2,
+  "accumulation_steps": 2, "collective_timeout_seconds": 15,
+  "model": {"width": 16, "layers": 1, "heads": 2, "kv_heads": 1, "ffn_width": 32, "context": 32}
+}
