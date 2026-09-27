@@ -1,0 +1,12 @@
+{
+  "bytes": 4194304,
+  "cached_read_seconds": 0.000620707985945046,
+  "live_node_hash": "d4a39551bf56e4dde62281cf931237e0a19a66d540c7b4308bf2a8de28fe3b40",
+  "node_hash": "4e3819b29990efb1151c3ab93a09a9dcfe9afb8e7b3c36ce8ac74f415d52ece4",
+  "record_hash": "43b6c2a4b26711c42760056677e39714c987811b50cf1bbb1b67001a8d850dac",
+  "round_trip_equal": true,
+  "schema": "aim-storage-probe-v1",
+  "scope": "one local file; cached read; fsync returned; no power-loss/shared-filesystem proof",
+  "sha256": "2b07811057df887086f06a67edc6ebf911de8b6741156e7a2eb1416a4b8b1b2e",
+  "write_fsync_seconds": 0.0017825420363806188
+}

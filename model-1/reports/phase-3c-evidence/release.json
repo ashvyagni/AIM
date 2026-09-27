@@ -1,0 +1,36 @@
+{
+  "accepted": [
+    "document-000",
+    "document-004",
+    "document-008",
+    "document-014",
+    "document-019"
+  ],
+  "audit_hash": "0ff6e741552c2b7000897a050582abdb8db93568df451f7a1465f2f7366c581e",
+  "corpus_path": "intake/20260927T104308-corpus-intake-71de1b4b/corpus.json",
+  "gate_hash": "4ee0654cd9b5a43dc7f24cffea6be4a71a12d835420de7dacd56b14b45625179",
+  "parent_corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+  "purpose": "engineering_fixture",
+  "quarantined": [
+    "document-001",
+    "document-002",
+    "document-003",
+    "document-005",
+    "document-006",
+    "document-007",
+    "document-009",
+    "document-010",
+    "document-011",
+    "document-012",
+    "document-013",
+    "document-015",
+    "document-016",
+    "document-017",
+    "document-018"
+  ],
+  "record_hash": "0ea27aa222ad112e26f295680a9be96bef0e1bdb449e401c9ac4d705ec713edd",
+  "released_corpus_hash": "ea55f6f59d1c31e396c0d68910d80ba8fd03142fd2a2490577a93095b68d1ba7",
+  "review_hash": "831d8c2e09a26cbe905057d79d14970e634c8aeece61644c095366c077900149",
+  "schema": "aim-reviewed-corpus-release-v1",
+  "scope": "copied original accepted bytes; no permission inferred, text rewritten, or original record deleted"
+}

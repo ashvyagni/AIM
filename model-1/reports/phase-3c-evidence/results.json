@@ -1,0 +1,81 @@
+{
+  "audit_path": "audits/20260927T104308-corpus-review-audit-74f10e3d/audit.json",
+  "failed_controls": [
+    {
+      "failure_sha256": "9f10d14c6b278b38289826ed6433c5427592581b03749e70b3487bba1c0cb45d",
+      "path": "invalid-node-import/20260927T104308-fleet-plan-5ce60d22",
+      "status": {
+        "elapsed_seconds": 0.06864437501644716,
+        "error": "audit record hash mismatch",
+        "status": "FAILED"
+      }
+    },
+    {
+      "failure_sha256": "f1f1879ef181fbece0a289cb65906c766545777bdc92a894524564bee5c3ea8a",
+      "path": "blocked-export/20260927T104308-corpus-reviewed-export-a8858697",
+      "status": {
+        "elapsed_seconds": 0.06953804095974192,
+        "error": "reviewed export blocked; inspect retained gate.json",
+        "status": "FAILED"
+      }
+    }
+  ],
+  "node_path": "hardware/20260927T104306-node-audit-2dda949a/node.json",
+  "parent_corpus": "intake/20260927T104308-corpus-intake-f0cfe38f/corpus.json",
+  "parent_objects_unchanged": true,
+  "plan_path": "hardware/20260927T104307-fleet-plan-160f76d1/plan.json",
+  "probe_path": "hardware/20260927T104307-storage-probe-e2b95447/probe.json",
+  "release_audit": {
+    "accepted": 5,
+    "documents": 20,
+    "gate_replayed": true,
+    "original_bytes_and_metadata_preserved": true,
+    "quarantined": 15,
+    "release_hash": "0ea27aa222ad112e26f295680a9be96bef0e1bdb449e401c9ac4d705ec713edd"
+  },
+  "release_path": "release/20260927T104308-corpus-reviewed-export-d5048785/release.json",
+  "review_path": "subset-review.json",
+  "scope": "engineering fixture and one local host; no corpus quality, physical scaling or model capability conclusion",
+  "training": {
+    "audit": {
+      "checkpoint": {
+        "bundle_hash": "23aa30cbf6946dde553c883139a42696505eaf78a6a483fa943ee05edb9444bf",
+        "cursor_bindings_valid": true,
+        "global_tokens": 510,
+        "model_hash": "ef3dc54b03b625f038f14683ecf45d9b4350bfbf984fa95403747900202296e1",
+        "optimizer_hash": "84de11edbb43d5ac53ac0e85e5012edd4456af682b76f727d1f094cc31846c1f",
+        "replicas_equal": true,
+        "step": 2,
+        "world_size": 2
+      },
+      "ownership": {
+        "disjoint_complete_ownership": true,
+        "documents": 3,
+        "ranks": 2
+      },
+      "replayed_rank_updates": 4,
+      "scope": "batch/cursor/count/certificate replay; no independent proof of optimizer math"
+    },
+    "path": "training/20260927T104308-distributed-pretrain-launch-26e8c59e",
+    "status": {
+      "elapsed_seconds": 4.370408624992706,
+      "error": null,
+      "status": "COMPLETED"
+    },
+    "summary": {
+      "final": {
+        "batches": 2,
+        "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+        "scored_tokens": 128,
+        "token_nll": 5.538167953491211
+      },
+      "final_checkpoint": "checkpoints/step-000002",
+      "global_tokens_total": 510,
+      "parameters": 6496,
+      "replicas_equal": true,
+      "scope": "same-host processes",
+      "steps": 2,
+      "world_size": 2
+    }
+  }
+}

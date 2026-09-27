@@ -1,0 +1,58 @@
+{
+  "blockers": [
+    "operator_policy_missing"
+  ],
+  "configuration": {
+    "accumulation_steps": 2,
+    "batch_size": 2,
+    "checkpoint_every": 2,
+    "collective_timeout_seconds": 15,
+    "eval_batches": 2,
+    "learning_rate": 0.001,
+    "model": {
+      "context": 32,
+      "ffn_width": 32,
+      "heads": 2,
+      "kv_heads": 1,
+      "layers": 1,
+      "width": 16
+    },
+    "seed": 17,
+    "steps": 6,
+    "weight_decay": 0.01
+  },
+  "created_at_unix": 1790505787.215371,
+  "fp32_state_floor_bytes_per_rank": 103936,
+  "max_trial_seconds": null,
+  "node_ids": [
+    "local-development"
+  ],
+  "observation_hashes": [
+    "4e3819b29990efb1151c3ab93a09a9dcfe9afb8e7b3c36ce8ac74f415d52ece4"
+  ],
+  "parameters": 6496,
+  "policy_hash": null,
+  "record_hash": "ce5e73bc373b3388c4eeee6c8068f4e72bab85256baa3a5854df2d8d14296060",
+  "schema": "aim-fleet-trial-plan-v1",
+  "scope": "preparation only; no automatic launch, scale approval, aggregate RAM pooling or physical-host certification",
+  "status": "BLOCKED",
+  "trials": [
+    {
+      "global_sequences_per_update": 4,
+      "physical_nodes": 1,
+      "position_budget_per_update": 128,
+      "processes_per_node": 1,
+      "selection": "operator must explicitly select distinct physical hosts"
+    }
+  ],
+  "unmeasured": [
+    "sustained_throughput",
+    "activation_and_runtime_peak_memory",
+    "network_collectives",
+    "shared_filesystem_visibility",
+    "physical_host_distinctness",
+    "resource_quotas",
+    "thermal_interference",
+    "physical_node_loss_recovery"
+  ]
+}

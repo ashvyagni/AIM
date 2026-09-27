@@ -1,0 +1,405 @@
+{
+  "candidate_pairs_examined": 40,
+  "configuration": {
+    "containment_threshold": 0.9,
+    "jaccard_threshold": 0.8,
+    "max_candidate_pairs": 100000,
+    "max_documents": 1000,
+    "max_pair_updates": 2000000,
+    "max_total_shingles": 500000,
+    "minimum_shared_shingles": 5,
+    "shingle_width": 5
+  },
+  "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+  "counts_by_split_and_type": {
+    "test": {
+      "code": 1,
+      "math": 1,
+      "prose": 1,
+      "unicode": 1
+    },
+    "train": {
+      "code": 3,
+      "math": 3,
+      "prose": 3,
+      "unicode": 3
+    },
+    "validation": {
+      "code": 1,
+      "math": 1,
+      "prose": 1,
+      "unicode": 1
+    }
+  },
+  "cross_split_pairs": 14,
+  "documents": [
+    {
+      "bytes": 183,
+      "content_type": "prose",
+      "group": "fixture-0",
+      "id": "document-000",
+      "quality_flags": [],
+      "sha256": "66f9330f225dfbd716ef25c8c9cba5cd6cb77445df93b397a0277a35d1234212",
+      "shingles": 31,
+      "split": "train"
+    },
+    {
+      "bytes": 179,
+      "content_type": "code",
+      "group": "fixture-1",
+      "id": "document-001",
+      "quality_flags": [],
+      "sha256": "90b6967fc78aedd140ccec82b24ed20309930a09326265a20ca35f8a41e57f59",
+      "shingles": 31,
+      "split": "train"
+    },
+    {
+      "bytes": 182,
+      "content_type": "math",
+      "group": "fixture-2",
+      "id": "document-002",
+      "quality_flags": [],
+      "sha256": "6d5f880a9b40ce36606f77f081b91174e1b69b29c7e2282152eef91e68472a6e",
+      "shingles": 47,
+      "split": "train"
+    },
+    {
+      "bytes": 195,
+      "content_type": "unicode",
+      "group": "fixture-3",
+      "id": "document-003",
+      "quality_flags": [],
+      "sha256": "0a12fb416f04698aa2fa8c905c4a4ff979ec3461aa7b4aadc55da0fc52f6b728",
+      "shingles": 41,
+      "split": "train"
+    },
+    {
+      "bytes": 183,
+      "content_type": "prose",
+      "group": "fixture-4",
+      "id": "document-004",
+      "quality_flags": [],
+      "sha256": "cda4ae360e889f0dacfdea2cac934b0312745c1f56c9fe7eb429beb79b6e990b",
+      "shingles": 31,
+      "split": "train"
+    },
+    {
+      "bytes": 179,
+      "content_type": "code",
+      "group": "fixture-5",
+      "id": "document-005",
+      "quality_flags": [],
+      "sha256": "de965fcb641d1af0a55a30a2947a7bdab78dd07191d86ca4b95bdcc7c6ea4f9b",
+      "shingles": 31,
+      "split": "train"
+    },
+    {
+      "bytes": 182,
+      "content_type": "math",
+      "group": "fixture-6",
+      "id": "document-006",
+      "quality_flags": [],
+      "sha256": "bbfc80f4f90cb9511d91723a8cc3b6eacc59e3d7b53fe893181185cd9783d5f8",
+      "shingles": 47,
+      "split": "train"
+    },
+    {
+      "bytes": 195,
+      "content_type": "unicode",
+      "group": "fixture-7",
+      "id": "document-007",
+      "quality_flags": [],
+      "sha256": "86791274c9979a95698641a98281c57fdb534d5d1b1c2491aaa4b0c9580636d1",
+      "shingles": 41,
+      "split": "train"
+    },
+    {
+      "bytes": 183,
+      "content_type": "prose",
+      "group": "fixture-8",
+      "id": "document-008",
+      "quality_flags": [],
+      "sha256": "d11f1f7c1f24508280d990ab1e1a299f0d84cf78284865f4d9d84b64d02bb67a",
+      "shingles": 31,
+      "split": "train"
+    },
+    {
+      "bytes": 179,
+      "content_type": "code",
+      "group": "fixture-9",
+      "id": "document-009",
+      "quality_flags": [],
+      "sha256": "0556212f4ee671a4d1bd615e99c074fb74101e4b430897739e58da50b03dd5fc",
+      "shingles": 31,
+      "split": "train"
+    },
+    {
+      "bytes": 183,
+      "content_type": "math",
+      "group": "fixture-10",
+      "id": "document-010",
+      "quality_flags": [],
+      "sha256": "f1f184fe4c64dc3cb34a51e3d7dd20c4d70b6e7b3ae7ca336c351ef36da854a1",
+      "shingles": 47,
+      "split": "train"
+    },
+    {
+      "bytes": 196,
+      "content_type": "unicode",
+      "group": "fixture-11",
+      "id": "document-011",
+      "quality_flags": [],
+      "sha256": "fbd7ed4a3ee0382f8911e162eab0f5218834b6ad6cae6cdb81e1544659785730",
+      "shingles": 41,
+      "split": "train"
+    },
+    {
+      "bytes": 184,
+      "content_type": "prose",
+      "group": "fixture-12",
+      "id": "document-012",
+      "quality_flags": [],
+      "sha256": "d8256b1e50a310d5dfe81094d070530c32eab6cbf53a19e4912637f839f4e087",
+      "shingles": 31,
+      "split": "validation"
+    },
+    {
+      "bytes": 181,
+      "content_type": "code",
+      "group": "fixture-13",
+      "id": "document-013",
+      "quality_flags": [],
+      "sha256": "a924ad8842944fd275847cf47b9e19b681fa4a2cf80cd5d492cb4a068f732a87",
+      "shingles": 31,
+      "split": "validation"
+    },
+    {
+      "bytes": 183,
+      "content_type": "math",
+      "group": "fixture-14",
+      "id": "document-014",
+      "quality_flags": [],
+      "sha256": "4b698d5ecc00b2fbb47bdb4aa2759927626354043072693d03dc5902ed19730f",
+      "shingles": 47,
+      "split": "validation"
+    },
+    {
+      "bytes": 196,
+      "content_type": "unicode",
+      "group": "fixture-15",
+      "id": "document-015",
+      "quality_flags": [],
+      "sha256": "904d93abbf158f25b98f7599fe7ee314fec523b2a438f96c3b8033412fabcaf0",
+      "shingles": 41,
+      "split": "validation"
+    },
+    {
+      "bytes": 184,
+      "content_type": "prose",
+      "group": "fixture-16",
+      "id": "document-016",
+      "quality_flags": [],
+      "sha256": "14405a972f0fbe3872e0fc008b0e052de70a0a286de522ebfc1288b6e71330ff",
+      "shingles": 31,
+      "split": "test"
+    },
+    {
+      "bytes": 181,
+      "content_type": "code",
+      "group": "fixture-17",
+      "id": "document-017",
+      "quality_flags": [],
+      "sha256": "36804eb20c08d5321bee71ec70684105d6d00777f9e0fce6ca507e5ccd9adfc9",
+      "shingles": 31,
+      "split": "test"
+    },
+    {
+      "bytes": 183,
+      "content_type": "math",
+      "group": "fixture-18",
+      "id": "document-018",
+      "quality_flags": [],
+      "sha256": "bd356fe8afd01e498a0911c2469be2056a35357961cd32f8f7c27dbbf07f7dc7",
+      "shingles": 47,
+      "split": "test"
+    },
+    {
+      "bytes": 196,
+      "content_type": "unicode",
+      "group": "fixture-19",
+      "id": "document-019",
+      "quality_flags": [],
+      "sha256": "b9b790d244a425b0f69caab596feb054ceb56aed9a88a8fb574d0f4c67781df4",
+      "shingles": 41,
+      "split": "test"
+    }
+  ],
+  "pair_updates": 1290,
+  "pairs": [
+    {
+      "containment": 0.9032258064516129,
+      "cross_split": false,
+      "jaccard": 0.8235294117647058,
+      "left": "document-000",
+      "right": "document-004",
+      "shared_shingles": 28
+    },
+    {
+      "containment": 0.9032258064516129,
+      "cross_split": false,
+      "jaccard": 0.8235294117647058,
+      "left": "document-000",
+      "right": "document-008",
+      "shared_shingles": 28
+    },
+    {
+      "containment": 0.9032258064516129,
+      "cross_split": true,
+      "jaccard": 0.8235294117647058,
+      "left": "document-000",
+      "right": "document-012",
+      "shared_shingles": 28
+    },
+    {
+      "containment": 0.9032258064516129,
+      "cross_split": true,
+      "jaccard": 0.8235294117647058,
+      "left": "document-000",
+      "right": "document-016",
+      "shared_shingles": 28
+    },
+    {
+      "containment": 0.9361702127659575,
+      "cross_split": false,
+      "jaccard": 0.88,
+      "left": "document-002",
+      "right": "document-006",
+      "shared_shingles": 44
+    },
+    {
+      "containment": 0.9361702127659575,
+      "cross_split": false,
+      "jaccard": 0.88,
+      "left": "document-002",
+      "right": "document-010",
+      "shared_shingles": 44
+    },
+    {
+      "containment": 0.9361702127659575,
+      "cross_split": true,
+      "jaccard": 0.88,
+      "left": "document-002",
+      "right": "document-014",
+      "shared_shingles": 44
+    },
+    {
+      "containment": 0.9361702127659575,
+      "cross_split": true,
+      "jaccard": 0.88,
+      "left": "document-002",
+      "right": "document-018",
+      "shared_shingles": 44
+    },
+    {
+      "containment": 0.9032258064516129,
+      "cross_split": false,
+      "jaccard": 0.8235294117647058,
+      "left": "document-004",
+      "right": "document-008",
+      "shared_shingles": 28
+    },
+    {
+      "containment": 0.9032258064516129,
+      "cross_split": true,
+      "jaccard": 0.8235294117647058,
+      "left": "document-004",
+      "right": "document-012",
+      "shared_shingles": 28
+    },
+    {
+      "containment": 0.9032258064516129,
+      "cross_split": true,
+      "jaccard": 0.8235294117647058,
+      "left": "document-004",
+      "right": "document-016",
+      "shared_shingles": 28
+    },
+    {
+      "containment": 0.9361702127659575,
+      "cross_split": false,
+      "jaccard": 0.88,
+      "left": "document-006",
+      "right": "document-010",
+      "shared_shingles": 44
+    },
+    {
+      "containment": 0.9361702127659575,
+      "cross_split": true,
+      "jaccard": 0.88,
+      "left": "document-006",
+      "right": "document-014",
+      "shared_shingles": 44
+    },
+    {
+      "containment": 0.9361702127659575,
+      "cross_split": true,
+      "jaccard": 0.88,
+      "left": "document-006",
+      "right": "document-018",
+      "shared_shingles": 44
+    },
+    {
+      "containment": 0.9032258064516129,
+      "cross_split": true,
+      "jaccard": 0.8235294117647058,
+      "left": "document-008",
+      "right": "document-012",
+      "shared_shingles": 28
+    },
+    {
+      "containment": 0.9032258064516129,
+      "cross_split": true,
+      "jaccard": 0.8235294117647058,
+      "left": "document-008",
+      "right": "document-016",
+      "shared_shingles": 28
+    },
+    {
+      "containment": 0.9361702127659575,
+      "cross_split": true,
+      "jaccard": 0.88,
+      "left": "document-010",
+      "right": "document-014",
+      "shared_shingles": 44
+    },
+    {
+      "containment": 0.9361702127659575,
+      "cross_split": true,
+      "jaccard": 0.88,
+      "left": "document-010",
+      "right": "document-018",
+      "shared_shingles": 44
+    },
+    {
+      "containment": 0.9032258064516129,
+      "cross_split": true,
+      "jaccard": 0.8235294117647058,
+      "left": "document-012",
+      "right": "document-016",
+      "shared_shingles": 28
+    },
+    {
+      "containment": 0.9361702127659575,
+      "cross_split": true,
+      "jaccard": 0.88,
+      "left": "document-014",
+      "right": "document-018",
+      "shared_shingles": 44
+    }
+  ],
+  "record_hash": "0ff6e741552c2b7000897a050582abdb8db93568df451f7a1465f2f7366c581e",
+  "schema": "aim-corpus-overlap-audit-v1",
+  "scope": "exact set overlap over NFC/casefold word-punctuation shingles; all splits inspected; no semantic/legal/privacy certification",
+  "status": "REVIEW_REQUIRED",
+  "total_unique_shingles_per_document": 750
+}

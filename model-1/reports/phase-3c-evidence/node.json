@@ -1,0 +1,69 @@
+{
+  "measurements": {
+    "architecture": {
+      "error": null,
+      "method": "platform.machine",
+      "status": "observed",
+      "value": "arm64"
+    },
+    "available_ram_bytes": {
+      "error": "unavailable",
+      "method": "no equivalent portable availability query implemented",
+      "status": "unavailable",
+      "value": null
+    },
+    "cpu_model": {
+      "error": null,
+      "method": "sysctl machdep.cpu.brand_string",
+      "status": "observed",
+      "value": "Apple M3"
+    },
+    "free_disk_bytes": {
+      "error": null,
+      "method": "shutil.disk_usage on operator-selected workspace",
+      "status": "observed",
+      "value": 187189460992
+    },
+    "logical_cpus": {
+      "error": null,
+      "method": "os.cpu_count; host-visible logical CPUs, not an allocation quota",
+      "status": "observed",
+      "value": 8
+    },
+    "os": {
+      "error": null,
+      "method": "platform system/release",
+      "status": "observed",
+      "value": "Darwin 25.3.0"
+    },
+    "physical_cores": {
+      "error": null,
+      "method": "sysctl hw.physicalcpu",
+      "status": "observed",
+      "value": 8
+    },
+    "python": {
+      "error": null,
+      "method": "platform.python_version",
+      "status": "observed",
+      "value": "3.12.14"
+    },
+    "ram_bytes": {
+      "error": null,
+      "method": "sysctl hw.memsize",
+      "status": "observed",
+      "value": 8589934592
+    },
+    "torch": {
+      "error": null,
+      "method": "installed distribution metadata; import/kernel support not tested",
+      "status": "observed",
+      "value": "2.8.0"
+    }
+  },
+  "node_id": "local-development",
+  "observed_at_unix": 1790505787.026734,
+  "record_hash": "4e3819b29990efb1151c3ab93a09a9dcfe9afb8e7b3c36ce8ac74f415d52ece4",
+  "schema": "aim-node-observation-v1",
+  "scope": "local OS observations; no NIC/GPU/cluster/availability certification"
+}

@@ -1,0 +1,110 @@
+{
+  "candidate_pairs_examined": 3,
+  "configuration": {
+    "containment_threshold": 0.9,
+    "jaccard_threshold": 0.8,
+    "max_candidate_pairs": 100000,
+    "max_documents": 1000,
+    "max_pair_updates": 2000000,
+    "max_total_shingles": 500000,
+    "minimum_shared_shingles": 5,
+    "shingle_width": 5
+  },
+  "corpus_hash": "ea55f6f59d1c31e396c0d68910d80ba8fd03142fd2a2490577a93095b68d1ba7",
+  "counts_by_split_and_type": {
+    "test": {
+      "unicode": 1
+    },
+    "train": {
+      "prose": 3
+    },
+    "validation": {
+      "math": 1
+    }
+  },
+  "cross_split_pairs": 0,
+  "documents": [
+    {
+      "bytes": 183,
+      "content_type": "prose",
+      "group": "fixture-0",
+      "id": "document-000",
+      "quality_flags": [],
+      "sha256": "66f9330f225dfbd716ef25c8c9cba5cd6cb77445df93b397a0277a35d1234212",
+      "shingles": 31,
+      "split": "train"
+    },
+    {
+      "bytes": 183,
+      "content_type": "prose",
+      "group": "fixture-4",
+      "id": "document-004",
+      "quality_flags": [],
+      "sha256": "cda4ae360e889f0dacfdea2cac934b0312745c1f56c9fe7eb429beb79b6e990b",
+      "shingles": 31,
+      "split": "train"
+    },
+    {
+      "bytes": 183,
+      "content_type": "prose",
+      "group": "fixture-8",
+      "id": "document-008",
+      "quality_flags": [],
+      "sha256": "d11f1f7c1f24508280d990ab1e1a299f0d84cf78284865f4d9d84b64d02bb67a",
+      "shingles": 31,
+      "split": "train"
+    },
+    {
+      "bytes": 183,
+      "content_type": "math",
+      "group": "fixture-14",
+      "id": "document-014",
+      "quality_flags": [],
+      "sha256": "4b698d5ecc00b2fbb47bdb4aa2759927626354043072693d03dc5902ed19730f",
+      "shingles": 47,
+      "split": "validation"
+    },
+    {
+      "bytes": 196,
+      "content_type": "unicode",
+      "group": "fixture-19",
+      "id": "document-019",
+      "quality_flags": [],
+      "sha256": "b9b790d244a425b0f69caab596feb054ceb56aed9a88a8fb574d0f4c67781df4",
+      "shingles": 41,
+      "split": "test"
+    }
+  ],
+  "pair_updates": 84,
+  "pairs": [
+    {
+      "containment": 0.9032258064516129,
+      "cross_split": false,
+      "jaccard": 0.8235294117647058,
+      "left": "document-000",
+      "right": "document-004",
+      "shared_shingles": 28
+    },
+    {
+      "containment": 0.9032258064516129,
+      "cross_split": false,
+      "jaccard": 0.8235294117647058,
+      "left": "document-000",
+      "right": "document-008",
+      "shared_shingles": 28
+    },
+    {
+      "containment": 0.9032258064516129,
+      "cross_split": false,
+      "jaccard": 0.8235294117647058,
+      "left": "document-004",
+      "right": "document-008",
+      "shared_shingles": 28
+    }
+  ],
+  "record_hash": "32f209f10e579ca9bca133bd0f2e9cac73322eab4273ed780a44698a3029e987",
+  "schema": "aim-corpus-overlap-audit-v1",
+  "scope": "exact set overlap over NFC/casefold word-punctuation shingles; all splits inspected; no semantic/legal/privacy certification",
+  "status": "REVIEW_REQUIRED",
+  "total_unique_shingles_per_document": 181
+}

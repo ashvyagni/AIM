@@ -1,0 +1,135 @@
+{
+  "baseline": "23ef0d0",
+  "count": 32,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "08fc3ab216b8743fa0739dc7727ca3be4c0769692883afa1bdf95fc0953a4337"
+    },
+    {
+      "path": "documents/AIM_Model_1_Implementation_Directive.md",
+      "sha256": "fccdc77441c154c03721bc34491f1997e0ba1b92a839c7f3dc959e339b715697"
+    },
+    {
+      "path": "model-1/README.md",
+      "sha256": "8b9560f3168b0cf970cd6ec110b13f15193eb7c7a031bcad31e07ba083637429"
+    },
+    {
+      "path": "model-1/aim/audit_contracts.py",
+      "sha256": "4f4bf596a64def28f894da0954ec2040e0d304fa57c83d63ac95a0eb927cca12"
+    },
+    {
+      "path": "model-1/aim/cli.py",
+      "sha256": "1d868e11022ca847e92668b3d5b7f613bdf5e143371ef515cdac5a1de4e1cd6a"
+    },
+    {
+      "path": "model-1/aim/corpus_release.py",
+      "sha256": "014cba2088b4e2626e32489b63dc5f841dcfdecbbe41582b9dbfd359d0bdc7b2"
+    },
+    {
+      "path": "model-1/aim/corpus_review.py",
+      "sha256": "5efba303789734b2dafb309b3740779ccf9b9afcf377d3a0e370d040ec4583aa"
+    },
+    {
+      "path": "model-1/aim/fleet_plan.py",
+      "sha256": "7beee6a795cd489d8ec0d9de001f831a9b6fdb0423d143254411be8d08ee31cf"
+    },
+    {
+      "path": "model-1/aim/hardware_audit.py",
+      "sha256": "3caa39d8788357507040ac78884931240b07a256eae6db7aa3b4557e007736c5"
+    },
+    {
+      "path": "model-1/aim/readiness_reproduce.py",
+      "sha256": "0ded877032554f94da867bd4f69a836837e41a168af7c0eade1be946e7091760"
+    },
+    {
+      "path": "model-1/docs/ARCHITECTURE.md",
+      "sha256": "934d7c13ef20165417f3c0d6549c33c431eece9f11c2d5afb458efb9daf207c1"
+    },
+    {
+      "path": "model-1/docs/DECISIONS.md",
+      "sha256": "620099c7adef52f98231841b38c377cca1a956e473d4c9f06876e2c27b967e08"
+    },
+    {
+      "path": "model-1/docs/DISTRIBUTED_PRETRAINING.md",
+      "sha256": "cfeaf03b9735afd4b700450a92010e12acc3a3767728008ebce7d112ab0b5aa0"
+    },
+    {
+      "path": "model-1/docs/EVALUATION.md",
+      "sha256": "fc07bbef4706cd367b34475ecfbeaa4ab0a066035347681b6e169d8c20d09e99"
+    },
+    {
+      "path": "model-1/docs/HARDWARE_AND_CLUSTER.md",
+      "sha256": "941ac209ea90192bd70128721971e7db1355825059917acee99f588509be7771"
+    },
+    {
+      "path": "model-1/docs/IMPLEMENTATION_PLAN.md",
+      "sha256": "9ec2db4a8cf00d4f3fa86c0009180a54e5e09bfc1c364803daf791ebe4d760cd"
+    },
+    {
+      "path": "model-1/docs/OPERATOR_AND_CORPUS_READINESS.md",
+      "sha256": "fe0a91c1c8eeffd83ac50432d8cb3be2a8ef8c7f6944020ad0477ab0c4d44327"
+    },
+    {
+      "path": "model-1/docs/PRETRAINING.md",
+      "sha256": "0f46c424e763e55d05ab8dae57f1c24c5e323f3d221ea73c6fd0553e6546e052"
+    },
+    {
+      "path": "model-1/docs/TRAINING.md",
+      "sha256": "2dd1f65d7b686fd208da3798a7fe93db18e0c9cb6c123863c1ebffa82ee89178"
+    },
+    {
+      "path": "model-1/reports/phase-3c-evidence/fleet-plan.json",
+      "sha256": "dfd42ecb97f55bf6d63edf0e3c03da95ee7819185c797c96a7debf4f10cd01ca"
+    },
+    {
+      "path": "model-1/reports/phase-3c-evidence/manifest.json",
+      "sha256": "cbc517177ef6eb198c391832003d5e8a6b0f6ee58da5b0609cbe7c81ee8abb85"
+    },
+    {
+      "path": "model-1/reports/phase-3c-evidence/node.json",
+      "sha256": "44b35eedba5900f157d10931a458b87802a6398cec2db61db5ab7535221f78b2"
+    },
+    {
+      "path": "model-1/reports/phase-3c-evidence/parent-overlap-audit.json",
+      "sha256": "86b3eede523db740cb1a63a0545c0d9be439d81e283d54de5d722102f16c9085"
+    },
+    {
+      "path": "model-1/reports/phase-3c-evidence/release-audit.json",
+      "sha256": "64cf7dd4862a34a8f0a0a9a292b78fc7817ee66adf85b579166fb530a615c228"
+    },
+    {
+      "path": "model-1/reports/phase-3c-evidence/release.json",
+      "sha256": "ef73c3ad526bb71f8f2fdcfc0a683653b457ac357b7c892e3bdb8648d3d6b955"
+    },
+    {
+      "path": "model-1/reports/phase-3c-evidence/released-overlap-audit.json",
+      "sha256": "ca5a46773bcdcc1c434f50d2c23d2c45483fd143f07098434da416a7578a4bb8"
+    },
+    {
+      "path": "model-1/reports/phase-3c-evidence/results.json",
+      "sha256": "95a505f273f3db87c885349232a11de8d5cd0d017e8aac6173d0e1fc2f1c7bb2"
+    },
+    {
+      "path": "model-1/reports/phase-3c-evidence/review-decisions.json",
+      "sha256": "d38515b5ac26eb9432a3fa552f5f0071af5a5797e33adca2afea3cef7eb79432"
+    },
+    {
+      "path": "model-1/reports/phase-3c-evidence/storage-probe.json",
+      "sha256": "d7c7a2db03dfb9807a6a8f008fb2dbe31a5698360b680fbe2a3b3f0ea62a98a9"
+    },
+    {
+      "path": "model-1/reports/phase-3c-evidence/tests.log",
+      "sha256": "7ae450139c31d4cc602cbf7a228e6e2eb6ed714d032b1166e7a23b13aa9241a5"
+    },
+    {
+      "path": "model-1/reports/phase-3c-implementation.md",
+      "sha256": "194b865aa686a449a4086f5641fb68293fa6416e47dbb4b30c438e123f6156f7"
+    },
+    {
+      "path": "model-1/tests/test_operator_readiness.py",
+      "sha256": "770b2e88249db4cfe6a99671e1070b03b7d2bec36431e818b0edf03fb8539f1c"
+    }
+  ],
+  "scope": "Every phase change against baseline, excluding this inventory itself."
+}
