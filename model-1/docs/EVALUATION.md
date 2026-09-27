@@ -1,5 +1,7 @@
 # Model-1 evaluation specification
 
+**Phase 3D evaluation pending:** the owner deferred audit/test execution for the tokenizer-compatible build. `tests/test_language_pipeline.py` and `aim.language_reproduce` are prepared candidates, not passing evidence. First run targeted tests, then all regressions and exact byte/BPE stage continuation; also inspect actual Controller adapters and interruption/distributed-initialization bridges. The last completed result remains Phase 3C's 192 tests on its recorded source revision.
+
 ## Evaluation layers
 
 1. **Contract and numerical tests:** serialization, provenance integrity, action identity, timeouts, confidence/status separation, data partitions, masking, causal attention, objective gradients, frozen references and exact CPU checkpoint resume.

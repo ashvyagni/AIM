@@ -2,6 +2,8 @@
 
 **Modular research loops, exact verification, separate Judges and reproducible from-scratch training infrastructure.**
 
+**Current implementation candidate — Phase 3D:** a separately versioned byte/BPE SFT, preference and bounded RLVR path, strict tokenizer/response contracts, periodic checkpoints and generation adapters have been added. **Tests, training and formal audit were deferred at the owner's request.** Read the [build report](reports/phase-3d-build.md) and [new specification](docs/TOKENIZED_POSTTRAINING.md). The historical Phase 3C result of 192 passing tests does not cover this revision; run the prepared audit before promoting the new path.
+
 The default research loop uses a clearly identified deterministic polynomial Researcher and a separate rule-based or trained Judge. A native, randomly initialized transformer and an interchangeable neural Researcher adapter are implemented. The phase-1 arithmetic checkpoint failed structured generation. Phase 2A trained three research-specific checkpoints that emit mostly valid hypotheses but achieve only 3.13–10.94% verified success on the familiar holdout; their capability gate failed and they remain opt-in experimental backends.
 
 Phase 2A.1 adds tested research-trainer continuation and a six-model comparison of plain versus worked arithmetic supervision. Mean test success was 5.21% versus 12.50%, but one seed regressed and both arms failed their numerical gate. Eight worked-arm familiar-case successes contained incorrect process steps, reinforcing the distinction between a checked target prediction and a checked reasoning trace.

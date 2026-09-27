@@ -153,3 +153,11 @@ Do not infer physical-node scalability from loopback success, or power-loss dura
 Use exact bounded overlap as a transparent reference before probabilistic web-scale deduplication. This offers reproducible candidate/score checks but costs memory/work and misses semantic/short-text similarities. Casefolding and provisional thresholds can flag legitimate code/formula overlap. Accept no silently repaired reviews or erased quarantine records. The subset demonstration is deliberately unrepresentative and selects no production data mixture.
 
 OS observations and unsigned review records do not certify physical-host identity, job quotas, authorization, rights or privacy. Missing values stay unknown. The owner-reported VIT fleet remains distinct from the observed local Mac. No large model, combined reward or learned default is promoted. Next build tokenizer-compatible post-training interfaces, preserving byte checkpoints and from-scratch lineage; physical trials and representative corpus review still require actual operator/data evidence.
+
+## D024 — Version the language path and defer validation explicitly
+
+**Status: implementation candidate, untested, 2026-09-27.** The owner requested a build phase now and auditing/tests later. Phase 3D writes a new tokenizer-compatible checkpoint/data/training/runtime path with separate SFT, DPO and bounded RLVR objectives. It does not claim the BPE bridge, exact resume or adapter integration has passed. [Build report](../reports/phase-3d-build.md), [specification and pending gates](TOKENIZED_POSTTRAINING.md).
+
+The candidate uses complete tokenizer specs and independently encoded prompt/response segments; it rejects silent vocabulary remapping. Versioned task/output contracts constrain Researcher adapters. Initialization and resume have separate semantics. Legacy training paths remain present, with conditional dispatch for the new checkpoint kind. The next audit must test those shared entry points as well as the new implementation.
+
+No scientific architecture promotion, combined reward, final tokenizer, larger parameter count or default learned-model change is approved. Prepared tests and reproduction commands are not executed evidence. Promote only after the owner-requested audit establishes correctness and records actual outcomes, including failures.

@@ -4,6 +4,8 @@ The architectural baseline is the [complete research handbook](documents/AIM_Com
 
 ## Start here
 
+**Current build: Phase 3D is written but untested.** The owner requested implementation now and auditing/tests in the next phase. [Build report and pending audit](model-1/reports/phase-3d-build.md) · [Tokenizer-compatible post-training specification](model-1/docs/TOKENIZED_POSTTRAINING.md). The last completed validation below belongs to Phase 3C; it does not validate the new revision.
+
 - [Model-1 setup and runnable commands](model-1/README.md)
 - [Phase 1 implementation evidence](model-1/reports/phase-1-implementation.md)
 - [Implementation directive and next-agent handoff](documents/AIM_Model_1_Implementation_Directive.md)

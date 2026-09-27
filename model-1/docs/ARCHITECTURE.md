@@ -1,5 +1,7 @@
 # Model-1 architecture and invariants
 
+**Current unvalidated extension:** Phase 3D adds an opt-in tokenizer-compatible language path and explicit loader/adapter dispatch. See [its specification](TOKENIZED_POSTTRAINING.md). Implementation is written; execution/formal audit is deferred. Historical validation statements below retain their original phase scopes.
+
 Status: implemented miniature, 2026-09-24. Scientific baseline: the existing AIM handbook and final-design specifications. Prototype scope decisions are recorded in [DECISIONS](DECISIONS.md).
 
 ## Component ownership
