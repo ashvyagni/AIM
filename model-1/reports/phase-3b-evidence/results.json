@@ -1,0 +1,3982 @@
+{
+  "arms": {
+    "bpe": {
+      "exact_resume": {
+        "common": {
+          "corpus_hash": true,
+          "global_tokens": true,
+          "model": true,
+          "model_config": true,
+          "optimizer": true,
+          "partition_hash": true,
+          "stable_config": true,
+          "step": true,
+          "tokenizer": true
+        },
+        "exact": true,
+        "ranks": [
+          {
+            "cursor": true,
+            "global_tokens": true,
+            "local_tokens": true,
+            "model_hash": true,
+            "optimizer_hash": true,
+            "rank": true,
+            "torch_rng": true
+          },
+          {
+            "cursor": true,
+            "global_tokens": true,
+            "local_tokens": true,
+            "model_hash": true,
+            "optimizer_hash": true,
+            "rank": true,
+            "torch_rng": true
+          }
+        ]
+      },
+      "full": {
+        "audit": {
+          "checkpoint": {
+            "bundle_hash": "44627c8730c748a80f88c6aea59765900ae3c205c1bc063dfe72c825fda54509",
+            "cursor_bindings_valid": true,
+            "global_tokens": 1526,
+            "model_hash": "7ae234410141cfe0b3f521ba9fd03dfc23493ff1e722d217f6d5929b71de03a6",
+            "optimizer_hash": "b37445f23ee1adc43a0e627254c298ff628aaed2cc5d2daa270b59f1b3732f7a",
+            "replicas_equal": true,
+            "step": 6,
+            "world_size": 2
+          },
+          "ownership": {
+            "disjoint_complete_ownership": true,
+            "documents": 12,
+            "ranks": 2
+          },
+          "replayed_rank_updates": 12,
+          "scope": "batch/cursor/count/certificate replay; no independent proof of optimizer math"
+        },
+        "checkpoint_scan": [
+          {
+            "bundle_hash": "7b0987b5e7d77c5a2f6b722e977e1457567a40b196eb4484c74926238f42ee81",
+            "loadable": true,
+            "name": "step-000002",
+            "status": "VALID"
+          },
+          {
+            "bundle_hash": "4d5e71bf8ebfcf2d5fe57d17d90b35298a521b16fe7c3680057e7fc2279659f0",
+            "loadable": true,
+            "name": "step-000004",
+            "status": "VALID"
+          },
+          {
+            "bundle_hash": "44627c8730c748a80f88c6aea59765900ae3c205c1bc063dfe72c825fda54509",
+            "loadable": true,
+            "name": "step-000006",
+            "status": "VALID"
+          }
+        ],
+        "path": "jobs/20260927T060208-distributed-pretrain-launch-45f8bdf8",
+        "rank_metrics": [
+          {
+            "final": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.607987403869629
+            },
+            "global_tokens_total": 1526,
+            "initial": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.677407741546631
+            },
+            "local_tokens_total": 763,
+            "parameters": 7008,
+            "rank": 0,
+            "replicas": [
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 763,
+                "model_hash": "7ae234410141cfe0b3f521ba9fd03dfc23493ff1e722d217f6d5929b71de03a6",
+                "optimizer_hash": "b37445f23ee1adc43a0e627254c298ff628aaed2cc5d2daa270b59f1b3732f7a",
+                "rank": 0
+              },
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 763,
+                "model_hash": "7ae234410141cfe0b3f521ba9fd03dfc23493ff1e722d217f6d5929b71de03a6",
+                "optimizer_hash": "b37445f23ee1adc43a0e627254c298ff628aaed2cc5d2daa270b59f1b3732f7a",
+                "rank": 1
+              }
+            ],
+            "scope": "same-host processes",
+            "start_cursor": {
+              "carry": null,
+              "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+              "document_index": 0,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 0,
+              "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+            },
+            "start_step": 0,
+            "updates": [
+              {
+                "batch_hashes": [
+                  "aecfc82a02d05e8d57fee0656be7c0b4fefba81835e9a564a294e39ce98f9afe",
+                  "cd27c98a14effdbee4dfe847cf05ffeedb451f8b40cd12c16f7a45bb09a5c95b"
+                ],
+                "cursor": {
+                  "carry": [
+                    116,
+                    "document-000",
+                    128,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 0,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 129,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.680689096450806,
+                "global_tokens": 256,
+                "gradient_norm": 0.423970103263855,
+                "local_tokens": 128,
+                "max_rank_update_seconds": 0.8617647089995444,
+                "step": 1
+              },
+              {
+                "batch_hashes": [
+                  "3cfcb70d502708f3210c0d7cc51c2bb80417d9099a84d8e0417e524885fdb592",
+                  "8377d4f886c27d3a0c3623fa296687686f8e466dbf0a773cddbb720ebb727c03"
+                ],
+                "cursor": {
+                  "carry": [
+                    265,
+                    "document-002",
+                    125,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 1,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 126,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.6688097856176185,
+                "global_tokens": 254,
+                "gradient_norm": 0.4157960116863251,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.023874041973613203,
+                "step": 2
+              },
+              {
+                "batch_hashes": [
+                  "92c1f60486308583b84d3ef3064d5433fb13c753ff00088fc80fda35a52ea09d",
+                  "0965386b9654f17bbd54d6964aee9f6b4a7a34a80930e926c99c50eca47e5d35"
+                ],
+                "cursor": {
+                  "carry": [
+                    282,
+                    "document-004",
+                    122,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 2,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 123,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.65755744994156,
+                "global_tokens": 254,
+                "gradient_norm": 0.45299193263053894,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.022837791009806097,
+                "step": 3
+              },
+              {
+                "batch_hashes": [
+                  "c0230f6a695a60ed16dd14a7273cf1e29704883ce14f8847771cd9c0a0529506",
+                  "bc6d62afa46c130b36647b7441b1b3de991cd76a7c15b83675a3a832f8b85234"
+                ],
+                "cursor": {
+                  "carry": [
+                    259,
+                    "document-006",
+                    119,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 3,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 120,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.649396280604084,
+                "global_tokens": 254,
+                "gradient_norm": 0.4412092864513397,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.02056599999195896,
+                "step": 4
+              },
+              {
+                "batch_hashes": [
+                  "26cf7d32bf3a984350579a4e31bbf6da2257bbfd1d3140cee7ee7d7b4807c884",
+                  "cde995a07a6b694be29f0b4db5aa005a1aebf037c2e177cd8fc0d54e62d4cd3c"
+                ],
+                "cursor": {
+                  "carry": [
+                    99,
+                    "document-008",
+                    116,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 4,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 117,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.638692180002768,
+                "global_tokens": 254,
+                "gradient_norm": 0.4898855984210968,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.019369666988495737,
+                "step": 5
+              },
+              {
+                "batch_hashes": [
+                  "b11edc3931e64a739606c03dcdd5b24704afb40fde403090df770051cd3a077c",
+                  "8b9f1159b80692ae6b25c78b559c06544f74c2afb1f93bab0a667220a8d91aab"
+                ],
+                "cursor": {
+                  "carry": [
+                    111,
+                    "document-010",
+                    113,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 5,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 114,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.6287245863065944,
+                "global_tokens": 254,
+                "gradient_norm": 0.47368916869163513,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.0229937499971129,
+                "step": 6
+              }
+            ],
+            "world_size": 2
+          },
+          {
+            "final": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.607987403869629
+            },
+            "global_tokens_total": 1526,
+            "initial": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.677407741546631
+            },
+            "local_tokens_total": 763,
+            "parameters": 7008,
+            "rank": 1,
+            "replicas": [
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 763,
+                "model_hash": "7ae234410141cfe0b3f521ba9fd03dfc23493ff1e722d217f6d5929b71de03a6",
+                "optimizer_hash": "b37445f23ee1adc43a0e627254c298ff628aaed2cc5d2daa270b59f1b3732f7a",
+                "rank": 0
+              },
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 763,
+                "model_hash": "7ae234410141cfe0b3f521ba9fd03dfc23493ff1e722d217f6d5929b71de03a6",
+                "optimizer_hash": "b37445f23ee1adc43a0e627254c298ff628aaed2cc5d2daa270b59f1b3732f7a",
+                "rank": 1
+              }
+            ],
+            "scope": "same-host processes",
+            "start_cursor": {
+              "carry": null,
+              "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+              "document_index": 0,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 0,
+              "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+            },
+            "start_step": 0,
+            "updates": [
+              {
+                "batch_hashes": [
+                  "655180982c4c6325a6dfad03d7ef41fe1d4d05104c20759ce99d76e0fd2ae324",
+                  "5d0c21cc58af2cc90ce3b7838272ff1d44abc77b76d2bbf46e9fa44b71a4498a"
+                ],
+                "cursor": {
+                  "carry": [
+                    278,
+                    "document-001",
+                    128,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 0,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 129,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.680689096450806,
+                "global_tokens": 256,
+                "gradient_norm": 0.423970103263855,
+                "local_tokens": 128,
+                "max_rank_update_seconds": 0.8617647089995444,
+                "step": 1
+              },
+              {
+                "batch_hashes": [
+                  "a6957dd9085f6bdb12152511fb7e56e07ca7b9dcfe7c9a2c0b1eaefc20afc130",
+                  "a107effdfcfe0e06f277df89d0d5f57321b821bc7a83533deacd271bc7ba1315"
+                ],
+                "cursor": {
+                  "carry": [
+                    111,
+                    "document-003",
+                    126,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 1,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 127,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.6688097856176185,
+                "global_tokens": 254,
+                "gradient_norm": 0.4157960116863251,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.023874041973613203,
+                "step": 2
+              },
+              {
+                "batch_hashes": [
+                  "736e9f6e05345d59b840c3f45f8d38b97eade931305f5b7fe1b867d2bed4cd08",
+                  "0df7f34931e2a58239b69ebb43602b0f3ca51e620c946acd18d5b080a6c0bb56"
+                ],
+                "cursor": {
+                  "carry": [
+                    279,
+                    "document-005",
+                    105,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 2,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 106,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.65755744994156,
+                "global_tokens": 254,
+                "gradient_norm": 0.45299193263053894,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.022837791009806097,
+                "step": 3
+              },
+              {
+                "batch_hashes": [
+                  "39aaad7fc81bb0fbd6d555431cd56a40a4b5784088c80db2af1ec7a64b4168b7",
+                  "8f080bd83f466c30882fa7723cd6c3f1328f091fb9596d11fa5fb4a9e440e738"
+                ],
+                "cursor": {
+                  "carry": [
+                    267,
+                    "document-007",
+                    103,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 3,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 104,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.649396280604084,
+                "global_tokens": 254,
+                "gradient_norm": 0.4412092864513397,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.02056599999195896,
+                "step": 4
+              },
+              {
+                "batch_hashes": [
+                  "6f337c0f2a7527d626678579579e691a0152df7f9a9e68c7efb761180e0a8448",
+                  "6aea8d4cfd2a78e008e9bd8a43c6f46acd9496e64146eebbc88b565782fd6148"
+                ],
+                "cursor": {
+                  "carry": [
+                    101,
+                    "document-009",
+                    82,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 4,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 83,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.638692180002768,
+                "global_tokens": 254,
+                "gradient_norm": 0.4898855984210968,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.019369666988495737,
+                "step": 5
+              },
+              {
+                "batch_hashes": [
+                  "00c20f06564b96edcd326c2ceb50ad3b18610babaf8ce4f837543fad35ad9207",
+                  "8ce6d7ad8b41bcabbea66c46f73630aabac5a974f68d06bd794f5035a423d772"
+                ],
+                "cursor": {
+                  "carry": [
+                    116,
+                    "document-011",
+                    80,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 5,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 81,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.6287245863065944,
+                "global_tokens": 254,
+                "gradient_norm": 0.47368916869163513,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.0229937499971129,
+                "step": 6
+              }
+            ],
+            "world_size": 2
+          }
+        ],
+        "status": {
+          "elapsed_seconds": 7.936455417016987,
+          "error": null,
+          "status": "COMPLETED"
+        },
+        "summary": {
+          "final": {
+            "batches": 2,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 128,
+            "token_nll": 5.607987403869629
+          },
+          "final_checkpoint": "checkpoints/step-000006",
+          "global_tokens_total": 1526,
+          "parameters": 7008,
+          "replicas_equal": true,
+          "scope": "same-host processes",
+          "steps": 6,
+          "world_size": 2
+        }
+      },
+      "partial": {
+        "audit": {
+          "checkpoint": {
+            "bundle_hash": "7b0987b5e7d77c5a2f6b722e977e1457567a40b196eb4484c74926238f42ee81",
+            "cursor_bindings_valid": true,
+            "global_tokens": 510,
+            "model_hash": "66173f031e4fde730ed68d4094329f3665c9356aaeb5ea7bb8a507c5f4f56107",
+            "optimizer_hash": "127f7e11a89de2be9dd3dbf83cdbffaa86653bd92744727ecf9a45b6ff16ff52",
+            "replicas_equal": true,
+            "step": 2,
+            "world_size": 2
+          },
+          "ownership": {
+            "disjoint_complete_ownership": true,
+            "documents": 12,
+            "ranks": 2
+          },
+          "replayed_rank_updates": 4,
+          "scope": "batch/cursor/count/certificate replay; no independent proof of optimizer math"
+        },
+        "checkpoint_scan": [
+          {
+            "bundle_hash": "7b0987b5e7d77c5a2f6b722e977e1457567a40b196eb4484c74926238f42ee81",
+            "loadable": true,
+            "name": "step-000002",
+            "status": "VALID"
+          }
+        ],
+        "path": "jobs/20260927T060216-distributed-pretrain-launch-32202038",
+        "rank_metrics": [
+          {
+            "final": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.654223918914795
+            },
+            "global_tokens_total": 510,
+            "initial": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.677407741546631
+            },
+            "local_tokens_total": 255,
+            "parameters": 7008,
+            "rank": 0,
+            "replicas": [
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 255,
+                "model_hash": "66173f031e4fde730ed68d4094329f3665c9356aaeb5ea7bb8a507c5f4f56107",
+                "optimizer_hash": "127f7e11a89de2be9dd3dbf83cdbffaa86653bd92744727ecf9a45b6ff16ff52",
+                "rank": 0
+              },
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 255,
+                "model_hash": "66173f031e4fde730ed68d4094329f3665c9356aaeb5ea7bb8a507c5f4f56107",
+                "optimizer_hash": "127f7e11a89de2be9dd3dbf83cdbffaa86653bd92744727ecf9a45b6ff16ff52",
+                "rank": 1
+              }
+            ],
+            "scope": "same-host processes",
+            "start_cursor": {
+              "carry": null,
+              "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+              "document_index": 0,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 0,
+              "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+            },
+            "start_step": 0,
+            "updates": [
+              {
+                "batch_hashes": [
+                  "aecfc82a02d05e8d57fee0656be7c0b4fefba81835e9a564a294e39ce98f9afe",
+                  "cd27c98a14effdbee4dfe847cf05ffeedb451f8b40cd12c16f7a45bb09a5c95b"
+                ],
+                "cursor": {
+                  "carry": [
+                    116,
+                    "document-000",
+                    128,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 0,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 129,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.680689096450806,
+                "global_tokens": 256,
+                "gradient_norm": 0.423970103263855,
+                "local_tokens": 128,
+                "max_rank_update_seconds": 0.20125354098854586,
+                "step": 1
+              },
+              {
+                "batch_hashes": [
+                  "3cfcb70d502708f3210c0d7cc51c2bb80417d9099a84d8e0417e524885fdb592",
+                  "8377d4f886c27d3a0c3623fa296687686f8e466dbf0a773cddbb720ebb727c03"
+                ],
+                "cursor": {
+                  "carry": [
+                    265,
+                    "document-002",
+                    125,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 1,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 126,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.6688097856176185,
+                "global_tokens": 254,
+                "gradient_norm": 0.4157960116863251,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.008614958001999184,
+                "step": 2
+              }
+            ],
+            "world_size": 2
+          },
+          {
+            "final": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.654223918914795
+            },
+            "global_tokens_total": 510,
+            "initial": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.677407741546631
+            },
+            "local_tokens_total": 255,
+            "parameters": 7008,
+            "rank": 1,
+            "replicas": [
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 255,
+                "model_hash": "66173f031e4fde730ed68d4094329f3665c9356aaeb5ea7bb8a507c5f4f56107",
+                "optimizer_hash": "127f7e11a89de2be9dd3dbf83cdbffaa86653bd92744727ecf9a45b6ff16ff52",
+                "rank": 0
+              },
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 255,
+                "model_hash": "66173f031e4fde730ed68d4094329f3665c9356aaeb5ea7bb8a507c5f4f56107",
+                "optimizer_hash": "127f7e11a89de2be9dd3dbf83cdbffaa86653bd92744727ecf9a45b6ff16ff52",
+                "rank": 1
+              }
+            ],
+            "scope": "same-host processes",
+            "start_cursor": {
+              "carry": null,
+              "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+              "document_index": 0,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 0,
+              "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+            },
+            "start_step": 0,
+            "updates": [
+              {
+                "batch_hashes": [
+                  "655180982c4c6325a6dfad03d7ef41fe1d4d05104c20759ce99d76e0fd2ae324",
+                  "5d0c21cc58af2cc90ce3b7838272ff1d44abc77b76d2bbf46e9fa44b71a4498a"
+                ],
+                "cursor": {
+                  "carry": [
+                    278,
+                    "document-001",
+                    128,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 0,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 129,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.680689096450806,
+                "global_tokens": 256,
+                "gradient_norm": 0.423970103263855,
+                "local_tokens": 128,
+                "max_rank_update_seconds": 0.20125354098854586,
+                "step": 1
+              },
+              {
+                "batch_hashes": [
+                  "a6957dd9085f6bdb12152511fb7e56e07ca7b9dcfe7c9a2c0b1eaefc20afc130",
+                  "a107effdfcfe0e06f277df89d0d5f57321b821bc7a83533deacd271bc7ba1315"
+                ],
+                "cursor": {
+                  "carry": [
+                    111,
+                    "document-003",
+                    126,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 1,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 127,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.6688097856176185,
+                "global_tokens": 254,
+                "gradient_norm": 0.4157960116863251,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.008614958001999184,
+                "step": 2
+              }
+            ],
+            "world_size": 2
+          }
+        ],
+        "status": {
+          "elapsed_seconds": 4.798441749997437,
+          "error": null,
+          "status": "COMPLETED"
+        },
+        "summary": {
+          "final": {
+            "batches": 2,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 128,
+            "token_nll": 5.654223918914795
+          },
+          "final_checkpoint": "checkpoints/step-000002",
+          "global_tokens_total": 510,
+          "parameters": 7008,
+          "replicas_equal": true,
+          "scope": "same-host processes",
+          "steps": 2,
+          "world_size": 2
+        }
+      },
+      "resumed": {
+        "audit": {
+          "checkpoint": {
+            "bundle_hash": "acd5d722f9f211dffefd3a9e6cb4dfc89921459b5c700d3b9800c7f5c91fe44e",
+            "cursor_bindings_valid": true,
+            "global_tokens": 1526,
+            "model_hash": "7ae234410141cfe0b3f521ba9fd03dfc23493ff1e722d217f6d5929b71de03a6",
+            "optimizer_hash": "b37445f23ee1adc43a0e627254c298ff628aaed2cc5d2daa270b59f1b3732f7a",
+            "replicas_equal": true,
+            "step": 6,
+            "world_size": 2
+          },
+          "ownership": {
+            "disjoint_complete_ownership": true,
+            "documents": 12,
+            "ranks": 2
+          },
+          "replayed_rank_updates": 8,
+          "scope": "batch/cursor/count/certificate replay; no independent proof of optimizer math"
+        },
+        "checkpoint_scan": [
+          {
+            "bundle_hash": "1c528171d8e3b06d5cbf445e87be443f7e4bce16c47954154b9bd50f0a5f65cc",
+            "loadable": true,
+            "name": "step-000004",
+            "status": "VALID"
+          },
+          {
+            "bundle_hash": "acd5d722f9f211dffefd3a9e6cb4dfc89921459b5c700d3b9800c7f5c91fe44e",
+            "loadable": true,
+            "name": "step-000006",
+            "status": "VALID"
+          }
+        ],
+        "path": "jobs/20260927T060221-distributed-pretrain-launch-cc1e79e6",
+        "rank_metrics": [
+          {
+            "final": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.607987403869629
+            },
+            "global_tokens_total": 1526,
+            "initial": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.654223918914795
+            },
+            "local_tokens_total": 763,
+            "parameters": 7008,
+            "rank": 0,
+            "replicas": [
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 763,
+                "model_hash": "7ae234410141cfe0b3f521ba9fd03dfc23493ff1e722d217f6d5929b71de03a6",
+                "optimizer_hash": "b37445f23ee1adc43a0e627254c298ff628aaed2cc5d2daa270b59f1b3732f7a",
+                "rank": 0
+              },
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 763,
+                "model_hash": "7ae234410141cfe0b3f521ba9fd03dfc23493ff1e722d217f6d5929b71de03a6",
+                "optimizer_hash": "b37445f23ee1adc43a0e627254c298ff628aaed2cc5d2daa270b59f1b3732f7a",
+                "rank": 1
+              }
+            ],
+            "scope": "same-host processes",
+            "start_cursor": {
+              "carry": [
+                265,
+                "document-002",
+                125,
+                0
+              ],
+              "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+              "document_index": 1,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 126,
+              "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+            },
+            "start_step": 2,
+            "updates": [
+              {
+                "batch_hashes": [
+                  "92c1f60486308583b84d3ef3064d5433fb13c753ff00088fc80fda35a52ea09d",
+                  "0965386b9654f17bbd54d6964aee9f6b4a7a34a80930e926c99c50eca47e5d35"
+                ],
+                "cursor": {
+                  "carry": [
+                    282,
+                    "document-004",
+                    122,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 2,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 123,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.65755744994156,
+                "global_tokens": 254,
+                "gradient_norm": 0.45299193263053894,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.025394124997546896,
+                "step": 3
+              },
+              {
+                "batch_hashes": [
+                  "c0230f6a695a60ed16dd14a7273cf1e29704883ce14f8847771cd9c0a0529506",
+                  "bc6d62afa46c130b36647b7441b1b3de991cd76a7c15b83675a3a832f8b85234"
+                ],
+                "cursor": {
+                  "carry": [
+                    259,
+                    "document-006",
+                    119,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 3,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 120,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.649396280604084,
+                "global_tokens": 254,
+                "gradient_norm": 0.4412092864513397,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.005128624994540587,
+                "step": 4
+              },
+              {
+                "batch_hashes": [
+                  "26cf7d32bf3a984350579a4e31bbf6da2257bbfd1d3140cee7ee7d7b4807c884",
+                  "cde995a07a6b694be29f0b4db5aa005a1aebf037c2e177cd8fc0d54e62d4cd3c"
+                ],
+                "cursor": {
+                  "carry": [
+                    99,
+                    "document-008",
+                    116,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 4,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 117,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.638692180002768,
+                "global_tokens": 254,
+                "gradient_norm": 0.4898855984210968,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.004752375010866672,
+                "step": 5
+              },
+              {
+                "batch_hashes": [
+                  "b11edc3931e64a739606c03dcdd5b24704afb40fde403090df770051cd3a077c",
+                  "8b9f1159b80692ae6b25c78b559c06544f74c2afb1f93bab0a667220a8d91aab"
+                ],
+                "cursor": {
+                  "carry": [
+                    111,
+                    "document-010",
+                    113,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 5,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 114,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.6287245863065944,
+                "global_tokens": 254,
+                "gradient_norm": 0.47368916869163513,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.004380666010547429,
+                "step": 6
+              }
+            ],
+            "world_size": 2
+          },
+          {
+            "final": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.607987403869629
+            },
+            "global_tokens_total": 1526,
+            "initial": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.654223918914795
+            },
+            "local_tokens_total": 763,
+            "parameters": 7008,
+            "rank": 1,
+            "replicas": [
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 763,
+                "model_hash": "7ae234410141cfe0b3f521ba9fd03dfc23493ff1e722d217f6d5929b71de03a6",
+                "optimizer_hash": "b37445f23ee1adc43a0e627254c298ff628aaed2cc5d2daa270b59f1b3732f7a",
+                "rank": 0
+              },
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 763,
+                "model_hash": "7ae234410141cfe0b3f521ba9fd03dfc23493ff1e722d217f6d5929b71de03a6",
+                "optimizer_hash": "b37445f23ee1adc43a0e627254c298ff628aaed2cc5d2daa270b59f1b3732f7a",
+                "rank": 1
+              }
+            ],
+            "scope": "same-host processes",
+            "start_cursor": {
+              "carry": [
+                111,
+                "document-003",
+                126,
+                0
+              ],
+              "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+              "document_index": 1,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 127,
+              "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+            },
+            "start_step": 2,
+            "updates": [
+              {
+                "batch_hashes": [
+                  "736e9f6e05345d59b840c3f45f8d38b97eade931305f5b7fe1b867d2bed4cd08",
+                  "0df7f34931e2a58239b69ebb43602b0f3ca51e620c946acd18d5b080a6c0bb56"
+                ],
+                "cursor": {
+                  "carry": [
+                    279,
+                    "document-005",
+                    105,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 2,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 106,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.65755744994156,
+                "global_tokens": 254,
+                "gradient_norm": 0.45299193263053894,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.025394124997546896,
+                "step": 3
+              },
+              {
+                "batch_hashes": [
+                  "39aaad7fc81bb0fbd6d555431cd56a40a4b5784088c80db2af1ec7a64b4168b7",
+                  "8f080bd83f466c30882fa7723cd6c3f1328f091fb9596d11fa5fb4a9e440e738"
+                ],
+                "cursor": {
+                  "carry": [
+                    267,
+                    "document-007",
+                    103,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 3,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 104,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.649396280604084,
+                "global_tokens": 254,
+                "gradient_norm": 0.4412092864513397,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.005128624994540587,
+                "step": 4
+              },
+              {
+                "batch_hashes": [
+                  "6f337c0f2a7527d626678579579e691a0152df7f9a9e68c7efb761180e0a8448",
+                  "6aea8d4cfd2a78e008e9bd8a43c6f46acd9496e64146eebbc88b565782fd6148"
+                ],
+                "cursor": {
+                  "carry": [
+                    101,
+                    "document-009",
+                    82,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 4,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 83,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.638692180002768,
+                "global_tokens": 254,
+                "gradient_norm": 0.4898855984210968,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.004752375010866672,
+                "step": 5
+              },
+              {
+                "batch_hashes": [
+                  "00c20f06564b96edcd326c2ceb50ad3b18610babaf8ce4f837543fad35ad9207",
+                  "8ce6d7ad8b41bcabbea66c46f73630aabac5a974f68d06bd794f5035a423d772"
+                ],
+                "cursor": {
+                  "carry": [
+                    116,
+                    "document-011",
+                    80,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 5,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 81,
+                  "tokenizer_hash": "c4bbbfb37275164b4b51cfb078dde5b1a6afba64063048a30543f60e7cd90bf6"
+                },
+                "global_loss": 5.6287245863065944,
+                "global_tokens": 254,
+                "gradient_norm": 0.47368916869163513,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.004380666010547429,
+                "step": 6
+              }
+            ],
+            "world_size": 2
+          }
+        ],
+        "status": {
+          "elapsed_seconds": 4.971132041013334,
+          "error": null,
+          "status": "COMPLETED"
+        },
+        "summary": {
+          "final": {
+            "batches": 2,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 128,
+            "token_nll": 5.607987403869629
+          },
+          "final_checkpoint": "checkpoints/step-000006",
+          "global_tokens_total": 1526,
+          "parameters": 7008,
+          "replicas_equal": true,
+          "scope": "same-host processes",
+          "steps": 6,
+          "world_size": 2
+        }
+      },
+      "serial_reference": {
+        "comparison": {
+          "cursors_equal": true,
+          "max_absolute_parameter_difference": 1.1920928955078125e-07,
+          "scope": "numerical agreement with independent serial reduction order; not bitwise equivalence",
+          "tolerance": 2e-06
+        },
+        "metrics": {
+          "final": {
+            "batches": 2,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 128,
+            "token_nll": 5.607987642288208
+          },
+          "model_hash": "22fe206b3076d85d35e90f56366e22718c99eb216bdcd3d0c91ba596f25c30d5",
+          "updates": [
+            {
+              "global_loss": 5.680689096450806,
+              "global_tokens": 256,
+              "gradient_norm": 0.423970103263855,
+              "rank_batch_hashes": [
+                [
+                  "aecfc82a02d05e8d57fee0656be7c0b4fefba81835e9a564a294e39ce98f9afe",
+                  "cd27c98a14effdbee4dfe847cf05ffeedb451f8b40cd12c16f7a45bb09a5c95b"
+                ],
+                [
+                  "655180982c4c6325a6dfad03d7ef41fe1d4d05104c20759ce99d76e0fd2ae324",
+                  "5d0c21cc58af2cc90ce3b7838272ff1d44abc77b76d2bbf46e9fa44b71a4498a"
+                ]
+              ],
+              "step": 1
+            },
+            {
+              "global_loss": 5.6688097856176185,
+              "global_tokens": 254,
+              "gradient_norm": 0.4157960116863251,
+              "rank_batch_hashes": [
+                [
+                  "3cfcb70d502708f3210c0d7cc51c2bb80417d9099a84d8e0417e524885fdb592",
+                  "8377d4f886c27d3a0c3623fa296687686f8e466dbf0a773cddbb720ebb727c03"
+                ],
+                [
+                  "a6957dd9085f6bdb12152511fb7e56e07ca7b9dcfe7c9a2c0b1eaefc20afc130",
+                  "a107effdfcfe0e06f277df89d0d5f57321b821bc7a83533deacd271bc7ba1315"
+                ]
+              ],
+              "step": 2
+            },
+            {
+              "global_loss": 5.65755744994156,
+              "global_tokens": 254,
+              "gradient_norm": 0.45299193263053894,
+              "rank_batch_hashes": [
+                [
+                  "92c1f60486308583b84d3ef3064d5433fb13c753ff00088fc80fda35a52ea09d",
+                  "0965386b9654f17bbd54d6964aee9f6b4a7a34a80930e926c99c50eca47e5d35"
+                ],
+                [
+                  "736e9f6e05345d59b840c3f45f8d38b97eade931305f5b7fe1b867d2bed4cd08",
+                  "0df7f34931e2a58239b69ebb43602b0f3ca51e620c946acd18d5b080a6c0bb56"
+                ]
+              ],
+              "step": 3
+            },
+            {
+              "global_loss": 5.649396280604084,
+              "global_tokens": 254,
+              "gradient_norm": 0.4412092864513397,
+              "rank_batch_hashes": [
+                [
+                  "c0230f6a695a60ed16dd14a7273cf1e29704883ce14f8847771cd9c0a0529506",
+                  "bc6d62afa46c130b36647b7441b1b3de991cd76a7c15b83675a3a832f8b85234"
+                ],
+                [
+                  "39aaad7fc81bb0fbd6d555431cd56a40a4b5784088c80db2af1ec7a64b4168b7",
+                  "8f080bd83f466c30882fa7723cd6c3f1328f091fb9596d11fa5fb4a9e440e738"
+                ]
+              ],
+              "step": 4
+            },
+            {
+              "global_loss": 5.638692180002768,
+              "global_tokens": 254,
+              "gradient_norm": 0.4898855984210968,
+              "rank_batch_hashes": [
+                [
+                  "26cf7d32bf3a984350579a4e31bbf6da2257bbfd1d3140cee7ee7d7b4807c884",
+                  "cde995a07a6b694be29f0b4db5aa005a1aebf037c2e177cd8fc0d54e62d4cd3c"
+                ],
+                [
+                  "6f337c0f2a7527d626678579579e691a0152df7f9a9e68c7efb761180e0a8448",
+                  "6aea8d4cfd2a78e008e9bd8a43c6f46acd9496e64146eebbc88b565782fd6148"
+                ]
+              ],
+              "step": 5
+            },
+            {
+              "global_loss": 5.6287244661586495,
+              "global_tokens": 254,
+              "gradient_norm": 0.47368916869163513,
+              "rank_batch_hashes": [
+                [
+                  "b11edc3931e64a739606c03dcdd5b24704afb40fde403090df770051cd3a077c",
+                  "8b9f1159b80692ae6b25c78b559c06544f74c2afb1f93bab0a667220a8d91aab"
+                ],
+                [
+                  "00c20f06564b96edcd326c2ceb50ad3b18610babaf8ce4f837543fad35ad9207",
+                  "8ce6d7ad8b41bcabbea66c46f73630aabac5a974f68d06bd794f5035a423d772"
+                ]
+              ],
+              "step": 6
+            }
+          ]
+        },
+        "path": "references/20260927T060226-serial-global-batch-reference-30ad1aa6"
+      }
+    },
+    "byte": {
+      "exact_resume": {
+        "common": {
+          "corpus_hash": true,
+          "global_tokens": true,
+          "model": true,
+          "model_config": true,
+          "optimizer": true,
+          "partition_hash": true,
+          "stable_config": true,
+          "step": true,
+          "tokenizer": true
+        },
+        "exact": true,
+        "ranks": [
+          {
+            "cursor": true,
+            "global_tokens": true,
+            "local_tokens": true,
+            "model_hash": true,
+            "optimizer_hash": true,
+            "rank": true,
+            "torch_rng": true
+          },
+          {
+            "cursor": true,
+            "global_tokens": true,
+            "local_tokens": true,
+            "model_hash": true,
+            "optimizer_hash": true,
+            "rank": true,
+            "torch_rng": true
+          }
+        ]
+      },
+      "full": {
+        "audit": {
+          "checkpoint": {
+            "bundle_hash": "7ad03d8839d185554338f98bf1b731d77b0ed2028da0d175f3446deec0fc630c",
+            "cursor_bindings_valid": true,
+            "global_tokens": 1528,
+            "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+            "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+            "replicas_equal": true,
+            "step": 6,
+            "world_size": 2
+          },
+          "ownership": {
+            "disjoint_complete_ownership": true,
+            "documents": 12,
+            "ranks": 2
+          },
+          "replayed_rank_updates": 12,
+          "scope": "batch/cursor/count/certificate replay; no independent proof of optimizer math"
+        },
+        "checkpoint_scan": [
+          {
+            "bundle_hash": "9fd2fa08994dc83128e746230052513b6dc2f58f6bf86c366b073a22e93251ba",
+            "loadable": true,
+            "name": "step-000002",
+            "status": "VALID"
+          },
+          {
+            "bundle_hash": "fea1225d058e33a0b6c8b0ffe7476bddf6d4358d0224f74439fa8f6c48102ab1",
+            "loadable": true,
+            "name": "step-000004",
+            "status": "VALID"
+          },
+          {
+            "bundle_hash": "7ad03d8839d185554338f98bf1b731d77b0ed2028da0d175f3446deec0fc630c",
+            "loadable": true,
+            "name": "step-000006",
+            "status": "VALID"
+          }
+        ],
+        "path": "jobs/20260927T060147-distributed-pretrain-launch-8360de31",
+        "rank_metrics": [
+          {
+            "final": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.438027381896973
+            },
+            "global_tokens_total": 1528,
+            "initial": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.530620813369751
+            },
+            "local_tokens_total": 764,
+            "parameters": 6496,
+            "rank": 0,
+            "replicas": [
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 764,
+                "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+                "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+                "rank": 0
+              },
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 764,
+                "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+                "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+                "rank": 1
+              }
+            ],
+            "scope": "same-host processes",
+            "start_cursor": {
+              "carry": null,
+              "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+              "document_index": 0,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 0,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "start_step": 0,
+            "updates": [
+              {
+                "batch_hashes": [
+                  "7d7d205b1025ef25d07d52af4bedf3bd0b70c6d032b784a93acc16445a4854bf",
+                  "6b9d11bed790fc32078f0183414a093dff02256ece45b91ef61b1b9a616215ed"
+                ],
+                "cursor": {
+                  "carry": [
+                    110,
+                    "document-000",
+                    128,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 0,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 129,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.543856739997864,
+                "global_tokens": 256,
+                "gradient_norm": 0.6543112993240356,
+                "local_tokens": 128,
+                "max_rank_update_seconds": 0.2230218330223579,
+                "step": 1
+              },
+              {
+                "batch_hashes": [
+                  "2832a85b8286a1cd866be17e42af4456e9f420c66533c7f5d7e733bdd98b4251",
+                  "558d77ce7ce6205a77123b4d838c68bf1ddc8dd6229524ce15bfcf0d81c17cfd"
+                ],
+                "cursor": {
+                  "carry": [
+                    32,
+                    "document-002",
+                    71,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 1,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 72,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.549907173697404,
+                "global_tokens": 254,
+                "gradient_norm": 0.6282788515090942,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.007171292003476992,
+                "step": 2
+              },
+              {
+                "batch_hashes": [
+                  "1c53dce38a16d5b9353a31609142e88a9c94d53a9e44d56707b6420eecf5aab1",
+                  "58e363d81e4e4b33c2751dcb62eb8405f97a0769f66c9146bd015a8d02084dd1"
+                ],
+                "cursor": {
+                  "carry": [
+                    97,
+                    "document-004",
+                    15,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 2,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 16,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.534850113035187,
+                "global_tokens": 254,
+                "gradient_norm": 0.7628694772720337,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.008907499985070899,
+                "step": 3
+              },
+              {
+                "batch_hashes": [
+                  "846b5cd6892355d288869a8f97ba3e727ba2176e20ad5eaa39a5066128855a0a",
+                  "e5509f11a98f265eba4ab100a1bd5f94a7f83a848ce571f040ad16aa5c37f70a"
+                ],
+                "cursor": {
+                  "carry": [
+                    111,
+                    "document-004",
+                    143,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 2,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 144,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.507556200027466,
+                "global_tokens": 256,
+                "gradient_norm": 0.819341778755188,
+                "local_tokens": 128,
+                "max_rank_update_seconds": 0.0056338339927606285,
+                "step": 4
+              },
+              {
+                "batch_hashes": [
+                  "57c0bf0ff531078b690b3ec16015db36e80625c6c2bb243db6076a7f6ee4829f",
+                  "5f338256e93bd5f06820e9f255a5f859fdc2502343ed1e8fc5309be3bca1b7bd"
+                ],
+                "cursor": {
+                  "carry": [
+                    32,
+                    "document-006",
+                    86,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 3,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 87,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.511386420783095,
+                "global_tokens": 254,
+                "gradient_norm": 0.7554080486297607,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.0062965840043034405,
+                "step": 5
+              },
+              {
+                "batch_hashes": [
+                  "2e056aa6c9e3a325154e416ad2c6cf5257c16c1f103abaf711687b79e6a5329a",
+                  "abc3990c28493f1632bbeb1af35e69a23ba6c58c7754ed87fd645f10c182b2fc"
+                ],
+                "cursor": {
+                  "carry": [
+                    97,
+                    "document-008",
+                    30,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 4,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 31,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.488577414685347,
+                "global_tokens": 254,
+                "gradient_norm": 1.0211304426193237,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.006860166002297774,
+                "step": 6
+              }
+            ],
+            "world_size": 2
+          },
+          {
+            "final": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.438027381896973
+            },
+            "global_tokens_total": 1528,
+            "initial": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.530620813369751
+            },
+            "local_tokens_total": 764,
+            "parameters": 6496,
+            "rank": 1,
+            "replicas": [
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 764,
+                "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+                "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+                "rank": 0
+              },
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 764,
+                "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+                "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+                "rank": 1
+              }
+            ],
+            "scope": "same-host processes",
+            "start_cursor": {
+              "carry": null,
+              "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+              "document_index": 0,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 0,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "start_step": 0,
+            "updates": [
+              {
+                "batch_hashes": [
+                  "f61a793c936166106481fac03af3d8f66418e1002a4b68377598bfaceb2fb155",
+                  "bbedc99793c16fd5498de0c2623f12d0989ea2f5936d79d2cafca48c79429492"
+                ],
+                "cursor": {
+                  "carry": [
+                    110,
+                    "document-001",
+                    128,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 0,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 129,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.543856739997864,
+                "global_tokens": 256,
+                "gradient_norm": 0.6543112993240356,
+                "local_tokens": 128,
+                "max_rank_update_seconds": 0.2230218330223579,
+                "step": 1
+              },
+              {
+                "batch_hashes": [
+                  "8e27b5c7115b4ed93455198b47a1376bb1b7e808b2ddeb3d3160833b85c8f50e",
+                  "f76df66c035a6f0c0a963cd33e8a7d0dd96d435ea4ac3d423c9a80346a77e3ca"
+                ],
+                "cursor": {
+                  "carry": [
+                    240,
+                    "document-003",
+                    75,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 1,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 76,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.549907173697404,
+                "global_tokens": 254,
+                "gradient_norm": 0.6282788515090942,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.007171292003476992,
+                "step": 2
+              },
+              {
+                "batch_hashes": [
+                  "006d266f77a769fa805dfe900f860e09892e1d66608f21f1e7e0da7e56e1b0dd",
+                  "671e24ebee22134e2164f436eaf067a20e0d3f00eeedf5a50ca000e906a05c4d"
+                ],
+                "cursor": {
+                  "carry": [
+                    106,
+                    "document-005",
+                    6,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 2,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 7,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.534850113035187,
+                "global_tokens": 254,
+                "gradient_norm": 0.7628694772720337,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.008907499985070899,
+                "step": 3
+              },
+              {
+                "batch_hashes": [
+                  "9e1a4328891c22bbb227a530489f361d1595bf3edb0abbe2bd8edde0c990cf85",
+                  "6ba6ad187800317191f02eaf2da9fbef2c2bcc412fd494d1ad3795e111121af8"
+                ],
+                "cursor": {
+                  "carry": [
+                    110,
+                    "document-005",
+                    134,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 2,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 135,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.507556200027466,
+                "global_tokens": 256,
+                "gradient_norm": 0.819341778755188,
+                "local_tokens": 128,
+                "max_rank_update_seconds": 0.0056338339927606285,
+                "step": 4
+              },
+              {
+                "batch_hashes": [
+                  "fafa57070622f8fd673173d8ad54be796488656ce365bd759a80e5caade37195",
+                  "4e581ef99718aa83787deaf28614e311ad6b1bb473c9a9ee4874820c38cb284f"
+                ],
+                "cursor": {
+                  "carry": [
+                    80,
+                    "document-007",
+                    81,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 3,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 82,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.511386420783095,
+                "global_tokens": 254,
+                "gradient_norm": 0.7554080486297607,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.0062965840043034405,
+                "step": 5
+              },
+              {
+                "batch_hashes": [
+                  "c752739f3238228025b9cecf52d0b88a565afd0e171e8ae660241c8471964041",
+                  "f34b6d1e3a46f6c34d5e994700b4eaaebf17148a3c56e09974220eeea6f356f8"
+                ],
+                "cursor": {
+                  "carry": [
+                    101,
+                    "document-009",
+                    12,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 4,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 13,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.488577414685347,
+                "global_tokens": 254,
+                "gradient_norm": 1.0211304426193237,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.006860166002297774,
+                "step": 6
+              }
+            ],
+            "world_size": 2
+          }
+        ],
+        "status": {
+          "elapsed_seconds": 5.027345875016181,
+          "error": null,
+          "status": "COMPLETED"
+        },
+        "summary": {
+          "final": {
+            "batches": 2,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 128,
+            "token_nll": 5.438027381896973
+          },
+          "final_checkpoint": "checkpoints/step-000006",
+          "global_tokens_total": 1528,
+          "parameters": 6496,
+          "replicas_equal": true,
+          "scope": "same-host processes",
+          "steps": 6,
+          "world_size": 2
+        }
+      },
+      "partial": {
+        "audit": {
+          "checkpoint": {
+            "bundle_hash": "9fd2fa08994dc83128e746230052513b6dc2f58f6bf86c366b073a22e93251ba",
+            "cursor_bindings_valid": true,
+            "global_tokens": 510,
+            "model_hash": "042eee87e47f22878959e8467b38a1249b9f339d229cf865cca7bce7776ae55d",
+            "optimizer_hash": "48ae9c69db30d773227bcc8dd095284bc39f4bdf6e89f519ef59f816229107a5",
+            "replicas_equal": true,
+            "step": 2,
+            "world_size": 2
+          },
+          "ownership": {
+            "disjoint_complete_ownership": true,
+            "documents": 12,
+            "ranks": 2
+          },
+          "replayed_rank_updates": 4,
+          "scope": "batch/cursor/count/certificate replay; no independent proof of optimizer math"
+        },
+        "checkpoint_scan": [
+          {
+            "bundle_hash": "9fd2fa08994dc83128e746230052513b6dc2f58f6bf86c366b073a22e93251ba",
+            "loadable": true,
+            "name": "step-000002",
+            "status": "VALID"
+          }
+        ],
+        "path": "jobs/20260927T060152-distributed-pretrain-launch-fc6fae77",
+        "rank_metrics": [
+          {
+            "final": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.504134654998779
+            },
+            "global_tokens_total": 510,
+            "initial": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.530620813369751
+            },
+            "local_tokens_total": 255,
+            "parameters": 6496,
+            "rank": 0,
+            "replicas": [
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 255,
+                "model_hash": "042eee87e47f22878959e8467b38a1249b9f339d229cf865cca7bce7776ae55d",
+                "optimizer_hash": "48ae9c69db30d773227bcc8dd095284bc39f4bdf6e89f519ef59f816229107a5",
+                "rank": 0
+              },
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 255,
+                "model_hash": "042eee87e47f22878959e8467b38a1249b9f339d229cf865cca7bce7776ae55d",
+                "optimizer_hash": "48ae9c69db30d773227bcc8dd095284bc39f4bdf6e89f519ef59f816229107a5",
+                "rank": 1
+              }
+            ],
+            "scope": "same-host processes",
+            "start_cursor": {
+              "carry": null,
+              "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+              "document_index": 0,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 0,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "start_step": 0,
+            "updates": [
+              {
+                "batch_hashes": [
+                  "7d7d205b1025ef25d07d52af4bedf3bd0b70c6d032b784a93acc16445a4854bf",
+                  "6b9d11bed790fc32078f0183414a093dff02256ece45b91ef61b1b9a616215ed"
+                ],
+                "cursor": {
+                  "carry": [
+                    110,
+                    "document-000",
+                    128,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 0,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 129,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.543856739997864,
+                "global_tokens": 256,
+                "gradient_norm": 0.6543112993240356,
+                "local_tokens": 128,
+                "max_rank_update_seconds": 0.19819904200267047,
+                "step": 1
+              },
+              {
+                "batch_hashes": [
+                  "2832a85b8286a1cd866be17e42af4456e9f420c66533c7f5d7e733bdd98b4251",
+                  "558d77ce7ce6205a77123b4d838c68bf1ddc8dd6229524ce15bfcf0d81c17cfd"
+                ],
+                "cursor": {
+                  "carry": [
+                    32,
+                    "document-002",
+                    71,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 1,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 72,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.549907173697404,
+                "global_tokens": 254,
+                "gradient_norm": 0.6282788515090942,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.007212124997749925,
+                "step": 2
+              }
+            ],
+            "world_size": 2
+          },
+          {
+            "final": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.504134654998779
+            },
+            "global_tokens_total": 510,
+            "initial": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.530620813369751
+            },
+            "local_tokens_total": 255,
+            "parameters": 6496,
+            "rank": 1,
+            "replicas": [
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 255,
+                "model_hash": "042eee87e47f22878959e8467b38a1249b9f339d229cf865cca7bce7776ae55d",
+                "optimizer_hash": "48ae9c69db30d773227bcc8dd095284bc39f4bdf6e89f519ef59f816229107a5",
+                "rank": 0
+              },
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 255,
+                "model_hash": "042eee87e47f22878959e8467b38a1249b9f339d229cf865cca7bce7776ae55d",
+                "optimizer_hash": "48ae9c69db30d773227bcc8dd095284bc39f4bdf6e89f519ef59f816229107a5",
+                "rank": 1
+              }
+            ],
+            "scope": "same-host processes",
+            "start_cursor": {
+              "carry": null,
+              "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+              "document_index": 0,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 0,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "start_step": 0,
+            "updates": [
+              {
+                "batch_hashes": [
+                  "f61a793c936166106481fac03af3d8f66418e1002a4b68377598bfaceb2fb155",
+                  "bbedc99793c16fd5498de0c2623f12d0989ea2f5936d79d2cafca48c79429492"
+                ],
+                "cursor": {
+                  "carry": [
+                    110,
+                    "document-001",
+                    128,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 0,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 129,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.543856739997864,
+                "global_tokens": 256,
+                "gradient_norm": 0.6543112993240356,
+                "local_tokens": 128,
+                "max_rank_update_seconds": 0.19819904200267047,
+                "step": 1
+              },
+              {
+                "batch_hashes": [
+                  "8e27b5c7115b4ed93455198b47a1376bb1b7e808b2ddeb3d3160833b85c8f50e",
+                  "f76df66c035a6f0c0a963cd33e8a7d0dd96d435ea4ac3d423c9a80346a77e3ca"
+                ],
+                "cursor": {
+                  "carry": [
+                    240,
+                    "document-003",
+                    75,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 1,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 76,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.549907173697404,
+                "global_tokens": 254,
+                "gradient_norm": 0.6282788515090942,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.007212124997749925,
+                "step": 2
+              }
+            ],
+            "world_size": 2
+          }
+        ],
+        "status": {
+          "elapsed_seconds": 7.191355207993183,
+          "error": null,
+          "status": "COMPLETED"
+        },
+        "summary": {
+          "final": {
+            "batches": 2,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 128,
+            "token_nll": 5.504134654998779
+          },
+          "final_checkpoint": "checkpoints/step-000002",
+          "global_tokens_total": 510,
+          "parameters": 6496,
+          "replicas_equal": true,
+          "scope": "same-host processes",
+          "steps": 2,
+          "world_size": 2
+        }
+      },
+      "resumed": {
+        "audit": {
+          "checkpoint": {
+            "bundle_hash": "9f51554cace175bdeaa58a849fd116ab1c2d9391af45e28414df1c3b4e09d953",
+            "cursor_bindings_valid": true,
+            "global_tokens": 1528,
+            "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+            "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+            "replicas_equal": true,
+            "step": 6,
+            "world_size": 2
+          },
+          "ownership": {
+            "disjoint_complete_ownership": true,
+            "documents": 12,
+            "ranks": 2
+          },
+          "replayed_rank_updates": 8,
+          "scope": "batch/cursor/count/certificate replay; no independent proof of optimizer math"
+        },
+        "checkpoint_scan": [
+          {
+            "bundle_hash": "388664c2387969db84175e93ee318360472855182ee9ccb8e6c99224400d1f62",
+            "loadable": true,
+            "name": "step-000004",
+            "status": "VALID"
+          },
+          {
+            "bundle_hash": "9f51554cace175bdeaa58a849fd116ab1c2d9391af45e28414df1c3b4e09d953",
+            "loadable": true,
+            "name": "step-000006",
+            "status": "VALID"
+          }
+        ],
+        "path": "jobs/20260927T060200-distributed-pretrain-launch-a193bc58",
+        "rank_metrics": [
+          {
+            "final": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.438027381896973
+            },
+            "global_tokens_total": 1528,
+            "initial": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.504134654998779
+            },
+            "local_tokens_total": 764,
+            "parameters": 6496,
+            "rank": 0,
+            "replicas": [
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 764,
+                "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+                "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+                "rank": 0
+              },
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 764,
+                "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+                "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+                "rank": 1
+              }
+            ],
+            "scope": "same-host processes",
+            "start_cursor": {
+              "carry": [
+                32,
+                "document-002",
+                71,
+                0
+              ],
+              "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+              "document_index": 1,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 72,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "start_step": 2,
+            "updates": [
+              {
+                "batch_hashes": [
+                  "1c53dce38a16d5b9353a31609142e88a9c94d53a9e44d56707b6420eecf5aab1",
+                  "58e363d81e4e4b33c2751dcb62eb8405f97a0769f66c9146bd015a8d02084dd1"
+                ],
+                "cursor": {
+                  "carry": [
+                    97,
+                    "document-004",
+                    15,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 2,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 16,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.534850113035187,
+                "global_tokens": 254,
+                "gradient_norm": 0.7628694772720337,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.36519579199375585,
+                "step": 3
+              },
+              {
+                "batch_hashes": [
+                  "846b5cd6892355d288869a8f97ba3e727ba2176e20ad5eaa39a5066128855a0a",
+                  "e5509f11a98f265eba4ab100a1bd5f94a7f83a848ce571f040ad16aa5c37f70a"
+                ],
+                "cursor": {
+                  "carry": [
+                    111,
+                    "document-004",
+                    143,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 2,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 144,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.507556200027466,
+                "global_tokens": 256,
+                "gradient_norm": 0.819341778755188,
+                "local_tokens": 128,
+                "max_rank_update_seconds": 0.010114000004250556,
+                "step": 4
+              },
+              {
+                "batch_hashes": [
+                  "57c0bf0ff531078b690b3ec16015db36e80625c6c2bb243db6076a7f6ee4829f",
+                  "5f338256e93bd5f06820e9f255a5f859fdc2502343ed1e8fc5309be3bca1b7bd"
+                ],
+                "cursor": {
+                  "carry": [
+                    32,
+                    "document-006",
+                    86,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 3,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 87,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.511386420783095,
+                "global_tokens": 254,
+                "gradient_norm": 0.7554080486297607,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.024898167001083493,
+                "step": 5
+              },
+              {
+                "batch_hashes": [
+                  "2e056aa6c9e3a325154e416ad2c6cf5257c16c1f103abaf711687b79e6a5329a",
+                  "abc3990c28493f1632bbeb1af35e69a23ba6c58c7754ed87fd645f10c182b2fc"
+                ],
+                "cursor": {
+                  "carry": [
+                    97,
+                    "document-008",
+                    30,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 4,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 31,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.488577414685347,
+                "global_tokens": 254,
+                "gradient_norm": 1.0211304426193237,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.016477790981298313,
+                "step": 6
+              }
+            ],
+            "world_size": 2
+          },
+          {
+            "final": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.438027381896973
+            },
+            "global_tokens_total": 1528,
+            "initial": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.504134654998779
+            },
+            "local_tokens_total": 764,
+            "parameters": 6496,
+            "rank": 1,
+            "replicas": [
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 764,
+                "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+                "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+                "rank": 0
+              },
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 764,
+                "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+                "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+                "rank": 1
+              }
+            ],
+            "scope": "same-host processes",
+            "start_cursor": {
+              "carry": [
+                240,
+                "document-003",
+                75,
+                0
+              ],
+              "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+              "document_index": 1,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 76,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "start_step": 2,
+            "updates": [
+              {
+                "batch_hashes": [
+                  "006d266f77a769fa805dfe900f860e09892e1d66608f21f1e7e0da7e56e1b0dd",
+                  "671e24ebee22134e2164f436eaf067a20e0d3f00eeedf5a50ca000e906a05c4d"
+                ],
+                "cursor": {
+                  "carry": [
+                    106,
+                    "document-005",
+                    6,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 2,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 7,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.534850113035187,
+                "global_tokens": 254,
+                "gradient_norm": 0.7628694772720337,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.36519579199375585,
+                "step": 3
+              },
+              {
+                "batch_hashes": [
+                  "9e1a4328891c22bbb227a530489f361d1595bf3edb0abbe2bd8edde0c990cf85",
+                  "6ba6ad187800317191f02eaf2da9fbef2c2bcc412fd494d1ad3795e111121af8"
+                ],
+                "cursor": {
+                  "carry": [
+                    110,
+                    "document-005",
+                    134,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 2,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 135,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.507556200027466,
+                "global_tokens": 256,
+                "gradient_norm": 0.819341778755188,
+                "local_tokens": 128,
+                "max_rank_update_seconds": 0.010114000004250556,
+                "step": 4
+              },
+              {
+                "batch_hashes": [
+                  "fafa57070622f8fd673173d8ad54be796488656ce365bd759a80e5caade37195",
+                  "4e581ef99718aa83787deaf28614e311ad6b1bb473c9a9ee4874820c38cb284f"
+                ],
+                "cursor": {
+                  "carry": [
+                    80,
+                    "document-007",
+                    81,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 3,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 82,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.511386420783095,
+                "global_tokens": 254,
+                "gradient_norm": 0.7554080486297607,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.024898167001083493,
+                "step": 5
+              },
+              {
+                "batch_hashes": [
+                  "c752739f3238228025b9cecf52d0b88a565afd0e171e8ae660241c8471964041",
+                  "f34b6d1e3a46f6c34d5e994700b4eaaebf17148a3c56e09974220eeea6f356f8"
+                ],
+                "cursor": {
+                  "carry": [
+                    101,
+                    "document-009",
+                    12,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 4,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 13,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.488577414685347,
+                "global_tokens": 254,
+                "gradient_norm": 1.0211304426193237,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.016477790981298313,
+                "step": 6
+              }
+            ],
+            "world_size": 2
+          }
+        ],
+        "status": {
+          "elapsed_seconds": 7.136244290973991,
+          "error": null,
+          "status": "COMPLETED"
+        },
+        "summary": {
+          "final": {
+            "batches": 2,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 128,
+            "token_nll": 5.438027381896973
+          },
+          "final_checkpoint": "checkpoints/step-000006",
+          "global_tokens_total": 1528,
+          "parameters": 6496,
+          "replicas_equal": true,
+          "scope": "same-host processes",
+          "steps": 6,
+          "world_size": 2
+        }
+      },
+      "serial_reference": {
+        "comparison": {
+          "cursors_equal": true,
+          "max_absolute_parameter_difference": 3.67872416973114e-08,
+          "scope": "numerical agreement with independent serial reduction order; not bitwise equivalence",
+          "tolerance": 2e-06
+        },
+        "metrics": {
+          "final": {
+            "batches": 2,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 128,
+            "token_nll": 5.438027381896973
+          },
+          "model_hash": "36d6942427945f4c275441b8a100f1d842ead7043e0e604dc1e29e60afc97f60",
+          "updates": [
+            {
+              "global_loss": 5.543856739997864,
+              "global_tokens": 256,
+              "gradient_norm": 0.6543112993240356,
+              "rank_batch_hashes": [
+                [
+                  "7d7d205b1025ef25d07d52af4bedf3bd0b70c6d032b784a93acc16445a4854bf",
+                  "6b9d11bed790fc32078f0183414a093dff02256ece45b91ef61b1b9a616215ed"
+                ],
+                [
+                  "f61a793c936166106481fac03af3d8f66418e1002a4b68377598bfaceb2fb155",
+                  "bbedc99793c16fd5498de0c2623f12d0989ea2f5936d79d2cafca48c79429492"
+                ]
+              ],
+              "step": 1
+            },
+            {
+              "global_loss": 5.549907173697404,
+              "global_tokens": 254,
+              "gradient_norm": 0.6282788515090942,
+              "rank_batch_hashes": [
+                [
+                  "2832a85b8286a1cd866be17e42af4456e9f420c66533c7f5d7e733bdd98b4251",
+                  "558d77ce7ce6205a77123b4d838c68bf1ddc8dd6229524ce15bfcf0d81c17cfd"
+                ],
+                [
+                  "8e27b5c7115b4ed93455198b47a1376bb1b7e808b2ddeb3d3160833b85c8f50e",
+                  "f76df66c035a6f0c0a963cd33e8a7d0dd96d435ea4ac3d423c9a80346a77e3ca"
+                ]
+              ],
+              "step": 2
+            },
+            {
+              "global_loss": 5.534850113035187,
+              "global_tokens": 254,
+              "gradient_norm": 0.7628695964813232,
+              "rank_batch_hashes": [
+                [
+                  "1c53dce38a16d5b9353a31609142e88a9c94d53a9e44d56707b6420eecf5aab1",
+                  "58e363d81e4e4b33c2751dcb62eb8405f97a0769f66c9146bd015a8d02084dd1"
+                ],
+                [
+                  "006d266f77a769fa805dfe900f860e09892e1d66608f21f1e7e0da7e56e1b0dd",
+                  "671e24ebee22134e2164f436eaf067a20e0d3f00eeedf5a50ca000e906a05c4d"
+                ]
+              ],
+              "step": 3
+            },
+            {
+              "global_loss": 5.507556200027466,
+              "global_tokens": 256,
+              "gradient_norm": 0.819341778755188,
+              "rank_batch_hashes": [
+                [
+                  "846b5cd6892355d288869a8f97ba3e727ba2176e20ad5eaa39a5066128855a0a",
+                  "e5509f11a98f265eba4ab100a1bd5f94a7f83a848ce571f040ad16aa5c37f70a"
+                ],
+                [
+                  "9e1a4328891c22bbb227a530489f361d1595bf3edb0abbe2bd8edde0c990cf85",
+                  "6ba6ad187800317191f02eaf2da9fbef2c2bcc412fd494d1ad3795e111121af8"
+                ]
+              ],
+              "step": 4
+            },
+            {
+              "global_loss": 5.511386420783095,
+              "global_tokens": 254,
+              "gradient_norm": 0.7554080486297607,
+              "rank_batch_hashes": [
+                [
+                  "57c0bf0ff531078b690b3ec16015db36e80625c6c2bb243db6076a7f6ee4829f",
+                  "5f338256e93bd5f06820e9f255a5f859fdc2502343ed1e8fc5309be3bca1b7bd"
+                ],
+                [
+                  "fafa57070622f8fd673173d8ad54be796488656ce365bd759a80e5caade37195",
+                  "4e581ef99718aa83787deaf28614e311ad6b1bb473c9a9ee4874820c38cb284f"
+                ]
+              ],
+              "step": 5
+            },
+            {
+              "global_loss": 5.488577534833293,
+              "global_tokens": 254,
+              "gradient_norm": 1.0211304426193237,
+              "rank_batch_hashes": [
+                [
+                  "2e056aa6c9e3a325154e416ad2c6cf5257c16c1f103abaf711687b79e6a5329a",
+                  "abc3990c28493f1632bbeb1af35e69a23ba6c58c7754ed87fd645f10c182b2fc"
+                ],
+                [
+                  "c752739f3238228025b9cecf52d0b88a565afd0e171e8ae660241c8471964041",
+                  "f34b6d1e3a46f6c34d5e994700b4eaaebf17148a3c56e09974220eeea6f356f8"
+                ]
+              ],
+              "step": 6
+            }
+          ]
+        },
+        "path": "references/20260927T060207-serial-global-batch-reference-3c0cc050"
+      }
+    }
+  },
+  "corpus_hash": "55d48cf01661c3396ddecbd34fecdfa4d929ff99f774ca65c6eb9bb4c462f02b",
+  "corpus_path": "intake/20260927T060147-corpus-intake-52c60fcb/corpus.json",
+  "failure_drills": {
+    "after_publish": {
+      "checkpoint_scan": [
+        {
+          "bundle_hash": "9fd2fa08994dc83128e746230052513b6dc2f58f6bf86c366b073a22e93251ba",
+          "loadable": true,
+          "name": "step-000002",
+          "status": "VALID"
+        },
+        {
+          "bundle_hash": "fea1225d058e33a0b6c8b0ffe7476bddf6d4358d0224f74439fa8f6c48102ab1",
+          "loadable": true,
+          "name": "step-000004",
+          "status": "VALID"
+        }
+      ],
+      "exact_recovery": {
+        "common": {
+          "corpus_hash": true,
+          "global_tokens": true,
+          "model": true,
+          "model_config": true,
+          "optimizer": true,
+          "partition_hash": true,
+          "stable_config": true,
+          "step": true,
+          "tokenizer": true
+        },
+        "exact": true,
+        "ranks": [
+          {
+            "cursor": true,
+            "global_tokens": true,
+            "local_tokens": true,
+            "model_hash": true,
+            "optimizer_hash": true,
+            "rank": true,
+            "torch_rng": true
+          },
+          {
+            "cursor": true,
+            "global_tokens": true,
+            "local_tokens": true,
+            "model_hash": true,
+            "optimizer_hash": true,
+            "rank": true,
+            "torch_rng": true
+          }
+        ]
+      },
+      "failed_path": "jobs/20260927T060232-distributed-pretrain-launch-b5524430",
+      "failed_status": {
+        "elapsed_seconds": 3.150201416981872,
+        "error": "worker job exited 1; retained job: runs/20260927T060039-phase-3b-build-7087fd85/jobs/20260927T060232-distributed-pretrain-launch-b5524430",
+        "status": "FAILED"
+      },
+      "injected_marker_present": true,
+      "launcher_log_sha256": "5cd88ca1b61fe1c76c70e299fba21da8ebd037967c230db535a5d89c463124cc",
+      "recovered": {
+        "audit": {
+          "checkpoint": {
+            "bundle_hash": "562e208bfe5ff3b4a1335d5b62b941dcd9e008ccaed5ba40ce3b2d8d789c0bfc",
+            "cursor_bindings_valid": true,
+            "global_tokens": 1528,
+            "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+            "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+            "replicas_equal": true,
+            "step": 6,
+            "world_size": 2
+          },
+          "ownership": {
+            "disjoint_complete_ownership": true,
+            "documents": 12,
+            "ranks": 2
+          },
+          "replayed_rank_updates": 4,
+          "scope": "batch/cursor/count/certificate replay; no independent proof of optimizer math"
+        },
+        "checkpoint_scan": [
+          {
+            "bundle_hash": "562e208bfe5ff3b4a1335d5b62b941dcd9e008ccaed5ba40ce3b2d8d789c0bfc",
+            "loadable": true,
+            "name": "step-000006",
+            "status": "VALID"
+          }
+        ],
+        "path": "jobs/20260927T060236-distributed-pretrain-launch-432b3258",
+        "rank_metrics": [
+          {
+            "final": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.438027381896973
+            },
+            "global_tokens_total": 1528,
+            "initial": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.4744486808776855
+            },
+            "local_tokens_total": 764,
+            "parameters": 6496,
+            "rank": 0,
+            "replicas": [
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 764,
+                "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+                "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+                "rank": 0
+              },
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 764,
+                "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+                "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+                "rank": 1
+              }
+            ],
+            "scope": "same-host processes",
+            "start_cursor": {
+              "carry": [
+                111,
+                "document-004",
+                143,
+                0
+              ],
+              "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+              "document_index": 2,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 144,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "start_step": 4,
+            "updates": [
+              {
+                "batch_hashes": [
+                  "57c0bf0ff531078b690b3ec16015db36e80625c6c2bb243db6076a7f6ee4829f",
+                  "5f338256e93bd5f06820e9f255a5f859fdc2502343ed1e8fc5309be3bca1b7bd"
+                ],
+                "cursor": {
+                  "carry": [
+                    32,
+                    "document-006",
+                    86,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 3,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 87,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.511386420783095,
+                "global_tokens": 254,
+                "gradient_norm": 0.7554080486297607,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.02423841698328033,
+                "step": 5
+              },
+              {
+                "batch_hashes": [
+                  "2e056aa6c9e3a325154e416ad2c6cf5257c16c1f103abaf711687b79e6a5329a",
+                  "abc3990c28493f1632bbeb1af35e69a23ba6c58c7754ed87fd645f10c182b2fc"
+                ],
+                "cursor": {
+                  "carry": [
+                    97,
+                    "document-008",
+                    30,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 4,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 31,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.488577414685347,
+                "global_tokens": 254,
+                "gradient_norm": 1.0211304426193237,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.004515999986324459,
+                "step": 6
+              }
+            ],
+            "world_size": 2
+          },
+          {
+            "final": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.438027381896973
+            },
+            "global_tokens_total": 1528,
+            "initial": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.4744486808776855
+            },
+            "local_tokens_total": 764,
+            "parameters": 6496,
+            "rank": 1,
+            "replicas": [
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 764,
+                "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+                "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+                "rank": 0
+              },
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 764,
+                "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+                "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+                "rank": 1
+              }
+            ],
+            "scope": "same-host processes",
+            "start_cursor": {
+              "carry": [
+                110,
+                "document-005",
+                134,
+                0
+              ],
+              "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+              "document_index": 2,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 135,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "start_step": 4,
+            "updates": [
+              {
+                "batch_hashes": [
+                  "fafa57070622f8fd673173d8ad54be796488656ce365bd759a80e5caade37195",
+                  "4e581ef99718aa83787deaf28614e311ad6b1bb473c9a9ee4874820c38cb284f"
+                ],
+                "cursor": {
+                  "carry": [
+                    80,
+                    "document-007",
+                    81,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 3,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 82,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.511386420783095,
+                "global_tokens": 254,
+                "gradient_norm": 0.7554080486297607,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.02423841698328033,
+                "step": 5
+              },
+              {
+                "batch_hashes": [
+                  "c752739f3238228025b9cecf52d0b88a565afd0e171e8ae660241c8471964041",
+                  "f34b6d1e3a46f6c34d5e994700b4eaaebf17148a3c56e09974220eeea6f356f8"
+                ],
+                "cursor": {
+                  "carry": [
+                    101,
+                    "document-009",
+                    12,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 4,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 13,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.488577414685347,
+                "global_tokens": 254,
+                "gradient_norm": 1.0211304426193237,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.004515999986324459,
+                "step": 6
+              }
+            ],
+            "world_size": 2
+          }
+        ],
+        "status": {
+          "elapsed_seconds": 3.60473424999509,
+          "error": null,
+          "status": "COMPLETED"
+        },
+        "summary": {
+          "final": {
+            "batches": 2,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 128,
+            "token_nll": 5.438027381896973
+          },
+          "final_checkpoint": "checkpoints/step-000006",
+          "global_tokens_total": 1528,
+          "parameters": 6496,
+          "replicas_equal": true,
+          "scope": "same-host processes",
+          "steps": 6,
+          "world_size": 2
+        }
+      },
+      "restart_step": 4
+    },
+    "before_publish": {
+      "checkpoint_scan": [
+        {
+          "loadable": false,
+          "name": ".pending-step-000004",
+          "status": "INCOMPLETE"
+        },
+        {
+          "bundle_hash": "9fd2fa08994dc83128e746230052513b6dc2f58f6bf86c366b073a22e93251ba",
+          "loadable": true,
+          "name": "step-000002",
+          "status": "VALID"
+        }
+      ],
+      "exact_recovery": {
+        "common": {
+          "corpus_hash": true,
+          "global_tokens": true,
+          "model": true,
+          "model_config": true,
+          "optimizer": true,
+          "partition_hash": true,
+          "stable_config": true,
+          "step": true,
+          "tokenizer": true
+        },
+        "exact": true,
+        "ranks": [
+          {
+            "cursor": true,
+            "global_tokens": true,
+            "local_tokens": true,
+            "model_hash": true,
+            "optimizer_hash": true,
+            "rank": true,
+            "torch_rng": true
+          },
+          {
+            "cursor": true,
+            "global_tokens": true,
+            "local_tokens": true,
+            "model_hash": true,
+            "optimizer_hash": true,
+            "rank": true,
+            "torch_rng": true
+          }
+        ]
+      },
+      "failed_path": "jobs/20260927T060226-distributed-pretrain-launch-d4e4da30",
+      "failed_status": {
+        "elapsed_seconds": 3.1415905419853516,
+        "error": "worker job exited 1; retained job: runs/20260927T060039-phase-3b-build-7087fd85/jobs/20260927T060226-distributed-pretrain-launch-d4e4da30",
+        "status": "FAILED"
+      },
+      "injected_marker_present": true,
+      "launcher_log_sha256": "df06570823cfc6d9b7dc9dae6f5d3ccf9acade5ace6093d178724a73bd38f458",
+      "recovered": {
+        "audit": {
+          "checkpoint": {
+            "bundle_hash": "9f51554cace175bdeaa58a849fd116ab1c2d9391af45e28414df1c3b4e09d953",
+            "cursor_bindings_valid": true,
+            "global_tokens": 1528,
+            "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+            "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+            "replicas_equal": true,
+            "step": 6,
+            "world_size": 2
+          },
+          "ownership": {
+            "disjoint_complete_ownership": true,
+            "documents": 12,
+            "ranks": 2
+          },
+          "replayed_rank_updates": 8,
+          "scope": "batch/cursor/count/certificate replay; no independent proof of optimizer math"
+        },
+        "checkpoint_scan": [
+          {
+            "bundle_hash": "388664c2387969db84175e93ee318360472855182ee9ccb8e6c99224400d1f62",
+            "loadable": true,
+            "name": "step-000004",
+            "status": "VALID"
+          },
+          {
+            "bundle_hash": "9f51554cace175bdeaa58a849fd116ab1c2d9391af45e28414df1c3b4e09d953",
+            "loadable": true,
+            "name": "step-000006",
+            "status": "VALID"
+          }
+        ],
+        "path": "jobs/20260927T060229-distributed-pretrain-launch-dee558ea",
+        "rank_metrics": [
+          {
+            "final": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.438027381896973
+            },
+            "global_tokens_total": 1528,
+            "initial": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.504134654998779
+            },
+            "local_tokens_total": 764,
+            "parameters": 6496,
+            "rank": 0,
+            "replicas": [
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 764,
+                "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+                "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+                "rank": 0
+              },
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 764,
+                "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+                "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+                "rank": 1
+              }
+            ],
+            "scope": "same-host processes",
+            "start_cursor": {
+              "carry": [
+                32,
+                "document-002",
+                71,
+                0
+              ],
+              "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+              "document_index": 1,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 72,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "start_step": 2,
+            "updates": [
+              {
+                "batch_hashes": [
+                  "1c53dce38a16d5b9353a31609142e88a9c94d53a9e44d56707b6420eecf5aab1",
+                  "58e363d81e4e4b33c2751dcb62eb8405f97a0769f66c9146bd015a8d02084dd1"
+                ],
+                "cursor": {
+                  "carry": [
+                    97,
+                    "document-004",
+                    15,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 2,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 16,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.534850113035187,
+                "global_tokens": 254,
+                "gradient_norm": 0.7628694772720337,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.022440291999373585,
+                "step": 3
+              },
+              {
+                "batch_hashes": [
+                  "846b5cd6892355d288869a8f97ba3e727ba2176e20ad5eaa39a5066128855a0a",
+                  "e5509f11a98f265eba4ab100a1bd5f94a7f83a848ce571f040ad16aa5c37f70a"
+                ],
+                "cursor": {
+                  "carry": [
+                    111,
+                    "document-004",
+                    143,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 2,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 144,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.507556200027466,
+                "global_tokens": 256,
+                "gradient_norm": 0.819341778755188,
+                "local_tokens": 128,
+                "max_rank_update_seconds": 0.003927540994482115,
+                "step": 4
+              },
+              {
+                "batch_hashes": [
+                  "57c0bf0ff531078b690b3ec16015db36e80625c6c2bb243db6076a7f6ee4829f",
+                  "5f338256e93bd5f06820e9f255a5f859fdc2502343ed1e8fc5309be3bca1b7bd"
+                ],
+                "cursor": {
+                  "carry": [
+                    32,
+                    "document-006",
+                    86,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 3,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 87,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.511386420783095,
+                "global_tokens": 254,
+                "gradient_norm": 0.7554080486297607,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.004569500015350059,
+                "step": 5
+              },
+              {
+                "batch_hashes": [
+                  "2e056aa6c9e3a325154e416ad2c6cf5257c16c1f103abaf711687b79e6a5329a",
+                  "abc3990c28493f1632bbeb1af35e69a23ba6c58c7754ed87fd645f10c182b2fc"
+                ],
+                "cursor": {
+                  "carry": [
+                    97,
+                    "document-008",
+                    30,
+                    0
+                  ],
+                  "corpus_hash": "5a116741bdcb815fa9b678fa603a25a70358e0b4a42a0cf60a7723e5ed388616",
+                  "document_index": 4,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 31,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.488577414685347,
+                "global_tokens": 254,
+                "gradient_norm": 1.0211304426193237,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.0039004579884931445,
+                "step": 6
+              }
+            ],
+            "world_size": 2
+          },
+          {
+            "final": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.438027381896973
+            },
+            "global_tokens_total": 1528,
+            "initial": {
+              "batches": 2,
+              "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+              "scored_tokens": 128,
+              "token_nll": 5.504134654998779
+            },
+            "local_tokens_total": 764,
+            "parameters": 6496,
+            "rank": 1,
+            "replicas": [
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 764,
+                "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+                "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+                "rank": 0
+              },
+              {
+                "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+                "local_tokens": 764,
+                "model_hash": "b9776c5e24688d6340990703ac834d2cfbce7d8c5174cd994e248bbea64e77b8",
+                "optimizer_hash": "e17299ae69a3d154e13f6297761634329dcb9079c28104179fadd5e45130ad72",
+                "rank": 1
+              }
+            ],
+            "scope": "same-host processes",
+            "start_cursor": {
+              "carry": [
+                240,
+                "document-003",
+                75,
+                0
+              ],
+              "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+              "document_index": 1,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 76,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "start_step": 2,
+            "updates": [
+              {
+                "batch_hashes": [
+                  "006d266f77a769fa805dfe900f860e09892e1d66608f21f1e7e0da7e56e1b0dd",
+                  "671e24ebee22134e2164f436eaf067a20e0d3f00eeedf5a50ca000e906a05c4d"
+                ],
+                "cursor": {
+                  "carry": [
+                    106,
+                    "document-005",
+                    6,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 2,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 7,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.534850113035187,
+                "global_tokens": 254,
+                "gradient_norm": 0.7628694772720337,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.022440291999373585,
+                "step": 3
+              },
+              {
+                "batch_hashes": [
+                  "9e1a4328891c22bbb227a530489f361d1595bf3edb0abbe2bd8edde0c990cf85",
+                  "6ba6ad187800317191f02eaf2da9fbef2c2bcc412fd494d1ad3795e111121af8"
+                ],
+                "cursor": {
+                  "carry": [
+                    110,
+                    "document-005",
+                    134,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 2,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 135,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.507556200027466,
+                "global_tokens": 256,
+                "gradient_norm": 0.819341778755188,
+                "local_tokens": 128,
+                "max_rank_update_seconds": 0.003927540994482115,
+                "step": 4
+              },
+              {
+                "batch_hashes": [
+                  "fafa57070622f8fd673173d8ad54be796488656ce365bd759a80e5caade37195",
+                  "4e581ef99718aa83787deaf28614e311ad6b1bb473c9a9ee4874820c38cb284f"
+                ],
+                "cursor": {
+                  "carry": [
+                    80,
+                    "document-007",
+                    81,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 3,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 82,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.511386420783095,
+                "global_tokens": 254,
+                "gradient_norm": 0.7554080486297607,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.004569500015350059,
+                "step": 5
+              },
+              {
+                "batch_hashes": [
+                  "c752739f3238228025b9cecf52d0b88a565afd0e171e8ae660241c8471964041",
+                  "f34b6d1e3a46f6c34d5e994700b4eaaebf17148a3c56e09974220eeea6f356f8"
+                ],
+                "cursor": {
+                  "carry": [
+                    101,
+                    "document-009",
+                    12,
+                    0
+                  ],
+                  "corpus_hash": "533c91bdf8ec03fe9fa52e54b29bf9035feb287d8e0353f035d1a173edf4a425",
+                  "document_index": 4,
+                  "epoch": 0,
+                  "repeat": true,
+                  "schema": "aim-packed-token-cursor-v1",
+                  "split": "train",
+                  "token_offset": 13,
+                  "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+                },
+                "global_loss": 5.488577414685347,
+                "global_tokens": 254,
+                "gradient_norm": 1.0211304426193237,
+                "local_tokens": 127,
+                "max_rank_update_seconds": 0.0039004579884931445,
+                "step": 6
+              }
+            ],
+            "world_size": 2
+          }
+        ],
+        "status": {
+          "elapsed_seconds": 3.2497552080021705,
+          "error": null,
+          "status": "COMPLETED"
+        },
+        "summary": {
+          "final": {
+            "batches": 2,
+            "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+            "scored_tokens": 128,
+            "token_nll": 5.438027381896973
+          },
+          "final_checkpoint": "checkpoints/step-000006",
+          "global_tokens_total": 1528,
+          "parameters": 6496,
+          "replicas_equal": true,
+          "scope": "same-host processes",
+          "steps": 6,
+          "world_size": 2
+        }
+      },
+      "restart_step": 2
+    }
+  },
+  "four_rank": {
+    "audit": {
+      "checkpoint": {
+        "bundle_hash": "ee3733951c8e09bdbec3d37c05ebddae6821bdbbed3b12662e30f39b0d1d3a9b",
+        "cursor_bindings_valid": true,
+        "global_tokens": 1020,
+        "model_hash": "39f2ccf7499f35a42255a7bbd9a5de2b4d55dee1bb833d6c76b1f43371758068",
+        "optimizer_hash": "bc31e29b4c41106b61cb47eeb53c454871a4412021d204b37662ffc5a3f154d3",
+        "replicas_equal": true,
+        "step": 2,
+        "world_size": 4
+      },
+      "ownership": {
+        "disjoint_complete_ownership": true,
+        "documents": 12,
+        "ranks": 4
+      },
+      "replayed_rank_updates": 8,
+      "scope": "batch/cursor/count/certificate replay; no independent proof of optimizer math"
+    },
+    "checkpoint_scan": [
+      {
+        "bundle_hash": "ee3733951c8e09bdbec3d37c05ebddae6821bdbbed3b12662e30f39b0d1d3a9b",
+        "loadable": true,
+        "name": "step-000002",
+        "status": "VALID"
+      }
+    ],
+    "path": "jobs/20260927T060239-distributed-pretrain-launch-59d13ec1",
+    "rank_metrics": [
+      {
+        "final": {
+          "batches": 2,
+          "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+          "scored_tokens": 128,
+          "token_nll": 5.505192518234253
+        },
+        "global_tokens_total": 1020,
+        "initial": {
+          "batches": 2,
+          "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+          "scored_tokens": 128,
+          "token_nll": 5.530620813369751
+        },
+        "local_tokens_total": 255,
+        "parameters": 6496,
+        "rank": 0,
+        "replicas": [
+          {
+            "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+            "local_tokens": 255,
+            "model_hash": "39f2ccf7499f35a42255a7bbd9a5de2b4d55dee1bb833d6c76b1f43371758068",
+            "optimizer_hash": "bc31e29b4c41106b61cb47eeb53c454871a4412021d204b37662ffc5a3f154d3",
+            "rank": 0
+          },
+          {
+            "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+            "local_tokens": 255,
+            "model_hash": "39f2ccf7499f35a42255a7bbd9a5de2b4d55dee1bb833d6c76b1f43371758068",
+            "optimizer_hash": "bc31e29b4c41106b61cb47eeb53c454871a4412021d204b37662ffc5a3f154d3",
+            "rank": 1
+          },
+          {
+            "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+            "local_tokens": 255,
+            "model_hash": "39f2ccf7499f35a42255a7bbd9a5de2b4d55dee1bb833d6c76b1f43371758068",
+            "optimizer_hash": "bc31e29b4c41106b61cb47eeb53c454871a4412021d204b37662ffc5a3f154d3",
+            "rank": 2
+          },
+          {
+            "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+            "local_tokens": 255,
+            "model_hash": "39f2ccf7499f35a42255a7bbd9a5de2b4d55dee1bb833d6c76b1f43371758068",
+            "optimizer_hash": "bc31e29b4c41106b61cb47eeb53c454871a4412021d204b37662ffc5a3f154d3",
+            "rank": 3
+          }
+        ],
+        "scope": "same-host processes",
+        "start_cursor": {
+          "carry": null,
+          "corpus_hash": "07b4feb223967569dab244431ab32f35d3fd3841f29a9bffe15c18404c21ffc3",
+          "document_index": 0,
+          "epoch": 0,
+          "repeat": true,
+          "schema": "aim-packed-token-cursor-v1",
+          "split": "train",
+          "token_offset": 0,
+          "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+        },
+        "start_step": 0,
+        "updates": [
+          {
+            "batch_hashes": [
+              "7d7d205b1025ef25d07d52af4bedf3bd0b70c6d032b784a93acc16445a4854bf",
+              "6b9d11bed790fc32078f0183414a093dff02256ece45b91ef61b1b9a616215ed"
+            ],
+            "cursor": {
+              "carry": [
+                110,
+                "document-000",
+                128,
+                0
+              ],
+              "corpus_hash": "07b4feb223967569dab244431ab32f35d3fd3841f29a9bffe15c18404c21ffc3",
+              "document_index": 0,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 129,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "global_loss": 5.548220217227936,
+            "global_tokens": 512,
+            "gradient_norm": 0.5482951402664185,
+            "local_tokens": 128,
+            "max_rank_update_seconds": 0.057502874988131225,
+            "step": 1
+          },
+          {
+            "batch_hashes": [
+              "83962e51876efc0146a98caa2abb0fc9340ed3056b49f8856622e73aebcff1f6",
+              "027f818a8f1144d8b4e3deacab8aac6594859337ad26d8fc2fd15bd8b592b2dc"
+            ],
+            "cursor": {
+              "carry": [
+                117,
+                "document-004",
+                71,
+                0
+              ],
+              "corpus_hash": "07b4feb223967569dab244431ab32f35d3fd3841f29a9bffe15c18404c21ffc3",
+              "document_index": 1,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 72,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "global_loss": 5.544998048797367,
+            "global_tokens": 508,
+            "gradient_norm": 0.6658987998962402,
+            "local_tokens": 127,
+            "max_rank_update_seconds": 0.006215500005055219,
+            "step": 2
+          }
+        ],
+        "world_size": 4
+      },
+      {
+        "final": {
+          "batches": 2,
+          "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+          "scored_tokens": 128,
+          "token_nll": 5.505192518234253
+        },
+        "global_tokens_total": 1020,
+        "initial": {
+          "batches": 2,
+          "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+          "scored_tokens": 128,
+          "token_nll": 5.530620813369751
+        },
+        "local_tokens_total": 255,
+        "parameters": 6496,
+        "rank": 1,
+        "replicas": [
+          {
+            "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+            "local_tokens": 255,
+            "model_hash": "39f2ccf7499f35a42255a7bbd9a5de2b4d55dee1bb833d6c76b1f43371758068",
+            "optimizer_hash": "bc31e29b4c41106b61cb47eeb53c454871a4412021d204b37662ffc5a3f154d3",
+            "rank": 0
+          },
+          {
+            "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+            "local_tokens": 255,
+            "model_hash": "39f2ccf7499f35a42255a7bbd9a5de2b4d55dee1bb833d6c76b1f43371758068",
+            "optimizer_hash": "bc31e29b4c41106b61cb47eeb53c454871a4412021d204b37662ffc5a3f154d3",
+            "rank": 1
+          },
+          {
+            "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+            "local_tokens": 255,
+            "model_hash": "39f2ccf7499f35a42255a7bbd9a5de2b4d55dee1bb833d6c76b1f43371758068",
+            "optimizer_hash": "bc31e29b4c41106b61cb47eeb53c454871a4412021d204b37662ffc5a3f154d3",
+            "rank": 2
+          },
+          {
+            "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+            "local_tokens": 255,
+            "model_hash": "39f2ccf7499f35a42255a7bbd9a5de2b4d55dee1bb833d6c76b1f43371758068",
+            "optimizer_hash": "bc31e29b4c41106b61cb47eeb53c454871a4412021d204b37662ffc5a3f154d3",
+            "rank": 3
+          }
+        ],
+        "scope": "same-host processes",
+        "start_cursor": {
+          "carry": null,
+          "corpus_hash": "8473dd5720cd1871d78c4c240d44beba93c1b7c76fd9e8607ac6b97ffbbe3a95",
+          "document_index": 0,
+          "epoch": 0,
+          "repeat": true,
+          "schema": "aim-packed-token-cursor-v1",
+          "split": "train",
+          "token_offset": 0,
+          "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+        },
+        "start_step": 0,
+        "updates": [
+          {
+            "batch_hashes": [
+              "f61a793c936166106481fac03af3d8f66418e1002a4b68377598bfaceb2fb155",
+              "bbedc99793c16fd5498de0c2623f12d0989ea2f5936d79d2cafca48c79429492"
+            ],
+            "cursor": {
+              "carry": [
+                110,
+                "document-001",
+                128,
+                0
+              ],
+              "corpus_hash": "8473dd5720cd1871d78c4c240d44beba93c1b7c76fd9e8607ac6b97ffbbe3a95",
+              "document_index": 0,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 129,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "global_loss": 5.548220217227936,
+            "global_tokens": 512,
+            "gradient_norm": 0.5482951402664185,
+            "local_tokens": 128,
+            "max_rank_update_seconds": 0.057502874988131225,
+            "step": 1
+          },
+          {
+            "batch_hashes": [
+              "7b415897bdaa3b81c051adec8509a8e90cc2b7b1dec2fcda2d15b59c802de323",
+              "a8d2cc74e8f338723ec757caeb1746c2cef00d50e79f73086565d2a72f460958"
+            ],
+            "cursor": {
+              "carry": [
+                10,
+                "document-005",
+                75,
+                0
+              ],
+              "corpus_hash": "8473dd5720cd1871d78c4c240d44beba93c1b7c76fd9e8607ac6b97ffbbe3a95",
+              "document_index": 1,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 76,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "global_loss": 5.544998048797367,
+            "global_tokens": 508,
+            "gradient_norm": 0.6658987998962402,
+            "local_tokens": 127,
+            "max_rank_update_seconds": 0.006215500005055219,
+            "step": 2
+          }
+        ],
+        "world_size": 4
+      },
+      {
+        "final": {
+          "batches": 2,
+          "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+          "scored_tokens": 128,
+          "token_nll": 5.505192518234253
+        },
+        "global_tokens_total": 1020,
+        "initial": {
+          "batches": 2,
+          "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+          "scored_tokens": 128,
+          "token_nll": 5.530620813369751
+        },
+        "local_tokens_total": 255,
+        "parameters": 6496,
+        "rank": 2,
+        "replicas": [
+          {
+            "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+            "local_tokens": 255,
+            "model_hash": "39f2ccf7499f35a42255a7bbd9a5de2b4d55dee1bb833d6c76b1f43371758068",
+            "optimizer_hash": "bc31e29b4c41106b61cb47eeb53c454871a4412021d204b37662ffc5a3f154d3",
+            "rank": 0
+          },
+          {
+            "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+            "local_tokens": 255,
+            "model_hash": "39f2ccf7499f35a42255a7bbd9a5de2b4d55dee1bb833d6c76b1f43371758068",
+            "optimizer_hash": "bc31e29b4c41106b61cb47eeb53c454871a4412021d204b37662ffc5a3f154d3",
+            "rank": 1
+          },
+          {
+            "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+            "local_tokens": 255,
+            "model_hash": "39f2ccf7499f35a42255a7bbd9a5de2b4d55dee1bb833d6c76b1f43371758068",
+            "optimizer_hash": "bc31e29b4c41106b61cb47eeb53c454871a4412021d204b37662ffc5a3f154d3",
+            "rank": 2
+          },
+          {
+            "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+            "local_tokens": 255,
+            "model_hash": "39f2ccf7499f35a42255a7bbd9a5de2b4d55dee1bb833d6c76b1f43371758068",
+            "optimizer_hash": "bc31e29b4c41106b61cb47eeb53c454871a4412021d204b37662ffc5a3f154d3",
+            "rank": 3
+          }
+        ],
+        "scope": "same-host processes",
+        "start_cursor": {
+          "carry": null,
+          "corpus_hash": "7b1f617aaf92df951a1ca542ba87f4cf695990d4f5bd6a39970ee074808151c5",
+          "document_index": 0,
+          "epoch": 0,
+          "repeat": true,
+          "schema": "aim-packed-token-cursor-v1",
+          "split": "train",
+          "token_offset": 0,
+          "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+        },
+        "start_step": 0,
+        "updates": [
+          {
+            "batch_hashes": [
+              "5fc14efdb412853341d0369394ad9d1fedcdfc4434a544d33d389c6037355737",
+              "80b3a79d6e597d2f4b35398d844e899b22c6c774332393927929970943af6996"
+            ],
+            "cursor": {
+              "carry": [
+                110,
+                "document-002",
+                128,
+                0
+              ],
+              "corpus_hash": "7b1f617aaf92df951a1ca542ba87f4cf695990d4f5bd6a39970ee074808151c5",
+              "document_index": 0,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 129,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "global_loss": 5.548220217227936,
+            "global_tokens": 512,
+            "gradient_norm": 0.5482951402664185,
+            "local_tokens": 128,
+            "max_rank_update_seconds": 0.057502874988131225,
+            "step": 1
+          },
+          {
+            "batch_hashes": [
+              "3d176c287d2918fe5fe65e04a682f4e158d92596eacc69cb7228b601adf732b3",
+              "949db971d6a45f441e9808ad6708d15ca6b9f618174f987c0dfa056e22d86c51"
+            ],
+            "cursor": {
+              "carry": [
+                61,
+                "document-006",
+                72,
+                0
+              ],
+              "corpus_hash": "7b1f617aaf92df951a1ca542ba87f4cf695990d4f5bd6a39970ee074808151c5",
+              "document_index": 1,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 73,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "global_loss": 5.544998048797367,
+            "global_tokens": 508,
+            "gradient_norm": 0.6658987998962402,
+            "local_tokens": 127,
+            "max_rank_update_seconds": 0.006215500005055219,
+            "step": 2
+          }
+        ],
+        "world_size": 4
+      },
+      {
+        "final": {
+          "batches": 2,
+          "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+          "scored_tokens": 128,
+          "token_nll": 5.505192518234253
+        },
+        "global_tokens_total": 1020,
+        "initial": {
+          "batches": 2,
+          "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+          "scored_tokens": 128,
+          "token_nll": 5.530620813369751
+        },
+        "local_tokens_total": 255,
+        "parameters": 6496,
+        "rank": 3,
+        "replicas": [
+          {
+            "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+            "local_tokens": 255,
+            "model_hash": "39f2ccf7499f35a42255a7bbd9a5de2b4d55dee1bb833d6c76b1f43371758068",
+            "optimizer_hash": "bc31e29b4c41106b61cb47eeb53c454871a4412021d204b37662ffc5a3f154d3",
+            "rank": 0
+          },
+          {
+            "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+            "local_tokens": 255,
+            "model_hash": "39f2ccf7499f35a42255a7bbd9a5de2b4d55dee1bb833d6c76b1f43371758068",
+            "optimizer_hash": "bc31e29b4c41106b61cb47eeb53c454871a4412021d204b37662ffc5a3f154d3",
+            "rank": 1
+          },
+          {
+            "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+            "local_tokens": 255,
+            "model_hash": "39f2ccf7499f35a42255a7bbd9a5de2b4d55dee1bb833d6c76b1f43371758068",
+            "optimizer_hash": "bc31e29b4c41106b61cb47eeb53c454871a4412021d204b37662ffc5a3f154d3",
+            "rank": 2
+          },
+          {
+            "host_hash": "46f5bd50f60cb5c6336baa55a93ac0a1ccfb47c66f8a9b452fbe0f5190f9cb0d",
+            "local_tokens": 255,
+            "model_hash": "39f2ccf7499f35a42255a7bbd9a5de2b4d55dee1bb833d6c76b1f43371758068",
+            "optimizer_hash": "bc31e29b4c41106b61cb47eeb53c454871a4412021d204b37662ffc5a3f154d3",
+            "rank": 3
+          }
+        ],
+        "scope": "same-host processes",
+        "start_cursor": {
+          "carry": null,
+          "corpus_hash": "dd256f2d0bdb7126febd098a9c1ba6776ba1ed3b4fdfca05180725e089243026",
+          "document_index": 0,
+          "epoch": 0,
+          "repeat": true,
+          "schema": "aim-packed-token-cursor-v1",
+          "split": "train",
+          "token_offset": 0,
+          "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+        },
+        "start_step": 0,
+        "updates": [
+          {
+            "batch_hashes": [
+              "d0f48d85421619bf26162314acc9db18e08f551ecb9444ff5d4c796e81a279c8",
+              "22518c16f3f52188ee061b99c4750c5c995199b7ebea88b77cea272950f55d1a"
+            ],
+            "cursor": {
+              "carry": [
+                115,
+                "document-003",
+                128,
+                0
+              ],
+              "corpus_hash": "dd256f2d0bdb7126febd098a9c1ba6776ba1ed3b4fdfca05180725e089243026",
+              "document_index": 0,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 129,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "global_loss": 5.548220217227936,
+            "global_tokens": 512,
+            "gradient_norm": 0.5482951402664185,
+            "local_tokens": 128,
+            "max_rank_update_seconds": 0.057502874988131225,
+            "step": 1
+          },
+          {
+            "batch_hashes": [
+              "e94e252ed231e6a1358d85091f136937acf1f387f1c62c15e5050d66f9374d86",
+              "ada44a7a24b514c26fd557d357e34ddc47345d6fe1c1a3ed76d291ea2c986161"
+            ],
+            "cursor": {
+              "carry": [
+                32,
+                "document-007",
+                59,
+                0
+              ],
+              "corpus_hash": "dd256f2d0bdb7126febd098a9c1ba6776ba1ed3b4fdfca05180725e089243026",
+              "document_index": 1,
+              "epoch": 0,
+              "repeat": true,
+              "schema": "aim-packed-token-cursor-v1",
+              "split": "train",
+              "token_offset": 60,
+              "tokenizer_hash": "23e0b892fc6727e36c7c6f07d498b5d28df4347cd3262d5d2e2740f7496787f6"
+            },
+            "global_loss": 5.544998048797367,
+            "global_tokens": 508,
+            "gradient_norm": 0.6658987998962402,
+            "local_tokens": 127,
+            "max_rank_update_seconds": 0.006215500005055219,
+            "step": 2
+          }
+        ],
+        "world_size": 4
+      }
+    ],
+    "status": {
+      "elapsed_seconds": 4.592674834013451,
+      "error": null,
+      "status": "COMPLETED"
+    },
+    "summary": {
+      "final": {
+        "batches": 2,
+        "scope": "fixed validation prefix; token NLL is not comparable between different tokenizers",
+        "scored_tokens": 128,
+        "token_nll": 5.505192518234253
+      },
+      "final_checkpoint": "checkpoints/step-000002",
+      "global_tokens_total": 1020,
+      "parameters": 6496,
+      "replicas_equal": true,
+      "scope": "same-host processes",
+      "steps": 2,
+      "world_size": 4
+    }
+  },
+  "scope": "fixed-topology local Gloo integration; no scientific capability or VIT scaling evidence",
+  "sft_bridge": {
+    "checkpoint_sha256": "ff6ec3fee2c344f018213f29cce190e2f1112415fa67cbc72d7a1fbb7ab08ade",
+    "initialization": "exports/20260927T060244-distributed-initialization-export-94c3b884/initialization.pt",
+    "metrics": {
+      "dataset_version": "aim-procedural-v1",
+      "final": {
+        "bounded_candidate_expected_reward": 0.33602830131712835,
+        "label_origins": [
+          "procedural-exact-arithmetic; not human feedback"
+        ],
+        "n": 32,
+        "preference_accuracy": 0.5,
+        "response_token_nll": 5.546491622924805
+      },
+      "initial": {
+        "bounded_candidate_expected_reward": 0.3369916273877607,
+        "label_origins": [
+          "procedural-exact-arithmetic; not human feedback"
+        ],
+        "n": 32,
+        "preference_accuracy": 0.53125,
+        "response_token_nll": 5.5579328536987305
+      },
+      "parameters": 6496,
+      "scope": "miniature training mechanism; no capability claim",
+      "updates": [
+        {
+          "grad_norm": 2.796081781387329,
+          "loss": 5.590128421783447,
+          "step": 1,
+          "supervised_tokens": 4
+        },
+        {
+          "grad_norm": 2.98388934135437,
+          "loss": 5.626026630401611,
+          "step": 2,
+          "supervised_tokens": 4
+        }
+      ]
+    },
+    "path": "sft/20260927T060244-train-sft-d0982fe6"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "baseline": "a66bcbd",
+  "count": 26,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "d98bca4a4a946a03e35be909564d54702e90e16aad17268358c5e223d68bf96e"
+    },
+    {
+      "path": "documents/AIM_Model_1_Implementation_Directive.md",
+      "sha256": "d62fa537fbcd323d83e8721a4eff37cd69f11c9338dfbda2ca71a8e787502c21"
+    },
+    {
+      "path": "model-1/README.md",
+      "sha256": "161ffc883f8eb6009fdeff803e20fb261361c104df7382286001ef7fed9cc1ea"
+    },
+    {
+      "path": "model-1/aim/checkpoint_bundle.py",
+      "sha256": "d3b861399b02a6c393c1b8bb3a477e1e3fa36be416f18eb921f1a2c01ba6cb43"
+    },
+    {
+      "path": "model-1/aim/cli.py",
+      "sha256": "33b0c93769e60bc518494d2cab586c60739b90ad894f4070916aa799273bb3ec"
+    },
+    {
+      "path": "model-1/aim/distributed_jobs.py",
+      "sha256": "277e3983adbdac4e7634384956b8a86f95b4d9047fb21260919e5103469e08c0"
+    },
+    {
+      "path": "model-1/aim/distributed_pretrain.py",
+      "sha256": "728980e1fa7b8947e342ea654babb5786d35bf6aae6be67ed305036eaeca6acc"
+    },
+    {
+      "path": "model-1/aim/distributed_reference.py",
+      "sha256": "dc853f4b53aa0a3abf5c41a4cc09d6adb1ee7aaeac65368df0c7339ebf96dc78"
+    },
+    {
+      "path": "model-1/aim/distributed_reproduce.py",
+      "sha256": "f9d2a1314aa88ff3c012fded942550432615305644353f02215b293020b91684"
+    },
+    {
+      "path": "model-1/aim/sharded_data.py",
+      "sha256": "c74c593e948b601d757dbc0be5026b25584d45226a1ecbddc2cd0fa47ed72c37"
+    },
+    {
+      "path": "model-1/aim/training.py",
+      "sha256": "45d8f81d4b01dab09b273d443bdfab1f175b5c79b6f5f4fc33a34d3537ae1fac"
+    },
+    {
+      "path": "model-1/configs/distributed-pretrain-smoke.json",
+      "sha256": "cf76d8843de2beb953400ea3d9698883051a995f769266773279f471dc867e63"
+    },
+    {
+      "path": "model-1/docs/ARCHITECTURE.md",
+      "sha256": "492851e65646538b9d2f493e67aad02bc939b5eacd1d661d1e52533e75af94a2"
+    },
+    {
+      "path": "model-1/docs/DECISIONS.md",
+      "sha256": "86b18542e1dfe382e5ee28f2b5ce1a5a91930ec86d5f7535938fa16284d03695"
+    },
+    {
+      "path": "model-1/docs/DISTRIBUTED_PRETRAINING.md",
+      "sha256": "6b131145c0e3238773bb37c337468f20bed07c15e0e5e3011de267eee96c96fb"
+    },
+    {
+      "path": "model-1/docs/EVALUATION.md",
+      "sha256": "f3d0348fef4b175ec340f911a30ebf3483c1169a250660d0f5258c7b523a01a1"
+    },
+    {
+      "path": "model-1/docs/HARDWARE_AND_CLUSTER.md",
+      "sha256": "ff3a6eff0d178544508f17489e65a9240eed7078b5dfa63b73933efd9c973b55"
+    },
+    {
+      "path": "model-1/docs/IMPLEMENTATION_PLAN.md",
+      "sha256": "cc70f689537c339c398e4f4bac30c4d2be268e0867204d8b00aca32108150a18"
+    },
+    {
+      "path": "model-1/docs/TRAINING.md",
+      "sha256": "b572d57a5b2f4a618d8d9e7521b3ebd79be2211fbfd5e19f0e157b262b773588"
+    },
+    {
+      "path": "model-1/reports/phase-3b-evidence/bpe-tokenizer.json",
+      "sha256": "7b230c94b59948a4574dbe0f0a1e46efc3dec6ca2bb04c84d86276affeb1f9fa"
+    },
+    {
+      "path": "model-1/reports/phase-3b-evidence/byte-tokenizer.json",
+      "sha256": "bdf8e8f8e865f313ffdbdb28a5b3cc58f7fba5612166b6dba719e0258383b122"
+    },
+    {
+      "path": "model-1/reports/phase-3b-evidence/manifest.json",
+      "sha256": "ad84da62d92fa0a7476903991e8cc3e1d8f127fc3bce655012a46c5c0d97e9e6"
+    },
+    {
+      "path": "model-1/reports/phase-3b-evidence/results.json",
+      "sha256": "840b047693820f5cffccbf9cc6876cade62a202615d548c3cee7fb0e08fd59b6"
+    },
+    {
+      "path": "model-1/reports/phase-3b-evidence/tests.log",
+      "sha256": "d868af91c501b17de68efda2ca0b548314cd43510d2915a3ed10707af3fcc83d"
+    },
+    {
+      "path": "model-1/reports/phase-3b-implementation.md",
+      "sha256": "70fc6fc524e719764d900ac5d64a1290de4d3f949461430f3578413d08c10c25"
+    },
+    {
+      "path": "model-1/tests/test_distributed_pretrain.py",
+      "sha256": "219842227c59c09440dd825c8ac71b910549021e684f58c7e4ed91ffd778f384"
+    }
+  ],
+  "scope": "All phase changes against baseline, excluding this inventory itself."
+}
