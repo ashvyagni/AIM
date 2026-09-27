@@ -1,0 +1,28 @@
+{
+  "schema": "aim-build-validation-status-v1",
+  "phase": "3D",
+  "status": "BUILT_UNVALIDATED",
+  "reason": "Owner requested implementation first and auditing/tests in the next phase.",
+  "tests_executed": false,
+  "training_experiments_executed": false,
+  "generation_experiments_executed": false,
+  "benchmarks_executed": false,
+  "formal_audit_completed": false,
+  "new_passing_test_count": null,
+  "last_completed_validation": {
+    "phase": "3C",
+    "source_commit": "527b5093c9b8e95a66249dc706bda7f5b9996a8a",
+    "passing_tests": 192,
+    "applies_to_phase_3d": false
+  },
+  "next_commands_from_model_1": [
+    ".venv/bin/python -m unittest discover -s tests -p test_language_pipeline.py -v",
+    ".venv/bin/python -m aim.language_reproduce --export reports/<new-directory>"
+  ],
+  "additional_manual_gates": [
+    "Review response masking, tokenizer identity and initialization/resume boundaries",
+    "Exercise structured and symbolic adapters through real Controller episodes",
+    "Exercise distributed initialization exports and periodic-checkpoint interruption recovery",
+    "Run legacy regressions and inspect actual failures before promotion"
+  ]
+}

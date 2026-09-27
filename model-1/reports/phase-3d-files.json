@@ -1,0 +1,112 @@
+{
+  "baseline": "7e9589a",
+  "status": "BUILT_UNVALIDATED",
+  "count": 26,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "b7590e1663439a09a453c9eec5ad086df1869f2244650a9f6d3993c4c732eb2a"
+    },
+    {
+      "path": "documents/AIM_Model_1_Implementation_Directive.md",
+      "sha256": "a468adb1aed3ef5cbb9679e82e4566ce482b14f46bf55e8877925660d809f5e4"
+    },
+    {
+      "path": "model-1/README.md",
+      "sha256": "2a6639cc046ce90c55c771f4d711744f82c83f979723deedff9b211ebe4c2aa8"
+    },
+    {
+      "path": "model-1/aim/cli.py",
+      "sha256": "baa7e9633466a1d9055fef5498f5b5c791b2d9753c4afd8521b0901f484f0a30"
+    },
+    {
+      "path": "model-1/aim/generation.py",
+      "sha256": "ccade69ac9f698be3a9c7195cb062bf8b5419b26b3e1606e09ecc6a737ae0d32"
+    },
+    {
+      "path": "model-1/aim/language_artifacts.py",
+      "sha256": "9cb6130732b70f07d58fd14de03bb235c729670aa3a70529b3fc7e4cad94982c"
+    },
+    {
+      "path": "model-1/aim/language_contract.py",
+      "sha256": "87292129f109f54dc7e836ef5611277f5fbcbca0765dca3463faa9338ca8e450"
+    },
+    {
+      "path": "model-1/aim/language_data.py",
+      "sha256": "7568b5374f6622e4e588ef6f4f0572ec2c6d866f43b85f235da00ddf6261cf19"
+    },
+    {
+      "path": "model-1/aim/language_reproduce.py",
+      "sha256": "8b8bf4a9cbcf87e4b7d911cb71b2af7f36db7f8563154ac0e924e1ab060076ff"
+    },
+    {
+      "path": "model-1/aim/language_training.py",
+      "sha256": "e12f759ea01c4ff3469469ffc4cc220e83186034b16b2f2e8dadde3942baf129"
+    },
+    {
+      "path": "model-1/aim/neural.py",
+      "sha256": "1bf46f74496136338b03bcf5708e50e1ca3a575f6a11ee899322851517e86497"
+    },
+    {
+      "path": "model-1/aim/researcher.py",
+      "sha256": "3a0025ab79a551b2e017053dd8b28f03bf55152365cf83c54982d1d402a70da3"
+    },
+    {
+      "path": "model-1/aim/response_encoding.py",
+      "sha256": "f6f6d7a586285fb3286d138eaca37fea4f86d023e4c14e7215995dd21ef19414"
+    },
+    {
+      "path": "model-1/configs/language-preference.json",
+      "sha256": "bcc659ea341dd94c25253b8b5d0dbb36695253cd52a7db03dcfe94fb35a158c9"
+    },
+    {
+      "path": "model-1/configs/language-rlvr.json",
+      "sha256": "248ed7bc16306c73ea7ab1db2cd83a3eed4c26f6966134ad8a69f2e3e1f5a014"
+    },
+    {
+      "path": "model-1/configs/language-sft.json",
+      "sha256": "869e52ef169d70518c0bf74e50bf68da38de16f42030dd56a13b56ce8ac3831d"
+    },
+    {
+      "path": "model-1/configs/language-symbolic-sft.json",
+      "sha256": "f4c21d981777f5d0281edc2f2f14bf7125bc1308cf0ff15e37c1c7a3708b3b37"
+    },
+    {
+      "path": "model-1/docs/ARCHITECTURE.md",
+      "sha256": "da84ba66e3ca772ef3cf218bbfe1520a1f71afc975645a541a94ed29baa94452"
+    },
+    {
+      "path": "model-1/docs/DECISIONS.md",
+      "sha256": "16aa564f4a60f15c8037f4132a2e4901360e77b77ce4fa7726e6167521cd6a5c"
+    },
+    {
+      "path": "model-1/docs/EVALUATION.md",
+      "sha256": "6e97eca0d6205c7047b1a4fcd3d5928a1eb47764edb3f5bdf96dc632a4e40e16"
+    },
+    {
+      "path": "model-1/docs/IMPLEMENTATION_PLAN.md",
+      "sha256": "fd6e7e20ee93f03373cf047db2f1f24842ab075ce65f26a98c72f98cc614bb64"
+    },
+    {
+      "path": "model-1/docs/TOKENIZED_POSTTRAINING.md",
+      "sha256": "059d62e38dcdd39b63a5c3e06760492e2edc96d76463957f2038ece9870cbc21"
+    },
+    {
+      "path": "model-1/docs/TRAINING.md",
+      "sha256": "24395c07ccb0e7dc6224c7cfc2673c6fd4528986dea5b3e118432f7be8b4ba59"
+    },
+    {
+      "path": "model-1/reports/phase-3d-build.md",
+      "sha256": "0595cdc1d8553fd18a29cbf8b7d8bd4f8531726704019a4ae0402080f588abe9"
+    },
+    {
+      "path": "model-1/reports/phase-3d-status.json",
+      "sha256": "8a6ea68022e0903e304292dc7553d258c5e9d42516663751d7111cbf9abe23ed"
+    },
+    {
+      "path": "model-1/tests/test_language_pipeline.py",
+      "sha256": "2d55dd9749d3db12b9a8a86e3052ba7191c2c175d00ee295b8cfe49efdf61088"
+    }
+  ],
+  "scope": "Build inventory only; these hashes are not test or audit results. Inventory excludes itself."
+}
