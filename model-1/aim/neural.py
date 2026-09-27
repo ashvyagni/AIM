@@ -149,6 +149,9 @@ def read_checkpoint(path):
 
 def load_lm(path):
     record = read_checkpoint(path)
+    if record.get("kind") == "tokenized_lm":
+        from .language_contract import load_versioned
+        return load_versioned(record)
     if record.get("kind") != "causal_lm":
         raise ContractError("Checkpoint is not a Researcher LM")
     cfg = ModelConfig(**record["model_config"])

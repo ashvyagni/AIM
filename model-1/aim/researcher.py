@@ -63,6 +63,8 @@ class TransformerResearcher:
         self.last_trace = None
         from .research_format import VERSION
         from .finite_difference import CONTRACT
+        if self.record.get("kind") == "tokenized_lm" and self.record.get("research_contract") != VERSION:
+            raise ContractError("Versioned numerical Researcher requires the structured-output training contract")
         if self.record.get("research_contract") not in (None, VERSION, CONTRACT):
             raise ContractError("Unsupported Researcher checkpoint contract")
 

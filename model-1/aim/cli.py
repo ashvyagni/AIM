@@ -8,6 +8,20 @@ from .tracking import Run
 def main():
     parser=argparse.ArgumentParser(description="AIM Model-1 engineering prototype")
     sub=parser.add_subparsers(dest="command",required=True)
+    language=sub.add_parser("language-train")
+    language.add_argument("--config",type=Path,required=True)
+    language.add_argument("--tokenizer",type=Path)
+    language.add_argument("--initialize",type=Path)
+    language.add_argument("--resume",type=Path)
+    language.add_argument("--runs",type=Path,default=Path("runs"))
+    generate=sub.add_parser("language-generate")
+    generate.add_argument("--checkpoint",type=Path,required=True)
+    generate.add_argument("--prompt-file",type=Path,required=True)
+    generate.add_argument("--max-new-tokens",type=int,default=64)
+    generate.add_argument("--runs",type=Path,default=Path("runs"))
+    for name in ("language-inspect","language-stage-plan"):
+        item=sub.add_parser(name)
+        item.add_argument("--checkpoint",type=Path,required=True)
     node=sub.add_parser("node-audit")
     node.add_argument("--node-id",required=True)
     node.add_argument("--workspace",type=Path,default=Path("."))
@@ -110,7 +124,22 @@ def main():
     bench.add_argument("--config",type=Path,default=Path("configs/benchmark.json"))
     bench.add_argument("--runs",type=Path,default=Path("runs"))
     args=parser.parse_args()
-    if args.command=="node-audit":
+    if args.command=="language-train":
+        from .corpus import read_json
+        from .tokenization import tokenizer_from_spec
+        from .language_training import train as language_train
+        tokenizer=tokenizer_from_spec(read_json(args.tokenizer)) if args.tokenizer else None
+        print(language_train(read_json(args.config),args.runs,tokenizer,args.initialize,args.resume))
+    elif args.command=="language-generate":
+        from .corpus import require
+        from .language_artifacts import generate_run
+        require(args.prompt_file.is_file() and args.prompt_file.stat().st_size<=262144,"prompt file exceeds byte budget")
+        print(generate_run(args.checkpoint,args.prompt_file.read_text(encoding="utf-8"),args.max_new_tokens,args.runs))
+    elif args.command in {"language-inspect","language-stage-plan"}:
+        from .language_artifacts import describe,stage_plan
+        result=describe(args.checkpoint) if args.command=="language-inspect" else stage_plan(args.checkpoint)
+        print(json.dumps(result,indent=2))
+    elif args.command=="node-audit":
         from .hardware_audit import collect_run
         print(collect_run(args.node_id,args.workspace,args.runs))
     elif args.command=="storage-probe":
