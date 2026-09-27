@@ -53,7 +53,10 @@ def reproduce(runs):
                 parent = full/"checkpoint.pt"
                 print(name+" "+stage+": exact continuation comparison passed", flush=True)
             arms[name] = {"pretraining": str(pretrained.relative_to(run.path)), "tokenizer": tokenizer.specification(), "stages": stages}
-        write_json(run.path/"results.json", {"arms": arms, "scope": "small from-scratch vocabulary/objective integration; no cross-tokenizer capability conclusion"})
+        from .language_integration import run_integration
+        integration = run_integration(run, corpus, arms)
+        write_json(run.path/"results.json", {"arms": arms, "integration": integration, "corpus_path": str(corpus.path.relative_to(run.path)),
+                   "scope": "small from-scratch vocabulary/objective integration; no cross-tokenizer capability conclusion"})
     return run.path
 
 
@@ -62,6 +65,8 @@ def export(path, destination):
     path, destination = Path(path), Path(destination)
     require(read_json(path/"status.json")["status"] == "COMPLETED", "cannot export failed/pending audit as completed")
     results = read_json(path/"results.json")
+    from .language_integration import audit_integration
+    integration_audit = audit_integration(path, results["integration"], results["arms"], path/results["corpus_path"])
     for arm in results["arms"].values():
         for stage in arm["stages"].values():
             require(compare(path/stage["full"]/"checkpoint.pt", path/stage["resumed"]/"checkpoint.pt") == stage["continuation"], "continuation export changed")
@@ -74,7 +79,8 @@ def export(path, destination):
     write_json(destination/"manifest.json", {"run_id": path.name, "git_commit": manifest["environment"]["git_commit"],
                "code_hash": manifest["code_hash"], "code_hashes": manifest["code_hashes"], "configuration": manifest["configuration"],
                "environment": {k: manifest["environment"][k] for k in ("python", "platform", "machine", "logical_cpus", "packages")},
-               "status": read_json(path/"status.json"), "files": {n: file_hash(destination/n) for n in ("results.json", "tests.log")}})
+               "status": read_json(path/"status.json"), "integration_audit": integration_audit,
+               "files": {n: file_hash(destination/n) for n in ("results.json", "tests.log")}})
 
 
 def main():
