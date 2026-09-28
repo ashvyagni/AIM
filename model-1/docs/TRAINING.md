@@ -1,5 +1,7 @@
 # Model-1 training specification
 
+**Latest fitting diagnostics:** Phase 3E measured random-init and fixed SFT budgets under the [registered fitting protocol](experiments/phase-3e-protocol.md). [All eight arms completed](../reports/phase-3e-implementation.md); output contracts improved, but validation checker passes remained zero. Use the [diagnostic commands](LANGUAGE_FITTING.md) to distinguish format fitting from scoped correctness. This is a separate SFT experiment, not evidence that preference/RLVR/Judge objectives jointly improve research quality.
+
 **Audited Phase 3D extension:** [tokenizer-compatible post-training](TOKENIZED_POSTTRAINING.md) introduces a separate versioned byte/BPE path using the objectives below. Its [executed audit](../reports/phase-3d-audit.md) passed 208 tests and exact continuation for all six tokenizer/stage combinations. Later preference/RLVR updates did not improve arithmetic response NLL in this miniature run. This document's earlier results/configuration describe the legacy path; the audit records new parameters, data and scope separately.
 
 Current corpus training extensions: [single-process pretraining](PRETRAINING.md) and [distributed pretraining](DISTRIBUTED_PRETRAINING.md). The stage objectives below remain independent. Distributed pretraining exports compatible weights to SFT through an explicitly initialization-only artifact; Phase 3D audited the BPE bridge as well. It does not distribute or combine the post-training objectives.

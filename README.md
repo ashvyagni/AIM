@@ -4,9 +4,11 @@ The architectural baseline is the [complete research handbook](documents/AIM_Com
 
 ## Start here
 
-**Current audited build: Phase 3D.** All **208 tests passed**, with exact byte/BPE stage continuation, two interruption recoveries, a distributed BPE-to-SFT bridge and 12 replayed Controller episodes. Four audit findings were fixed and retained. The eight tiny neural episodes produced no valid hypotheses; learned backends remain experimental. [Executed audit and next experiment](model-1/reports/phase-3d-audit.md) · [Tokenizer-compatible post-training specification](model-1/docs/TOKENIZED_POSTTRAINING.md).
+**Current audited build: Phase 3E.** All **221 tests passed**. The new fitting diagnostics completed eight byte/BPE training arms, 32 checkpoint measurements and 40 replayed Controller episodes. Output structure improved, but no learned validation episode verified a claim; two training episodes did. [Full results and next work](model-1/reports/phase-3e-implementation.md) · [Fitting diagnostics and commands](model-1/docs/LANGUAGE_FITTING.md). Learned backends remain experimental; the project is not a finished scientific research model.
 
 - [Model-1 setup and runnable commands](model-1/README.md)
+- [Tokenizer-compatible training audit](model-1/reports/phase-3d-audit.md)
+- [Registered generation-fitting protocol](model-1/docs/experiments/phase-3e-protocol.md)
 - [Phase 1 implementation evidence](model-1/reports/phase-1-implementation.md)
 - [Implementation directive and next-agent handoff](documents/AIM_Model_1_Implementation_Directive.md)
 - [Current engineering decisions](model-1/docs/DECISIONS.md)

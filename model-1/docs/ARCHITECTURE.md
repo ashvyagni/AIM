@@ -1,5 +1,7 @@
 # Model-1 architecture and invariants
 
+Phase 3E adds [fixed language-fitting diagnostics](LANGUAGE_FITTING.md) and actual Controller replay without changing component ownership. Its [measured outcomes](../reports/phase-3e-implementation.md) preserve the default policies and scale guards. A diagnostic candidate check has no authority to mutate a claim's verification status.
+
 **Current audited extension:** Phase 3D adds an opt-in tokenizer-compatible language path and explicit loader/adapter dispatch. See [its specification](TOKENIZED_POSTTRAINING.md) and [208-test local audit](../reports/phase-3d-audit.md). Continuation, recovery and Controller integration passed their engineering checks; all eight neural episodes produced no valid hypotheses. Historical validation statements below retain their original phase scopes. No learned default or scale promotion follows.
 
 Status: implemented miniature, 2026-09-24. Scientific baseline: the existing AIM handbook and final-design specifications. Prototype scope decisions are recorded in [DECISIONS](DECISIONS.md).

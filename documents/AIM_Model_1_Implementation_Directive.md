@@ -1,16 +1,28 @@
 # AIM Model-1 — implementation directive and handoff
 
-**For the next implementation agent or ML engineer.** Updated 2026-09-27. Work in the existing `AIM/` workspace; the canonical code directory is `model-1/`. Continue the approved architecture and current implementation. This directive supplies a concrete starting point, not a request to redesign AIM.
+**For the next implementation agent or ML engineer.** Updated 2026-09-28. Work in the existing `AIM/` workspace; the canonical code directory is `model-1/`. Continue the approved architecture and current implementation. This directive supplies a concrete starting point, not a request to redesign AIM.
 
-## Current owner direction — Continue after the completed Phase 3D audit
+## Current owner direction — Continue after the completed Phase 3E fitting build
+
+Read the [Phase 3E implementation report](../model-1/reports/phase-3e-implementation.md), [diagnostic guide](../model-1/docs/LANGUAGE_FITTING.md) and [registered study](../model-1/docs/experiments/phase-3e-protocol.md). All **221 tests passed, zero skips**. Eight byte/BPE SFT arms completed 32 checkpoint/baseline measurements, 256 probe measurements and 40 real Controller replays. The standalone diagnostic CLI exactly reproduced its selected registered measurement under the stated one-thread environment.
+
+**Latest completed run:** `model-1/runs/20260928T103031-phase-3e-language-fitting-01036454`, 798.968 seconds including 459.576 seconds of regression tests. Executed source `a1748ea43d0c259c92d6d82988f68828c874c252`, code hash `81e052ac707dd35519be9a399603d945573fde81e0fa018023be187941f9e027`. Portable evidence is in `model-1/reports/phase-3e-evidence/`; full checkpoints and ledgers remain local. All declared arms and budgets are retained.
+
+**Outcome:** output structure improved after 384 updates, but every arm had zero validation checker passes. All final symbolic probes met the output contract and failed the exact checker. Two of 32 neural Controller episodes produced verified claims, both training cases from numerical byte/seed-29; no neural validation case did. All eight reference episodes verified claims. These are a few repeated, exposed fitting worlds, not independent research benchmarks or proof of generalization. No default model, tokenizer or scale is promoted.
+
+**Next engineering action:** extend the existing provenance memory with bounded local document/chunk ingestion, exact original spans, cross-run retrieval and source update/retraction records. Start with local authored/licensed text and deterministic retrieval baselines; preserve historical evidence, current claim-status rules and component boundaries. Retrieval support must not imply factual verification. This is implementation of an existing project requirement, not a replacement of the architecture.
+
+**Separate next ML experiment:** register answer-field and paired evidence-change diagnostics to distinguish template fitting from prompt-sensitive correct content. Larger parameters, loss reweighting and constrained decoding remain hypotheses. Exclude all previously exposed worlds from any fresh capability holdout. Do not rerun the completed fitting study merely to begin the next build.
+
+## Earlier completed audit — Phase 3D
 
 The owner's continuation was used to execute the previously deferred audit. Read the [executed audit report](../model-1/reports/phase-3d-audit.md) and [tokenizer-compatible post-training specification](../model-1/docs/TOKENIZED_POSTTRAINING.md). All **208 tests passed, zero skips**, after four adversarial failures were reproduced and fixed. The earlier [build-only report](../model-1/reports/phase-3d-build.md) remains an accurate historical record, not current validation status.
 
 Exact continuation passed for all six byte/BPE SFT/preference/RLVR combinations and two retained interruption-recovery drills. A two-worker BPE initialization export entered SFT. Twelve actual Controller episodes replayed: four reference episodes each produced a verified claim; all eight neural episodes exhausted the token budget with invalid JSON and zero hypotheses. The default architecture, separate Judge and legacy training remain. No learned backend or larger scale is promoted.
 
-**Latest completed run:** `model-1/runs/20260927T160636-phase-3d-audit-3892fe0c`, 59.249 seconds, exported to `model-1/reports/phase-3d-audit-evidence/`. Audited source `2ef34945f657f35af0d4b770104936ad8581e98d`, source hash `b00ec44062651c90cad8fb4e74fb85c7ee5150a63c8b2a2b93e3dcd9b9a66a8f`. The separate adversarial run and both injected interruptions remain FAILED. Their correction/recovery does not erase that history.
+**Phase 3D completed run:** `model-1/runs/20260927T160636-phase-3d-audit-3892fe0c`, 59.249 seconds, exported to `model-1/reports/phase-3d-audit-evidence/`. Audited source `2ef34945f657f35af0d4b770104936ad8581e98d`, source hash `b00ec44062651c90cad8fb4e74fb85c7ee5150a63c8b2a2b93e3dcd9b9a66a8f`. The separate adversarial run and both injected interruptions remain FAILED. Their correction/recovery does not erase that history.
 
-**Next action:** implement bounded, versioned generation-failure diagnostics and fitting probes before promoting learned capability. Compare random-init/SFT checkpoints across fixed update budgets/seeds on declared training/validation examples. Record response coverage, EOS behavior, first invalid token, valid syntax and verifier success. Current Controller cases are exposed integration fixtures, not a fresh capability test. Register new family-disjoint test/OOD partitions before a generalization experiment; preserve the canonical evaluations. Do not restart the completed audit simply to begin this phase.
+Its proposed fitting-diagnostics follow-up is completed in Phase 3E above. Phase 3D's Controller cases remain exposed integration fixtures. Preserve the original numerical/symbolic canonical suites and all retained failures.
 
 ## Earlier completed validation — Phase 3C
 
@@ -69,7 +81,7 @@ cd model-1
 
 Use the documented environment setup if the local `.venv` is missing. Read the latest report and existing bundle's `tests.log`, `results.json`, case records and export manifest before launching experiments. A missing torch environment is not a successful neural test result. The documented reproduction command can repeat a study if needed; do not rerun a completed study merely to begin the next phase.
 
-Continue the [implementation plan](../model-1/docs/IMPLEMENTATION_PLAN.md) with generation-failure diagnostics after the completed Phase 3D audit. Keep exact tokenizer identities, separately encoded loss boundaries, frozen references, stage-specific resumes and strict adapters under regression coverage. No lab hosts or access details have been supplied; do not invent deployment results. Actual 100M–300M proxy training remains gated on representative data and physical hardware evidence.
+Continue the [implementation plan](../model-1/docs/IMPLEMENTATION_PLAN.md) with the local document/provenance-memory foundation after the completed Phase 3E fitting study. Keep exact tokenizer identities, separately encoded loss boundaries, frozen references, stage-specific resumes, strict adapters and diagnostic data bindings under regression coverage. No lab hosts or access details have been supplied; do not invent deployment results. Actual 100M–300M proxy training remains gated on representative data and physical hardware evidence.
 
 Phase 3C observed the local Apple M3 host with 8 GiB RAM; it did not measure any VIT desktop. Available RAM on macOS stays unknown in the current collector. Four-host planning records exist only as synthetic unit-test fixtures. Policies/reviews are unsigned declarations tied to hashes, not authenticated authority or legal certification. The corpus audit found 14 flagged cross-split pairs at its provisional lexical thresholds. The five-document export keeps train prose, validation math and test Unicode; its three within-train flagged pairs remain visible. This demonstrates review/export mechanics, not production data quality or a recommended mixture. Do not use line count or generated evidence volume as an acceptance metric.
 

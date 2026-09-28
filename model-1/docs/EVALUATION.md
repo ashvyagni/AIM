@@ -1,5 +1,7 @@
 # Model-1 evaluation specification
 
+**Latest extension, Phase 3E:** [221 tests and the fixed fitting study](../reports/phase-3e-implementation.md) separate gold-prefix token likelihood, free-generation validity, scoped correctness and real Controller verification. See [measurement definitions](LANGUAGE_FITTING.md). All 40 Controller states replayed; two neural training cases verified claims, with no neural validation success. Exposed train/validation probes are not independent unseen research tasks or grounds for model promotion.
+
 **Phase 3D local audit completed:** [208 tests passed, zero skips](../reports/phase-3d-audit.md), after four adversarial findings were reproduced and fixed. Six byte/BPE stage continuations and two interrupted-run recoveries matched exactly; the distributed initialization bridge and 12 actual Controller episodes passed replay checks. Eight neural episodes produced invalid JSON and zero hypotheses; four reference episodes each produced a verified claim. These exposed integration cases establish no learned capability gain. Source identity, raw outcomes and retained failures are linked in the report; canonical suites are unchanged.
 
 ## Evaluation layers

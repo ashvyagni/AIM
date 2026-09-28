@@ -2,6 +2,8 @@
 
 Phase 3E extends the versioned language path with fixed train/validation probes. It does not introduce a new model architecture or merge training objectives. Read the [predeclared protocol](experiments/phase-3e-protocol.md) for the exact experiment and interpretation limits.
 
+**Executed evidence:** [221 tests passed; eight arms, 32 measurements and 40 Controller replays](../reports/phase-3e-implementation.md). Structure improved after 384 updates, but each arm had zero validation checker passes. The standalone diagnostic command exactly reproduced one recorded measurement with one compute thread requested through `OMP_NUM_THREADS=1` and `MKL_NUM_THREADS=1`. Neither the study nor the CLI check promotes a learned model.
+
 ## Interfaces
 
 `aim.language_diagnostics.freeze_probes` selects the first requested rows from both prepared splits, binds the full prepared dataset hash, and freezes all selected rows. Only structured numerical and symbolic SFT tasks are supported. Test/OOD rows and changed manifests reject. Checkpoint evaluation also reconstructs the expected probes from the checkpoint's adjacent `dataset.json`; a matching declared dataset hash alone is insufficient.
