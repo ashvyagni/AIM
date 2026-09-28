@@ -1,0 +1,10 @@
+{
+  "schema": "aim-library-study-v1",
+  "sizes": [32, 128, 512],
+  "queries": 16,
+  "repeats": 5,
+  "chunk_size": 512,
+  "overlap": 64,
+  "limit": 5,
+  "per_source": 1
+}
