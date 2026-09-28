@@ -1,0 +1,2068 @@
+{
+  "arms": [
+    {
+      "controllers": [
+        {
+          "audit": {
+            "claims": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "byte-seed17",
+          "hypotheses": 1,
+          "id": "world-c7b1cc55b89268ecc02829f7",
+          "run": "controllers/20260928T103926-fitting-structured-060a5844",
+          "split": "train",
+          "state_sha256": "9d5ea03e357a42ab9f13ef658c9d87cad4919f1f489a126e38af5f51d0c22c7d",
+          "task": "structured",
+          "trace_sha256": "db6e7dafb6ae55745a3849352eda2828d3f308398d9a9074e6402f79374b8331",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "byte-seed17",
+          "hypotheses": 1,
+          "id": "world-6c1de744b4ab111679abadda",
+          "run": "controllers/20260928T103930-fitting-structured-a99150a8",
+          "split": "train",
+          "state_sha256": "0cb8739862d787dc21dfabfb7bb508d5f7b5b069032e0d0fa8f11afbd19306aa",
+          "task": "structured",
+          "trace_sha256": "9880c9b77f34ec8a62a4c8424c6110d2fcace4230476286e9096b3be1eb34e97",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "byte-seed17",
+          "hypotheses": 1,
+          "id": "world-d65df6c347832cdfc68a6451",
+          "run": "controllers/20260928T103933-fitting-structured-a6f249c7",
+          "split": "validation",
+          "state_sha256": "3c2ff640e385c92fde2d67e05f69d8d4b5fb82d59383cd58f8e997dbfd8410fa",
+          "task": "structured",
+          "trace_sha256": "2a425e8ef017b85ea71e075002e76ff5f238aa8fdb85123825d460dd7be55093",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "byte-seed17",
+          "hypotheses": 1,
+          "id": "world-517eb84ef1f2e1b0f10eaaa2",
+          "run": "controllers/20260928T103935-fitting-structured-d6040f21",
+          "split": "validation",
+          "state_sha256": "cf6f63596fefae61d6638400234d47cc9ba0a6acf6676e97953dc211bf848c76",
+          "task": "structured",
+          "trace_sha256": "4e7b31d84ab9b9e277df0617c32ab6fbe5b81abab3d2f846a4412dfabcab3870",
+          "unknowns": []
+        }
+      ],
+      "dataset_hash": "c44776cb4666ee915e682fc39c5db4d29093c14dd6610185aba08ebb2770cc86",
+      "measurements": [
+        {
+          "checkpoint": null,
+          "path": "diagnostics/structured-byte-17/step-000000.json",
+          "sha256": "b4acaddcd620e0afd493a8cd54ee46c6dfdb823a54df2e63ebd84a0cf80bd78a",
+          "step": 0,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.00435479253064841,
+              "reference_fits_budget": 4,
+              "response_token_nll": 5.534322214650584,
+              "response_tokens": 182,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.06593406593406594,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.0043549262918531895,
+              "reference_fits_budget": 4,
+              "response_token_nll": 5.538499500440515,
+              "response_tokens": 184,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.06521739130434782,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T103853-language-sft-e6fe6479/checkpoint.pt",
+          "checkpoint_sha256": "50214e5b3004f1b0441b1abb99f2ffc97ff88c89210b19a43ad897faf6d23858",
+          "path": "diagnostics/structured-byte-17/step-000032.json",
+          "scored_tokens": 2936,
+          "sha256": "21b269a6072d1085a1cf33bc0f21103d744f63919b5a70c06203fc25b166591b",
+          "step": 32,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.01976643828675151,
+              "reference_fits_budget": 4,
+              "response_token_nll": 3.902518387679215,
+              "response_tokens": 182,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.2857142857142857,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.0197809636592865,
+              "reference_fits_budget": 4,
+              "response_token_nll": 3.915436786154042,
+              "response_tokens": 184,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.29347826086956524,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T103908-language-sft-e9edd774/checkpoint.pt",
+          "checkpoint_sha256": "f8b4c8962c66d94f510c3d24252213f3a758c25dc4065e039ad94059fb759b9f",
+          "path": "diagnostics/structured-byte-17/step-000128.json",
+          "scored_tokens": 11744,
+          "sha256": "0366b91d49386485c1b68e9ae2f998d72746af15a6e3f682bd8905006a6f21e6",
+          "step": 128,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.2728819027543068,
+              "reference_fits_budget": 4,
+              "response_token_nll": 1.5261717157049492,
+              "response_tokens": 182,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.8076923076923077,
+              "termination_counts": {
+                "eos": 3,
+                "token_budget": 1
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.2728081941604614,
+              "reference_fits_budget": 4,
+              "response_token_nll": 1.5639923759128735,
+              "response_tokens": 184,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.782608695652174,
+              "termination_counts": {
+                "eos": 3,
+                "token_budget": 1
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T103915-language-sft-15cbc5ee/checkpoint.pt",
+          "checkpoint_sha256": "77c60646e4d5ca7050ece824890f8e858982648779b4ca8a08fd44004a106b23",
+          "path": "diagnostics/structured-byte-17/step-000384.json",
+          "scored_tokens": 35232,
+          "sha256": "ddeb78ee0d4ec88e0cfb7d3aa6aebe7c5a24339c53bd015209ed35aaf22c41a0",
+          "step": 384,
+          "summary": {
+            "train": {
+              "contract_valid": 4,
+              "exact_reference_with_eos": 1,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.9601054042577744,
+              "reference_fits_budget": 4,
+              "response_token_nll": 0.11271370112240969,
+              "response_tokens": 182,
+              "scoped_check_pass": 1,
+              "syntax_valid": 4,
+              "teacher_token_accuracy": 0.978021978021978,
+              "termination_counts": {
+                "eos": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 3,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.9599134624004364,
+              "reference_fits_budget": 4,
+              "response_token_nll": 0.1621515206668688,
+              "response_tokens": 184,
+              "scoped_check_pass": 0,
+              "syntax_valid": 3,
+              "teacher_token_accuracy": 0.9510869565217391,
+              "termination_counts": {
+                "eos": 4
+              }
+            }
+          }
+        }
+      ],
+      "parameters": 26880,
+      "probe_hash": "e4e449df59b02c45817a136174eb82cc991b4bfa298fd8072f74570c9109399b",
+      "seed": 17,
+      "task": "structured",
+      "tokenizer": "byte"
+    },
+    {
+      "controllers": [
+        {
+          "audit": {
+            "claims": 1,
+            "replay_and_checks": "PASS",
+            "verified": 1
+          },
+          "backend": "byte-seed29",
+          "hypotheses": 1,
+          "id": "world-c7b1cc55b89268ecc02829f7",
+          "run": "controllers/20260928T104013-fitting-structured-8168569d",
+          "split": "train",
+          "state_sha256": "3453c252f87f479c3bca0225d5ad32c16ae2d13a76d9b0d91e22f6b7ed4fbb30",
+          "task": "structured",
+          "trace_sha256": "747910392162383bd5d11266001729ca213e1ed4ecc58ab6109deae4d72aad18",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "replay_and_checks": "PASS",
+            "verified": 1
+          },
+          "backend": "byte-seed29",
+          "hypotheses": 1,
+          "id": "world-6c1de744b4ab111679abadda",
+          "run": "controllers/20260928T104015-fitting-structured-3b245612",
+          "split": "train",
+          "state_sha256": "e72f037a2d9918ee56663997b28baf64ddec229bf679132c8cef02ab41d2e899",
+          "task": "structured",
+          "trace_sha256": "dc4d2c17146b0f639f95c28b67f77ebe8366bd4c6c60536da478482d3faf5672",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "byte-seed29",
+          "hypotheses": 1,
+          "id": "world-d65df6c347832cdfc68a6451",
+          "run": "controllers/20260928T104018-fitting-structured-57b81cd7",
+          "split": "validation",
+          "state_sha256": "198a00c1c0096f010339f95e30a9f1262a00438dd33613db85211181fec94729",
+          "task": "structured",
+          "trace_sha256": "e00cd6ba7672c38c5f1c8f83d132eab1bfcaebe18a5744e3db61b8274737dc6c",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 0,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "byte-seed29",
+          "hypotheses": 0,
+          "id": "world-517eb84ef1f2e1b0f10eaaa2",
+          "run": "controllers/20260928T104021-fitting-structured-c64cddff",
+          "split": "validation",
+          "state_sha256": "a4935c43d4c73cdffd4ccc8f287326c22d2b56caecb93823a45429cd4e74ec1d",
+          "task": "structured",
+          "trace_sha256": "be893a51f46e7f3eccfcdc8aca417a66752406630d907be2a170734c0856ab29",
+          "unknowns": [
+            "Researcher output is not valid JSON"
+          ]
+        }
+      ],
+      "dataset_hash": "c44776cb4666ee915e682fc39c5db4d29093c14dd6610185aba08ebb2770cc86",
+      "measurements": [
+        {
+          "checkpoint": null,
+          "path": "diagnostics/structured-byte-29/step-000000.json",
+          "sha256": "1d876eb41bb3d0f6ae581cd40a282199e46f30bef0b84527b8385a2d1a6beac7",
+          "step": 0,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.004300846951082349,
+              "reference_fits_budget": 4,
+              "response_token_nll": 5.509738461001889,
+              "response_tokens": 182,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.06593406593406594,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.004296209081076086,
+              "reference_fits_budget": 4,
+              "response_token_nll": 5.510623931884766,
+              "response_tokens": 184,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.06521739130434782,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T103944-language-sft-a557bb72/checkpoint.pt",
+          "checkpoint_sha256": "f197d9b31b3ce59d57400ff1614e05eaf622933968385833c429b04ae2e44be7",
+          "path": "diagnostics/structured-byte-29/step-000032.json",
+          "scored_tokens": 2936,
+          "sha256": "209512f83ae7b28bfff32338067f7962b2234be1ca09790135ea26b04de1dcc1",
+          "step": 32,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.018093187361955643,
+              "reference_fits_budget": 4,
+              "response_token_nll": 3.871475638924064,
+              "response_tokens": 182,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.26373626373626374,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.01810446148738265,
+              "reference_fits_budget": 4,
+              "response_token_nll": 3.8818084882653277,
+              "response_tokens": 184,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.24456521739130435,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T103952-language-sft-66cc38b8/checkpoint.pt",
+          "checkpoint_sha256": "9177d292ac3daef2f1eacf168852adb6436b054a8f8aeb8689007879265166aa",
+          "path": "diagnostics/structured-byte-29/step-000128.json",
+          "scored_tokens": 11744,
+          "sha256": "b5961258cae2566b4c800ed66e4ba6f8e639bbece695e63650124cee3ee9b7b6",
+          "step": 128,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.31968364864587784,
+              "reference_fits_budget": 4,
+              "response_token_nll": 1.4467520242208962,
+              "response_tokens": 182,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.8241758241758241,
+              "termination_counts": {
+                "eos": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.31761667877435684,
+              "reference_fits_budget": 4,
+              "response_token_nll": 1.4710218595421833,
+              "response_tokens": 184,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.782608695652174,
+              "termination_counts": {
+                "eos": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T103959-language-sft-e41d4a80/checkpoint.pt",
+          "checkpoint_sha256": "dadfc59c0639e916168d4a58939a0878273b07ae4753b3e7779f832d807c5440",
+          "path": "diagnostics/structured-byte-29/step-000384.json",
+          "scored_tokens": 35232,
+          "sha256": "59eac8f1c60bad661162332da39648edfa1bc34ca14b03ee5ac59afbc4d370ed",
+          "step": 384,
+          "summary": {
+            "train": {
+              "contract_valid": 4,
+              "exact_reference_with_eos": 3,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.9586746841669083,
+              "reference_fits_budget": 4,
+              "response_token_nll": 0.08219758625868913,
+              "response_tokens": 182,
+              "scoped_check_pass": 3,
+              "syntax_valid": 4,
+              "teacher_token_accuracy": 0.9945054945054945,
+              "termination_counts": {
+                "eos": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 3,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.9578003585338593,
+              "reference_fits_budget": 4,
+              "response_token_nll": 0.2054807284603948,
+              "response_tokens": 184,
+              "scoped_check_pass": 0,
+              "syntax_valid": 3,
+              "teacher_token_accuracy": 0.9402173913043478,
+              "termination_counts": {
+                "eos": 4
+              }
+            }
+          }
+        }
+      ],
+      "parameters": 26880,
+      "probe_hash": "e4e449df59b02c45817a136174eb82cc991b4bfa298fd8072f74570c9109399b",
+      "seed": 29,
+      "task": "structured",
+      "tokenizer": "byte"
+    },
+    {
+      "controllers": [
+        {
+          "audit": {
+            "claims": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "bpe32-seed17",
+          "hypotheses": 1,
+          "id": "world-c7b1cc55b89268ecc02829f7",
+          "run": "controllers/20260928T104104-fitting-structured-1ad14ba7",
+          "split": "train",
+          "state_sha256": "ba0fd0bc7e6c34a98043e2731af048079f820e161b4e6cf3de7bca67633a4548",
+          "task": "structured",
+          "trace_sha256": "9e3546040cc87f9c4b332d0b025ed78fc4c703ad62780d1b87b5aad14d260ebc",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "bpe32-seed17",
+          "hypotheses": 1,
+          "id": "world-6c1de744b4ab111679abadda",
+          "run": "controllers/20260928T104105-fitting-structured-3bafb214",
+          "split": "train",
+          "state_sha256": "38a05ef50d8426a9c91ed07aa5dfe311d17d8095268296284133ddbf591dc75d",
+          "task": "structured",
+          "trace_sha256": "b472f1369d0503b2b6b896c4b81c873397ddf18403e2629720c665a7be160eb2",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "bpe32-seed17",
+          "hypotheses": 1,
+          "id": "world-d65df6c347832cdfc68a6451",
+          "run": "controllers/20260928T104106-fitting-structured-b9290e01",
+          "split": "validation",
+          "state_sha256": "b23bda3aee80fa086b3595ee6bf475012ca7130cc59067ff62542042054a5bf4",
+          "task": "structured",
+          "trace_sha256": "decf3ff1ac70aec6529f93fa1a3e4dc30b7c0c19bd5f72fa54f4253e1beca6e3",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 0,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "bpe32-seed17",
+          "hypotheses": 0,
+          "id": "world-517eb84ef1f2e1b0f10eaaa2",
+          "run": "controllers/20260928T104107-fitting-structured-681577f1",
+          "split": "validation",
+          "state_sha256": "abbab03005a847e6966d5601d2d4b07a1bdde116c60529271f52eda342383cb1",
+          "task": "structured",
+          "trace_sha256": "afa11dd5a384004c1608004ff62ae6ab6e034f3203af691d81f3015e47be8b4e",
+          "unknowns": [
+            "Researcher output is not valid JSON"
+          ]
+        }
+      ],
+      "dataset_hash": "c44776cb4666ee915e682fc39c5db4d29093c14dd6610185aba08ebb2770cc86",
+      "measurements": [
+        {
+          "checkpoint": null,
+          "path": "diagnostics/structured-bpe32-17/step-000000.json",
+          "sha256": "1b6c879b5f6c35a7d432f6faf84cfb4a088a1ce10afe5ebfdfc9579f97b6d3d9",
+          "step": 0,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.003359030408319086,
+              "reference_fits_budget": 4,
+              "response_token_nll": 5.653568222943474,
+              "response_tokens": 170,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.07058823529411765,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.003369659010786563,
+              "reference_fits_budget": 4,
+              "response_token_nll": 5.655549869980923,
+              "response_tokens": 172,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.06976744186046512,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T104029-language-sft-983b4ac3/checkpoint.pt",
+          "checkpoint_sha256": "026f2882d88009322a90716f4fb3c1315f28c0200fdd479b5a4ef0ef16558941",
+          "path": "diagnostics/structured-bpe32-17/step-000032.json",
+          "scored_tokens": 2744,
+          "sha256": "77029e87765651cc647a9b58062bfcad4b5b90cb2b957a245d0bd702df38bfe0",
+          "step": 32,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.018323739059269428,
+              "reference_fits_budget": 4,
+              "response_token_nll": 3.968494549919577,
+              "response_tokens": 170,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.3235294117647059,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.018341549206525087,
+              "reference_fits_budget": 4,
+              "response_token_nll": 3.978963009146757,
+              "response_tokens": 172,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.3430232558139535,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T104037-language-sft-d3af99a7/checkpoint.pt",
+          "checkpoint_sha256": "b45c8d139f9d72f0d00efa32ccc982436e3b4aa92c94e6ae2468a6bc295b471e",
+          "path": "diagnostics/structured-bpe32-17/step-000128.json",
+          "scored_tokens": 10976,
+          "sha256": "e7c5dfe4373d83c63c35f1cfb05339a2973f91d8be5fbe887b31e2e14083e186",
+          "step": 128,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.34877555817365646,
+              "reference_fits_budget": 4,
+              "response_token_nll": 1.5397788777070887,
+              "response_tokens": 170,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.8352941176470589,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.348872534930706,
+              "reference_fits_budget": 4,
+              "response_token_nll": 1.5811855404875998,
+              "response_tokens": 172,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.8197674418604651,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T104049-language-sft-856e81e1/checkpoint.pt",
+          "checkpoint_sha256": "f830e228d0d9387f5905835cc24b171082bcb5db8993e19d73e4cf800c77af65",
+          "path": "diagnostics/structured-bpe32-17/step-000384.json",
+          "scored_tokens": 32928,
+          "sha256": "c4da5dad48a60f6a3b43629ac003cf5de6de2072dbce8e1b057ea1bd6b6e2bd1",
+          "step": 384,
+          "summary": {
+            "train": {
+              "contract_valid": 4,
+              "exact_reference_with_eos": 2,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.9534554928541183,
+              "reference_fits_budget": 4,
+              "response_token_nll": 0.12356744093053482,
+              "response_tokens": 170,
+              "scoped_check_pass": 2,
+              "syntax_valid": 4,
+              "teacher_token_accuracy": 0.9764705882352941,
+              "termination_counts": {
+                "eos": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 2,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.9535268992185593,
+              "reference_fits_budget": 4,
+              "response_token_nll": 0.2645212827726852,
+              "response_tokens": 172,
+              "scoped_check_pass": 0,
+              "syntax_valid": 2,
+              "teacher_token_accuracy": 0.936046511627907,
+              "termination_counts": {
+                "eos": 4
+              }
+            }
+          }
+        }
+      ],
+      "parameters": 27904,
+      "probe_hash": "e4e449df59b02c45817a136174eb82cc991b4bfa298fd8072f74570c9109399b",
+      "seed": 17,
+      "task": "structured",
+      "tokenizer": "bpe32"
+    },
+    {
+      "controllers": [
+        {
+          "audit": {
+            "claims": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "bpe32-seed29",
+          "hypotheses": 1,
+          "id": "world-c7b1cc55b89268ecc02829f7",
+          "run": "controllers/20260928T104136-fitting-structured-5d310eeb",
+          "split": "train",
+          "state_sha256": "2ec9b5a9bad3344bd5df5520d06388c2a31ff52b4307fdde752558796c3ae404",
+          "task": "structured",
+          "trace_sha256": "e823d76a8f5d4e3de4abc2cf9bb12279cda7967fef83c6d256114346e2a79bb1",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "bpe32-seed29",
+          "hypotheses": 1,
+          "id": "world-6c1de744b4ab111679abadda",
+          "run": "controllers/20260928T104137-fitting-structured-39f62fc2",
+          "split": "train",
+          "state_sha256": "c4a1c1c23c2a2c279375f6b9e3333fad143f8dd9daa1805606a46e53c9346a67",
+          "task": "structured",
+          "trace_sha256": "e06fb12e0e2bbbf2ad9aa02d36e4a876d49d86e2d1c6874b0c4c1c2b6582198b",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "bpe32-seed29",
+          "hypotheses": 1,
+          "id": "world-d65df6c347832cdfc68a6451",
+          "run": "controllers/20260928T104139-fitting-structured-1ed65d6d",
+          "split": "validation",
+          "state_sha256": "f018997e056dbc707341f93c599486b568db18bcbf6c3153c06c38bf19761150",
+          "task": "structured",
+          "trace_sha256": "98d75fe5c11bfe1ada9433c6aeb622d46adc0941508b4515e1295136ff3c386e",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "bpe32-seed29",
+          "hypotheses": 1,
+          "id": "world-517eb84ef1f2e1b0f10eaaa2",
+          "run": "controllers/20260928T104141-fitting-structured-9038828f",
+          "split": "validation",
+          "state_sha256": "0a244e2025b914cc4a35935595ce649fd41204afd143dcff33552c55a5917112",
+          "task": "structured",
+          "trace_sha256": "da2b76eb41fee4d4cb819447d82cc5574feb604ae8fc6654a72bfe75b5c6be17",
+          "unknowns": []
+        }
+      ],
+      "dataset_hash": "c44776cb4666ee915e682fc39c5db4d29093c14dd6610185aba08ebb2770cc86",
+      "measurements": [
+        {
+          "checkpoint": null,
+          "path": "diagnostics/structured-bpe32-29/step-000000.json",
+          "sha256": "6c8ef2289db6a7dc42105399acca2318d0665494b2061f22e60f3cbecf8acbe4",
+          "step": 0,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.0034131425200030208,
+              "reference_fits_budget": 4,
+              "response_token_nll": 5.644892703785616,
+              "response_tokens": 170,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.07058823529411765,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.003414332401007414,
+              "reference_fits_budget": 4,
+              "response_token_nll": 5.639549077943314,
+              "response_tokens": 172,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.06976744186046512,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T104113-language-sft-a2c2069c/checkpoint.pt",
+          "checkpoint_sha256": "61d2ea3764bf8f5d87bc832077a54e7b15b54e28c6896be24293e6d6a7ba0516",
+          "path": "diagnostics/structured-bpe32-29/step-000032.json",
+          "scored_tokens": 2744,
+          "sha256": "f555ff63c651d7d02c1f9d18a919671654f568ffbc77b0889e3c728736e21e22",
+          "step": 32,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.01807053992524743,
+              "reference_fits_budget": 4,
+              "response_token_nll": 4.04016939051011,
+              "response_tokens": 170,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.4117647058823529,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.01807980425655842,
+              "reference_fits_budget": 4,
+              "response_token_nll": 4.047355208286019,
+              "response_tokens": 172,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.4127906976744186,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T104121-language-sft-11166bb9/checkpoint.pt",
+          "checkpoint_sha256": "76cc1683778c64d2cb163768fb7b9f670cf227288f72a16708727a8083e6378b",
+          "path": "diagnostics/structured-bpe32-29/step-000128.json",
+          "scored_tokens": 10976,
+          "sha256": "433c6496345006dc18063023b140a3078b150c838d34287ba0d19e8a40cac63f",
+          "step": 128,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.3625674694776535,
+              "reference_fits_budget": 4,
+              "response_token_nll": 1.3575911129222196,
+              "response_tokens": 170,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.8470588235294118,
+              "termination_counts": {
+                "eos": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.36206190288066864,
+              "reference_fits_budget": 4,
+              "response_token_nll": 1.3830325548038926,
+              "response_tokens": 172,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.8372093023255814,
+              "termination_counts": {
+                "eos": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T104125-language-sft-64c2c40f/checkpoint.pt",
+          "checkpoint_sha256": "8c6154a926c10e75fec1d32397984a378c577711380d9c8a4d86a44304b4a962",
+          "path": "diagnostics/structured-bpe32-29/step-000384.json",
+          "scored_tokens": 32928,
+          "sha256": "ae04bf835e9991addff4e4b9b62ec8291c8a1ebc4ff5cb8c33b7b81f1cd01f41",
+          "step": 384,
+          "summary": {
+            "train": {
+              "contract_valid": 4,
+              "exact_reference_with_eos": 2,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.9569533318281174,
+              "reference_fits_budget": 4,
+              "response_token_nll": 0.0974396691602819,
+              "response_tokens": 170,
+              "scoped_check_pass": 2,
+              "syntax_valid": 4,
+              "teacher_token_accuracy": 0.9882352941176471,
+              "termination_counts": {
+                "eos": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 4,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.9569196105003357,
+              "reference_fits_budget": 4,
+              "response_token_nll": 0.2311098714207494,
+              "response_tokens": 172,
+              "scoped_check_pass": 0,
+              "syntax_valid": 4,
+              "teacher_token_accuracy": 0.9476744186046512,
+              "termination_counts": {
+                "eos": 4
+              }
+            }
+          }
+        }
+      ],
+      "parameters": 27904,
+      "probe_hash": "e4e449df59b02c45817a136174eb82cc991b4bfa298fd8072f74570c9109399b",
+      "seed": 29,
+      "task": "structured",
+      "tokenizer": "bpe32"
+    },
+    {
+      "controllers": [
+        {
+          "audit": {
+            "claims": 1,
+            "dispatches": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "byte-seed17",
+          "hypotheses": 1,
+          "id": "square--12",
+          "run": "controllers/20260928T104219-fitting-symbolic-df4371d9",
+          "split": "train",
+          "state_sha256": "733964eb16e6e7185b0fb8b49cf7984a3b0f85f5ab0d501b6663e3e405943f20",
+          "task": "symbolic",
+          "trace_sha256": "58f5fdc005d0f935eb80998c388ea753e2e3b1bda4db3f0570e0bfb2a7ff9a8b",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "dispatches": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "byte-seed17",
+          "hypotheses": 1,
+          "id": "square--11",
+          "run": "controllers/20260928T104220-fitting-symbolic-e88f67b0",
+          "split": "train",
+          "state_sha256": "1b530345ac6024741f95d0a8eaac7011d251858b18e6e6bdb205d4a9f42be642",
+          "task": "symbolic",
+          "trace_sha256": "b6634e680ef3729ce86e0f4800bd94b4d1ec14d73a7d6d78a2ec7855c31eb2c6",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "dispatches": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "byte-seed17",
+          "hypotheses": 1,
+          "id": "square-12",
+          "run": "controllers/20260928T104221-fitting-symbolic-b8bb028c",
+          "split": "validation",
+          "state_sha256": "fd1aa6bf2383848168ec3962ade64743781ade500e054cd3d83b54c44f16ac74",
+          "task": "symbolic",
+          "trace_sha256": "2a43d516a41695966c73c336de09ff00e3c14d0a6847aeb636ed8d687fc09674",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "dispatches": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "byte-seed17",
+          "hypotheses": 1,
+          "id": "square-13",
+          "run": "controllers/20260928T104222-fitting-symbolic-d50f779e",
+          "split": "validation",
+          "state_sha256": "1c8db03b74a442582aefd61c495e04f79eaeace4c92f6c3d50b1c477d195bd62",
+          "task": "symbolic",
+          "trace_sha256": "c9e0abcd60aa77cfc59ce699635e2720b092b8b962ba1031259f1138abab1264",
+          "unknowns": []
+        }
+      ],
+      "dataset_hash": "26f0fc4dfe449e2424c7f5580d9641e032e3fa849fa84c94e0e9234a658d8b5d",
+      "measurements": [
+        {
+          "checkpoint": null,
+          "path": "diagnostics/symbolic-byte-17/step-000000.json",
+          "sha256": "fa1b6e9654aae3f8c04b116974e9cbf37663db67d5743c587270f60f323e11fb",
+          "step": 0,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.0043922963086515665,
+              "reference_fits_budget": 4,
+              "response_token_nll": 5.555719986337746,
+              "response_tokens": 203,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.034482758620689655,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.004400584846735001,
+              "reference_fits_budget": 4,
+              "response_token_nll": 5.563592834472656,
+              "response_tokens": 200,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.03,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T104149-language-sft-a07ec0f3/checkpoint.pt",
+          "checkpoint_sha256": "8583ec9c992cf357a9ae56f3386945319d3aabaae258d25b80bb82100945445e",
+          "path": "diagnostics/symbolic-byte-17/step-000032.json",
+          "scored_tokens": 3138,
+          "sha256": "d7151745fa89df1a33b2ec9b0e283acdecdba3da8ed3424e0f292f0554154a3b",
+          "step": 32,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.019956478383392096,
+              "reference_fits_budget": 4,
+              "response_token_nll": 4.058732056265394,
+              "response_tokens": 203,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.3251231527093596,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.019927754998207092,
+              "reference_fits_budget": 4,
+              "response_token_nll": 4.078388137817383,
+              "response_tokens": 200,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.32,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T104158-language-sft-a484ed0b/checkpoint.pt",
+          "checkpoint_sha256": "545ebcc7f9c545cd5d6c64ed885956c1250e0c96b50eff4104f865802c8351ff",
+          "path": "diagnostics/symbolic-byte-17/step-000128.json",
+          "scored_tokens": 12554,
+          "sha256": "701eab530e1f2b8be1b905b119256a696934f94a27777d56cd609c9bdfd38e0d",
+          "step": 128,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.29743263870477676,
+              "reference_fits_budget": 4,
+              "response_token_nll": 1.6386235429735607,
+              "response_tokens": 203,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.729064039408867,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.2975563257932663,
+              "reference_fits_budget": 4,
+              "response_token_nll": 1.6460330200195312,
+              "response_tokens": 200,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.745,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T104207-language-sft-ef7dd37b/checkpoint.pt",
+          "checkpoint_sha256": "214216cb0faacf64bb2837586f3616e68938f2f3bf727ecd3bd8167a8fd92c87",
+          "path": "diagnostics/symbolic-byte-17/step-000384.json",
+          "scored_tokens": 37664,
+          "sha256": "6d95f9264cad120da2200f895542634a17d68eb836c6d9d14f287236971aab14",
+          "step": 384,
+          "summary": {
+            "train": {
+              "contract_valid": 4,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.960807129740715,
+              "reference_fits_budget": 4,
+              "response_token_nll": 0.24600776428072324,
+              "response_tokens": 203,
+              "scoped_check_pass": 0,
+              "syntax_valid": 4,
+              "teacher_token_accuracy": 0.9359605911330049,
+              "termination_counts": {
+                "eos": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 4,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.9611276239156723,
+              "reference_fits_budget": 4,
+              "response_token_nll": 0.3430346632003784,
+              "response_tokens": 200,
+              "scoped_check_pass": 0,
+              "syntax_valid": 4,
+              "teacher_token_accuracy": 0.915,
+              "termination_counts": {
+                "eos": 4
+              }
+            }
+          }
+        }
+      ],
+      "parameters": 26880,
+      "probe_hash": "584400287b6baf6cb010d4aa2d594211833b304ecb2d4cdfc5691a72214ba38f",
+      "seed": 17,
+      "task": "symbolic",
+      "tokenizer": "byte"
+    },
+    {
+      "controllers": [
+        {
+          "audit": {
+            "claims": 1,
+            "dispatches": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "byte-seed29",
+          "hypotheses": 1,
+          "id": "square--12",
+          "run": "controllers/20260928T104252-fitting-symbolic-cc1b7372",
+          "split": "train",
+          "state_sha256": "7161d0d29e4fe48d45a20769083f3fb6f81410c78e58e7bf13dcfbdc010cc491",
+          "task": "symbolic",
+          "trace_sha256": "2d84d54a85ed7d334a5ac04403897e0af5c37b86ac1e47b355da90319fbbf7d5",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "dispatches": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "byte-seed29",
+          "hypotheses": 1,
+          "id": "square--11",
+          "run": "controllers/20260928T104253-fitting-symbolic-837c4abc",
+          "split": "train",
+          "state_sha256": "e8e7419b72794b70376e301450e07cdd621494d00ea0650d30f579df37ddb4f0",
+          "task": "symbolic",
+          "trace_sha256": "ad32616b2d581bf93e401ee24e27dd1e0308476a0edf86bafcf49bed92892eb7",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "dispatches": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "byte-seed29",
+          "hypotheses": 1,
+          "id": "square-12",
+          "run": "controllers/20260928T104254-fitting-symbolic-2cce955b",
+          "split": "validation",
+          "state_sha256": "99efa8cda911ddd463bef739de2a67e567758e8ff6636690f9f29696387f8d6b",
+          "task": "symbolic",
+          "trace_sha256": "714bf12b4a04c2cd388173650e31414a717c20b164f13338d54d82dcd1b27731",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "dispatches": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "byte-seed29",
+          "hypotheses": 1,
+          "id": "square-13",
+          "run": "controllers/20260928T104255-fitting-symbolic-5f6a737d",
+          "split": "validation",
+          "state_sha256": "c3221482ea9ef64fb70cc404a4e86efdbd0886dcd1862357bc34bacc68819a2e",
+          "task": "symbolic",
+          "trace_sha256": "d9ad4984d305bf1f59a69f04e0121fa5b9f8a56e6ed36c71c09bce4b86954027",
+          "unknowns": []
+        }
+      ],
+      "dataset_hash": "26f0fc4dfe449e2424c7f5580d9641e032e3fa849fa84c94e0e9234a658d8b5d",
+      "measurements": [
+        {
+          "checkpoint": null,
+          "path": "diagnostics/symbolic-byte-29/step-000000.json",
+          "sha256": "65c7202bb5aa60c3073ba80be0c3410bbba34c19be2bc08842788f65cde0824e",
+          "step": 0,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.004209820297546685,
+              "reference_fits_budget": 4,
+              "response_token_nll": 5.544192459782943,
+              "response_tokens": 203,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.034482758620689655,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.004221653449349105,
+              "reference_fits_budget": 4,
+              "response_token_nll": 5.545695190429687,
+              "response_tokens": 200,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.03,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T104229-language-sft-2aed498d/checkpoint.pt",
+          "checkpoint_sha256": "1434f5c8af83a1887084a3c3dd45b299eb394e904a463374ec2caa8cd5dab2cd",
+          "path": "diagnostics/symbolic-byte-29/step-000032.json",
+          "scored_tokens": 3138,
+          "sha256": "5b5c71a246d5d204f8a83b0aa73bf9726778b11b548966f2553e8b65a73fd03b",
+          "step": 32,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.018135484773665667,
+              "reference_fits_budget": 4,
+              "response_token_nll": 4.01881423724696,
+              "response_tokens": 203,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.2955665024630542,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.01813409850001335,
+              "reference_fits_budget": 4,
+              "response_token_nll": 4.037953338623047,
+              "response_tokens": 200,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.3,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T104235-language-sft-84f95ea4/checkpoint.pt",
+          "checkpoint_sha256": "ed396657e480e6fe539e3dddebee3315849f5acfb6f8ca70e192f75358c9bdb2",
+          "path": "diagnostics/symbolic-byte-29/step-000128.json",
+          "scored_tokens": 12554,
+          "sha256": "a101777ebd8f9347d2a112135d26c235beb3fecf31eff6cbebfd30d716c878d5",
+          "step": 128,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.3125200718641281,
+              "reference_fits_budget": 4,
+              "response_token_nll": 1.566593339290525,
+              "response_tokens": 203,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.7733990147783252,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.31245797872543335,
+              "reference_fits_budget": 4,
+              "response_token_nll": 1.5987109756469726,
+              "response_tokens": 200,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.79,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T104244-language-sft-f3193f68/checkpoint.pt",
+          "checkpoint_sha256": "99b2d953a65329f7c76ca322d09e9ff5a676b92f69d8f995203a45fd1f68fdd7",
+          "path": "diagnostics/symbolic-byte-29/step-000384.json",
+          "scored_tokens": 37664,
+          "sha256": "a3194604b63bb1c188fbd3b0414b7fffdfbcccf3a5659161d82e9b045726fbf8",
+          "step": 384,
+          "summary": {
+            "train": {
+              "contract_valid": 4,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.9606217294931412,
+              "reference_fits_budget": 4,
+              "response_token_nll": 0.25409636943798347,
+              "response_tokens": 203,
+              "scoped_check_pass": 0,
+              "syntax_valid": 4,
+              "teacher_token_accuracy": 0.916256157635468,
+              "termination_counts": {
+                "eos": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 4,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.9609519988298416,
+              "reference_fits_budget": 4,
+              "response_token_nll": 0.35211647033691407,
+              "response_tokens": 200,
+              "scoped_check_pass": 0,
+              "syntax_valid": 4,
+              "teacher_token_accuracy": 0.92,
+              "termination_counts": {
+                "eos": 4
+              }
+            }
+          }
+        }
+      ],
+      "parameters": 26880,
+      "probe_hash": "584400287b6baf6cb010d4aa2d594211833b304ecb2d4cdfc5691a72214ba38f",
+      "seed": 29,
+      "task": "symbolic",
+      "tokenizer": "byte"
+    },
+    {
+      "controllers": [
+        {
+          "audit": {
+            "claims": 1,
+            "dispatches": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "bpe32-seed17",
+          "hypotheses": 1,
+          "id": "square--12",
+          "run": "controllers/20260928T104318-fitting-symbolic-6c71e4a7",
+          "split": "train",
+          "state_sha256": "1c5da19642e8e2e8675ec8bef8bb0b0e0df95f83e857c66be2bcc6d93de7b48f",
+          "task": "symbolic",
+          "trace_sha256": "a1a68cc08b49100b8f7d41066e89eb8b43b4da28ff54aa29d32bf069090bf5c6",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "dispatches": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "bpe32-seed17",
+          "hypotheses": 1,
+          "id": "square--11",
+          "run": "controllers/20260928T104320-fitting-symbolic-420e15b0",
+          "split": "train",
+          "state_sha256": "56b76c9fd6961dbe2af7d73e7a13530b240a41bf5b087ca6e7bc676d32d556ba",
+          "task": "symbolic",
+          "trace_sha256": "6019ecb860757ba138422b3ae36681ef751c9d1b6a84328595a5c7ab2e1257a9",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "dispatches": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "bpe32-seed17",
+          "hypotheses": 1,
+          "id": "square-12",
+          "run": "controllers/20260928T104320-fitting-symbolic-c59cb44f",
+          "split": "validation",
+          "state_sha256": "ea165bc732a7839b3a511469cc8f7135774408fc152c595faffad62b6f1f7eb7",
+          "task": "symbolic",
+          "trace_sha256": "3dcd17ee406a19b1d456ae49f6006f00677f3f55698181508eec7a912607a736",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "dispatches": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "bpe32-seed17",
+          "hypotheses": 1,
+          "id": "square-13",
+          "run": "controllers/20260928T104321-fitting-symbolic-7160ad88",
+          "split": "validation",
+          "state_sha256": "6403be57c3ab8b4ba14b94e49ef8829c1cc72429494afaf55546d27b347d29a8",
+          "task": "symbolic",
+          "trace_sha256": "a8f72547af6e33ed86cb3bce21b1900f69bf17e8956ab8342e403d6cb33f16e7",
+          "unknowns": []
+        }
+      ],
+      "dataset_hash": "26f0fc4dfe449e2424c7f5580d9641e032e3fa849fa84c94e0e9234a658d8b5d",
+      "measurements": [
+        {
+          "checkpoint": null,
+          "path": "diagnostics/symbolic-bpe32-17/step-000000.json",
+          "sha256": "ffb5b28b46a12ae025e26d6163096743c420a4e9b1b0f6ab3ea2c0e94a9d6fff",
+          "step": 0,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.00360605790046975,
+              "reference_fits_budget": 4,
+              "response_token_nll": 5.682653685910019,
+              "response_tokens": 199,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.035175879396984924,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.0036088693886995316,
+              "reference_fits_budget": 4,
+              "response_token_nll": 5.686012423768336,
+              "response_tokens": 196,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.030612244897959183,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T104301-language-sft-5f6de0e8/checkpoint.pt",
+          "checkpoint_sha256": "6f30322713822e731cb32b08cddde5577f9758e6d804bdab5eebf4e300cd5f80",
+          "path": "diagnostics/symbolic-bpe32-17/step-000032.json",
+          "scored_tokens": 3074,
+          "sha256": "d44b82643cbb39469e85e14eb99c0fa9862f4a0ed6a0cd04be3494ea30c474c4",
+          "step": 32,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.016974222846329212,
+              "reference_fits_budget": 4,
+              "response_token_nll": 4.126012984232687,
+              "response_tokens": 199,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.32160804020100503,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.016981955152004957,
+              "reference_fits_budget": 4,
+              "response_token_nll": 4.143876523387675,
+              "response_tokens": 196,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.32653061224489793,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T104307-language-sft-7c8b3e0d/checkpoint.pt",
+          "checkpoint_sha256": "e99ec022503e4dacd4ec3ecc5997d632e28683ba3d6c9c0bd6d371a38cdbe55d",
+          "path": "diagnostics/symbolic-bpe32-17/step-000128.json",
+          "scored_tokens": 12298,
+          "sha256": "1bea106d2896cb1eb38c9b999a2f401663e0b0f0bc49290a741dea77c69c8000",
+          "step": 128,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.34297800809144974,
+              "reference_fits_budget": 4,
+              "response_token_nll": 1.5883854238232176,
+              "response_tokens": 199,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.8040201005025126,
+              "termination_counts": {
+                "eos": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.34300239384174347,
+              "reference_fits_budget": 4,
+              "response_token_nll": 1.6177050532126913,
+              "response_tokens": 196,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.8214285714285714,
+              "termination_counts": {
+                "eos": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T104311-language-sft-3428d6fb/checkpoint.pt",
+          "checkpoint_sha256": "6274b86e4e074e61a5ed7a7f7aa28eae995b69409c2d5914667fdfde94057e6f",
+          "path": "diagnostics/symbolic-bpe32-17/step-000384.json",
+          "scored_tokens": 36896,
+          "sha256": "fe2c763e2ef2f0567ef2e3439b68ca2df3001c9f52f96107351e89425824fddc",
+          "step": 384,
+          "summary": {
+            "train": {
+              "contract_valid": 4,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.9627477526664734,
+              "reference_fits_budget": 4,
+              "response_token_nll": 0.2299213696963823,
+              "response_tokens": 199,
+              "scoped_check_pass": 0,
+              "syntax_valid": 4,
+              "teacher_token_accuracy": 0.9346733668341709,
+              "termination_counts": {
+                "eos": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 4,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.9628235697746277,
+              "reference_fits_budget": 4,
+              "response_token_nll": 0.33512482837754853,
+              "response_tokens": 196,
+              "scoped_check_pass": 0,
+              "syntax_valid": 4,
+              "teacher_token_accuracy": 0.9285714285714286,
+              "termination_counts": {
+                "eos": 4
+              }
+            }
+          }
+        }
+      ],
+      "parameters": 27904,
+      "probe_hash": "584400287b6baf6cb010d4aa2d594211833b304ecb2d4cdfc5691a72214ba38f",
+      "seed": 17,
+      "task": "symbolic",
+      "tokenizer": "bpe32"
+    },
+    {
+      "controllers": [
+        {
+          "audit": {
+            "claims": 1,
+            "dispatches": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "bpe32-seed29",
+          "hypotheses": 1,
+          "id": "square--12",
+          "run": "controllers/20260928T104347-fitting-symbolic-e9bfa67e",
+          "split": "train",
+          "state_sha256": "dc8c742d6a555320b8930763c8da9cfd5df1cb11c8313c46753bf40d2034788a",
+          "task": "symbolic",
+          "trace_sha256": "9fc770b2a5e63abd7550ca7cd33035ebcc6dc53c72c79eba743d61e8483f0d33",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "dispatches": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "bpe32-seed29",
+          "hypotheses": 1,
+          "id": "square--11",
+          "run": "controllers/20260928T104348-fitting-symbolic-0d33cd6d",
+          "split": "train",
+          "state_sha256": "2ec1f5250a1f44b0640e43b88456cddb68faf4822a627eb5a7d91f6291b77796",
+          "task": "symbolic",
+          "trace_sha256": "52eb98de354fe70c9823b8c028d09122291e260fb77c0c94cb340d2c4b44bba5",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "dispatches": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "bpe32-seed29",
+          "hypotheses": 1,
+          "id": "square-12",
+          "run": "controllers/20260928T104349-fitting-symbolic-ce959f01",
+          "split": "validation",
+          "state_sha256": "01ae1e8a13ed61e8c24f9be6d866d34727adf77a0f0d2d8b7f456554960aa738",
+          "task": "symbolic",
+          "trace_sha256": "22e1c4cb15815e251ccfe6a400bfa377361a3ecada62a0b2056cbfb0ef9cbd73",
+          "unknowns": []
+        },
+        {
+          "audit": {
+            "claims": 1,
+            "dispatches": 1,
+            "replay_and_checks": "PASS",
+            "verified": 0
+          },
+          "backend": "bpe32-seed29",
+          "hypotheses": 1,
+          "id": "square-13",
+          "run": "controllers/20260928T104349-fitting-symbolic-3656a728",
+          "split": "validation",
+          "state_sha256": "c23f46996dbebfb17061f273c06c53d21a6b91ed8428c8954f2f001780a00fa8",
+          "task": "symbolic",
+          "trace_sha256": "596f98d2c1a1a00c143a499a3d02d71bd4f462c591f81aadff888cebd0d7705f",
+          "unknowns": []
+        }
+      ],
+      "dataset_hash": "26f0fc4dfe449e2424c7f5580d9641e032e3fa849fa84c94e0e9234a658d8b5d",
+      "measurements": [
+        {
+          "checkpoint": null,
+          "path": "diagnostics/symbolic-bpe32-29/step-000000.json",
+          "sha256": "10918cf638f4d0c42980ce0056666005ae227a6aa73bf18ec1212d92c68a2dde",
+          "step": 0,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.0034382848534733057,
+              "reference_fits_budget": 4,
+              "response_token_nll": 5.653686063373508,
+              "response_tokens": 199,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.035175879396984924,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.003438164829276502,
+              "reference_fits_budget": 4,
+              "response_token_nll": 5.656784680424904,
+              "response_tokens": 196,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.030612244897959183,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T104326-language-sft-b59df724/checkpoint.pt",
+          "checkpoint_sha256": "5f479d712f6f1406f407db2cc0ea5411d2c501cd4ec906ee4a601a1f8dd9eeb4",
+          "path": "diagnostics/symbolic-bpe32-29/step-000032.json",
+          "scored_tokens": 3074,
+          "sha256": "63423d02392e074062e6db54e33ae77d2eddb130db327e5962b2a6ac8fc2ec25",
+          "step": 32,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.016832256224006414,
+              "reference_fits_budget": 4,
+              "response_token_nll": 4.1013961868669515,
+              "response_tokens": 199,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.32160804020100503,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.016840198542922735,
+              "reference_fits_budget": 4,
+              "response_token_nll": 4.114994360476124,
+              "response_tokens": 196,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.32653061224489793,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T104332-language-sft-ca037d64/checkpoint.pt",
+          "checkpoint_sha256": "10c7a088d23dd4af6a63a51bb6132217bb3a08f4a7cf3dfa63e1f2cb1339984f",
+          "path": "diagnostics/symbolic-bpe32-29/step-000128.json",
+          "scored_tokens": 12298,
+          "sha256": "f16159ac1fa1dd5ac69a38a0d697a31385219fc8178b1e7a42aab6ad18b967ae",
+          "step": 128,
+          "summary": {
+            "train": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.27636636793613434,
+              "reference_fits_budget": 4,
+              "response_token_nll": 1.6537771560438914,
+              "response_tokens": 199,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.7788944723618091,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 0,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.2772849351167679,
+              "reference_fits_budget": 4,
+              "response_token_nll": 1.664016762558295,
+              "response_tokens": 196,
+              "scoped_check_pass": 0,
+              "syntax_valid": 0,
+              "teacher_token_accuracy": 0.8163265306122449,
+              "termination_counts": {
+                "token_budget": 4
+              }
+            }
+          }
+        },
+        {
+          "checkpoint": "training/20260928T104339-language-sft-12d9515d/checkpoint.pt",
+          "checkpoint_sha256": "f1ca713fccac5037c03c9d95922fe46f9dbf13de1b44c48042cc6cdbb5fc17e5",
+          "path": "diagnostics/symbolic-bpe32-29/step-000384.json",
+          "scored_tokens": 36896,
+          "sha256": "3c7a5a8fc670d6330a64ba3fd68fb4292bd2451741fb2c3fb3b3e8f3b6786ce1",
+          "step": 384,
+          "summary": {
+            "train": {
+              "contract_valid": 4,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.9570644497871399,
+              "reference_fits_budget": 4,
+              "response_token_nll": 0.2538630423234336,
+              "response_tokens": 199,
+              "scoped_check_pass": 0,
+              "syntax_valid": 4,
+              "teacher_token_accuracy": 0.9296482412060302,
+              "termination_counts": {
+                "eos": 4
+              }
+            },
+            "validation": {
+              "contract_valid": 4,
+              "exact_reference_with_eos": 0,
+              "examples": 4,
+              "gold_eos_probability_mean": 0.9574896544218063,
+              "reference_fits_budget": 4,
+              "response_token_nll": 0.3329869192473742,
+              "response_tokens": 196,
+              "scoped_check_pass": 0,
+              "syntax_valid": 4,
+              "teacher_token_accuracy": 0.9132653061224489,
+              "termination_counts": {
+                "eos": 4
+              }
+            }
+          }
+        }
+      ],
+      "parameters": 27904,
+      "probe_hash": "584400287b6baf6cb010d4aa2d594211833b304ecb2d4cdfc5691a72214ba38f",
+      "seed": 29,
+      "task": "symbolic",
+      "tokenizer": "bpe32"
+    }
+  ],
+  "config": {
+    "max_new_tokens": 128,
+    "probe_count": 4,
+    "schema": "aim-language-fit-study-v1",
+    "seeds": [
+      17,
+      29
+    ],
+    "steps": [
+      32,
+      128,
+      384
+    ],
+    "tokenizers": [
+      "byte",
+      "bpe32"
+    ],
+    "training": {
+      "batch_size": 2,
+      "checkpoint_every": 32,
+      "eval_batch_size": 8,
+      "learning_rate": 0.001,
+      "model": {
+        "context": 256,
+        "ffn_width": 64,
+        "heads": 4,
+        "kv_heads": 2,
+        "layers": 2,
+        "width": 32
+      },
+      "weight_decay": 0.01
+    }
+  },
+  "controls": [
+    {
+      "audit": {
+        "claims": 2,
+        "replay_and_checks": "PASS",
+        "verified": 2
+      },
+      "backend": "reference",
+      "hypotheses": 2,
+      "id": "world-c7b1cc55b89268ecc02829f7",
+      "run": "controllers/20260928T103825-fitting-structured-26f0dab4",
+      "split": "train",
+      "state_sha256": "f570e273ba41090b95bf34fb0dad33b0957de534e5923444804fca19819cc005",
+      "task": "structured",
+      "trace_sha256": null,
+      "unknowns": []
+    },
+    {
+      "audit": {
+        "claims": 2,
+        "replay_and_checks": "PASS",
+        "verified": 2
+      },
+      "backend": "reference",
+      "hypotheses": 2,
+      "id": "world-6c1de744b4ab111679abadda",
+      "run": "controllers/20260928T103828-fitting-structured-8b585693",
+      "split": "train",
+      "state_sha256": "8ca66f96a3b4017e58f62ff4c18fdac050cca61b12471db5de36f2472b1294e6",
+      "task": "structured",
+      "trace_sha256": null,
+      "unknowns": []
+    },
+    {
+      "audit": {
+        "claims": 2,
+        "replay_and_checks": "PASS",
+        "verified": 2
+      },
+      "backend": "reference",
+      "hypotheses": 2,
+      "id": "world-d65df6c347832cdfc68a6451",
+      "run": "controllers/20260928T103830-fitting-structured-5dac0f6e",
+      "split": "validation",
+      "state_sha256": "db3bb2fa9bd9446d5d7ffd6635bbdb73f6bdd9957df2f891922d77a8f8d6c97a",
+      "task": "structured",
+      "trace_sha256": null,
+      "unknowns": []
+    },
+    {
+      "audit": {
+        "claims": 2,
+        "replay_and_checks": "PASS",
+        "verified": 2
+      },
+      "backend": "reference",
+      "hypotheses": 2,
+      "id": "world-517eb84ef1f2e1b0f10eaaa2",
+      "run": "controllers/20260928T103831-fitting-structured-ba791beb",
+      "split": "validation",
+      "state_sha256": "db0ea4088ed7dad64a4a0fba2e35fea173f83dcdaac7733aecd439501cc6b69a",
+      "task": "structured",
+      "trace_sha256": null,
+      "unknowns": []
+    },
+    {
+      "audit": {
+        "claims": 1,
+        "dispatches": 1,
+        "replay_and_checks": "PASS",
+        "verified": 1
+      },
+      "backend": "reference",
+      "hypotheses": 1,
+      "id": "square--12",
+      "run": "controllers/20260928T103837-fitting-symbolic-4d7b4395",
+      "split": "train",
+      "state_sha256": "b0201b41c9d8965a4e134e83db36bff83ae1b8038dd31cb7b0893d0310a41ce4",
+      "task": "symbolic",
+      "trace_sha256": null,
+      "unknowns": []
+    },
+    {
+      "audit": {
+        "claims": 1,
+        "dispatches": 1,
+        "replay_and_checks": "PASS",
+        "verified": 1
+      },
+      "backend": "reference",
+      "hypotheses": 1,
+      "id": "square--11",
+      "run": "controllers/20260928T103838-fitting-symbolic-ebdd53e5",
+      "split": "train",
+      "state_sha256": "f3b3e571351393166702fc7cae31b4136d4710976f14f59ecefcb875b9d2c6f9",
+      "task": "symbolic",
+      "trace_sha256": null,
+      "unknowns": []
+    },
+    {
+      "audit": {
+        "claims": 1,
+        "dispatches": 1,
+        "replay_and_checks": "PASS",
+        "verified": 1
+      },
+      "backend": "reference",
+      "hypotheses": 1,
+      "id": "square-12",
+      "run": "controllers/20260928T103839-fitting-symbolic-a5c170cc",
+      "split": "validation",
+      "state_sha256": "d93e7f865f718aec9a9f96ff6f4f7e5ccbe5c615189b717d3669609d39431d1c",
+      "task": "symbolic",
+      "trace_sha256": null,
+      "unknowns": []
+    },
+    {
+      "audit": {
+        "claims": 1,
+        "dispatches": 1,
+        "replay_and_checks": "PASS",
+        "verified": 1
+      },
+      "backend": "reference",
+      "hypotheses": 1,
+      "id": "square-13",
+      "run": "controllers/20260928T103841-fitting-symbolic-34d891c5",
+      "split": "validation",
+      "state_sha256": "2e03538e291c85426e3d32683f0b21de5ee0497f89b0e317f6307e050e7eaad2",
+      "task": "symbolic",
+      "trace_sha256": null,
+      "unknowns": []
+    }
+  ],
+  "schema": "aim-language-fit-results-v1",
+  "scope": "predeclared fitting diagnostics, no test/OOD cases; no checkpoint selection or promotion",
+  "tokenizer_note": "BPE32 fitted on existing authored corpus training split, not supervised validation probes; no tokenizer superiority study"
+}

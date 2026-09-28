@@ -1,0 +1,7 @@
+{
+  "actual_diagnostics_sha256": "6d95f9264cad120da2200f895542634a17d68eb836c6d9d14f287236971aab14",
+  "checkpoint_sha256": "214216cb0faacf64bb2837586f3616e68938f2f3bf727ecd3bd8167a8fd92c87",
+  "exact_match": true,
+  "expected_diagnostics_sha256": "6d95f9264cad120da2200f895542634a17d68eb836c6d9d14f287236971aab14",
+  "scope": "standalone CLI vs registered symbolic-byte-seed17 step384 measurement; one compute thread requested through OMP/MKL environment"
+}

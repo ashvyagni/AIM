@@ -1,0 +1,20 @@
+{
+  "code_hash": "81e052ac707dd35519be9a399603d945573fde81e0fa018023be187941f9e027",
+  "configuration": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "arm": "symbolic-byte-17",
+    "step": 384
+  },
+  "files": {
+    "command.log": "1988f6efb8e873363d01ef12b1b8d36ade8a87518e2ba683ec9debd9da3efadc",
+    "result.json": "b2060ea36e9237fb6e433b86d3c9a558cd34e55dc86c2fd9a06e32acb747f0f6"
+  },
+  "git_commit": "a1748ea43d0c259c92d6d82988f68828c874c252",
+  "run_id": "20260928T104510-phase-3e-diagnostic-cli-df801b52",
+  "status": {
+    "elapsed_seconds": 7.392608791997191,
+    "error": null,
+    "status": "COMPLETED"
+  }
+}

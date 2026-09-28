@@ -1,0 +1,378 @@
+{
+  "dataset_hash": "c44776cb4666ee915e682fc39c5db4d29093c14dd6610185aba08ebb2770cc86",
+  "probe_hash": "e4e449df59b02c45817a136174eb82cc991b4bfa298fd8072f74570c9109399b",
+  "rows": [
+    {
+      "aliases": {
+        "E0": "ev-e42f4d180ab43c5ea21347ba"
+      },
+      "case": {
+        "experiment": {
+          "available": true,
+          "observations": [
+            [
+              4,
+              4.0
+            ]
+          ]
+        },
+        "id": "p2a-c7b1cc55b89268ecc028",
+        "question": "Which candidate predicts instrument-p2a-c7b1cc55b89268ecc028 at x=4?",
+        "sources": [
+          {
+            "rights": "project-generated-fixture",
+            "text": "{\"topic\": \"instrument-p2a-c7b1cc55b89268ecc028\", \"observations\": [[0, 0.0], [1, 1.0], [2, 2.0]]}",
+            "title": "instrument-p2a-c7b1cc55b89268ecc028",
+            "uri": "aim://fixtures/p2a-c7b1cc55b89268ecc028/observations",
+            "version": "aim-structured-research-v1"
+          }
+        ],
+        "target_x": 4,
+        "topic": "instrument-p2a-c7b1cc55b89268ecc028"
+      },
+      "family": "linear",
+      "generator": "aim-structured-research-v1",
+      "group": "c7b1cc55b89268ecc02829f7a6c5c9a95f8f3ada9e11ba39e246eaaee623590f",
+      "id": "world-c7b1cc55b89268ecc02829f7",
+      "label_origin": "programmatic-known-world; not human feedback",
+      "prompt": "{\"task\":\"fit-degree<=2\",\"evidence\":{\"E0\":[[0,0],[1,1],[2,2]]},\"x\":4}\n",
+      "response": "{\"coefficients\":[[0,1,0]],\"evidence\":[\"E0\"]}",
+      "rights": "project-generated-fixture",
+      "source_hashes": [
+        "5b76d008655d7e5323d645d67afc38a95b4930933477881c052116752f0f2346"
+      ],
+      "split": "train",
+      "world_coefficients": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "aliases": {
+        "E0": "ev-91459cbd0724794ab76b9d93"
+      },
+      "case": {
+        "experiment": {
+          "available": true,
+          "observations": [
+            [
+              3,
+              7.0
+            ]
+          ]
+        },
+        "id": "p2a-6c1de744b4ab111679ab",
+        "question": "Which candidate predicts instrument-p2a-6c1de744b4ab111679ab at x=3?",
+        "sources": [
+          {
+            "rights": "project-generated-fixture",
+            "text": "{\"topic\": \"instrument-p2a-6c1de744b4ab111679ab\", \"observations\": [[0, 1.0], [1, 3.0], [2, 5.0]]}",
+            "title": "instrument-p2a-6c1de744b4ab111679ab",
+            "uri": "aim://fixtures/p2a-6c1de744b4ab111679ab/observations",
+            "version": "aim-structured-research-v1"
+          }
+        ],
+        "target_x": 3,
+        "topic": "instrument-p2a-6c1de744b4ab111679ab"
+      },
+      "family": "linear",
+      "generator": "aim-structured-research-v1",
+      "group": "6c1de744b4ab111679abadda14cbec2be7853041f302155523f058f1cf003370",
+      "id": "world-6c1de744b4ab111679abadda",
+      "label_origin": "programmatic-known-world; not human feedback",
+      "prompt": "{\"task\":\"fit-degree<=2\",\"evidence\":{\"E0\":[[0,1],[1,3],[2,5]]},\"x\":3}\n",
+      "response": "{\"coefficients\":[[1,2,0]],\"evidence\":[\"E0\"]}",
+      "rights": "project-generated-fixture",
+      "source_hashes": [
+        "8c40e58205604a44436abd679666134eea5e5a94c3ecf13bb47b11cd634c07f7"
+      ],
+      "split": "train",
+      "world_coefficients": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "aliases": {
+        "E0": "ev-b99c8510747fb3da5055a6de"
+      },
+      "case": {
+        "experiment": {
+          "available": true,
+          "observations": [
+            [
+              4,
+              -9.0
+            ]
+          ]
+        },
+        "id": "p2a-968fd9582b4465b68001",
+        "question": "Which candidate predicts instrument-p2a-968fd9582b4465b68001 at x=4?",
+        "sources": [
+          {
+            "rights": "project-generated-fixture",
+            "text": "{\"topic\": \"instrument-p2a-968fd9582b4465b68001\", \"observations\": [[0, -1.0], [1, -3.0], [2, -5.0]]}",
+            "title": "instrument-p2a-968fd9582b4465b68001",
+            "uri": "aim://fixtures/p2a-968fd9582b4465b68001/observations",
+            "version": "aim-structured-research-v1"
+          }
+        ],
+        "target_x": 4,
+        "topic": "instrument-p2a-968fd9582b4465b68001"
+      },
+      "family": "linear",
+      "generator": "aim-structured-research-v1",
+      "group": "968fd9582b4465b68001735cdcaf266a4b2bf97d5997e9899df9ae648362683d",
+      "id": "world-968fd9582b4465b68001735c",
+      "label_origin": "programmatic-known-world; not human feedback",
+      "prompt": "{\"task\":\"fit-degree<=2\",\"evidence\":{\"E0\":[[0,-1],[1,-3],[2,-5]]},\"x\":4}\n",
+      "response": "{\"coefficients\":[[-1,-2,0]],\"evidence\":[\"E0\"]}",
+      "rights": "project-generated-fixture",
+      "source_hashes": [
+        "2d7aba26ea0cde871c3d0e63b67bed622feaae3c0cec64f720384353add320bf"
+      ],
+      "split": "train",
+      "world_coefficients": [
+        -1,
+        -2,
+        0
+      ]
+    },
+    {
+      "aliases": {
+        "E0": "ev-704930423b6d267f6806e99f"
+      },
+      "case": {
+        "experiment": {
+          "available": true,
+          "observations": [
+            [
+              3,
+              11.0
+            ]
+          ]
+        },
+        "id": "p2a-2845d97576365d9ec91e",
+        "question": "Which candidate predicts instrument-p2a-2845d97576365d9ec91e at x=3?",
+        "sources": [
+          {
+            "rights": "project-generated-fixture",
+            "text": "{\"topic\": \"instrument-p2a-2845d97576365d9ec91e\", \"observations\": [[0, 2.0], [1, 3.0], [2, 6.0]]}",
+            "title": "instrument-p2a-2845d97576365d9ec91e",
+            "uri": "aim://fixtures/p2a-2845d97576365d9ec91e/observations",
+            "version": "aim-structured-research-v1"
+          }
+        ],
+        "target_x": 3,
+        "topic": "instrument-p2a-2845d97576365d9ec91e"
+      },
+      "family": "quadratic",
+      "generator": "aim-structured-research-v1",
+      "group": "2845d97576365d9ec91ef2ea904eb3bcb724f8c95d8e0934fa94b3cc00256506",
+      "id": "world-2845d97576365d9ec91ef2ea",
+      "label_origin": "programmatic-known-world; not human feedback",
+      "prompt": "{\"task\":\"fit-degree<=2\",\"evidence\":{\"E0\":[[0,2],[1,3],[2,6]]},\"x\":3}\n",
+      "response": "{\"coefficients\":[[2,0,1]],\"evidence\":[\"E0\"]}",
+      "rights": "project-generated-fixture",
+      "source_hashes": [
+        "70e096a1cf9730fc5af824443167786fd90c0438fe60a5a19ffa6e7f33464e1a"
+      ],
+      "split": "train",
+      "world_coefficients": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "aliases": {
+        "E0": "ev-2f7f00b53ed0385fab65aaa3"
+      },
+      "case": {
+        "experiment": {
+          "available": true,
+          "observations": [
+            [
+              4,
+              6.0
+            ]
+          ]
+        },
+        "id": "p2a-d65df6c347832cdfc68a",
+        "question": "Which candidate predicts instrument-p2a-d65df6c347832cdfc68a at x=4?",
+        "sources": [
+          {
+            "rights": "project-generated-fixture",
+            "text": "{\"topic\": \"instrument-p2a-d65df6c347832cdfc68a\", \"observations\": [[0, 2.0], [1, 3.0], [2, 4.0]]}",
+            "title": "instrument-p2a-d65df6c347832cdfc68a",
+            "uri": "aim://fixtures/p2a-d65df6c347832cdfc68a/observations",
+            "version": "aim-structured-research-v1"
+          }
+        ],
+        "target_x": 4,
+        "topic": "instrument-p2a-d65df6c347832cdfc68a"
+      },
+      "family": "linear",
+      "generator": "aim-structured-research-v1",
+      "group": "d65df6c347832cdfc68a6451d9992924600d1f700fc6de2a3f48bac272fd43ed",
+      "id": "world-d65df6c347832cdfc68a6451",
+      "label_origin": "programmatic-known-world; not human feedback",
+      "prompt": "{\"task\":\"fit-degree<=2\",\"evidence\":{\"E0\":[[0,2],[1,3],[2,4]]},\"x\":4}\n",
+      "response": "{\"coefficients\":[[2,1,0]],\"evidence\":[\"E0\"]}",
+      "rights": "project-generated-fixture",
+      "source_hashes": [
+        "b356d358e015ec6fa8734267e478553491d5a14319ff9bb88c1e15dfc0b3def4"
+      ],
+      "split": "validation",
+      "world_coefficients": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "aliases": {
+        "E0": "ev-7bdb24530c20cf63c47f2a2d"
+      },
+      "case": {
+        "experiment": {
+          "available": true,
+          "observations": [
+            [
+              5,
+              -8.0
+            ]
+          ]
+        },
+        "id": "p2a-517eb84ef1f2e1b0f10e",
+        "question": "Which candidate predicts instrument-p2a-517eb84ef1f2e1b0f10e at x=5?",
+        "sources": [
+          {
+            "rights": "project-generated-fixture",
+            "text": "{\"topic\": \"instrument-p2a-517eb84ef1f2e1b0f10e\", \"observations\": [[0, -3.0], [1, -4.0], [2, -5.0]]}",
+            "title": "instrument-p2a-517eb84ef1f2e1b0f10e",
+            "uri": "aim://fixtures/p2a-517eb84ef1f2e1b0f10e/observations",
+            "version": "aim-structured-research-v1"
+          }
+        ],
+        "target_x": 5,
+        "topic": "instrument-p2a-517eb84ef1f2e1b0f10e"
+      },
+      "family": "linear",
+      "generator": "aim-structured-research-v1",
+      "group": "517eb84ef1f2e1b0f10eaaa2fa6cbf89fff3953ea2e74d9b4761d1582c2464e1",
+      "id": "world-517eb84ef1f2e1b0f10eaaa2",
+      "label_origin": "programmatic-known-world; not human feedback",
+      "prompt": "{\"task\":\"fit-degree<=2\",\"evidence\":{\"E0\":[[0,-3],[1,-4],[2,-5]]},\"x\":5}\n",
+      "response": "{\"coefficients\":[[-3,-1,0]],\"evidence\":[\"E0\"]}",
+      "rights": "project-generated-fixture",
+      "source_hashes": [
+        "bf0c4f834781a60e5df21345be8351a6d95192d0e57f47661ecc7eeaafabdf84"
+      ],
+      "split": "validation",
+      "world_coefficients": [
+        -3,
+        -1,
+        0
+      ]
+    },
+    {
+      "aliases": {
+        "E0": "ev-d7e2e5c10c2e191ebdb2922f"
+      },
+      "case": {
+        "experiment": {
+          "available": true,
+          "observations": [
+            [
+              5,
+              51.0
+            ]
+          ]
+        },
+        "id": "p2a-5012dab4aae33298332c",
+        "question": "Which candidate predicts instrument-p2a-5012dab4aae33298332c at x=5?",
+        "sources": [
+          {
+            "rights": "project-generated-fixture",
+            "text": "{\"topic\": \"instrument-p2a-5012dab4aae33298332c\", \"observations\": [[0, 1.0], [1, 3.0], [2, 9.0]]}",
+            "title": "instrument-p2a-5012dab4aae33298332c",
+            "uri": "aim://fixtures/p2a-5012dab4aae33298332c/observations",
+            "version": "aim-structured-research-v1"
+          }
+        ],
+        "target_x": 5,
+        "topic": "instrument-p2a-5012dab4aae33298332c"
+      },
+      "family": "quadratic",
+      "generator": "aim-structured-research-v1",
+      "group": "5012dab4aae33298332c6f4e6853762dcf4eb802866ee86d421cd806f1a61039",
+      "id": "world-5012dab4aae33298332c6f4e",
+      "label_origin": "programmatic-known-world; not human feedback",
+      "prompt": "{\"task\":\"fit-degree<=2\",\"evidence\":{\"E0\":[[0,1],[1,3],[2,9]]},\"x\":5}\n",
+      "response": "{\"coefficients\":[[1,0,2]],\"evidence\":[\"E0\"]}",
+      "rights": "project-generated-fixture",
+      "source_hashes": [
+        "34ec8de3238fd1a0f862fb04bf832d51e7d3f0402047575d621ce19e429c86dc"
+      ],
+      "split": "validation",
+      "world_coefficients": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "aliases": {
+        "E0": "ev-12b0a2d6072a01636a19e806"
+      },
+      "case": {
+        "experiment": {
+          "available": true,
+          "observations": [
+            [
+              5,
+              -41.0
+            ]
+          ]
+        },
+        "id": "p2a-5e405b400771e0d22dec",
+        "question": "Which candidate predicts instrument-p2a-5e405b400771e0d22dec at x=5?",
+        "sources": [
+          {
+            "rights": "project-generated-fixture",
+            "text": "{\"topic\": \"instrument-p2a-5e405b400771e0d22dec\", \"observations\": [[0, -1.0], [1, -1.0], [2, -5.0]]}",
+            "title": "instrument-p2a-5e405b400771e0d22dec",
+            "uri": "aim://fixtures/p2a-5e405b400771e0d22dec/observations",
+            "version": "aim-structured-research-v1"
+          }
+        ],
+        "target_x": 5,
+        "topic": "instrument-p2a-5e405b400771e0d22dec"
+      },
+      "family": "quadratic",
+      "generator": "aim-structured-research-v1",
+      "group": "5e405b400771e0d22dec637f814d3d5e442e5cbe6f3cad5214727df439315ac3",
+      "id": "world-5e405b400771e0d22dec637f",
+      "label_origin": "programmatic-known-world; not human feedback",
+      "prompt": "{\"task\":\"fit-degree<=2\",\"evidence\":{\"E0\":[[0,-1],[1,-1],[2,-5]]},\"x\":5}\n",
+      "response": "{\"coefficients\":[[-1,2,-2]],\"evidence\":[\"E0\"]}",
+      "rights": "project-generated-fixture",
+      "source_hashes": [
+        "5c8f4ac4be09a13d61d15eec53807f2eddf58ffcf7e6b3550ef6321f0465a0e5"
+      ],
+      "split": "validation",
+      "world_coefficients": [
+        -1,
+        2,
+        -2
+      ]
+    }
+  ],
+  "schema": "aim-language-fitting-probes-v1",
+  "scope": "exposed train/validation fitting probes; no test/OOD inference",
+  "selection": "first rows in immutable prepared split order; no outcome selection",
+  "task": "structured"
+}

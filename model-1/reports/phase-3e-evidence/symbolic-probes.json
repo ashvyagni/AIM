@@ -1,0 +1,154 @@
+{
+  "dataset_hash": "26f0fc4dfe449e2424c7f5580d9641e032e3fa849fa84c94e0e9234a658d8b5d",
+  "probe_hash": "584400287b6baf6cb010d4aa2d594211833b304ecb2d4cdfc5691a72214ba38f",
+  "rows": [
+    {
+      "candidates": [
+        "{\"rhs\":\"x**2+(-24)*x+(145)\",\"evidence_ids\":[\"E0\"]}",
+        "{\"rhs\":\"x**2+(-24)*x+(144)\",\"evidence_ids\":[\"E0\"]}",
+        "{\"rhs\":\"x/0\",\"evidence_ids\":[\"E0\"]}"
+      ],
+      "chosen": "{\"rhs\":\"x**2+(-24)*x+(144)\",\"evidence_ids\":[\"E0\"]}",
+      "generator": "symbolic-binomial-engineering-v1",
+      "group": "binomial-offset--12",
+      "id": "square--12",
+      "label_origin": "programmatic",
+      "lhs": "(x-12)**2",
+      "prompt": "Expand in Q[x]. Source E0 expression: (x-12)**2\nReturn JSON rhs and evidence_ids.\n",
+      "rejected": "{\"rhs\":\"x**2+(-24)*x+(145)\",\"evidence_ids\":[\"E0\"]}",
+      "response": "{\"rhs\":\"x**2+(-24)*x+(144)\",\"evidence_ids\":[\"E0\"]}",
+      "rights": "project-generated-fixture",
+      "split": "train"
+    },
+    {
+      "candidates": [
+        "{\"rhs\":\"x**2+(-22)*x+(122)\",\"evidence_ids\":[\"E0\"]}",
+        "{\"rhs\":\"x**2+(-22)*x+(121)\",\"evidence_ids\":[\"E0\"]}",
+        "{\"rhs\":\"x/0\",\"evidence_ids\":[\"E0\"]}"
+      ],
+      "chosen": "{\"rhs\":\"x**2+(-22)*x+(121)\",\"evidence_ids\":[\"E0\"]}",
+      "generator": "symbolic-binomial-engineering-v1",
+      "group": "binomial-offset--11",
+      "id": "square--11",
+      "label_origin": "programmatic",
+      "lhs": "(x-11)**2",
+      "prompt": "Expand in Q[x]. Source E0 expression: (x-11)**2\nReturn JSON rhs and evidence_ids.\n",
+      "rejected": "{\"rhs\":\"x**2+(-22)*x+(122)\",\"evidence_ids\":[\"E0\"]}",
+      "response": "{\"rhs\":\"x**2+(-22)*x+(121)\",\"evidence_ids\":[\"E0\"]}",
+      "rights": "project-generated-fixture",
+      "split": "train"
+    },
+    {
+      "candidates": [
+        "{\"rhs\":\"x**2+(-20)*x+(101)\",\"evidence_ids\":[\"E0\"]}",
+        "{\"rhs\":\"x**2+(-20)*x+(100)\",\"evidence_ids\":[\"E0\"]}",
+        "{\"rhs\":\"x/0\",\"evidence_ids\":[\"E0\"]}"
+      ],
+      "chosen": "{\"rhs\":\"x**2+(-20)*x+(100)\",\"evidence_ids\":[\"E0\"]}",
+      "generator": "symbolic-binomial-engineering-v1",
+      "group": "binomial-offset--10",
+      "id": "square--10",
+      "label_origin": "programmatic",
+      "lhs": "(x-10)**2",
+      "prompt": "Expand in Q[x]. Source E0 expression: (x-10)**2\nReturn JSON rhs and evidence_ids.\n",
+      "rejected": "{\"rhs\":\"x**2+(-20)*x+(101)\",\"evidence_ids\":[\"E0\"]}",
+      "response": "{\"rhs\":\"x**2+(-20)*x+(100)\",\"evidence_ids\":[\"E0\"]}",
+      "rights": "project-generated-fixture",
+      "split": "train"
+    },
+    {
+      "candidates": [
+        "{\"rhs\":\"x**2+(-18)*x+(82)\",\"evidence_ids\":[\"E0\"]}",
+        "{\"rhs\":\"x**2+(-18)*x+(81)\",\"evidence_ids\":[\"E0\"]}",
+        "{\"rhs\":\"x/0\",\"evidence_ids\":[\"E0\"]}"
+      ],
+      "chosen": "{\"rhs\":\"x**2+(-18)*x+(81)\",\"evidence_ids\":[\"E0\"]}",
+      "generator": "symbolic-binomial-engineering-v1",
+      "group": "binomial-offset--9",
+      "id": "square--9",
+      "label_origin": "programmatic",
+      "lhs": "(x-9)**2",
+      "prompt": "Expand in Q[x]. Source E0 expression: (x-9)**2\nReturn JSON rhs and evidence_ids.\n",
+      "rejected": "{\"rhs\":\"x**2+(-18)*x+(82)\",\"evidence_ids\":[\"E0\"]}",
+      "response": "{\"rhs\":\"x**2+(-18)*x+(81)\",\"evidence_ids\":[\"E0\"]}",
+      "rights": "project-generated-fixture",
+      "split": "train"
+    },
+    {
+      "candidates": [
+        "{\"rhs\":\"x**2+(24)*x+(145)\",\"evidence_ids\":[\"E0\"]}",
+        "{\"rhs\":\"x**2+(24)*x+(144)\",\"evidence_ids\":[\"E0\"]}",
+        "{\"rhs\":\"x/0\",\"evidence_ids\":[\"E0\"]}"
+      ],
+      "chosen": "{\"rhs\":\"x**2+(24)*x+(144)\",\"evidence_ids\":[\"E0\"]}",
+      "generator": "symbolic-binomial-engineering-v1",
+      "group": "binomial-offset-12",
+      "id": "square-12",
+      "label_origin": "programmatic",
+      "lhs": "(x+12)**2",
+      "prompt": "Expand in Q[x]. Source E0 expression: (x+12)**2\nReturn JSON rhs and evidence_ids.\n",
+      "rejected": "{\"rhs\":\"x**2+(24)*x+(145)\",\"evidence_ids\":[\"E0\"]}",
+      "response": "{\"rhs\":\"x**2+(24)*x+(144)\",\"evidence_ids\":[\"E0\"]}",
+      "rights": "project-generated-fixture",
+      "split": "validation"
+    },
+    {
+      "candidates": [
+        "{\"rhs\":\"x**2+(26)*x+(170)\",\"evidence_ids\":[\"E0\"]}",
+        "{\"rhs\":\"x**2+(26)*x+(169)\",\"evidence_ids\":[\"E0\"]}",
+        "{\"rhs\":\"x/0\",\"evidence_ids\":[\"E0\"]}"
+      ],
+      "chosen": "{\"rhs\":\"x**2+(26)*x+(169)\",\"evidence_ids\":[\"E0\"]}",
+      "generator": "symbolic-binomial-engineering-v1",
+      "group": "binomial-offset-13",
+      "id": "square-13",
+      "label_origin": "programmatic",
+      "lhs": "(x+13)**2",
+      "prompt": "Expand in Q[x]. Source E0 expression: (x+13)**2\nReturn JSON rhs and evidence_ids.\n",
+      "rejected": "{\"rhs\":\"x**2+(26)*x+(170)\",\"evidence_ids\":[\"E0\"]}",
+      "response": "{\"rhs\":\"x**2+(26)*x+(169)\",\"evidence_ids\":[\"E0\"]}",
+      "rights": "project-generated-fixture",
+      "split": "validation"
+    },
+    {
+      "candidates": [
+        "{\"rhs\":\"x**2+(28)*x+(197)\",\"evidence_ids\":[\"E0\"]}",
+        "{\"rhs\":\"x**2+(28)*x+(196)\",\"evidence_ids\":[\"E0\"]}",
+        "{\"rhs\":\"x/0\",\"evidence_ids\":[\"E0\"]}"
+      ],
+      "chosen": "{\"rhs\":\"x**2+(28)*x+(196)\",\"evidence_ids\":[\"E0\"]}",
+      "generator": "symbolic-binomial-engineering-v1",
+      "group": "binomial-offset-14",
+      "id": "square-14",
+      "label_origin": "programmatic",
+      "lhs": "(x+14)**2",
+      "prompt": "Expand in Q[x]. Source E0 expression: (x+14)**2\nReturn JSON rhs and evidence_ids.\n",
+      "rejected": "{\"rhs\":\"x**2+(28)*x+(197)\",\"evidence_ids\":[\"E0\"]}",
+      "response": "{\"rhs\":\"x**2+(28)*x+(196)\",\"evidence_ids\":[\"E0\"]}",
+      "rights": "project-generated-fixture",
+      "split": "validation"
+    },
+    {
+      "candidates": [
+        "{\"rhs\":\"x**2+(30)*x+(226)\",\"evidence_ids\":[\"E0\"]}",
+        "{\"rhs\":\"x**2+(30)*x+(225)\",\"evidence_ids\":[\"E0\"]}",
+        "{\"rhs\":\"x/0\",\"evidence_ids\":[\"E0\"]}"
+      ],
+      "chosen": "{\"rhs\":\"x**2+(30)*x+(225)\",\"evidence_ids\":[\"E0\"]}",
+      "generator": "symbolic-binomial-engineering-v1",
+      "group": "binomial-offset-15",
+      "id": "square-15",
+      "label_origin": "programmatic",
+      "lhs": "(x+15)**2",
+      "prompt": "Expand in Q[x]. Source E0 expression: (x+15)**2\nReturn JSON rhs and evidence_ids.\n",
+      "rejected": "{\"rhs\":\"x**2+(30)*x+(226)\",\"evidence_ids\":[\"E0\"]}",
+      "response": "{\"rhs\":\"x**2+(30)*x+(225)\",\"evidence_ids\":[\"E0\"]}",
+      "rights": "project-generated-fixture",
+      "split": "validation"
+    }
+  ],
+  "schema": "aim-language-fitting-probes-v1",
+  "scope": "exposed train/validation fitting probes; no test/OOD inference",
+  "selection": "first rows in immutable prepared split order; no outcome selection",
+  "task": "symbolic"
+}

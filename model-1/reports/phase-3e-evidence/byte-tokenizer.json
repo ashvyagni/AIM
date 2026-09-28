@@ -1,0 +1,10 @@
+{
+  "bos": 256,
+  "encoding": "utf-8",
+  "eos": 257,
+  "learned": false,
+  "pad": 258,
+  "scope": "temporary engineering tokenizer; no pretrained assets",
+  "version": "aim-utf8-byte-v1",
+  "vocab_size": 259
+}

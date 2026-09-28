@@ -1,0 +1,258 @@
+{
+  "baseline": "227f9d0",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "27ad8a67dea954ea41fb5a574dcbcc2520e70cb946997639ac137e3575a45d76"
+    },
+    {
+      "path": "documents/AIM_Model_1_Implementation_Directive.md",
+      "sha256": "616adee5085be1bf686a91260eab1a56846e1495fd3ae6cfd32724372ef672e2"
+    },
+    {
+      "path": "model-1/README.md",
+      "sha256": "0f2f5c23b09ecc4f13b85bffb2b16661491c8f144e0bdc5db736492328c350f3"
+    },
+    {
+      "path": "model-1/aim/language_diagnostics.py",
+      "sha256": "22a9d4eb6fe0c7f2dd8a6b26c0252b599bf829f2c96413c77e2fd2995cd76972"
+    },
+    {
+      "path": "model-1/aim/language_fit.py",
+      "sha256": "7bf722e4e77e806a3c6aa36189564db814ad65312a430169a1e6b2231fc13829"
+    },
+    {
+      "path": "model-1/configs/language-fitting.json",
+      "sha256": "9f4a0d1385b91c5782f771ef7fb00efcb58397edf597c082532d652d3c617b68"
+    },
+    {
+      "path": "model-1/docs/ARCHITECTURE.md",
+      "sha256": "149684506edf33d4bf91e4700e045766e3542e021a645ac3f5e5a9199a862716"
+    },
+    {
+      "path": "model-1/docs/DECISIONS.md",
+      "sha256": "337b26c618beb9a73c48ca571405b9615bd8aac6c8b74d26e91dcc73f7bf629c"
+    },
+    {
+      "path": "model-1/docs/EVALUATION.md",
+      "sha256": "c2131e2950b8d4e031b99e5ed3e347363a415bad7a98813e4f53cd851b2b487e"
+    },
+    {
+      "path": "model-1/docs/IMPLEMENTATION_PLAN.md",
+      "sha256": "71ab6b9c3091a7f54d577614597f4677168af1b90170259f59fa8bce1e18a20b"
+    },
+    {
+      "path": "model-1/docs/LANGUAGE_FITTING.md",
+      "sha256": "8db39a232634a32c130df2cbab8379da9bd1d95a1033ec533d29b55ee1a9a4fb"
+    },
+    {
+      "path": "model-1/docs/TOKENIZED_POSTTRAINING.md",
+      "sha256": "74680ebf35060c6c35170a16e59358bc0e61c68e27f0493c3c606a45a030df05"
+    },
+    {
+      "path": "model-1/docs/TRAINING.md",
+      "sha256": "2e3c8d3b769f93a79ad185bb48d63247be418aaa981fa69aee5c4e83546c7bcc"
+    },
+    {
+      "path": "model-1/docs/experiments/phase-3e-protocol.md",
+      "sha256": "57b3ce75fecfaa84dcac3a9b2685cc60ce530415db410c598d90b1f6a2180780"
+    },
+    {
+      "path": "model-1/reports/phase-3e-cli-evidence/command.log",
+      "sha256": "1988f6efb8e873363d01ef12b1b8d36ade8a87518e2ba683ec9debd9da3efadc"
+    },
+    {
+      "path": "model-1/reports/phase-3e-cli-evidence/manifest.json",
+      "sha256": "6b281e1422e821a7315584825896d2d15fb25ffedee84d801609dfd171435a35"
+    },
+    {
+      "path": "model-1/reports/phase-3e-cli-evidence/result.json",
+      "sha256": "b2060ea36e9237fb6e433b86d3c9a558cd34e55dc86c2fd9a06e32acb747f0f6"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/bpe32-tokenizer.json",
+      "sha256": "7b230c94b59948a4574dbe0f0a1e46efc3dec6ca2bb04c84d86276affeb1f9fa"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/byte-tokenizer.json",
+      "sha256": "bdf8e8f8e865f313ffdbdb28a5b3cc58f7fba5612166b6dba719e0258383b122"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/structured-bpe32-17/step-000000.json",
+      "sha256": "1b6c879b5f6c35a7d432f6faf84cfb4a088a1ce10afe5ebfdfc9579f97b6d3d9"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/structured-bpe32-17/step-000032.json",
+      "sha256": "77029e87765651cc647a9b58062bfcad4b5b90cb2b957a245d0bd702df38bfe0"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/structured-bpe32-17/step-000128.json",
+      "sha256": "e7c5dfe4373d83c63c35f1cfb05339a2973f91d8be5fbe887b31e2e14083e186"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/structured-bpe32-17/step-000384.json",
+      "sha256": "c4da5dad48a60f6a3b43629ac003cf5de6de2072dbce8e1b057ea1bd6b6e2bd1"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/structured-bpe32-29/step-000000.json",
+      "sha256": "6c8ef2289db6a7dc42105399acca2318d0665494b2061f22e60f3cbecf8acbe4"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/structured-bpe32-29/step-000032.json",
+      "sha256": "f555ff63c651d7d02c1f9d18a919671654f568ffbc77b0889e3c728736e21e22"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/structured-bpe32-29/step-000128.json",
+      "sha256": "433c6496345006dc18063023b140a3078b150c838d34287ba0d19e8a40cac63f"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/structured-bpe32-29/step-000384.json",
+      "sha256": "ae04bf835e9991addff4e4b9b62ec8291c8a1ebc4ff5cb8c33b7b81f1cd01f41"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/structured-byte-17/step-000000.json",
+      "sha256": "b4acaddcd620e0afd493a8cd54ee46c6dfdb823a54df2e63ebd84a0cf80bd78a"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/structured-byte-17/step-000032.json",
+      "sha256": "21b269a6072d1085a1cf33bc0f21103d744f63919b5a70c06203fc25b166591b"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/structured-byte-17/step-000128.json",
+      "sha256": "0366b91d49386485c1b68e9ae2f998d72746af15a6e3f682bd8905006a6f21e6"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/structured-byte-17/step-000384.json",
+      "sha256": "ddeb78ee0d4ec88e0cfb7d3aa6aebe7c5a24339c53bd015209ed35aaf22c41a0"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/structured-byte-29/step-000000.json",
+      "sha256": "1d876eb41bb3d0f6ae581cd40a282199e46f30bef0b84527b8385a2d1a6beac7"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/structured-byte-29/step-000032.json",
+      "sha256": "209512f83ae7b28bfff32338067f7962b2234be1ca09790135ea26b04de1dcc1"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/structured-byte-29/step-000128.json",
+      "sha256": "b5961258cae2566b4c800ed66e4ba6f8e639bbece695e63650124cee3ee9b7b6"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/structured-byte-29/step-000384.json",
+      "sha256": "59eac8f1c60bad661162332da39648edfa1bc34ca14b03ee5ac59afbc4d370ed"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/symbolic-bpe32-17/step-000000.json",
+      "sha256": "ffb5b28b46a12ae025e26d6163096743c420a4e9b1b0f6ab3ea2c0e94a9d6fff"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/symbolic-bpe32-17/step-000032.json",
+      "sha256": "d44b82643cbb39469e85e14eb99c0fa9862f4a0ed6a0cd04be3494ea30c474c4"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/symbolic-bpe32-17/step-000128.json",
+      "sha256": "1bea106d2896cb1eb38c9b999a2f401663e0b0f0bc49290a741dea77c69c8000"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/symbolic-bpe32-17/step-000384.json",
+      "sha256": "fe2c763e2ef2f0567ef2e3439b68ca2df3001c9f52f96107351e89425824fddc"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/symbolic-bpe32-29/step-000000.json",
+      "sha256": "10918cf638f4d0c42980ce0056666005ae227a6aa73bf18ec1212d92c68a2dde"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/symbolic-bpe32-29/step-000032.json",
+      "sha256": "63423d02392e074062e6db54e33ae77d2eddb130db327e5962b2a6ac8fc2ec25"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/symbolic-bpe32-29/step-000128.json",
+      "sha256": "f16159ac1fa1dd5ac69a38a0d697a31385219fc8178b1e7a42aab6ad18b967ae"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/symbolic-bpe32-29/step-000384.json",
+      "sha256": "3c7a5a8fc670d6330a64ba3fd68fb4292bd2451741fb2c3fb3b3e8f3b6786ce1"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/symbolic-byte-17/step-000000.json",
+      "sha256": "fa1b6e9654aae3f8c04b116974e9cbf37663db67d5743c587270f60f323e11fb"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/symbolic-byte-17/step-000032.json",
+      "sha256": "d7151745fa89df1a33b2ec9b0e283acdecdba3da8ed3424e0f292f0554154a3b"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/symbolic-byte-17/step-000128.json",
+      "sha256": "701eab530e1f2b8be1b905b119256a696934f94a27777d56cd609c9bdfd38e0d"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/symbolic-byte-17/step-000384.json",
+      "sha256": "6d95f9264cad120da2200f895542634a17d68eb836c6d9d14f287236971aab14"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/symbolic-byte-29/step-000000.json",
+      "sha256": "65c7202bb5aa60c3073ba80be0c3410bbba34c19be2bc08842788f65cde0824e"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/symbolic-byte-29/step-000032.json",
+      "sha256": "5b5c71a246d5d204f8a83b0aa73bf9726778b11b548966f2553e8b65a73fd03b"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/symbolic-byte-29/step-000128.json",
+      "sha256": "a101777ebd8f9347d2a112135d26c235beb3fecf31eff6cbebfd30d716c878d5"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/diagnostics/symbolic-byte-29/step-000384.json",
+      "sha256": "a3194604b63bb1c188fbd3b0414b7fffdfbcccf3a5659161d82e9b045726fbf8"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/manifest.json",
+      "sha256": "bbcd53079c202f4782733541db971547cfd1869e7b8f075deb5ba95514e64c2e"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/results.json",
+      "sha256": "00d02f7a3e3915dc189e4002dc58c4de8ccc073f4d82c62f6963619314074636"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/structured-probes.json",
+      "sha256": "e07bb0b4a722c6e03bb78c91115813cdb7a7c270d35a272da576195988ab950c"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/symbolic-probes.json",
+      "sha256": "5a3824c231167c6ad2a8ad5647e34fe20679da08883c74aa4a300cdbd8701244"
+    },
+    {
+      "path": "model-1/reports/phase-3e-evidence/tests.log",
+      "sha256": "7f5010cdd600b2f45bbe464e8d9c89b4b7b5f783fb8a9419d237e52fb3d922ce"
+    },
+    {
+      "path": "model-1/reports/phase-3e-implementation.md",
+      "sha256": "37009b60d2bc0fb6934b2ef436b0a36623e1a38ae79ee963cd5aaef28f33181a"
+    },
+    {
+      "path": "model-1/reports/phase-3e-metrics.csv",
+      "sha256": "a0773ee2e506dd96f460cbcd5eae226f147436741cb89be1415cda197ef17840"
+    },
+    {
+      "path": "model-1/reports/phase-3e-status.json",
+      "sha256": "2fcc1f4c6ead9f04e0f1d46748fb0096e81a6fce7a94bb002b8dc641b6ce9ac4"
+    },
+    {
+      "path": "model-1/reports/phase-3e-targeted-evidence/manifest.json",
+      "sha256": "00934c5f6313228e93668e27aa0efecf6bac19743912cc639c3cbed6b4b6b976"
+    },
+    {
+      "path": "model-1/reports/phase-3e-targeted-evidence/targeted-1.log",
+      "sha256": "1cd5ebca1df7f37f95bdc10a2cfea2a30e16fc899983458fd39efd119e2a816a"
+    },
+    {
+      "path": "model-1/reports/phase-3e-targeted-evidence/targeted-2.log",
+      "sha256": "f9c06e695d5815dafc134d93e57fd15fca8b94def1a1a5559885959fde6f5b9f"
+    },
+    {
+      "path": "model-1/tests/test_language_diagnostics.py",
+      "sha256": "cf43dc748fe867f096be13cd920614ee923b40d03fe0564844292e93261cb250"
+    }
+  ],
+  "scope": "Phase 3E implementation, tests, registered protocol, evidence and handoff; excludes this inventory itself."
+}

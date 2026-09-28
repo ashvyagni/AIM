@@ -1,0 +1,20 @@
+test_audit_rejects_changed_text_counts_and_summary (test_language_diagnostics.LanguageDiagnosticsTests.test_audit_rejects_changed_text_counts_and_summary) ... ok
+test_checkpoint_rejects_different_probe_dataset (test_language_diagnostics.LanguageDiagnosticsTests.test_checkpoint_rejects_different_probe_dataset) ... ok
+test_config_budgets_and_duplicates_reject (test_language_diagnostics.LanguageDiagnosticsTests.test_config_budgets_and_duplicates_reject) ... ok
+test_context_rejection_preserves_mode (test_language_diagnostics.LanguageDiagnosticsTests.test_context_rejection_preserves_mode) ... ok
+test_divergence_counts_missing_extra_and_eos (test_language_diagnostics.LanguageDiagnosticsTests.test_divergence_counts_missing_extra_and_eos) ... ok
+test_json_offsets_duplicates_and_nonfinite_values (test_language_diagnostics.LanguageDiagnosticsTests.test_json_offsets_duplicates_and_nonfinite_values) ... ok
+test_measurement_restores_mode_rng_and_replays (test_language_diagnostics.LanguageDiagnosticsTests.test_measurement_restores_mode_rng_and_replays) ... ok
+test_numerical_checker_does_not_use_response_label (test_language_diagnostics.LanguageDiagnosticsTests.test_numerical_checker_does_not_use_response_label) ... ok
+test_probe_integrity_and_holdout_rejection (test_language_diagnostics.LanguageDiagnosticsTests.test_probe_integrity_and_holdout_rejection) ... ok
+test_real_study_export_and_tamper_detection (test_language_diagnostics.LanguageDiagnosticsTests.test_real_study_export_and_tamper_detection) ... structured/byte/seed17/step1: {'train': 0, 'validation': 0}
+structured/byte/seed17/step2: {'train': 0, 'validation': 0}
+symbolic/byte/seed17/step1: {'train': 0, 'validation': 0}
+symbolic/byte/seed17/step2: {'train': 0, 'validation': 0}
+ok
+test_symbolic_alternative_and_wrong_answer_are_distinct (test_language_diagnostics.LanguageDiagnosticsTests.test_symbolic_alternative_and_wrong_answer_are_distinct) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 3.416s
+
+OK

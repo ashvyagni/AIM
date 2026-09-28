@@ -1,0 +1,43 @@
+{
+  "controllers": {
+    "episodes": 40,
+    "neural_episodes": 32,
+    "neural_validation_with_verified_claim": 0,
+    "neural_with_verified_claim": 2,
+    "reference_episodes": 8,
+    "reference_with_verified_claim": 8,
+    "replayed": 40
+  },
+  "date": "2026-09-28",
+  "elapsed_seconds": 798.9676601659739,
+  "fitting": {
+    "arms": 8,
+    "final_contract_valid": 60,
+    "final_instances": 64,
+    "final_validation_checker_passes": 0,
+    "measurement_points": 32,
+    "probe_measurements": 256,
+    "scope": "Repeated exposed train/validation probes; no independent capability sample or statistical significance claim",
+    "unique_probe_rows": 16
+  },
+  "metrics_csv_source_sha256": "00d02f7a3e3915dc189e4002dc58c4de8ccc073f4d82c62f6963619314074636",
+  "model_promotion": false,
+  "next_engineering": "Local document/chunk ingestion, cross-run retrieval and provenance/source lifecycle records.",
+  "next_ml_experiment": "Answer-field and paired evidence-change diagnostics under a new registered protocol.",
+  "phase": "3E",
+  "report": "phase-3e-implementation.md",
+  "run_id": "20260928T103031-phase-3e-language-fitting-01036454",
+  "scale_promotion": false,
+  "schema": "aim-phase-status-v1",
+  "source_commit": "a1748ea43d0c259c92d6d82988f68828c874c252",
+  "source_hash": "81e052ac707dd35519be9a399603d945573fde81e0fa018023be187941f9e027",
+  "standalone_cli_exact_match": true,
+  "status": "LOCALLY_AUDITED_NO_CAPABILITY_PROMOTION",
+  "tests": {
+    "passed": 221,
+    "seconds": 459.576,
+    "skipped": 0
+  },
+  "unexpected_failed_study_runs": 0,
+  "vit_lab_hosts_measured": 0
+}

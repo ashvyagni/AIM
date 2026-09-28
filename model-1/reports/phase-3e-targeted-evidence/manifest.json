@@ -1,0 +1,31 @@
+{
+  "runs": [
+    {
+      "code_hash": "a33ad482d1ffa78828e7a7e79d60c3dc2ebd2cb5a7a9feeee32768cf4918ef2d",
+      "export_sha256": "1cd5ebca1df7f37f95bdc10a2cfea2a30e16fc899983458fd39efd119e2a816a",
+      "git_commit": "227f9d06253f09bb9a36ce2c07985959621a7c97",
+      "log": "targeted-1.log",
+      "original_sha256": "1cd5ebca1df7f37f95bdc10a2cfea2a30e16fc899983458fd39efd119e2a816a",
+      "run_id": "20260927T165657-phase-3e-targeted-f94c52b7",
+      "status": {
+        "elapsed_seconds": 3.729550041956827,
+        "error": null,
+        "status": "COMPLETED"
+      }
+    },
+    {
+      "code_hash": "fb14f6eedd1562c0277c8420cbb551a5c6f0f06b304fcb9141761e28c669665a",
+      "export_sha256": "f9c06e695d5815dafc134d93e57fd15fca8b94def1a1a5559885959fde6f5b9f",
+      "git_commit": "227f9d06253f09bb9a36ce2c07985959621a7c97",
+      "log": "targeted-2.log",
+      "original_sha256": "f9c06e695d5815dafc134d93e57fd15fca8b94def1a1a5559885959fde6f5b9f",
+      "run_id": "20260928T102731-phase-3e-targeted-boundaries-ba56ab98",
+      "status": {
+        "elapsed_seconds": 53.151323749974836,
+        "error": null,
+        "status": "COMPLETED"
+      }
+    }
+  ],
+  "scope": "Two earlier 11-test targeted runs before the final 13-test suite; source hashes distinguish revisions. Original logs retained. Only local/runtime traceback paths normalized."
+}
