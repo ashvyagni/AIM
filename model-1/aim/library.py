@@ -6,6 +6,7 @@ Offsets are Python Unicode character offsets into unchanged UTF-8 originals.
 from __future__ import annotations
 
 import json
+import math
 import re
 import sqlite3
 import time
@@ -93,6 +94,8 @@ class Library:
                 with self.transaction(write=True):
                     tables = self.db.execute("SELECT name FROM sqlite_master WHERE type='table'").fetchall()
                     if not tables:
+                        require(self.db.execute("PRAGMA user_version").fetchone()[0] == 0,
+                                "cannot initialize a database with an unknown schema version")
                         self._initialize()
             require(self.db.execute("PRAGMA user_version").fetchone()[0] == 1, "unsupported library schema version")
             rows = self.db.execute("SELECT record FROM metadata").fetchall()
@@ -354,15 +357,20 @@ class Library:
                     for s in ("ACTIVE", "SUPERSEDED", "WITHDRAWN", "RETRACTED")},
                     "scope": "stored content, offsets, full lexical index, lifecycle and hash-chain consistency; not source truth"}
 
-    def backup(self, destination):
+    def backup(self, destination, *, timeout_seconds=30.0):
         """Consistent local SQLite snapshot. Refuse to overwrite even an empty file."""
         destination = Path(destination)
         require(not self.db.in_transaction, "cannot back up within a library transaction")
+        require(type(timeout_seconds) in {int, float} and math.isfinite(timeout_seconds)
+                and 0 < timeout_seconds <= 60, "invalid backup deadline")
         with destination.open("xb"):
             pass
         target = sqlite3.connect(destination)
+        deadline = time.monotonic() + timeout_seconds
+        def progress(status, remaining, total):
+            require(time.monotonic() <= deadline, "library backup deadline exceeded; destination retained")
         try:
-            self.db.backup(target)
+            self.db.backup(target, pages=128, progress=progress, sleep=0.01)
         finally:
             target.close()
         with Library(destination, read_only=True) as snapshot:

@@ -38,6 +38,8 @@ class LibraryTests(unittest.TestCase):
             db.execute("PRAGMA user_version=99")
         with self.assertRaises(ContractError):
             Library(other)
+        with self.assertRaises(ContractError):
+            Library(other, create=True)
         with Library(self.path, create=True) as again:
             self.assertEqual(again.metadata, self.library.metadata)
 
@@ -212,6 +214,23 @@ class LibraryTests(unittest.TestCase):
                 snapshot.ingest(**document(version="3"))
         with self.assertRaises(FileExistsError):
             self.library.backup(destination)
+
+    def test_backup_deadline_retains_destination(self):
+        self.library.ingest(**document())
+        destination = self.root / "interrupted-backup.sqlite"
+        with patch("aim.library.time.monotonic", side_effect=[0, 31]):
+            with self.assertRaisesRegex(ContractError, "backup deadline"):
+                self.library.backup(destination)
+        self.assertTrue(destination.exists())
+        self.assertEqual(self.library.audit()["versions"], 1)
+        with self.assertRaises(FileExistsError):
+            self.library.backup(destination)
+
+    def test_backup_rejects_invalid_deadlines(self):
+        for value in (True, 0, float("nan"), 61):
+            with self.subTest(value=value), self.assertRaises(ContractError):
+                self.library.backup(self.root / "bad-backup.sqlite", timeout_seconds=value)
+        self.assertFalse((self.root / "bad-backup.sqlite").exists())
 
     def test_query_ranking_and_source_caps(self):
         one = self.library.ingest(**document("alpha beta " * 60, title="one"))
