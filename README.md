@@ -4,9 +4,11 @@ The architectural baseline is the [complete research handbook](documents/AIM_Com
 
 ## Start here
 
-**Current audited build: Phase 3E.** All **221 tests passed**. The new fitting diagnostics completed eight byte/BPE training arms, 32 checkpoint measurements and 40 replayed Controller episodes. Output structure improved, but no learned validation episode verified a claim; two training episodes did. [Full results and next work](model-1/reports/phase-3e-implementation.md) · [Fitting diagnostics and commands](model-1/docs/LANGUAGE_FITTING.md). Learned backends remain experimental; the project is not a finished scientific research model.
+**Current audited build: Phase 3F.** All **260 tests passed, zero skips**. A shared versioned document library now supports explicit intake, indexed retrieval, source replacement/retraction, historical replay and a separate evidence-review loop. The registered study exercised up to 512 authored documents and retained failure/crash controls. [Results and limitations](model-1/reports/phase-3f-implementation.md) · [Document intake and review commands](model-1/docs/EVIDENCE_LIBRARY.md). Quoted source assertions remain UNVERIFIED; learned research backends remain experimental. The project is not a finished scientific research model.
 
 - [Model-1 setup and runnable commands](model-1/README.md)
+- [Shared document library and provenance review](model-1/docs/EVIDENCE_LIBRARY.md)
+- [Registered library engineering protocol](model-1/docs/experiments/phase-3f-protocol.md)
 - [Tokenizer-compatible training audit](model-1/reports/phase-3d-audit.md)
 - [Registered generation-fitting protocol](model-1/docs/experiments/phase-3e-protocol.md)
 - [Phase 1 implementation evidence](model-1/reports/phase-1-implementation.md)

@@ -6,13 +6,13 @@ See the [phase report](../reports/phase-1-implementation.md) for actual observat
 
 | Requested area | Implemented now | Remaining work |
 |---|---|---|
-| Researcher interface | Reference and native-transformer adapters; strict hypothesis schema | Train useful structured/free-form research behavior |
+| Researcher interface | Reference/native-transformer adapters; separate extractive document interface | Train useful structured/free-form research behavior |
 | Decision/Judge interface | Separate rule and trained feature Judge | Language evidence inputs; robust calibration under shift |
 | ResearchState | Versioned explicit state and snapshots | Rich scientific claim types and schema migrations |
 | Deterministic Controller | Budget, phase transitions, source/check gates | Multi-step revision/replanning and recovery policies |
 | Tool/action contracts | Allowlisted calculation/measurement workers and deadlines | Sandboxed code, approved network retrieval and resource accounting |
-| Claim/provenance | Exact spans, content hashes, scoped checks, graph edges | Entailment, source credibility and retraction models |
-| Evidence/research memory | Local SQLite and immutable objects | Cross-run retrieval, literature parsers and distributed storage |
+| Claim/provenance | Exact spans, content hashes, scoped checks, graph edges and source retirement | Entailment, credibility and independent corroboration |
+| Evidence/research memory | Shared versioned local library, indexed cross-run retrieval and per-run snapshots | Semantic retrieval, broader literature parsers and distributed storage |
 | Verifier framework | Numeric and provenance implementations | Symbolic/theorem/code/scientific verifier adapters |
 | Evaluation harness | Tests, immutable public suite, training diagnostics | Sealed research tasks, family holdouts, humans and uncertainty intervals |
 | Training harness | Native random-init decoder; separate stages; corpus streams and DDP checkpoints | Representative large corpus, optimized loading and optimizer sharding |
@@ -91,11 +91,15 @@ A new opt-in language path implements response encoding, byte/BPE initialization
 
 Implemented versioned fitting/free-generation diagnostics with frozen train/validation membership, gold-prefix token metrics, response coverage, reference divergence, syntax positions, EOS handling, scoped checks and actual Controller replay. The [registered study](experiments/phase-3e-protocol.md) ran two tasks, two tokenizers, two seeds and four measurement budgets. [All 221 tests passed](../reports/phase-3e-implementation.md); final syntax improved, but every arm had zero validation checker passes. Keep these exposed probes out of future capability claims. Answer-field accuracy and paired evidence-change diagnostics are the next recommended ML experiment; any fresh capability holdout must exclude previously exposed worlds. Constrained decoding or objective changes remain controlled experiments.
 
-### Next engineering phase — Local literature and provenance-memory foundation
+### Phase 3F — Local literature and provenance-memory foundation; locally audited
 
-Extend the existing memory interfaces with explicit local document ingestion, bounded chunks linked to original spans, cross-run retrieval and source lifecycle records. Preserve immutable historical evidence while recording updates/retractions separately. Evaluate retrieval and exact citation/span integrity independently from factual verification. Begin with local authored/licensed text and deterministic retrieval baselines before external connectors or learned retrieval. Preserve the Researcher/separate-Judge/Controller/verifier architecture; do not label quoted assertions true merely because a source contains them.
+Implemented explicit local text/Markdown intake, original-span chunks, indexed cross-run retrieval, source revisions/retirement, historical packets, consistent per-run snapshots and an independent attribution-review loop. [All 260 tests passed](../reports/phase-3f-implementation.md). The fixed 32/128/512-document study, concurrent-access checks, retained failures and precommit process-exit control passed their scopes. A discovered unknown-schema initialization defect was reproduced, retained and fixed. The [guide](EVIDENCE_LIBRARY.md) supplies actual commands and limits. Keep source assertions UNVERIFIED; excerpt integrity is not entailment.
 
-Keep learned model development and the physical/corpus readiness gates below active as separate work. The completed fitting study needs no repeat merely to begin the memory build.
+### Next engineering phase — Evidence quality and claim assessment
+
+Build a versioned, reviewed relevance/answerability dataset with source-level labels, source revisions, conflicting statements and family-disjoint splits. Add independent lexical-ranking reference comparisons and budget-matched BM25 experiments before embeddings or learned reranking. Define claim-to-source assessment records and contradiction handling before generative synthesis. Human annotation provenance and disagreement must be explicit; procedural examples are not human evaluations. Keep every current memory/lifecycle invariant under regression.
+
+Keep learned model development and the physical/corpus readiness gates below active as separate work. The completed fitting and memory studies need no repeat merely to begin the next build. Optimize source/index storage only against measured workloads; the 512-document fixture used substantially more index/database bytes than original text.
 
 Separately, the operator should collect real lab observations and supply authorized storage/network/runtime details for bounded physical-host trials. Review representative licensed corpus candidates with family-aware splits; assess lexical detector precision/recall against human-reviewed pairs before choosing production thresholds. Version new sampling policies and tokenizer comparisons. Static rank ownership still repeats shorter partitions sooner; balanced sampling requires a separate experiment.
 

@@ -1,5 +1,7 @@
 # Model-1 architecture and invariants
 
+Current document-memory extension: [shared evidence library and review Controller](EVIDENCE_LIBRARY.md). This is a separate versioned prose-domain adapter; exact quotation checks never promote a source assertion to factual VERIFIED status. Original text, indexes and source lifecycle records commit together. Independent reviews use frozen library snapshots and the existing per-run provenance Memory.
+
 Phase 3E adds [fixed language-fitting diagnostics](LANGUAGE_FITTING.md) and actual Controller replay without changing component ownership. Its [measured outcomes](../reports/phase-3e-implementation.md) preserve the default policies and scale guards. A diagnostic candidate check has no authority to mutate a claim's verification status.
 
 **Current audited extension:** Phase 3D adds an opt-in tokenizer-compatible language path and explicit loader/adapter dispatch. See [its specification](TOKENIZED_POSTTRAINING.md) and [208-test local audit](../reports/phase-3d-audit.md). Continuation, recovery and Controller integration passed their engineering checks; all eight neural episodes produced no valid hypotheses. Historical validation statements below retain their original phase scopes. No learned default or scale promotion follows.
@@ -51,7 +53,7 @@ An action has an ID, allowlisted name, structured arguments and deadline. Contro
 - VERIFIED: both exact-span integrity and numeric agreement verifiers passed, with hashes bound to the unchanged claim contents.
 - CONTRADICTED: independent numeric check failed and cited spans remain intact.
 - UNKNOWN: evidence unavailable, timeout/error, conflicting observations, abstention or exhausted budget.
-- UNVERIFIED: reserved explicit status for future adapters; not a synonym for VERIFIED.
+- UNVERIFIED: explicit status for unchecked assertions; used by the document evidence-review adapter even when exact attribution passes.
 
 The final validation rechecks every evidence record and the verifier hashes supporting each verified claim. A confidence of 1.0 does not change these rules. A numeric check only establishes agreement with the included synthetic measurement at the requested x and tolerance. It does not establish the causal law, source reliability, arbitrary natural-language entailment, or general scientific truth.
 
@@ -61,7 +63,7 @@ Sources preserve URI, title, declared rights, version, SHA-256, retrieval time, 
 
 Edges include EXTRACTED_FROM, DERIVED_FROM, CHECKED_BY and USED. The event stream includes STATE, ACTION, RESULT, FORECAST_BEFORE_MEASUREMENT, VERIFICATION, CLAIM_REVISED and controlled/unhandled failures. SQLite triggers prevent normal event updates/deletions. Hash checks detect changed objects and ledger records. These are tamper-evident local records, not signatures or protection against an administrator rewriting the entire database and its hashes.
 
-Final responses link stored objects through relative paths inside the run. Graph lookup and deterministic lexical retrieval are present. Cross-run semantic memory, embeddings, literature deduplication, document parser suites, retraction handling and distributed storage remain future adapters. SQLite schema 1 has no migration framework yet; create a new run per invocation and version any persistent schema change explicitly.
+Numerical final responses link stored objects through relative paths inside the run. Graph lookup and deterministic lexical retrieval are present. Phase 3F adds a separately versioned shared local library, original character chunks, source retirement and historical retrieval replay; its prose review response records citation IDs and original locators. The legacy per-run Memory schema is unchanged. Cross-run semantic retrieval, embeddings, literature deduplication, broader parser suites and distributed storage remain future adapters. Neither SQLite schema has automatic migration; unknown shared-library versions fail explicitly.
 
 ## Model implementation
 

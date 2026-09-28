@@ -179,3 +179,15 @@ Keep frozen training/validation probes, exact dataset membership and separate li
 Answer-field accuracy and paired evidence-change probes are the next recommended ML experiment. Loss reweighting, constrained decoding or extra parameters are untested proposed interventions. Do not treat the current few exposed worlds as generalization evidence.
 
 Continue the already approved research-memory work with local document/chunk ingestion, cross-run retrieval and source lifecycle handling. This fills an existing architectural gap independently of learned proposer quality. Start with a deterministic, bounded implementation and exact source spans; retrieval support is not factual verification. External connectors, learned retrieval, fresh capability studies and physical VIT scaling remain separate evidence-dependent steps.
+
+## D027 — Version shared document memory and keep attribution separate from truth
+
+**Status: locally audited implementation, 2026-09-29.** Phase 3F adds the [shared evidence library and review loop](EVIDENCE_LIBRARY.md). [All 260 tests passed](../reports/phase-3f-implementation.md), including transaction rollback, concurrency, old-packet replay, malicious proposal rejection and backup deadlines. The registered study covered 32/128/512 authored documents. A failing unknown-schema initialization check drove a fix; the failed run is retained.
+
+Choose one local SQLite database for originals, chunk/index records and lifecycle events so ingestion commits atomically without a separate object-publication protocol. This is simpler to audit than independent filesystem objects plus an index, but duplicates source data into per-run snapshots and is limited to one concurrent writer. It is not a shared cluster database. Unknown schemas reject; migrations, retention/erasure and authenticated provenance need explicit future work.
+
+Choose deterministic indexed Unicode-token coverage as the first shared retriever. Integer scores and stable ties replay exactly without learned weights or an optional search extension. This misses paraphrases, is sensitive to chunk boundaries/title matches and does not estimate relevance probabilities. The exact-keyword fixture is deliberately easy; perfect recall supports mechanics only. BM25, embeddings, rerankers and source independence require reviewed comparisons.
+
+Keep the prose domain separate from numerical prediction contracts. Its reference Researcher proposes excerpts; a separate Judge selects CITE/ABSTAIN; an independent verifier checks exact attribution; only the Controller includes passed citations. Assertions remain UNVERIFIED. There is no neural synthesis, calibrated scientific confidence, automated entailment or new combined training reward. The approved Researcher/separate-Judge/Controller/verifier/memory architecture is preserved.
+
+Next implement reviewed relevance/answerability cases and explicit claim-source assessments. Preserve the 2M model guard and conditional 100M–300M → ~1B → 7B+ roadmap until physical hardware, corpus and scientific evidence justify promotion.

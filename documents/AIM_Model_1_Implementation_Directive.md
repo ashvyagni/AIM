@@ -1,8 +1,20 @@
 # AIM Model-1 — implementation directive and handoff
 
-**For the next implementation agent or ML engineer.** Updated 2026-09-28. Work in the existing `AIM/` workspace; the canonical code directory is `model-1/`. Continue the approved architecture and current implementation. This directive supplies a concrete starting point, not a request to redesign AIM.
+**For the next implementation agent or ML engineer.** Updated 2026-09-29. Work in the existing `AIM/` workspace; the canonical code directory is `model-1/`. Continue the approved architecture and current implementation. This directive supplies a concrete starting point, not a request to redesign AIM.
 
-## Current owner direction — Continue after the completed Phase 3E fitting build
+## Current owner direction — Continue after the completed Phase 3F document-memory build
+
+Read the [Phase 3F report](../model-1/reports/phase-3f-implementation.md), [library/review guide](../model-1/docs/EVIDENCE_LIBRARY.md) and [registered protocol](../model-1/docs/experiments/phase-3f-protocol.md). All **260 tests passed, zero skips**. Shared local UTF-8 intake, exact chunks, indexed retrieval, source versions/retirement, historical replay, snapshot reviews and separate Researcher/Judge/verifier interfaces now work at the documented engineering scope.
+
+**Latest registered run:** `model-1/runs/20260928T205302-phase-3f-library-6b3f253a`, 57.261558 seconds including 52.065 seconds of regression. Source `9d88d1fcf74f84e64e7be29b8d4497c42df4e8f9`, code hash `9d8538aedaae4a2b0e889ed69dc9d8d7f603d13597339f4915ea36994f39ed31`. The fixed 32/128/512-document workload recorded 240 repeated exact-keyword queries. Final 512-document median was 5.533 ms; these are local lexical fixtures, not semantic-quality or physical-cluster results.
+
+**Application:** `model-1/runs/20260928T205434-phase-3f-project-documents-5cc31e18` executed 14 CLI commands over six actual AIM guides: 58,461 original bytes, 69 chunks, six reviews and 37 attributed excerpts. All assertions remain UNVERIFIED. One actual unknown-schema initialization failure was retained and fixed; two registered rejection failures and the precommit process-exit control remain recorded. Full source snapshots/databases stay local, with portable evidence under `model-1/reports/phase-3f-*-evidence/`.
+
+**Next engineering action:** establish a versioned reviewed relevance/answerability corpus with source versions, conflicting statements and family-disjoint splits. Add explicit claim-to-source assessments and contradiction records before generative synthesis. Compare the current coverage ranker with BM25 under matched budgets before embeddings/learned retrieval. Preserve label origin: authored procedural cases are not human-reviewed evaluation. No final model/Judge scale or combined reward is promoted.
+
+**Separate next ML experiment:** answer-field correctness and paired evidence-change diagnostics remain pending. The Phase 3E learned capability limitations below still apply. No lab hosts or representative training corpus have been validated; do not remove allocation guards or infer physical training capacity from the library benchmark.
+
+## Earlier completed fitting build — Phase 3E
 
 Read the [Phase 3E implementation report](../model-1/reports/phase-3e-implementation.md), [diagnostic guide](../model-1/docs/LANGUAGE_FITTING.md) and [registered study](../model-1/docs/experiments/phase-3e-protocol.md). All **221 tests passed, zero skips**. Eight byte/BPE SFT arms completed 32 checkpoint/baseline measurements, 256 probe measurements and 40 real Controller replays. The standalone diagnostic CLI exactly reproduced its selected registered measurement under the stated one-thread environment.
 
@@ -10,7 +22,7 @@ Read the [Phase 3E implementation report](../model-1/reports/phase-3e-implementa
 
 **Outcome:** output structure improved after 384 updates, but every arm had zero validation checker passes. All final symbolic probes met the output contract and failed the exact checker. Two of 32 neural Controller episodes produced verified claims, both training cases from numerical byte/seed-29; no neural validation case did. All eight reference episodes verified claims. These are a few repeated, exposed fitting worlds, not independent research benchmarks or proof of generalization. No default model, tokenizer or scale is promoted.
 
-**Next engineering action:** extend the existing provenance memory with bounded local document/chunk ingestion, exact original spans, cross-run retrieval and source update/retraction records. Start with local authored/licensed text and deterministic retrieval baselines; preserve historical evidence, current claim-status rules and component boundaries. Retrieval support must not imply factual verification. This is implementation of an existing project requirement, not a replacement of the architecture.
+**Historical next engineering action, now completed in Phase 3F:** bounded local document/chunk ingestion, exact original spans, cross-run retrieval and source update/retraction records. Retrieval support must not imply factual verification.
 
 **Separate next ML experiment:** register answer-field and paired evidence-change diagnostics to distinguish template fitting from prompt-sensitive correct content. Larger parameters, loss reweighting and constrained decoding remain hypotheses. Exclude all previously exposed worlds from any fresh capability holdout. Do not rerun the completed fitting study merely to begin the next build.
 
@@ -68,6 +80,7 @@ Keep SFT, preference learning, RLVR and Judge calibration independently trainabl
 - Anonymous-ID local observations, explicit unknowns, bounded retained storage probes, policy/observation bindings and fixed-workload fleet preparation without remote dispatch.
 - Exact lexical overlap/containment reports, complete hash-bound document reviews, blocked export records, immutable subsets and original-byte/metadata release replay.
 - Versioned state/claims/evidence, deterministic action budgets, bounded subprocess tools, exact numerical/provenance verifiers and append-only event replay.
+- Shared versioned local document library, atomic intake, exact source chunks, indexed cross-run retrieval, retirement/history, snapshot evidence reviews and original-attribution replay.
 - Regression tests, public evaluation fixtures, complete reproduction command, local CPU and Gloo/DDP benchmark infrastructure.
 
 The 90,624-parameter initial decoder, 228,096-parameter structured Researcher and 225/289-parameter feature Judges are micro-scale mechanism checks. They are not final model/Judge size choices and do not replace the 100M–300M proxy → ~1B systems → conditional 7B+ roadmap. Do not represent the current system as a general research AI.
@@ -81,7 +94,7 @@ cd model-1
 
 Use the documented environment setup if the local `.venv` is missing. Read the latest report and existing bundle's `tests.log`, `results.json`, case records and export manifest before launching experiments. A missing torch environment is not a successful neural test result. The documented reproduction command can repeat a study if needed; do not rerun a completed study merely to begin the next phase.
 
-Continue the [implementation plan](../model-1/docs/IMPLEMENTATION_PLAN.md) with the local document/provenance-memory foundation after the completed Phase 3E fitting study. Keep exact tokenizer identities, separately encoded loss boundaries, frozen references, stage-specific resumes, strict adapters and diagnostic data bindings under regression coverage. No lab hosts or access details have been supplied; do not invent deployment results. Actual 100M–300M proxy training remains gated on representative data and physical hardware evidence.
+Continue the [implementation plan](../model-1/docs/IMPLEMENTATION_PLAN.md) with evidence quality and explicit claim assessment after the completed Phase 3F library build. Preserve library snapshots, lifecycle semantics and attribution/factuality separation, alongside exact tokenizer identities, separately encoded loss boundaries, frozen references, stage-specific resumes and strict model adapters. No lab hosts or access details have been supplied; do not invent deployment results. Actual 100M–300M proxy training remains gated on representative data and physical hardware evidence.
 
 Phase 3C observed the local Apple M3 host with 8 GiB RAM; it did not measure any VIT desktop. Available RAM on macOS stays unknown in the current collector. Four-host planning records exist only as synthetic unit-test fixtures. Policies/reviews are unsigned declarations tied to hashes, not authenticated authority or legal certification. The corpus audit found 14 flagged cross-split pairs at its provisional lexical thresholds. The five-document export keeps train prose, validation math and test Unicode; its three within-train flagged pairs remain visible. This demonstrates review/export mechanics, not production data quality or a recommended mixture. Do not use line count or generated evidence volume as an acceptance metric.
 

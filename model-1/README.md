@@ -2,7 +2,9 @@
 
 **Modular research loops, exact verification, separate Judges and reproducible from-scratch training infrastructure.**
 
-**Current audited implementation — Phase 3E:** fixed fitting probes now distinguish teacher-forced likelihood, free-generation syntax, domain contracts and scoped checks. All **221 tests passed**. Eight byte/BPE SFT arms completed 32 measurements and 40 actual Controller replays. Final output structure improved, but every arm had zero validation checker passes. Two neural training episodes verified claims; no neural validation episode did. Read the [full report](reports/phase-3e-implementation.md), [operator guide](docs/LANGUAGE_FITTING.md) and [registered protocol](docs/experiments/phase-3e-protocol.md). Learned backends remain experimental.
+**Current audited implementation — Phase 3F:** the shared document library supports unchanged UTF-8 originals, exact chunks, indexed retrieval, source versions/retirement and historical replay. A separate document Researcher, Judge, attribution verifier and Controller produce traceable evidence reviews across runs. All **260 tests passed, zero skips**. Read the [measured report](reports/phase-3f-implementation.md), [operator guide](docs/EVIDENCE_LIBRARY.md) and [registered protocol](docs/experiments/phase-3f-protocol.md). Attribution PASS does not make source assertions factually VERIFIED.
+
+Phase 3E's fitting diagnostics completed eight byte/BPE SFT arms, 32 measurements and 40 Controller replays. Final output structure improved, but every arm had zero validation checker passes. Two neural training episodes verified claims; no neural validation episode did. The [full fitting report](reports/phase-3e-implementation.md) and [diagnostic commands](docs/LANGUAGE_FITTING.md) remain relevant. Learned backends remain experimental.
 
 Phase 3D's [executed audit](reports/phase-3d-audit.md) established six exact training-stage continuations, two interruption recoveries and a distributed BPE-to-SFT bridge, with four repaired audit findings. The [versioned language specification](docs/TOKENIZED_POSTTRAINING.md) and historical build evidence remain available.
 
@@ -24,7 +26,7 @@ Phase 3B adds corpus-driven CPU/Gloo training, fixed document ownership per work
 
 Phase 3C adds portable local hardware observations, blocked-or-ready operator trial preparation, exact lexical overlap auditing, hash-bound document reviews and immutable corpus subset releases. The demonstration retained two failed negative controls, preserved the original corpus and trained with two local workers on the exported subset. Lexical reports and declared review evidence do not certify data rights, privacy or scientific quality.
 
-See the [latest implementation report](reports/phase-3e-implementation.md), [operator/corpus guide](docs/OPERATOR_AND_CORPUS_READINESS.md), [distributed training guide](docs/DISTRIBUTED_PRETRAINING.md), [pretraining guide](docs/PRETRAINING.md), [symbolic guide](docs/SYMBOLIC.md), [paid-evidence guide](docs/PAID_EVIDENCE.md), [Judge guide](docs/JUDGE_SHIFT.md), and [real-checkpoint resume audit](reports/research-resume-audit.md). Historical reports preserve their original results and test counts. Next engineering phase: provenance-preserving local document ingestion and cross-run retrieval. Answer-field/evidence-sensitivity experiments and actual lab/data review remain separate pending work.
+See the [latest implementation report](reports/phase-3f-implementation.md), [document library guide](docs/EVIDENCE_LIBRARY.md), [operator/corpus guide](docs/OPERATOR_AND_CORPUS_READINESS.md), [distributed training guide](docs/DISTRIBUTED_PRETRAINING.md), [pretraining guide](docs/PRETRAINING.md), [symbolic guide](docs/SYMBOLIC.md), [paid-evidence guide](docs/PAID_EVIDENCE.md), [Judge guide](docs/JUDGE_SHIFT.md), and [real-checkpoint resume audit](reports/research-resume-audit.md). Historical reports preserve their original results and test counts. Next engineering phase: reviewed relevance/answerability cases and explicit claim-to-source assessment before synthesis. Answer-field/evidence-sensitivity experiments and actual lab/data review remain separate pending work.
 
 ## What runs
 
@@ -85,6 +87,16 @@ Core tests can run without torch; neural tests explicitly skip. A full reproduct
 
 ## Individual stages
 
+For document research, initialize a shared library, explicitly ingest a reviewed local manifest, then run the evidence-review Controller:
+
+```sh
+.venv/bin/python -m aim.library_cli init --library runs/team-library/library.sqlite
+.venv/bin/python -m aim.library_cli ingest --library runs/team-library/library.sqlite --manifest runs/documents/manifest.json
+.venv/bin/python -m aim.library_cli review --library runs/team-library/library.sqlite --question "calibration uncertainty"
+```
+
+The [guide](docs/EVIDENCE_LIBRARY.md) defines the required manifest and lifecycle/replay commands. The review uses a reference extractive Researcher and an uncalibrated attribution Judge. It does not infer a factual answer or perform neural synthesis.
+
 ```sh
 .venv/bin/python -m aim train --config configs/sft.json
 .venv/bin/python -m aim train --config configs/preference.json --initialize runs/<SFT-run>/checkpoint.pt
@@ -107,7 +119,7 @@ The local distributed launcher needs loopback socket permission. It runs only on
 - RLVR is sampled REINFORCE over three exact-arithmetic candidates with a frozen reference. It is not open-ended reasoning RL.
 - Judge learning uses proper scoring and validation-only temperature fitting. It is RLCD-style calibration, not a claimed reproduction of an undocumented proprietary algorithm.
 - The calibrated Judge fails under a held-out family shift. Confidence never overrides verifier outcomes.
-- Retrieval is local lexical matching; arbitrary web retrieval, literature ingestion, symbolic proof engines and arbitrary-code execution are not enabled.
+- Shared retrieval is indexed local lexical matching over explicitly ingested UTF-8 text/Markdown. Web/PDF ingestion, learned synthesis, general theorem-prover integration and arbitrary-code execution remain pending; a bounded exact polynomial checker is implemented.
 - No large pretraining run, 100M–300M proxy, 1B/7B model or VIT benchmark has been performed.
 
 ## Layout and records

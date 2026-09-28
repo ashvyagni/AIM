@@ -1,0 +1,1117 @@
+{
+  "baseline_commit": "cc79a58",
+  "count": 222,
+  "files": [
+    {
+      "bytes": 5904,
+      "path": "README.md",
+      "sha256": "4550e092a8b8be4823dac7be6ab81125fc33dee450597115cf4ec6065523be91"
+    },
+    {
+      "bytes": 22567,
+      "path": "documents/AIM_Model_1_Implementation_Directive.md",
+      "sha256": "358cc5a91e4eb745becf3b0095ee6a552241db96e9e2cf9d56ed4ebd66d3c7ba"
+    },
+    {
+      "bytes": 17161,
+      "path": "model-1/README.md",
+      "sha256": "e371ed50205487ed347e206762ec080bce73389b5f340115ee1f6363ec5e7f16"
+    },
+    {
+      "bytes": 16610,
+      "path": "model-1/aim/evidence_review.py",
+      "sha256": "9c2d76b58ebe88bcdbcd2008a3bfa2d3b65e25874e0b133b37e23593800bdd00"
+    },
+    {
+      "bytes": 21679,
+      "path": "model-1/aim/library.py",
+      "sha256": "a6a9053feb488322f19f7b13ad85df77103a27fa69f1bb4b70c85212033ebbda"
+    },
+    {
+      "bytes": 6941,
+      "path": "model-1/aim/library_cli.py",
+      "sha256": "d5e5304cb0a69fb65a1d1ab50de8af8af19715318e9618f1e88d8818a56c162e"
+    },
+    {
+      "bytes": 13318,
+      "path": "model-1/aim/library_reproduce.py",
+      "sha256": "8df891bcb128137c4abae237dcb357bb37491fd9cdad4b716aacfc048cc324f2"
+    },
+    {
+      "bytes": 170,
+      "path": "model-1/configs/library-study.json",
+      "sha256": "239cd22c268f1a00b39cc89f961cd3fe14f2963531c458ac392b4e2813b0d15b"
+    },
+    {
+      "bytes": 13487,
+      "path": "model-1/docs/ARCHITECTURE.md",
+      "sha256": "147af72e0ba32678360994f3de54317f2e1c0757274ca5b79d3223c4c41f5dc3"
+    },
+    {
+      "bytes": 30451,
+      "path": "model-1/docs/DECISIONS.md",
+      "sha256": "cc4149fe424a0ebe6618cce2ecf083f75234ccf52a291f9855ab96af7161ae32"
+    },
+    {
+      "bytes": 11570,
+      "path": "model-1/docs/EVALUATION.md",
+      "sha256": "3b397866245b18c8b3a202355afda25e428ec942cb42125b2db258d7e49e3217"
+    },
+    {
+      "bytes": 13391,
+      "path": "model-1/docs/EVIDENCE_LIBRARY.md",
+      "sha256": "d3cb31c41c93d1d5dd24225078c26bb8cd96cc028d8ebe2a5e4e5dc705c52ca8"
+    },
+    {
+      "bytes": 20137,
+      "path": "model-1/docs/IMPLEMENTATION_PLAN.md",
+      "sha256": "77383575265469ab49d5ae13faf0a2b8d8bbd94535eed79e25a225717901be13"
+    },
+    {
+      "bytes": 3597,
+      "path": "model-1/docs/experiments/phase-3f-protocol.md",
+      "sha256": "bf49577df37425c91295a6513c5c56a80738306b494afd7ee7a81971e869ef6b"
+    },
+    {
+      "bytes": 186,
+      "path": "model-1/reports/phase-3f-adversarial-evidence/events.jsonl",
+      "sha256": "6373c4be40785bf147efa69087b5a4f731f653c04ca0abe2dc1f8b7219e2bde3"
+    },
+    {
+      "bytes": 601,
+      "path": "model-1/reports/phase-3f-adversarial-evidence/export.json",
+      "sha256": "0b08e226d5d112b42f96e55f2b38e8d6faa09849ca46a70584b63c3ec583eade"
+    },
+    {
+      "bytes": 148,
+      "path": "model-1/reports/phase-3f-adversarial-evidence/failure.txt",
+      "sha256": "8ac3001977f50144b63d4ca03656f12eb429fb9bf95a416c21048087bf840d8e"
+    },
+    {
+      "bytes": 15220,
+      "path": "model-1/reports/phase-3f-adversarial-evidence/manifest.json",
+      "sha256": "133a957bcd61648fbd7695be522789b6a6827ccb116201e39a51da7b5d6efcd8"
+    },
+    {
+      "bytes": 141,
+      "path": "model-1/reports/phase-3f-adversarial-evidence/status.json",
+      "sha256": "ebbfdf6eb9dffa37ae5146f89d67152fb60eb7a35406542eac70cb27d3188e7f"
+    },
+    {
+      "bytes": 826,
+      "path": "model-1/reports/phase-3f-adversarial-evidence/tests.log",
+      "sha256": "a2dab01d83e39eebe3445ee6051711a401fbbd57d194bd2b86c89e6a62f8c609"
+    },
+    {
+      "bytes": 4311,
+      "path": "model-1/reports/phase-3f-artifact-audit/audit.json",
+      "sha256": "276893a9372e491afc53d7f5405fff010803f7d6f8b1a84dbe0fe06c1b243d1b"
+    },
+    {
+      "bytes": 184,
+      "path": "model-1/reports/phase-3f-artifact-audit/events.jsonl",
+      "sha256": "31f0cc8b41af5240803154cd0a1450e933484f6829a329b52939dd117bd8e905"
+    },
+    {
+      "bytes": 443,
+      "path": "model-1/reports/phase-3f-artifact-audit/export.json",
+      "sha256": "82dd444a8ad467dd3aab3ea412bd8218a01aca80e131e1a1ec146f8c87b4e110"
+    },
+    {
+      "bytes": 15923,
+      "path": "model-1/reports/phase-3f-artifact-audit/manifest.json",
+      "sha256": "a73b354ad15d3da73e4f0176673fac27a6294b277e5a5bf4c73f6671ab3ddcc1"
+    },
+    {
+      "bytes": 86,
+      "path": "model-1/reports/phase-3f-artifact-audit/status.json",
+      "sha256": "b625b362fd949080baccadc830a343e0ccb5a7a57eb58bdebb09e6bb406bf090"
+    },
+    {
+      "bytes": 195544,
+      "path": "model-1/reports/phase-3f-evidence/benchmark.json",
+      "sha256": "a57d83733d5d156758585846a49c82c075e15f5687d3837d0b1ce580b62bfa6d"
+    },
+    {
+      "bytes": 1232,
+      "path": "model-1/reports/phase-3f-evidence/crash-recovery.json",
+      "sha256": "23ba8c278bc0ab44b417515936210cc19dfb424c1582f2b3c813f8dd66f50fdb"
+    },
+    {
+      "bytes": 177,
+      "path": "model-1/reports/phase-3f-evidence/events.jsonl",
+      "sha256": "35af57261e2146489dbcb8959241a9779aaddd464de440d83d57a163c90505ae"
+    },
+    {
+      "bytes": 410,
+      "path": "model-1/reports/phase-3f-evidence/expected-failures.json",
+      "sha256": "949351b054557c99221c470449f8b8990a45e4e45354ff54f61280d1874e38d7"
+    },
+    {
+      "bytes": 464,
+      "path": "model-1/reports/phase-3f-evidence/expected-failures/20260928T204840-evidence-review-d85b4495/failure.txt",
+      "sha256": "40545d6823f8f2507ac58e51ed17db1850ad30338dc1b6c053a637f55a434012"
+    },
+    {
+      "bytes": 15379,
+      "path": "model-1/reports/phase-3f-evidence/expected-failures/20260928T204840-evidence-review-d85b4495/manifest.json",
+      "sha256": "25b218563e2ebdd530bda4b6f8f5062ba52b6abd6a6645656e000d21a7f527fb"
+    },
+    {
+      "bytes": 122,
+      "path": "model-1/reports/phase-3f-evidence/expected-failures/20260928T204840-evidence-review-d85b4495/status.json",
+      "sha256": "6530a167c46f687a51f8e15afa58f902d959c6a7b4d9902af271f51e0ce5d89a"
+    },
+    {
+      "bytes": 741,
+      "path": "model-1/reports/phase-3f-evidence/expected-failures/20260928T204840-library-intake-77e62dd7/failure.txt",
+      "sha256": "2c6b4dc4a5f5cb1123a4732e5c0457c8f57676b75c1dc672ffe4fe50579c7d66"
+    },
+    {
+      "bytes": 15493,
+      "path": "model-1/reports/phase-3f-evidence/expected-failures/20260928T204840-library-intake-77e62dd7/manifest.json",
+      "sha256": "df72859c26c3aad5ecff936d8708e140d99e9212767a4cabe665d0583c902284"
+    },
+    {
+      "bytes": 118,
+      "path": "model-1/reports/phase-3f-evidence/expected-failures/20260928T204840-library-intake-77e62dd7/status.json",
+      "sha256": "3e226648ecaa0b464daadf47d5b4ea3a1dfb1922a0fddbd9d92be5843e888c05"
+    },
+    {
+      "bytes": 5619,
+      "path": "model-1/reports/phase-3f-evidence/export.json",
+      "sha256": "b97a97260eb23efe87f4b4ea90356bc738fef85df903882d7cbadab1fcd77418"
+    },
+    {
+      "bytes": 2718,
+      "path": "model-1/reports/phase-3f-evidence/lifecycle.json",
+      "sha256": "c067ec25bbc9f82bd038d9a165b91ca51d89779f28b7e59fca7f4822481348a1"
+    },
+    {
+      "bytes": 15272,
+      "path": "model-1/reports/phase-3f-evidence/manifest.json",
+      "sha256": "d52c92ca57d3b8b56c9b50bdb71cb25a9fb51b1877f7742875897f103bbe9b85"
+    },
+    {
+      "bytes": 497,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-944543c9/library-audit.json",
+      "sha256": "811cdd446a7f181555532651ed47b1034ed30c9a8dbc2f7af884b6b6b0f3c109"
+    },
+    {
+      "bytes": 15396,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-944543c9/manifest.json",
+      "sha256": "8117669179e2fbf65ab188994975e75dfe5a079cc69200f4bfe52b7fcc9f713e"
+    },
+    {
+      "bytes": 215,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-944543c9/proposals.json",
+      "sha256": "331bb75b3efb9023f31baa0416929efdd5e28b9f9f53aa4536a3dc4d79e6c7b7"
+    },
+    {
+      "bytes": 233,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-944543c9/replay-audit.json",
+      "sha256": "9556bb2afed20ad13eabfc6f61a82f09ab93027044f2f65f4da80d12b88afe1d"
+    },
+    {
+      "bytes": 1427,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-944543c9/response.md",
+      "sha256": "1f86de234d7b5b2d3ccca42f758757542d24e2666e0b444a756339663c976c22"
+    },
+    {
+      "bytes": 1526,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-944543c9/retrieval.json",
+      "sha256": "338cf88c7db234a2b37cdf203c0912682c46ac1eb430edbe8fc968a6459dcce5"
+    },
+    {
+      "bytes": 3900,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-944543c9/state.json",
+      "sha256": "abffa65e3e03d1951593c7a3dc9182670ecae2a067479acd225dd93b6c5f1f4d"
+    },
+    {
+      "bytes": 87,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-944543c9/status.json",
+      "sha256": "ae4172819aaf45264448464db8356b6ea1782013eac8478244a1c6daa7c19cc1"
+    },
+    {
+      "bytes": 297,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-944543c9/summary.json",
+      "sha256": "b2603faf07b9938e8cfb5c024375732f2e89fcc49d98518a5aa8cbd6c6f9ea6a"
+    },
+    {
+      "bytes": 497,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-ba35ae39/library-audit.json",
+      "sha256": "811cdd446a7f181555532651ed47b1034ed30c9a8dbc2f7af884b6b6b0f3c109"
+    },
+    {
+      "bytes": 15395,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-ba35ae39/manifest.json",
+      "sha256": "ea4015ec4e4b12e5137b9aecf1f7e662f4c6e3a9974b92a31ec392eaec2397c2"
+    },
+    {
+      "bytes": 215,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-ba35ae39/proposals.json",
+      "sha256": "331bb75b3efb9023f31baa0416929efdd5e28b9f9f53aa4536a3dc4d79e6c7b7"
+    },
+    {
+      "bytes": 233,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-ba35ae39/replay-audit.json",
+      "sha256": "9556bb2afed20ad13eabfc6f61a82f09ab93027044f2f65f4da80d12b88afe1d"
+    },
+    {
+      "bytes": 1427,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-ba35ae39/response.md",
+      "sha256": "1f86de234d7b5b2d3ccca42f758757542d24e2666e0b444a756339663c976c22"
+    },
+    {
+      "bytes": 1526,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-ba35ae39/retrieval.json",
+      "sha256": "338cf88c7db234a2b37cdf203c0912682c46ac1eb430edbe8fc968a6459dcce5"
+    },
+    {
+      "bytes": 3900,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-ba35ae39/state.json",
+      "sha256": "abffa65e3e03d1951593c7a3dc9182670ecae2a067479acd225dd93b6c5f1f4d"
+    },
+    {
+      "bytes": 87,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-ba35ae39/status.json",
+      "sha256": "2777e5f057698b276022aad807493fa7da9df48b82122208fda134473ea024a8"
+    },
+    {
+      "bytes": 297,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-ba35ae39/summary.json",
+      "sha256": "b2603faf07b9938e8cfb5c024375732f2e89fcc49d98518a5aa8cbd6c6f9ea6a"
+    },
+    {
+      "bytes": 498,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-d74fda9d/library-audit.json",
+      "sha256": "f15772fc61aa6b8c6bbbcff8abce3671aae19125763d58939794a9036ac8608b"
+    },
+    {
+      "bytes": 15396,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-d74fda9d/manifest.json",
+      "sha256": "4e423936bcefd899069500b03707a2bc547faf41fa244c0a7739872b757a37d3"
+    },
+    {
+      "bytes": 3,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-d74fda9d/proposals.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "bytes": 233,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-d74fda9d/replay-audit.json",
+      "sha256": "1fe61eb5664de92e9b8e03ad92e16b5fa9262ecce79a9ae0f4cb51d1bf128346"
+    },
+    {
+      "bytes": 953,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-d74fda9d/response.md",
+      "sha256": "ccde1252c1340f657766a8aa39a67c9450bd26cf13bd863f5f16d4fb12a7d62d"
+    },
+    {
+      "bytes": 557,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-d74fda9d/retrieval.json",
+      "sha256": "e8e6b896c6902e63a1b381a434abe6079952d89792206b9273901661884d8050"
+    },
+    {
+      "bytes": 2191,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-d74fda9d/state.json",
+      "sha256": "cddb1d6d1dd72f074ccbeab5fb873410cf9e8934453a95b7b17591f415745c2a"
+    },
+    {
+      "bytes": 88,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-d74fda9d/status.json",
+      "sha256": "a1653b42f254f6c8bbe4fa1cef2551c92bcf0dc7d3f89a68d9f1fb0d31d1bd1b"
+    },
+    {
+      "bytes": 297,
+      "path": "model-1/reports/phase-3f-evidence/reviews/20260928T204840-evidence-review-d74fda9d/summary.json",
+      "sha256": "f7b8ba83eb0c3095ab3e3ad2182f3e2c52b23cf446ab30758a03c5f61a3c4be6"
+    },
+    {
+      "bytes": 85,
+      "path": "model-1/reports/phase-3f-evidence/status.json",
+      "sha256": "6e1f01526f8d71064adbd811653709582e7424c3f739d84736978d7edd4649fa"
+    },
+    {
+      "bytes": 45992,
+      "path": "model-1/reports/phase-3f-evidence/tests.log",
+      "sha256": "7fe7c0aa6adb7e7c9fbfb219732ad4923a7e167d4aea25f0f0f06a0e74b0e635"
+    },
+    {
+      "bytes": 195523,
+      "path": "model-1/reports/phase-3f-final-evidence/benchmark.json",
+      "sha256": "d674ac091ab836f25a75aeda408fdccaddd9e55e87f222079bd6f0fb096f6bd0"
+    },
+    {
+      "bytes": 1232,
+      "path": "model-1/reports/phase-3f-final-evidence/crash-recovery.json",
+      "sha256": "5c234c96194cdb2de575bb5e59cca700e274d541b19010f2eb10bcb9d4969c13"
+    },
+    {
+      "bytes": 177,
+      "path": "model-1/reports/phase-3f-final-evidence/events.jsonl",
+      "sha256": "130ef63b22a7be5408a8bbde99d6d693f68e71a74f0f7bada257dffcbc329631"
+    },
+    {
+      "bytes": 410,
+      "path": "model-1/reports/phase-3f-final-evidence/expected-failures.json",
+      "sha256": "2c0fa560298d7c9c42d89f66427ee7f6cec6d6b804653470a65d23037f961053"
+    },
+    {
+      "bytes": 464,
+      "path": "model-1/reports/phase-3f-final-evidence/expected-failures/20260928T205359-evidence-review-d738e547/failure.txt",
+      "sha256": "40545d6823f8f2507ac58e51ed17db1850ad30338dc1b6c053a637f55a434012"
+    },
+    {
+      "bytes": 15454,
+      "path": "model-1/reports/phase-3f-final-evidence/expected-failures/20260928T205359-evidence-review-d738e547/manifest.json",
+      "sha256": "b12c92b0b3439a006507206e805bf9723521afb3dc951036ca4fe20932f99435"
+    },
+    {
+      "bytes": 123,
+      "path": "model-1/reports/phase-3f-final-evidence/expected-failures/20260928T205359-evidence-review-d738e547/status.json",
+      "sha256": "2ca09243a0b93f7fdbd86e3683f50de58161fcebb382a631818699adfbc0a87e"
+    },
+    {
+      "bytes": 741,
+      "path": "model-1/reports/phase-3f-final-evidence/expected-failures/20260928T205359-library-intake-23ef1164/failure.txt",
+      "sha256": "2c6b4dc4a5f5cb1123a4732e5c0457c8f57676b75c1dc672ffe4fe50579c7d66"
+    },
+    {
+      "bytes": 15566,
+      "path": "model-1/reports/phase-3f-final-evidence/expected-failures/20260928T205359-library-intake-23ef1164/manifest.json",
+      "sha256": "ed9b87fa6da3c22541d75a00dde3897aa32c45016eace45364a93d536fe4a12d"
+    },
+    {
+      "bytes": 117,
+      "path": "model-1/reports/phase-3f-final-evidence/expected-failures/20260928T205359-library-intake-23ef1164/status.json",
+      "sha256": "01fe9086bf3ba4f7fc7591a6e109be4cdefb8d6990878c667048af9a265379f8"
+    },
+    {
+      "bytes": 5619,
+      "path": "model-1/reports/phase-3f-final-evidence/export.json",
+      "sha256": "9e3fde3e7aecf08fd9f1f33c37cb5aff014f151d1dc8381d09d110e9d00eba7b"
+    },
+    {
+      "bytes": 2718,
+      "path": "model-1/reports/phase-3f-final-evidence/lifecycle.json",
+      "sha256": "0f7731b4b6d4d9477b4206a766f0b0c31133e97c28a5d95172c6d0d8c652ce45"
+    },
+    {
+      "bytes": 15345,
+      "path": "model-1/reports/phase-3f-final-evidence/manifest.json",
+      "sha256": "7070049a03012b0f3ff3b15fe666709b896dee45260d9ba3882c2d71aee1362c"
+    },
+    {
+      "bytes": 497,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-598e4d35/library-audit.json",
+      "sha256": "c86f9636b6c68e2bec116704149b23004babb9432892c594030cd109e22978ad"
+    },
+    {
+      "bytes": 15469,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-598e4d35/manifest.json",
+      "sha256": "fcda5f2d08f81c75e1d129f431207ca16b0d72e4e8e7aadf175bae7f2573b7a6"
+    },
+    {
+      "bytes": 215,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-598e4d35/proposals.json",
+      "sha256": "331bb75b3efb9023f31baa0416929efdd5e28b9f9f53aa4536a3dc4d79e6c7b7"
+    },
+    {
+      "bytes": 233,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-598e4d35/replay-audit.json",
+      "sha256": "9556bb2afed20ad13eabfc6f61a82f09ab93027044f2f65f4da80d12b88afe1d"
+    },
+    {
+      "bytes": 1427,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-598e4d35/response.md",
+      "sha256": "0701daeef11c4a3cfe23c430c58f285b08231afac4b3779dffc62b51c93157e8"
+    },
+    {
+      "bytes": 1526,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-598e4d35/retrieval.json",
+      "sha256": "514eb517ea3029270d4be830fa88ec0123e326a6edb5dde133926dd79fce784f"
+    },
+    {
+      "bytes": 3900,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-598e4d35/state.json",
+      "sha256": "329acff79e48beed2890a2b1a07e8a50fcdc75d1104d1c7b225f9a8360f5fbfb"
+    },
+    {
+      "bytes": 88,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-598e4d35/status.json",
+      "sha256": "a1adf0e7467d546fa5cb281a1a095a42b8ee896c886d099741384dfa8db17b64"
+    },
+    {
+      "bytes": 297,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-598e4d35/summary.json",
+      "sha256": "66a3251871ff5f6f21164683a222747e4e5bab5724fba414c7f4551a4e4eac91"
+    },
+    {
+      "bytes": 498,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-7135fb71/library-audit.json",
+      "sha256": "cba34655b6444467ac6030b3f659bab08ed193402cba2da3c76d6578921ca292"
+    },
+    {
+      "bytes": 15470,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-7135fb71/manifest.json",
+      "sha256": "77231dee560c6200f5a094181ac154380bf64186077c2ca1269e5a864581419a"
+    },
+    {
+      "bytes": 3,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-7135fb71/proposals.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "bytes": 233,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-7135fb71/replay-audit.json",
+      "sha256": "1fe61eb5664de92e9b8e03ad92e16b5fa9262ecce79a9ae0f4cb51d1bf128346"
+    },
+    {
+      "bytes": 953,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-7135fb71/response.md",
+      "sha256": "4220105638f23cdb94b2f106ddccdc8cfb340ecbb99ca749ae2c7808b17b263b"
+    },
+    {
+      "bytes": 557,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-7135fb71/retrieval.json",
+      "sha256": "9169d62c0b3e5b83715512f68e4f6b0f0e8cbe2c90e521b6f43746185ae73130"
+    },
+    {
+      "bytes": 2191,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-7135fb71/state.json",
+      "sha256": "d639402251fcd13dffe1c72582d9faff4754b141c74f89987a05b5ada8f2f285"
+    },
+    {
+      "bytes": 88,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-7135fb71/status.json",
+      "sha256": "13367da5885c5c504b818ed13abc18406fa095757501b23713a368ec6f4f8a69"
+    },
+    {
+      "bytes": 297,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-7135fb71/summary.json",
+      "sha256": "e3f1d2fe4bc5c61249dc2f0488c65c6558e18e26fd24f4dfd8f55f42cbe6d1a2"
+    },
+    {
+      "bytes": 497,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-9d4065df/library-audit.json",
+      "sha256": "c86f9636b6c68e2bec116704149b23004babb9432892c594030cd109e22978ad"
+    },
+    {
+      "bytes": 15469,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-9d4065df/manifest.json",
+      "sha256": "c0717d7da71174a0798b2568988c3365165cb9c564b00987f2fba6d3406df45f"
+    },
+    {
+      "bytes": 215,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-9d4065df/proposals.json",
+      "sha256": "331bb75b3efb9023f31baa0416929efdd5e28b9f9f53aa4536a3dc4d79e6c7b7"
+    },
+    {
+      "bytes": 233,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-9d4065df/replay-audit.json",
+      "sha256": "9556bb2afed20ad13eabfc6f61a82f09ab93027044f2f65f4da80d12b88afe1d"
+    },
+    {
+      "bytes": 1427,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-9d4065df/response.md",
+      "sha256": "0701daeef11c4a3cfe23c430c58f285b08231afac4b3779dffc62b51c93157e8"
+    },
+    {
+      "bytes": 1526,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-9d4065df/retrieval.json",
+      "sha256": "514eb517ea3029270d4be830fa88ec0123e326a6edb5dde133926dd79fce784f"
+    },
+    {
+      "bytes": 3900,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-9d4065df/state.json",
+      "sha256": "329acff79e48beed2890a2b1a07e8a50fcdc75d1104d1c7b225f9a8360f5fbfb"
+    },
+    {
+      "bytes": 87,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-9d4065df/status.json",
+      "sha256": "aa74fee4f92672dc8f7aca3182e6c018c5b6a7b297f768754615d6910a8d2ef2"
+    },
+    {
+      "bytes": 297,
+      "path": "model-1/reports/phase-3f-final-evidence/reviews/20260928T205359-evidence-review-9d4065df/summary.json",
+      "sha256": "66a3251871ff5f6f21164683a222747e4e5bab5724fba414c7f4551a4e4eac91"
+    },
+    {
+      "bytes": 85,
+      "path": "model-1/reports/phase-3f-final-evidence/status.json",
+      "sha256": "ded42d21d7206bbaedff1d7f1393796e69d39e0d502e8c75e9ca37240ffa79b3"
+    },
+    {
+      "bytes": 46220,
+      "path": "model-1/reports/phase-3f-final-evidence/tests.log",
+      "sha256": "ca95ba941c4300567f8161b56aa5e3afdd24394143ae419332d4292a521f895f"
+    },
+    {
+      "bytes": 14566,
+      "path": "model-1/reports/phase-3f-implementation.md",
+      "sha256": "b137d9ffc8cfce0726cdd07c6980b34eb55df89326072274bc83aa464dcea0fb"
+    },
+    {
+      "bytes": 531,
+      "path": "model-1/reports/phase-3f-metrics.csv",
+      "sha256": "0d82917f45c935c9530244df5aadc2f274dc36fd4b7b3bc02ab3076e37a73ea6"
+    },
+    {
+      "bytes": 5145,
+      "path": "model-1/reports/phase-3f-project-evidence/application.py",
+      "sha256": "fab280e3d30838e9a2cbd2afb52622620ccd538a1b183bae23648573a94cc8d9"
+    },
+    {
+      "bytes": 179,
+      "path": "model-1/reports/phase-3f-project-evidence/command-00.log",
+      "sha256": "4ba390d435c257ebd38af68c69ecc00bcba77010b472eee62104a0fae64b354a"
+    },
+    {
+      "bytes": 181,
+      "path": "model-1/reports/phase-3f-project-evidence/command-01.log",
+      "sha256": "d1f4cc305a8c5469d438066f2604d6d7219dd18fe60b58b8cd337239b5c888ef"
+    },
+    {
+      "bytes": 179,
+      "path": "model-1/reports/phase-3f-project-evidence/command-02.log",
+      "sha256": "e5d49ea9650e1fe0d1188de3e730ad6e32b497f46920e82d7a56fa3793c4237c"
+    },
+    {
+      "bytes": 182,
+      "path": "model-1/reports/phase-3f-project-evidence/command-03.log",
+      "sha256": "3fa1ada2ea0bcf53b58fd5c358f6f8f69dcc295b830dafc876ee95cdbe557278"
+    },
+    {
+      "bytes": 181,
+      "path": "model-1/reports/phase-3f-project-evidence/command-04.log",
+      "sha256": "73f2ef417c488a33cac112f32ef2b1e9fc004f9062356f9b2a259e683bd042d6"
+    },
+    {
+      "bytes": 181,
+      "path": "model-1/reports/phase-3f-project-evidence/command-05.log",
+      "sha256": "4a2f67efd7099b1ce0100526c9e2070671b04212f05729940734ff1dd3066066"
+    },
+    {
+      "bytes": 182,
+      "path": "model-1/reports/phase-3f-project-evidence/command-06.log",
+      "sha256": "e937b9f5cfa9d7cdff964d5b23ff19910ae83607b308c8fd1ee450330c5bdb3d"
+    },
+    {
+      "bytes": 182,
+      "path": "model-1/reports/phase-3f-project-evidence/command-07.log",
+      "sha256": "0c58d6ee4d05ca947fc184b51d6330c87d5e109ea4740ec2d31a6cd3ca97a683"
+    },
+    {
+      "bytes": 182,
+      "path": "model-1/reports/phase-3f-project-evidence/command-08.log",
+      "sha256": "6e75df5ac82923b965921438eabe47e940754666d3067ed7c9284859fba7613b"
+    },
+    {
+      "bytes": 182,
+      "path": "model-1/reports/phase-3f-project-evidence/command-09.log",
+      "sha256": "412d683deec53a97bbb1b6f15012b8ea0afb85f5deca2ba3bb9d399b85a949fa"
+    },
+    {
+      "bytes": 182,
+      "path": "model-1/reports/phase-3f-project-evidence/command-10.log",
+      "sha256": "93a254644ad062511b5b4bff435a08d2c2c6518568881f49859697c9622bd935"
+    },
+    {
+      "bytes": 182,
+      "path": "model-1/reports/phase-3f-project-evidence/command-11.log",
+      "sha256": "2d1ec1d62d82014ccec249472329bac516fcc63e6a32351e2142da991a740c3e"
+    },
+    {
+      "bytes": 181,
+      "path": "model-1/reports/phase-3f-project-evidence/command-12.log",
+      "sha256": "040988c2518a32cceba69234cd1dd1ca9e5fb66eb928f94a0d0e7f39b67320bc"
+    },
+    {
+      "bytes": 180,
+      "path": "model-1/reports/phase-3f-project-evidence/command-13.log",
+      "sha256": "94d1029430d8af4628bdc5cf7388a332d0956b07bcaaab765dba9e2a81ded333"
+    },
+    {
+      "bytes": 5110,
+      "path": "model-1/reports/phase-3f-project-evidence/documents/manifest.json",
+      "sha256": "b378c97e2ac7edfd790301b35e81c6c1c7cc7331c0f4f1fac5a751a2d7720a09"
+    },
+    {
+      "bytes": 4082,
+      "path": "model-1/reports/phase-3f-project-evidence/events.jsonl",
+      "sha256": "6a0661d1bc0eccaa3cd6647a95787c430a9d9d3cbe015d893f818ba18e3f6ce5"
+    },
+    {
+      "bytes": 14110,
+      "path": "model-1/reports/phase-3f-project-evidence/export.json",
+      "sha256": "0eeffc65cb3c4e5cd38721deab3a31cb1d4217e4a8ffc163e1e8251abd0afba2"
+    },
+    {
+      "bytes": 16924,
+      "path": "model-1/reports/phase-3f-project-evidence/manifest.json",
+      "sha256": "07188bec69cc72c55985aded8385e2e83585f710fd7d9c38fc05c938e8a95ac7"
+    },
+    {
+      "bytes": 501,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-history-fe0f0add/audit.json",
+      "sha256": "9a0f10af280247d5d9e91f10d3c51c2e812b1ae618fb0be25412a1d06c59ac47"
+    },
+    {
+      "bytes": 1923,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-history-fe0f0add/history.json",
+      "sha256": "68b8a9e49b6369b9758c05440a7f38db0462022da1f3077059ab6e1ebedc701e"
+    },
+    {
+      "bytes": 15513,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-history-fe0f0add/manifest.json",
+      "sha256": "ea56e96331d899013b5b49e7618cf1a5424c1d635361e4a0699f6afaaf064187"
+    },
+    {
+      "bytes": 87,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-history-fe0f0add/status.json",
+      "sha256": "096848610ad4bcd163b1ed985019767d6a4998744073131826a1ba565f588af1"
+    },
+    {
+      "bytes": 496,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-init-5dd60132/audit.json",
+      "sha256": "bec2d6c8c679b59f277d534884f4208b0a81c85a9d1d9231f6ae07be46578af0"
+    },
+    {
+      "bytes": 15481,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-init-5dd60132/manifest.json",
+      "sha256": "c7989e8d46a0bb6b26d6556d789bb3869a3fad08fe605c0be73da828924ca296"
+    },
+    {
+      "bytes": 87,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-init-5dd60132/status.json",
+      "sha256": "5921cce33335d48c579b4102ec7481e40b86d06337484004257c5dc97201f8a8"
+    },
+    {
+      "bytes": 501,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-intake-c8dd9e5e/after.json",
+      "sha256": "9a0f10af280247d5d9e91f10d3c51c2e812b1ae618fb0be25412a1d06c59ac47"
+    },
+    {
+      "bytes": 496,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-intake-c8dd9e5e/before.json",
+      "sha256": "bec2d6c8c679b59f277d534884f4208b0a81c85a9d1d9231f6ae07be46578af0"
+    },
+    {
+      "bytes": 5110,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-intake-c8dd9e5e/intake-manifest.json",
+      "sha256": "b378c97e2ac7edfd790301b35e81c6c1c7cc7331c0f4f1fac5a751a2d7720a09"
+    },
+    {
+      "bytes": 15665,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-intake-c8dd9e5e/manifest.json",
+      "sha256": "e9cd39f0a5156ddbc21331f14a15eb7df13837043b1196aee7b721b59e7089b7"
+    },
+    {
+      "bytes": 2104,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-intake-c8dd9e5e/receipt.json",
+      "sha256": "5bec7f69fc0e979f95ef2a8c12041be62eddd9a69166d9a08d2fc578f5593d07"
+    },
+    {
+      "bytes": 87,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-intake-c8dd9e5e/status.json",
+      "sha256": "72131e901f49cf23b4f6eaffc53f589545152fd54fe0a83add57d8f3f0e9eb38"
+    },
+    {
+      "bytes": 501,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-list-b824c7a7/audit.json",
+      "sha256": "9a0f10af280247d5d9e91f10d3c51c2e812b1ae618fb0be25412a1d06c59ac47"
+    },
+    {
+      "bytes": 4643,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-list-b824c7a7/inventory.json",
+      "sha256": "81bd6051cf96a1e91591779f4bdb40db01e078d4b408287e9de435c973d2eeba"
+    },
+    {
+      "bytes": 15481,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-list-b824c7a7/manifest.json",
+      "sha256": "ed707a974937b35a417c0ba6f3b782d6bcb3fe88fdf367b24dcfef9898c5c9a4"
+    },
+    {
+      "bytes": 87,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-list-b824c7a7/status.json",
+      "sha256": "1bb6172341982e217eb0a476bccf562e631d4ad14669e2aa79121dd8bb75bced"
+    },
+    {
+      "bytes": 501,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-search-0c4bd7df/audit.json",
+      "sha256": "9a0f10af280247d5d9e91f10d3c51c2e812b1ae618fb0be25412a1d06c59ac47"
+    },
+    {
+      "bytes": 15601,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-search-0c4bd7df/manifest.json",
+      "sha256": "aec90acabca2d9e971907a20e7671dfb62250e2c1901b45a8402f41ffca97541"
+    },
+    {
+      "bytes": 15271,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-search-0c4bd7df/retrieval.json",
+      "sha256": "1b952d1c63c324d7eac6da44c196845624414b1dc89dbbc991e4dc563da8cf2f"
+    },
+    {
+      "bytes": 87,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-search-0c4bd7df/status.json",
+      "sha256": "9517ad717a375d80bb4bb9d19a4baf93924f512e19b94d40d6b2e9f8ea570403"
+    },
+    {
+      "bytes": 660,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-search-0c4bd7df/verification.json",
+      "sha256": "29c7981e0ca301c1916d4053eed88d33a10cdfac4359afaaa15d71c07cae1533"
+    },
+    {
+      "bytes": 501,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-source-a30abb79/audit.json",
+      "sha256": "9a0f10af280247d5d9e91f10d3c51c2e812b1ae618fb0be25412a1d06c59ac47"
+    },
+    {
+      "bytes": 15580,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-source-a30abb79/manifest.json",
+      "sha256": "9065e1b14f72282763b70cda6f91f117582aa69735c4f3dc8654c47d20b04f8a"
+    },
+    {
+      "bytes": 15481,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-source-a30abb79/source.json",
+      "sha256": "b51f39c66e8057e986374b4d859753e8e5775e536a5a8de4043aceba47c4d310"
+    },
+    {
+      "bytes": 87,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205435-library-source-a30abb79/status.json",
+      "sha256": "f5a7e77e2a59a057d00e5ccebd967265f9665f8bddff3dc83359c753174cf0db"
+    },
+    {
+      "bytes": 501,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-00f7bb10/library-audit.json",
+      "sha256": "9a0f10af280247d5d9e91f10d3c51c2e812b1ae618fb0be25412a1d06c59ac47"
+    },
+    {
+      "bytes": 15573,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-00f7bb10/manifest.json",
+      "sha256": "121af7eed19d87b803e26b6667d01b39a9be2f206e088faffc4926194743e774"
+    },
+    {
+      "bytes": 9208,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-00f7bb10/proposals.json",
+      "sha256": "63636b00e4d6b7bba8041b1976ae7503ef3253898ad2554d774d28ca482a6644"
+    },
+    {
+      "bytes": 233,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-00f7bb10/replay-audit.json",
+      "sha256": "4fb110b3c3d9ea45a5216f579fd629897f428ce826b27e7030789f7851aefcd7"
+    },
+    {
+      "bytes": 13739,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-00f7bb10/response.md",
+      "sha256": "7aeff879d947e04cc051199d75c3f6a511b201d0a3aa5ffb243bccf43f6fd6ce"
+    },
+    {
+      "bytes": 17663,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-00f7bb10/retrieval.json",
+      "sha256": "5f62159b94dbe9795e77b4e91bf981973679e1581e99bd33b826ce3ed7b912cf"
+    },
+    {
+      "bytes": 33380,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-00f7bb10/state.json",
+      "sha256": "19076852e7ae0a2977a8e229977d6e24e0f2e2580f1c14d86a7016cec386bf26"
+    },
+    {
+      "bytes": 87,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-00f7bb10/status.json",
+      "sha256": "60072a64ef0d96a42b80660acbb1a916d9a1e2e938bd6724a24153600fcb0bb9"
+    },
+    {
+      "bytes": 297,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-00f7bb10/summary.json",
+      "sha256": "c4731298fc45e32b6b1ceefb9bd6a584da668a65bb583e492ffce5755335b62d"
+    },
+    {
+      "bytes": 501,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-1e272649/library-audit.json",
+      "sha256": "9a0f10af280247d5d9e91f10d3c51c2e812b1ae618fb0be25412a1d06c59ac47"
+    },
+    {
+      "bytes": 15557,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-1e272649/manifest.json",
+      "sha256": "37b1c9d195edaceb8e81183fef54fb4a90597e8f7a04180e2555b14511414ece"
+    },
+    {
+      "bytes": 6956,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-1e272649/proposals.json",
+      "sha256": "c43f48d5d8e259d27902e77514a1ebe20be4927fa4705e832e3d9d2f243b8726"
+    },
+    {
+      "bytes": 233,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-1e272649/replay-audit.json",
+      "sha256": "3e451b72797da0ba8361f66658cdb4a482a3d041dfef4c6d1f4742b6a9632db1"
+    },
+    {
+      "bytes": 10474,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-1e272649/response.md",
+      "sha256": "ac19c0325e869f37897081c468077509f6fd27ceffe4bfdc89a651dac0c8f230"
+    },
+    {
+      "bytes": 13226,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-1e272649/retrieval.json",
+      "sha256": "728118cad3e43d758c2bd75d60339526af53898388794dd0ead4b254459e1706"
+    },
+    {
+      "bytes": 25525,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-1e272649/state.json",
+      "sha256": "5e5d4bbc55632f321e587b5b04b1046aa50c16c3cf81a9d319a1e4e57b851826"
+    },
+    {
+      "bytes": 87,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-1e272649/status.json",
+      "sha256": "05f8c4d6a8761794686b4f827c1c41a1cd7729a82a01e37a06cb017538d79403"
+    },
+    {
+      "bytes": 297,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-1e272649/summary.json",
+      "sha256": "e3b4c6cc7cb581d75fcf72044daa7ea20b199fa508b24a1ac3a05f13a952490d"
+    },
+    {
+      "bytes": 501,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-78307c38/library-audit.json",
+      "sha256": "9a0f10af280247d5d9e91f10d3c51c2e812b1ae618fb0be25412a1d06c59ac47"
+    },
+    {
+      "bytes": 15567,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-78307c38/manifest.json",
+      "sha256": "58de037829733d404ac2894c55978a5e6371c11eae48d618c9c4c06d8e63f35d"
+    },
+    {
+      "bytes": 9223,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-78307c38/proposals.json",
+      "sha256": "8302af8dedf630fe0e4c6bf96c893494d0de0e5632e18e6dbc58607203391407"
+    },
+    {
+      "bytes": 233,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-78307c38/replay-audit.json",
+      "sha256": "4fb110b3c3d9ea45a5216f579fd629897f428ce826b27e7030789f7851aefcd7"
+    },
+    {
+      "bytes": 13777,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-78307c38/response.md",
+      "sha256": "9a3f1df925a7829cb368869edcf1228cd648140d5b71307a4ab0638a853ca16a"
+    },
+    {
+      "bytes": 17908,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-78307c38/retrieval.json",
+      "sha256": "35fb00b2b66418c89c8b7d43f29af33a27bf6e00b39ffa551dd8c6745f11c723"
+    },
+    {
+      "bytes": 33463,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-78307c38/state.json",
+      "sha256": "e0592d52836c8622e6583a52c12066ac1a6437e021f122fe00030bd8f035e0b8"
+    },
+    {
+      "bytes": 86,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-78307c38/status.json",
+      "sha256": "d2debebc310eb9f9df86cf14de16e7210f52ef6306539135f42375539aad4d65"
+    },
+    {
+      "bytes": 297,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-78307c38/summary.json",
+      "sha256": "c4731298fc45e32b6b1ceefb9bd6a584da668a65bb583e492ffce5755335b62d"
+    },
+    {
+      "bytes": 501,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-b6a89ab9/library-audit.json",
+      "sha256": "9a0f10af280247d5d9e91f10d3c51c2e812b1ae618fb0be25412a1d06c59ac47"
+    },
+    {
+      "bytes": 15587,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-b6a89ab9/manifest.json",
+      "sha256": "0b87932c1082ea118768c73ab581ec40d0aefc5a586a54af630ebf093fecd41b"
+    },
+    {
+      "bytes": 8094,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-b6a89ab9/proposals.json",
+      "sha256": "567a04b06db5e1a6f9a4b1a9a571618676f56fc76e7a8f4537367aabce72e10a"
+    },
+    {
+      "bytes": 233,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-b6a89ab9/replay-audit.json",
+      "sha256": "744c00a3a23d1ecd18b9abcaf936486c2143c6134ca715dcde695ed47afc64cb"
+    },
+    {
+      "bytes": 12165,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-b6a89ab9/response.md",
+      "sha256": "6fcfc230302385a6ef4d3fee11aea6224d3fab32ad2c81c21fa17d95e173c3c4"
+    },
+    {
+      "bytes": 15671,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-b6a89ab9/retrieval.json",
+      "sha256": "d350d180ff8196d7afbda3380a9f47f2b90aed90c836f51d08547d6ad9ff125a"
+    },
+    {
+      "bytes": 29627,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-b6a89ab9/state.json",
+      "sha256": "d1e9c071278b35d212b6895f7a5c91a8aa272a15bb97786301a8130689b85eed"
+    },
+    {
+      "bytes": 86,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-b6a89ab9/status.json",
+      "sha256": "f23cb89f1370fc352354849faeb8b8d9b93bad03243456e3ee8c925c1f417cb7"
+    },
+    {
+      "bytes": 297,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-b6a89ab9/summary.json",
+      "sha256": "b3e37547e4721a3a8bb0dea984b7f3b553e260723afde53457ba867c899e4d9f"
+    },
+    {
+      "bytes": 501,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-ecd2c6b3/library-audit.json",
+      "sha256": "9a0f10af280247d5d9e91f10d3c51c2e812b1ae618fb0be25412a1d06c59ac47"
+    },
+    {
+      "bytes": 15559,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-ecd2c6b3/manifest.json",
+      "sha256": "40fa515b9abbe9c1d316dd37457fbf257bcb491d5725cf6630fcb0a5105c7c76"
+    },
+    {
+      "bytes": 8507,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-ecd2c6b3/proposals.json",
+      "sha256": "fad16d2621423b067f7e6618250bb0613b24b1b79b1998474fae7d8326a3ed4e"
+    },
+    {
+      "bytes": 233,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-ecd2c6b3/replay-audit.json",
+      "sha256": "4fb110b3c3d9ea45a5216f579fd629897f428ce826b27e7030789f7851aefcd7"
+    },
+    {
+      "bytes": 13017,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-ecd2c6b3/response.md",
+      "sha256": "5b699c78b704d399335d3fa6f15e2b64efefc4a3a99eef23df2ff51bc410f1c5"
+    },
+    {
+      "bytes": 16923,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-ecd2c6b3/retrieval.json",
+      "sha256": "362e45c0d2165a0ccd584d6122139ee2059483837fd8531974d7dddbe0848913"
+    },
+    {
+      "bytes": 31979,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-ecd2c6b3/state.json",
+      "sha256": "b4d8b861eb5c90320916c79311797af2bafe1c7e648d35378914a3d79e45f2cd"
+    },
+    {
+      "bytes": 87,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-ecd2c6b3/status.json",
+      "sha256": "d2ee82ba890949632e2f3d12f2e7dc0a939e1331a524f301a8c316cc5c224a13"
+    },
+    {
+      "bytes": 297,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205436-evidence-review-ecd2c6b3/summary.json",
+      "sha256": "c4731298fc45e32b6b1ceefb9bd6a584da668a65bb583e492ffce5755335b62d"
+    },
+    {
+      "bytes": 501,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205437-evidence-review-af7cd3b9/library-audit.json",
+      "sha256": "9a0f10af280247d5d9e91f10d3c51c2e812b1ae618fb0be25412a1d06c59ac47"
+    },
+    {
+      "bytes": 15564,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205437-evidence-review-af7cd3b9/manifest.json",
+      "sha256": "8ec0f4ace0190f279f22bb8fd698d8390d2f7fca5e717a93c2ecefe0205cd6ea"
+    },
+    {
+      "bytes": 3,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205437-evidence-review-af7cd3b9/proposals.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "bytes": 233,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205437-evidence-review-af7cd3b9/replay-audit.json",
+      "sha256": "1fe61eb5664de92e9b8e03ad92e16b5fa9262ecce79a9ae0f4cb51d1bf128346"
+    },
+    {
+      "bytes": 962,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205437-evidence-review-af7cd3b9/response.md",
+      "sha256": "32f500c23c2025f6b6463a9ddd8c19f1843e113b44cf185970f89f23dd763f4b"
+    },
+    {
+      "bytes": 566,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205437-evidence-review-af7cd3b9/retrieval.json",
+      "sha256": "96796e4cc1bba887977d4311bda651e740745162534e3afd38d5677df2e3bc85"
+    },
+    {
+      "bytes": 2218,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205437-evidence-review-af7cd3b9/state.json",
+      "sha256": "195c993da9dd5113b70c55dea12a85bfee47b987f8763cce86c281ddac619962"
+    },
+    {
+      "bytes": 87,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205437-evidence-review-af7cd3b9/status.json",
+      "sha256": "dbf26a1e2c2bc2226306c7a5106023b9345b963155b741c375ca9990cdc1b31e"
+    },
+    {
+      "bytes": 297,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205437-evidence-review-af7cd3b9/summary.json",
+      "sha256": "d836059ae907ea1dd6ef93289d76b4e77139f729ab855863b92100ecbfd4d51c"
+    },
+    {
+      "bytes": 501,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205437-library-audit-564e3361/audit.json",
+      "sha256": "9a0f10af280247d5d9e91f10d3c51c2e812b1ae618fb0be25412a1d06c59ac47"
+    },
+    {
+      "bytes": 15484,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205437-library-audit-564e3361/manifest.json",
+      "sha256": "701c508f572367a54dd7a6a5d71d78131b446b1d1c47401e7ea07673ba356af3"
+    },
+    {
+      "bytes": 87,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205437-library-audit-564e3361/status.json",
+      "sha256": "4950f479d37e40ba4a9d00473cf17af45e63b628dbcacfab63b17cd22b64d03c"
+    },
+    {
+      "bytes": 594,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205437-library-replay-accb3e06/audit.json",
+      "sha256": "7ca0b08e898c2bd6e960e51d50ee6d6a4e4dacec673dbefa0ffd118508f5dd10"
+    },
+    {
+      "bytes": 15690,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205437-library-replay-accb3e06/manifest.json",
+      "sha256": "31ea18eb2b6dc55af042e56deff2e4ce0c29bdfb32b5f05554e9ef908e6f0832"
+    },
+    {
+      "bytes": 87,
+      "path": "model-1/reports/phase-3f-project-evidence/operations/20260928T205437-library-replay-accb3e06/status.json",
+      "sha256": "0e18abb3fd5e24cd1b4a8ce75747d6521c20a5fdb51bbc545add683b57e4ae5b"
+    },
+    {
+      "bytes": 84,
+      "path": "model-1/reports/phase-3f-project-evidence/status.json",
+      "sha256": "1ec296a77f24d3324b501268eb0e19f21a5099e1cecb26f0ee828ee35a8bf854"
+    },
+    {
+      "bytes": 11525,
+      "path": "model-1/reports/phase-3f-project-evidence/summary.json",
+      "sha256": "5f56e63eb1cd3aaff7396f9ecc708adb2c6cbe99435770fda12bff2767459a22"
+    },
+    {
+      "bytes": 1545,
+      "path": "model-1/reports/phase-3f-status.json",
+      "sha256": "082e4ecae744a4d1c39714772068f3ad02883522dd3f6dc76373300d77e50a63"
+    },
+    {
+      "bytes": 5711,
+      "path": "model-1/tests/test_evidence_review.py",
+      "sha256": "42e985c7b764bed33a56b01a878db292e375948147f60923cf7f1219b96b9d5f"
+    },
+    {
+      "bytes": 15637,
+      "path": "model-1/tests/test_library.py",
+      "sha256": "e9f88ec68317f4df26b02436b3d20b2d60c86cddcda537e7397da19945269b6e"
+    },
+    {
+      "bytes": 2249,
+      "path": "model-1/tests/test_library_reproduce.py",
+      "sha256": "e66c638d7e0c810eb70a630171c59e7d5c2ad7c361922920fd2db98cf5385f4a"
+    }
+  ],
+  "scope": "all phase changes against baseline plus new untracked artifacts; self excluded"
+}
