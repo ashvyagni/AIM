@@ -1,0 +1,86 @@
+{
+  "cross_run_state_equal": true,
+  "final": {
+    "bytes": 170,
+    "chunks": 2,
+    "outcome": "PASS",
+    "schema": "aim-evidence-library-v1",
+    "scope": "stored content, offsets, full lexical index, lifecycle and hash-chain consistency; not source truth",
+    "snapshot": {
+      "library_id": "8344489ec48c49918ec2adae2cfd434b",
+      "sequence": 3,
+      "sha256": "0084a1b4e76f60b3f9b0b6d8f7081f03e7216d729f8c8c60feec1a6d23e6f09e"
+    },
+    "statuses": {
+      "ACTIVE": 0,
+      "RETRACTED": 1,
+      "SUPERSEDED": 1,
+      "WITHDRAWN": 0
+    },
+    "versions": 2
+  },
+  "initial": {
+    "bytes": 94,
+    "chunks": 1,
+    "outcome": "PASS",
+    "schema": "aim-evidence-library-v1",
+    "scope": "stored content, offsets, full lexical index, lifecycle and hash-chain consistency; not source truth",
+    "snapshot": {
+      "library_id": "8344489ec48c49918ec2adae2cfd434b",
+      "sequence": 1,
+      "sha256": "0b5c43f157dadc9c552d3556155eb6ceae4f7c0bfca45fba474fece0ea272723"
+    },
+    "statuses": {
+      "ACTIVE": 1,
+      "RETRACTED": 0,
+      "SUPERSEDED": 0,
+      "WITHDRAWN": 0
+    },
+    "versions": 1
+  },
+  "review_runs": [
+    "reviews/20260928T204840-evidence-review-944543c9",
+    "reviews/20260928T204840-evidence-review-ba35ae39",
+    "reviews/20260928T204840-evidence-review-d74fda9d"
+  ],
+  "reviews": [
+    {
+      "current_library_checked": true,
+      "current_source_status": {
+        "lib-src-8463614cd41849dd8de4134afc39b058ba8d808330bd6a35ce9bb0eb33491e81": "SUPERSEDED"
+      },
+      "excerpts": 1,
+      "outcome": "PASS",
+      "scope": "snapshot retrieval, exact source attribution, ledger and final response replay",
+      "verified_factual_claims": 0
+    },
+    {
+      "current_library_checked": true,
+      "current_source_status": {
+        "lib-src-8463614cd41849dd8de4134afc39b058ba8d808330bd6a35ce9bb0eb33491e81": "SUPERSEDED"
+      },
+      "excerpts": 1,
+      "outcome": "PASS",
+      "scope": "snapshot retrieval, exact source attribution, ledger and final response replay",
+      "verified_factual_claims": 0
+    },
+    {
+      "current_library_checked": true,
+      "current_source_status": {},
+      "excerpts": 0,
+      "outcome": "PASS",
+      "scope": "snapshot retrieval, exact source attribution, ledger and final response replay",
+      "verified_factual_claims": 0
+    }
+  ],
+  "superseded_review_audit": {
+    "current_library_checked": true,
+    "current_source_status": {
+      "lib-src-8463614cd41849dd8de4134afc39b058ba8d808330bd6a35ce9bb0eb33491e81": "SUPERSEDED"
+    },
+    "excerpts": 1,
+    "outcome": "PASS",
+    "scope": "snapshot retrieval, exact source attribution, ledger and final response replay",
+    "verified_factual_claims": 0
+  }
+}

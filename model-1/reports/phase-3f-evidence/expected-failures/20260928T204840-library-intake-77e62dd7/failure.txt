@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/flamexmystix/Documents/Sidequests/Full Crazy Projects/AIM/model-1/aim/library_cli.py", line 49, in ingest_manifest
+    manifest, documents = load_documents(manifest_path)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/flamexmystix/Documents/Sidequests/Full Crazy Projects/AIM/model-1/aim/library_cli.py", line 35, in load_documents
+    require(0 < len(raw) <= MAX_DOCUMENT_BYTES and digest(raw) == row["sha256"], "intake source hash or size mismatch")
+  File "/Users/flamexmystix/Documents/Sidequests/Full Crazy Projects/AIM/model-1/aim/corpus.py", line 20, in require
+    raise ContractError(message)
+aim.contracts.ContractError: intake source hash or size mismatch

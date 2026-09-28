@@ -1,0 +1,3910 @@
+{
+  "queries": [
+    {
+      "elapsed_seconds": 0.0004415829898789525,
+      "expected_source": "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+      "packet_hash": "19c6dcd132e3064e5de9776bbc5ddd890c6080fe1f95328ff6a702e69f8acd2d",
+      "query": "specimen00000 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004421249614097178,
+      "expected_source": "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+      "packet_hash": "f7bb1deff1d0e9822f154beec0c5616499f018531463fcbd6c50d8313f6aecbd",
+      "query": "specimen00001 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004277499974705279,
+      "expected_source": "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+      "packet_hash": "af0e69133db94bbc60066839539ba4a505d28daaec178e0e6f1d248f2c436a5c",
+      "query": "specimen00002 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004391249967738986,
+      "expected_source": "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+      "packet_hash": "14e41e22e98b94f1b7e34180e3a8440bd4acc2cfb37643cfea255a9d19dc75e7",
+      "query": "specimen00003 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00044129096204414964,
+      "expected_source": "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+      "packet_hash": "de97f0efc24be52100469eca566d8d7b818885fac847fe4e0b3d8c77126bc6a8",
+      "query": "specimen00004 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00044829200487583876,
+      "expected_source": "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+      "packet_hash": "3f26e4e77811262a8730aff60ea0413268d5b647a33b83301dbf13ca6279b147",
+      "query": "specimen00005 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004265420138835907,
+      "expected_source": "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+      "packet_hash": "309bc0f19bbbe271e49326f21d25cd40763bb03a27c9c19806258c8dc06d413e",
+      "query": "specimen00006 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60",
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00042825000127777457,
+      "expected_source": "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+      "packet_hash": "64ac14d97749452f4eb5135a9540a19b266e069ea19914ced102b412301bbfd3",
+      "query": "specimen00007 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00043483299668878317,
+      "expected_source": "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+      "packet_hash": "3e3f55c3b90c6701099607cb3bdddaf00b1e6b81a05336013f705da0cfb7ea85",
+      "query": "specimen00008 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004330830415710807,
+      "expected_source": "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+      "packet_hash": "5ed7caa28d60c50403977939c3850ebff29e2d0d4af7fcf22ec0bfa4ea116ba7",
+      "query": "specimen00009 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00043354195076972246,
+      "expected_source": "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+      "packet_hash": "4afde6731069b36b46265a43570266d8e1e84ccce9f755adf2492cc224bca817",
+      "query": "specimen00010 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00042699999175965786,
+      "expected_source": "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+      "packet_hash": "6ac887ff5a4895d150dedae4f934e5f687d98105b0b5ce9732570f5cf3f84b79",
+      "query": "specimen00011 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004371250397525728,
+      "expected_source": "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+      "packet_hash": "ae1d1147c1fa499e2c9496450efb0eeb739a331017f6cdb3dc95376bd7cb1a95",
+      "query": "specimen00012 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00042699999175965786,
+      "expected_source": "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+      "packet_hash": "21496be0b28574d10f2c91801aa166b76409fb87845784d5d7fa31cc287a0e64",
+      "query": "specimen00013 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004367499495856464,
+      "expected_source": "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+      "packet_hash": "764f448c1c75ad011447f819b8de6ce8b1e3e2617950c08840fa735e2de4e4ff",
+      "query": "specimen00014 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004319589934311807,
+      "expected_source": "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+      "packet_hash": "02fb1a89150adf8755465ab0b9d210e3dac4ba85234023efc91e96eb7c253401",
+      "query": "specimen00015 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004415410221554339,
+      "expected_source": "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+      "packet_hash": "19c6dcd132e3064e5de9776bbc5ddd890c6080fe1f95328ff6a702e69f8acd2d",
+      "query": "specimen00000 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004353750264272094,
+      "expected_source": "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+      "packet_hash": "f7bb1deff1d0e9822f154beec0c5616499f018531463fcbd6c50d8313f6aecbd",
+      "query": "specimen00001 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004320410080254078,
+      "expected_source": "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+      "packet_hash": "af0e69133db94bbc60066839539ba4a505d28daaec178e0e6f1d248f2c436a5c",
+      "query": "specimen00002 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004536659689620137,
+      "expected_source": "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+      "packet_hash": "14e41e22e98b94f1b7e34180e3a8440bd4acc2cfb37643cfea255a9d19dc75e7",
+      "query": "specimen00003 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004594579804688692,
+      "expected_source": "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+      "packet_hash": "de97f0efc24be52100469eca566d8d7b818885fac847fe4e0b3d8c77126bc6a8",
+      "query": "specimen00004 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004487910191528499,
+      "expected_source": "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+      "packet_hash": "3f26e4e77811262a8730aff60ea0413268d5b647a33b83301dbf13ca6279b147",
+      "query": "specimen00005 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004273749655112624,
+      "expected_source": "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+      "packet_hash": "309bc0f19bbbe271e49326f21d25cd40763bb03a27c9c19806258c8dc06d413e",
+      "query": "specimen00006 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60",
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004421669873408973,
+      "expected_source": "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+      "packet_hash": "64ac14d97749452f4eb5135a9540a19b266e069ea19914ced102b412301bbfd3",
+      "query": "specimen00007 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.000434375018812716,
+      "expected_source": "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+      "packet_hash": "3e3f55c3b90c6701099607cb3bdddaf00b1e6b81a05336013f705da0cfb7ea85",
+      "query": "specimen00008 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004342920146882534,
+      "expected_source": "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+      "packet_hash": "5ed7caa28d60c50403977939c3850ebff29e2d0d4af7fcf22ec0bfa4ea116ba7",
+      "query": "specimen00009 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00044704199535772204,
+      "expected_source": "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+      "packet_hash": "4afde6731069b36b46265a43570266d8e1e84ccce9f755adf2492cc224bca817",
+      "query": "specimen00010 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00044229201739653945,
+      "expected_source": "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+      "packet_hash": "6ac887ff5a4895d150dedae4f934e5f687d98105b0b5ce9732570f5cf3f84b79",
+      "query": "specimen00011 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00042641599429771304,
+      "expected_source": "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+      "packet_hash": "ae1d1147c1fa499e2c9496450efb0eeb739a331017f6cdb3dc95376bd7cb1a95",
+      "query": "specimen00012 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004327079514041543,
+      "expected_source": "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+      "packet_hash": "21496be0b28574d10f2c91801aa166b76409fb87845784d5d7fa31cc287a0e64",
+      "query": "specimen00013 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00044354196870699525,
+      "expected_source": "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+      "packet_hash": "764f448c1c75ad011447f819b8de6ce8b1e3e2617950c08840fa735e2de4e4ff",
+      "query": "specimen00014 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00042462500277906656,
+      "expected_source": "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+      "packet_hash": "02fb1a89150adf8755465ab0b9d210e3dac4ba85234023efc91e96eb7c253401",
+      "query": "specimen00015 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00045129103818908334,
+      "expected_source": "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+      "packet_hash": "19c6dcd132e3064e5de9776bbc5ddd890c6080fe1f95328ff6a702e69f8acd2d",
+      "query": "specimen00000 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00044841598719358444,
+      "expected_source": "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+      "packet_hash": "f7bb1deff1d0e9822f154beec0c5616499f018531463fcbd6c50d8313f6aecbd",
+      "query": "specimen00001 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.000456416979432106,
+      "expected_source": "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+      "packet_hash": "af0e69133db94bbc60066839539ba4a505d28daaec178e0e6f1d248f2c436a5c",
+      "query": "specimen00002 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0005304169608280063,
+      "expected_source": "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+      "packet_hash": "14e41e22e98b94f1b7e34180e3a8440bd4acc2cfb37643cfea255a9d19dc75e7",
+      "query": "specimen00003 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004319999716244638,
+      "expected_source": "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+      "packet_hash": "de97f0efc24be52100469eca566d8d7b818885fac847fe4e0b3d8c77126bc6a8",
+      "query": "specimen00004 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00043829198693856597,
+      "expected_source": "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+      "packet_hash": "3f26e4e77811262a8730aff60ea0413268d5b647a33b83301dbf13ca6279b147",
+      "query": "specimen00005 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00044350000098347664,
+      "expected_source": "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+      "packet_hash": "309bc0f19bbbe271e49326f21d25cd40763bb03a27c9c19806258c8dc06d413e",
+      "query": "specimen00006 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60",
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00043583399383351207,
+      "expected_source": "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+      "packet_hash": "64ac14d97749452f4eb5135a9540a19b266e069ea19914ced102b412301bbfd3",
+      "query": "specimen00007 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00042624998604878783,
+      "expected_source": "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+      "packet_hash": "3e3f55c3b90c6701099607cb3bdddaf00b1e6b81a05336013f705da0cfb7ea85",
+      "query": "specimen00008 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00044279202120378613,
+      "expected_source": "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+      "packet_hash": "5ed7caa28d60c50403977939c3850ebff29e2d0d4af7fcf22ec0bfa4ea116ba7",
+      "query": "specimen00009 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004305840120650828,
+      "expected_source": "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+      "packet_hash": "4afde6731069b36b46265a43570266d8e1e84ccce9f755adf2492cc224bca817",
+      "query": "specimen00010 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004449170082807541,
+      "expected_source": "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+      "packet_hash": "6ac887ff5a4895d150dedae4f934e5f687d98105b0b5ce9732570f5cf3f84b79",
+      "query": "specimen00011 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004283750313334167,
+      "expected_source": "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+      "packet_hash": "ae1d1147c1fa499e2c9496450efb0eeb739a331017f6cdb3dc95376bd7cb1a95",
+      "query": "specimen00012 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004516670014709234,
+      "expected_source": "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+      "packet_hash": "21496be0b28574d10f2c91801aa166b76409fb87845784d5d7fa31cc287a0e64",
+      "query": "specimen00013 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00042504200246185064,
+      "expected_source": "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+      "packet_hash": "764f448c1c75ad011447f819b8de6ce8b1e3e2617950c08840fa735e2de4e4ff",
+      "query": "specimen00014 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.000427833991125226,
+      "expected_source": "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+      "packet_hash": "02fb1a89150adf8755465ab0b9d210e3dac4ba85234023efc91e96eb7c253401",
+      "query": "specimen00015 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004431669949553907,
+      "expected_source": "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+      "packet_hash": "19c6dcd132e3064e5de9776bbc5ddd890c6080fe1f95328ff6a702e69f8acd2d",
+      "query": "specimen00000 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004272080259397626,
+      "expected_source": "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+      "packet_hash": "f7bb1deff1d0e9822f154beec0c5616499f018531463fcbd6c50d8313f6aecbd",
+      "query": "specimen00001 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0005267079686746001,
+      "expected_source": "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+      "packet_hash": "af0e69133db94bbc60066839539ba4a505d28daaec178e0e6f1d248f2c436a5c",
+      "query": "specimen00002 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00045008299639448524,
+      "expected_source": "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+      "packet_hash": "14e41e22e98b94f1b7e34180e3a8440bd4acc2cfb37643cfea255a9d19dc75e7",
+      "query": "specimen00003 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004469159757718444,
+      "expected_source": "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+      "packet_hash": "de97f0efc24be52100469eca566d8d7b818885fac847fe4e0b3d8c77126bc6a8",
+      "query": "specimen00004 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00044774997513741255,
+      "expected_source": "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+      "packet_hash": "3f26e4e77811262a8730aff60ea0413268d5b647a33b83301dbf13ca6279b147",
+      "query": "specimen00005 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004432499990798533,
+      "expected_source": "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+      "packet_hash": "309bc0f19bbbe271e49326f21d25cd40763bb03a27c9c19806258c8dc06d413e",
+      "query": "specimen00006 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60",
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.000445541983935982,
+      "expected_source": "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+      "packet_hash": "64ac14d97749452f4eb5135a9540a19b266e069ea19914ced102b412301bbfd3",
+      "query": "specimen00007 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004284169990569353,
+      "expected_source": "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+      "packet_hash": "3e3f55c3b90c6701099607cb3bdddaf00b1e6b81a05336013f705da0cfb7ea85",
+      "query": "specimen00008 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004342090105637908,
+      "expected_source": "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+      "packet_hash": "5ed7caa28d60c50403977939c3850ebff29e2d0d4af7fcf22ec0bfa4ea116ba7",
+      "query": "specimen00009 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004464579978957772,
+      "expected_source": "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+      "packet_hash": "4afde6731069b36b46265a43570266d8e1e84ccce9f755adf2492cc224bca817",
+      "query": "specimen00010 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004466670216061175,
+      "expected_source": "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+      "packet_hash": "6ac887ff5a4895d150dedae4f934e5f687d98105b0b5ce9732570f5cf3f84b79",
+      "query": "specimen00011 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004467919934540987,
+      "expected_source": "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+      "packet_hash": "ae1d1147c1fa499e2c9496450efb0eeb739a331017f6cdb3dc95376bd7cb1a95",
+      "query": "specimen00012 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00044370797695592046,
+      "expected_source": "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+      "packet_hash": "21496be0b28574d10f2c91801aa166b76409fb87845784d5d7fa31cc287a0e64",
+      "query": "specimen00013 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00044249999336898327,
+      "expected_source": "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+      "packet_hash": "764f448c1c75ad011447f819b8de6ce8b1e3e2617950c08840fa735e2de4e4ff",
+      "query": "specimen00014 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004314169636927545,
+      "expected_source": "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+      "packet_hash": "02fb1a89150adf8755465ab0b9d210e3dac4ba85234023efc91e96eb7c253401",
+      "query": "specimen00015 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004985419800505042,
+      "expected_source": "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+      "packet_hash": "19c6dcd132e3064e5de9776bbc5ddd890c6080fe1f95328ff6a702e69f8acd2d",
+      "query": "specimen00000 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0005142079899087548,
+      "expected_source": "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+      "packet_hash": "f7bb1deff1d0e9822f154beec0c5616499f018531463fcbd6c50d8313f6aecbd",
+      "query": "specimen00001 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004303749883547425,
+      "expected_source": "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+      "packet_hash": "af0e69133db94bbc60066839539ba4a505d28daaec178e0e6f1d248f2c436a5c",
+      "query": "specimen00002 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00042808300349861383,
+      "expected_source": "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+      "packet_hash": "14e41e22e98b94f1b7e34180e3a8440bd4acc2cfb37643cfea255a9d19dc75e7",
+      "query": "specimen00003 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004290830111131072,
+      "expected_source": "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+      "packet_hash": "de97f0efc24be52100469eca566d8d7b818885fac847fe4e0b3d8c77126bc6a8",
+      "query": "specimen00004 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004435409791767597,
+      "expected_source": "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+      "packet_hash": "3f26e4e77811262a8730aff60ea0413268d5b647a33b83301dbf13ca6279b147",
+      "query": "specimen00005 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004320830339565873,
+      "expected_source": "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+      "packet_hash": "309bc0f19bbbe271e49326f21d25cd40763bb03a27c9c19806258c8dc06d413e",
+      "query": "specimen00006 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60",
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00042583298636600375,
+      "expected_source": "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+      "packet_hash": "64ac14d97749452f4eb5135a9540a19b266e069ea19914ced102b412301bbfd3",
+      "query": "specimen00007 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004249160410836339,
+      "expected_source": "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+      "packet_hash": "3e3f55c3b90c6701099607cb3bdddaf00b1e6b81a05336013f705da0cfb7ea85",
+      "query": "specimen00008 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004254999803379178,
+      "expected_source": "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+      "packet_hash": "5ed7caa28d60c50403977939c3850ebff29e2d0d4af7fcf22ec0bfa4ea116ba7",
+      "query": "specimen00009 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00043170800199732184,
+      "expected_source": "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+      "packet_hash": "4afde6731069b36b46265a43570266d8e1e84ccce9f755adf2492cc224bca817",
+      "query": "specimen00010 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0004335420089773834,
+      "expected_source": "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+      "packet_hash": "6ac887ff5a4895d150dedae4f934e5f687d98105b0b5ce9732570f5cf3f84b79",
+      "query": "specimen00011 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00042287498945370317,
+      "expected_source": "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+      "packet_hash": "ae1d1147c1fa499e2c9496450efb0eeb739a331017f6cdb3dc95376bd7cb1a95",
+      "query": "specimen00012 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00043345801532268524,
+      "expected_source": "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+      "packet_hash": "21496be0b28574d10f2c91801aa166b76409fb87845784d5d7fa31cc287a0e64",
+      "query": "specimen00013 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00043279200326651335,
+      "expected_source": "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+      "packet_hash": "764f448c1c75ad011447f819b8de6ce8b1e3e2617950c08840fa735e2de4e4ff",
+      "query": "specimen00014 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.00042533298255875707,
+      "expected_source": "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+      "packet_hash": "02fb1a89150adf8755465ab0b9d210e3dac4ba85234023efc91e96eb7c253401",
+      "query": "specimen00015 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851",
+        "lib-src-0f4bfb56a56b7235eacdaa68446673910e00f9d7eec4497fb78672b6c5c06d60"
+      ],
+      "size": 32
+    },
+    {
+      "elapsed_seconds": 0.0013799169682897627,
+      "expected_source": "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+      "packet_hash": "41b2b18103836722bf27b07ce7dda35ee254c2ef9437dcf57439cae442e3a722",
+      "query": "specimen00000 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001361665956210345,
+      "expected_source": "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+      "packet_hash": "c895d59eb2ed2eee3d4fa92bd7893dd75a7fb00bf072f06039289ece4f89275d",
+      "query": "specimen00001 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013546250411309302,
+      "expected_source": "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+      "packet_hash": "7a769bd8ea2d897baedb277df840bc5df1e1d8bee766fd2fb9e25c1bc63082b5",
+      "query": "specimen00002 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.00135441601742059,
+      "expected_source": "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+      "packet_hash": "34f1b250e973deabad7c61794bd0cd4f3872b0953bf84b343f1a2c69d7013ab3",
+      "query": "specimen00003 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001583250006660819,
+      "expected_source": "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+      "packet_hash": "43fb267013aa5b09d20de9a6821a46bb52f6492c02402eb2f88821a75e030c88",
+      "query": "specimen00004 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001397165993694216,
+      "expected_source": "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+      "packet_hash": "3972099e83445fe85dcc060575eea3da8c09f4e85ca26a3bf281af1fb98c3f5a",
+      "query": "specimen00005 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013552920427173376,
+      "expected_source": "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+      "packet_hash": "fea374ee3c8a157a95129d9d769951e10cdef81c74a6955a0bf8eb310a703c72",
+      "query": "specimen00006 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0014189170324243605,
+      "expected_source": "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+      "packet_hash": "f2e657d4c806c637369b2e24eaa2d185a31748673555dc91f6427d5cfaa4c6bb",
+      "query": "specimen00007 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0018545410130172968,
+      "expected_source": "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+      "packet_hash": "ca590c06c16c98dc75c1bbc2d87ee79473f4798ff7c19828e23bf678d0f4c976",
+      "query": "specimen00008 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0014159160200506449,
+      "expected_source": "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+      "packet_hash": "ba601467d9870b6ae036ecab8cd07a516b47cb3ef4f74e135617295f22bedf38",
+      "query": "specimen00009 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013681250275112689,
+      "expected_source": "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+      "packet_hash": "9031dffecf6d28fc22f8090b56ff922994b20fdcb47dba054bd01507d0d4f804",
+      "query": "specimen00010 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013520829961635172,
+      "expected_source": "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+      "packet_hash": "6dee728442c240a1e8cd72ab791883972838bad01a771bfb3c9f72721382e07c",
+      "query": "specimen00011 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0014212079695425928,
+      "expected_source": "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+      "packet_hash": "73fa8aeb0b5be3f24b61658ac02e8d128853b115465571cd042e2d5f1092bec1",
+      "query": "specimen00012 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001689917000476271,
+      "expected_source": "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+      "packet_hash": "963c867b09d53ffafb6c088f45a5ba487629365476064f18baa81d155a6d4220",
+      "query": "specimen00013 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001351958024315536,
+      "expected_source": "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+      "packet_hash": "48ef702e586e8eb2003aee236f953e3f240d61ae429b59a9878abe7d4e5744f9",
+      "query": "specimen00014 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013122500386089087,
+      "expected_source": "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+      "packet_hash": "fd074960ac2aec933bb9f4a88af0886ee7fd7fea5879c02f561551a82e79a2df",
+      "query": "specimen00015 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013274580123834312,
+      "expected_source": "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+      "packet_hash": "41b2b18103836722bf27b07ce7dda35ee254c2ef9437dcf57439cae442e3a722",
+      "query": "specimen00000 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0018187499954365194,
+      "expected_source": "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+      "packet_hash": "c895d59eb2ed2eee3d4fa92bd7893dd75a7fb00bf072f06039289ece4f89275d",
+      "query": "specimen00001 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001417082967236638,
+      "expected_source": "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+      "packet_hash": "7a769bd8ea2d897baedb277df840bc5df1e1d8bee766fd2fb9e25c1bc63082b5",
+      "query": "specimen00002 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013706670142710209,
+      "expected_source": "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+      "packet_hash": "34f1b250e973deabad7c61794bd0cd4f3872b0953bf84b343f1a2c69d7013ab3",
+      "query": "specimen00003 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001368959026876837,
+      "expected_source": "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+      "packet_hash": "43fb267013aa5b09d20de9a6821a46bb52f6492c02402eb2f88821a75e030c88",
+      "query": "specimen00004 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013778749853372574,
+      "expected_source": "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+      "packet_hash": "3972099e83445fe85dcc060575eea3da8c09f4e85ca26a3bf281af1fb98c3f5a",
+      "query": "specimen00005 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.00135329196928069,
+      "expected_source": "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+      "packet_hash": "fea374ee3c8a157a95129d9d769951e10cdef81c74a6955a0bf8eb310a703c72",
+      "query": "specimen00006 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013559579965658486,
+      "expected_source": "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+      "packet_hash": "f2e657d4c806c637369b2e24eaa2d185a31748673555dc91f6427d5cfaa4c6bb",
+      "query": "specimen00007 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013253339566290379,
+      "expected_source": "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+      "packet_hash": "ca590c06c16c98dc75c1bbc2d87ee79473f4798ff7c19828e23bf678d0f4c976",
+      "query": "specimen00008 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013329999637790024,
+      "expected_source": "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+      "packet_hash": "ba601467d9870b6ae036ecab8cd07a516b47cb3ef4f74e135617295f22bedf38",
+      "query": "specimen00009 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013091249857097864,
+      "expected_source": "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+      "packet_hash": "9031dffecf6d28fc22f8090b56ff922994b20fdcb47dba054bd01507d0d4f804",
+      "query": "specimen00010 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0014307909877970815,
+      "expected_source": "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+      "packet_hash": "6dee728442c240a1e8cd72ab791883972838bad01a771bfb3c9f72721382e07c",
+      "query": "specimen00011 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0014191250083968043,
+      "expected_source": "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+      "packet_hash": "73fa8aeb0b5be3f24b61658ac02e8d128853b115465571cd042e2d5f1092bec1",
+      "query": "specimen00012 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001381999987643212,
+      "expected_source": "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+      "packet_hash": "963c867b09d53ffafb6c088f45a5ba487629365476064f18baa81d155a6d4220",
+      "query": "specimen00013 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0014061250258237123,
+      "expected_source": "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+      "packet_hash": "48ef702e586e8eb2003aee236f953e3f240d61ae429b59a9878abe7d4e5744f9",
+      "query": "specimen00014 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0014452500035986304,
+      "expected_source": "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+      "packet_hash": "fd074960ac2aec933bb9f4a88af0886ee7fd7fea5879c02f561551a82e79a2df",
+      "query": "specimen00015 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001355834014248103,
+      "expected_source": "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+      "packet_hash": "41b2b18103836722bf27b07ce7dda35ee254c2ef9437dcf57439cae442e3a722",
+      "query": "specimen00000 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013965839752927423,
+      "expected_source": "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+      "packet_hash": "c895d59eb2ed2eee3d4fa92bd7893dd75a7fb00bf072f06039289ece4f89275d",
+      "query": "specimen00001 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013664159923791885,
+      "expected_source": "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+      "packet_hash": "7a769bd8ea2d897baedb277df840bc5df1e1d8bee766fd2fb9e25c1bc63082b5",
+      "query": "specimen00002 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013496249448508024,
+      "expected_source": "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+      "packet_hash": "34f1b250e973deabad7c61794bd0cd4f3872b0953bf84b343f1a2c69d7013ab3",
+      "query": "specimen00003 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001711708027869463,
+      "expected_source": "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+      "packet_hash": "43fb267013aa5b09d20de9a6821a46bb52f6492c02402eb2f88821a75e030c88",
+      "query": "specimen00004 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013584159896709025,
+      "expected_source": "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+      "packet_hash": "3972099e83445fe85dcc060575eea3da8c09f4e85ca26a3bf281af1fb98c3f5a",
+      "query": "specimen00005 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001299791969358921,
+      "expected_source": "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+      "packet_hash": "fea374ee3c8a157a95129d9d769951e10cdef81c74a6955a0bf8eb310a703c72",
+      "query": "specimen00006 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013002920313738286,
+      "expected_source": "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+      "packet_hash": "f2e657d4c806c637369b2e24eaa2d185a31748673555dc91f6427d5cfaa4c6bb",
+      "query": "specimen00007 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0012917499989271164,
+      "expected_source": "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+      "packet_hash": "ca590c06c16c98dc75c1bbc2d87ee79473f4798ff7c19828e23bf678d0f4c976",
+      "query": "specimen00008 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.00135366601170972,
+      "expected_source": "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+      "packet_hash": "ba601467d9870b6ae036ecab8cd07a516b47cb3ef4f74e135617295f22bedf38",
+      "query": "specimen00009 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001326874946244061,
+      "expected_source": "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+      "packet_hash": "9031dffecf6d28fc22f8090b56ff922994b20fdcb47dba054bd01507d0d4f804",
+      "query": "specimen00010 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013231250341050327,
+      "expected_source": "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+      "packet_hash": "6dee728442c240a1e8cd72ab791883972838bad01a771bfb3c9f72721382e07c",
+      "query": "specimen00011 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013220830005593598,
+      "expected_source": "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+      "packet_hash": "73fa8aeb0b5be3f24b61658ac02e8d128853b115465571cd042e2d5f1092bec1",
+      "query": "specimen00012 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013238750398159027,
+      "expected_source": "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+      "packet_hash": "963c867b09d53ffafb6c088f45a5ba487629365476064f18baa81d155a6d4220",
+      "query": "specimen00013 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013354590046219528,
+      "expected_source": "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+      "packet_hash": "48ef702e586e8eb2003aee236f953e3f240d61ae429b59a9878abe7d4e5744f9",
+      "query": "specimen00014 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013219169923104346,
+      "expected_source": "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+      "packet_hash": "fd074960ac2aec933bb9f4a88af0886ee7fd7fea5879c02f561551a82e79a2df",
+      "query": "specimen00015 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001313833985477686,
+      "expected_source": "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+      "packet_hash": "41b2b18103836722bf27b07ce7dda35ee254c2ef9437dcf57439cae442e3a722",
+      "query": "specimen00000 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013192080077715218,
+      "expected_source": "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+      "packet_hash": "c895d59eb2ed2eee3d4fa92bd7893dd75a7fb00bf072f06039289ece4f89275d",
+      "query": "specimen00001 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001318165974225849,
+      "expected_source": "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+      "packet_hash": "7a769bd8ea2d897baedb277df840bc5df1e1d8bee766fd2fb9e25c1bc63082b5",
+      "query": "specimen00002 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013284580199979246,
+      "expected_source": "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+      "packet_hash": "34f1b250e973deabad7c61794bd0cd4f3872b0953bf84b343f1a2c69d7013ab3",
+      "query": "specimen00003 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013252079952508211,
+      "expected_source": "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+      "packet_hash": "43fb267013aa5b09d20de9a6821a46bb52f6492c02402eb2f88821a75e030c88",
+      "query": "specimen00004 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013354999828152359,
+      "expected_source": "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+      "packet_hash": "3972099e83445fe85dcc060575eea3da8c09f4e85ca26a3bf281af1fb98c3f5a",
+      "query": "specimen00005 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013353750109672546,
+      "expected_source": "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+      "packet_hash": "fea374ee3c8a157a95129d9d769951e10cdef81c74a6955a0bf8eb310a703c72",
+      "query": "specimen00006 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013188750017434359,
+      "expected_source": "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+      "packet_hash": "f2e657d4c806c637369b2e24eaa2d185a31748673555dc91f6427d5cfaa4c6bb",
+      "query": "specimen00007 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013789169606752694,
+      "expected_source": "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+      "packet_hash": "ca590c06c16c98dc75c1bbc2d87ee79473f4798ff7c19828e23bf678d0f4c976",
+      "query": "specimen00008 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013281669816933572,
+      "expected_source": "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+      "packet_hash": "ba601467d9870b6ae036ecab8cd07a516b47cb3ef4f74e135617295f22bedf38",
+      "query": "specimen00009 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001318291004281491,
+      "expected_source": "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+      "packet_hash": "9031dffecf6d28fc22f8090b56ff922994b20fdcb47dba054bd01507d0d4f804",
+      "query": "specimen00010 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013871249975636601,
+      "expected_source": "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+      "packet_hash": "6dee728442c240a1e8cd72ab791883972838bad01a771bfb3c9f72721382e07c",
+      "query": "specimen00011 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0014438750222325325,
+      "expected_source": "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+      "packet_hash": "73fa8aeb0b5be3f24b61658ac02e8d128853b115465571cd042e2d5f1092bec1",
+      "query": "specimen00012 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013196660438552499,
+      "expected_source": "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+      "packet_hash": "963c867b09d53ffafb6c088f45a5ba487629365476064f18baa81d155a6d4220",
+      "query": "specimen00013 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013524169917218387,
+      "expected_source": "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+      "packet_hash": "48ef702e586e8eb2003aee236f953e3f240d61ae429b59a9878abe7d4e5744f9",
+      "query": "specimen00014 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001335583976469934,
+      "expected_source": "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+      "packet_hash": "fd074960ac2aec933bb9f4a88af0886ee7fd7fea5879c02f561551a82e79a2df",
+      "query": "specimen00015 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013432090054266155,
+      "expected_source": "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+      "packet_hash": "41b2b18103836722bf27b07ce7dda35ee254c2ef9437dcf57439cae442e3a722",
+      "query": "specimen00000 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001413875026628375,
+      "expected_source": "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+      "packet_hash": "c895d59eb2ed2eee3d4fa92bd7893dd75a7fb00bf072f06039289ece4f89275d",
+      "query": "specimen00001 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013190419995225966,
+      "expected_source": "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+      "packet_hash": "7a769bd8ea2d897baedb277df840bc5df1e1d8bee766fd2fb9e25c1bc63082b5",
+      "query": "specimen00002 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013151249731890857,
+      "expected_source": "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+      "packet_hash": "34f1b250e973deabad7c61794bd0cd4f3872b0953bf84b343f1a2c69d7013ab3",
+      "query": "specimen00003 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013242919812910259,
+      "expected_source": "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+      "packet_hash": "43fb267013aa5b09d20de9a6821a46bb52f6492c02402eb2f88821a75e030c88",
+      "query": "specimen00004 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013335419935174286,
+      "expected_source": "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+      "packet_hash": "3972099e83445fe85dcc060575eea3da8c09f4e85ca26a3bf281af1fb98c3f5a",
+      "query": "specimen00005 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013445840450003743,
+      "expected_source": "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+      "packet_hash": "fea374ee3c8a157a95129d9d769951e10cdef81c74a6955a0bf8eb310a703c72",
+      "query": "specimen00006 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af",
+        "lib-src-08bc17d9b3e25ba8b569716453112e37f482e20bea9c25223aa466d43ddbb851"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001341042050626129,
+      "expected_source": "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+      "packet_hash": "f2e657d4c806c637369b2e24eaa2d185a31748673555dc91f6427d5cfaa4c6bb",
+      "query": "specimen00007 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013730830396525562,
+      "expected_source": "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+      "packet_hash": "ca590c06c16c98dc75c1bbc2d87ee79473f4798ff7c19828e23bf678d0f4c976",
+      "query": "specimen00008 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001340624992735684,
+      "expected_source": "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+      "packet_hash": "ba601467d9870b6ae036ecab8cd07a516b47cb3ef4f74e135617295f22bedf38",
+      "query": "specimen00009 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013715829700231552,
+      "expected_source": "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+      "packet_hash": "9031dffecf6d28fc22f8090b56ff922994b20fdcb47dba054bd01507d0d4f804",
+      "query": "specimen00010 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013270420022308826,
+      "expected_source": "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+      "packet_hash": "6dee728442c240a1e8cd72ab791883972838bad01a771bfb3c9f72721382e07c",
+      "query": "specimen00011 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013161670067347586,
+      "expected_source": "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+      "packet_hash": "73fa8aeb0b5be3f24b61658ac02e8d128853b115465571cd042e2d5f1092bec1",
+      "query": "specimen00012 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013216250226832926,
+      "expected_source": "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+      "packet_hash": "963c867b09d53ffafb6c088f45a5ba487629365476064f18baa81d155a6d4220",
+      "query": "specimen00013 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.001328082988038659,
+      "expected_source": "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+      "packet_hash": "48ef702e586e8eb2003aee236f953e3f240d61ae429b59a9878abe7d4e5744f9",
+      "query": "specimen00014 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0013137499918229878,
+      "expected_source": "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+      "packet_hash": "fd074960ac2aec933bb9f4a88af0886ee7fd7fea5879c02f561551a82e79a2df",
+      "query": "specimen00015 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-05f4206110a386304de05f2b5342b0c6f54c4117577449e87afe101de67735f5",
+        "lib-src-08a57c52c58148fb18272710f637e941d0ee80cab45f870b82ffff59537c81af"
+      ],
+      "size": 128
+    },
+    {
+      "elapsed_seconds": 0.0056784169864840806,
+      "expected_source": "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+      "packet_hash": "a554a98e8392618e5846c1d39506390cbd4c9984d79dd40af83d14b8b458e427",
+      "query": "specimen00000 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005638665985316038,
+      "expected_source": "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+      "packet_hash": "021a1a1ac9b6bc0896cf36899424462d2219b8c51d5152f679814214e7e06a68",
+      "query": "specimen00001 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005638167029246688,
+      "expected_source": "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+      "packet_hash": "ac10fbf3b5b8da2dc9c32395706f7d125ddaf8a4759a467807e6902cb5aa2330",
+      "query": "specimen00002 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005535000003874302,
+      "expected_source": "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+      "packet_hash": "8b0ae25e731b8ec56d11750cee84f797d63e17253d46df9d437967522f97f4c0",
+      "query": "specimen00003 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005387625016737729,
+      "expected_source": "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+      "packet_hash": "1ad918540c997df7b8c3ed577686353041932ab8f3d166a7849961b946b25a91",
+      "query": "specimen00004 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.00546458299504593,
+      "expected_source": "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+      "packet_hash": "37b6a5b506cd3bd3a5abddb258f44967e936d70edb5c93cdf81978d181b5986f",
+      "query": "specimen00005 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005583624995779246,
+      "expected_source": "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+      "packet_hash": "e447b7860714c78d2887cedf2495c9e997613601ee7529583ec3dc3aadf0b87f",
+      "query": "specimen00006 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005454499972984195,
+      "expected_source": "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+      "packet_hash": "15670bcb08806c8b39ab7f45af0a1cbb059805e6b4a8945e753c092ddbea3353",
+      "query": "specimen00007 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005828458000905812,
+      "expected_source": "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+      "packet_hash": "4477280cdbe1c7198fb638159178f215cd0c6e36d03e45988daf64fb961dc134",
+      "query": "specimen00008 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005684375006239861,
+      "expected_source": "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+      "packet_hash": "03edd2e654057a60bdb4784ec601da1ead937c3a8ebbd4e8a7e0316c8c8c60d3",
+      "query": "specimen00009 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.0055570839904248714,
+      "expected_source": "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+      "packet_hash": "c1aebff2fe77d1eb531681b8d6efe04042a82bc42f198421b96b52b0e3bccf9e",
+      "query": "specimen00010 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005530916037969291,
+      "expected_source": "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+      "packet_hash": "2f027e06628ef65c99b5d661f722383702b5c90622cf595db6b4b04d6fb3e466",
+      "query": "specimen00011 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005410792015027255,
+      "expected_source": "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+      "packet_hash": "27652f7246d0f0129f1a5e6d5383fce7f665b28aa94806d80e9347433dea8206",
+      "query": "specimen00012 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.00982079200912267,
+      "expected_source": "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+      "packet_hash": "56026a99faca16a57f45e66a249c13860a4d80cf591db9dd6d8f7673e7bae983",
+      "query": "specimen00013 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005372291023377329,
+      "expected_source": "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+      "packet_hash": "bca59a49987d00e3568759da48eabbff71d00070d3c3d9f40038962b79392c09",
+      "query": "specimen00014 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005526708031538874,
+      "expected_source": "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+      "packet_hash": "5bde48f2c2616304deabfbe0ae5874f3b0bf957bd85883f2f441d9f385454380",
+      "query": "specimen00015 calibration",
+      "rank": 1,
+      "repeat": 0,
+      "returned_sources": [
+        "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005530875001568347,
+      "expected_source": "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+      "packet_hash": "a554a98e8392618e5846c1d39506390cbd4c9984d79dd40af83d14b8b458e427",
+      "query": "specimen00000 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005512834002729505,
+      "expected_source": "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+      "packet_hash": "021a1a1ac9b6bc0896cf36899424462d2219b8c51d5152f679814214e7e06a68",
+      "query": "specimen00001 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.00558833300601691,
+      "expected_source": "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+      "packet_hash": "ac10fbf3b5b8da2dc9c32395706f7d125ddaf8a4759a467807e6902cb5aa2330",
+      "query": "specimen00002 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005516291013918817,
+      "expected_source": "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+      "packet_hash": "8b0ae25e731b8ec56d11750cee84f797d63e17253d46df9d437967522f97f4c0",
+      "query": "specimen00003 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005586874962318689,
+      "expected_source": "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+      "packet_hash": "1ad918540c997df7b8c3ed577686353041932ab8f3d166a7849961b946b25a91",
+      "query": "specimen00004 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005411875026766211,
+      "expected_source": "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+      "packet_hash": "37b6a5b506cd3bd3a5abddb258f44967e936d70edb5c93cdf81978d181b5986f",
+      "query": "specimen00005 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.00553712499095127,
+      "expected_source": "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+      "packet_hash": "e447b7860714c78d2887cedf2495c9e997613601ee7529583ec3dc3aadf0b87f",
+      "query": "specimen00006 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005473375029396266,
+      "expected_source": "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+      "packet_hash": "15670bcb08806c8b39ab7f45af0a1cbb059805e6b4a8945e753c092ddbea3353",
+      "query": "specimen00007 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005590040993411094,
+      "expected_source": "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+      "packet_hash": "4477280cdbe1c7198fb638159178f215cd0c6e36d03e45988daf64fb961dc134",
+      "query": "specimen00008 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005542667000554502,
+      "expected_source": "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+      "packet_hash": "03edd2e654057a60bdb4784ec601da1ead937c3a8ebbd4e8a7e0316c8c8c60d3",
+      "query": "specimen00009 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005602125020232052,
+      "expected_source": "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+      "packet_hash": "c1aebff2fe77d1eb531681b8d6efe04042a82bc42f198421b96b52b0e3bccf9e",
+      "query": "specimen00010 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005580040975473821,
+      "expected_source": "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+      "packet_hash": "2f027e06628ef65c99b5d661f722383702b5c90622cf595db6b4b04d6fb3e466",
+      "query": "specimen00011 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005377208988647908,
+      "expected_source": "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+      "packet_hash": "27652f7246d0f0129f1a5e6d5383fce7f665b28aa94806d80e9347433dea8206",
+      "query": "specimen00012 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005568874999880791,
+      "expected_source": "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+      "packet_hash": "56026a99faca16a57f45e66a249c13860a4d80cf591db9dd6d8f7673e7bae983",
+      "query": "specimen00013 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005407750024460256,
+      "expected_source": "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+      "packet_hash": "bca59a49987d00e3568759da48eabbff71d00070d3c3d9f40038962b79392c09",
+      "query": "specimen00014 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005485041998326778,
+      "expected_source": "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+      "packet_hash": "5bde48f2c2616304deabfbe0ae5874f3b0bf957bd85883f2f441d9f385454380",
+      "query": "specimen00015 calibration",
+      "rank": 1,
+      "repeat": 1,
+      "returned_sources": [
+        "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005498541984707117,
+      "expected_source": "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+      "packet_hash": "a554a98e8392618e5846c1d39506390cbd4c9984d79dd40af83d14b8b458e427",
+      "query": "specimen00000 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005596332950517535,
+      "expected_source": "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+      "packet_hash": "021a1a1ac9b6bc0896cf36899424462d2219b8c51d5152f679814214e7e06a68",
+      "query": "specimen00001 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.006178500014357269,
+      "expected_source": "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+      "packet_hash": "ac10fbf3b5b8da2dc9c32395706f7d125ddaf8a4759a467807e6902cb5aa2330",
+      "query": "specimen00002 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005549374967813492,
+      "expected_source": "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+      "packet_hash": "8b0ae25e731b8ec56d11750cee84f797d63e17253d46df9d437967522f97f4c0",
+      "query": "specimen00003 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005416792002506554,
+      "expected_source": "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+      "packet_hash": "1ad918540c997df7b8c3ed577686353041932ab8f3d166a7849961b946b25a91",
+      "query": "specimen00004 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005500749975908548,
+      "expected_source": "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+      "packet_hash": "37b6a5b506cd3bd3a5abddb258f44967e936d70edb5c93cdf81978d181b5986f",
+      "query": "specimen00005 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005385334021411836,
+      "expected_source": "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+      "packet_hash": "e447b7860714c78d2887cedf2495c9e997613601ee7529583ec3dc3aadf0b87f",
+      "query": "specimen00006 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005599583964794874,
+      "expected_source": "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+      "packet_hash": "15670bcb08806c8b39ab7f45af0a1cbb059805e6b4a8945e753c092ddbea3353",
+      "query": "specimen00007 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005580207973252982,
+      "expected_source": "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+      "packet_hash": "4477280cdbe1c7198fb638159178f215cd0c6e36d03e45988daf64fb961dc134",
+      "query": "specimen00008 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.0057356670149602,
+      "expected_source": "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+      "packet_hash": "03edd2e654057a60bdb4784ec601da1ead937c3a8ebbd4e8a7e0316c8c8c60d3",
+      "query": "specimen00009 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005682874994818121,
+      "expected_source": "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+      "packet_hash": "c1aebff2fe77d1eb531681b8d6efe04042a82bc42f198421b96b52b0e3bccf9e",
+      "query": "specimen00010 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005621167016215622,
+      "expected_source": "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+      "packet_hash": "2f027e06628ef65c99b5d661f722383702b5c90622cf595db6b4b04d6fb3e466",
+      "query": "specimen00011 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005515333032235503,
+      "expected_source": "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+      "packet_hash": "27652f7246d0f0129f1a5e6d5383fce7f665b28aa94806d80e9347433dea8206",
+      "query": "specimen00012 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005413209029939026,
+      "expected_source": "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+      "packet_hash": "56026a99faca16a57f45e66a249c13860a4d80cf591db9dd6d8f7673e7bae983",
+      "query": "specimen00013 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005409042001701891,
+      "expected_source": "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+      "packet_hash": "bca59a49987d00e3568759da48eabbff71d00070d3c3d9f40038962b79392c09",
+      "query": "specimen00014 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005569333967287093,
+      "expected_source": "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+      "packet_hash": "5bde48f2c2616304deabfbe0ae5874f3b0bf957bd85883f2f441d9f385454380",
+      "query": "specimen00015 calibration",
+      "rank": 1,
+      "repeat": 2,
+      "returned_sources": [
+        "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.0055534589919261634,
+      "expected_source": "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+      "packet_hash": "a554a98e8392618e5846c1d39506390cbd4c9984d79dd40af83d14b8b458e427",
+      "query": "specimen00000 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005678666988387704,
+      "expected_source": "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+      "packet_hash": "021a1a1ac9b6bc0896cf36899424462d2219b8c51d5152f679814214e7e06a68",
+      "query": "specimen00001 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.0056339160073548555,
+      "expected_source": "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+      "packet_hash": "ac10fbf3b5b8da2dc9c32395706f7d125ddaf8a4759a467807e6902cb5aa2330",
+      "query": "specimen00002 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005618833005428314,
+      "expected_source": "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+      "packet_hash": "8b0ae25e731b8ec56d11750cee84f797d63e17253d46df9d437967522f97f4c0",
+      "query": "specimen00003 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005466834001708776,
+      "expected_source": "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+      "packet_hash": "1ad918540c997df7b8c3ed577686353041932ab8f3d166a7849961b946b25a91",
+      "query": "specimen00004 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.00552966701798141,
+      "expected_source": "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+      "packet_hash": "37b6a5b506cd3bd3a5abddb258f44967e936d70edb5c93cdf81978d181b5986f",
+      "query": "specimen00005 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005485249974299222,
+      "expected_source": "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+      "packet_hash": "e447b7860714c78d2887cedf2495c9e997613601ee7529583ec3dc3aadf0b87f",
+      "query": "specimen00006 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005541916994843632,
+      "expected_source": "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+      "packet_hash": "15670bcb08806c8b39ab7f45af0a1cbb059805e6b4a8945e753c092ddbea3353",
+      "query": "specimen00007 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005489541974384338,
+      "expected_source": "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+      "packet_hash": "4477280cdbe1c7198fb638159178f215cd0c6e36d03e45988daf64fb961dc134",
+      "query": "specimen00008 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005642083007842302,
+      "expected_source": "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+      "packet_hash": "03edd2e654057a60bdb4784ec601da1ead937c3a8ebbd4e8a7e0316c8c8c60d3",
+      "query": "specimen00009 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005449082993436605,
+      "expected_source": "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+      "packet_hash": "c1aebff2fe77d1eb531681b8d6efe04042a82bc42f198421b96b52b0e3bccf9e",
+      "query": "specimen00010 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005426208022981882,
+      "expected_source": "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+      "packet_hash": "2f027e06628ef65c99b5d661f722383702b5c90622cf595db6b4b04d6fb3e466",
+      "query": "specimen00011 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005384624993894249,
+      "expected_source": "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+      "packet_hash": "27652f7246d0f0129f1a5e6d5383fce7f665b28aa94806d80e9347433dea8206",
+      "query": "specimen00012 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.0055220419890247285,
+      "expected_source": "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+      "packet_hash": "56026a99faca16a57f45e66a249c13860a4d80cf591db9dd6d8f7673e7bae983",
+      "query": "specimen00013 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.00554908299818635,
+      "expected_source": "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+      "packet_hash": "bca59a49987d00e3568759da48eabbff71d00070d3c3d9f40038962b79392c09",
+      "query": "specimen00014 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005471291020512581,
+      "expected_source": "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+      "packet_hash": "5bde48f2c2616304deabfbe0ae5874f3b0bf957bd85883f2f441d9f385454380",
+      "query": "specimen00015 calibration",
+      "rank": 1,
+      "repeat": 3,
+      "returned_sources": [
+        "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.0056595419882796705,
+      "expected_source": "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+      "packet_hash": "a554a98e8392618e5846c1d39506390cbd4c9984d79dd40af83d14b8b458e427",
+      "query": "specimen00000 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-dcc695426498398b242a786aa508a8b0dac3fb799a5ea5f5c6345490c9f14193",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005409249977674335,
+      "expected_source": "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+      "packet_hash": "021a1a1ac9b6bc0896cf36899424462d2219b8c51d5152f679814214e7e06a68",
+      "query": "specimen00001 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-9e6e95f43de40192762cd5c818683c14fb4734ee95e295c7b43bb30c5441d1f8",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005372250045184046,
+      "expected_source": "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+      "packet_hash": "ac10fbf3b5b8da2dc9c32395706f7d125ddaf8a4759a467807e6902cb5aa2330",
+      "query": "specimen00002 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-9621b942e5e6f5479ab292d46382092f2dd59514193e944ee76f33930ea22ead",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005484583030920476,
+      "expected_source": "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+      "packet_hash": "8b0ae25e731b8ec56d11750cee84f797d63e17253d46df9d437967522f97f4c0",
+      "query": "specimen00003 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-fa7bd5d2c45f1dc4f1c390be4035ef954661e99ea992ef0ba323b4f10a938a0e",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005490084004122764,
+      "expected_source": "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+      "packet_hash": "1ad918540c997df7b8c3ed577686353041932ab8f3d166a7849961b946b25a91",
+      "query": "specimen00004 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-8aa70733917c2a4c79b798552f297395a73b1cbddc6f7bd889ea1f047c0860dc",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005512916948646307,
+      "expected_source": "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+      "packet_hash": "37b6a5b506cd3bd3a5abddb258f44967e936d70edb5c93cdf81978d181b5986f",
+      "query": "specimen00005 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-f099ab5ce2ac8ee6ab2346cc6a54dc7f419b1ca4464ff28f76c9057b8ef0c5ad",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005617709015496075,
+      "expected_source": "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+      "packet_hash": "e447b7860714c78d2887cedf2495c9e997613601ee7529583ec3dc3aadf0b87f",
+      "query": "specimen00006 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-0588bca314d572569b313939c8c0955ce748964619da937d5351955c2a18b03f",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005642041040118784,
+      "expected_source": "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+      "packet_hash": "15670bcb08806c8b39ab7f45af0a1cbb059805e6b4a8945e753c092ddbea3353",
+      "query": "specimen00007 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-df670bf6cbad1118b886fca41f872963dec1c386b959e8dd67111e4d724e50c1",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.00561808398924768,
+      "expected_source": "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+      "packet_hash": "4477280cdbe1c7198fb638159178f215cd0c6e36d03e45988daf64fb961dc134",
+      "query": "specimen00008 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-1f47d9491fbc6186ce642458352d8d60b4004d326038686393db76a0d7e5c0a5",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005493750039022416,
+      "expected_source": "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+      "packet_hash": "03edd2e654057a60bdb4784ec601da1ead937c3a8ebbd4e8a7e0316c8c8c60d3",
+      "query": "specimen00009 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-1c1b3b4f2cb1d80574261dc6cac8ecdab713f3c85b3b0dd6e8b80c38f0fa2756",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.00535895797656849,
+      "expected_source": "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+      "packet_hash": "c1aebff2fe77d1eb531681b8d6efe04042a82bc42f198421b96b52b0e3bccf9e",
+      "query": "specimen00010 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-eea4154c82ae98d830cdd66722ee47d4436f4559be4f6bc18321c7d61b8a910c",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005486332986038178,
+      "expected_source": "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+      "packet_hash": "2f027e06628ef65c99b5d661f722383702b5c90622cf595db6b4b04d6fb3e466",
+      "query": "specimen00011 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-454df41db4463ea71086205d8c9d4179f6a6b56a88f7754f2b598b748e3b682e",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.00542554201092571,
+      "expected_source": "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+      "packet_hash": "27652f7246d0f0129f1a5e6d5383fce7f665b28aa94806d80e9347433dea8206",
+      "query": "specimen00012 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-d20e9a525f67fdad701fc4892bc79a43052b4059cd473eebb9e4d60f0638d459",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005743417015764862,
+      "expected_source": "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+      "packet_hash": "56026a99faca16a57f45e66a249c13860a4d80cf591db9dd6d8f7673e7bae983",
+      "query": "specimen00013 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-6426b2288496996a95631c5952e9786d540f33bd1d60a82ffa262922d5928a56",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005639208015054464,
+      "expected_source": "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+      "packet_hash": "bca59a49987d00e3568759da48eabbff71d00070d3c3d9f40038962b79392c09",
+      "query": "specimen00014 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-ec8359a04c6ebd4a0a608c8f118c6cda8d4a691d4520d2b9b032bf39d4b6a620",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    },
+    {
+      "elapsed_seconds": 0.005627874983474612,
+      "expected_source": "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+      "packet_hash": "5bde48f2c2616304deabfbe0ae5874f3b0bf957bd85883f2f441d9f385454380",
+      "query": "specimen00015 calibration",
+      "rank": 1,
+      "repeat": 4,
+      "returned_sources": [
+        "lib-src-5ed0107fa6e0d5f183054f04ab093c526e53a15423d3dd23283856f1f152bfb6",
+        "lib-src-01c4dfa247bd9786871adc1c91e3b97d995eac49bbfb323ab095bcefa3dc4ca4",
+        "lib-src-01d6f4685d89f48be5f0567c2b59a0dfd564ee6df961942b25ab9b53f110cf61",
+        "lib-src-01e8ff760050773985a415be82bbd150c97cd1d90d140a920966372f7d55a75e",
+        "lib-src-0234f692aa356bfcb3b70aa0c6662cc58c3e41ff17c8e9c17753367d8c56a7eb"
+      ],
+      "size": 512
+    }
+  ],
+  "results": [
+    {
+      "audit_seconds": 0.005454249971080571,
+      "chunks": 128,
+      "database_bytes": 1286144,
+      "fixture_hash": "bfeee5a8b3a3a6951a0b068ffc2314e6b7f32508c5420ad02508256b3eeef4fc",
+      "ingest_seconds": 0.01346458395710215,
+      "measured_queries": 80,
+      "median_search_seconds": 0.0004356045101303607,
+      "mrr_at_5": 1.0,
+      "negative_control_hits": 0,
+      "original_bytes": 55520,
+      "p95_search_seconds": 0.0004594579804688692,
+      "recall_at_5": 1,
+      "snapshot": {
+        "library_id": "8bec2bacc7f74039b6d42d03555ad133",
+        "sequence": 32,
+        "sha256": "a72ae627d93bb219ce164ab237e0dfca3dc172522580b3a73519b16e93131fed"
+      },
+      "versions": 32
+    },
+    {
+      "audit_seconds": 0.031162999977823347,
+      "chunks": 512,
+      "database_bytes": 5001216,
+      "fixture_hash": "5c184dec4e1edab35bc54ec2a132ae87ed1dbb8b1dcdd0514a542aa9c7617c4f",
+      "ingest_seconds": 0.11326770804589614,
+      "measured_queries": 80,
+      "median_search_seconds": 0.0013507914845831692,
+      "mrr_at_5": 1.0,
+      "negative_control_hits": 0,
+      "original_bytes": 222080,
+      "p95_search_seconds": 0.001583250006660819,
+      "recall_at_5": 1,
+      "snapshot": {
+        "library_id": "b7abe604c6114737a2efc72df31f0e18",
+        "sequence": 128,
+        "sha256": "385dc8358d90e681aa04a5d42b2c1bbc6af03713efa9273ce8aa5fec7c0e6e62"
+      },
+      "versions": 128
+    },
+    {
+      "audit_seconds": 0.12238025001715869,
+      "chunks": 2048,
+      "database_bytes": 19910656,
+      "fixture_hash": "7ad6e6104c38a17ba97d80d498dc6077fb6e43a4bffc604ae90688a5f5c75a86",
+      "ingest_seconds": 1.5848621659679338,
+      "measured_queries": 80,
+      "median_search_seconds": 0.0055329580209217966,
+      "mrr_at_5": 1.0,
+      "negative_control_hits": 0,
+      "original_bytes": 888320,
+      "p95_search_seconds": 0.0057356670149602,
+      "recall_at_5": 1,
+      "snapshot": {
+        "library_id": "56d7d31b15b649d8b1c69079f4b1589e",
+        "sequence": 512,
+        "sha256": "f48e45dcc5888268aea4504666d3d9e2dce1ac195d0cc2a68ccefd48db87118a"
+      },
+      "versions": 512
+    }
+  ],
+  "schema": "aim-library-benchmark-v1",
+  "scope": "authored exact-keyword fixtures on one local host; not semantic retrieval quality or cluster performance",
+  "sqlite_version": "3.53.1",
+  "timing": "one warmup per query; search includes ledger validation and returned-source checks; packet replay excluded"
+}

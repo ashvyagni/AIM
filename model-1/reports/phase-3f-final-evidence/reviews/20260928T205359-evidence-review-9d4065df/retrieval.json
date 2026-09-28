@@ -1,0 +1,43 @@
+[
+  {
+    "hits": [
+      {
+        "chunk_id": "lib-chunk-009bc2a98ee5ae3ee7fb26ca18e333d7203a5f5743fc17eaa37352df30a43bd5",
+        "end": 94,
+        "matched_terms": [
+          "calibration",
+          "measurements"
+        ],
+        "metadata": {
+          "bytes": 94,
+          "characters": 94,
+          "chunk_size": 1024,
+          "overlap": 128,
+          "parser": "unchanged-utf8-v1",
+          "rights": "AIM fixture",
+          "sha256": "a97704c519be472e67d2ea978921a4060230c2980a8714a5a952e0f98ff67754",
+          "title": "Calibration note",
+          "uri": "fixture:study",
+          "version": "1"
+        },
+        "quote": "An authored calibration note reports uncertain measurements. No scientific finding is claimed.",
+        "quote_hash": "a97704c519be472e67d2ea978921a4060230c2980a8714a5a952e0f98ff67754",
+        "score": 2,
+        "source_id": "lib-src-8463614cd41849dd8de4134afc39b058ba8d808330bd6a35ce9bb0eb33491e81",
+        "start": 0
+      }
+    ],
+    "limit": 8,
+    "packet_hash": "0c89f0d1794e48253b7c88b5d0f2375bcaaa81728d0e9fd8e31d5a39d4dfe1fd",
+    "per_source": 2,
+    "query": "calibration measurements",
+    "ranker": "unicode-token-coverage-v1",
+    "schema": "aim-retrieval-packet-v1",
+    "scope": "lexical matches in declared local sources; no entailment or factuality judgment",
+    "snapshot": {
+      "library_id": "05a873aae42149fdaea57febabfb15bb",
+      "sequence": 1,
+      "sha256": "d18545bfc159b6f4e19ff6a847f05c50c27503ceedf3eae552f0915f3d68158d"
+    }
+  }
+]

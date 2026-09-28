@@ -1,0 +1,229 @@
+{
+  "abstentions": [],
+  "excerpts": [
+    {
+      "chunk_id": "lib-chunk-26c07443faba46270e7e7ee03d215cd10a8e2464515f4bdd731762c9e4b07c9d",
+      "decision": {
+        "action": "CITE",
+        "calibration_status": "NOT_CALIBRATED",
+        "model_id": "reference-provenance-judge-v1",
+        "probability": null,
+        "target": "exact-source-attribution"
+      },
+      "end": 12672,
+      "evidence_id": "ev-320f9d9b223567613f938de7",
+      "memory_source_id": "src-5130e526d3d3567d286c0c13",
+      "source_id": "lib-src-490dcc1789716918e289537e34b05ecebe53eab1cd208b34fa10a4ca757ed8cc",
+      "start": 11648,
+      "status": "UNVERIFIED",
+      "text": " Cross-device and cross-library-version bitwise continuation is not promised.\n\nNonfinite loss/gradient, incompatible checkpoint, invalid data, excessive allocation or illegal resume fails with retained traceback and configuration. Unknown research outcomes are not discarded or turned into incorrect numeric labels.\n\n## Integration policy and remaining experiments\n\nAt runtime the components exchange structured state and evidence; training rewards are not added together. The Controller applies verification constraints after the Judge's forecast. This separation makes SFT, preference learning, verifiable outcomes and calibration independently measurable.\n\nBefore proposing joint training, pre-register comparisons: SFT-only; SFT+DPO; SFT+RLVR; SFT+DPO+RLVR; each with rule Judge versus separately calibrated Judge. Evaluate budget, abstention, domain shift, fabricated citations and verifier exploitation. Any future combined scalar objective or constrained optimization must state units, coefficients, constraint thresh",
+      "title": "Model-1 training specification",
+      "uri": "aim:docs/TRAINING.md",
+      "verification": {
+        "evidence_id": "ev-320f9d9b223567613f938de7",
+        "outcome": "PASS",
+        "proposal_hash": "5661f748ce32dc6602e925fc892e1f00b2089ef6a0a0c3e7c2ed90dc80459bfa",
+        "scope": "exact excerpt and source bytes; no entailment, correctness or independence proof",
+        "verifier": "exact-source-attribution",
+        "version": "1"
+      },
+      "version": "sha256:2e3c8d3b769f93a79ad185bb48d63247be418aaa981fa69aee5c4e83546c7bcc"
+    },
+    {
+      "chunk_id": "lib-chunk-ba4bad7965f04b94caeff70f180a946f3f224a64181b33544ed6094d29738b6f",
+      "decision": {
+        "action": "CITE",
+        "calibration_status": "NOT_CALIBRATED",
+        "model_id": "reference-provenance-judge-v1",
+        "probability": null,
+        "target": "exact-source-attribution"
+      },
+      "end": 13568,
+      "evidence_id": "ev-171d456f371ab85be0a71137",
+      "memory_source_id": "src-5130e526d3d3567d286c0c13",
+      "source_id": "lib-src-490dcc1789716918e289537e34b05ecebe53eab1cd208b34fa10a4ca757ed8cc",
+      "start": 12544,
+      "status": "UNVERIFIED",
+      "text": "exploitation. Any future combined scalar objective or constrained optimization must state units, coefficients, constraint thresholds, failure semantics and reference distributions, and compare against those separated baselines.\n\n## Symbolic stages\n\n`task: symbolic` selects separately versioned binomial data for the SFT, preference and RLVR trainer. Symbolic and legacy checkpoints cannot be interchanged silently. The separate `symbolic-judge-train` entry point fits a symbolic checker-PASS forecast, with its own checkpoint kind, features, calibration split and tested exact resume. See [objectives, data and commands](SYMBOLIC.md).\n\nProgrammatic preferences do not constitute collected human feedback. Symbolic UNKNOWN is a zero reward for the precisely defined checker-PASS target, not a false theorem label. The [first build](../reports/phase-2c-implementation.md) saved all four models but achieved zero verified free-generation test answers; finite-candidate RLVR scores were not a reliable indicator of generation q",
+      "title": "Model-1 training specification",
+      "uri": "aim:docs/TRAINING.md",
+      "verification": {
+        "evidence_id": "ev-171d456f371ab85be0a71137",
+        "outcome": "PASS",
+        "proposal_hash": "2df48b2db559bce4e3aadcce7c8374d448129c106555959ba889965df178cd24",
+        "scope": "exact excerpt and source bytes; no entailment, correctness or independence proof",
+        "verifier": "exact-source-attribution",
+        "version": "1"
+      },
+      "version": "sha256:2e3c8d3b769f93a79ad185bb48d63247be418aaa981fa69aee5c4e83546c7bcc"
+    },
+    {
+      "chunk_id": "lib-chunk-c236a7bf4a98877d074144ff705fd546431aa3fe21920420293ef1ec478ecff0",
+      "decision": {
+        "action": "CITE",
+        "calibration_status": "NOT_CALIBRATED",
+        "model_id": "reference-provenance-judge-v1",
+        "probability": null,
+        "target": "exact-source-attribution"
+      },
+      "end": 7296,
+      "evidence_id": "ev-38eaaf67ae8317e3dbb9a57f",
+      "memory_source_id": "src-87f3f624ff75048325a37093",
+      "source_id": "lib-src-68b806a108ce1d20d297100c6af1804b8d196a44819a7f5e5376550b50401cca",
+      "start": 6272,
+      "status": "UNVERIFIED",
+      "text": "kpoints\n\nThe native random-init causal decoder uses CPU FP32 and AdamW. With target mask m, the objective is:\n\n`L = - sum_{b,t} m[b,t] log p_theta(y[b,t] | x[b,0:t]) / sum_{b,t} m[b,t]`.\n\nThis is ordinary next-token pretraining; it supplies no RLHF/RLVR/Judge reward. Nonfinite loss or gradients fail the run. Training is bounded to 1,000 steps, batch at most 16, context at most 512 and 2M parameters. The smoke config is substantially smaller. These are harness limits, not scientific scaling recommendations.\n\nPeriodic and final checkpoints record weights, optimizer, Torch RNG, global step, scored-token count, complete stream cursor, corpus identity, tokenizer specification, stable configuration and parent checksum. Resume may increase the total step target but rejects other configuration, data or tokenizer changes. Existing checkpoints are never overwritten. Publication uses an exclusive weight file followed by its hash sidecar; a partial file or missing sidecar cannot load. Prior completed checkpoints remain u",
+      "title": "Phase 3A — From-scratch corpus and pretraining infrastructure",
+      "uri": "aim:docs/PRETRAINING.md",
+      "verification": {
+        "evidence_id": "ev-38eaaf67ae8317e3dbb9a57f",
+        "outcome": "PASS",
+        "proposal_hash": "c1439b80311819124528cd117fa58d3674bac7f1e7319d6674bbe1bcf86a4a3d",
+        "scope": "exact excerpt and source bytes; no entailment, correctness or independence proof",
+        "verifier": "exact-source-attribution",
+        "version": "1"
+      },
+      "version": "sha256:0f46c424e763e55d05ab8dae57f1c24c5e323f3d221ea73c6fd0553e6546e052"
+    },
+    {
+      "chunk_id": "lib-chunk-123f3fb6ee1cb601042610b9c208227ac1ff12df0058c1b7cd26f80b99e23461",
+      "decision": {
+        "action": "CITE",
+        "calibration_status": "NOT_CALIBRATED",
+        "model_id": "reference-provenance-judge-v1",
+        "probability": null,
+        "target": "exact-source-attribution"
+      },
+      "end": 1024,
+      "evidence_id": "ev-b24eea21c038aba29a301754",
+      "memory_source_id": "src-a46ab56e445cac88df5c54a2",
+      "source_id": "lib-src-d4065518beea83b70aeda75874a6f0444eff1bf840483244859af2c52e2f69af",
+      "start": 0,
+      "status": "UNVERIFIED",
+      "text": "# Separate Judge forecasts and decisions under shift\n\nPhase 2B implements the [registered protocol](experiments/phase-2b-protocol.md).\nIt leaves the default Controller/Judge, earlier checkpoints and canonical suites\nunchanged. The opt-in Judge is a feature MLP trained from random initialization,\nnot a language Judge or a new Researcher. No SFT/preference/RLVR rewards are mixed.\n\n## Reproduce\n\nFrom `model-1/`, using the recorded environment:\n\n```sh\n.venv/bin/python -m aim.judge_shift_reproduce\n```\n\nThe driver runs the full unit suite, rejects skips/failures, creates fresh grouped\nworlds, trains twelve small Judges, freezes checkpoint hashes and temperatures,\nthen loads holdout and writes every forecast. Runs are retained with source\nsnapshots, config/environment/commit, dataset hashes, optimizer/RNG states and\nexplicit completion/failure. Completion does not imply an evidence gate passed.\nThe fixed new-study trainer does not yet support checkpoint resume.\n\nRead root `summary.json`, `tests.log`, `dataset-stage.",
+      "title": "Separate Judge forecasts and decisions under shift",
+      "uri": "aim:docs/JUDGE_SHIFT.md",
+      "verification": {
+        "evidence_id": "ev-b24eea21c038aba29a301754",
+        "outcome": "PASS",
+        "proposal_hash": "b2528f157652bd15493b69f4b33a154cad79b777e95bdabb5499f7ae8475b740",
+        "scope": "exact excerpt and source bytes; no entailment, correctness or independence proof",
+        "verifier": "exact-source-attribution",
+        "version": "1"
+      },
+      "version": "sha256:ff0670e4897d16fc22a7c724a4098b2fa977961854943e1730bb2192e4fd3124"
+    },
+    {
+      "chunk_id": "lib-chunk-91716d4469b3ce21df347d33cf4a0d5ac8ed1d948fb3e40080b338844fb6fd99",
+      "decision": {
+        "action": "CITE",
+        "calibration_status": "NOT_CALIBRATED",
+        "model_id": "reference-provenance-judge-v1",
+        "probability": null,
+        "target": "exact-source-attribution"
+      },
+      "end": 5504,
+      "evidence_id": "ev-506d75f021e31f58a9801075",
+      "memory_source_id": "src-a46ab56e445cac88df5c54a2",
+      "source_id": "lib-src-d4065518beea83b70aeda75874a6f0444eff1bf840483244859af2c52e2f69af",
+      "start": 4480,
+      "status": "UNVERIFIED",
+      "text": "me adapter's\nthreshold is an experimental heuristic in that shared-tool environment.\n\n## Integration\n\nThe experimental adapter implements the existing Judge interface:\n\n```python\nfrom aim.judge_shift_train import ShiftJudge\nfrom aim.controller import Controller\nfrom aim.tracking import Run\nfrom pathlib import Path\n\njudge = ShiftJudge(checkpoint_path, calibrated=True, cost=0.5)\nwith Run(Path(\"runs\"), \"shift-judge-loop\", {\"cost\": 0.5}, inputs=[checkpoint_path]) as run:\n    state = Controller(judge=judge).run(case, run)\n```\n\nUse a real checkpoint from the frozen manifest and a valid existing case. The\nlegacy `--judge` CLI loader remains specific to the older five-feature checkpoint\nformat. Unit integration executes the new adapter through the actual Controller\nwith both verification and abstention, plus conflicting evidence. Confidence\ndoes not bypass independent verifiers or promote an unmeasured claim.\n\n## Shift and interpretation\n\nThree observed points cannot distinguish q from q+k*x*(x-1)*(x-2), or the\nregis",
+      "title": "Separate Judge forecasts and decisions under shift",
+      "uri": "aim:docs/JUDGE_SHIFT.md",
+      "verification": {
+        "evidence_id": "ev-506d75f021e31f58a9801075",
+        "outcome": "PASS",
+        "proposal_hash": "4aa4079c16b50b11e7411442da0263a619fbf6b7a553b8fe2f5297ee82f07f05",
+        "scope": "exact excerpt and source bytes; no entailment, correctness or independence proof",
+        "verifier": "exact-source-attribution",
+        "version": "1"
+      },
+      "version": "sha256:ff0670e4897d16fc22a7c724a4098b2fa977961854943e1730bb2192e4fd3124"
+    },
+    {
+      "chunk_id": "lib-chunk-624761410a4c70bae7049d5737e69b15e74f873f97d51a558e22c039d0dac4ee",
+      "decision": {
+        "action": "CITE",
+        "calibration_status": "NOT_CALIBRATED",
+        "model_id": "reference-provenance-judge-v1",
+        "probability": null,
+        "target": "exact-source-attribution"
+      },
+      "end": 1024,
+      "evidence_id": "ev-50f946d9db753037a7aa249f",
+      "memory_source_id": "src-87f3f624ff75048325a37093",
+      "source_id": "lib-src-68b806a108ce1d20d297100c6af1804b8d196a44819a7f5e5376550b50401cca",
+      "start": 0,
+      "status": "UNVERIFIED",
+      "text": "# Phase 3A — From-scratch corpus and pretraining infrastructure\n\n## What this build decides\n\nImplement local corpus intake, reversible tokenizer candidates, document-at-a-time next-token training and exact CPU continuation before a larger model run. Keep the 2M-parameter engineering allocation guard. Byte tokenization remains the compatibility baseline; the new byte-pair tokenizer is an explicitly bounded experiment. No final tokenizer, corpus mixture or parameter count is selected here.\n\nThis supports the approved native Researcher architecture. It does not replace the Controller, Judge, verifier or memory components, and does not combine their training objectives.\n\n## Corpus intake contract\n\n`aim-corpus-manifest-v1` contains a version and a document list. Each document requires:\n\n- Unique ID, relative local path, SHA-256, declared split and group.\n- Source URI and version, plus a content category: prose, code, math or Unicode.\n- Rights fields: license string, explicit Boolean `training_allowed: true`, basis",
+      "title": "Phase 3A — From-scratch corpus and pretraining infrastructure",
+      "uri": "aim:docs/PRETRAINING.md",
+      "verification": {
+        "evidence_id": "ev-50f946d9db753037a7aa249f",
+        "outcome": "PASS",
+        "proposal_hash": "7fc394f392d7843bef8e08015331008c017c818868ae9001a4cadf85b010e08e",
+        "scope": "exact excerpt and source bytes; no entailment, correctness or independence proof",
+        "verifier": "exact-source-attribution",
+        "version": "1"
+      },
+      "version": "sha256:0f46c424e763e55d05ab8dae57f1c24c5e323f3d221ea73c6fd0553e6546e052"
+    },
+    {
+      "chunk_id": "lib-chunk-134ac2191003f0d11e03f0502b27af6981b6ce60e58900274d0a1b4e50b4738a",
+      "decision": {
+        "action": "CITE",
+        "calibration_status": "NOT_CALIBRATED",
+        "model_id": "reference-provenance-judge-v1",
+        "probability": null,
+        "target": "exact-source-attribution"
+      },
+      "end": 8192,
+      "evidence_id": "ev-87842cd5d2ba1963f633e01e",
+      "memory_source_id": "src-87efc4e3e5241222808bc63c",
+      "source_id": "lib-src-ed4b2b930c4c34e24e39b4ba4e4b6210b360f615523827299d03bbabcbc0e22c",
+      "start": 7168,
+      "status": "UNVERIFIED",
+      "text": "e floor assumes weights 4N + gradients 4N + two optimizer moments 8N = 16N bytes. It excludes activations, attention buffers, allocator/workspace, reference models, runtime, data, checkpoints and OS needs. An FP32 frozen DPO/RLVR reference adds approximately 4N bytes. Therefore a 32 GB desktop's ability to hold weights does not establish the feasibility or speed of a full training stage.\n\nThe smoke training harness caps model allocation at 2M parameters. A reviewed scale-trial runner must replace that guard deliberately, with memory estimation and an explicit time/token budget; do not merely edit the integer and launch 1B.\n\nSharding or pipeline/model parallelism would be necessary for some candidates on 32 GB hosts, but introduce substantial communication and failure-recovery work. FSDP/ZeRO, CPU offload, mixed precision and MoE are controlled future experiments, not implemented capabilities. Current GQA repeats KV tensors, preserving the small model's architecture but not optimizing the CPU memory footprint ",
+      "title": "Hardware and cluster engineering protocol",
+      "uri": "aim:docs/HARDWARE_AND_CLUSTER.md",
+      "verification": {
+        "evidence_id": "ev-87842cd5d2ba1963f633e01e",
+        "outcome": "PASS",
+        "proposal_hash": "b030168f8dc9a30b0eb4bd03763fe42dddab9ac89b411a5015ebe0754c30d97d",
+        "scope": "exact excerpt and source bytes; no entailment, correctness or independence proof",
+        "verifier": "exact-source-attribution",
+        "version": "1"
+      },
+      "version": "sha256:941ac209ea90192bd70128721971e7db1355825059917acee99f588509be7771"
+    }
+  ],
+  "final_response": "# AIM local evidence review\n\n## Question\n\n```text\nRLHF preference optimization RLVR reward calibrated Judge\n```\n\nSource excerpts below are **UNVERIFIED assertions**. A PASS applies only to attribution.\n\n## Excerpt 1 — UNVERIFIED\n\n```text\n Cross-device and cross-library-version bitwise continuation is not promised.\n\nNonfinite loss/gradient, incompatible checkpoint, invalid data, excessive allocation or illegal resume fails with retained traceback and configuration. Unknown research outcomes are not discarded or turned into incorrect numeric labels.\n\n## Integration policy and remaining experiments\n\nAt runtime the components exchange structured state and evidence; training rewards are not added together. The Controller applies verification constraints after the Judge's forecast. This separation makes SFT, preference learning, verifiable outcomes and calibration independently measurable.\n\nBefore proposing joint training, pre-register comparisons: SFT-only; SFT+DPO; SFT+RLVR; SFT+DPO+RLVR; each with rule Judge versus separately calibrated Judge. Evaluate budget, abstention, domain shift, fabricated citations and verifier exploitation. Any future combined scalar objective or constrained optimization must state units, coefficients, constraint thresh\n```\n\n```text\n{\n  \"uri\": \"aim:docs/TRAINING.md\",\n  \"version\": \"sha256:2e3c8d3b769f93a79ad185bb48d63247be418aaa981fa69aee5c4e83546c7bcc\",\n  \"title\": \"Model-1 training specification\",\n  \"source_id\": \"lib-src-490dcc1789716918e289537e34b05ecebe53eab1cd208b34fa10a4ca757ed8cc\",\n  \"chunk_id\": \"lib-chunk-26c07443faba46270e7e7ee03d215cd10a8e2464515f4bdd731762c9e4b07c9d\",\n  \"start\": 11648,\n  \"end\": 12672,\n  \"evidence_id\": \"ev-320f9d9b223567613f938de7\"\n}\n```\n\nAttribution check: PASS. Character offsets refer to the unchanged original.\n\n## Excerpt 2 — UNVERIFIED\n\n```text\nexploitation. Any future combined scalar objective or constrained optimization must state units, coefficients, constraint thresholds, failure semantics and reference distributions, and compare against those separated baselines.\n\n## Symbolic stages\n\n`task: symbolic` selects separately versioned binomial data for the SFT, preference and RLVR trainer. Symbolic and legacy checkpoints cannot be interchanged silently. The separate `symbolic-judge-train` entry point fits a symbolic checker-PASS forecast, with its own checkpoint kind, features, calibration split and tested exact resume. See [objectives, data and commands](SYMBOLIC.md).\n\nProgrammatic preferences do not constitute collected human feedback. Symbolic UNKNOWN is a zero reward for the precisely defined checker-PASS target, not a false theorem label. The [first build](../reports/phase-2c-implementation.md) saved all four models but achieved zero verified free-generation test answers; finite-candidate RLVR scores were not a reliable indicator of generation q\n```\n\n```text\n{\n  \"uri\": \"aim:docs/TRAINING.md\",\n  \"version\": \"sha256:2e3c8d3b769f93a79ad185bb48d63247be418aaa981fa69aee5c4e83546c7bcc\",\n  \"title\": \"Model-1 training specification\",\n  \"source_id\": \"lib-src-490dcc1789716918e289537e34b05ecebe53eab1cd208b34fa10a4ca757ed8cc\",\n  \"chunk_id\": \"lib-chunk-ba4bad7965f04b94caeff70f180a946f3f224a64181b33544ed6094d29738b6f\",\n  \"start\": 12544,\n  \"end\": 13568,\n  \"evidence_id\": \"ev-171d456f371ab85be0a71137\"\n}\n```\n\nAttribution check: PASS. Character offsets refer to the unchanged original.\n\n## Excerpt 3 — UNVERIFIED\n\n```text\nkpoints\n\nThe native random-init causal decoder uses CPU FP32 and AdamW. With target mask m, the objective is:\n\n`L = - sum_{b,t} m[b,t] log p_theta(y[b,t] | x[b,0:t]) / sum_{b,t} m[b,t]`.\n\nThis is ordinary next-token pretraining; it supplies no RLHF/RLVR/Judge reward. Nonfinite loss or gradients fail the run. Training is bounded to 1,000 steps, batch at most 16, context at most 512 and 2M parameters. The smoke config is substantially smaller. These are harness limits, not scientific scaling recommendations.\n\nPeriodic and final checkpoints record weights, optimizer, Torch RNG, global step, scored-token count, complete stream cursor, corpus identity, tokenizer specification, stable configuration and parent checksum. Resume may increase the total step target but rejects other configuration, data or tokenizer changes. Existing checkpoints are never overwritten. Publication uses an exclusive weight file followed by its hash sidecar; a partial file or missing sidecar cannot load. Prior completed checkpoints remain u\n```\n\n```text\n{\n  \"uri\": \"aim:docs/PRETRAINING.md\",\n  \"version\": \"sha256:0f46c424e763e55d05ab8dae57f1c24c5e323f3d221ea73c6fd0553e6546e052\",\n  \"title\": \"Phase 3A — From-scratch corpus and pretraining infrastructure\",\n  \"source_id\": \"lib-src-68b806a108ce1d20d297100c6af1804b8d196a44819a7f5e5376550b50401cca\",\n  \"chunk_id\": \"lib-chunk-c236a7bf4a98877d074144ff705fd546431aa3fe21920420293ef1ec478ecff0\",\n  \"start\": 6272,\n  \"end\": 7296,\n  \"evidence_id\": \"ev-38eaaf67ae8317e3dbb9a57f\"\n}\n```\n\nAttribution check: PASS. Character offsets refer to the unchanged original.\n\n## Excerpt 4 — UNVERIFIED\n\n````text\n# Separate Judge forecasts and decisions under shift\n\nPhase 2B implements the [registered protocol](experiments/phase-2b-protocol.md).\nIt leaves the default Controller/Judge, earlier checkpoints and canonical suites\nunchanged. The opt-in Judge is a feature MLP trained from random initialization,\nnot a language Judge or a new Researcher. No SFT/preference/RLVR rewards are mixed.\n\n## Reproduce\n\nFrom `model-1/`, using the recorded environment:\n\n```sh\n.venv/bin/python -m aim.judge_shift_reproduce\n```\n\nThe driver runs the full unit suite, rejects skips/failures, creates fresh grouped\nworlds, trains twelve small Judges, freezes checkpoint hashes and temperatures,\nthen loads holdout and writes every forecast. Runs are retained with source\nsnapshots, config/environment/commit, dataset hashes, optimizer/RNG states and\nexplicit completion/failure. Completion does not imply an evidence gate passed.\nThe fixed new-study trainer does not yet support checkpoint resume.\n\nRead root `summary.json`, `tests.log`, `dataset-stage.\n````\n\n```text\n{\n  \"uri\": \"aim:docs/JUDGE_SHIFT.md\",\n  \"version\": \"sha256:ff0670e4897d16fc22a7c724a4098b2fa977961854943e1730bb2192e4fd3124\",\n  \"title\": \"Separate Judge forecasts and decisions under shift\",\n  \"source_id\": \"lib-src-d4065518beea83b70aeda75874a6f0444eff1bf840483244859af2c52e2f69af\",\n  \"chunk_id\": \"lib-chunk-123f3fb6ee1cb601042610b9c208227ac1ff12df0058c1b7cd26f80b99e23461\",\n  \"start\": 0,\n  \"end\": 1024,\n  \"evidence_id\": \"ev-b24eea21c038aba29a301754\"\n}\n```\n\nAttribution check: PASS. Character offsets refer to the unchanged original.\n\n## Excerpt 5 — UNVERIFIED\n\n````text\nme adapter's\nthreshold is an experimental heuristic in that shared-tool environment.\n\n## Integration\n\nThe experimental adapter implements the existing Judge interface:\n\n```python\nfrom aim.judge_shift_train import ShiftJudge\nfrom aim.controller import Controller\nfrom aim.tracking import Run\nfrom pathlib import Path\n\njudge = ShiftJudge(checkpoint_path, calibrated=True, cost=0.5)\nwith Run(Path(\"runs\"), \"shift-judge-loop\", {\"cost\": 0.5}, inputs=[checkpoint_path]) as run:\n    state = Controller(judge=judge).run(case, run)\n```\n\nUse a real checkpoint from the frozen manifest and a valid existing case. The\nlegacy `--judge` CLI loader remains specific to the older five-feature checkpoint\nformat. Unit integration executes the new adapter through the actual Controller\nwith both verification and abstention, plus conflicting evidence. Confidence\ndoes not bypass independent verifiers or promote an unmeasured claim.\n\n## Shift and interpretation\n\nThree observed points cannot distinguish q from q+k*x*(x-1)*(x-2), or the\nregis\n````\n\n```text\n{\n  \"uri\": \"aim:docs/JUDGE_SHIFT.md\",\n  \"version\": \"sha256:ff0670e4897d16fc22a7c724a4098b2fa977961854943e1730bb2192e4fd3124\",\n  \"title\": \"Separate Judge forecasts and decisions under shift\",\n  \"source_id\": \"lib-src-d4065518beea83b70aeda75874a6f0444eff1bf840483244859af2c52e2f69af\",\n  \"chunk_id\": \"lib-chunk-91716d4469b3ce21df347d33cf4a0d5ac8ed1d948fb3e40080b338844fb6fd99\",\n  \"start\": 4480,\n  \"end\": 5504,\n  \"evidence_id\": \"ev-506d75f021e31f58a9801075\"\n}\n```\n\nAttribution check: PASS. Character offsets refer to the unchanged original.\n\n## Excerpt 6 — UNVERIFIED\n\n```text\n# Phase 3A — From-scratch corpus and pretraining infrastructure\n\n## What this build decides\n\nImplement local corpus intake, reversible tokenizer candidates, document-at-a-time next-token training and exact CPU continuation before a larger model run. Keep the 2M-parameter engineering allocation guard. Byte tokenization remains the compatibility baseline; the new byte-pair tokenizer is an explicitly bounded experiment. No final tokenizer, corpus mixture or parameter count is selected here.\n\nThis supports the approved native Researcher architecture. It does not replace the Controller, Judge, verifier or memory components, and does not combine their training objectives.\n\n## Corpus intake contract\n\n`aim-corpus-manifest-v1` contains a version and a document list. Each document requires:\n\n- Unique ID, relative local path, SHA-256, declared split and group.\n- Source URI and version, plus a content category: prose, code, math or Unicode.\n- Rights fields: license string, explicit Boolean `training_allowed: true`, basis\n```\n\n```text\n{\n  \"uri\": \"aim:docs/PRETRAINING.md\",\n  \"version\": \"sha256:0f46c424e763e55d05ab8dae57f1c24c5e323f3d221ea73c6fd0553e6546e052\",\n  \"title\": \"Phase 3A — From-scratch corpus and pretraining infrastructure\",\n  \"source_id\": \"lib-src-68b806a108ce1d20d297100c6af1804b8d196a44819a7f5e5376550b50401cca\",\n  \"chunk_id\": \"lib-chunk-624761410a4c70bae7049d5737e69b15e74f873f97d51a558e22c039d0dac4ee\",\n  \"start\": 0,\n  \"end\": 1024,\n  \"evidence_id\": \"ev-50f946d9db753037a7aa249f\"\n}\n```\n\nAttribution check: PASS. Character offsets refer to the unchanged original.\n\n## Excerpt 7 — UNVERIFIED\n\n```text\ne floor assumes weights 4N + gradients 4N + two optimizer moments 8N = 16N bytes. It excludes activations, attention buffers, allocator/workspace, reference models, runtime, data, checkpoints and OS needs. An FP32 frozen DPO/RLVR reference adds approximately 4N bytes. Therefore a 32 GB desktop's ability to hold weights does not establish the feasibility or speed of a full training stage.\n\nThe smoke training harness caps model allocation at 2M parameters. A reviewed scale-trial runner must replace that guard deliberately, with memory estimation and an explicit time/token budget; do not merely edit the integer and launch 1B.\n\nSharding or pipeline/model parallelism would be necessary for some candidates on 32 GB hosts, but introduce substantial communication and failure-recovery work. FSDP/ZeRO, CPU offload, mixed precision and MoE are controlled future experiments, not implemented capabilities. Current GQA repeats KV tensors, preserving the small model's architecture but not optimizing the CPU memory footprint \n```\n\n```text\n{\n  \"uri\": \"aim:docs/HARDWARE_AND_CLUSTER.md\",\n  \"version\": \"sha256:941ac209ea90192bd70128721971e7db1355825059917acee99f588509be7771\",\n  \"title\": \"Hardware and cluster engineering protocol\",\n  \"source_id\": \"lib-src-ed4b2b930c4c34e24e39b4ba4e4b6210b360f615523827299d03bbabcbc0e22c\",\n  \"chunk_id\": \"lib-chunk-134ac2191003f0d11e03f0502b27af6981b6ce60e58900274d0a1b4e50b4738a\",\n  \"start\": 7168,\n  \"end\": 8192,\n  \"evidence_id\": \"ev-87842cd5d2ba1963f633e01e\"\n}\n```\n\nAttribution check: PASS. Character offsets refer to the unchanged original.\n\n## Limits\n\n- Source statements are UNVERIFIED. Exact attribution does not establish factual truth.\n- Lexical retrieval is incomplete and may miss paraphrases or split terms at chunk boundaries.\n- Versions and mirrors of a source are not independent corroboration.\n- The reference Researcher extracts text; no learned synthesis or hypothesis testing is performed.\n- The reference Judge has no learned or calibrated probability.\n- Sources are active at the recorded snapshot; consult the current library for later retirement.\n\n## Snapshot\n\n```text\n{\"library_id\": \"84e25418110b4debb3de0769e0321d32\", \"sequence\": 6, \"sha256\": \"b0c06e1e19c172c562ce7565e621645f42bf594b2428ef1c68a48b44a75b1ca5\"}\n```\n",
+  "limitations": [
+    "Source statements are UNVERIFIED. Exact attribution does not establish factual truth.",
+    "Lexical retrieval is incomplete and may miss paraphrases or split terms at chunk boundaries.",
+    "Versions and mirrors of a source are not independent corroboration.",
+    "The reference Researcher extracts text; no learned synthesis or hypothesis testing is performed.",
+    "The reference Judge has no learned or calibrated probability.",
+    "Sources are active at the recorded snapshot; consult the current library for later retirement."
+  ],
+  "packet_hashes": [
+    "9012bf5da31a945c16f6178e5e682d27b9cb83f248fe73df262f8aabd70dc82c"
+  ],
+  "phase": "FINAL",
+  "plan": {
+    "limit": 8,
+    "per_source": 2,
+    "queries": [
+      "RLHF preference optimization RLVR reward calibrated Judge"
+    ]
+  },
+  "proposals_hash": "2504f8616acf2987d5c313d15e6d9e054bd89e18c2111aaf6f4f625e81edf9ed",
+  "question": "RLHF preference optimization RLVR reward calibrated Judge",
+  "schema": "aim-evidence-review-v1",
+  "snapshot": {
+    "library_id": "84e25418110b4debb3de0769e0321d32",
+    "sequence": 6,
+    "sha256": "b0c06e1e19c172c562ce7565e621645f42bf594b2428ef1c68a48b44a75b1ca5"
+  }
+}

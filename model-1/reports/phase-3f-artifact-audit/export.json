@@ -1,0 +1,9 @@
+{
+  "files": {
+    "audit.json": "276893a9372e491afc53d7f5405fff010803f7d6f8b1a84dbe0fe06c1b243d1b",
+    "events.jsonl": "31f0cc8b41af5240803154cd0a1450e933484f6829a329b52939dd117bd8e905",
+    "manifest.json": "a73b354ad15d3da73e4f0176673fac27a6294b277e5a5bf4c73f6671ab3ddcc1",
+    "status.json": "b625b362fd949080baccadc830a343e0ccb5a7a57eb58bdebb09e6bb406bf090"
+  },
+  "source_run": "runs/20260928T210015-phase-3f-artifact-audit-d33b7a43"
+}

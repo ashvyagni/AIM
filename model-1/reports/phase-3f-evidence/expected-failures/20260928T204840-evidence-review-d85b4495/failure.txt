@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/flamexmystix/Documents/Sidequests/Full Crazy Projects/AIM/model-1/aim/evidence_review.py", line 192, in run
+    require(proposal.chunk_id in allowed, "Researcher proposed an unretrieved chunk")
+  File "/Users/flamexmystix/Documents/Sidequests/Full Crazy Projects/AIM/model-1/aim/corpus.py", line 20, in require
+    raise ContractError(message)
+aim.contracts.ContractError: Researcher proposed an unretrieved chunk

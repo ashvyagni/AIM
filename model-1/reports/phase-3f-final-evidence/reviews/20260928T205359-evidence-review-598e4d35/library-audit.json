@@ -1,0 +1,19 @@
+{
+  "bytes": 94,
+  "chunks": 1,
+  "outcome": "PASS",
+  "schema": "aim-evidence-library-v1",
+  "scope": "stored content, offsets, full lexical index, lifecycle and hash-chain consistency; not source truth",
+  "snapshot": {
+    "library_id": "05a873aae42149fdaea57febabfb15bb",
+    "sequence": 1,
+    "sha256": "d18545bfc159b6f4e19ff6a847f05c50c27503ceedf3eae552f0915f3d68158d"
+  },
+  "statuses": {
+    "ACTIVE": 1,
+    "RETRACTED": 0,
+    "SUPERSEDED": 0,
+    "WITHDRAWN": 0
+  },
+  "versions": 1
+}

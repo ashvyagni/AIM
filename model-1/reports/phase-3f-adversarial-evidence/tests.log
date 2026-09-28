@@ -1,0 +1,15 @@
+test_explicit_creation_and_schema_rejection (test_library.LibraryTests.test_explicit_creation_and_schema_rejection) ... FAIL
+
+======================================================================
+FAIL: test_explicit_creation_and_schema_rejection (test_library.LibraryTests.test_explicit_creation_and_schema_rejection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/flamexmystix/Documents/Sidequests/Full Crazy Projects/AIM/model-1/tests/test_library.py", line 41, in test_explicit_creation_and_schema_rejection
+    with self.assertRaises(ContractError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ContractError not raised
+
+----------------------------------------------------------------------
+Ran 1 test in 0.005s
+
+FAILED (failures=1)

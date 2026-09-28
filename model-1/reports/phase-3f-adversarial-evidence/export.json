@@ -1,0 +1,11 @@
+{
+  "files": {
+    "events.jsonl": "6373c4be40785bf147efa69087b5a4f731f653c04ca0abe2dc1f8b7219e2bde3",
+    "failure.txt": "8ac3001977f50144b63d4ca03656f12eb429fb9bf95a416c21048087bf840d8e",
+    "manifest.json": "133a957bcd61648fbd7695be522789b6a6827ccb116201e39a51da7b5d6efcd8",
+    "status.json": "ebbfdf6eb9dffa37ae5146f89d67152fb60eb7a35406542eac70cb27d3188e7f",
+    "tests.log": "a2dab01d83e39eebe3445ee6051711a401fbbd57d194bd2b86c89e6a62f8c609"
+  },
+  "scope": "Retained actual failing unknown-schema test before fix",
+  "source_run": "runs/20260928T205211-phase-3f-adversarial-audit-892a3d42"
+}

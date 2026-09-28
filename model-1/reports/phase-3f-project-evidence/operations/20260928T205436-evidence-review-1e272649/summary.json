@@ -1,0 +1,12 @@
+{
+  "abstentions": 0,
+  "queries": 1,
+  "retrieved_chunks": 6,
+  "selected_excerpts": 6,
+  "snapshot": {
+    "library_id": "84e25418110b4debb3de0769e0321d32",
+    "sequence": 6,
+    "sha256": "b0c06e1e19c172c562ce7565e621645f42bf594b2428ef1c68a48b44a75b1ca5"
+  },
+  "verified_factual_claims": 0
+}

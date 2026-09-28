@@ -1,0 +1,15 @@
+{
+  "current_snapshot": {
+    "library_id": "84e25418110b4debb3de0769e0321d32",
+    "sequence": 6,
+    "sha256": "b0c06e1e19c172c562ce7565e621645f42bf594b2428ef1c68a48b44a75b1ca5"
+  },
+  "current_source_status": {
+    "lib-src-490dcc1789716918e289537e34b05ecebe53eab1cd208b34fa10a4ca757ed8cc": "ACTIVE",
+    "lib-src-68b806a108ce1d20d297100c6af1804b8d196a44819a7f5e5376550b50401cca": "ACTIVE",
+    "lib-src-d4065518beea83b70aeda75874a6f0444eff1bf840483244859af2c52e2f69af": "ACTIVE",
+    "lib-src-ed4b2b930c4c34e24e39b4ba4e4b6210b360f615523827299d03bbabcbc0e22c": "ACTIVE"
+  },
+  "outcome": "PASS",
+  "scope": "historical retrieval and quote integrity only"
+}

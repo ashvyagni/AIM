@@ -1,0 +1,61 @@
+{
+  "abstentions": [],
+  "excerpts": [
+    {
+      "chunk_id": "lib-chunk-009bc2a98ee5ae3ee7fb26ca18e333d7203a5f5743fc17eaa37352df30a43bd5",
+      "decision": {
+        "action": "CITE",
+        "calibration_status": "NOT_CALIBRATED",
+        "model_id": "reference-provenance-judge-v1",
+        "probability": null,
+        "target": "exact-source-attribution"
+      },
+      "end": 94,
+      "evidence_id": "ev-dd76a88c235ac204a8d2d49f",
+      "memory_source_id": "src-21b75b2969a9a4dec1970c0b",
+      "source_id": "lib-src-8463614cd41849dd8de4134afc39b058ba8d808330bd6a35ce9bb0eb33491e81",
+      "start": 0,
+      "status": "UNVERIFIED",
+      "text": "An authored calibration note reports uncertain measurements. No scientific finding is claimed.",
+      "title": "Calibration note",
+      "uri": "fixture:study",
+      "verification": {
+        "evidence_id": "ev-dd76a88c235ac204a8d2d49f",
+        "outcome": "PASS",
+        "proposal_hash": "78973826f64a4907bdaded48b0d1aedb0c4f042aef1a60eddc65aca29d093b3e",
+        "scope": "exact excerpt and source bytes; no entailment, correctness or independence proof",
+        "verifier": "exact-source-attribution",
+        "version": "1"
+      },
+      "version": "1"
+    }
+  ],
+  "final_response": "# AIM local evidence review\n\n## Question\n\n```text\ncalibration measurements\n```\n\nSource excerpts below are **UNVERIFIED assertions**. A PASS applies only to attribution.\n\n## Excerpt 1 — UNVERIFIED\n\n```text\nAn authored calibration note reports uncertain measurements. No scientific finding is claimed.\n```\n\n```text\n{\n  \"uri\": \"fixture:study\",\n  \"version\": \"1\",\n  \"title\": \"Calibration note\",\n  \"source_id\": \"lib-src-8463614cd41849dd8de4134afc39b058ba8d808330bd6a35ce9bb0eb33491e81\",\n  \"chunk_id\": \"lib-chunk-009bc2a98ee5ae3ee7fb26ca18e333d7203a5f5743fc17eaa37352df30a43bd5\",\n  \"start\": 0,\n  \"end\": 94,\n  \"evidence_id\": \"ev-dd76a88c235ac204a8d2d49f\"\n}\n```\n\nAttribution check: PASS. Character offsets refer to the unchanged original.\n\n## Limits\n\n- Source statements are UNVERIFIED. Exact attribution does not establish factual truth.\n- Lexical retrieval is incomplete and may miss paraphrases or split terms at chunk boundaries.\n- Versions and mirrors of a source are not independent corroboration.\n- The reference Researcher extracts text; no learned synthesis or hypothesis testing is performed.\n- The reference Judge has no learned or calibrated probability.\n- Sources are active at the recorded snapshot; consult the current library for later retirement.\n\n## Snapshot\n\n```text\n{\"library_id\": \"05a873aae42149fdaea57febabfb15bb\", \"sequence\": 1, \"sha256\": \"d18545bfc159b6f4e19ff6a847f05c50c27503ceedf3eae552f0915f3d68158d\"}\n```\n",
+  "limitations": [
+    "Source statements are UNVERIFIED. Exact attribution does not establish factual truth.",
+    "Lexical retrieval is incomplete and may miss paraphrases or split terms at chunk boundaries.",
+    "Versions and mirrors of a source are not independent corroboration.",
+    "The reference Researcher extracts text; no learned synthesis or hypothesis testing is performed.",
+    "The reference Judge has no learned or calibrated probability.",
+    "Sources are active at the recorded snapshot; consult the current library for later retirement."
+  ],
+  "packet_hashes": [
+    "0c89f0d1794e48253b7c88b5d0f2375bcaaa81728d0e9fd8e31d5a39d4dfe1fd"
+  ],
+  "phase": "FINAL",
+  "plan": {
+    "limit": 8,
+    "per_source": 2,
+    "queries": [
+      "calibration measurements"
+    ]
+  },
+  "proposals_hash": "fcdf7a2b5a90afc3595c5182761be257e407cfbcae8538012c4f2e798ffa7477",
+  "question": "calibration measurements",
+  "schema": "aim-evidence-review-v1",
+  "snapshot": {
+    "library_id": "05a873aae42149fdaea57febabfb15bb",
+    "sequence": 1,
+    "sha256": "d18545bfc159b6f4e19ff6a847f05c50c27503ceedf3eae552f0915f3d68158d"
+  }
+}

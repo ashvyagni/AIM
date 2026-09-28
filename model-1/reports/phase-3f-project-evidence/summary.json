@@ -1,0 +1,323 @@
+{
+  "commands": [
+    {
+      "arguments": [],
+      "command": "init",
+      "exit_code": 0,
+      "log": "command-00.log",
+      "log_sha256": "4ba390d435c257ebd38af68c69ecc00bcba77010b472eee62104a0fae64b354a",
+      "run": "operations/20260928T205435-library-init-5dd60132"
+    },
+    {
+      "arguments": [
+        "--manifest",
+        "/Users/flamexmystix/Documents/Sidequests/Full Crazy Projects/AIM/model-1/runs/20260928T205434-phase-3f-project-documents-5cc31e18/documents/manifest.json"
+      ],
+      "command": "ingest",
+      "exit_code": 0,
+      "log": "command-01.log",
+      "log_sha256": "d1f4cc305a8c5469d438066f2604d6d7219dd18fe60b58b8cd337239b5c888ef",
+      "run": "operations/20260928T205435-library-intake-c8dd9e5e"
+    },
+    {
+      "arguments": [],
+      "command": "list",
+      "exit_code": 0,
+      "log": "command-02.log",
+      "log_sha256": "e5d49ea9650e1fe0d1188de3e730ad6e32b497f46920e82d7a56fa3793c4237c",
+      "run": "operations/20260928T205435-library-list-b824c7a7"
+    },
+    {
+      "arguments": [],
+      "command": "history",
+      "exit_code": 0,
+      "log": "command-03.log",
+      "log_sha256": "3fa1ada2ea0bcf53b58fd5c358f6f8f69dcc295b830dafc876ee95cdbe557278",
+      "run": "operations/20260928T205435-library-history-fe0f0add"
+    },
+    {
+      "arguments": [
+        "--source-id",
+        "lib-src-490dcc1789716918e289537e34b05ecebe53eab1cd208b34fa10a4ca757ed8cc"
+      ],
+      "command": "source",
+      "exit_code": 0,
+      "log": "command-04.log",
+      "log_sha256": "73f2ef417c488a33cac112f32ef2b1e9fc004f9062356f9b2a259e683bd042d6",
+      "run": "operations/20260928T205435-library-source-a30abb79"
+    },
+    {
+      "arguments": [
+        "--question",
+        "RLHF preference optimization RLVR reward calibrated Judge"
+      ],
+      "command": "search",
+      "exit_code": 0,
+      "log": "command-05.log",
+      "log_sha256": "4a2f67efd7099b1ce0100526c9e2070671b04212f05729940734ff1dd3066066",
+      "run": "operations/20260928T205435-library-search-0c4bd7df"
+    },
+    {
+      "arguments": [
+        "--question",
+        "RLHF preference optimization RLVR reward calibrated Judge"
+      ],
+      "command": "review",
+      "exit_code": 0,
+      "log": "command-06.log",
+      "log_sha256": "e937b9f5cfa9d7cdff964d5b23ff19910ae83607b308c8fd1ee450330c5bdb3d",
+      "run": "operations/20260928T205436-evidence-review-b6a89ab9"
+    },
+    {
+      "arguments": [
+        "--question",
+        "VIT CPU cluster memory 7B DDP"
+      ],
+      "command": "review",
+      "exit_code": 0,
+      "log": "command-07.log",
+      "log_sha256": "0c58d6ee4d05ca947fc184b51d6330c87d5e109ea4740ec2d31a6cd3ca97a683",
+      "run": "operations/20260928T205436-evidence-review-ecd2c6b3"
+    },
+    {
+      "arguments": [
+        "--question",
+        "checkpoint resume exact tokenizer BPE"
+      ],
+      "command": "review",
+      "exit_code": 0,
+      "log": "command-08.log",
+      "log_sha256": "6e75df5ac82923b965921438eabe47e940754666d3067ed7c9284859fba7613b",
+      "run": "operations/20260928T205436-evidence-review-78307c38"
+    },
+    {
+      "arguments": [
+        "--question",
+        "calibration OOD uncertainty"
+      ],
+      "command": "review",
+      "exit_code": 0,
+      "log": "command-09.log",
+      "log_sha256": "412d683deec53a97bbb1b6f15012b8ea0afb85f5deca2ba3bb9d399b85a949fa",
+      "run": "operations/20260928T205436-evidence-review-1e272649"
+    },
+    {
+      "arguments": [
+        "--question",
+        "free generation validation checker fitting"
+      ],
+      "command": "review",
+      "exit_code": 0,
+      "log": "command-10.log",
+      "log_sha256": "93a254644ad062511b5b4bff435a08d2c2c6518568881f49859697c9622bd935",
+      "run": "operations/20260928T205436-evidence-review-00f7bb10"
+    },
+    {
+      "arguments": [
+        "--question",
+        "photonic superconducting neutrino"
+      ],
+      "command": "review",
+      "exit_code": 0,
+      "log": "command-11.log",
+      "log_sha256": "2d1ec1d62d82014ccec249472329bac516fcc63e6a32351e2142da991a740c3e",
+      "run": "operations/20260928T205437-evidence-review-af7cd3b9"
+    },
+    {
+      "arguments": [
+        "--review-run",
+        "/Users/flamexmystix/Documents/Sidequests/Full Crazy Projects/AIM/model-1/runs/20260928T205434-phase-3f-project-documents-5cc31e18/operations/20260928T205436-evidence-review-b6a89ab9"
+      ],
+      "command": "replay",
+      "exit_code": 0,
+      "log": "command-12.log",
+      "log_sha256": "040988c2518a32cceba69234cd1dd1ca9e5fb66eb928f94a0d0e7f39b67320bc",
+      "run": "operations/20260928T205437-library-replay-accb3e06"
+    },
+    {
+      "arguments": [],
+      "command": "audit",
+      "exit_code": 0,
+      "log": "command-13.log",
+      "log_sha256": "94d1029430d8af4628bdc5cf7388a332d0956b07bcaaab765dba9e2a81ded333",
+      "run": "operations/20260928T205437-library-audit-564e3361"
+    }
+  ],
+  "documents": 6,
+  "library_audit": {
+    "bytes": 58461,
+    "chunks": 69,
+    "outcome": "PASS",
+    "schema": "aim-evidence-library-v1",
+    "scope": "stored content, offsets, full lexical index, lifecycle and hash-chain consistency; not source truth",
+    "snapshot": {
+      "library_id": "84e25418110b4debb3de0769e0321d32",
+      "sequence": 6,
+      "sha256": "b0c06e1e19c172c562ce7565e621645f42bf594b2428ef1c68a48b44a75b1ca5"
+    },
+    "statuses": {
+      "ACTIVE": 6,
+      "RETRACTED": 0,
+      "SUPERSEDED": 0,
+      "WITHDRAWN": 0
+    },
+    "versions": 6
+  },
+  "live_replay_audit": {
+    "current_library_checked": true,
+    "current_source_status": {
+      "lib-src-490dcc1789716918e289537e34b05ecebe53eab1cd208b34fa10a4ca757ed8cc": "ACTIVE",
+      "lib-src-68b806a108ce1d20d297100c6af1804b8d196a44819a7f5e5376550b50401cca": "ACTIVE",
+      "lib-src-d4065518beea83b70aeda75874a6f0444eff1bf840483244859af2c52e2f69af": "ACTIVE",
+      "lib-src-ed4b2b930c4c34e24e39b4ba4e4b6210b360f615523827299d03bbabcbc0e22c": "ACTIVE"
+    },
+    "excerpts": 7,
+    "outcome": "PASS",
+    "scope": "snapshot retrieval, exact source attribution, ledger and final response replay",
+    "verified_factual_claims": 0
+  },
+  "manifest_hash": "81423de3e4daf02e1b40d95823941a9bfa596e57f50efdb5aa2268c3b536bdcc",
+  "quality_metrics": null,
+  "quality_note": "No independent relevance labels; returned counts are not answer-quality measurements",
+  "reviews": [
+    {
+      "abstentions": 0,
+      "audit": {
+        "current_library_checked": false,
+        "current_source_status": {},
+        "excerpts": 7,
+        "outcome": "PASS",
+        "scope": "snapshot retrieval, exact source attribution, ledger and final response replay",
+        "verified_factual_claims": 0
+      },
+      "queries": 1,
+      "question": "RLHF preference optimization RLVR reward calibrated Judge",
+      "response_sha256": "6fcfc230302385a6ef4d3fee11aea6224d3fab32ad2c81c21fa17d95e173c3c4",
+      "retrieved_chunks": 7,
+      "run": "operations/20260928T205436-evidence-review-b6a89ab9",
+      "selected_excerpts": 7,
+      "snapshot": {
+        "library_id": "84e25418110b4debb3de0769e0321d32",
+        "sequence": 6,
+        "sha256": "b0c06e1e19c172c562ce7565e621645f42bf594b2428ef1c68a48b44a75b1ca5"
+      },
+      "verified_factual_claims": 0
+    },
+    {
+      "abstentions": 0,
+      "audit": {
+        "current_library_checked": false,
+        "current_source_status": {},
+        "excerpts": 8,
+        "outcome": "PASS",
+        "scope": "snapshot retrieval, exact source attribution, ledger and final response replay",
+        "verified_factual_claims": 0
+      },
+      "queries": 1,
+      "question": "VIT CPU cluster memory 7B DDP",
+      "response_sha256": "5b699c78b704d399335d3fa6f15e2b64efefc4a3a99eef23df2ff51bc410f1c5",
+      "retrieved_chunks": 8,
+      "run": "operations/20260928T205436-evidence-review-ecd2c6b3",
+      "selected_excerpts": 8,
+      "snapshot": {
+        "library_id": "84e25418110b4debb3de0769e0321d32",
+        "sequence": 6,
+        "sha256": "b0c06e1e19c172c562ce7565e621645f42bf594b2428ef1c68a48b44a75b1ca5"
+      },
+      "verified_factual_claims": 0
+    },
+    {
+      "abstentions": 0,
+      "audit": {
+        "current_library_checked": false,
+        "current_source_status": {},
+        "excerpts": 8,
+        "outcome": "PASS",
+        "scope": "snapshot retrieval, exact source attribution, ledger and final response replay",
+        "verified_factual_claims": 0
+      },
+      "queries": 1,
+      "question": "checkpoint resume exact tokenizer BPE",
+      "response_sha256": "9a3f1df925a7829cb368869edcf1228cd648140d5b71307a4ab0638a853ca16a",
+      "retrieved_chunks": 8,
+      "run": "operations/20260928T205436-evidence-review-78307c38",
+      "selected_excerpts": 8,
+      "snapshot": {
+        "library_id": "84e25418110b4debb3de0769e0321d32",
+        "sequence": 6,
+        "sha256": "b0c06e1e19c172c562ce7565e621645f42bf594b2428ef1c68a48b44a75b1ca5"
+      },
+      "verified_factual_claims": 0
+    },
+    {
+      "abstentions": 0,
+      "audit": {
+        "current_library_checked": false,
+        "current_source_status": {},
+        "excerpts": 6,
+        "outcome": "PASS",
+        "scope": "snapshot retrieval, exact source attribution, ledger and final response replay",
+        "verified_factual_claims": 0
+      },
+      "queries": 1,
+      "question": "calibration OOD uncertainty",
+      "response_sha256": "ac19c0325e869f37897081c468077509f6fd27ceffe4bfdc89a651dac0c8f230",
+      "retrieved_chunks": 6,
+      "run": "operations/20260928T205436-evidence-review-1e272649",
+      "selected_excerpts": 6,
+      "snapshot": {
+        "library_id": "84e25418110b4debb3de0769e0321d32",
+        "sequence": 6,
+        "sha256": "b0c06e1e19c172c562ce7565e621645f42bf594b2428ef1c68a48b44a75b1ca5"
+      },
+      "verified_factual_claims": 0
+    },
+    {
+      "abstentions": 0,
+      "audit": {
+        "current_library_checked": false,
+        "current_source_status": {},
+        "excerpts": 8,
+        "outcome": "PASS",
+        "scope": "snapshot retrieval, exact source attribution, ledger and final response replay",
+        "verified_factual_claims": 0
+      },
+      "queries": 1,
+      "question": "free generation validation checker fitting",
+      "response_sha256": "7aeff879d947e04cc051199d75c3f6a511b201d0a3aa5ffb243bccf43f6fd6ce",
+      "retrieved_chunks": 8,
+      "run": "operations/20260928T205436-evidence-review-00f7bb10",
+      "selected_excerpts": 8,
+      "snapshot": {
+        "library_id": "84e25418110b4debb3de0769e0321d32",
+        "sequence": 6,
+        "sha256": "b0c06e1e19c172c562ce7565e621645f42bf594b2428ef1c68a48b44a75b1ca5"
+      },
+      "verified_factual_claims": 0
+    },
+    {
+      "abstentions": 0,
+      "audit": {
+        "current_library_checked": false,
+        "current_source_status": {},
+        "excerpts": 0,
+        "outcome": "PASS",
+        "scope": "snapshot retrieval, exact source attribution, ledger and final response replay",
+        "verified_factual_claims": 0
+      },
+      "queries": 1,
+      "question": "photonic superconducting neutrino",
+      "response_sha256": "32f500c23c2025f6b6463a9ddd8c19f1843e113b44cf185970f89f23dd763f4b",
+      "retrieved_chunks": 0,
+      "run": "operations/20260928T205437-evidence-review-af7cd3b9",
+      "selected_excerpts": 0,
+      "snapshot": {
+        "library_id": "84e25418110b4debb3de0769e0321d32",
+        "sequence": 6,
+        "sha256": "b0c06e1e19c172c562ce7565e621645f42bf594b2428ef1c68a48b44a75b1ca5"
+      },
+      "verified_factual_claims": 0
+    }
+  ],
+  "verified_factual_claims": 0
+}

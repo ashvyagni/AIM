@@ -1,0 +1,14 @@
+[
+  {
+    "elapsed_seconds": 0.05104791698977351,
+    "error": "Researcher proposed an unretrieved chunk",
+    "run": "expected-failures/20260928T204840-evidence-review-d85b4495",
+    "status": "FAILED"
+  },
+  {
+    "elapsed_seconds": 0.048406624991912395,
+    "error": "intake source hash or size mismatch",
+    "run": "expected-failures/20260928T204840-library-intake-77e62dd7",
+    "status": "FAILED"
+  }
+]

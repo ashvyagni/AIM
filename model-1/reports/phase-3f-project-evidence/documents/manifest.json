@@ -1,0 +1,91 @@
+{
+  "chunk_size": 1024,
+  "documents": [
+    {
+      "path": "TRAINING.md",
+      "privacy_review": {
+        "basis": "Read these six project engineering guides for this local application; technical records and reported hardware, no personal datasets or credentials observed; not independent privacy certification",
+        "reviewer": "AIM implementation agent",
+        "status": "approved"
+      },
+      "retrieval_allowed": true,
+      "rights": "Project owner requested use of AIM research documents for local project work; no training or redistribution license inferred",
+      "sha256": "2e3c8d3b769f93a79ad185bb48d63247be418aaa981fa69aee5c4e83546c7bcc",
+      "title": "Model-1 training specification",
+      "uri": "aim:docs/TRAINING.md",
+      "version": "sha256:2e3c8d3b769f93a79ad185bb48d63247be418aaa981fa69aee5c4e83546c7bcc"
+    },
+    {
+      "path": "JUDGE_SHIFT.md",
+      "privacy_review": {
+        "basis": "Read these six project engineering guides for this local application; technical records and reported hardware, no personal datasets or credentials observed; not independent privacy certification",
+        "reviewer": "AIM implementation agent",
+        "status": "approved"
+      },
+      "retrieval_allowed": true,
+      "rights": "Project owner requested use of AIM research documents for local project work; no training or redistribution license inferred",
+      "sha256": "ff0670e4897d16fc22a7c724a4098b2fa977961854943e1730bb2192e4fd3124",
+      "title": "Separate Judge forecasts and decisions under shift",
+      "uri": "aim:docs/JUDGE_SHIFT.md",
+      "version": "sha256:ff0670e4897d16fc22a7c724a4098b2fa977961854943e1730bb2192e4fd3124"
+    },
+    {
+      "path": "HARDWARE_AND_CLUSTER.md",
+      "privacy_review": {
+        "basis": "Read these six project engineering guides for this local application; technical records and reported hardware, no personal datasets or credentials observed; not independent privacy certification",
+        "reviewer": "AIM implementation agent",
+        "status": "approved"
+      },
+      "retrieval_allowed": true,
+      "rights": "Project owner requested use of AIM research documents for local project work; no training or redistribution license inferred",
+      "sha256": "941ac209ea90192bd70128721971e7db1355825059917acee99f588509be7771",
+      "title": "Hardware and cluster engineering protocol",
+      "uri": "aim:docs/HARDWARE_AND_CLUSTER.md",
+      "version": "sha256:941ac209ea90192bd70128721971e7db1355825059917acee99f588509be7771"
+    },
+    {
+      "path": "LANGUAGE_FITTING.md",
+      "privacy_review": {
+        "basis": "Read these six project engineering guides for this local application; technical records and reported hardware, no personal datasets or credentials observed; not independent privacy certification",
+        "reviewer": "AIM implementation agent",
+        "status": "approved"
+      },
+      "retrieval_allowed": true,
+      "rights": "Project owner requested use of AIM research documents for local project work; no training or redistribution license inferred",
+      "sha256": "8db39a232634a32c130df2cbab8379da9bd1d95a1033ec533d29b55ee1a9a4fb",
+      "title": "Language fitting diagnostics",
+      "uri": "aim:docs/LANGUAGE_FITTING.md",
+      "version": "sha256:8db39a232634a32c130df2cbab8379da9bd1d95a1033ec533d29b55ee1a9a4fb"
+    },
+    {
+      "path": "PRETRAINING.md",
+      "privacy_review": {
+        "basis": "Read these six project engineering guides for this local application; technical records and reported hardware, no personal datasets or credentials observed; not independent privacy certification",
+        "reviewer": "AIM implementation agent",
+        "status": "approved"
+      },
+      "retrieval_allowed": true,
+      "rights": "Project owner requested use of AIM research documents for local project work; no training or redistribution license inferred",
+      "sha256": "0f46c424e763e55d05ab8dae57f1c24c5e323f3d221ea73c6fd0553e6546e052",
+      "title": "Phase 3A — From-scratch corpus and pretraining infrastructure",
+      "uri": "aim:docs/PRETRAINING.md",
+      "version": "sha256:0f46c424e763e55d05ab8dae57f1c24c5e323f3d221ea73c6fd0553e6546e052"
+    },
+    {
+      "path": "DISTRIBUTED_PRETRAINING.md",
+      "privacy_review": {
+        "basis": "Read these six project engineering guides for this local application; technical records and reported hardware, no personal datasets or credentials observed; not independent privacy certification",
+        "reviewer": "AIM implementation agent",
+        "status": "approved"
+      },
+      "retrieval_allowed": true,
+      "rights": "Project owner requested use of AIM research documents for local project work; no training or redistribution license inferred",
+      "sha256": "cfeaf03b9735afd4b700450a92010e12acc3a3767728008ebce7d112ab0b5aa0",
+      "title": "Phase 3B — Distributed corpus training and recovery",
+      "uri": "aim:docs/DISTRIBUTED_PRETRAINING.md",
+      "version": "sha256:cfeaf03b9735afd4b700450a92010e12acc3a3767728008ebce7d112ab0b5aa0"
+    }
+  ],
+  "overlap": 128,
+  "schema": "aim-library-intake-v1"
+}

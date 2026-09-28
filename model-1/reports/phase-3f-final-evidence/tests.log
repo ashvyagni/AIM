@@ -1,0 +1,327 @@
+test_abstention_is_unknown (test_core.CoreTests.test_abstention_is_unknown) ... ok
+test_actual_worker_timeout (test_core.CoreTests.test_actual_worker_timeout) ... ok
+test_budget_exhaustion (test_core.CoreTests.test_budget_exhaustion) ... ok
+test_calculation_at_zero (test_core.CoreTests.test_calculation_at_zero) ... ok
+test_canonical_suite (test_core.CoreTests.test_canonical_suite) ... ok
+test_changed_source_detected (test_core.CoreTests.test_changed_source_detected) ... ok
+test_conflicting_evidence (test_core.CoreTests.test_conflicting_evidence) ... ok
+test_eval_change_rejected (test_core.CoreTests.test_eval_change_rejected) ... ok
+test_fabricated_citation_rejected (test_core.CoreTests.test_fabricated_citation_rejected) ... ok
+test_failure_is_retained_with_source_snapshot (test_core.CoreTests.test_failure_is_retained_with_source_snapshot) ... ok
+test_forecast_cannot_verify (test_core.CoreTests.test_forecast_cannot_verify) ... ok
+test_forged_quote_rejected (test_core.CoreTests.test_forged_quote_rejected) ... ok
+test_full_loop_and_replay (test_core.CoreTests.test_full_loop_and_replay) ... ok
+test_ledger_append_only (test_core.CoreTests.test_ledger_append_only) ... ok
+test_ledger_hash_detects_tampering (test_core.CoreTests.test_ledger_hash_detects_tampering) ... ok
+test_missing_input_failure_is_retained (test_core.CoreTests.test_missing_input_failure_is_retained) ... ok
+test_model_cannot_mutate_owned_state (test_core.CoreTests.test_model_cannot_mutate_owned_state) ... ok
+test_nested_records_serialize (test_core.CoreTests.test_nested_records_serialize) ... ok
+test_nonfinite_and_boolean_rejected (test_core.CoreTests.test_nonfinite_and_boolean_rejected) ... ok
+test_source_versions_are_distinct (test_core.CoreTests.test_source_versions_are_distinct) ... ok
+test_tool_allowlist (test_core.CoreTests.test_tool_allowlist) ... ok
+test_unavailable_never_verified (test_core.CoreTests.test_unavailable_never_verified) ... ok
+test_unknown_not_scored_false (test_core.CoreTests.test_unknown_not_scored_false) ... ok
+test_verified_claim_mutation_detected (test_core.CoreTests.test_verified_claim_mutation_detected) ... ok
+test_wrong_judge_claim_rejected (test_core.CoreTests.test_wrong_judge_claim_rejected) ... ok
+test_all_prior_world_vectors_excluded (test_curriculum.CurriculumTaskTests.test_all_prior_world_vectors_excluded) ... ok
+test_diagnostic_pool_removes_training_prompt_overlap (test_curriculum.CurriculumTaskTests.test_diagnostic_pool_removes_training_prompt_overlap) ... ok
+test_exact_signed_teachers_and_strict_scoring (test_curriculum.CurriculumTaskTests.test_exact_signed_teachers_and_strict_scoring) ... ok
+test_fixed_schedule_and_paired_world_provenance (test_curriculum.CurriculumTaskTests.test_fixed_schedule_and_paired_world_provenance) ... ok
+test_new_metadata_and_auxiliary_split_boundary (test_curriculum.CurriculumTaskTests.test_new_metadata_and_auxiliary_split_boundary) ... ok
+test_changed_auxiliary_label_or_metadata_rejected (test_curriculum.CurriculumTrainingTests.test_changed_auxiliary_label_or_metadata_rejected) ... ok
+test_curriculum_resume_preserves_weights_and_task_accounting (test_curriculum.CurriculumTrainingTests.test_curriculum_resume_preserves_weights_and_task_accounting) ... {"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.5285484184653075, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpqhp77x4x/full/20260928T205307-research-sft-seed17-b9e851fc"}
+{"seed": 17, "step": 2, "validation": {"n": 1, "response_token_nll": 5.488268318822828, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpqhp77x4x/full/20260928T205307-research-sft-seed17-b9e851fc"}
+{"seed": 17, "step": 4, "validation": {"n": 1, "response_token_nll": 5.440853830111229, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpqhp77x4x/full/20260928T205307-research-sft-seed17-b9e851fc"}
+{"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.5285484184653075, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpqhp77x4x/partial/20260928T205308-research-sft-seed17-ea43c809"}
+{"seed": 17, "step": 2, "validation": {"n": 1, "response_token_nll": 5.488268318822828, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpqhp77x4x/partial/20260928T205308-research-sft-seed17-ea43c809"}
+{"seed": 17, "step": 2, "validation": {"n": 1, "response_token_nll": 5.488268318822828, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpqhp77x4x/resume/20260928T205308-research-sft-seed17-7a9b2498"}
+{"seed": 17, "step": 4, "validation": {"n": 1, "response_token_nll": 5.440853830111229, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpqhp77x4x/resume/20260928T205308-research-sft-seed17-7a9b2498"}
+ok
+test_two_arm_training_isolation_and_real_observation_audit (test_curriculum.CurriculumTrainingTests.test_two_arm_training_isolation_and_real_observation_audit) ... {"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.5285484184653075, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpw6y5kf6w/runs/20260928T205308-curriculum-training-8df5a67d/worked/20260928T205308-research-sft-seed17-186eb583"}
+{"seed": 17, "step": 1, "validation": {"n": 1, "response_token_nll": 5.508810269630562, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpw6y5kf6w/runs/20260928T205308-curriculum-training-8df5a67d/worked/20260928T205308-research-sft-seed17-186eb583"}
+{"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.5285484184653075, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpw6y5kf6w/runs/20260928T205308-curriculum-training-8df5a67d/curriculum/20260928T205308-research-sft-seed17-1262e736"}
+{"seed": 17, "step": 1, "validation": {"n": 1, "response_token_nll": 5.509246826171875, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpw6y5kf6w/runs/20260928T205308-curriculum-training-8df5a67d/curriculum/20260928T205308-research-sft-seed17-1262e736"}
+{"backend": "curriculum-seed17-initial-test", "verified": 0, "valid_rate": 0.0}
+{"backend": "curriculum-seed17-initial-ood", "verified": 0, "valid_rate": 0.0}
+{"backend": "curriculum-seed17-selected-test", "verified": 0, "valid_rate": 0.0}
+{"backend": "curriculum-seed17-selected-ood", "verified": 0, "valid_rate": 0.0}
+{"backend": "worked-seed17-initial-test", "verified": 0, "valid_rate": 0.0}
+{"backend": "worked-seed17-initial-ood", "verified": 0, "valid_rate": 0.0}
+{"backend": "worked-seed17-selected-test", "verified": 0, "valid_rate": 0.0}
+{"backend": "worked-seed17-selected-ood", "verified": 0, "valid_rate": 0.0}
+ok
+test_corruption_and_manifest_path_injection (test_distributed_pretrain.CheckpointTests.test_corruption_and_manifest_path_injection) ... ok
+test_global_token_gradient_not_mean_of_rank_means (test_distributed_pretrain.CheckpointTests.test_global_token_gradient_not_mean_of_rank_means) ... ok
+test_incomplete_or_divergent_rank_cannot_publish (test_distributed_pretrain.CheckpointTests.test_incomplete_or_divergent_rank_cannot_publish) ... ok
+test_preflight_and_config_guards (test_distributed_pretrain.CheckpointTests.test_preflight_and_config_guards) ... ok
+test_publication_partial_rejection_and_roundtrip (test_distributed_pretrain.CheckpointTests.test_publication_partial_rejection_and_roundtrip) ... ok
+test_bpe_workers_and_world_size_rejection (test_distributed_pretrain.DistributedIntegrationTests.test_bpe_workers_and_world_size_rejection) ... ok
+test_two_rank_serial_oracle_resume_and_sft_export (test_distributed_pretrain.DistributedIntegrationTests.test_two_rank_serial_oracle_resume_and_sft_export) ... ok
+test_worker_failure_keeps_prior_checkpoint_and_rejects_pending (test_distributed_pretrain.DistributedIntegrationTests.test_worker_failure_keeps_prior_checkpoint_and_rejects_pending) ... ok
+test_empty_rank_invalid_world_and_cross_rank_read (test_distributed_pretrain.PartitionTests.test_empty_rank_invalid_world_and_cross_rank_read) ... ok
+test_partition_coverage_and_cursor_rank_binding (test_distributed_pretrain.PartitionTests.test_partition_coverage_and_cursor_rank_binding) ... ok
+test_partition_tampering (test_distributed_pretrain.PartitionTests.test_partition_tampering) ... ok
+test_end_to_end_and_cross_run_reuse (test_evidence_review.ReviewTests.test_end_to_end_and_cross_run_reuse) ... ok
+test_fabricated_quote_cannot_be_approved_by_judge (test_evidence_review.ReviewTests.test_fabricated_quote_cannot_be_approved_by_judge) ... ok
+test_false_calibration_cannot_be_claimed (test_evidence_review.ReviewTests.test_false_calibration_cannot_be_claimed) ... ok
+test_no_evidence_abstains_without_factual_answer (test_evidence_review.ReviewTests.test_no_evidence_abstains_without_factual_answer) ... ok
+test_query_budget_cannot_be_overridden (test_evidence_review.ReviewTests.test_query_budget_cannot_be_overridden) ... ok
+test_response_and_copied_source_tampering (test_evidence_review.ReviewTests.test_response_and_copied_source_tampering) ... ok
+test_retirement_changes_current_status_but_preserves_run (test_evidence_review.ReviewTests.test_retirement_changes_current_status_but_preserves_run) ... ok
+test_source_instructions_remain_quoted_data (test_evidence_review.ReviewTests.test_source_instructions_remain_quoted_data) ... ok
+test_unretrieved_proposal_fails_and_is_retained (test_evidence_review.ReviewTests.test_unretrieved_proposal_fails_and_is_retained) ... ok
+test_dataset_metadata_contains_no_holdout_coefficients (test_finite_difference.ComparisonIntegrationTests.test_dataset_metadata_contains_no_holdout_coefficients) ... ok
+test_padding_preserves_supervised_tokens_and_scores (test_finite_difference.ComparisonIntegrationTests.test_padding_preserves_supervised_tokens_and_scores) ... ok
+test_two_arm_freeze_and_actual_controller_evaluation (test_finite_difference.ComparisonIntegrationTests.test_two_arm_freeze_and_actual_controller_evaluation) ... {"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.511790296766493, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmp62shoov4/runs/20260928T205326-comparison-training-0d629973/plain/20260928T205326-research-sft-seed17-47dfdc2f"}
+{"seed": 17, "step": 1, "validation": {"n": 1, "response_token_nll": 5.492227511935764, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmp62shoov4/runs/20260928T205326-comparison-training-0d629973/plain/20260928T205326-research-sft-seed17-47dfdc2f"}
+{"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.5285484184653075, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmp62shoov4/runs/20260928T205326-comparison-training-0d629973/worked/20260928T205326-research-sft-seed17-f8ae0396"}
+{"seed": 17, "step": 1, "validation": {"n": 1, "response_token_nll": 5.508810269630562, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmp62shoov4/runs/20260928T205326-comparison-training-0d629973/worked/20260928T205326-research-sft-seed17-f8ae0396"}
+{"backend": "plain-seed17-initial-test", "verified": 0, "valid_rate": 0.0}
+{"backend": "plain-seed17-initial-ood", "verified": 0, "valid_rate": 0.0}
+{"backend": "plain-seed17-selected-test", "verified": 0, "valid_rate": 0.0}
+{"backend": "plain-seed17-selected-ood", "verified": 0, "valid_rate": 0.0}
+{"backend": "worked-seed17-initial-test", "verified": 0, "valid_rate": 0.0}
+{"backend": "worked-seed17-initial-ood", "verified": 0, "valid_rate": 0.0}
+{"backend": "worked-seed17-selected-test", "verified": 0, "valid_rate": 0.0}
+{"backend": "worked-seed17-selected-ood", "verified": 0, "valid_rate": 0.0}
+ok
+test_plain_contract_unchanged_and_invalid_counts_as_failure (test_finite_difference.FiniteDifferenceTests.test_plain_contract_unchanged_and_invalid_counts_as_failure) ... ok
+test_worked_numbers_and_citations (test_finite_difference.FiniteDifferenceTests.test_worked_numbers_and_citations) ... ok
+test_worked_rejects_duplicate_nonfinite_and_invented_alias (test_finite_difference.FiniteDifferenceTests.test_worked_rejects_duplicate_nonfinite_and_invented_alias) ... ok
+test_worlds_exclude_all_old_splits_by_coefficient_vector (test_finite_difference.FiniteDifferenceTests.test_worlds_exclude_all_old_splits_by_coefficient_vector) ... ok
+test_wrong_step_is_diagnostic_failure_not_silent_repair (test_finite_difference.FiniteDifferenceTests.test_wrong_step_is_diagnostic_failure_not_silent_repair) ... ok
+test_exact_fit_and_dimensions (test_judge_shift.FeatureTests.test_exact_fit_and_dimensions) ... ok
+test_forbidden_inputs (test_judge_shift.FeatureTests.test_forbidden_inputs) ... ok
+test_group_design_and_invisible_perturbations (test_judge_shift.FeatureTests.test_group_design_and_invisible_perturbations) ... ok
+test_payload_ignores_outcomes (test_judge_shift.FeatureTests.test_payload_ignores_outcomes) ... ok
+test_adapter_controller_verification_and_abstention (test_judge_shift.StudyTests.test_adapter_controller_verification_and_abstention) ... ok
+test_frozen_evaluation_and_group_intervals (test_judge_shift.StudyTests.test_frozen_evaluation_and_group_intervals) ... ok
+test_independent_labels_and_provenance (test_judge_shift.StudyTests.test_independent_labels_and_provenance) ... ok
+test_initialization_pairing_and_parameters (test_judge_shift.StudyTests.test_initialization_pairing_and_parameters) ... ok
+test_policy_math (test_judge_shift.StudyTests.test_policy_math) ... ok
+test_tampered_features_and_metadata (test_judge_shift.StudyTests.test_tampered_features_and_metadata) ... ok
+test_audit_rejects_changed_text_counts_and_summary (test_language_diagnostics.LanguageDiagnosticsTests.test_audit_rejects_changed_text_counts_and_summary) ... ok
+test_checkpoint_rejects_different_probe_dataset (test_language_diagnostics.LanguageDiagnosticsTests.test_checkpoint_rejects_different_probe_dataset) ... ok
+test_config_budgets_and_duplicates_reject (test_language_diagnostics.LanguageDiagnosticsTests.test_config_budgets_and_duplicates_reject) ... ok
+test_context_rejection_preserves_mode (test_language_diagnostics.LanguageDiagnosticsTests.test_context_rejection_preserves_mode) ... ok
+test_divergence_counts_missing_extra_and_eos (test_language_diagnostics.LanguageDiagnosticsTests.test_divergence_counts_missing_extra_and_eos) ... ok
+test_eos_and_invalid_byte_diagnostics (test_language_diagnostics.LanguageDiagnosticsTests.test_eos_and_invalid_byte_diagnostics) ... ok
+test_json_offsets_duplicates_and_nonfinite_values (test_language_diagnostics.LanguageDiagnosticsTests.test_json_offsets_duplicates_and_nonfinite_values) ... ok
+test_measurement_restores_mode_rng_and_replays (test_language_diagnostics.LanguageDiagnosticsTests.test_measurement_restores_mode_rng_and_replays) ... ok
+test_nonfinite_model_failure_restores_mode (test_language_diagnostics.LanguageDiagnosticsTests.test_nonfinite_model_failure_restores_mode) ... ok
+test_numerical_checker_does_not_use_response_label (test_language_diagnostics.LanguageDiagnosticsTests.test_numerical_checker_does_not_use_response_label) ... ok
+test_probe_integrity_and_holdout_rejection (test_language_diagnostics.LanguageDiagnosticsTests.test_probe_integrity_and_holdout_rejection) ... ok
+test_real_study_export_and_tamper_detection (test_language_diagnostics.LanguageDiagnosticsTests.test_real_study_export_and_tamper_detection) ... structured/byte/seed17/step1: {'train': 0, 'validation': 0}
+structured/byte/seed17/step2: {'train': 0, 'validation': 0}
+symbolic/byte/seed17/step1: {'train': 0, 'validation': 0}
+symbolic/byte/seed17/step2: {'train': 0, 'validation': 0}
+ok
+test_symbolic_alternative_and_wrong_answer_are_distinct (test_language_diagnostics.LanguageDiagnosticsTests.test_symbolic_alternative_and_wrong_answer_are_distinct) ... ok
+test_external_rows_reject_undeclared_holdout_metadata (test_language_hardening.LanguageBoundaryTests.test_external_rows_reject_undeclared_holdout_metadata) ... ok
+test_symbolic_decode_failure_replaces_stale_trace (test_language_hardening.LanguageBoundaryTests.test_symbolic_decode_failure_replaces_stale_trace) ... ok
+test_checkpoint_stable_architecture_must_match_saved_model (test_language_hardening.LanguageCheckpointTests.test_checkpoint_stable_architecture_must_match_saved_model) ... ok
+test_nonfinite_frozen_reference_is_rejected (test_language_hardening.LanguageCheckpointTests.test_nonfinite_frozen_reference_is_rejected) ... ok
+test_all_separate_stages_exact_resume (test_language_pipeline.LanguageTrainingTests.test_all_separate_stages_exact_resume) ... ok
+test_bpe_pretraining_bridge_and_loader (test_language_pipeline.LanguageTrainingTests.test_bpe_pretraining_bridge_and_loader) ... ok
+test_legacy_byte_training_checkpoint_import (test_language_pipeline.LanguageTrainingTests.test_legacy_byte_training_checkpoint_import) ... ok
+test_padding_and_response_mask_independence (test_language_pipeline.LanguageTrainingTests.test_padding_and_response_mask_independence) ... ok
+test_resume_rejects_objective_tokenizer_and_config_changes (test_language_pipeline.LanguageTrainingTests.test_resume_rejects_objective_tokenizer_and_config_changes) ... ok
+test_stage_references_are_frozen (test_language_pipeline.LanguageTrainingTests.test_stage_references_are_frozen) ... ok
+test_strict_generation_special_utf8_and_eos (test_language_pipeline.LanguageTrainingTests.test_strict_generation_special_utf8_and_eos) ... ok
+test_symbolic_adapter_and_wrong_numerical_adapter (test_language_pipeline.LanguageTrainingTests.test_symbolic_adapter_and_wrong_numerical_adapter) ... ok
+test_boundary_merge_is_explicitly_separate (test_language_pipeline.ResponseContractTests.test_boundary_merge_is_explicitly_separate) ... ok
+test_empty_prompt_unicode_and_context_rejection (test_language_pipeline.ResponseContractTests.test_empty_prompt_unicode_and_context_rejection) ... ok
+test_external_dataset_rejects_holdouts_and_unattributed_humans (test_language_pipeline.ResponseContractTests.test_external_dataset_rejects_holdouts_and_unattributed_humans) ... ok
+test_tokenizer_identity_requires_full_spec_not_size (test_language_pipeline.ResponseContractTests.test_tokenizer_identity_requires_full_spec_not_size) ... ok
+test_backup_deadline_retains_destination (test_library.LibraryTests.test_backup_deadline_retains_destination) ... ok
+test_backup_is_independent_and_exclusive (test_library.LibraryTests.test_backup_is_independent_and_exclusive) ... ok
+test_backup_rejects_invalid_deadlines (test_library.LibraryTests.test_backup_rejects_invalid_deadlines) ... ok
+test_batch_conflict_rolls_back_every_document (test_library.LibraryTests.test_batch_conflict_rolls_back_every_document) ... ok
+test_cross_library_packet_rejected (test_library.LibraryTests.test_cross_library_packet_rejected) ... ok
+test_empty_snapshot_packet (test_library.LibraryTests.test_empty_snapshot_packet) ... ok
+test_explicit_creation_and_schema_rejection (test_library.LibraryTests.test_explicit_creation_and_schema_rejection) ... ok
+test_idempotence_and_version_conflict (test_library.LibraryTests.test_idempotence_and_version_conflict) ... ok
+test_immutable_rows (test_library.LibraryTests.test_immutable_rows) ... ok
+test_injected_failure_rolls_back_index_and_source (test_library.LibraryTests.test_injected_failure_rolls_back_index_and_source) ... ok
+test_input_bounds (test_library.LibraryTests.test_input_bounds) ... ok
+test_inventory_and_source_history_include_supersession (test_library.LibraryTests.test_inventory_and_source_history_include_supersession) ... ok
+test_lock_timeout_does_not_write_partial_source (test_library.LibraryTests.test_lock_timeout_does_not_write_partial_source) ... ok
+test_manifest_failures_retained_without_mutation (test_library.LibraryTests.test_manifest_failures_retained_without_mutation) ... ok
+test_manifest_import_tracks_declarations_and_exact_bytes (test_library.LibraryTests.test_manifest_import_tracks_declarations_and_exact_bytes) ... ok
+test_manifest_permission_and_path_rejection (test_library.LibraryTests.test_manifest_permission_and_path_rejection) ... ok
+test_missing_posting_detected_by_full_audit (test_library.LibraryTests.test_missing_posting_detected_by_full_audit) ... ok
+test_new_version_after_retirement_is_explicit (test_library.LibraryTests.test_new_version_after_retirement_is_explicit) ... ok
+test_packet_tampering_even_if_rehashed (test_library.LibraryTests.test_packet_tampering_even_if_rehashed) ... ok
+test_parallel_writers_have_one_active_head (test_library.LibraryTests.test_parallel_writers_have_one_active_head) ... ok
+test_query_ranking_and_source_caps (test_library.LibraryTests.test_query_ranking_and_source_caps) ... ok
+test_read_transaction_has_stable_snapshot (test_library.LibraryTests.test_read_transaction_has_stable_snapshot) ... ok
+test_retirement_does_not_resurrect_previous_version (test_library.LibraryTests.test_retirement_does_not_resurrect_previous_version) ... ok
+test_revisions_replay_and_no_reactivation (test_library.LibraryTests.test_revisions_replay_and_no_reactivation) ... ok
+test_source_tampering_detected (test_library.LibraryTests.test_source_tampering_detected) ... ok
+test_unicode_offsets_roundtrip (test_library.LibraryTests.test_unicode_offsets_roundtrip) ... ok
+test_crash_and_failure_retention_reproduction (test_library_reproduce.LibraryStudyTests.test_crash_and_failure_retention_reproduction) ... ok
+test_lifecycle_reproduction (test_library_reproduce.LibraryStudyTests.test_lifecycle_reproduction) ... ok
+test_registered_config_bounds (test_library_reproduce.LibraryStudyTests.test_registered_config_bounds) ... ok
+test_small_benchmark_reports_actual_query_records (test_library_reproduce.LibraryStudyTests.test_small_benchmark_reports_actual_query_records) ... ok
+test_conflicting_observations_fail (test_observation_verifier.ObservationVerifierTests.test_conflicting_observations_fail) ... ok
+test_exact_observation_fit_is_scoped_and_bound_to_hypothesis (test_observation_verifier.ObservationVerifierTests.test_exact_observation_fit_is_scoped_and_bound_to_hypothesis) ... ok
+test_forged_or_missing_span_fails (test_observation_verifier.ObservationVerifierTests.test_forged_or_missing_span_fails) ... ok
+test_missing_unsupported_or_wrong_topic_is_unknown (test_observation_verifier.ObservationVerifierTests.test_missing_unsupported_or_wrong_topic_is_unknown) ... ok
+test_observation_fit_does_not_imply_future_match (test_observation_verifier.ObservationVerifierTests.test_observation_fit_does_not_imply_future_match) ... ok
+test_read_only_memory_cannot_write_or_create_store (test_observation_verifier.ObservationVerifierTests.test_read_only_memory_cannot_write_or_create_store) ... ok
+test_target_match_does_not_imply_observation_fit (test_observation_verifier.ObservationVerifierTests.test_target_match_does_not_imply_observation_fit) ... ok
+test_accept_all_is_blocked_by_cross_split_pairs (test_operator_readiness.CorpusReviewTests.test_accept_all_is_blocked_by_cross_split_pairs) ... ok
+test_all_audit_budgets_fail_without_partial_clean_report (test_operator_readiness.CorpusReviewTests.test_all_audit_budgets_fail_without_partial_clean_report) ... ok
+test_blocked_export_retains_failed_gate (test_operator_readiness.CorpusReviewTests.test_blocked_export_retains_failed_gate) ... ok
+test_changed_source_object_is_not_a_clean_audit (test_operator_readiness.CorpusReviewTests.test_changed_source_object_is_not_a_clean_audit) ... ok
+test_cli_audit_gate_and_record_seal (test_operator_readiness.CorpusReviewTests.test_cli_audit_gate_and_record_seal) ... ok
+test_invalid_thresholds_and_config_fields (test_operator_readiness.CorpusReviewTests.test_invalid_thresholds_and_config_fields) ... ok
+test_inverted_index_matches_brute_force_pair_scores (test_operator_readiness.CorpusReviewTests.test_inverted_index_matches_brute_force_pair_scores) ... ok
+test_overlap_detects_actual_template_family_leakage (test_operator_readiness.CorpusReviewTests.test_overlap_detects_actual_template_family_leakage) ... ok
+test_rehashed_false_report_does_not_pass_replay (test_operator_readiness.CorpusReviewTests.test_rehashed_false_report_does_not_pass_replay) ... ok
+test_release_preserves_parent_and_replays_decisions (test_operator_readiness.CorpusReviewTests.test_release_preserves_parent_and_replays_decisions) ... ok
+test_release_tamper_and_traversal_fail (test_operator_readiness.CorpusReviewTests.test_release_tamper_and_traversal_fail) ... ok
+test_review_is_hash_bound_complete_and_evidence_required (test_operator_readiness.CorpusReviewTests.test_review_is_hash_bound_complete_and_evidence_required) ... ok
+test_unicode_normalization_and_short_text (test_operator_readiness.CorpusReviewTests.test_unicode_normalization_and_short_text) ... ok
+test_unreviewed_and_missing_splits_block (test_operator_readiness.CorpusReviewTests.test_unreviewed_and_missing_splits_block) ... ok
+test_bounded_real_storage_probe_and_source_observation (test_operator_readiness.HardwareAuditTests.test_bounded_real_storage_probe_and_source_observation) ... ok
+test_duplicate_stale_and_future_nodes (test_operator_readiness.HardwareAuditTests.test_duplicate_stale_and_future_nodes) ... ok
+test_heterogeneous_or_missing_runtime_blocks (test_operator_readiness.HardwareAuditTests.test_heterogeneous_or_missing_runtime_blocks) ... ok
+test_invalid_node_values_and_extra_fields (test_operator_readiness.HardwareAuditTests.test_invalid_node_values_and_extra_fields) ... ok
+test_linux_memory_units_and_bad_format (test_operator_readiness.HardwareAuditTests.test_linux_memory_units_and_bad_format) ... ok
+test_linux_physical_pairs_and_missing_cpu_ids (test_operator_readiness.HardwareAuditTests.test_linux_physical_pairs_and_missing_cpu_ids) ... ok
+test_missing_measurement_stays_unknown (test_operator_readiness.HardwareAuditTests.test_missing_measurement_stays_unknown) ... ok
+test_policy_binding_expiration_permissions_and_capacity (test_operator_readiness.HardwareAuditTests.test_policy_binding_expiration_permissions_and_capacity) ... ok
+test_real_local_observation_portable_and_hash_bound (test_operator_readiness.HardwareAuditTests.test_real_local_observation_portable_and_hash_bound) ... ok
+test_simulated_four_host_plan_does_not_claim_deployment (test_operator_readiness.HardwareAuditTests.test_simulated_four_host_plan_does_not_claim_deployment) ... ok
+test_storage_probe_rejects_foreign_host (test_operator_readiness.HardwareAuditTests.test_storage_probe_rejects_foreign_host) ... ok
+test_unsupported_platform_does_not_guess_ram_or_cpu (test_operator_readiness.HardwareAuditTests.test_unsupported_platform_does_not_guess_ram_or_cpu) ... ok
+test_zero_available_is_observation_not_unknown (test_operator_readiness.HardwareAuditTests.test_zero_available_is_observation_not_unknown) ... ok
+test_abstention_dispatches_no_measurement (test_paid_evidence.PaidEvidenceTests.test_abstention_dispatches_no_measurement) ... ok
+test_acquisition_is_persisted_and_charged (test_paid_evidence.PaidEvidenceTests.test_acquisition_is_persisted_and_charged) ... ok
+test_aggregate_deduplicates_and_caps (test_paid_evidence.PaidEvidenceTests.test_aggregate_deduplicates_and_caps) ... ok
+test_budget_only_charges_dispatched_work (test_paid_evidence.PaidEvidenceTests.test_budget_only_charges_dispatched_work) ... ok
+test_candidate_duplicates_never_multiply_question_reward (test_paid_evidence.PaidEvidenceTests.test_candidate_duplicates_never_multiply_question_reward) ... ok
+test_complete_small_factorial_evaluation (test_paid_evidence.PaidEvidenceTests.test_complete_small_factorial_evaluation) ... {"policy": "verify_all", "episodes": 6, "successes": 2}
+{"policy": "abstain_all", "episodes": 6, "successes": 0}
+{"policy": "fit_direct", "episodes": 6, "successes": 2}
+{"policy": "acquire_fit", "episodes": 6, "successes": 2}
+{"policy": "judge_direct-seed17", "episodes": 6, "successes": 1}
+{"policy": "acquire_judge-seed17", "episodes": 6, "successes": 1}
+{"policy": "selective_judge-seed17", "episodes": 6, "successes": 1}
+ok
+test_conflicting_source_prevents_acquisition (test_paid_evidence.PaidEvidenceTests.test_conflicting_source_prevents_acquisition) ... ok
+test_error_and_timeout_are_paid_and_unresolved (test_paid_evidence.PaidEvidenceTests.test_error_and_timeout_are_paid_and_unresolved) ... ok
+test_extra_point_separates_cubic_but_not_quintic (test_paid_evidence.PaidEvidenceTests.test_extra_point_separates_cubic_but_not_quintic) ... ok
+test_factorial_weighting_and_cost_sensitivity (test_paid_evidence.PaidEvidenceTests.test_factorial_weighting_and_cost_sensitivity) ... ok
+test_forecaster_sees_only_pre_measurement_inputs (test_paid_evidence.PaidEvidenceTests.test_forecaster_sees_only_pre_measurement_inputs) ... ok
+test_fresh_groups_and_invisible_family (test_paid_evidence.PaidEvidenceTests.test_fresh_groups_and_invisible_family) ... ok
+test_frozen_judge_loader_checks_identity (test_paid_evidence.PaidEvidenceTests.test_frozen_judge_loader_checks_identity) ... ok
+test_missing_acquisition_fails_closed (test_paid_evidence.PaidEvidenceTests.test_missing_acquisition_fails_closed) ... ok
+test_selective_band_boundaries_and_input_validation (test_paid_evidence.PaidEvidenceTests.test_selective_band_boundaries_and_input_validation) ... ok
+test_unavailable_acquisition_stops_without_free_target_fallback (test_paid_evidence.PaidEvidenceTests.test_unavailable_acquisition_stops_without_free_target_fallback) ... ok
+test_corpus_object_and_index_tampering (test_pretrain.CorpusTests.test_corpus_object_and_index_tampering) ... ok
+test_exact_and_normalized_duplicates_rejected (test_pretrain.CorpusTests.test_exact_and_normalized_duplicates_rejected) ... ok
+test_family_split_leakage_rejected (test_pretrain.CorpusTests.test_family_split_leakage_rejected) ... ok
+test_hash_and_size_mismatch_rejected (test_pretrain.CorpusTests.test_hash_and_size_mismatch_rejected) ... ok
+test_intake_is_immutable_and_metadata_bound (test_pretrain.CorpusTests.test_intake_is_immutable_and_metadata_bound) ... ok
+test_paths_symlinks_and_binary_rejected (test_pretrain.CorpusTests.test_paths_symlinks_and_binary_rejected) ... ok
+test_portable_failure_trace_redacts_host_paths (test_pretrain.CorpusTests.test_portable_failure_trace_redacts_host_paths) ... ok
+test_rights_and_privacy_are_required (test_pretrain.CorpusTests.test_rights_and_privacy_are_required) ... ok
+test_bpe_pretraining_resume_no_test_access_and_sft_bridge (test_pretrain.PretrainingTests.test_bpe_pretraining_resume_no_test_access_and_sft_bridge) ... ok
+test_pretraining_resume_and_real_failure_recovery (test_pretrain.PretrainingTests.test_pretraining_resume_and_real_failure_recovery) ... ok
+test_cursor_resume_across_epochs_and_tokenizers (test_pretrain.TokenizerStreamTests.test_cursor_resume_across_epochs_and_tokenizers) ... ok
+test_invalid_tokenizer_spec (test_pretrain.TokenizerStreamTests.test_invalid_tokenizer_spec) ... ok
+test_stream_pairs_boundaries_padding_and_no_dropped_tokens (test_pretrain.TokenizerStreamTests.test_stream_pairs_boundaries_padding_and_no_dropped_tokens) ... ok
+test_tokenizer_roundtrip_determinism_and_fit_partition (test_pretrain.TokenizerStreamTests.test_tokenizer_roundtrip_determinism_and_fit_partition) ... ok
+test_holdout_file_is_not_training_input (test_research_data.ResearchDataTests.test_holdout_file_is_not_training_input) ... ok
+test_labels_match_exact_world_and_citations (test_research_data.ResearchDataTests.test_labels_match_exact_world_and_citations) ... ok
+test_partition_counts_disjointness_and_determinism (test_research_data.ResearchDataTests.test_partition_counts_disjointness_and_determinism) ... ok
+test_invalid_worlds_stay_in_denominator (test_research_eval.ResearchEvaluationTests.test_invalid_worlds_stay_in_denominator) ... ok
+test_paired_gain_and_loss (test_research_eval.ResearchEvaluationTests.test_paired_gain_and_loss) ... ok
+test_reference_has_same_one_candidate_budget (test_research_eval.ResearchEvaluationTests.test_reference_has_same_one_candidate_budget) ... ok
+test_wilson_boundaries (test_research_eval.ResearchEvaluationTests.test_wilson_boundaries) ... ok
+test_adapter_loop_binds_and_verifies_claim (test_research_format.FormatTests.test_adapter_loop_binds_and_verifies_claim) ... ok
+test_fabricated_and_missing_aliases_fail (test_research_format.FormatTests.test_fabricated_and_missing_aliases_fail) ... ok
+test_invalid_generation_has_no_reference_fallback (test_research_format.FormatTests.test_invalid_generation_has_no_reference_fallback) ... ok
+test_invalid_json_and_duplicate_fields_fail (test_research_format.FormatTests.test_invalid_json_and_duplicate_fields_fail) ... ok
+test_nonfinite_boolean_and_extra_candidates_fail (test_research_format.FormatTests.test_nonfinite_boolean_and_extra_candidates_fail) ... ok
+test_post_action_state_is_rejected (test_research_format.FormatTests.test_post_action_state_is_rejected) ... ok
+test_prompt_contains_observations_not_measurement (test_research_format.FormatTests.test_prompt_contains_observations_not_measurement) ... ok
+test_reused_adapter_does_not_retain_trace_after_prompt_failure (test_research_format.FormatTests.test_reused_adapter_does_not_retain_trace_after_prompt_failure) ... ok
+test_valid_output_maps_to_real_evidence (test_research_format.FormatTests.test_valid_output_maps_to_real_evidence) ... ok
+test_deadline_checkpoint_preserves_completed_boundary (test_research_training.ResearchTrainingTests.test_deadline_checkpoint_preserves_completed_boundary) ... {"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.508413696289063, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpcr39jfzh/interrupted/20260928T205347-research-training-5bace9db/seeds/20260928T205347-research-sft-seed17-29efa273"}
+{"seed": 17, "step": 2, "validation": {"n": 1, "response_token_nll": 5.4688439263237845, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpcr39jfzh/interrupted/20260928T205347-research-training-5bace9db/seeds/20260928T205347-research-sft-seed17-29efa273"}
+{"seed": 17, "step": 4, "validation": {"n": 1, "response_token_nll": 5.4232903374565975, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpcr39jfzh/resume/20260928T205347-research-training-4250f64c/seeds/20260928T205348-research-sft-seed17-e5afa9ec"}
+ok
+test_legacy_checkpoint_reconstructs_original_history (test_research_training.ResearchTrainingTests.test_legacy_checkpoint_reconstructs_original_history) ... {"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.508413696289063, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmppdq0aqf7/partial/20260928T205348-research-training-1420a8c2/seeds/20260928T205348-research-sft-seed17-65f61b6e"}
+{"seed": 17, "step": 1, "validation": {"n": 1, "response_token_nll": 5.489293077256945, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmppdq0aqf7/partial/20260928T205348-research-training-1420a8c2/seeds/20260928T205348-research-sft-seed17-65f61b6e"}
+{"seed": 17, "step": 1, "validation": {"n": 1, "response_token_nll": 5.489293077256945, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmppdq0aqf7/resumed/20260928T205348-research-training-a354fcac/seeds/20260928T205348-research-sft-seed17-b54e1728"}
+{"seed": 17, "step": 2, "validation": {"n": 1, "response_token_nll": 5.4688439263237845, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmppdq0aqf7/resumed/20260928T205348-research-training-a354fcac/seeds/20260928T205348-research-sft-seed17-b54e1728"}
+ok
+test_resume_matches_uninterrupted_optimizer_rng_and_selection (test_research_training.ResearchTrainingTests.test_resume_matches_uninterrupted_optimizer_rng_and_selection) ... {"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.508413696289063, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpiyapc17c/full/20260928T205348-research-training-d29a6bed/seeds/20260928T205348-research-sft-seed17-eb7ccaf8"}
+{"seed": 17, "step": 2, "validation": {"n": 1, "response_token_nll": 5.4688439263237845, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpiyapc17c/full/20260928T205348-research-training-d29a6bed/seeds/20260928T205348-research-sft-seed17-eb7ccaf8"}
+{"seed": 17, "step": 4, "validation": {"n": 1, "response_token_nll": 5.4232903374565975, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpiyapc17c/full/20260928T205348-research-training-d29a6bed/seeds/20260928T205348-research-sft-seed17-eb7ccaf8"}
+{"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.508413696289063, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpiyapc17c/partial/20260928T205348-research-training-1158e312/seeds/20260928T205348-research-sft-seed17-169ad019"}
+{"seed": 17, "step": 2, "validation": {"n": 1, "response_token_nll": 5.4688439263237845, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpiyapc17c/partial/20260928T205348-research-training-1158e312/seeds/20260928T205348-research-sft-seed17-169ad019"}
+{"seed": 17, "step": 2, "validation": {"n": 1, "response_token_nll": 5.4688439263237845, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpiyapc17c/resumed/20260928T205348-research-training-77f75107/seeds/20260928T205348-research-sft-seed17-de7b3901"}
+{"seed": 17, "step": 4, "validation": {"n": 1, "response_token_nll": 5.4232903374565975, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpiyapc17c/resumed/20260928T205348-research-training-77f75107/seeds/20260928T205348-research-sft-seed17-de7b3901"}
+ok
+test_resume_rejects_changed_optimizer_seed_schedule_or_dataset (test_research_training.ResearchTrainingTests.test_resume_rejects_changed_optimizer_seed_schedule_or_dataset) ... {"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.508413696289063, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmp112asguv/partial/20260928T205349-research-training-b789d307/seeds/20260928T205349-research-sft-seed17-a71e0051"}
+{"seed": 17, "step": 1, "validation": {"n": 1, "response_token_nll": 5.489293077256945, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmp112asguv/partial/20260928T205349-research-training-b789d307/seeds/20260928T205349-research-sft-seed17-a71e0051"}
+ok
+test_resume_rejects_tampered_selection_history (test_research_training.ResearchTrainingTests.test_resume_rejects_tampered_selection_history) ... {"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.508413696289063, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpx96a1rve/partial/20260928T205349-research-training-32b657b8/seeds/20260928T205349-research-sft-seed17-b932fc89"}
+{"seed": 17, "step": 1, "validation": {"n": 1, "response_token_nll": 5.489293077256945, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpx96a1rve/partial/20260928T205349-research-training-32b657b8/seeds/20260928T205349-research-sft-seed17-b932fc89"}
+ok
+test_score_uses_actual_next_measurement (test_research_training.ResearchTrainingTests.test_score_uses_actual_next_measurement) ... ok
+test_selection_priorities_and_earliest_tie (test_research_training.ResearchTrainingTests.test_selection_priorities_and_earliest_tie) ... ok
+test_tampered_training_file_rejected (test_research_training.ResearchTrainingTests.test_tampered_training_file_rejected) ... ok
+test_training_freezes_checkpoints_without_opening_holdout (test_research_training.ResearchTrainingTests.test_training_freezes_checkpoints_without_opening_holdout) ... {"seed": 17, "step": 0, "validation": {"n": 1, "response_token_nll": 5.508413696289063, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpub0gc68s/runs/20260928T205350-research-training-3b7e9fdd/seeds/20260928T205350-research-sft-seed17-6c678216"}
+{"seed": 17, "step": 1, "validation": {"n": 1, "response_token_nll": 5.489293077256945, "valid_rate": 0.0, "prediction_agreement_rate": 0.0}, "run": "/var/folders/w4/nmbkr0ln39z16yt6btwvf8000000gn/T/tmpub0gc68s/runs/20260928T205350-research-training-3b7e9fdd/seeds/20260928T205350-research-sft-seed17-6c678216"}
+ok
+test_update_budget_rejected (test_research_training.ResearchTrainingTests.test_update_budget_rejected) ... ok
+test_assumptions_and_schema_are_required (test_symbolic.ExactCheckerTests.test_assumptions_and_schema_are_required) ... ok
+test_exact_identities (test_symbolic.ExactCheckerTests.test_exact_identities) ... ok
+test_false_not_unresolved (test_symbolic.ExactCheckerTests.test_false_not_unresolved) ... ok
+test_limits (test_symbolic.ExactCheckerTests.test_limits) ... ok
+test_no_execution_or_unsupported_coercion (test_symbolic.ExactCheckerTests.test_no_execution_or_unsupported_coercion) ... ok
+test_normal_forms_against_independent_integer_convolution (test_symbolic.ExactCheckerTests.test_normal_forms_against_independent_integer_convolution) ... ok
+test_worker_transport_and_mathematical_outcome_are_separate (test_symbolic.ExactCheckerTests.test_worker_transport_and_mathematical_outcome_are_separate) ... ok
+test_budget_and_abstention (test_symbolic.LoopTests.test_budget_and_abstention) ... ok
+test_end_to_end_reference_and_read_only_audit (test_symbolic.LoopTests.test_end_to_end_reference_and_read_only_audit) ... ok
+test_errors_and_timeouts_do_not_become_false (test_symbolic.LoopTests.test_errors_and_timeouts_do_not_become_false) ... ok
+test_forecast_cannot_override_false_check_or_mutate_state (test_symbolic.LoopTests.test_forecast_cannot_override_false_check_or_mutate_state) ... ok
+test_forged_certificate_is_rejected (test_symbolic.LoopTests.test_forged_certificate_is_rejected) ... ok
+test_frozen_suite_and_evaluation (test_symbolic.LoopTests.test_frozen_suite_and_evaluation) ... ok
+test_missing_or_injected_source_remains_unresolved (test_symbolic.LoopTests.test_missing_or_injected_source_remains_unresolved) ... ok
+test_no_proposal_has_no_fallback (test_symbolic.LoopTests.test_no_proposal_has_no_fallback) ... ok
+test_numeric_judge_target_rejected (test_symbolic.LoopTests.test_numeric_judge_target_rejected) ... ok
+test_strict_generation_schema (test_symbolic.LoopTests.test_strict_generation_schema) ... ok
+test_tampered_state_and_source_fail_audit (test_symbolic.LoopTests.test_tampered_state_and_source_fail_audit) ... ok
+test_wrong_and_unsupported_proposals (test_symbolic.LoopTests.test_wrong_and_unsupported_proposals) ... ok
+test_data_groups_and_reward_independence (test_symbolic.SymbolicLearningTests.test_data_groups_and_reward_independence) ... ok
+test_separate_symbolic_judge_and_resume (test_symbolic.SymbolicLearningTests.test_separate_symbolic_judge_and_resume) ... ok
+test_separated_training_and_exact_resume (test_symbolic.SymbolicLearningTests.test_separated_training_and_exact_resume) ... ok
+test_arithmetic_split_is_disjoint (test_training.DatasetTests.test_arithmetic_split_is_disjoint) ... ok
+test_judge_group_splits_are_disjoint (test_training.DatasetTests.test_judge_group_splits_are_disjoint) ... ok
+test_supervised_intake_and_label_provenance (test_training.DatasetTests.test_supervised_intake_and_label_provenance) ... ok
+test_verifier_does_not_use_preference_label (test_training.DatasetTests.test_verifier_does_not_use_preference_label) ... ok
+test_causal_prefix_invariance (test_training.NeuralTests.test_causal_prefix_invariance) ... ok
+test_checkpoint_tampering_rejected (test_training.NeuralTests.test_checkpoint_tampering_rejected) ... ok
+test_context_overflow_fails (test_training.NeuralTests.test_context_overflow_fails) ... ok
+test_dpo_value_and_gradient (test_training.NeuralTests.test_dpo_value_and_gradient) ... ok
+test_exact_cpu_checkpoint_resume (test_training.NeuralTests.test_exact_cpu_checkpoint_resume) ... ok
+test_large_allocation_blocked_before_model_creation (test_training.NeuralTests.test_large_allocation_blocked_before_model_creation) ... ok
+test_parameter_accounting (test_training.NeuralTests.test_parameter_accounting) ... ok
+test_posttraining_stages_are_separate_and_update (test_training.NeuralTests.test_posttraining_stages_are_separate_and_update) ... ok
+test_preference_without_initial_checkpoint_fails (test_training.NeuralTests.test_preference_without_initial_checkpoint_fails) ... ok
+test_proper_scoring_losses (test_training.NeuralTests.test_proper_scoring_losses) ... ok
+test_response_mask_and_padding (test_training.NeuralTests.test_response_mask_and_padding) ... ok
+test_rlvr_reward_gradient_and_reference_frozen (test_training.NeuralTests.test_rlvr_reward_gradient_and_reference_frozen) ... ok
+test_stage_mismatch_cannot_resume (test_training.NeuralTests.test_stage_mismatch_cannot_resume) ... ok
+test_unicode_tokenizer_roundtrip (test_training.NeuralTests.test_unicode_tokenizer_roundtrip) ... ok
+
+----------------------------------------------------------------------
+Ran 260 tests in 52.065s
+
+OK

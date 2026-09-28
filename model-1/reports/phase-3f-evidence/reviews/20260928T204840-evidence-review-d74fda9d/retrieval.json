@@ -1,0 +1,17 @@
+[
+  {
+    "hits": [],
+    "limit": 8,
+    "packet_hash": "da305f57139bd8778cde723d1a399de49cd42e8fc4e43a7a14fe0b5ca9de2f3d",
+    "per_source": 2,
+    "query": "calibration measurements",
+    "ranker": "unicode-token-coverage-v1",
+    "schema": "aim-retrieval-packet-v1",
+    "scope": "lexical matches in declared local sources; no entailment or factuality judgment",
+    "snapshot": {
+      "library_id": "8344489ec48c49918ec2adae2cfd434b",
+      "sequence": 3,
+      "sha256": "0084a1b4e76f60b3f9b0b6d8f7081f03e7216d729f8c8c60feec1a6d23e6f09e"
+    }
+  }
+]

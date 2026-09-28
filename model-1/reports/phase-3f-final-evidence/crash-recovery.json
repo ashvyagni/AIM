@@ -1,0 +1,43 @@
+{
+  "after": {
+    "bytes": 0,
+    "chunks": 0,
+    "outcome": "PASS",
+    "schema": "aim-evidence-library-v1",
+    "scope": "stored content, offsets, full lexical index, lifecycle and hash-chain consistency; not source truth",
+    "snapshot": {
+      "library_id": "91fa1e512c1d474aa9c5815ae8d371c7",
+      "sequence": 0,
+      "sha256": "0c7d35356e4c908d1b3c3f4ae8ba08d02b3e7962a4e7171b78a0bf341f27a8c1"
+    },
+    "statuses": {
+      "ACTIVE": 0,
+      "RETRACTED": 0,
+      "SUPERSEDED": 0,
+      "WITHDRAWN": 0
+    },
+    "versions": 0
+  },
+  "before": {
+    "bytes": 0,
+    "chunks": 0,
+    "outcome": "PASS",
+    "schema": "aim-evidence-library-v1",
+    "scope": "stored content, offsets, full lexical index, lifecycle and hash-chain consistency; not source truth",
+    "snapshot": {
+      "library_id": "91fa1e512c1d474aa9c5815ae8d371c7",
+      "sequence": 0,
+      "sha256": "0c7d35356e4c908d1b3c3f4ae8ba08d02b3e7962a4e7171b78a0bf341f27a8c1"
+    },
+    "statuses": {
+      "ACTIVE": 0,
+      "RETRACTED": 0,
+      "SUPERSEDED": 0,
+      "WITHDRAWN": 0
+    },
+    "versions": 0
+  },
+  "exit_code": 23,
+  "scope": "one forced process exit before commit; not a power-loss or disk-failure certification",
+  "unchanged": true
+}

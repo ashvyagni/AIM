@@ -1,0 +1,47 @@
+{
+  "after": {
+    "library_id": "84e25418110b4debb3de0769e0321d32",
+    "sequence": 6,
+    "sha256": "b0c06e1e19c172c562ce7565e621645f42bf594b2428ef1c68a48b44a75b1ca5"
+  },
+  "before": {
+    "library_id": "84e25418110b4debb3de0769e0321d32",
+    "sequence": 0,
+    "sha256": "4829cf520a1626e53d09bb0c1741d2ccd6e7f1e8152c9079f7c12a93dbcfe42c"
+  },
+  "documents": [
+    {
+      "sha256": "2e3c8d3b769f93a79ad185bb48d63247be418aaa981fa69aee5c4e83546c7bcc",
+      "source_id": "lib-src-490dcc1789716918e289537e34b05ecebe53eab1cd208b34fa10a4ca757ed8cc"
+    },
+    {
+      "sha256": "ff0670e4897d16fc22a7c724a4098b2fa977961854943e1730bb2192e4fd3124",
+      "source_id": "lib-src-d4065518beea83b70aeda75874a6f0444eff1bf840483244859af2c52e2f69af"
+    },
+    {
+      "sha256": "941ac209ea90192bd70128721971e7db1355825059917acee99f588509be7771",
+      "source_id": "lib-src-ed4b2b930c4c34e24e39b4ba4e4b6210b360f615523827299d03bbabcbc0e22c"
+    },
+    {
+      "sha256": "8db39a232634a32c130df2cbab8379da9bd1d95a1033ec533d29b55ee1a9a4fb",
+      "source_id": "lib-src-344676b01d020c3e0f14ee58fb3e7f9b68bf4daa4cd48e97816c932e9ef1488e"
+    },
+    {
+      "sha256": "0f46c424e763e55d05ab8dae57f1c24c5e323f3d221ea73c6fd0553e6546e052",
+      "source_id": "lib-src-68b806a108ce1d20d297100c6af1804b8d196a44819a7f5e5376550b50401cca"
+    },
+    {
+      "sha256": "cfeaf03b9735afd4b700450a92010e12acc3a3767728008ebce7d112ab0b5aa0",
+      "source_id": "lib-src-dfb6a9189b47468389cfbc2552b365fbfb4c8877e33bc6e62f8999b8e8c3acaa"
+    }
+  ],
+  "manifest_hash": "81423de3e4daf02e1b40d95823941a9bfa596e57f50efdb5aa2268c3b536bdcc",
+  "source_ids": [
+    "lib-src-490dcc1789716918e289537e34b05ecebe53eab1cd208b34fa10a4ca757ed8cc",
+    "lib-src-d4065518beea83b70aeda75874a6f0444eff1bf840483244859af2c52e2f69af",
+    "lib-src-ed4b2b930c4c34e24e39b4ba4e4b6210b360f615523827299d03bbabcbc0e22c",
+    "lib-src-344676b01d020c3e0f14ee58fb3e7f9b68bf4daa4cd48e97816c932e9ef1488e",
+    "lib-src-68b806a108ce1d20d297100c6af1804b8d196a44819a7f5e5376550b50401cca",
+    "lib-src-dfb6a9189b47468389cfbc2552b365fbfb4c8877e33bc6e62f8999b8e8c3acaa"
+  ]
+}

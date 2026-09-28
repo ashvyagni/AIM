@@ -1,0 +1,32 @@
+{
+  "abstentions": [],
+  "excerpts": [],
+  "final_response": "# AIM local evidence review\n\n## Question\n\n```text\ncalibration measurements\n```\n\nSource excerpts below are **UNVERIFIED assertions**. A PASS applies only to attribution.\n\nNo excerpts passed the selection and attribution checks. No factual answer is asserted.\n\n## Limits\n\n- Source statements are UNVERIFIED. Exact attribution does not establish factual truth.\n- Lexical retrieval is incomplete and may miss paraphrases or split terms at chunk boundaries.\n- Versions and mirrors of a source are not independent corroboration.\n- The reference Researcher extracts text; no learned synthesis or hypothesis testing is performed.\n- The reference Judge has no learned or calibrated probability.\n- Sources are active at the recorded snapshot; consult the current library for later retirement.\n\n## Snapshot\n\n```text\n{\"library_id\": \"8344489ec48c49918ec2adae2cfd434b\", \"sequence\": 3, \"sha256\": \"0084a1b4e76f60b3f9b0b6d8f7081f03e7216d729f8c8c60feec1a6d23e6f09e\"}\n```\n",
+  "limitations": [
+    "Source statements are UNVERIFIED. Exact attribution does not establish factual truth.",
+    "Lexical retrieval is incomplete and may miss paraphrases or split terms at chunk boundaries.",
+    "Versions and mirrors of a source are not independent corroboration.",
+    "The reference Researcher extracts text; no learned synthesis or hypothesis testing is performed.",
+    "The reference Judge has no learned or calibrated probability.",
+    "Sources are active at the recorded snapshot; consult the current library for later retirement."
+  ],
+  "packet_hashes": [
+    "da305f57139bd8778cde723d1a399de49cd42e8fc4e43a7a14fe0b5ca9de2f3d"
+  ],
+  "phase": "FINAL",
+  "plan": {
+    "limit": 8,
+    "per_source": 2,
+    "queries": [
+      "calibration measurements"
+    ]
+  },
+  "proposals_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "question": "calibration measurements",
+  "schema": "aim-evidence-review-v1",
+  "snapshot": {
+    "library_id": "8344489ec48c49918ec2adae2cfd434b",
+    "sequence": 3,
+    "sha256": "0084a1b4e76f60b3f9b0b6d8f7081f03e7216d729f8c8c60feec1a6d23e6f09e"
+  }
+}

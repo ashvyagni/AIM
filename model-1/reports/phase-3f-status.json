@@ -1,0 +1,45 @@
+{
+  "actual_defect": "unknown-schema initialization accepted before fix; FAILED adversarial run retained",
+  "artifact_audit": "runs/20260928T210015-phase-3f-artifact-audit-d33b7a43",
+  "benchmark": {
+    "measured_queries": 240,
+    "scope": "authored exact-keyword fixtures on one local host; not semantic retrieval quality or cluster performance",
+    "sizes": [
+      32,
+      128,
+      512
+    ]
+  },
+  "defaults_promoted": false,
+  "expected_failures_per_study": 2,
+  "new_large_model_trained": false,
+  "next_engineering": "Reviewed relevance/answerability cases and explicit claim-to-source assessment before synthesis",
+  "next_ml_experiment": "Answer-field correctness and paired evidence-change sensitivity on fresh diagnostic worlds",
+  "phase": "3F",
+  "physical_lab_measured": false,
+  "process_exit_control": {
+    "exit_code": 23,
+    "rollback_passed": true
+  },
+  "project_application": {
+    "attributed_excerpts": 37,
+    "chunks": 69,
+    "commands": 14,
+    "documents": 6,
+    "reviews": 6,
+    "run": "20260928T205434-phase-3f-project-documents-5cc31e18",
+    "verified_factual_claims": 0
+  },
+  "project_complete": false,
+  "source_commit": "9d88d1fcf74f84e64e7be29b8d4497c42df4e8f9",
+  "source_hash": "9d8538aedaae4a2b0e889ed69dc9d8d7f603d13597339f4915ea36994f39ed31",
+  "status": "COMPLETED_LOCAL_ENGINEERING",
+  "study_elapsed_seconds": 57.26155820803251,
+  "study_run": "20260928T205302-phase-3f-library-6b3f253a",
+  "tests": {
+    "new_tests": 39,
+    "passed": 260,
+    "seconds": 52.065,
+    "skipped": 0
+  }
+}
