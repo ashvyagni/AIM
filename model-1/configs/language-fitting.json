@@ -1,0 +1,16 @@
+{
+  "schema": "aim-language-fit-study-v1",
+  "seeds": [17, 29],
+  "tokenizers": ["byte", "bpe32"],
+  "steps": [32, 128, 384],
+  "probe_count": 4,
+  "max_new_tokens": 128,
+  "training": {
+    "batch_size": 2,
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "checkpoint_every": 32,
+    "eval_batch_size": 8,
+    "model": {"width": 32, "layers": 2, "heads": 4, "kv_heads": 2, "ffn_width": 64, "context": 256}
+  }
+}
